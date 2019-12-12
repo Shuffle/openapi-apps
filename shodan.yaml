@@ -1,0 +1,82 @@
+swagger: "3.0"
+info:
+  title: Shodan
+  description: Automated generation of Shodan
+  version: "1.0"
+  contact:
+    email: frikky@shuffler.io
+    name: "@frikkylikeme"
+    url: https://twitter.com/frikkylikeme
+servers:
+  - url: https://api.shodan.io
+host: api.shodan.io
+basePath: /
+schemes:
+  - "https:"
+paths:
+  /search:
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Shodan Exploit Search
+      description: Search across a variety of data sources for exploits
+      parameters:
+        - in: query
+          name: query
+          description: Search query used to search the database of known exploits
+          required: true
+          schema:
+            type: string
+  "/shodan/host/{ip}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Shodan Host
+      description: Search all services that have been found on the given host IP
+      parameters: []
+  /shodan/query/search:
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Shodan Search
+      description: Search the SHODAN database
+      parameters:
+        - in: query
+          name: query
+          description: Keyword to search Shodan for
+          required: true
+          schema:
+            type: string
+  /shodan/alert:
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Create a network alert
+      description: ""
+      parameters: []
+  "/shodan/alert/{id}/info":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get a network alert
+      description: ""
+      parameters: []
+editing: false
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: query
+      name: key
+image: ""
+securityDefinitions: {}

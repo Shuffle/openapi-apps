@@ -1,0 +1,604 @@
+swagger: "3.0"
+info:
+  title: Tenable Platform API
+  version: "1.0"
+  contact:
+    name: "@frikkylikeme"
+    url: https://twitter.com/frikkylikeme
+    email: frikky@shuffler.io
+servers:
+  - url: https://cloud.tenable.com
+host: cloud.tenable.com
+basePath: /
+schemes:
+  - "https:"
+paths:
+  /session:
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Create session
+      description: "**Note:** This endpoint is deprecated. Tenable best practice is to use
+        API keys that are generated for specific user accounts. For your
+        organization's integrations with the Tenable.io API, Tenable recommends
+        you do not create and use session tokens.<p>Requires BASIC [16] user
+        permissions. See <a href=\"/docs/permissions\">Permissions</a>.</p>"
+      parameters: []
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get user session
+      description: Returns the user session data.<p>Requires BASIC [16] user permissions.
+        See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Update user settings
+      description: Updates the settings for the current user.<p>Requires BASIC [16] user
+        permissions. See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+    delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Log out user
+      description: Logs the current user out and destroys the session.<p>Requires BASIC
+        [16] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+  /session/restore:
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Restore impersonated session
+      description: Restores an impersonated session to the original user.<p>Requires BASIC
+        [16] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+  /session/chpasswd:
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Change password
+      description: Changes password for the current user.<p>Requires BASIC [16] user
+        permissions. See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+  /session/keys:
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Generate API keys
+      description: Generates API keys for the current user.<p>Requires BASIC [16] user
+        permissions. See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+  /session/two-factor/send-verification:
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Send verification code
+      description: Start the process of enabling two-factor authentication by sending a
+        one-time verification code to the provided phone number.<p>Requires
+        BASIC [16] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+  /session/two-factor/verify-code:
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Validate verification code
+      description: Validate the verification code sent to a phone number. If this request
+        is successful, it enables two-factor authentication for the current
+        user.<p>Requires BASIC [16] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+  /session/two-factor:
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Configure two-factor authentication
+      description: Configure the current user's two-factor authentication settings. Before
+        you can change these settings, you must send and validate the
+        verification code using the /session/two-factor/send-verification and
+        /session/two-factor/verify-code endpoints.<p>Requires BASIC [16] user
+        permissions. See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+  /users:
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Create user
+      description: Creates a new user.<p>Requires ADMINISTRATOR [64] user permissions. See
+        <a href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: List users
+      description: Returns a list of users.<p>Requires BASIC [16] user permissions. If you
+        use credentials with ADMIN [64] permissions, Tenable.io returns all
+        fields for individual user details. Otherwise, user details include only
+        the `uuid`, `id`, `username`, and `email` fields. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+  "/users/{user_id}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get user details
+      description: Returns details for a specific user.<p>Requires ADMINISTRATOR [64] user
+        permissions. See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Update user
+      description: Updates an existing user account.<p>Requires ADMINISTRATOR [64] user
+        permissions. See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Delete user
+      description: Deletes a user.<p>Requires ADMINISTRATOR [64] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/users/{user_id}/chpasswd":
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Change password
+      description: Changes the password for a user.<p>Requires ADMINISTRATOR [64] user
+        permissions. See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/users/{user_id}/enabled":
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Enable user account
+      description: Enables or disables an existing user account.<p>Requires ADMINISTRATOR
+        [64] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/users/{user_id}/authorizations":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get user authorizations
+      description: >-
+        Returns user authorizations for accessing a Tenable.io instance. Access
+        methods include user name and password, single sign-on (SSO) with SAML,
+        and API.
+
+        **Note:** All access methods are authorized by default.
+
+
+        For background information about managing user authorizations, see [Tenable.io Vulnerability Management User Guide](https://docs.tenable.com/cloud/Content/Settings/ManageUserAccessAuthorizations.htm).<p>Requires ADMINISTRATOR [64] user permissions. See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Update user authorizations
+      description: >-
+        Updates user authorizations for accessing a Tenable.io instance. Use the
+        endpoint to grant and revoke authorizations.
+
+
+        **Note:** You cannot update authorizations for the current user.
+
+
+        For background information about managing user authorizations, see [Tenable.io Vulnerability Management User Guide](https://docs.tenable.com/cloud/Content/Settings/ManageUserAccessAuthorizations.htm).<p>Requires ADMINISTRATOR [64] user permissions. See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/users/{user_id}/keys":
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Generate API keys
+      description: Generates the API keys for a user.<p>Requires ADMINISTRATOR [64] user
+        permissions. See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/users/{user_id}/impersonate":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Impersonate user
+      description: Allows the current administrator to impersonate the given
+        user.<p>Requires ADMINISTRATOR [64] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/users/{user_id}/two-factor/send-verification":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Send verification code
+      description: Sends a one-time verification code to the user's phone number to start
+        the process of enabling two-factor authentication.<p>Requires
+        ADMINISTRATOR [64] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/users/{user_id}/two-factor/verify-code":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Validate verification code
+      description: Validate the verification code sent to a phone number. If this request
+        is successful, it enables two-factor authentication for the specified
+        user.<p>Requires ADMINISTRATOR [64] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/users/{user_id}/two-factor":
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: "Configure two-factor authentication "
+      description: Enables or disables a user's two-factor authentication
+        settings.<p>Requires ADMINISTRATOR [64] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  /groups:
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Create group
+      description: Create a group.<p>Requires ADMINISTRATOR [64] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: List groups
+      description: Returns the group list.<p>Requires BASIC [16] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+  "/groups/{group_id}":
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Update group
+      description: Edit a group.<p>Requires ADMINISTRATOR [64] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: group_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Delete group
+      description: Delete a group.<p>Requires ADMINISTRATOR [64] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: group_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/groups/{group_id}/users":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: List users in group
+      description: Return the group user list.<p>Requires ADMINISTRATOR [64] user
+        permissions. See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: group_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/groups/{group_id}/users/{user_id}":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Add user to group
+      description: Add a user to the group.<p>Requires ADMINISTRATOR [64] user permissions.
+        See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: group_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Delete user from group
+      description: Deletes a user from the group.<p>Requires ADMINISTRATOR [64] user
+        permissions. See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: group_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  /settings/connectors:
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Create connector
+      description: Creates a connector.<ul>**Note:** The workflow for creating AWS
+        connectors is as follows:<li>First, [get the available AWS cloudtrails
+        for the account](#connectors-get-aws-cloudtrails)</li><li>Then use the
+        cloudtrail(s) as a required input parameter to create the AWS
+        connector.</li></ul></br><p>Requires ADMINISTRATOR [64] user
+        permissions. See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: List connectors
+      description: Returns a list of connectors.<p>For information about connector error
+        codes, see <a href="/docs/connectors-tio">Connectors</a>.</p><p>Requires
+        ADMINISTRATOR [64] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: query
+          name: limit
+          description: Maximum number of records requested (or service imposed limit if not
+            in request). Must be in the int32 format. Default is 1000.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: offset
+          description: The number of records to skip in the returned result set. Must be in
+            the int32 format. Default is 0.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: sort
+          description: >-
+            The fields to sort on, for example, `sort=date_created:desc`. If you
+            specify multiple fields, fields must be separated by commas.
+            Sortable fields include:  
+
+            * date_created  
+
+            * name
+          required: false
+          schema:
+            type: string
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Update connector
+      description: Updates the specified connector. You can change the connector name,
+        associated service accounts, and schedule. You cannot change the
+        connector type for an existing connector.<p>Requires ADMINISTRATOR [64]
+        user permissions. See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+  "/settings/connectors{connector_id}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get connector details
+      description: Returns the details for the specified connector.<p>For information about
+        connector error codes, see <a
+        href="/docs/connectors-tio">Connectors</a>.</p><p>Requires ADMINISTRATOR
+        [64] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: connector_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Delete connector
+      description: Deletes the specified connector.<p>Requires ADMINISTRATOR [64] user
+        permissions. See <a href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: connector_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  /settings/connectors/aws/cloudtrails:
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: List AWS cloudtrails
+      description: Returns a list of available AWS cloudtrails. You can then use the
+        cloudtrails to [create an AWS
+        connector](#connectors-create-connector)</a>.<p>Requires ADMINISTRATOR
+        [64] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters: []
+  "/settings/connectors/{connector_id}/import":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Import data
+      description: Imports data using a connector. This creates an asynchronous import job
+        in Tenable.io. You can check the import status by examining the
+        `status_message` property in [connector
+        details](#connectors-connector-details)</a>.<p>Requires ADMINISTRATOR
+        [64] user permissions. See <a
+        href="/docs/permissions">Permissions</a>.</p>
+      parameters:
+        - in: path
+          name: connector_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+editing: false
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-ApiKeys
+image: ""
+securityDefinitions: {}
