@@ -2,7 +2,7 @@ openapi: 3.0.2
 info:
   title: TheHive 
   description: API description for TheHive
-  version: 0.0.2
+  version: 0.2.0
   contact: 
     name: "@frikkylikeme"
     url: "https://twitter.com/frikkylikeme"
