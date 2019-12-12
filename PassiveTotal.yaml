@@ -1,0 +1,957 @@
+openapi: 3.0.1
+info:
+  title: Passive Total
+  description: An API description for Passive Total
+  version: 2.3.0
+servers:
+- url: https://api.passivetotal.org/v2/
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+security:
+  - basicAuth: []
+paths:
+  /account:
+    get:
+      summary: Read current account metadata and settings.
+      responses:
+        200:
+          description: account metadata retrieved
+  /account/history:
+    get:
+      summary: Read API usage history of the account.
+      responses:
+        200:
+          description: account history retrieved
+  /account/monitors:
+    get:
+      summary: Get active monitors
+      responses:
+        200:
+          description: account monitors retrieved
+  /account/organization:
+    get:
+      summary: Read current organization metadata
+      responses:
+        200:
+          description: organization metadata retrieved
+  /account/quotas:
+    get:
+      summary: Read current account and organization quotas.
+      responses:
+        200:
+          description: read quota data
+  /account/sources:
+    get:
+      summary: Check sources being used for queries.
+      parameters:
+      - name: source
+        in: query
+        description: the source to filter on
+        required: false
+        schema:
+          type: string
+      responses:
+        200:
+          description: sources checked
+  /account/organization/teamstream:
+    get:
+      summary: Read team activity.
+      parameters:
+      - name: source
+        description: filter to this source
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: dt
+        description: filter to this datetime
+        in: query
+        required: false
+        schema:
+          type: string
+          format: date-time
+      - name: type
+        description: filter by type field
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: focus
+        description: filter by focus (domain, ip, etc)
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        200:
+          description: read team activity
+  /account/classifications:
+    get:
+      summary: Retrieve items with the specified classification.
+      parameters:
+        - name: classification
+          description: classification for which to retrieve items for
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: classification retrieved
+  /project/tag:
+    post:
+      summary: Add project tags.
+      parameters:
+      - name: project
+        description: the project id to update
+        in: query
+        required: true
+        schema:
+          type: string
+          format: uuid
+      - name: tags
+        description: the tags or tag to add (list or str)
+        in: query
+        required: true
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        200:
+          description: tag added
+    delete:
+      summary: Remove project tags.
+      parameters:
+      - name: project
+        description: the project id to update
+        in: query
+        required: true
+        schema:
+          type: string
+          format: uuid
+      - name: tags
+        description: the tags or tag to remove (list or str)
+        in: query
+        required: true
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        200:
+          description: added project tags
+    put:
+      summary: Set project tags.
+      parameters:
+      - name: project
+        description: the project id to update
+        in: query
+        required: true
+        schema:
+          type: string
+          format: uuid
+      - name: tags
+        in: query
+        required: true
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        200:
+          description: tags added
+  /project:
+    put:
+      summary: Create a new project
+      parameters:
+      - name: name
+        description: name of the project
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: visibility
+        description: the visibility. Allowed values "public" "private" "analyst"
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: description
+        description: the description
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: featured
+        description: whether to feature the project
+        in: query
+        required: false
+        schema:
+          type: boolean
+      - name: tags
+        description: sets the project's tags to this list
+        in: query
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        200:
+          description: new project created
+    delete:
+      summary: Delete project
+      parameters:
+      - name: project
+        description: the project id to delete
+        in: query
+        required: true
+        schema:
+          type: string
+          format: uuid
+      responses:
+        200:
+          description: project deleted
+    get:
+      summary: Retrieves a project or projects by search filter
+      parameters:
+      - name: project
+        description: filter by project id
+        in: query
+        required: false
+        schema:
+          type: string
+          format: uuid
+      - name: owner
+        description: filter by owner (an email or organization id)
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: creator
+        description: filter by creator email
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: organization
+        description: filter by organization
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: visibility
+        description: filter by visibility Allowed values "public", "private", "analyst"
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: featured
+        description: filter by featured status
+        in: query
+        required: false
+        schema:
+          type: boolean
+      responses:
+        200:
+          description: retrieved project
+    post:
+      summary: Updates a project denoted by project ID
+      parameters:
+      - name: project
+        description: the project id to update
+        in: query
+        required: true
+        schema:
+          type: string
+          format: uuid
+      - name: name
+        description: the new name
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: description
+        description: the new description
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: visibility
+        description: he new visibility Default value public, private, or analyst
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: featured
+        description: whether to feature the project
+        in: query
+        required: false
+        schema:
+          type: boolean
+      - name: tags
+        description: sets the project's tags to this list
+        in: query
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        200:
+          description: project updated
+  /artifact/bulk:
+    put:
+      summary: Create artifacts in bulk.
+      parameters:
+      - name: artifacts
+        description: a list of dictionaries that match the /v2/artifact interface (has query, type, tags, and project fields per dictionary)
+        in: query
+        required: true
+        schema:
+          type: array
+          items:
+            type: object
+            additionalProperties: {}
+      - name: project
+        description: the project id the artifact will live on
+        in: query
+        required: true
+        schema:
+          type: string
+          format: uuid
+      - name: query
+        description: the actual artifact query (passivetotal.org, 8.8.8.8, etc).
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: type
+        description: the type of the artifact (domain, ip, etc), or inferred by query string if domain or ip (optional).
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: tags
+        description: the tags the new artifact will have
+        in: query
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        200:
+          description: bulk artifact creation successful
+    delete:
+      summary: Delete artifacts in bulk.
+      parameters:
+      - name: artifacts
+        description: the artifact ids to delete
+        in: query
+        required: true
+        schema:
+          type: array
+          items:
+            type: string
+            format: uuid
+      responses:
+        200:
+          description: bulk artifacts deleted successfully
+    post:
+      summary: Perform artifact updates in bulk.
+      parameters:
+      - name: artifacts
+        description: a list of dictionaries which match the fields for the /v2/artifact (artifact, monitor, tags)
+        in: query
+        required: true
+        schema:
+          type: array
+          items:
+            type: object
+            additionalProperties: {}
+      - name: artifact
+        description: the artifact id to update
+        in: query
+        required: true
+        schema:
+          type: string
+          format: uuid
+      - name: monitor
+        description: whether to monitor the artifact
+        in: query
+        required: false
+        schema:
+          type: boolean
+      - name: tags
+        description: sets the artifact's tags to this list
+        in: query
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        200:
+          description: successfully performed bulk update of artifacts
+  /artifact:
+    put:
+      summary: Create an artifact.
+      parameters:
+      - name: project
+        description: the project id the artifact will live on
+        in: query
+        required: true
+        schema:
+          type: string
+          format: uuid
+      - name: query
+        description: the actual artifact query (passivetotal.org, 8.8.8.8, etc).
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: type
+        description: the type of the artifact (domain, ip, etc), or inferred by query string if domain or ip (optional).
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: tags
+        description: the tags the new artifact will have
+        in: query
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        200:
+          description: successfully created artifact
+    delete:
+      summary: Delete an artifact with a UUID.
+      parameters:
+      - name: artifact
+        description: the artifact id
+        in: query
+        required: true
+        schema:
+          type: string
+          format: uuid
+      responses:
+        200:
+          description: successfully deleted an artifact
+    get:
+      summary: Read existing artifacts. If no filters are passed, this returns all your personal artifacts created by you or your organization.
+      parameters:
+      - name: artifact
+        description: the artifact id
+        in: query
+        required: false
+        schema:
+          type: string
+          format: uuid
+      - name: project
+        description: filter by project id
+        in: query
+        required: false
+        schema:
+          type: string
+          format: uuid
+      - name: owner
+        description: filter by owner (an email or organization id)
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: creator
+        description: filter by creator
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: organization
+        description: filter by organization
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: query
+        description: filter by query (passivetotal.org, etc)
+        in: query
+        required: false
+        schema:
+          type: string
+      - name: type
+        description: filter by artifact type (domain, ip, etc)
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        200:
+          description: successfully read artifacts
+    post:
+      summary: Update artifact, or toggle monitoring status. If you want to change the query or artifact type, simply delete it and create a new one. Use /v2/artifact/tag to add or delete tags without setting everything at once.
+      parameters:
+      - name: artifact
+        description: the artifact id to update
+        in: query
+        required: true
+        schema:
+          type: string
+          format: uuid
+      - name: monitor
+        description: whether to monitor the artifact
+        in: query
+        required: false
+        schema:
+          type: boolean
+      - name: tags
+        description: sets the artifact's tags to this list
+        in: query
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        200:
+          description: successfully updated artifact
+  /monitor:
+    get:
+      summary: Retrieve all alerts associated with an artifact or project.
+      parameters:
+      - name: project
+        description: the project to filter on
+        in: query
+        required: false
+        schema:
+          type: string
+          format: uuid
+      - name: artifact
+        description: the artifact to filter on
+        in: query
+        required: false
+        schema:
+          type: string
+          format: uuid
+      - name: start
+        description: filter results to after this datetime
+        in: query
+        required: false
+        schema:
+          type: string
+          format: date-time
+      - name: end
+        description: filter results to before this datetime
+        in: query
+        required: false
+        schema:
+          type: string
+          format: date-time
+      responses:
+        200:
+          description: successfully retrieved alerts associated with artifact or project
+  /actions/tags:
+    post:
+      summary: Adds tags to a given artifact.
+      parameters:
+      - name: query
+        description: artifact for which to add tags
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: tags
+        description: tags to add to artifact
+        in: query
+        required: true
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        200:
+          description: added tags to artifact
+    delete:
+      summary: Removes tags from an artifact.
+      parameters:
+      - name: query
+        description: artifact from which to remove tags
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: tags
+        description: tags to remove from artifact
+        in: query
+        required: true
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        200:
+          description: successfully deleted tags
+    get:
+      summary: Retrieves tags for a given artifact.
+      parameters:
+      - name: query
+        description: artifact for which to retrieve tags
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successfully retrieved tags
+    put:
+      summary: Sets the tags for a given artifact.
+      parameters:
+      - name: query
+        description: artifact for which to set tags
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: tags
+        description: tags to set for artifact
+        in: query
+        required: true
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        200:
+          description: successfully set tags for artifact
+  /actions/bulk/classification:
+    get:
+      summary: Retrieve classification statuses for given domains.
+      parameters:
+      - name: query
+        description: domains for which to retrieve classification statuses
+        in: query
+        required: true
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        200:
+          description: successfully retrieved classification statuses
+    post:
+      summary: Set classification statuses for given domains.
+      parameters:
+      - name: query
+        description: domains for which to set classification statuses
+        in: query
+        required: true
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        200:
+          description: successfully set classification status for given domain
+  
+  /actions/classification:
+    get:
+      summary: Retrieve classification status for a given domain.
+      parameters:
+      - name: query
+        description: domain for which to retrieve classification status
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: retrieved classification status
+    post:
+      summary: Sets the classification status for a given domain.
+      parameters:
+      - name: query
+        description: domain for which to set classification status
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: classification
+        description: classification status to set for domain. Allowed values malicious suspicious non-malicious or unknown
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successfully set classification status
+  /actions/ever-compromised:
+    get:
+      summary: Indicates whether or not a given domain has ever been compromised.
+      parameters:
+      - name: query
+        description: domain to check for compromised status
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successfully checked for compromised status
+    post:
+      summary: Sets status for a domain to indicate if it has ever been compromised.
+      parameters:
+      - name: query
+        description: domain for which to set compromised status
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: status
+        description: if the domain has ever been compromised
+        in: query
+        required: true
+        schema:
+          type: boolean
+      responses:
+        200:
+          description: successfully set status for domain
+  /actions/dynamic-dns:
+    get:
+      summary: Indicates whether or not a domain's DNS records are updated via dynamic DNS.
+      parameters:
+      - name: query
+        description: domain for which to retrieve dynamic DNS status
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successfully checked for dynamic DNS status
+    post:
+      summary: Sets a domain's status to indicate whether or not its DNS records are updated via dynamic DNS.
+      parameters:
+      - name: query
+        description: domain for which to set dynamic DNS status
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: status
+        description: if the domain's DNS records are updated via dynamic DNS
+        in: query
+        required: true
+        schema:
+          type: boolean
+      responses:
+        200:
+          description: successfully set dynamic domain status
+  /actions/monitor:
+    get:
+      summary: Indicates whether or not a domain is monitored.
+      parameters:
+      - name: query
+        description: domain for which to check for monitoring
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successfully checked if domain is monitored
+  /actions/sinkhole:
+    get:
+      summary: Indicates whether or not an IP address is a sinkhole.
+      parameters:
+      - name: query
+        description: IP address to check for sinkhole status
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successfully checked if IP address is a sinkhole
+    post:
+      summary: Sets status for an IP address to indicate whether or not it is a sinkhole.
+      parameters:
+      - name: query
+        description: IP address for which to set sinkhole status
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: status
+        description: if the IP address is a sinkhole
+        in: query
+        required: true
+        schema:
+          type: boolean
+      responses:
+        200:
+          description: successfully set status for IP sinkhole
+  /actions/tags/search:
+    get:
+      summary: Retrieve artifacts for a given tag.
+      parameters:
+      - name: query
+        description: tag for which to retrieve artifacts
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successfully retrieved artifacts for given tag
+  /enrichment:
+    get:
+      summary: Get enrichment data for a query
+      parameters:
+      - name: query
+        description: the domain or IP being queried
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successfully retrieved enrichment data
+  /enrichment/malware:
+    get:
+      summary: Get malware data for a query
+      parameters:
+      - name: query
+        description: the domain or IP being queried
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successfully queried to see if malware is affiliated with domain or IP
+  /enrichment/osint:
+    get:
+      summary: Get osint data for a query
+      parameters:
+      - name: query
+        description: the domain or IP being queried
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successfully retrieved osint data
+  /enrichment/subdomains:
+    get:
+      summary: Get subdomains data for a query
+      parameters:
+      - name: query
+        description: the domain being queried
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successfully retrieved subdomains
+  /trackers/search:
+    get:
+      summary: Retrieves hosts that employ user tracking mechanisms served from another given host.
+      parameters:
+      - name: query
+        description: host from which trackers originate
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: type
+        description: "Allowed values: 51laId, AboutmeId, AddThisPubId, AddThisUsername, AuthorstreamId, BitbucketcomId, BitlyId, CheezburgerId, ClickyId, ColourloversId, DiigoId, DispusId, EngadgetId, EtsyId, FacebookId, FavstarId, FfffoundId, FlavorsId, FlickrId, FoodspottingId, FreesoundId, GitHubId, GithubId, GoogleAnalyticsTrackingId, GooglePlusId, GoogleTagManagerId, HubpagesId, ImgurId, InstagramId, KloutId, LanyrdId, LastfmId, LibrarythingId, LinkedInId, LinkedinId, MarketinglandcomId, MixpanelId, MuckrackId, MyanimelistId, MyfitnesspalId, NewRelicId, OptimizelyId, PandoraId, PicasaId, PinkbikeId, PinterestId, PlancastId, PlurkId, PornhubId, RaptorId, ReadabilityId, RedditId, RedtubeId, SlideshareId, SmugmugId, SmuleId, SoundcloudId, SoupId, SpeakerdeckId, SporcleId, StackoverflowId, SteamcommunityId, StumbleuponId, ThesixtyoneId, TribeId, TripitId, TumblrId, TwitpicId, TwitterId, UntappdId, UstreamId, WattpadId, WefollowId, WhosAmungUsId, WordPressId, Wordpress, SupportId, XangaId, Xfire, SocialId, XhamsterId, XvideosId, YandexMetricaCounterId, YouTubeChannel, YouTubeId, YoutubeId"
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successfully retrieved tracker data
+  /whois:
+    get:
+      summary: Retrieves the WHOIS data for the specified query
+      parameters:
+      - name: query
+        description: the domain being queried
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: compact_record
+        description: whether to compress the results
+        in: query
+        required: false
+        schema:
+          type: boolean
+      - name: history
+        description: whether to return historical results
+        in: query
+        required: false
+        schema:
+          type: boolean
+      responses:
+        200:
+          description: successfully retrieved WHOIS data
+  /whois/search/keyword:
+    get:
+      summary: Search WHOIS data for a keyword.
+      parameters:
+      - name: keyword
+        description: being queried
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successfully retrieved WHOIS data via keyword
+  /whois/search:
+    get:
+      summary: Searches WHOIS data by field and query.
+      parameters:
+      - name: query
+        description: the value of the field being queried
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: field
+        description: "the field to query Allowed values: \"email\", \"domain\", \"name\", \"organization\", \"address\", \"phone\", \"nameserver\""
+        in: query
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successfully searched WHOIs by field and query
+  /enrichment/bulk:
+    get:
+      summary: Get bulk enrichment data for many queries
+      parameters:
+      - name: query
+        description: the domains and IPs being queried
+        in: query
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: string
+      responses:
+        200:
+          description: successfully searched bulk enrichment for many queries

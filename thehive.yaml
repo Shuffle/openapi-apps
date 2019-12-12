@@ -1,0 +1,208 @@
+openapi: 3.0.2
+info:
+  title: TheHive 
+  description: API description for TheHive
+  version: 0.0.2
+  contact: 
+    name: "@frikkylikeme"
+    url: "https://twitter.com/frikkylikeme"
+    email: "frikky@shuffler.io"
+paths:
+  /api/alert:
+    get:
+      summary: List alerts
+      responses:
+        200:
+          description: Get the alerts 
+    post:
+      summary: Create an alert
+      consumes:
+        - application/json
+      responses:
+        200:
+          description: Create an alert
+      parameters:
+      - in: body 
+        name: body 
+        description: The 
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Alert'
+              required: 
+              - title
+              - description
+              - type
+              - source
+              - sourceRef
+  /api/alert/{id}:
+    get:
+      summary: Get an alert
+      consumes:
+        - application/json
+      responses:
+        200:
+          description: Get an alert
+      parameters:
+      - in: path 
+        name: id 
+        description: The  path to alert to get
+        required: true
+    patch:
+      summary: Edit an alert 
+      consumes:
+        - application/json
+      responses:
+        200:
+          description: Edit an alert
+      parameters:
+      - in: path 
+        name: id 
+        description: The  path to alert to edit
+        required: true
+      - in: body
+        name: body
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Alert'
+    delete:
+      summary: Create an alert
+      consumes:
+        - application/json
+      responses:
+        200:
+          description: Delete an alert
+      parameters:
+      - in: path 
+        name: id 
+        description: The  path to alert to delete 
+        required: true
+  /api/case:
+    get:
+      summary: List cases 
+      responses:
+        200:
+          description: Get the alerts 
+    post:
+      summary: Create a case 
+      consumes:
+        - application/json
+      responses:
+        200:
+          description: Create a case 
+      parameters:
+      - in: body 
+        name: body 
+        description: The 
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Case'
+              required: 
+              - title
+              - description
+              - type
+  /api/case/{id}:
+    get:
+      summary: Get a case
+      consumes:
+        - application/json
+      responses:
+        200:
+          description: Get a case
+      parameters:
+      - in: path 
+        name: id 
+        description: The path to the case to get
+        required: true
+    patch:
+      summary: Edit a case 
+      consumes:
+        - application/json
+      responses:
+        200:
+          description: Edit a case 
+      parameters:
+      - in: path 
+        name: id 
+        description: The path to case to edit
+        required: true
+      - in: body
+        name: body
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Case'
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http 
+      scheme: bearer
+      bearerFormat: uuid
+    BasicAuth:
+      type: http
+      scheme: basic
+  schemas:
+    Alert:
+      type: object
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+        severity:
+          type: integer 
+        tags:
+          type: array
+        tlp:
+          type: integer
+        status:
+          type: integer
+        type:
+          type: string
+        source:
+          type: string
+        sourceRef:
+          type: string
+        follow:
+          type: boolean
+    Case:
+      type: object
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+        severity:
+          type: integer 
+        tags:
+          type: array
+        tlp:
+          type: integer
+        status:
+          type: array 
+          items:
+            type: string
+        owner:
+          type: string
+        flag:
+          type: boolean
+        resolutionStatus:
+          type: string
+        impactStatus:
+          type: string
+        summary:
+          type: string
+        caseId:
+          type: string
+        mergeInto:
+          type: string
+        mergeFrom:
+          type: array
+          items:
+            type: string
