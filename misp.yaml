@@ -1,186 +1,359 @@
-components:
-  schemas: {}
-  securitySchemes:
-    ApiKeyAuth:
-      in: header
-      name: Authorization
-      type: apikey
+swagger: "3.0"
 info:
+  title: MISP
+  description: "MISP API generated from the misp book:
+    https://github.com/MISP/misp-book/blob/master/automation/README.md"
+  version: "1.0"
   contact:
     email: frikky@shuffler.io
-    name: '@frikkylikeme'
+    name: "@frikkylikeme"
     url: https://twitter.com/frikkylikeme
-  description: 'MISP API generated from the misp book: https://github.com/MISP/misp-book/blob/master/automation/README.md'
-  title: MISP
-  version: 1.0.0
-openapi: 3.0.2
+servers:
+  - url: ""
+basePath: /
+schemes:
+  - ""
 paths:
   /admin/users/add:
-    post: {}
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   /attributes:
     get:
+      responses:
+        default:
+          description: default
+          schema: {}
       parameters:
-      - description: attribute
-        in: query
-        name: attribute
-        required: true
-        schema:
-          type: string
+        - in: query
+          name: attribute
+          description: attribute
+          required: true
+          schema:
+            type: string
   /attributes/add/:
     post:
+      responses:
+        default:
+          description: default
+          schema: {}
       parameters:
-      - description: event
-        in: query
-        name: event
-        required: true
-        schema:
-          type: string
+        - in: query
+          name: event
+          description: event
+          required: true
+          schema:
+            type: string
   /attributes/attributeStatistics:
     get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Will give an overview of the used attribute types
       description: Will give an overview of the used attribute types
+      parameters: []
   /attributes/delete/:
     post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Delete attributes.
       description: Delete attributes.
       parameters:
-      - description: attribute_uuid
-        in: query
-        name: attribute_uuid
-        required: true
-        schema:
-          type: string
-      - description: attribute_id
-        in: query
-        name: attribute_id
-        required: true
-        schema:
-          type: string
-      - description: attribute_id/1
-        in: query
-        name: attribute_id/1
-        required: true
-        schema:
-          type: string
+        - in: query
+          name: attribute_uuid
+          description: attribute_uuid
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: attribute_id
+          description: attribute_id
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: attribute_id/1
+          description: attribute_id/1
+          required: true
+          schema:
+            type: string
   /attributes/describeTypes:
-    get: {}
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   /attributes/restSearch:
-    post: {}
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   /events:
     delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Delete events based on criteria
       description: Delete events based on criteria
       parameters:
-      - description: 'event_id:'
-        in: query
-        name: 'event_id:'
-        required: true
-        schema:
-          type: string
-      - description: event_uuid
-        in: query
-        name: event_uuid
-        required: true
-        schema:
-          type: string
+        - in: query
+          name: "event_id:"
+          description: "event_id:"
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: event_uuid
+          description: event_uuid
+          required: true
+          schema:
+            type: string
     get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Receive events based on criteria
       description: Receive events based on criteria
       parameters:
-      - description: 'event_id:'
-        in: query
-        name: 'event_id:'
-        required: true
-        schema:
-          type: string
-      - description: event_uuid
-        in: query
-        name: event_uuid
-        required: true
-        schema:
-          type: string
-    post: {}
+        - in: query
+          name: "event_id:"
+          description: "event_id:"
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: event_uuid
+          description: event_uuid
+          required: true
+          schema:
+            type: string
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   /events/addTag:
-    post: {}
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   /events/hids:
-    get: {}
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   /events/index:
     get:
-      description: Return the event index. - Warning, there's a limit on the number
-        of results
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Return the event index. - Warning, there's a limit on the number of
+        results
+      description: Return the event index. - Warning, there's a limit on the number of
+        results
+      parameters: []
   /events/nids:
-    get: {}
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   /events/pushEventToZMQ/:
     get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Will push an Event to ZMQ
       description: Will push an Event to ZMQ
       parameters:
-      - description: event_id
-        in: query
-        name: event_id
-        required: true
-        schema:
-          type: string
+        - in: query
+          name: event_id
+          description: event_id
+          required: true
+          schema:
+            type: string
   /events/stix:
-    get: {}
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   /modules/:
-    get: {}
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   /modules/queryEnrichment:
-    post: {}
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   /servers/getPyMISPVersion:
-    get: {}
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   /servers/getVersion:
-    get: {}
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   /sightings/add/:
-    post: {}
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   /tags/add:
     post:
-      description: ''
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: ""
+      description: ""
+      parameters: []
   /tags/attachTagToObject:
     post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Attaches an Tag to an Object by a given UUID
       description: Attaches an Tag to an Object by a given UUID
       parameters:
-      - description: tag
-        in: query
-        name: tag
-        required: true
-        schema:
-          type: string
-      - description: UUID
-        in: query
-        name: UUID
-        required: true
-        schema:
-          type: string
+        - in: query
+          name: tag
+          description: tag
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: UUID
+          description: UUID
+          required: true
+          schema:
+            type: string
   /tags/removeTagFromObject:
     post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Removes an Tag to an Object by a given UUID
       description: Removes an Tag to an Object by a given UUID
       parameters:
-      - description: tag
-        in: query
-        name: tag
-        required: true
-        schema:
-          type: string
-      - description: UUID
-        in: query
-        name: UUID
-        required: true
-        schema:
-          type: string
+        - in: query
+          name: tag
+          description: tag
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: UUID
+          description: UUID
+          required: true
+          schema:
+            type: string
   /tags/tagStatistics/:
     get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Will give an overview of the used attribute tags
       description: Will give an overview of the used attribute tags
+      parameters: []
   admin/users:
     get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Will output all users
       description: Will output all users
+      parameters: []
   admin/users/add/:
-    post: {}
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   admin/users/delete/:
-    post: {}
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   admin/users/edit/:
-    post: {}
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      parameters: []
   admin/users/view/:
     get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Will return a single user. To view a user simply send a GET request.
       description: Will return a single user. To view a user simply send a GET request.
+      parameters: []
   warninglists/index:
     get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Return the index of warninglists enabled on the MISP instance
       description: Return the index of warninglists enabled on the MISP instance
+      parameters: []
   warninglists/view/1:
     get:
-      description: If the module needs credentials, API will get the information directly from MISP configuration.
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: If the module needs credentials, API will get the information directly
+        from MISP configuration.
+      description: If the module needs credentials, API will get the information directly
+        from MISP configuration.
+      parameters: []
+editing: false
+components:
+  securitySchemes: {}
+image: ""
+securityDefinitions: {}
