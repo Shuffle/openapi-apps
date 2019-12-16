@@ -1,0 +1,186 @@
+components:
+  schemas: {}
+  securitySchemes:
+    ApiKeyAuth:
+      in: header
+      name: Authorization
+      type: apikey
+info:
+  contact:
+    email: frikky@shuffler.io
+    name: '@frikkylikeme'
+    url: https://twitter.com/frikkylikeme
+  description: 'MISP API generated from the misp book: https://github.com/MISP/misp-book/blob/master/automation/README.md'
+  title: MISP
+  version: 1.0.0
+openapi: 3.0.2
+paths:
+  /admin/users/add:
+    post: {}
+  /attributes:
+    get:
+      parameters:
+      - description: attribute
+        in: query
+        name: attribute
+        required: true
+        schema:
+          type: string
+  /attributes/add/:
+    post:
+      parameters:
+      - description: event
+        in: query
+        name: event
+        required: true
+        schema:
+          type: string
+  /attributes/attributeStatistics:
+    get:
+      description: Will give an overview of the used attribute types
+  /attributes/delete/:
+    post:
+      description: Delete attributes.
+      parameters:
+      - description: attribute_uuid
+        in: query
+        name: attribute_uuid
+        required: true
+        schema:
+          type: string
+      - description: attribute_id
+        in: query
+        name: attribute_id
+        required: true
+        schema:
+          type: string
+      - description: attribute_id/1
+        in: query
+        name: attribute_id/1
+        required: true
+        schema:
+          type: string
+  /attributes/describeTypes:
+    get: {}
+  /attributes/restSearch:
+    post: {}
+  /events:
+    delete:
+      description: Delete events based on criteria
+      parameters:
+      - description: 'event_id:'
+        in: query
+        name: 'event_id:'
+        required: true
+        schema:
+          type: string
+      - description: event_uuid
+        in: query
+        name: event_uuid
+        required: true
+        schema:
+          type: string
+    get:
+      description: Receive events based on criteria
+      parameters:
+      - description: 'event_id:'
+        in: query
+        name: 'event_id:'
+        required: true
+        schema:
+          type: string
+      - description: event_uuid
+        in: query
+        name: event_uuid
+        required: true
+        schema:
+          type: string
+    post: {}
+  /events/addTag:
+    post: {}
+  /events/hids:
+    get: {}
+  /events/index:
+    get:
+      description: Return the event index. - Warning, there's a limit on the number
+        of results
+  /events/nids:
+    get: {}
+  /events/pushEventToZMQ/:
+    get:
+      description: Will push an Event to ZMQ
+      parameters:
+      - description: event_id
+        in: query
+        name: event_id
+        required: true
+        schema:
+          type: string
+  /events/stix:
+    get: {}
+  /modules/:
+    get: {}
+  /modules/queryEnrichment:
+    post: {}
+  /servers/getPyMISPVersion:
+    get: {}
+  /servers/getVersion:
+    get: {}
+  /sightings/add/:
+    post: {}
+  /tags/add:
+    post:
+      description: ''
+  /tags/attachTagToObject:
+    post:
+      description: Attaches an Tag to an Object by a given UUID
+      parameters:
+      - description: tag
+        in: query
+        name: tag
+        required: true
+        schema:
+          type: string
+      - description: UUID
+        in: query
+        name: UUID
+        required: true
+        schema:
+          type: string
+  /tags/removeTagFromObject:
+    post:
+      description: Removes an Tag to an Object by a given UUID
+      parameters:
+      - description: tag
+        in: query
+        name: tag
+        required: true
+        schema:
+          type: string
+      - description: UUID
+        in: query
+        name: UUID
+        required: true
+        schema:
+          type: string
+  /tags/tagStatistics/:
+    get:
+      description: Will give an overview of the used attribute tags
+  admin/users:
+    get:
+      description: Will output all users
+  admin/users/add/:
+    post: {}
+  admin/users/delete/:
+    post: {}
+  admin/users/edit/:
+    post: {}
+  admin/users/view/:
+    get:
+      description: Will return a single user. To view a user simply send a GET request.
+  warninglists/index:
+    get:
+      description: Return the index of warninglists enabled on the MISP instance
+  warninglists/view/1:
+    get:
+      description: If the module needs credentials, API will get the information directly from MISP configuration.
