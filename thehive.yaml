@@ -7,6 +7,8 @@ info:
     name: "@frikkylikeme"
     url: "https://twitter.com/frikkylikeme"
     email: "frikky@shuffler.io"
+servers:
+  - url: ""
 paths:
   /api/alert:
     get:
