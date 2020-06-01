@@ -9,12 +9,11 @@ The security industry is in need standardization on the API front, and I thought
 ## About
 I'm working on an [automation platform](https://shuffler.io) that leverages OpenAPI rather than a proprietary, code specific ecosystem to prevent the lockin issues with current SOAR products. It's also based on nsacyber's [WALKOFF](https://github.com/nsacyber/walkoff), and should work well with their platform as well. If something is off, please make a pull request, or just tell me.
 
-
 ## Goal
-1. Not having to write custom python code for everything I automate anymore. 
-2. Help standardize the API's for each kind of product
+1. Help standardize the API's for each TYPE of product (alerts, tickets)
+2. Not having to write custom python code for everything I automate anymore
 3. Teach security people about OpenAPI
 
-## Other resources
+## Other resources (non-infosec)
 * [openapi-directory](https://opencollective.com/openapi-directory)
 * [security-apis](https://github.com/deralexxx/security-apis)
