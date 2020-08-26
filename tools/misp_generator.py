@@ -1,6 +1,7 @@
 import json
 import yaml
 
+# https://raw.githubusercontent.com/MISP/misp-book/master/automation/README.md
 items = []
 
 openapi = {
@@ -102,8 +103,6 @@ with open("misp.txt", "r") as tmp:
                 #print(curline)
 
 print(json.dumps(openapi, indent=4))
-
-
-generatedfile = "generated/misp.yaml"
+generatedfile = "misp.yaml"
 with open(generatedfile, "w+") as tmp:
     tmp.write(yaml.dump(openapi))
