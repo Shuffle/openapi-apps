@@ -99,6 +99,7 @@ paths:
       - in: body 
         name: body 
         description: The 
+        example: {"title": "testing", "description": "test2", "type": "type"}'
         required: true
         content:
           application/json:
