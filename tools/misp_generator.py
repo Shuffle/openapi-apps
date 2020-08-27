@@ -1,14 +1,15 @@
 import json
 import yaml
 
-# https://raw.githubusercontent.com/MISP/misp-book/master/automation/README.md
+# MISP: https://raw.githubusercontent.com/MISP/misp-book/master/automation/README.md
+project_name = "misp"
 items = []
 
 openapi = {
     "openapi": "3.0.2", 
     "info": {
         "title": "MISP",
-        "description": "MISP API generated from the misp book: https://github.com/MISP/misp-book/blob/master/automation/README.md",
+        "description": "Generated from CIRCL API docs",
         "version": "1.0.0",
         "contact": {
             "name": "@frikkylikeme",
@@ -28,8 +29,7 @@ openapi = {
         },
     }
 }
-
-with open("misp.txt", "r") as tmp:
+with open("%s.txt" % project_name, "r") as tmp:
     newitem = {}
     recorditem = False
 
@@ -103,6 +103,6 @@ with open("misp.txt", "r") as tmp:
                 #print(curline)
 
 print(json.dumps(openapi, indent=4))
-generatedfile = "misp.yaml"
+generatedfile = "%s.yaml" % project_name
 with open(generatedfile, "w+") as tmp:
     tmp.write(yaml.dump(openapi))
