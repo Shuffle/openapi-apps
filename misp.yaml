@@ -14,6 +14,8 @@ info:
   title: MISP
   version: 1.0.0
 openapi: 3.0.2
+servers:
+  - url: ""
 paths:
   /admin/users/add:
     post: {}
