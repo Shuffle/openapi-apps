@@ -1,0 +1,696 @@
+swagger: "3.0"
+info:
+  title: GoSecure EDR
+  description: GoSecure EDR API generated from the GoSecure EDR API Doc
+  version: "1.0"
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAYAAACvDDbuAAAONElEQVR4Xu2dW4xNWRrHv2NQBEO7hZauuM+DiQQZiUbiGiVE0whJU0hIEJFQQiQ8uLy4vcgE0cSl6TAIJsQlcUmn+kFmMIh4cI1kihG3UnQrSp/Jt6f3mX32WXuvtY69d61V+79fJHW+vdb3/b/fuq9zZLLZbJbwQAHLFMgAXMsyBncdBQAuQLBSAYBrZdrgNMAFA1YqAHCtTBucBrhgwEoFAK6VaYPTABcMWKkAwLUybXAa4IIBKxUAuFamDU4DXDBgpQIA18q0wWmACwasVADgWpk2OA1wwYCVCgBcA9P225tqqr15w0DPzHEJ4JqTi5wntbdv0X/+3NdAz8xxCeCak4sCcDOlbQ30zgyXAK4Zecjzwu1xAW5wcgAuwDVQAblLAFeuUeIW6HHlkgNcuUaJWwBcueQAV65R4hYAVy45wJVrlLgFwJVLDnDlGiVuAXDlkgNcuUaJWwBcueQAV65R4hYAVy45wJVrlLgFwJVLDnDlGiVuAXDlkgNcuUaJWwBcueQAV65R4hYAVy45wJVrlLgFwJVLDnDlGiVuAXDlkgNcuUaJWwBcueQAV65R4hYAVy45wJVrlLgFwJVLDnDlGiVuAXDlkgNcuUaJWwBcueQAV65R4hYAVy45wJVrlLgFwJVLDnDlGiVuAXDlkgNcuUaJWwBcueQAV65R4hYAVy45wJVrlLgFwJVLDnDlGiVugd8OK5Tc/6s+sYH7a+VP9Mu5s9SoVcvEE297hZlmzalx9562hxGZ/3UP7tGbVRWU+eKLXJmxgVv94w9U/V15ZM6nqaDmc2dRh+/3pink0FhFU6fYwcUPt+nxl331ippPKwe4HtkArh5D9WINcAtlB7j1gqJepQAX4OoRY4g1wAW4hqCo5wbABbh6xBhiDXABriEo6rkBcAGuHjGGWANcgGsIinpuAFyAq0eMIdYAF+AagqKeGwAX4OoRY4g1wAW4hqCo5wbABbh6xBhiDXABriEo6rkBcAGuHjGGWANcgGsIinpuAFyAq0eMIdYAF+AagqKeGwAX4OoRY4g1wAW4hqCo5wbABbh6xBhiDXABriEo6rkBcAGuHjGGWANcgGsIinpuAFyAq0eMIdYAF+AagqKeGwA3reB+qqPsmxo9WkyyrskSfjssPyEN/pdsso9fUser/6DGX35pEoravmSalNAf2rXTfq+hvpAKcDs9fEBNu3ZrqDlMZVwAN5Vptz9ogGt/DlMZAcBNZdrtDxrg2p/DVEYAcFOZdvuDBrj25zCVEQDcVKbd/qABrv05TGUEADeVabc/aIBrfw5TGQHATWXa7Q8a4Nqfw1RGAHBTmXb7gwa49ucwlREA3FSm3f6gAa79OUxlBPUCLrXK6Itdk9V/h+upyRIukutLZ/obLrheljLZbLYISuSh/lr5E/3y95NEJSVy46gsamup9dIKatzJ7q/uRCVHQynnw6OHVLPtr3ksxQZuQxENcZipAMA1My/wSqIAwAUiVioAcK1MG5wuGtza2lp68uQJHTt2jF6/fk0fPnxw1KypCf8xjlatWjl2TZs2pTZt2lC/fv1owIAB1Lp1a2Oy4Y2NnXr27Jm2bybHpx2MgS8UBe7evXtpyZIlDrBRPeXl5TRr1iwaMWJEVEUWVc7Fixdp3rx59ODBg6LeD3pp8+bNNHfuXKMaaKQBJlyYNrgM1/79+2NzkxNcUVERW/lhBXODnDNnTmx1d+/ena5cuULt27ePrY60FKwF7o4dO2jBggWxa3P16lXq379/YD08lPPz/v1759+PHz8KbZs0aeL8vVmzZs6/JSF7ys+fP6cOHTrEHhuPLPv27curp7q6OrJ6OdawOP3aySpWKc/Ng1tWMdM+9iusHL9GyuDyiwyTyhDqAuMVJQgukXDLly+nDRs2FHz06NEjZ0595swZ4kDfvXvn2AQl3hWwRYsWTjIHDRpEkyZNEjaKsN6We8oxY8aQOz+XJZvn+Y8fP6bz588LG9XDhw+pa9euTjHXrl2j8ePHU6dOnWTFSj9/+vQpHThwoGC6xVqdOXuWzp87R7du3crpJi2QiFg71nH48OE0efLknN/uuzy1mjFjRs5/zsWFCxcK7GR1cae4adOm3FSKy2FtuG7+d+rUqXnTLGVw+WVeRIke7oUZNvdp2bKl0O7t27e5v798+ZIOHz5MLDY3hsrKytxn48aNcwD19hxR9vbs69q1a/PK37JlCy1btqzA72KHd4aFAeaYL1++TEePHqU7d+44sR4/cYImfvNNDtwgXWXJFn3uLZs/55Fk+vTpDkxRPNu3b6f58+fnimJwR44cmVe0t2Gq1inSn9dQLrh+jZTBPXHyJE2aOLHAjyjmpJzk27dvO4s9HkZfvHiRB65IHFVBguxWrVpF69aty30cBG4U8bmVcC/C0yBuDN4eN05w41iTcCNwF9HGgxuU2GJaly50Q4cOzeuRdd8Psvf6HhSfaE4aVf3uVMEPLo9gAwcO1K6G54hlZWW5RsFTq27dov/lSvZv27Ztjn/Gg7tixQrauHFjnphhwyiL5p068PwwbNEQlCUe6nr16lWw9cY9Ic+5OnfuHJpgHq4rf/6ZKpYuLZife3uOIHC5cIa3b9++uXp69OxJpV99RW3btpXCxf6FxS2agvmHe2klAQaimHgaxtOkPn36SIvlffrdu3fT+vXr82yHDBlCp06dcoZx48FduHAh8fzG+4jmou7nHBAP++7WGdt6xerYsaMDHs+Hw6AW9RreFi9V/3cDkcDeaUAc0xGu2o170Ndf5+a1Xp/jBHf16tUF0OmOkDyNGzVqVN6Ixx2Wu3BqcOC6yeEek1vn1q1b6fr160LO+ARtwoQJzqq/d+/eNHjw4FwvJRKmmB6J/eBek3sR9/HuXogSpNooVO28PZX7ThC4Y8vKCraHVOrxbkX5Oxs+pbx06ZL2IYh39HR9cOfoDRZcN1B3AcY7Cf4phz8hvEo9ffq0A69oUegd4lWSyTai7Tz/thvDzYcfcR6w+EeLsN0a1dhcO//Uzb8wEzUc3Tr89g0eXG/ADAhvD+3cuVPYC9cXuK6P3MP868YNun/vnvMnvqvA23b88I4HP7wQ4i29oFEkDAj/Pm5UuwreIZzrB7hEJJrjegErpuVyL8zTA3/y6xvcoFjcUyfv56LTO9675UUNH6KIDl68I0aUPS4vBG/evJk7Uga4RCTaVeATsqqqqs86exdtdZkKrm7jDNqpkB1AuLsYupeYeK2waNGi3PoA4BJRUBJk9wpkyeZjZH+P692tEM2hipnjyhZnPAcu5ow9LL6gQxsZuMXEJ/IjqsUZjwreRsQNhHeIeA1i/Bw3KAk8rzpy5EjopRiRqAzK8ePHhbexvJv+oqHUf+olaxz8uawcbpgHDx6k0aNHO/cSvKdbKuWLbIrtcYvZNRHVLxolo9gO805Jotr1EZ3w8TSMG4cod8pHvrJTGB7eu3TpopRjXuC45/aiF/bs2UOzZ892PuJ6eYvMP1dkm2HDhjn7wKJLPfwuv8PzTb4fILpj6wVEBJkb06Rvv3UOHFQf9+g6aHfCO0rFuY8riok7hTVr1uT2z4NiYmhYPz688R/1e7fVRP6zbrt27VK+aBO0hx4JuLww4QMD3qaK+/H3CqLphOsDt36+WcW3mLwP3xzjXj3sNpsMoDji5GH27t27uXWBKPEMV2lpqXb1/C2UadOm5Ua/sIUfjyhhx8FhOybeETHo1iB3Jnxxvp3kf8jkW3SiBu7dNvysHtft/eI4+/ZmyH/7iD8LmqZoZ9bzAs+j+WDEfbhh8t+iukUV5Js/vih3FbhO/zQj7ks2XGfYcXmxOZLtvChPFVwHeOieOXNm5JdeuIX+7cgR4bFo1OLwUHbo0KGC3ZCorwD6kyaam8cNLveIixcvjuxQJei2XJTweqeKrOFn97je3omvIfLxoQuV9yhVpZUxqLx44KGTL63wEafsEo57kZzLX7lyZeA3H0T189DTo0cP58uZsu+1cQ/Phw98Yf1ze2B3a0t0CTsoKSr6BdkELex4Hsm7N/fv3y+4cxJWHzfysWPHOlOxKVOmhG59MmDMBO8l654+8ikmj+be222uX5GB6w9U9LULFfE/Z/tJ9+suxdRVbFze2GX1RlGHtz7ZV23YVkc7lfJEudapg98P00mkkfZUQQVI2ECBuBUAuHErjPJjUQDgxiIrCo1bAYAbt8IoPxYFYgO37mkV1VVVUaakhLK//w5CsRH4yxCV6f6tac9e1OiP5vycU7Ex473/K/Dbm2r6cO9ujiXOdWzgVv/4A1V/V564/vhF8sQlj73C99f+Sc8G/CWvntjBzZTKv1AYVeTZxy/xU/pRiWlQOfXyf0AAXIMIsNQVgGtp4tLuNsBNOwGWxg9wLU1c2t0GuGknwNL4Aa6liUu72wA37QRYGj/AtTRxaXcb4KadAEvjB7iWJi7tbgPctBNgafwA19LEpd1tgJt2AiyNH+Bamri0uw1w006ApfEDXEsTl3a3AW7aCbA0/gYPLn2qo0zpnyxNz//cbvTxHZUML6N2G7dYHUeUzjd8cFmtT3VRapZ4Wdl/v6Hmc2dRh+/3Jl63qRWmA1xT1Vf0K/vqFTWfVg5wPXoBXEV46tMM4BaqD3Drk0jFugEuwFVExSwzgAtwzSJS0RuAC3AVUTHLDOACXLOIVPQG4AJcRVTMMgO4ANcsIhW9AbgAVxEVs8wALsA1i0hFbwAuwFVExSwzgAtwzSJS0RuAC3AVUTHLDOACXLOIVPQG4AJcRVTMMgO4ANcsIhW9AbgAVxEVs8wALsA1i0hFbwAuwFVExSwzgAtwzSJS0RuAC3AVUTHLDOACXLOIVPQG4AJcRVTMMgO4auD+F20nq72e/ZXHAAAAAElFTkSuQmCC
+  contact:
+    email: towen@gosecure.net
+    name: "@owentl"
+    url: https://medium.com/@owentl
+  x-categories:
+    - edr
+servers:
+  - url: ""
+basePath: /
+schemes:
+  - ""
+paths:
+  /api/v2/behaviors:
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Retrieve informtion on a collection of behaviors
+      parameters:
+        - in: query
+          name: expression
+          description: CQL expression
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: fields
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: limit
+          description: limit
+          required: false
+          schema:
+            type: string
+  "/api/v2/behaviors/{id}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Retrieve behaviors for specific endpoints
+      parameters:
+        - in: query
+          name: fields
+          description: Fields to return
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  /api/v2/behavior/tags:
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Retrieve tags from behaviors
+      parameters:
+        - in: query
+          name: expression
+          description: expression
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: q
+          description: return tags that start with this case-sensitive prefix
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: limit
+          description: limit
+          required: false
+          schema:
+            type: string
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Add tags to behaviors
+      parameters:
+        - in: query
+          name: expression
+          description: CQL expression to filter
+          required: true
+          schema:
+            type: string
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Replace tags on behaviors
+      parameters:
+        - in: query
+          name: expression
+          description: CQL expression to filter
+          required: true
+          schema:
+            type: string
+    delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Remove tags from behaviors
+      parameters:
+        - in: query
+          name: expression
+          description: CQL expression to filter
+          required: true
+          schema:
+            type: string
+  "/api/v2/behavior/{id}/tags":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Retrieve tags from behaviors on an endpoint
+      parameters:
+        - in: query
+          name: fields
+          description: Fields to return
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Add tags from behaviors on an endpoint
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Set tags from behaviors on an endpoint
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Remove tags from behaviors on an endpoint
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  /api/v2/endpoints:
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get list of endpoints
+      parameters:
+        - in: query
+          name: expression
+          description: expression
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: fields
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: limit
+          description: limit
+          required: false
+          schema:
+            type: string
+  "/api/v2/endpoints/{id}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get Details of endpoint
+      parameters:
+        - in: query
+          name: fields
+          description: Fields
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  /api/v2/endpoints/commands:
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Return commands for all endpoints
+      parameters:
+        - in: query
+          name: fields
+          description: Fields
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: expression
+          description: CQL expression to filter
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: limit
+          description: max number of results
+          required: false
+          schema:
+            type: string
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Send commands to multiple endpoints
+      parameters:
+        - in: query
+          name: expression
+          description: CQL expression to filter
+          required: true
+          schema:
+            type: string
+  "/api/v2/endpoints/{id}/commands":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get commands for an endpoint
+      parameters:
+        - in: query
+          name: fields
+          description: Fields
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/api/v2/endpoints/commands/{id}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Look for a specific command on an endpoint
+      parameters:
+        - in: query
+          name: fields
+          description: Fields
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Send a command to an endpoint
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  /api/v2/endpoints/files:
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get all extracted files for all endpoints on the cluster
+      parameters:
+        - in: query
+          name: limit
+          description: Limit of files to retrieve
+          required: false
+          schema:
+            type: string
+  "/api/v2/endpoints/{id}/files":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get all files from an endpoint
+      parameters:
+        - in: query
+          name: limit
+          description: Limit of files to retrieve
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: Comma seperated list of fields that will be returned
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/api/v2/endpoints/files/{id}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Retrieve files from an endpoint
+      parameters:
+        - in: query
+          name: fields
+          description: Comma seperated list of fields that will be returned
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Delete a file off an endpoint
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/api/v2/downloads/extractedfiles/{id}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Download extracted files from an endpoint
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  /api/v2/endpoints/tags:
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Retrieve tags for a collection of endpoints
+      parameters:
+        - in: query
+          name: q
+          description: Return tags that start with this case-sensitive prefix
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: expression
+          description: CQL expression to filter
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: limit
+          description: max number of results
+          required: false
+          schema:
+            type: string
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Modify tags for a collection of endpoints
+      parameters:
+        - in: query
+          name: expression
+          description: CQL expression to filter
+          required: true
+          schema:
+            type: string
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Add tags for a collection of endpoints
+      parameters:
+        - in: query
+          name: expression
+          description: CQL expression to filter
+          required: true
+          schema:
+            type: string
+    delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Remove tags for a collection of endpoints
+      parameters:
+        - in: query
+          name: expression
+          description: CQL expression to filter
+          required: true
+          schema:
+            type: string
+  "/api/v2/endpoints/{id}/tags":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Retrieve tags for a specified endpoint
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Modify tags for a specified endpoint
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Add tags for a specified endpoint
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Remove tags for a specified endpoint
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  /api/v2/events:
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Receive events based on criteria
+      parameters:
+        - in: query
+          name: expression
+          description: expression
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: fields
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: limit
+          description: limit
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/api/v2/events/{id}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Revieve events based on event id
+      parameters:
+        - in: query
+          name: fields
+          description: fields
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  /api/v2/events/tags:
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get tags
+      description: Get the tags sent to events
+      parameters:
+        - in: query
+          name: expression
+          description: A CQL search expression that filters on events
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: limit
+          description: The maximum number of tags to return
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: q
+          description: Return tags beginning with this case-sensitive prefix
+          required: false
+          schema:
+            type: string
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Add tags to a collection of events
+      parameters:
+        - in: query
+          name: expression
+          description: A CQL search expression that filters on events
+          required: false
+          schema:
+            type: string
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Set tags for a collection of events
+      parameters:
+        - in: query
+          name: expression
+          description: A CQL search expression that filters on events
+          required: false
+          schema:
+            type: string
+  "/api/v2/events/{id}/tags":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get the tags for an event
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Add tag to specific event
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Set tags for a specific event
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Delete the tags for an event
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+tags:
+  - name: edr
