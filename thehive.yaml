@@ -9,11 +9,6 @@ info:
     email: frikky@shuffler.io
     name: "@frikkylikeme"
     url: https://twitter.com/frikkylikeme
-  x-categories:
-    - What
-    - is
-    - going
-    - on
 servers:
   - url: ""
 basePath: /
@@ -250,8 +245,3 @@ components:
       type: http
       scheme: bearer
       bearerFormat: UUID
-tags:
-  - name: tags
-  - name: for
-  - name: this
-  - name: app
