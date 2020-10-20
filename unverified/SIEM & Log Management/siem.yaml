@@ -1,0 +1,395 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        _id: {type: string}
+        agent_id: {type: string}
+        asset_id: {type: string}
+        build_commit: {type: string}
+        build_date: {type: string}
+        component_id: {type: string}
+        configuration_reported_revision: {type: string}
+        display_name: {type: string}
+        doc_version: {type: string}
+        first_seen: {type: string}
+        full_path_enforcement: {type: string}
+        health_controller_aggregator_cluster_id: {type: string}
+        health_controller_aggregator_component_id: {type: string}
+        health_controller_aggregator_hostname: {type: string}
+        health_controller_capabilities: {type: string}
+        health_controller_status: {type: string}
+        health_deception_agent_aggregator_cluster_id: {type: string}
+        health_deception_agent_aggregator_component_id: {type: string}
+        health_deception_agent_aggregator_hostname: {type: string}
+        health_deception_agent_capabilities: {type: string}
+        health_deception_agent_status: {type: string}
+        health_detection_agent_aggregator_cluster_id: {type: string}
+        health_detection_agent_aggregator_component_id: {type: string}
+        health_detection_agent_aggregator_hostname: {type: string}
+        health_detection_agent_capabilities: {type: string}
+        health_detection_agent_status: {type: string}
+        health_enforcement_agent_aggregator_cluster_id: {type: string}
+        health_enforcement_agent_aggregator_component_id: {type: string}
+        health_enforcement_agent_aggregator_hostname: {type: string}
+        health_enforcement_agent_capabilities_is_ok: {type: string}
+        health_enforcement_agent_capabilities_name: {type: string}
+        health_enforcement_agent_capabilities_state: {type: string}
+        health_enforcement_agent_capabilities_text: {type: string}
+        health_enforcement_agent_status: {type: string}
+        health_reveal_agent_aggregator_cluster_id: {type: string}
+        health_reveal_agent_aggregator_component_id: {type: string}
+        health_reveal_agent_aggregator_hostname: {type: string}
+        health_reveal_agent_capabilities: {type: string}
+        health_reveal_agent_status: {type: string}
+        hostname: {type: string}
+        id: {type: string}
+        implicit_rules: {type: string}
+        installed_modules: {type: string}
+        ip_addresses: {type: string}
+        is_agent_missing: {type: string}
+        is_configuration_dirty: {type: string}
+        is_missing: {type: string}
+        kernel: {type: string}
+        label_groups: {type: string}
+        labels_color_index: {type: string}
+        labels_id: {type: string}
+        labels_key: {type: string}
+        labels_name: {type: string}
+        labels_value: {type: string}
+        last_seen: {type: string}
+        not_monitored: {type: string}
+        not_rules_support: {type: string}
+        os: {type: string}
+        policy_derivation_type: {type: string}
+        policy_revision: {type: string}
+        status: {type: string}
+        status_flags: {type: string}
+        supported_features: {type: string}
+        version: {type: string}
+      type: object
+    tmp1:
+      properties:
+        _cls: {type: string}
+        affected_assets_country: {type: string}
+        affected_assets_country_code: {type: string}
+        affected_assets_ip: {type: string}
+        affected_assets_is_inner: {type: string}
+        affected_assets_labels: {type: string}
+        affected_assets_vm_full_name: {type: string}
+        affected_assets_vm_id: {type: string}
+        affected_assets_vm_name: {type: string}
+        affected_assets_vm_recent_domains: {type: string}
+        closed_time: {type: string}
+        concatenated_tags_display_name: {type: string}
+        concatenated_tags_events: {type: string}
+        concatenated_tags_tag_class: {type: string}
+        description_id: {type: string}
+        description_template: {type: string}
+        description_template_args_first_asset_id: {type: string}
+        description_template_args_first_asset_type: {type: string}
+        description_template_args_first_asset_value: {type: string}
+        description_template_args_second_asset_id: {type: string}
+        description_template_args_second_asset_type: {type: string}
+        description_template_args_second_asset_value: {type: string}
+        description_type: {type: string}
+        description_value: {type: string}
+        destination_asset_ip: {type: string}
+        destination_asset_is_inner: {type: string}
+        destination_asset_labels: {type: string}
+        destination_asset_vm_full_name: {type: string}
+        destination_asset_vm_id: {type: string}
+        destination_asset_vm_name: {type: string}
+        destination_asset_vm_recent_domains: {type: string}
+        direction: {type: string}
+        doc_version: {type: string}
+        end_time: {type: string}
+        ended: {type: string}
+        enriched: {type: string}
+        experimental_id: {type: string}
+        first_asset_asset_id: {type: string}
+        first_asset_asset_type: {type: string}
+        flow_ids: {type: string}
+        has_export: {type: string}
+        has_policy_violations: {type: string}
+        id: {type: string}
+        incident_group_gid: {type: string}
+        incident_group_gname: {type: string}
+        incident_type: {type: string}
+        iocs: {type: string}
+        is_experimental: {type: string}
+        labels_asset_ids: {type: string}
+        labels_id: {type: string}
+        labels_key: {type: string}
+        labels_name: {type: string}
+        labels_value: {type: string}
+        last_updated_time: {type: string}
+        original_id: {type: string}
+        policy_revision: {type: string}
+        recommendations: {type: string}
+        reenrich_count: {type: string}
+        remote_index: {type: string}
+        second_asset_asset_id: {type: string}
+        second_asset_asset_type: {type: string}
+        sensor_type: {type: string}
+        severity: {type: string}
+        similarity_calculated: {type: string}
+        source_asset_country: {type: string}
+        source_asset_country_code: {type: string}
+        source_asset_ip: {type: string}
+        source_asset_is_inner: {type: string}
+        source_asset_labels: {type: string}
+        start_time: {type: string}
+        stories_arguments_destination_port: {type: string}
+        stories_arguments_malicious_ip_ip_address: {type: string}
+        stories_arguments_malicious_ip_reputation_info: {type: string}
+        stories_arguments_remote_asset_name: {type: string}
+        stories_arguments_remote_ip_address: {type: string}
+        stories_parts_type: {type: string}
+        stories_parts_value: {type: string}
+        stories_tags_display_name: {type: string}
+        stories_tags_events: {type: string}
+        stories_tags_tag_class: {type: string}
+        stories_template: {type: string}
+        stories_time: {type: string}
+        tags_display_name: {type: string}
+        tags_events: {type: string}
+        tags_id: {type: string}
+        tags_search_names: {type: string}
+        tags_shortened_group_display_name: {type: string}
+        tags_source: {type: string}
+        tags_tag_args_ip_address: {type: string}
+        tags_tag_args_reason: {type: string}
+        tags_tag_args_side: {type: string}
+        tags_tag_class: {type: string}
+        tags_tag_type_key: {type: string}
+        tags_time: {type: string}
+        tags_visible: {type: string}
+      type: object
+    tmp2:
+      properties:
+        _cls: {type: string}
+        _id: {type: string}
+        affected_assets: {type: string}
+        closed_time: {type: string}
+        concatenated_tags: {type: string}
+        customer_name: {type: string}
+        destination_asset_country: {type: string}
+        destination_asset_country_code: {type: string}
+        destination_asset_domain: {type: string}
+        destination_asset_ip: {type: string}
+        destination_asset_is_inner: {type: string}
+        destination_asset_labels: {type: string}
+        destination_asset_vm_full_name: {type: string}
+        destination_asset_vm_id: {type: string}
+        destination_asset_vm_name: {type: string}
+        destination_asset_vm_recent_domains: {type: string}
+        destination_asset_vm_tenant_name: {type: string}
+        destination_domain: {type: string}
+        destination_ip: {type: string}
+        destination_net: {type: string}
+        destination_port: {type: string}
+        destination_ports: {type: string}
+        destination_processes: {type: string}
+        direction: {type: string}
+        doc_version: {type: string}
+        end_time: {type: string}
+        ended: {type: string}
+        enriched: {type: string}
+        experimental_id: {type: string}
+        first_asset_asset_id: {type: string}
+        first_asset_asset_type: {type: string}
+        first_asset_value: {type: string}
+        flow_ids: {type: string}
+        has_export: {type: string}
+        honeypot_id: {type: string}
+        honeypot_version: {type: string}
+        hpvm_redirection_result: {type: string}
+        id: {type: string}
+        incident_group: {type: string}
+        incident_type: {type: string}
+        iocs: {type: string}
+        is_experimental: {type: string}
+        keys_integer_hash: {type: string}
+        label_list: {type: string}
+        labels: {type: string}
+        last_updated_time: {type: string}
+        original_id: {type: string}
+        os: {type: string}
+        physical_network_id: {type: string}
+        policy_revision: {type: string}
+        policy_violations: {type: string}
+        protocol: {type: string}
+        recommendations: {type: string}
+        reenrich_count: {type: string}
+        remote_index: {type: string}
+        second_asset_asset_id: {type: string}
+        second_asset_asset_type: {type: string}
+        second_asset_value: {type: string}
+        sensor_name: {type: string}
+        sensor_type: {type: string}
+        service_provider_id: {type: string}
+        severity: {type: string}
+        similarity_calculated: {type: string}
+        similarity_point_id: {type: string}
+        source_asset_country: {type: string}
+        source_asset_country_code: {type: string}
+        source_asset_domain: {type: string}
+        source_asset_ip: {type: string}
+        source_asset_is_inner: {type: string}
+        source_asset_labels: {type: string}
+        source_asset_vm_full_name: {type: string}
+        source_asset_vm_id: {type: string}
+        source_asset_vm_name: {type: string}
+        source_asset_vm_recent_domains: {type: string}
+        source_asset_vm_tenant_name: {type: string}
+        source_domain: {type: string}
+        source_ip: {type: string}
+        source_port: {type: string}
+        source_processes: {type: string}
+        start_time: {type: string}
+        template_id: {type: string}
+        template_revision: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Guardicore Siem
+  title: Guardicore Siem
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Guardicore Get Agents
+      parameters:
+      - description: Display status - should be either UP or DOWN
+        example: UP
+        in: query
+        name: Query Display Status Value
+        required: false
+        schema: {type: string}
+      - description: 'Agent status flags: undefined (Any Flag), 2 (PollingMode), 3
+          (OutdatedPolicy), 4 (OutdatedConfiguration), 5 (NoRevealReceived), 6 (HighDropRate),
+          7 (AgentMissing), 8 (PartialPolicy), 9 (EnforcementPaused), 10 (NoRevealReported),
+          11 (RevealOffline), 12 (EnforcementOffline), 13 (RevealModuleError), 14
+          (EnforcementModuleError), 15 (DetectionModuleError), 16 (DeceptionModuleError),
+          17 (ControllerModuleError)'
+        example: 3,5,7
+        in: query
+        name: Query Status Flag Values
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Guardicore Get Agents
+  tmp1:
+    post:
+      description: Guardicore Get Events
+      parameters:
+      - description: The incident ID from which to retrieve events
+        example: d69f3ff0-3205-4672-b456-250fe9e7fa0e
+        in: query
+        name: Incident ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Guardicore Get Events
+  tmp2:
+    post:
+      description: Guardicore Get Incidents
+      parameters:
+      - description: Incident start time min value.  If you want to use a relative
+          time, see the README for details.
+        example: '2019-05-25'
+        in: query
+        name: From Time
+        required: true
+        schema: {type: string}
+      - description: Incident start time max value.  If you want to use a relative
+          time, see the README for details.
+        example: '2019-05-25'
+        in: query
+        name: To Time
+        required: true
+        schema: {type: string}
+      - description: Sort the incidents according to this property
+        example: start_time
+        in: query
+        name: Sort
+        required: false
+        schema: {type: string}
+      - description: Severity to filter by
+        example: Low, Medium, High
+        in: query
+        name: Severity
+        required: false
+        schema: {type: string}
+      - description: Incident Group to filter by
+        example: string
+        in: query
+        name: Incident Group
+        required: false
+        schema: {type: string}
+      - description: Tag to filter by
+        example: string
+        in: query
+        name: Tag
+        required: false
+        schema: {type: string}
+      - description: Number of incidents to return per request
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Offset from the first incident in the query - used for pagination
+        example: '0'
+        in: body
+        name: Offset
+        required: false
+        schema: {type: string}
+      - description: Incident Type to filter by
+        example: Reveal
+        in: query
+        name: Incident Type
+        required: false
+        schema: {type: string}
+      - description: Whether to include events metadata or not
+        example: 'True'
+        in: query
+        name: Include Events
+        required: false
+        schema: {type: boolean}
+      - description: Tenant label
+        example: Environment
+        in: query
+        name: Label Name for Tenant Tagging
+        required: false
+        schema: {type: string}
+      - description: If this is a single customer instance, this should be the customer
+          name, and the label_name_for_tenant_tagging option should be blank
+        example: Generic Customer Name
+        in: query
+        name: Default Customer Name
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Guardicore Get Incidents
+tags:
+- {name: SIEM & Log Management}

@@ -1,0 +1,140 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        correlationId: {type: string}
+        error: {type: string}
+        requestId: {type: string}
+      type: object
+    tmp1:
+      properties:
+        allowedActions: {type: string}
+        category: {type: string}
+        description: {type: string}
+        groupKey: {type: string}
+        id: {type: string}
+        managedAgent_id: {type: string}
+        managedAgent_type: {type: string}
+        person_id: {type: string}
+        product: {type: string}
+        raisedAt: {type: string}
+        severity: {type: string}
+        tenant_id: {type: string}
+        tenant_name: {type: string}
+        type: {type: string}
+      type: object
+    tmp2:
+      properties:
+        apiHost: {type: string}
+        billingType: {type: string}
+        dataGeography: {type: string}
+        dataRegion: {type: string}
+        id: {type: string}
+        name: {type: string}
+        organization: {type: string}
+        partner_id: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Sophos Sophos Central
+  title: Sophos Sophos Central
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Apply an action to an alert in Sophos Central
+      parameters:
+      - description: ID of the tenant where the alert is
+        example: ''
+        in: query
+        name: Tenant ID
+        required: true
+        schema: {type: string}
+      - description: Alert ID on the tenant to send an action to
+        example: ''
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      - description: Action to apply to the alert, see README for options
+        example: ''
+        in: query
+        name: Action
+        required: true
+        schema: {type: string}
+      - description: Optional message to attach when applying the action
+        example: ''
+        in: query
+        name: Optional Message
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Sophos Central Alert Action
+  tmp1:
+    post:
+      description: Get Alerts from Sophos Central
+      parameters:
+      - description: Filter by product type, see README for allowed values
+        example: ''
+        in: query
+        name: Product Filter
+        required: false
+        schema: {type: string}
+      - description: Filter by category type, see README for allowed values
+        example: ''
+        in: query
+        name: Category Filter
+        required: false
+        schema: {type: string}
+      - description: Filter by severity level, see README for allowed values
+        example: ''
+        in: query
+        name: Severity Filter
+        required: false
+        schema: {type: string}
+      - description: Filter by alert ID
+        example: ''
+        in: query
+        name: IDs Filter
+        required: false
+        schema: {type: string}
+      - description: Filter alerts by tenant ID
+        example: ''
+        in: query
+        name: Tenant IDs Filter
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Sophos Get Alerts
+  tmp2:
+    post:
+      description: Get a list of Tenants in Sophos Central
+      parameters:
+      - description: Limit the results returned
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Sophos Central Get Tenants
+tags:
+- {name: Endpoint Security & Management}

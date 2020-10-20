@@ -1,0 +1,435 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        msg: {type: string}
+      type: object
+    tmp1:
+      properties:
+        completion_time: {type: string}
+        count: {type: string}
+        creation_time: {type: string}
+        file_id: {type: string}
+        id: {type: string}
+        name: {type: string}
+        offset: {type: string}
+        result_code: {type: string}
+        result_desc: {type: string}
+        result_type: {type: string}
+        status: {type: string}
+        username: {type: string}
+      type: object
+    tmp10:
+      properties:
+        completion_time: {type: string}
+        creation_time: {type: string}
+        file_id: {type: string}
+        id: {type: string}
+        name: {type: string}
+        result_code: {type: string}
+        result_desc: {type: string}
+        result_type: {type: string}
+        status: {type: string}
+        username: {type: string}
+      type: object
+    tmp11:
+      properties:
+        address: {type: string}
+        check_in_timeout: {type: string}
+        create_time: {type: string}
+        current_command_index: {type: string}
+        current_working_directory: {type: string}
+        drives: {type: string}
+        hostname: {type: string}
+        id: {type: string}
+        os_version: {type: string}
+        sensor_check_in_time: {type: string}
+        sensor_id: {type: string}
+        session_timeout: {type: string}
+        status: {type: string}
+        supported_commands: {type: string}
+      type: object
+    tmp2:
+      properties:
+        address: {type: string}
+        check_in_timeout: {type: string}
+        create_time: {type: string}
+        current_command_index: {type: string}
+        current_working_directory: {type: string}
+        drives: {type: string}
+        hostname: {type: string}
+        id: {type: string}
+        os_version: {type: string}
+        sensor_check_in_time: {type: string}
+        sensor_id: {type: string}
+        session_timeout: {type: string}
+        status: {type: string}
+        supported_commands: {type: string}
+      type: object
+    tmp3:
+      properties:
+        address: {type: string}
+        check_in_timeout: {type: string}
+        create_time: {type: string}
+        current_command_index: {type: string}
+        current_working_directory: {type: string}
+        drives: {type: string}
+        hostname: {type: string}
+        id: {type: string}
+        os_version: {type: string}
+        sensor_check_in_time: {type: string}
+        sensor_id: {type: string}
+        session_timeout: {type: string}
+        status: {type: string}
+        supported_commands: {type: string}
+      type: object
+    tmp4:
+      properties:
+        pid: {type: string}
+        return_code: {type: string}
+      type: object
+    tmp5:
+      properties:
+        completion_time: {type: string}
+        creation_time: {type: string}
+        file_id: {type: string}
+        id: {type: string}
+        name: {type: string}
+        result_code: {type: string}
+        result_desc: {type: string}
+        result_type: {type: string}
+        status: {type: string}
+        username: {type: string}
+      type: object
+    tmp6:
+      properties:
+        file: {type: string}
+        file_name: {type: string}
+        id: {type: string}
+        size: {type: string}
+        size_uploaded: {type: string}
+        upload_url: {type: string}
+      type: object
+    tmp8:
+      properties:
+        address: {type: string}
+        check_in_timeout: {type: string}
+        create_time: {type: string}
+        current_command_index: {type: string}
+        current_working_directory: {type: string}
+        drives: {type: string}
+        hostname: {type: string}
+        id: {type: string}
+        os_version: {type: string}
+        sensor_check_in_time: {type: string}
+        sensor_id: {type: string}
+        session_timeout: {type: string}
+        status: {type: string}
+        supported_commands: {type: string}
+      type: object
+    tmp9:
+      properties:
+        completion_time: {type: string}
+        creation_time: {type: string}
+        id: {type: string}
+        name: {type: string}
+        result_code: {type: string}
+        result_desc: {type: string}
+        result_type: {type: string}
+        status: {type: string}
+        username: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of VMware Carbon Black Cloud Audit And Remediation
+  title: VMware Carbon Black Cloud Audit And Remediation
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Adds a file to the device to later be executed.
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      - description: Path plus filename of the location to put the file.
+        example: C:\Swimlane.txt
+        in: query
+        name: Remote File Path
+        required: true
+        schema: {type: string}
+      - description: The file to upload.
+        example: ''
+        in: query
+        name: File
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Audit And Remediation Add File to Device
+  tmp1:
+    post:
+      description: Returns the file ID to be used for getting the file content.
+      parameters:
+      - description: Session ID received from the create session task.
+        example: 1105:2950646
+        in: query
+        name: Session ID
+        required: true
+        schema: {type: string}
+      - description: Path of the file to retrieve.
+        example: C:\\Windows\\System32\\swimlane.exe
+        in: query
+        name: File Path
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Audit And Remediation Get File ID
+  tmp10:
+    post:
+      description: Move a file's location on the device
+      parameters:
+      - description: Session ID received from the create session task.
+        example: 1105:2950646
+        in: query
+        name: Session ID
+        required: true
+        schema: {type: string}
+      - description: File ID returned by the Get File task.
+        example: 274a3bf1-abe4-4ff7-b321-52e4dcf6caa8
+        in: query
+        name: File ID
+        required: true
+        schema: {type: string}
+      - description: Destination path to put the file.
+        example: C:\\Users\\Swimlane\\Documents
+        in: query
+        name: Destination Path
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Audit And Remediation Live Response Put File
+  tmp11:
+    post:
+      description: Reset the session timeout clock
+      parameters:
+      - description: Session ID received from the create session task.
+        example: 1105:2950646
+        in: query
+        name: Session ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Audit And Remediation Live Response Reset
+        Session Timeout
+  tmp2:
+    post:
+      description: 'End an active device session '
+      parameters:
+      - description: ID of the session to close.
+        example: 2961:12345
+        in: query
+        name: Session ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Audit And Remediation Live Response Close
+        Session
+  tmp3:
+    post:
+      description: Create live response session with a device
+      parameters:
+      - description: ID of the device to create a Live Response connection with.
+        example: '2950646'
+        in: body
+        name: Device ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Audit And Remediation Live Response Create
+        Session
+  tmp4:
+    post:
+      description: 'Execute a process on a device '
+      parameters:
+      - description: Session ID received from the create session task.
+        example: 1105:2950646
+        in: query
+        name: Session ID
+        required: true
+        schema: {type: string}
+      - description: The path and command line of the executable
+        example: ''
+        in: query
+        name: Executable Path and Command Line
+        required: true
+        schema: {type: string}
+      - description: An optional parameter to specify whether to wait for the process
+          to complete execution before reporting the result. True to wait. Defaults
+          to False.
+        example: ''
+        in: query
+        name: Wait
+        required: false
+        schema: {type: boolean}
+      - description: An optional parameter to specify the working directory of the
+          executable
+        example: ''
+        in: query
+        name: Working Directory
+        required: false
+        schema: {type: string}
+      - description: An optional file that STDERR and STDOUT will be redirected to.
+        example: ''
+        in: query
+        name: Output File
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Audit And Remediation Live Response Execute
+        Process
+  tmp5:
+    post:
+      description: 'Get the status of a live response command '
+      parameters:
+      - description: Session ID received from the create session task.
+        example: 1105:2950646
+        in: query
+        name: Session ID
+        required: true
+        schema: {type: string}
+      - description: Command ID
+        example: '2'
+        in: body
+        name: Command ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Audit And Remediation Live Response Get Command
+        Status
+  tmp6:
+    post:
+      description: Get file content and metadata from a device.
+      parameters:
+      - description: File ID received from the Get File ID task.
+        example: 19e9ce33-35d9-4bac-9570-c2c76ecd5e8b
+        in: query
+        name: File ID
+        required: true
+        schema: {type: string}
+      - description: Session ID received from the create session task.
+        example: 1105:2950646
+        in: query
+        name: Session ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Audit And Remediation Live Response Get File
+  tmp7:
+    post:
+      description: Get a list of processes for a device session
+      parameters:
+      - description: Session ID received from the create session task.
+        example: 1105:2950646
+        in: query
+        name: Session ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200': {description: Successful request}
+      summary: VMware Carbon Black Cloud Audit And Remediation Live Response Get Process
+        List
+  tmp8:
+    post:
+      description: Get the status of a live response session
+      parameters:
+      - description: Session ID received from the create session task.
+        example: 1105:2950646
+        in: query
+        name: Session ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Audit And Remediation Live Response Get Session
+        Status
+  tmp9:
+    post:
+      description: Kill a process on a device by PID
+      parameters:
+      - description: The PID of the process to kill.
+        example: ''
+        in: query
+        name: PID to Kill
+        required: true
+        schema: {type: string}
+      - description: Session ID received from the create session task.
+        example: 1105:2950646
+        in: query
+        name: Session ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Audit And Remediation Live Response Kill
+        Process
+tags:
+- {name: Endpoint Security & Management}

@@ -1,0 +1,83 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Minemeld Minemeld
+  title: Minemeld Minemeld
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Adds IOCs to a database.
+      parameters:
+      - description: Database into which the IOC is inserted.
+        example: ''
+        in: query
+        name: IOC DB
+        required: true
+        schema: {type: string}
+      - description: Indicator(s) to add. Accepts list or delimited string of IOCs.
+        example: 8.8.8.8
+        in: query
+        name: Indicator
+        required: true
+        schema: {type: string}
+      - description: Type of indicator.
+        example: IPv4
+        in: query
+        name: Type
+        required: true
+        schema: {type: string}
+      - description: Delimiter to separate string of indicators. Defaults to comma.
+        example: ','
+        in: query
+        name: Delimiter
+        required: false
+        schema: {type: string}
+      - description: Time to live for the IOC in seconds. If blank the IOC will persist.
+        example: '3600'
+        in: body
+        name: TTL
+        required: false
+        schema: {type: string}
+      - description: Comment to include for the IOC.
+        example: ''
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      - description: 'Share level: green, yellow, or red. Can be left blank.'
+        example: green
+        in: query
+        name: Share Level
+        required: false
+        schema: {type: string}
+      - description: Confidence level (0-100).
+        example: '75'
+        in: body
+        name: Confidence
+        required: false
+        schema: {type: string}
+      - description: Direction, can be inbound or outbound.
+        example: inbound
+        in: query
+        name: Direction
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Minemeld Add IOC
+tags:
+- {name: SIEM & Log Management}

@@ -1,0 +1,86 @@
+components:
+  schemas:
+    tmp1:
+      properties:
+        subscribers: {type: string}
+      type: object
+    tmp2:
+      properties:
+        subscribers: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Swimlane Subscribers
+  title: Swimlane Subscribers
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Send the diff of a ticket to the subscribers
+      parameters:
+      - description: The list of users to receive the email
+        example: Subscribers List Field
+        in: query
+        name: Subscribers List
+        required: true
+        schema: {type: string}
+      - description: The address the email will come from
+        example: swimlane@mycompany.com
+        in: query
+        name: From Address
+        required: true
+        schema: {type: string}
+      - description: The name of the History Field
+        example: History
+        in: query
+        name: History Field Name
+        required: true
+        schema: {type: string}
+      - description: Override the default subject of 'Swimlane Ticket ABC-123 Changes'
+        example: ''
+        in: query
+        name: Subject Override
+        required: false
+        schema: {type: string}
+      responses:
+        '200': {description: Successful request}
+      summary: Send Diff to Subscribers
+  tmp1:
+    post:
+      description: Add users email to subscription list
+      parameters:
+      - description: The users that are already subscribed
+        example: ''
+        in: query
+        name: Subscribers List
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Subscribe to Ticket
+  tmp2:
+    post:
+      description: Unsubscribe to a ticket
+      parameters:
+      - description: The users that are already subscribed
+        example: ''
+        in: query
+        name: Subscribers List
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Unsubscribe to Ticket
+tags:
+- {name: Miscellaneous}

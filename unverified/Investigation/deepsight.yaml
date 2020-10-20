@@ -1,0 +1,387 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        aliases: {type: string}
+        associated_actors: {type: string}
+        associated_groups: {type: string}
+        facebook_id: {type: string}
+        first_active: {type: string}
+        last_active: {type: string}
+        primary_handle: {type: string}
+        record_id: {type: string}
+        status: {type: string}
+        twitter_id: {type: string}
+        type: {type: string}
+      type: object
+    tmp1:
+      properties:
+        behaviours: {type: string}
+        domain: {type: string}
+        firstSeen: {type: string}
+        ips: {type: string}
+        lastSeen: {type: string}
+        matiReports: {type: string}
+        reputationValues_confidence: {type: string}
+        reputationValues_hostility: {type: string}
+        reputationValues_reputation: {type: string}
+        schemaVersion: {type: string}
+        targetCountries: {type: string}
+        urls: {type: string}
+        whitelisted: {type: string}
+        whois_city: {type: string}
+        whois_country: {type: string}
+        whois_created: {type: string}
+        whois_email: {type: string}
+        whois_expires: {type: string}
+        whois_organization: {type: string}
+        whois_person: {type: string}
+        whois_postalCode: {type: string}
+        whois_registrar: {type: string}
+        whois_updated: {type: string}
+      type: object
+    tmp10:
+      properties:
+        date: {type: string}
+        id: {type: string}
+        summary: {type: string}
+        title: {type: string}
+        uri: {type: string}
+      type: object
+    tmp11:
+      properties:
+        behaviours: {type: string}
+        firstSeen: {type: string}
+        host_domain: {type: string}
+        host_ip: {type: string}
+        host_url: {type: string}
+        ips: {type: string}
+        lastSeen: {type: string}
+        nameServers: {type: string}
+        schemaVersion: {type: string}
+        targetCountries: {type: string}
+        whitelisted: {type: string}
+        whois_city: {type: string}
+        whois_country: {type: string}
+        whois_created: {type: string}
+        whois_email: {type: string}
+        whois_expires: {type: string}
+        whois_organization: {type: string}
+        whois_person: {type: string}
+        whois_postalCode: {type: string}
+        whois_registrar: {type: string}
+        whois_updated: {type: string}
+      type: object
+    tmp2:
+      properties:
+        MD5: {type: string}
+        SHA256: {type: string}
+        activity_dns: {type: string}
+        activity_tcp: {type: string}
+        activity_udp: {type: string}
+        activity_urls: {type: string}
+        matiReports: {type: string}
+        reputation: {type: string}
+        schemaVersion: {type: string}
+      type: object
+    tmp3:
+      properties:
+        behaviours: {type: string}
+        domains: {type: string}
+        firstSeen: {type: string}
+        geolocation_city: {type: string}
+        geolocation_country: {type: string}
+        geolocation_latitude: {type: string}
+        geolocation_longitude: {type: string}
+        ip: {type: string}
+        lastSeen: {type: string}
+        matiReports: {type: string}
+        network_anonymizerStatus: {type: string}
+        network_asn: {type: string}
+        network_carrier: {type: string}
+        network_ipRouting: {type: string}
+        network_lineSpeed: {type: string}
+        network_proxyLastDetected: {type: string}
+        network_proxyLevel: {type: string}
+        network_proxyType: {type: string}
+        organization_isic: {type: string}
+        organization_naics: {type: string}
+        organization_name: {type: string}
+        organization_type: {type: string}
+        reputationValues_confidence: {type: string}
+        reputationValues_hostility: {type: string}
+        reputationValues_reputation: {type: string}
+        schemaVersion: {type: string}
+        targetCountries: {type: string}
+        urls: {type: string}
+        whitelisted: {type: string}
+      type: object
+    tmp4:
+      properties:
+        categories: {type: string}
+        docid: {type: string}
+        hashes_lastDetected: {type: string}
+        hashes_md5: {type: string}
+        hashes_sha256: {type: string}
+        name: {type: string}
+        schemaVersion: {type: string}
+      type: object
+    tmp5:
+      properties:
+        campaigns: {type: string}
+        domains: {type: string}
+        emails: {type: string}
+        ips: {type: string}
+        schemaVersion: {type: string}
+        threatDomains: {type: string}
+      type: object
+    tmp6:
+      properties:
+        date: {type: string}
+        id: {type: string}
+        title: {type: string}
+        uri: {type: string}
+      type: object
+    tmp7:
+      properties:
+        date: {type: string}
+        id: {type: string}
+        title: {type: string}
+        uri: {type: string}
+      type: object
+    tmp8:
+      properties:
+        date: {type: string}
+        id: {type: string}
+        title: {type: string}
+        uri: {type: string}
+      type: object
+    tmp9:
+      properties:
+        date: {type: string}
+        id: {type: string}
+        title: {type: string}
+        uri: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Symantec DeepSight
+  title: Symantec DeepSight
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Retrieve Profile for a Specific Actor
+      parameters:
+      - description: Name of actor to retrieve profile for
+        example: BadGuy1
+        in: query
+        name: Actor Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Symantec DeepSight Actor Profile
+  tmp1:
+    post:
+      description: Retrieve Reputation and Metadata for a Domain Name
+      parameters:
+      - description: Domain name to retrieve info for
+        example: example.com
+        in: query
+        name: Domain Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Symantec DeepSight Domain Info
+  tmp10:
+    post:
+      description: Retrieve Summary for a MATI Report
+      parameters:
+      - description: ID to retrieve MATI report summary for
+        example: '300161'
+        in: body
+        name: Report ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Symantec DeepSight MATI Report Summary
+  tmp11:
+    post:
+      description: Retrieve Reputation and Metadata for a URL
+      parameters:
+      - description: URL to retrieve info for
+        example: http://example.com/badfile.exe
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: Symantec DeepSight URL Info
+  tmp2:
+    post:
+      description: Retrieve Reputation and Metadata for a File's MD5 or SHA256 Hash
+      parameters:
+      - description: SHA256 or MD5 hash to retrieve info for
+        example: a77e89bf60e931477f5858a004fb5e0a
+        in: query
+        name: File Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Symantec DeepSight File Info
+  tmp3:
+    post:
+      description: Retrieve Reputation and Metadata for an IP Address
+      parameters:
+      - description: IP address to retrieve info for
+        example: 8.8.8.8
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Symantec DeepSight IP Info
+  tmp4:
+    post:
+      description: Returns the name, document identifier, malware category, and MD5
+        and SHA256 hash values that correspond to a malware name
+      parameters:
+      - description: SHA256 or MD5 hash to retrieve info for
+        example: W32.Ramnit.D!inf
+        in: query
+        name: Malware Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Symantec DeepSight Malware Info
+  tmp5:
+    post:
+      description: Retrieve Data for a MATI Report
+      parameters:
+      - description: ID to retrieve MATI report for
+        example: '300161'
+        in: body
+        name: Report ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Symantec DeepSight MATI Report
+  tmp6:
+    post:
+      description: Retrieves MATI Reports
+      parameters:
+      - description: Number of records to return
+        example: '100'
+        in: body
+        name: Limit
+        required: true
+        schema: {type: string}
+      - description: Number of records to skip
+        example: '100'
+        in: body
+        name: Offset
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Symantec DeepSight MATI Reports
+  tmp7:
+    post:
+      description: Retrieves MATI Reports by Adversary
+      parameters:
+      - description: Actor or group name
+        example: Lizard Squad
+        in: query
+        name: Adversary
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Symantec DeepSight MATI Reports by Adversary
+  tmp8:
+    post:
+      description: Retrieves MATI Reports by Email
+      parameters:
+      - description: Email address
+        example: badguy@gmail.com
+        in: query
+        name: Email Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Symantec DeepSight MATI Reports by Email
+  tmp9:
+    post:
+      description: Retrieves MATI Reports by File
+      parameters:
+      - description: MD5 or SHA256 file hash OR file name
+        example: a77e89bf60e931477f5858a004fb5e0a OR MaliciousFile
+        in: query
+        name: File Hash or Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Symantec DeepSight MATI Reports by File
+tags:
+- {name: Investigation}

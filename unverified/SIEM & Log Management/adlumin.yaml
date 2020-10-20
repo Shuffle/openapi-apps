@@ -1,0 +1,934 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        account_used: {type: string}
+        acknowledged: {type: string}
+        acknowledged_by: {type: string}
+        alert_type: {type: string}
+        destination_host: {type: string}
+        detection_id: {type: string}
+        detection_sub_type: {type: string}
+        detection_type: {type: string}
+        event_time: {type: string}
+        information: {type: string}
+        severity: {type: string}
+        source_host: {type: string}
+      type: object
+    tmp1:
+      properties:
+        activity: {type: string}
+        application_protocol: {type: string}
+        cef_device_product: {type: string}
+        cef_device_vendor: {type: string}
+        cef_device_version: {type: string}
+        cef_event_name: {type: string}
+        cef_extesion: {type: string}
+        cef_parsed: {type: string}
+        cef_parsed_event_hash: {type: string}
+        cef_severity: {type: string}
+        cef_signature_id: {type: string}
+        content: {type: string}
+        count: {type: string}
+        day_of_week: {type: string}
+        destination_address: {type: string}
+        destination_city: {type: string}
+        destination_country_code: {type: string}
+        destination_domain: {type: string}
+        destination_geo_pair: {type: string}
+        destination_hostname: {type: string}
+        destination_ip_address: {type: string}
+        destination_latitude: {type: string}
+        destination_longitude: {type: string}
+        destination_macaddr: {type: string}
+        destination_port: {type: string}
+        destination_process: {type: string}
+        destination_region_name: {type: string}
+        destination_time_zone: {type: string}
+        destination_uid: {type: string}
+        destination_username: {type: string}
+        destination_userpriv: {type: string}
+        destination_zip_code: {type: string}
+        device_address: {type: string}
+        device_hostname: {type: string}
+        device_index: {type: string}
+        dvc: {type: string}
+        endtime: {type: string}
+        event_category: {type: string}
+        facility: {type: string}
+        facility_name: {type: string}
+        filename: {type: string}
+        host_id: {type: string}
+        host_object: {type: string}
+        hostname: {type: string}
+        hour_of_day: {type: string}
+        message_raw: {type: string}
+        pri: {type: string}
+        protocol: {type: string}
+        receipt_time: {type: string}
+        record_id: {type: string}
+        request_url: {type: string}
+        severity: {type: string}
+        severity_name: {type: string}
+        source_address: {type: string}
+        source_city: {type: string}
+        source_country_code: {type: string}
+        source_domain: {type: string}
+        source_geo_pair: {type: string}
+        source_hostname: {type: string}
+        source_ip_address: {type: string}
+        source_latitude: {type: string}
+        source_longitude: {type: string}
+        source_mac: {type: string}
+        source_port: {type: string}
+        source_region_name: {type: string}
+        source_time_zone: {type: string}
+        source_uid: {type: string}
+        source_username: {type: string}
+        source_userpriv: {type: string}
+        source_zip_code: {type: string}
+        starttime: {type: string}
+        timewritten: {type: string}
+        ubascore: {type: string}
+        username: {type: string}
+      type: object
+    tmp2:
+      properties:
+        account_used_domain: {type: string}
+        account_used_name: {type: string}
+        accountname: {type: string}
+        additional_information: {type: string}
+        agentid: {type: string}
+        alerttype: {type: string}
+        command_line: {type: string}
+        computername: {type: string}
+        creation_time_utc: {type: string}
+        creator: {type: string}
+        day_of_week: {type: string}
+        day_of_week_integer: {type: string}
+        device_index: {type: string}
+        entry: {type: string}
+        eventid: {type: string}
+        executable_path: {type: string}
+        extension: {type: string}
+        file_name: {type: string}
+        file_size: {type: string}
+        filepath: {type: string}
+        host_id: {type: string}
+        hour_of_day: {type: string}
+        hour_of_day_integer: {type: string}
+        interactiveuser: {type: string}
+        internetzone: {type: string}
+        last_access_time_utc: {type: string}
+        last_write_time_utc: {type: string}
+        log_entry_source: {type: string}
+        log_time_template: {type: string}
+        md5: {type: string}
+        message_json: {type: string}
+        process: {type: string}
+        process_domain: {type: string}
+        process_id: {type: string}
+        process_name: {type: string}
+        process_owner: {type: string}
+        protocol: {type: string}
+        record_id: {type: string}
+        remote_network_address: {type: string}
+        remote_network_port: {type: string}
+        remote_workstation_name: {type: string}
+        securityid: {type: string}
+        sha1: {type: string}
+        sha256: {type: string}
+        source_city: {type: string}
+        source_country_code: {type: string}
+        source_ip_address: {type: string}
+        source_latitude: {type: string}
+        source_longitude: {type: string}
+        source_region_name: {type: string}
+        source_time_zone: {type: string}
+        source_zip_code: {type: string}
+        status: {type: string}
+        subject_account_domain: {type: string}
+        subject_account_name: {type: string}
+        target_server: {type: string}
+        tennant_id: {type: string}
+        timegenerated: {type: string}
+        timewritten: {type: string}
+        timezone: {type: string}
+        ubascore: {type: string}
+        ubascore_raw: {type: string}
+        username: {type: string}
+        usernames_id: {type: string}
+        validsignature: {type: string}
+      type: object
+    tmp3:
+      properties:
+        account_used_domain: {type: string}
+        account_used_name: {type: string}
+        accountname: {type: string}
+        additional_information: {type: string}
+        agentid: {type: string}
+        alerttype: {type: string}
+        command_line: {type: string}
+        computername: {type: string}
+        creation_time_utc: {type: string}
+        creator: {type: string}
+        day_of_week: {type: string}
+        day_of_week_integer: {type: string}
+        device_index: {type: string}
+        entry: {type: string}
+        entry_message: {type: string}
+        entry_pid: {type: string}
+        entry_tags: {type: string}
+        entry_timestamp: {type: string}
+        entry_type: {type: string}
+        eventid: {type: string}
+        executable_path: {type: string}
+        extension: {type: string}
+        file_name: {type: string}
+        file_size: {type: string}
+        filepath: {type: string}
+        host_id: {type: string}
+        hour_of_day: {type: string}
+        hour_of_day_integer: {type: string}
+        interactiveuser: {type: string}
+        internetzone: {type: string}
+        last_access_time_utc: {type: string}
+        last_write_time_utc: {type: string}
+        log_entry_source: {type: string}
+        log_time_template: {type: string}
+        md5: {type: string}
+        message_json: {type: string}
+        process: {type: string}
+        process_domain: {type: string}
+        process_id: {type: string}
+        process_name: {type: string}
+        process_owner: {type: string}
+        protocol: {type: string}
+        record_id: {type: string}
+        remote_network_address: {type: string}
+        remote_network_port: {type: string}
+        remote_workstation_name: {type: string}
+        scroll_id: {type: string}
+        securityid: {type: string}
+        sha1: {type: string}
+        sha256: {type: string}
+        source_city: {type: string}
+        source_country_code: {type: string}
+        source_ip_address: {type: string}
+        source_latitude: {type: string}
+        source_longitude: {type: string}
+        source_region_name: {type: string}
+        source_time_zone: {type: string}
+        source_zip_code: {type: string}
+        status: {type: string}
+        subject_account_domain: {type: string}
+        subject_account_name: {type: string}
+        target_server: {type: string}
+        tennant_id: {type: string}
+        timegenerated: {type: string}
+        timewritten: {type: string}
+        timezone: {type: string}
+        ubascore: {type: string}
+        ubascore_raw: {type: string}
+        username: {type: string}
+        usernames_id: {type: string}
+        validsignature: {type: string}
+      type: object
+    tmp4:
+      properties:
+        account_used: {type: string}
+        acknowledged: {type: string}
+        acknowledged_by: {type: string}
+        alert_type: {type: string}
+        destination_host: {type: string}
+        detection_id: {type: string}
+        detection_sub_type: {type: string}
+        detection_type: {type: string}
+        event_time: {type: string}
+        information: {type: string}
+        severity: {type: string}
+        source_host: {type: string}
+      type: object
+    tmp5:
+      properties:
+        activity: {type: string}
+        adlumin_collector_version: {type: string}
+        application_protocol: {type: string}
+        cef_device_product: {type: string}
+        cef_device_vendor: {type: string}
+        cef_device_version: {type: string}
+        cef_event_name: {type: string}
+        cef_extesion: {type: string}
+        cef_parsed: {type: string}
+        cef_parsed_event_hash: {type: string}
+        cef_parsed_event_hash_act: {type: string}
+        cef_parsed_event_hash_app: {type: string}
+        cef_parsed_event_hash_c6a1Label: {type: string}
+        cef_parsed_event_hash_c6a2Label: {type: string}
+        cef_parsed_event_hash_c6a3Label: {type: string}
+        cef_parsed_event_hash_cat: {type: string}
+        cef_parsed_event_hash_cn1: {type: string}
+        cef_parsed_event_hash_cn1Label: {type: string}
+        cef_parsed_event_hash_cn2: {type: string}
+        cef_parsed_event_hash_cn2Label: {type: string}
+        cef_parsed_event_hash_cn3: {type: string}
+        cef_parsed_event_hash_cn3Label: {type: string}
+        cef_parsed_event_hash_cnt: {type: string}
+        cef_parsed_event_hash_cs1: {type: string}
+        cef_parsed_event_hash_cs1Label: {type: string}
+        cef_parsed_event_hash_cs2: {type: string}
+        cef_parsed_event_hash_cs2Label: {type: string}
+        cef_parsed_event_hash_cs3: {type: string}
+        cef_parsed_event_hash_cs3Label: {type: string}
+        cef_parsed_event_hash_cs4: {type: string}
+        cef_parsed_event_hash_cs4Label: {type: string}
+        cef_parsed_event_hash_cs5: {type: string}
+        cef_parsed_event_hash_cs5Label: {type: string}
+        cef_parsed_event_hash_cs6: {type: string}
+        cef_parsed_event_hash_cs6Label: {type: string}
+        cef_parsed_event_hash_deviceInboundInterface: {type: string}
+        cef_parsed_event_hash_dpt: {type: string}
+        cef_parsed_event_hash_dst: {type: string}
+        cef_parsed_event_hash_dvchost: {type: string}
+        cef_parsed_event_hash_externalId: {type: string}
+        cef_parsed_event_hash_proto: {type: string}
+        cef_parsed_event_hash_rt: {type: string}
+        cef_parsed_event_hash_sourceTranslatedAddress: {type: string}
+        cef_parsed_event_hash_spt: {type: string}
+        cef_parsed_event_hash_src: {type: string}
+        cef_severity: {type: string}
+        cef_signature_id: {type: string}
+        content: {type: string}
+        count: {type: string}
+        day_of_week: {type: string}
+        destination_address: {type: string}
+        destination_city: {type: string}
+        destination_country_code: {type: string}
+        destination_domain: {type: string}
+        destination_geo_pair: {type: string}
+        destination_hostname: {type: string}
+        destination_ip_address: {type: string}
+        destination_latitude: {type: string}
+        destination_longitude: {type: string}
+        destination_macaddr: {type: string}
+        destination_port: {type: string}
+        destination_process: {type: string}
+        destination_region_name: {type: string}
+        destination_time_zone: {type: string}
+        destination_uid: {type: string}
+        destination_username: {type: string}
+        destination_userpriv: {type: string}
+        destination_zip_code: {type: string}
+        device_address: {type: string}
+        device_hostname: {type: string}
+        device_index: {type: string}
+        dvc: {type: string}
+        endtime: {type: string}
+        event_category: {type: string}
+        facility: {type: string}
+        facility_name: {type: string}
+        filename: {type: string}
+        host_id: {type: string}
+        host_object: {type: string}
+        hostname: {type: string}
+        hour_of_day: {type: string}
+        message_raw: {type: string}
+        pri: {type: string}
+        protocol: {type: string}
+        receipt_time: {type: string}
+        record_id: {type: string}
+        request_url: {type: string}
+        scroll_id: {type: string}
+        severity: {type: string}
+        severity_name: {type: string}
+        source_address: {type: string}
+        source_city: {type: string}
+        source_country_code: {type: string}
+        source_domain: {type: string}
+        source_geo_pair: {type: string}
+        source_hostname: {type: string}
+        source_ip_address: {type: string}
+        source_latitude: {type: string}
+        source_longitude: {type: string}
+        source_mac: {type: string}
+        source_port: {type: string}
+        source_region_name: {type: string}
+        source_time_zone: {type: string}
+        source_uid: {type: string}
+        source_username: {type: string}
+        source_userpriv: {type: string}
+        source_zip_code: {type: string}
+        src_user_dn: {type: string}
+        src_user_name: {type: string}
+        starttime: {type: string}
+        timewritten: {type: string}
+        ubascore: {type: string}
+        user: {type: string}
+        username: {type: string}
+        usernames_id: {type: string}
+      type: object
+    tmp6:
+      properties:
+        account_used_domain: {type: string}
+        account_used_name: {type: string}
+        accountname: {type: string}
+        additional_information: {type: string}
+        agentid: {type: string}
+        alerttype: {type: string}
+        command_line: {type: string}
+        computername: {type: string}
+        creation_time_utc: {type: string}
+        creator: {type: string}
+        day_of_week: {type: string}
+        day_of_week_integer: {type: string}
+        device_index: {type: string}
+        entry: {type: string}
+        entry_message: {type: string}
+        entry_pid: {type: string}
+        entry_tags: {type: string}
+        entry_timestamp: {type: string}
+        entry_type: {type: string}
+        eventid: {type: string}
+        executable_path: {type: string}
+        extension: {type: string}
+        file_name: {type: string}
+        file_size: {type: string}
+        filepath: {type: string}
+        host_id: {type: string}
+        hour_of_day: {type: string}
+        hour_of_day_integer: {type: string}
+        interactiveuser: {type: string}
+        internetzone: {type: string}
+        last_access_time_utc: {type: string}
+        last_write_time_utc: {type: string}
+        log_entry_source: {type: string}
+        log_time_template: {type: string}
+        md5: {type: string}
+        message_json: {type: string}
+        process: {type: string}
+        process_domain: {type: string}
+        process_id: {type: string}
+        process_name: {type: string}
+        process_owner: {type: string}
+        protocol: {type: string}
+        record_id: {type: string}
+        remote_network_address: {type: string}
+        remote_network_port: {type: string}
+        remote_workstation_name: {type: string}
+        scroll_id: {type: string}
+        securityid: {type: string}
+        sha1: {type: string}
+        sha256: {type: string}
+        source_city: {type: string}
+        source_country_code: {type: string}
+        source_ip_address: {type: string}
+        source_latitude: {type: string}
+        source_longitude: {type: string}
+        source_region_name: {type: string}
+        source_time_zone: {type: string}
+        source_zip_code: {type: string}
+        status: {type: string}
+        subject_account_domain: {type: string}
+        subject_account_name: {type: string}
+        target_server: {type: string}
+        tennant_id: {type: string}
+        timegenerated: {type: string}
+        timewritten: {type: string}
+        timezone: {type: string}
+        ubascore: {type: string}
+        ubascore_raw: {type: string}
+        username: {type: string}
+        usernames_id: {type: string}
+        validsignature: {type: string}
+      type: object
+    tmp7:
+      properties:
+        activity: {type: string}
+        adlumin_collector_version: {type: string}
+        application_protocol: {type: string}
+        cef_device_product: {type: string}
+        cef_device_vendor: {type: string}
+        cef_device_version: {type: string}
+        cef_event_name: {type: string}
+        cef_extesion: {type: string}
+        cef_parsed: {type: string}
+        cef_parsed_event_hash_act: {type: string}
+        cef_parsed_event_hash_app: {type: string}
+        cef_parsed_event_hash_c6a1Label: {type: string}
+        cef_parsed_event_hash_c6a2Label: {type: string}
+        cef_parsed_event_hash_c6a3Label: {type: string}
+        cef_parsed_event_hash_cat: {type: string}
+        cef_parsed_event_hash_cn1: {type: string}
+        cef_parsed_event_hash_cn1Label: {type: string}
+        cef_parsed_event_hash_cn2: {type: string}
+        cef_parsed_event_hash_cn2Label: {type: string}
+        cef_parsed_event_hash_cn3: {type: string}
+        cef_parsed_event_hash_cn3Label: {type: string}
+        cef_parsed_event_hash_cnt: {type: string}
+        cef_parsed_event_hash_cs1: {type: string}
+        cef_parsed_event_hash_cs1Label: {type: string}
+        cef_parsed_event_hash_cs2: {type: string}
+        cef_parsed_event_hash_cs2Label: {type: string}
+        cef_parsed_event_hash_cs3: {type: string}
+        cef_parsed_event_hash_cs3Label: {type: string}
+        cef_parsed_event_hash_cs4: {type: string}
+        cef_parsed_event_hash_cs4Label: {type: string}
+        cef_parsed_event_hash_cs5: {type: string}
+        cef_parsed_event_hash_cs5Label: {type: string}
+        cef_parsed_event_hash_cs6: {type: string}
+        cef_parsed_event_hash_cs6Label: {type: string}
+        cef_parsed_event_hash_deviceInboundInterface: {type: string}
+        cef_parsed_event_hash_dpt: {type: string}
+        cef_parsed_event_hash_dst: {type: string}
+        cef_parsed_event_hash_dvchost: {type: string}
+        cef_parsed_event_hash_externalId: {type: string}
+        cef_parsed_event_hash_proto: {type: string}
+        cef_parsed_event_hash_rt: {type: string}
+        cef_parsed_event_hash_sourceTranslatedAddress: {type: string}
+        cef_parsed_event_hash_spt: {type: string}
+        cef_parsed_event_hash_src: {type: string}
+        cef_severity: {type: string}
+        cef_signature_id: {type: string}
+        content: {type: string}
+        count: {type: string}
+        day_of_week: {type: string}
+        destination_address: {type: string}
+        destination_city: {type: string}
+        destination_country_code: {type: string}
+        destination_domain: {type: string}
+        destination_geo_pair: {type: string}
+        destination_hostname: {type: string}
+        destination_ip_address: {type: string}
+        destination_latitude: {type: string}
+        destination_longitude: {type: string}
+        destination_macaddr: {type: string}
+        destination_port: {type: string}
+        destination_process: {type: string}
+        destination_region_name: {type: string}
+        destination_time_zone: {type: string}
+        destination_uid: {type: string}
+        destination_username: {type: string}
+        destination_userpriv: {type: string}
+        destination_zip_code: {type: string}
+        device_address: {type: string}
+        device_hostname: {type: string}
+        device_index: {type: string}
+        dvc: {type: string}
+        endtime: {type: string}
+        event_category: {type: string}
+        facility: {type: string}
+        facility_name: {type: string}
+        filename: {type: string}
+        host_id: {type: string}
+        host_object: {type: string}
+        hostname: {type: string}
+        hour_of_day: {type: string}
+        message_raw: {type: string}
+        pri: {type: string}
+        protocol: {type: string}
+        receipt_time: {type: string}
+        record_id: {type: string}
+        request_url: {type: string}
+        scroll_id: {type: string}
+        severity: {type: string}
+        severity_name: {type: string}
+        source_address: {type: string}
+        source_city: {type: string}
+        source_country_code: {type: string}
+        source_domain: {type: string}
+        source_geo_pair: {type: string}
+        source_hostname: {type: string}
+        source_ip_address: {type: string}
+        source_latitude: {type: string}
+        source_longitude: {type: string}
+        source_mac: {type: string}
+        source_port: {type: string}
+        source_region_name: {type: string}
+        source_time_zone: {type: string}
+        source_uid: {type: string}
+        source_username: {type: string}
+        source_userpriv: {type: string}
+        source_zip_code: {type: string}
+        src_user_dn: {type: string}
+        src_user_name: {type: string}
+        starttime: {type: string}
+        timewritten: {type: string}
+        ubascore: {type: string}
+        user: {type: string}
+        username: {type: string}
+        usernames_id: {type: string}
+      type: object
+    tmp8:
+      properties:
+        activity: {type: string}
+        adlumin_collector_version: {type: string}
+        application_protocol: {type: string}
+        cef_device_product: {type: string}
+        cef_device_vendor: {type: string}
+        cef_device_version: {type: string}
+        cef_event_name: {type: string}
+        cef_extesion: {type: string}
+        cef_parsed: {type: string}
+        cef_parsed_event_hash: {type: string}
+        cef_parsed_event_hash_act: {type: string}
+        cef_parsed_event_hash_app: {type: string}
+        cef_parsed_event_hash_c6a1Label: {type: string}
+        cef_parsed_event_hash_c6a2Label: {type: string}
+        cef_parsed_event_hash_c6a3Label: {type: string}
+        cef_parsed_event_hash_cat: {type: string}
+        cef_parsed_event_hash_cn1: {type: string}
+        cef_parsed_event_hash_cn1Label: {type: string}
+        cef_parsed_event_hash_cn2: {type: string}
+        cef_parsed_event_hash_cn2Label: {type: string}
+        cef_parsed_event_hash_cn3: {type: string}
+        cef_parsed_event_hash_cn3Label: {type: string}
+        cef_parsed_event_hash_cnt: {type: string}
+        cef_parsed_event_hash_cs1: {type: string}
+        cef_parsed_event_hash_cs1Label: {type: string}
+        cef_parsed_event_hash_cs2: {type: string}
+        cef_parsed_event_hash_cs2Label: {type: string}
+        cef_parsed_event_hash_cs3: {type: string}
+        cef_parsed_event_hash_cs3Label: {type: string}
+        cef_parsed_event_hash_cs4: {type: string}
+        cef_parsed_event_hash_cs4Label: {type: string}
+        cef_parsed_event_hash_cs5: {type: string}
+        cef_parsed_event_hash_cs5Label: {type: string}
+        cef_parsed_event_hash_cs6: {type: string}
+        cef_parsed_event_hash_cs6Label: {type: string}
+        cef_parsed_event_hash_deviceInboundInterface: {type: string}
+        cef_parsed_event_hash_dpt: {type: string}
+        cef_parsed_event_hash_dst: {type: string}
+        cef_parsed_event_hash_dvchost: {type: string}
+        cef_parsed_event_hash_externalId: {type: string}
+        cef_parsed_event_hash_proto: {type: string}
+        cef_parsed_event_hash_rt: {type: string}
+        cef_parsed_event_hash_sourceTranslatedAddress: {type: string}
+        cef_parsed_event_hash_spt: {type: string}
+        cef_parsed_event_hash_src: {type: string}
+        cef_severity: {type: string}
+        cef_signature_id: {type: string}
+        content: {type: string}
+        count: {type: string}
+        day_of_week: {type: string}
+        destination_address: {type: string}
+        destination_city: {type: string}
+        destination_country_code: {type: string}
+        destination_domain: {type: string}
+        destination_geo_pair: {type: string}
+        destination_hostname: {type: string}
+        destination_ip_address: {type: string}
+        destination_latitude: {type: string}
+        destination_longitude: {type: string}
+        destination_macaddr: {type: string}
+        destination_port: {type: string}
+        destination_process: {type: string}
+        destination_region_name: {type: string}
+        destination_time_zone: {type: string}
+        destination_uid: {type: string}
+        destination_username: {type: string}
+        destination_userpriv: {type: string}
+        destination_zip_code: {type: string}
+        device_address: {type: string}
+        device_hostname: {type: string}
+        device_index: {type: string}
+        dvc: {type: string}
+        endtime: {type: string}
+        event_category: {type: string}
+        facility: {type: string}
+        facility_name: {type: string}
+        filename: {type: string}
+        host_id: {type: string}
+        host_object: {type: string}
+        hostname: {type: string}
+        hour_of_day: {type: string}
+        message_raw: {type: string}
+        pri: {type: string}
+        protocol: {type: string}
+        receipt_time: {type: string}
+        record_id: {type: string}
+        request_url: {type: string}
+        scroll_id: {type: string}
+        severity: {type: string}
+        severity_name: {type: string}
+        source_address: {type: string}
+        source_city: {type: string}
+        source_country_code: {type: string}
+        source_domain: {type: string}
+        source_geo_pair: {type: string}
+        source_hostname: {type: string}
+        source_ip_address: {type: string}
+        source_latitude: {type: string}
+        source_longitude: {type: string}
+        source_mac: {type: string}
+        source_port: {type: string}
+        source_region_name: {type: string}
+        source_time_zone: {type: string}
+        source_uid: {type: string}
+        source_username: {type: string}
+        source_userpriv: {type: string}
+        source_zip_code: {type: string}
+        src_user_dn: {type: string}
+        src_user_name: {type: string}
+        starttime: {type: string}
+        timewritten: {type: string}
+        ubascore: {type: string}
+        user: {type: string}
+        username: {type: string}
+        usernames_id: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Adlumin Adlumin
+  title: Adlumin Adlumin
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Adlumin Ingest detections
+      parameters:
+      - description: Priority level of the detections (low, medium, high, or critical)
+        example: Critical
+        in: query
+        name: Priority
+        required: true
+        schema: {type: string}
+      - description: The number of pages of 1000 records to ingest
+        example: '2'
+        in: body
+        name: Record Pages
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Adlumin Get Detections
+  tmp1:
+    post:
+      description: Adlumin Ingest all device data
+      parameters:
+      - description: The number of pages of 1000 records to ingest
+        example: '2'
+        in: body
+        name: Record Pages
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Adlumin Get Device Data
+  tmp2:
+    post:
+      description: Adlumin Ingest all endpoint data
+      parameters:
+      - description: The number of pages of 1000 records to ingest
+        example: '2'
+        in: body
+        name: Record Pages
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Adlumin Get Endpoint Data
+  tmp3:
+    post:
+      description: Adlumin Search all endpoint data along with Endpoint Security,
+        Carbon Black, and Cylance indexes
+      parameters:
+      - description: Match records created after this date/time (YYYY-MM-DD-HH:MM:SS)
+        example: 2019-01-01-00:00:00
+        in: query
+        name: Start
+        required: false
+        schema: {type: string}
+      - description: Match records created before this date/time (YYYY-MM-DD-HH:MM:SS)
+        example: 2019-01-01-00:00:00
+        in: query
+        name: End
+        required: false
+        schema: {type: string}
+      - description: Use to get subsequent records when more than 1000 are returned.
+          Get it from the first call to that endpoint
+        example: DnF1ZXJ5VGhlbkZldGNoFA
+        in: query
+        name: Scroll ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Adlumin Query Complete Endpoint Data
+  tmp4:
+    post:
+      description: Adlumin Search all detections in Adlumin platform
+      parameters:
+      - description: Search query string; match all records containing the string
+        example: Critical
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: Use to get subsequent records when more than 1000 are returned.
+          Get it from the first call to that endpoint
+        example: DnF1ZXJ5VGhlbkZldGNoFA
+        in: query
+        name: Scroll ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Adlumin Query Detections
+  tmp5:
+    post:
+      description: Adlumin Search all device data indexes
+      parameters:
+      - description: Search query string; match all records containing the string
+        example: Critical
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: Match records created after this date/time (YYYY-MM-DD-HH:MM:SS)
+        example: 2019-01-01-00:00:00
+        in: query
+        name: Start
+        required: false
+        schema: {type: string}
+      - description: Match records created before this date/time (YYYY-MM-DD-HH:MM:SS)
+        example: 2019-01-01-00:00:00
+        in: query
+        name: End
+        required: false
+        schema: {type: string}
+      - description: Use to get subsequent records when more than 1000 are returned.
+          Get it from the first call to that endpoint
+        example: DnF1ZXJ5VGhlbkZldGNoFA
+        in: query
+        name: Scroll ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Adlumin Query Device Data
+  tmp6:
+    post:
+      description: Adlumin Search all Adlumin data points on Windows and Linux systems
+      parameters:
+      - description: Match records created after this date/time (YYYY-MM-DD-HH:MM:SS)
+        example: 2019-01-01-00:00:00
+        in: query
+        name: Start
+        required: false
+        schema: {type: string}
+      - description: Match records created before this date/time (YYYY-MM-DD-HH:MM:SS)
+        example: 2019-01-01-00:00:00
+        in: query
+        name: End
+        required: false
+        schema: {type: string}
+      - description: Use to get subsequent records when more than 1000 are returned.
+          Get it from the first call to that endpoint
+        example: DnF1ZXJ5VGhlbkZldGNoFA
+        in: query
+        name: Scroll ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Adlumin Query Endpoint Data
+  tmp7:
+    post:
+      description: Adlumin Search the Firewall device data index
+      parameters:
+      - description: Match records created after this date/time (YYYY-MM-DD-HH:MM:SS)
+        example: 2019-01-01-00:00:00
+        in: query
+        name: Start
+        required: false
+        schema: {type: string}
+      - description: Match records created before this date/time (YYYY-MM-DD-HH:MM:SS)
+        example: 2019-01-01-00:00:00
+        in: query
+        name: End
+        required: false
+        schema: {type: string}
+      - description: Use to get subsequent records when more than 1000 are returned.
+          Get it from the first call to that endpoint
+        example: DnF1ZXJ5VGhlbkZldGNoFA
+        in: query
+        name: Scroll ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Adlumin Query Firewall
+  tmp8:
+    post:
+      description: Adlumin Search across Firewall, Network Security Devices, and VPN
+        indexes
+      parameters:
+      - description: Search query string; match all records containing the string
+        example: Critical
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: Match records created after this date/time (YYYY-MM-DD-HH:MM:SS)
+        example: 2019-01-01-00:00:00
+        in: query
+        name: Start
+        required: false
+        schema: {type: string}
+      - description: Match records created before this date/time (YYYY-MM-DD-HH:MM:SS)
+        example: 2019-01-01-00:00:00
+        in: query
+        name: End
+        required: false
+        schema: {type: string}
+      - description: Use to get subsequent records when more than 1000 are returned.
+          Get it from the first call to that endpoint
+        example: DnF1ZXJ5VGhlbkZldGNoFA
+        in: query
+        name: Scroll ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Adlumin Query Network Data
+tags:
+- {name: SIEM & Log Management}

@@ -1,0 +1,212 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        record_id: {type: string}
+      type: object
+    tmp1:
+      properties:
+        record_id: {type: string}
+      type: object
+    tmp2:
+      properties:
+        assigned_analyst: {type: string}
+        assigned_dtg: {type: string}
+        assignedto: {type: string}
+        assignment: {type: string}
+        associated: {type: string}
+        dataid: {type: string}
+        dateandtime: {type: string}
+        entrydate: {type: string}
+        label: {type: string}
+        notes_all: {type: string}
+        originator_name: {type: string}
+        originator_phone: {type: string}
+        originator_position: {type: string}
+        positionname: {type: string}
+        prevdataid: {type: string}
+        radio_priority: {type: string}
+        record_no_str: {type: string}
+        status_sub: {type: string}
+        subscribername: {type: string}
+        tablename: {type: string}
+        username: {type: string}
+      type: object
+    tmp3:
+      properties:
+        displays: {type: string}
+        inputs: {type: string}
+      type: object
+    tmp4:
+      properties:
+        boards: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Juvare Webeoc
+  title: Juvare Webeoc
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAEJklEQVR4nO3dv2sTYRzH8SdNEZysaRUFRQdnpRS7CMUizk4uzuLiIjg4uAiCCDqKm/+Ds0orjqlIdXATAzooLVU3EZpz0GB6Pnf3/PrekzzP+wWB5nrP832S++S5y/WSdhT22Dq7Muh2uifC97z7o9d/NRe+38k0E3sASBPBggiCBREECyIIFkQQLIggWBBBsCCCYEEEwYKI2dgDaMPO8sp3pboHTNbtFMPFg/31TZN1t5dWNme63TM+Y0sVMxZEECyIIFgQQbAggmBBBMGCCIIFEQQLIggWRBAsiCBYEEGwIIJgQQTBggiCBREECyIIFkQQLIjII1hF97lEtzaXJQ931UBiDJMqi2D1NtYvxx6D6s5eiT2ENmURrEmw0F97H3sMbSJYEJFNsHr99U7I/naWV4uQ/aUmm2ChXVkFK9SsZTtbhZ4tp0FWwVLKfyOzCzSTXbCUcg8XoTKXZbCUsg+Xa6hy3A0qlcmXglQZ3+i64DBDucvy1VQn5D8QyHW2UirjXaG0oSquxh5DTARLyEL/5ZPYY4iJYAnIeRc4QrACI1R/EKyACNU/BCsQQrVX1uexQiBQegTLEYGqR7AsESgzBKtBUah78xvrt2OPAwAAAAAAAAAAAAAAAAAAAEhHobm5tLthUfOOZU3XMdb14dPe10AznqrbI486pjWMn5vUPle47dneNwzl9m88+7Nx/W/9wy3WrJRasA5plvmExfcTOYue7V18VUqtRai7R2rB8vHUs/1SiEEEshp7ACkG65Rm2TGDdpc8676uWB76WwE7mptEXV0dk7pKqTSD9UGz7JNDP9P0wdSJG2uKwXIR+qC9zPdNxdRJNVi6V3CbX1Rbrj/fYu2JkGqwfNnsWi6IjWKKESz/mexF6b7UwXSdLcG+naT8pSAd9f/GLFTzbBTqQFhXPwTTPn0fR12dxr6ZsfzYBiebf0iQerCOa5bdHPtZ4hxTbPvVBIwj9WB91ix7WLO+zQZ5ZrCOrj/Jjd5RSv0U7N9Y6sGqc8uz/cXS/SOG7YaedUdnvXua34WcgZ3OuI/EOHifs1h3X4B6VQfR90v3f3nW+eLZ3ta3iuUmb1AmSqjrsWxeVSGur6rqx6df1+uXbOsNDNrp+v4Y4PF4yXlXmArd7HSy7UGU5RKspl2DzSGB7horlysBrlnUdDE1pzZcp8sHjm11bXSnD0xJ7gal2g0s2vg8tuC7Qhuhj5VGt/G3/48b1vUlESxTdx3aDizbhAxWyGNFq+LvPNu3/gAC9Nt2+4Hl+q7PXfDtYnqMpevgtGHbEZ+3wJP69vlo7AGUxPgDuFbbB+8uAQkZKp++zmuW2Z67auMFUlXjbQu1GwcxrirtIZ4kyb4RUdMGZMPDics+mVChke0xVl9kFEhO3exTnrWYqRBMoZQ6F3sQmD6/AdccnBfAu9L9AAAAAElFTkSuQmCC
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Create a record on a board in WebEOC
+      parameters:
+      - description: Name of Board to add event record to
+        example: My Board
+        in: query
+        name: Board Name
+        required: true
+        schema: {type: string}
+      - description: Name of the input view to use to input the record data
+        example: My Input Form
+        in: query
+        name: Input View Name
+        required: true
+        schema: {type: string}
+      - description: Raw JSON of the fields of the record for the board
+        example: ''
+        in: query
+        name: Board JSON Data
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Juvare WebEOC Create Board Record
+  tmp1:
+    post:
+      description: Create an Event report on a board in WebEOC
+      parameters:
+      - description: Name of Board to add a record to
+        example: My Board
+        in: query
+        name: Board Name
+        required: true
+        schema: {type: string}
+      - description: Name of the input view to use to input the record data
+        example: My Input Form
+        in: query
+        name: Input View Name
+        required: true
+        schema: {type: string}
+      - description: Where to route the record
+        example: ''
+        in: query
+        name: Routing
+        required: true
+        schema: {type: string}
+      - description: Event type from predefined list
+        example: Application Vulnerability
+        in: query
+        name: Type of Event
+        required: false
+        schema: {type: string}
+      - description: Notes field
+        example: here is a note
+        in: query
+        name: Notes
+        required: false
+        schema: {type: string}
+      - description: Name of person who originally made this issue
+        example: Swimlane
+        in: query
+        name: Originator Name
+        required: false
+        schema: {type: string}
+      - description: Text explaining the brand impact of this event
+        example: Our brand looks better this way
+        in: query
+        name: Brand Impact
+        required: false
+        schema: {type: string}
+      - description: Text explaining the operational impact of this event
+        example: Logo takes up entire screen, can't use site
+        in: query
+        name: Operational Impact
+        required: false
+        schema: {type: string}
+      - description: What to label the event as
+        example: Website Issue
+        in: query
+        name: Label
+        required: false
+        schema: {type: string}
+      - description: Indicators of this event
+        example: 123.123.123.123
+        in: query
+        name: Indicators
+        required: false
+        schema: {type: string}
+      - description: Priority of the issue
+        example: 1 Medium
+        in: query
+        name: Priority
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Juvare WebEOC Create Event Report
+  tmp2:
+    post:
+      description: Get Records from a Board in WebEOC
+      parameters:
+      - description: Name of Board to get records from
+        example: My Board
+        in: query
+        name: Board Name
+        required: true
+        schema: {type: string}
+      - description: Display to get records from
+        example: ''
+        in: query
+        name: Display
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Juvare WebEOC Get Board Records
+  tmp3:
+    post:
+      description: Get the Display and Input views of a given board in WebEOC
+      parameters:
+      - description: Name of Board to get the views from
+        example: My Board
+        in: query
+        name: Board Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Juvare WebEOC Get Board Views
+  tmp4:
+    post:
+      description: Get the Boards in the WebEOC instance
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Juvare WebEOC Get Boards
+tags:
+- {name: Ticket Management}

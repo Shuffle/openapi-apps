@@ -1,0 +1,54 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        json: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Elastic Elasticsearch
+  title: Elastic Elasticsearch
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAEVElEQVR4nO3cvWoUYRTG8WezuotfGAUVQ8QvCFhYeAFGDIitpWBlYaGFYGtjZys2IlgIEQWtcgWJeAk2KqIoSgJREwN+LtGxemUccGdnM++c87x5fhewc2b3v2cmm01akP9anhu72QIuD/0Aq6vLo6cWd9Y4Eo2W9QCeLD0ePzqS/X4a6/Ez4MGOk/PnYj2+J+s6rOwR2iu7xlbNBuj1vo+e/rjZ7PgRrcuwPs+NZdYzFI2enE/qtUjqZMp4DKoolcCSOIl+lub2vBhBe8J6jqrYA6MevgzDhirDGhjl0GWeTR/5G9TefSuWo9SGLbAR6wHqlo8KABbebbcapVZs25fqXVCmGFVeKpsLGc6OTs0/tB6jTBJh9QsqL5m44P/SSH8pHDQqIJ3LIuD/0kgdVpWoAsXVDNfrtJ9hospL6bLY6yHbfXre1ZJwNcyg1hoVkNbm6nT8LQh3A5WpI6q8lDYX4Oemnmpj1R0VAPxapXoKSn2eG7toPQNAFFaMqABgcWFbjIe1dMt6AIAkrFhRBSndbwE+flp0H1bsqIKVpU1NHKYx1nG5D6sp3752sPxhi/UYtbG+iXcdVlPbKvjxY0OTh4vGOirAcVhNR5UKD1EBTj/Hso6K8bMtL0EFbjeWJbafEr1FBQDubiqstxUTj0EF7sLyYuHddreXRM9BBa7C0rbqjyEoERERERERERERJuYfuB3ef8D9h6Lvr882cpyf5w6Zvx51MT8RhrCA5uIK2CMz/XYDS1QWuvdfUz83+tqMY937r7Pu9MtP1nMMQ2F5127v7N59bvefnYeksBh0Om3rEaoyC4vt/mr86pTp8dnuubSxJAqFRYRpayksNtMLFH9Vq7DIdNvfv1jPMAiFJVEoLIlCYUkUCkuiUFgShcKSKBSWRKGwyLB8AVBhSRQKiwjLtgIUlkRiFtart29o3n1A839MUcS0rQBtLApsUQEKyz3GqACF5RprVID+YHUgi5duozc+0djxmIMKXP0PUq+aiiqFoERERERERERERJi4+kCudeeGu0/hjx8+aD3CX0+mzrh6vfpxN6i3uDyFlec9Mv0Sug+vUQHA5OxMNjk74+pNmOeyei9by3NYRd42mDZWIrxtL1eV51lvLaZtVeRhe7ndWNmFK2ZPDnNUXrgNC7CNi5mHy6LrsCyksq2s43IfVpNba2Ob7t+p/5f1fRbNpSb2zfyebVsxsXtXzEM0xjoqgGBjBbE3l6KqF01YgG7my2TAPesZAsoXqs7LYio36142VUC1sQJtrn9lrey89QxF1C/QWjdXCtvK26YKKDdWsJbNpajiog4LGC4uRRWf6+GqGuTSyB6V96AC+o2VV7a9FFVzaAatqri9mKNiCipIamPl5beXomoe5dCVXLs2Mnni2C/rMapiDSqgHr4q66+SDII9qCCJk6jKY2CpBBUkdTLDsggttZCKkj65YcSMLPWY8tbNiQ5rLaGtp5CK/gDIMz9GPfV7hAAAAABJRU5ErkJggg==
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Import records from Elasticsearch
+      parameters:
+      - description: The Elasticsearch index name
+        example: some_index
+        in: query
+        name: Index
+        required: false
+        schema: {type: string}
+      - description: The Elasticsearch document type
+        example: doc_type
+        in: query
+        name: Doctype
+        required: false
+        schema: {type: string}
+      - description: The Elasticsearch query (expects Elastic DSL Query Language);
+          defaults to match_all as shown below
+        example: '{"query": { "match_all": {} } }'
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: Number of results to return
+        example: ''
+        in: body
+        name: Size
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Elasticsearch Query
+tags:
+- {name: SIEM & Log Management}

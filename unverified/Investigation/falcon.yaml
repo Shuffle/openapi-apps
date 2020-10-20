@@ -1,0 +1,1102 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        actor_ids: {type: string}
+        error_msg: {type: string}
+      type: object
+    tmp1:
+      properties:
+        created_date: {type: string}
+        error_msg: {type: string}
+        first_activity_date: {type: string}
+        id: {type: string}
+        known_as: {type: string}
+        last_activity_date: {type: string}
+        last_modified_date: {type: string}
+        motivations_id: {type: string}
+        motivations_slug: {type: string}
+        motivations_value: {type: string}
+        name: {type: string}
+        origins_id: {type: string}
+        origins_slug: {type: string}
+        origins_value: {type: string}
+        short_description: {type: string}
+        slug: {type: string}
+        target_countries_id: {type: string}
+        target_countries_slug: {type: string}
+        target_countries_value: {type: string}
+        target_industries_id: {type: string}
+        target_industries_slug: {type: string}
+        target_industries_value: {type: string}
+        url: {type: string}
+      type: object
+    tmp10:
+      properties:
+        error_msg: {type: string}
+        indicator_ids: {type: string}
+      type: object
+    tmp11:
+      properties:
+        error_msg: {type: string}
+        successful: {type: string}
+      type: object
+    tmp12:
+      properties:
+        created_date: {type: string}
+        error_msg: {type: string}
+        id: {type: string}
+        last_modified_date: {type: string}
+        motivations_id: {type: string}
+        motivations_slug: {type: string}
+        motivations_value: {type: string}
+        name: {type: string}
+        short_description: {type: string}
+        slug: {type: string}
+        sub_type_id: {type: string}
+        sub_type_name: {type: string}
+        sub_type_slug: {type: string}
+        tags_id: {type: string}
+        tags_slug: {type: string}
+        tags_value: {type: string}
+        target_countries_id: {type: string}
+        target_countries_slug: {type: string}
+        target_countries_value: {type: string}
+        target_industries_id: {type: string}
+        target_industries_slug: {type: string}
+        target_industries_value: {type: string}
+        thumbnail_height: {type: string}
+        thumbnail_url: {type: string}
+        thumbnail_width: {type: string}
+        type_id: {type: string}
+        type_name: {type: string}
+        type_slug: {type: string}
+        url: {type: string}
+      type: object
+    tmp13:
+      properties:
+        report_ids: {type: string}
+      type: object
+    tmp14:
+      properties:
+        base_command: {type: string}
+        complete: {type: string}
+        powered_by: {type: string}
+        query_time: {type: string}
+        session_id: {type: string}
+        stderr: {type: string}
+        stdout: {type: string}
+        task_id: {type: string}
+        trace_id: {type: string}
+      type: object
+    tmp15:
+      properties:
+        cloud_request_id: {type: string}
+        powered_by: {type: string}
+        query_time: {type: string}
+        session_id: {type: string}
+        trace_id: {type: string}
+      type: object
+    tmp16:
+      properties:
+        content: {type: string}
+        created_by: {type: string}
+        created_by_uuid: {type: string}
+        created_timestamp: {type: string}
+        description: {type: string}
+        file_type: {type: string}
+        id: {type: string}
+        modified_by: {type: string}
+        modified_timestamp: {type: string}
+        name: {type: string}
+        permission_type: {type: string}
+        run_attempt_count: {type: string}
+        run_success_count: {type: string}
+        sha256: {type: string}
+        size: {type: string}
+        write_access: {type: string}
+      type: object
+    tmp17:
+      properties:
+        json: {type: string}
+      type: object
+    tmp18:
+      properties:
+        trace_id: {type: string}
+      type: object
+    tmp19:
+      properties:
+        script_ids: {type: string}
+      type: object
+    tmp2:
+      properties:
+        behaviors_alleged_filetype: {type: string}
+        behaviors_behavior_id: {type: string}
+        behaviors_cmdline: {type: string}
+        behaviors_confidence: {type: string}
+        behaviors_control_graph_id: {type: string}
+        behaviors_device_id: {type: string}
+        behaviors_filename: {type: string}
+        behaviors_ioc_description: {type: string}
+        behaviors_ioc_source: {type: string}
+        behaviors_ioc_type: {type: string}
+        behaviors_ioc_value: {type: string}
+        behaviors_md5: {type: string}
+        behaviors_objective: {type: string}
+        behaviors_parent_details_parent_cmdline: {type: string}
+        behaviors_parent_details_parent_md5: {type: string}
+        behaviors_parent_details_parent_process_graph_id: {type: string}
+        behaviors_parent_details_parent_sha256: {type: string}
+        behaviors_pattern_disposition: {type: string}
+        behaviors_pattern_disposition_details_detect: {type: string}
+        behaviors_pattern_disposition_details_inddet_mask: {type: string}
+        behaviors_pattern_disposition_details_indicator: {type: string}
+        behaviors_pattern_disposition_details_kill_parent: {type: string}
+        behaviors_pattern_disposition_details_kill_process: {type: string}
+        behaviors_pattern_disposition_details_kill_subprocess: {type: string}
+        behaviors_pattern_disposition_details_operation_blocked: {type: string}
+        behaviors_pattern_disposition_details_policy_disabled: {type: string}
+        behaviors_pattern_disposition_details_process_blocked: {type: string}
+        behaviors_pattern_disposition_details_quarantine_file: {type: string}
+        behaviors_pattern_disposition_details_quarantine_machine: {type: string}
+        behaviors_pattern_disposition_details_rooting: {type: string}
+        behaviors_pattern_disposition_details_sensor_only: {type: string}
+        behaviors_scenario: {type: string}
+        behaviors_severity: {type: string}
+        behaviors_sha256: {type: string}
+        behaviors_tactic: {type: string}
+        behaviors_technique: {type: string}
+        behaviors_timestamp: {type: string}
+        behaviors_triggering_process_graph_id: {type: string}
+        behaviors_user_id: {type: string}
+        behaviors_user_name: {type: string}
+        cid: {type: string}
+        created_timestamp: {type: string}
+        detection_id: {type: string}
+        device_agent_load_flags: {type: string}
+        device_agent_local_time: {type: string}
+        device_agent_version: {type: string}
+        device_bios_manufacturer: {type: string}
+        device_bios_version: {type: string}
+        device_cid: {type: string}
+        device_config_id_base: {type: string}
+        device_config_id_build: {type: string}
+        device_config_id_platform: {type: string}
+        device_device_id: {type: string}
+        device_external_ip: {type: string}
+        device_first_seen: {type: string}
+        device_hostname: {type: string}
+        device_last_seen: {type: string}
+        device_local_ip: {type: string}
+        device_mac_address: {type: string}
+        device_machine_domain: {type: string}
+        device_major_version: {type: string}
+        device_minor_version: {type: string}
+        device_modified_timestamp: {type: string}
+        device_os_version: {type: string}
+        device_ou: {type: string}
+        device_platform_id: {type: string}
+        device_platform_name: {type: string}
+        device_product_type: {type: string}
+        device_product_type_desc: {type: string}
+        device_site_name: {type: string}
+        device_status: {type: string}
+        device_system_manufacturer: {type: string}
+        device_system_product_name: {type: string}
+        email_sent: {type: string}
+        first_behavior: {type: string}
+        hostinfo_active_directory_dn_display: {type: string}
+        hostinfo_domain: {type: string}
+        last_behavior: {type: string}
+        max_confidence: {type: string}
+        max_severity: {type: string}
+        max_severity_displayname: {type: string}
+        seconds_to_resolved: {type: string}
+        seconds_to_triaged: {type: string}
+        show_in_ui: {type: string}
+        status: {type: string}
+      type: object
+    tmp20:
+      properties:
+        json: {type: string}
+      type: object
+    tmp21:
+      properties:
+        success: {type: string}
+      type: object
+    tmp22:
+      properties:
+        file: {type: string}
+      type: object
+    tmp23:
+      properties:
+        json: {type: string}
+      type: object
+    tmp24:
+      properties:
+        session_ids: {type: string}
+      type: object
+    tmp25:
+      properties:
+        trace_id: {type: string}
+      type: object
+    tmp26:
+      properties:
+        host_ids: {type: string}
+      type: object
+    tmp3:
+      properties:
+        detections: {type: string}
+      type: object
+    tmp4:
+      properties:
+        agent_load_flags: {type: string}
+        agent_local_time: {type: string}
+        agent_version: {type: string}
+        bios_manufacturer: {type: string}
+        bios_version: {type: string}
+        build_number: {type: string}
+        cid: {type: string}
+        config_id_base: {type: string}
+        config_id_build: {type: string}
+        config_id_platform: {type: string}
+        detection_suppression_status: {type: string}
+        device_id: {type: string}
+        device_policies: {type: string}
+        device_policy_ids: {type: string}
+        external_ip: {type: string}
+        first_seen: {type: string}
+        host_hidden_status: {type: string}
+        hostname: {type: string}
+        instance_id: {type: string}
+        json: {type: string}
+        last_seen: {type: string}
+        local_ip: {type: string}
+        mac_address: {type: string}
+        major_version: {type: string}
+        meta_version: {type: string}
+        minor_version: {type: string}
+        modified_timestamp: {type: string}
+        os_version: {type: string}
+        platform_id: {type: string}
+        platform_name: {type: string}
+        pointer_size: {type: string}
+        policies: {type: string}
+        product_type: {type: string}
+        product_type_desc: {type: string}
+        provision_status: {type: string}
+        service_pack_major: {type: string}
+        service_pack_minor: {type: string}
+        service_provider: {type: string}
+        service_provider_account_id: {type: string}
+        slow_changing_modified_timestamp: {type: string}
+        status: {type: string}
+        system_manufacturer: {type: string}
+        system_product_name: {type: string}
+      type: object
+    tmp5:
+      properties:
+        _marker: {type: string}
+        actors: {type: string}
+        deleted: {type: string}
+        domain_types: {type: string}
+        error_msg: {type: string}
+        indicator: {type: string}
+        ip_address_types: {type: string}
+        kill_chains: {type: string}
+        labels_created_on: {type: string}
+        labels_last_valid_on: {type: string}
+        labels_name: {type: string}
+        last_updated: {type: string}
+        malicious_confidence: {type: string}
+        malware_families: {type: string}
+        published_date: {type: string}
+        relations_created_date: {type: string}
+        relations_indicator: {type: string}
+        relations_last_valid_date: {type: string}
+        relations_type: {type: string}
+        reports: {type: string}
+        type: {type: string}
+      type: object
+    tmp6:
+      properties:
+        status: {type: string}
+      type: object
+    tmp7:
+      properties:
+        error_msg: {type: string}
+        successful: {type: string}
+      type: object
+    tmp8:
+      properties:
+        created_by: {type: string}
+        created_timestamp: {type: string}
+        description: {type: string}
+        error_msg: {type: string}
+        expiration_timestamp: {type: string}
+        modified_by: {type: string}
+        modified_timestamp: {type: string}
+        policy: {type: string}
+        share_level: {type: string}
+        source: {type: string}
+        type: {type: string}
+        value: {type: string}
+      type: object
+    tmp9:
+      properties:
+        agent_load_flags: {type: string}
+        agent_local_time: {type: string}
+        agent_version: {type: string}
+        bios_manufacturer: {type: string}
+        bios_version: {type: string}
+        build_number: {type: string}
+        cid: {type: string}
+        config_id_base: {type: string}
+        config_id_build: {type: string}
+        config_id_platform: {type: string}
+        device_id: {type: string}
+        device_policies_device_control_applied: {type: string}
+        device_policies_device_control_applied_date: {type: string}
+        device_policies_device_control_assigned_date: {type: string}
+        device_policies_device_control_policy_id: {type: string}
+        device_policies_device_control_policy_type: {type: string}
+        device_policies_global_config_applied: {type: string}
+        device_policies_global_config_applied_date: {type: string}
+        device_policies_global_config_assigned_date: {type: string}
+        device_policies_global_config_policy_id: {type: string}
+        device_policies_global_config_policy_type: {type: string}
+        device_policies_global_config_settings_hash: {type: string}
+        device_policies_prevention_applied: {type: string}
+        device_policies_prevention_applied_date: {type: string}
+        device_policies_prevention_assigned_date: {type: string}
+        device_policies_prevention_policy_id: {type: string}
+        device_policies_prevention_policy_type: {type: string}
+        device_policies_prevention_rule_groups: {type: string}
+        device_policies_prevention_settings_hash: {type: string}
+        device_policies_remote_response_applied: {type: string}
+        device_policies_remote_response_applied_date: {type: string}
+        device_policies_remote_response_assigned_date: {type: string}
+        device_policies_remote_response_policy_id: {type: string}
+        device_policies_remote_response_policy_type: {type: string}
+        device_policies_remote_response_settings_hash: {type: string}
+        device_policies_sensor_update_applied: {type: string}
+        device_policies_sensor_update_applied_date: {type: string}
+        device_policies_sensor_update_assigned_date: {type: string}
+        device_policies_sensor_update_policy_id: {type: string}
+        device_policies_sensor_update_policy_type: {type: string}
+        device_policies_sensor_update_settings_hash: {type: string}
+        device_policies_sensor_update_uninstall_protection: {type: string}
+        external_ip: {type: string}
+        first_seen: {type: string}
+        hostname: {type: string}
+        last_seen: {type: string}
+        local_ip: {type: string}
+        mac_address: {type: string}
+        major_version: {type: string}
+        meta_version: {type: string}
+        minor_version: {type: string}
+        modified_timestamp: {type: string}
+        os_version: {type: string}
+        platform_id: {type: string}
+        platform_name: {type: string}
+        pointer_size: {type: string}
+        policies_applied: {type: string}
+        policies_applied_date: {type: string}
+        policies_assigned_date: {type: string}
+        policies_policy_id: {type: string}
+        policies_policy_type: {type: string}
+        policies_rule_groups: {type: string}
+        policies_settings_hash: {type: string}
+        product_type: {type: string}
+        product_type_desc: {type: string}
+        provision_status: {type: string}
+        service_pack_major: {type: string}
+        service_pack_minor: {type: string}
+        slow_changing_modified_timestamp: {type: string}
+        status: {type: string}
+        system_manufacturer: {type: string}
+        system_product_name: {type: string}
+        tags: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of CrowdStrike Falcon
+  title: CrowdStrike Falcon
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Search for Actor Report IDs based on keyword query string
+      parameters:
+      - description: General term to search for
+        example: ''
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: CrowdStrike Query Actor Reports
+  tmp1:
+    post:
+      description: Search for actor reports given an ID
+      parameters:
+      - description: CSV list of actor report IDs to get info about
+        example: ''
+        in: query
+        name: Actor Report IDs
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: CrowdStrike Search Actor Reports By ID
+  tmp10:
+    post:
+      description: Query for indicator IDs using a keyword query string
+      parameters:
+      - description: Indicator Value to Search For
+        example: www.we11point.com
+        in: query
+        name: Indicator
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: CrowdStrike Query Indicator
+  tmp11:
+    post:
+      description: Update information about a CrowdStrike indicator
+      parameters:
+      - description: Indicator to get info on
+        example: domain:google.com
+        in: query
+        name: Indicator
+        required: true
+        schema: {type: string}
+      - description: Description of the indicator, 200 chars max
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: Source of this indicator, 200 chars max
+        example: ''
+        in: query
+        name: Source
+        required: false
+        schema: {type: string}
+      - description: CrowdStrike policy for this indicator
+        example: ''
+        in: query
+        name: Policy
+        required: false
+        schema: {type: string}
+      - description: How long until this indicator expires
+        example: ''
+        in: query
+        name: Expiration Days
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: CrowdStrike Update Indicator
+  tmp12:
+    post:
+      description: Get Report from ReportAPI
+      parameters:
+      - description: Report IDS comma separated
+        example: 2234,1123,6665
+        in: query
+        name: Report IDs
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: CrowdStrike Get Report
+  tmp13:
+    post:
+      description: Search Reports in ReportAPI
+      parameters:
+      - description: Query for searching Report API
+        example: ''
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: CrowdStrike Search Reports
+  tmp14:
+    post:
+      description: CrowdStrike Real Time Response Admin Command Result
+      parameters:
+      - description: Cloud Request ID from Command Run
+        example: ''
+        in: query
+        name: Cloud Request ID
+        required: true
+        schema: {type: string}
+      - description: Sequence ID
+        example: ''
+        in: query
+        name: Sequence ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp14'}
+          description: Successful request
+      summary: CrowdStrike RTR CMD Result
+  tmp15:
+    post:
+      description: CrowdStrike Real Time Response Admin Command Run
+      parameters:
+      - description: Device ID
+        example: ''
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      - description: Any Real Time Response command to run (ls, cat, env, encrypt,
+          kill, rm, zip, unmap, ...)
+        example: ls
+        in: query
+        name: command
+        required: true
+        schema: {type: string}
+      - description: Any args required for command. If command is `cat`, arg should
+          be `path/to/file`
+        example: ''
+        in: query
+        name: Arguments
+        required: false
+        schema: {type: string}
+      - description: Optional Session ID. If not provided one will be created.
+        example: ''
+        in: query
+        name: Optional Session ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp15'}
+          description: Successful request
+      summary: CrowdStrike RTR Admin CMD Run
+  tmp16:
+    post:
+      description: CrowdStrike Real Time Response Get Script
+      parameters:
+      - description: Script ID
+        example: ''
+        in: query
+        name: Script ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp16'}
+          description: Successful request
+      summary: CrowdStrike RTR Get Script
+  tmp17:
+    post:
+      description: CrowdStrike Real Time Response Get Uploaded File
+      parameters:
+      - description: File ID to get info.
+        example: ''
+        in: query
+        name: Trace ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp17'}
+          description: Successful request
+      summary: CrowdStrike RTR Get Uploaded File Info
+  tmp18:
+    post:
+      description: CrowdStrike Real Time Response Script Upload
+      parameters:
+      - description: Script File attachment to send to Crowdstrike Real Time Response
+        example: ''
+        in: query
+        name: File
+        required: true
+        schema: {type: string}
+      - description: Description for file. Defaults to `File `<FILENAME>` uploaded
+          from swimlane`
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: Permission type, defaults to public
+        example: ''
+        in: query
+        name: Permission Type
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp18'}
+          description: Successful request
+      summary: CrowdStrike RTR Upload Script
+  tmp19:
+    post:
+      description: CrowdStrike Real Time Response List Script IDs
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp19'}
+          description: Successful request
+      summary: CrowdStrike RTR Get Script IDs
+  tmp2:
+    post:
+      description: Get a detection's summary.
+      parameters:
+      - description: ID of detection
+        example: ldt:a2eb2cbbb95241235113e85a710f374d:38656641723
+        in: query
+        name: Detection ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: CrowdStrike Get Detections Summary
+  tmp20:
+    post:
+      description: CrowdStrike Real Time Response Session File List
+      parameters:
+      - description: Device ID to get files from.
+        example: ''
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      - description: SHA256 of file
+        example: ''
+        in: query
+        name: SHA256 of File
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp20'}
+          description: Successful request
+      summary: CrowdStrike RTR Extracted File Content
+  tmp21:
+    post:
+      description: CrowdStrike Real Time Delete Session File
+      parameters:
+      - description: Device ID
+        example: ''
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      - description: File ID.
+        example: ''
+        in: query
+        name: File ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp21'}
+          description: Successful request
+      summary: CrowdStrike RTR Delete Session File Id
+  tmp22:
+    post:
+      description: CrowdStrike Real Time Response Session File Download
+      parameters:
+      - description: Device ID
+        example: ''
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      - description: SHA256 file
+        example: ''
+        in: query
+        name: SHA256 for file
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp22'}
+          description: Successful request
+      summary: CrowdStrike RTR Session File Download
+  tmp23:
+    post:
+      description: CrowdStrike Real Time Response Session File List
+      parameters:
+      - description: Device ID
+        example: ''
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp23'}
+          description: Successful request
+      summary: CrowdStrike RTR List Files
+  tmp24:
+    post:
+      description: CrowdStrike Real Time Response Get Session IDs
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp24'}
+          description: Successful request
+      summary: CrowdStrike RTR Get Session IDs
+  tmp25:
+    post:
+      description: CrowdStrike Real Time Response Put File
+      parameters:
+      - description: File attachment to send to Crowdstrike Real Time Response
+        example: ''
+        in: query
+        name: File
+        required: true
+        schema: {type: string}
+      - description: Description for file. Defaults to `File `<FILENAME>` uploaded
+          from swimlane`
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp25'}
+          description: Successful request
+      summary: CrowdStrike RTR Upload Put File
+  tmp26:
+    post:
+      description: Search for all hosts matching a FQL query.
+      parameters:
+      - description: An FQL filter to search with.  See README for info.
+        example: platform_name:'Windows'
+        in: query
+        name: Filter
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp26'}
+          description: Successful request
+      summary: CrowdStrike Search Hosts
+  tmp3:
+    post:
+      description: Get a list detections intended to create a new record for each
+        detection.
+      parameters:
+      - description: Set to true to prevent duplicates.
+        example: ''
+        in: query
+        name: Track State
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: CrowdStrike Get Detections
+  tmp4:
+    post:
+      description: Get information about one or more hosts given their agent ID (AID).
+      parameters:
+      - description: A list of host AIDs. Must be a list type field.
+        example: '["304c2fc843e14160707a3cac304aba48"]'
+        in: query
+        name: Host AIDs
+        required: false
+        schema: {type: string}
+      - description: A single host AID
+        example: 304c2fc843e14160707a3cac304aba48
+        in: query
+        name: Host AID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: CrowdStrike Get Host Info
+  tmp5:
+    post:
+      description: Search CrowdStrike for an Indicator given an ID
+      parameters:
+      - description: CSV list of actor report IDs to get info about
+        example: ''
+        in: query
+        name: Actor Report IDs
+        required: false
+        schema: {type: string}
+      - description: string value to search for
+        example: ''
+        in: query
+        name: Equal Value
+        required: false
+        schema: {type: string}
+      - description: Value of the indicator to search for
+        example: ''
+        in: query
+        name: Indicator Value
+        required: false
+        schema: {type: string}
+      - description: Type of indicator to search for, valid types are domain, hash_md5,
+          hash_sha1, ... Full list in Indicator API docs
+        example: ''
+        in: query
+        name: Indicator Type
+        required: false
+        schema: {type: string}
+      - description: Actor report ID
+        example: ''
+        in: body
+        name: Actor Report ID
+        required: false
+        schema: {type: string}
+      - description: Report ID
+        example: ''
+        in: body
+        name: Report ID
+        required: false
+        schema: {type: string}
+      - description: Level of confidence, must be one of high,medium,low,unverified
+        example: ''
+        in: query
+        name: Malicious Confidence Level
+        required: false
+        schema: {type: string}
+      - description: Unix UTC time of publish date
+        example: ''
+        in: body
+        name: Published Date
+        required: false
+        schema: {type: string}
+      - description: Unix UTC time of last update
+        example: ''
+        in: body
+        name: Last Updated Date
+        required: false
+        schema: {type: string}
+      - description: Family of malware
+        example: ''
+        in: query
+        name: Malware Family
+        required: false
+        schema: {type: string}
+      - description: Point in the kill chain the indicator is, must be one of reconnaissance,weaponization,delivery,exploitation,installation,c2,actionOnObjectives
+        example: ''
+        in: query
+        name: Kill Chain point
+        required: false
+        schema: {type: string}
+      - description: See CrowdStrike Labels list for searchable labels
+        example: ''
+        in: query
+        name: Labels
+        required: false
+        schema: {type: string}
+      - description: Include deleted indicators in response
+        example: ''
+        in: query
+        name: Include Deleted
+        required: false
+        schema: {type: boolean}
+      - description: Include only deleted indicators in response
+        example: ''
+        in: query
+        name: Deleted Only
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: CrowdStrike Search Indicator By ID
+  tmp6:
+    post:
+      description: 'Perform one of the following action on a host: contain, lift_containment,
+        delete, restore'
+      parameters:
+      - description: A list of host AIDs. Must be a list type field.
+        example: '["304c2fc843e14160707a3cac304aba48"]'
+        in: query
+        name: Host AIDs
+        required: false
+        schema: {type: string}
+      - description: A single host AID
+        example: 304c2fc843e14160707a3cac304aba48
+        in: query
+        name: Host AID
+        required: false
+        schema: {type: string}
+      - description: 'The action you want to perform.  Options: contain, lift_containment,
+          delete, restore'
+        example: contain, lift_containment, delete, restore
+        in: query
+        name: Action Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: CrowdStrike Manage Host
+  tmp7:
+    post:
+      description: Create a CrowdStrike indicator
+      parameters:
+      - description: Type of indicator
+        example: domain
+        in: query
+        name: Type
+        required: true
+        schema: {type: string}
+      - description: Value of the indicator
+        example: www.google.com
+        in: query
+        name: Value
+        required: true
+        schema: {type: string}
+      - description: Policy used for this indicator
+        example: detect
+        in: query
+        name: Policy
+        required: false
+        schema: {type: string}
+      - description: Source of this indicator
+        example: Internet use
+        in: query
+        name: Source
+        required: false
+        schema: {type: string}
+      - description: Timestamp of the expiration of the indicator
+        example: '30'
+        in: query
+        name: Expiration Timestamp
+        required: false
+        schema: {type: string}
+      - description: Description of the indicator
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: CrowdStrike Create Indicator
+  tmp8:
+    post:
+      description: Get information about a CrowdStrike indicator
+      parameters:
+      - description: Indicator to get info on
+        example: domain:google.com
+        in: query
+        name: Indicator
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: CrowdStrike Get Indicator
+  tmp9:
+    post:
+      description: Query hosts for indicators by type and value
+      parameters:
+      - description: Indicator Type to Search For
+        example: domain
+        in: query
+        name: Indicator Type
+        required: true
+        schema: {type: string}
+      - description: Indicator Value to Search For
+        example: swimlane.com
+        in: query
+        name: Indicator Value
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: CrowdStrike Query Host for Indicator
+tags:
+- {name: Investigation}

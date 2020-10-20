@@ -1,0 +1,151 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        avdetect: {type: string}
+        environmentDescription: {type: string}
+        environmentId: {type: string}
+        sha256: {type: string}
+        size: {type: string}
+        start_time: {type: string}
+        submitname: {type: string}
+        threatscore: {type: string}
+        type: {type: string}
+        verdict: {type: string}
+        vxfamily: {type: string}
+      type: object
+    tmp1:
+      properties:
+        analysis_start_time: {type: string}
+        avdetect: {type: string}
+        classification_tags: {type: string}
+        domains: {type: string}
+        environmentDescription: {type: string}
+        environmentId: {type: string}
+        error: {type: string}
+        hosts: {type: string}
+        isinteresting: {type: string}
+        isurlanalysis: {type: string}
+        md5: {type: string}
+        sha1: {type: string}
+        sha256: {type: string}
+        size: {type: string}
+        state: {type: string}
+        submitname: {type: string}
+        targeturl: {type: string}
+        threatlevel: {type: string}
+        threatscore: {type: string}
+        total_network_connections: {type: string}
+        total_processes: {type: string}
+        total_signatures: {type: string}
+        type: {type: string}
+        verdict: {type: string}
+        vxfamily: {type: string}
+      type: object
+    tmp2:
+      properties:
+        avdetect: {type: string}
+        environmentDescription: {type: string}
+        environmentId: {type: string}
+        sha256: {type: string}
+        size: {type: string}
+        start_time: {type: string}
+        submitname: {type: string}
+        threatscore: {type: string}
+        type_short: {type: string}
+        verdict: {type: string}
+        vxfamily: {type: string}
+      type: object
+    tmp3:
+      properties:
+        avdetect: {type: string}
+        environmentDescription: {type: string}
+        environmentId: {type: string}
+        sha256: {type: string}
+        size: {type: string}
+        start_time: {type: string}
+        submitname: {type: string}
+        threatscore: {type: string}
+        type_short: {type: string}
+        verdict: {type: string}
+        vxfamily: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Payload Security Hybrid Analysis Falcon Sandbox
+  title: Payload Security Hybrid Analysis Falcon Sandbox
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Look up a domain on the Falcon Sandbox
+      parameters:
+      - description: The domain value to scan
+        example: ''
+        in: query
+        name: Domain
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Falcon Sandbox Domain Scan
+  tmp1:
+    post:
+      description: Look up a hash value on the Falcon Sandbox
+      parameters:
+      - description: The hash value to scan, can be SHA1, MD5 or SHA256
+        example: ''
+        in: query
+        name: Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Falcon Sandbox Hash Scan
+  tmp2:
+    post:
+      description: Look up an IP address on the Falcon Sandbox
+      parameters:
+      - description: The IP address to scan
+        example: ''
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Falcon Sandbox IP Scan
+  tmp3:
+    post:
+      description: Look up a URL value on the Falcon Sandbox
+      parameters:
+      - description: The URL value to scan
+        example: ''
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Falcon Sandbox URL Scan
+tags:
+- {name: Investigation}

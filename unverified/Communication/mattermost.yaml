@@ -1,0 +1,146 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        channel_id: {type: string}
+        create_at: {type: string}
+        delete_at: {type: string}
+        edit_at: {type: string}
+        file_ids: {type: string}
+        hashtag: {type: string}
+        id: {type: string}
+        message: {type: string}
+        original_id: {type: string}
+        parent_id: {type: string}
+        pending_post_id: {type: string}
+        props: {type: string}
+        root_id: {type: string}
+        type: {type: string}
+        update_at: {type: string}
+        user_id: {type: string}
+      type: object
+    tmp1:
+      properties:
+        channel_id: {type: string}
+        create_at: {type: string}
+        delete_at: {type: string}
+        edit_at: {type: string}
+        file_ids: {type: string}
+        hashtag: {type: string}
+        id: {type: string}
+        message: {type: string}
+        original_id: {type: string}
+        parent_id: {type: string}
+        pending_post_id: {type: string}
+        props: {type: string}
+        root_id: {type: string}
+        type: {type: string}
+        update_at: {type: string}
+        user_id: {type: string}
+      type: object
+    tmp2:
+      properties:
+        channel_id: {type: string}
+        create_at: {type: string}
+        delete_at: {type: string}
+        edit_at: {type: string}
+        file_ids: {type: string}
+        hashtag: {type: string}
+        id: {type: string}
+        message: {type: string}
+        original_id: {type: string}
+        parent_id: {type: string}
+        pending_post_id: {type: string}
+        props: {type: string}
+        root_id: {type: string}
+        type: {type: string}
+        update_at: {type: string}
+        user_id: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Mattermost Mattermost
+  title: Mattermost Mattermost
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAIAAADrOV6nAAAo6klEQVR4nNV9ebhtSVXfb62q2vtMd3pjz83Q0DaTzAQNGjUhhihqADGCAoYxrTRqEAMqg6BAZJBmEv3AYDAJxDhEgsQwJ4ISugmNMtPYw2u6+w13ONPeVbWWf+x99t1nn3Pufa/fuf3B+u733r3n7F1Vu1atVb811NqE5dEPPC4CkOpvpuJ/ouIXAaAEAEI6+bAkJRCREAAYaPGLEkTLK8vrSXa7YCKIFk1T1QuUoAQGlX0BRMTQ4jIACghJbWBT9wJSH4zWWgZAKpNHgKkapLKVelPFUKMqESmBSavxAPjs65Ozndb9iJfVUIOU9r9mampqv9fnhRrzMu/62X4XtQxAz2/MdZL9ri9WT7EI6vxbLtkltlUJBwCanbvJ4qXJF6qT+WSSqcWulfwpE6bnnYhAhSSBFcUFxSeYTJkApvoTZb9VO/W+il90SuBICTpvNRTX1G7X+fI3mY2Sf8VQa58sl+5WKazPY0Wz8jR37hrfSu3fqq9ChS5a6XVe7kH1C2bHUH+EfZkxNdSzu+Uu0JJZqNNzOktE1NByu7tOvZ1iwTIVXKl+9u164bdnN3KprQYi0gXLaLbl2ZXRaPDgaJmKFFw+MaOJXwBo+alCFdUcAZF0gl9KvaST5c9aNrKLX0h1wo5K6RWtVfil/IqUACFFDb9gZnOd3C6lRoVqTdWTah2/oFSZ0EI90+6WYdCEWgxVUp7eXw6CDkqR1kmoev4mypirD+fTnlMwF7/M1dt1avR4/hJT59bB4ZcGLVUKp6eyjl8UALSBX4obMFnUqlr+yTSLXzDBLyWamOCXYr4q/FLR2eAX1BTm2eGXafmbwS+745mHXxbt7udJByuFFf8aUjJ/vVf8m9789sYvWLzS98Uvs9vV3vhlX7p78EuDDlyRzvKv/lWdaEJn2/L54ZeCGvzbW+9pjZ2L8MvdT8tUpIU2WoRfAIBJS7+GCoEqFVp3lIgaEikbJDU5NIWwAawib5+WeCRyUGQ67ozt5jo6F9mTv/hzFz/0AWAGFNbswA+3WsdXh0Nyne9/LoYxhzXTKpSJFJwRCdTZ4JQRAZhAssuMmgtGCwuvBFEz+KXmf9l92LmTs3R1uuS9sKASvBQ8qPGPiGLd0TVZ1I3NjyfXK5BT2wApeaWQuTzmR7h1Is0uMsFecp8vvPmVVzGQaC+RrdysDcKYSC13nV1pjzAyp245k39TRtanHbu22yMBCGJyJRGkACPZNtIxaiOm+Dc71Mb011x95XLcQ47rfrsl0jJZOA2+aQq/AAAidBfaFBdr01mKCgUU4wtg470bK68Ebutge1Uuet1v4t73hIv3sUOoidEYD5OMkSAFBbAEH4Lf+fiJS1//Bhzl3rgHkl3zg4jAuZCAemGALOub1W6vzTGMbHRzUNgEefF++AUz/pcGDorQs1XxZ03Ll8LyyYkK/Vk9Q6xtJHX7r8AvM62US8FwCCwUVzph8LQfN0/40ZYBTIYwjNweZ0mXKSMIC2duiMp5bcxb/mj9zz+1uS3djjrWXIkxtcgYYPXoujP3vUf20qt7T/2FL/PqfQ3CrnXfGOoEEtep8p+h4ugCISvlr7Gol0FL9ZEWvCueYjJUrZhRs9/r8YdK/VROfRGDdBNhnUzc1K0Vf/iS9kf/4F0P1XGXQgZ4IWssq+8CFI2xyK1I4J2gF7LmnXj7Lcmlf/zRqLTaAqIVwBZdTPSYZuwMso5Dz+2872WbmawdXV3dpk1lZ5BOlKcCIM4odHOGJGPnW6BQDZVYC/1Z2u9zNj8ISqeBANBdp8ESablwZnp4Ew1TUCP+MNcpXBh8KWFMAgLo1P3dmWvfeTjleyb5auSdiBYAUIACJAk8hTSYZGDbXd8LNh9pctpc+tPPukNwuN6BTrbngtZGlJvEtuQv3nDZKB43lXBNkFRFUbrGnU4YlK8aDd5M+a/3td93PYjLF7+Slm/az1UVhSJq4JfGxVVcJnMZ5Yc6rN/7kI0X/vytqWQkl3s6I5RwseIpKAHKQ+6lAhtFTd5P0s99Lfngx2/+5CePBz6GGDHjs62WUdaK1mRv+JUeIpiFyXjvkSSVh6AaquF+1DXrjQCj9kmXr2PXIXC2+GXRtCyFlszCaqCFghTadSRW9sPsxaihgAhN0hTjW97+5ksuPzKi8UMiq3I/Ui+KS6FKkud5mnRHWVxp74Q0fOKGjde86esnx5d1ErsTL2EiA8EE5U7msYIVICJ1+tjv7j3w8HbfcnfUy1sDZuxqvGpMgI296CQ1Q2s3M70ICBVjdm3qmgqdi19ElRcYx+dPBwJnin8jNdedTnajBn4hnUKzh8zn3vu+q8JWlo2QtDwQSJ1VTmk7apcgiet4b0JmH/60L3H3Ku/yDl2WJQQ9leaH4+oJyAq0i8Xxhw//dtLpD1Rdd9wat7YZxhhTZ1+FX0ZJzpIcz2//vddf9Izn/N1N3Ssb+KW0F+fNwwHhlwYt3ztTOMYCqYESKUiKn+pJWGFUjAqpkAogmTWdkMXAwvF7Hsp/9NYH5cNoOkjTlHib1JKkSsFT2yZk2XlyT3vRJx/3fJi1+5GlFCYqdQDLG9IRxAtUu4AAQqTKCggrEwyrMTjVMTvcz4NtKZJgchtSSztGNSIVEhBVjiIDcsKWtr6RbKyH7I9/+x6PueILcd30vOGRr7uTlFC4WlWjkihJhKoqEXFpjYiSgFVY4z5eoHOjpbKQqfBfy/TaL6gBYWrxI9rIR7d22znjLS92r3gmBsNxq5UADFhIh8QZ3jaSELLNzfwXXnvie67Gzfpdo3hnvX2Z3pYa8cVoBomOojv9/Q9q/49XuzRNjKXqjigxbRnMqI2iYQVHNYgC4tf89AOecs8772A/6J1aNAk0STao08EFLpYvhRNgWa5NUdUyYlf7KfTt5Dm3JN0gvO0VeOgVp/JkO21RjLEcG3m2PvhuSAd933viNduf/sIlHERGg07raLUs6tKgVM5jpbSV0Ov0TtsxDQ+96JlnVuEUXjVWY1bVlZUuUSQyDVctQZQsbAJYRLh0eM1PHP3Vn9A1vbi6t7heVavtvPqwPi1aH+HyaJksLNij00ZxNcWNi+soUZLxK56NR9z7DGIS3GptYOIHq9mIQ2d7U3tPfOaZk+mh3I07OaVZV6eFpjE1lTIoeh+HLeM3vvfBm6t6WNt2IrRS2PjGULfXwQL9psSiBmAYk7FhPvOUhyT/6rvvbDC7bkTNivO3TeLFLJX+l5kQUkHFAz/2kZ3vexhG0fbdykr8CsDQQgRDqwXTu/Ha1w+f9ATsbGysjyzH1plOtt3diiZb1Ols/MGEtWf/EF55dWcYklkvpYVdXzdzwxukImBiC1hkoRVYOIgZP/e7jq6umhijTCzJSn/ui1+W6yZdJgsL/ELYxS/Fw7CCRCsIw9BIxkYWipG5h8++8vnoZ0PLNpUs8r1IbW5zQCRPMrO1I1f8yWcOx7WcBhi5IBzawbV8j9XxRIVqaQ4IuMIvIA5gQnJKpf+u38TP/CBaPlISNSsenKvHj7F3vOcj1sYuKQYvJEISWYID1KU5BmkybrcjMcIhUbey7j/4y9iwN2XYBAA1e+AXYQXt/vBS/aRLVqRo2O8TdFPsf6UXigluc5z2Nbp0fOP733P/0dg7Z6AMWKgRHrtoTYxk6O3vXfvRp4JXUlHHPGr2iFqP0/KdG7EiUJbx0WNh5x6tMx14cNupt9psRzVecIEDhZlUHZLYCTZTgy2glY8ZgShXCoGR2ds/8toLWv5YW3dCutlscwF+kWWDmuVnsMkCS6jaNiKU43o+6qUI7/m9e5qMrQNzNRgFQGoy3hqn/N/fj6y7k3mCkJA08Eshf8VPA78w5z62jUU3/7u3vfFiK70gbsyjQM5zqzlsja02QLVs9GpjY2UVETzjBbeMk1sCDBFRmdl1HCF944twe5q2+usVqKmet45fdJIg2YA550/LZGEdv8zmD9alRIB278Q/fwxftBI857WRCCiQJjDbQsef+Iy/ickIcYWRs8kF6dweyzan8UtL2kMjxg3/5O33Pd75micXGExjE9JoxrODP3QYlYTUHQIKsjGJ2Plm+5KvD6/oezKckjILXBjuDOOjj9927zgwaycbDc7FLyXzlprNtlRFqqqTVTZrv4Oy3ECUrfLIbl4QTv/i1Z+X3AJNmcjG/czoE56FLXNxhCMEKAc2Rqm++ZX7H2thvyfYVDXBGBuNiXy6Pb404yddeecKRRfuReQNeYo9sDfS9EmRrt/nOEa00s3axMqkIOHCOcBBjMK1OYSnvDKcYjOKZ2zg4LZTcW5lkI4v/MBvrBz1tyEdaW5t+0sgimwZWuaFF1tgTXPMtz/vKi2ThYv0Q6k6tG0FzFkwoZOtv/MPHhCGl4MVlDeuN8Zcd/1a7kaIF5997yEchukz7QjDu9Eh33nhL+GnfupykN939xER51ANfw/o/6xfFfWHxu3N1vgwBcdq1CDPt6991QORd0wP0d8LADhvZGotV3nWaamKdAF+KQPlgiSykEDtFRufMnJz266JGZA2x5Dx4GX/AXdkOc+Mbi5+KSYraw1J2km2onbHqPz+S/GYq86suZMKFm6ukgYZY5wDIBNwWw5+lpe3uvG7Pz5sjY561ycBKQejrWT9coQLWzdmGXJ0CCDs9ii7wyadMavOnw7QLqz2bSHEYtgcxr7dkZ3ffdv9unqpuh3RlLSp1r5xy/FTtJ2mXZGptLbCoVPPnyhWTAlntGNIyJ00+cqG//vLDg/McMPEI6rtfR9TRBSgSdSwjkjrz0JE63nnbe8PUdHnNCQKtQCF3GFs3vlrV/QCYE+xckTawC/13P5vXRbOxS8VxDCCPNmkNn7we7eRrYawnUeO4gwNGu388mu+QnY1iWH2q6ojYAq8EBGrkELDEbv6yT97x/3Yd8n4yAMBcWzioAYxw1oAAfu5UQZJ0LT7yJd+upuZLNmk2DHIQnIms+HC6B/2oButXwdCmMxrseyq/O6liyCWbNpP45dCm7KWEQPfuSP6I2ukz3vOIWKv3GZNEvIBbVIbGE6Ns/HjN8hWvGfHRiIHajEKFF/J33T8QYrUwigU18Dq7Lijn3jto5MQFD4whBIDr+z3HnlOlIwgMd1pjYoZr8nfVPyBOG+pOdV6RB/s/GowmnPCYdWq5H330p+8UMWQyYwwKtnVIpomQDk537qmfUUV7NJ64kU8xukJl1GC9swdAdFFGQ6y7PWvuaW+888awlOGRKn6DKvxkkdQb+umnJHtx7PZARuz5xVcWkqJb2fWb2h45qs/zwhWc6OBIApO1sKGIcvjkR256XzRg3CN7g5tiW0JoLXtCtV2yKSETDIzuugVLwHmWGWW7LbGHlqrfXtv2UUTpTRU8YcqGXXySVRwyCODNpP89VfjY++4GDjBfnaV7EUxxiggBs1sflX8QQiqapTyJG/l2RfkAeWRp5AVLBzHPBmlP/6Ylo/OwGghv7VjBdUjfOvuhajtUtVPNdy0Bc3kfldplNi8C2Aa2RSDjPqd0Ghwjv3OU9EP54g4vyye/Ef3GVHwdnSRoaYLbW8i1oVSyKXTpxhnMHCCoUnbgCaJ2NQk5UbLapTwvB9EL6SYPkn/bSOFDZTR+IpDetmVfyvDbY87m19TDn88mFte86o7ss6JWW/OXPyixcySgCJ08Oev7W/5dr/VztPNXM5NCpnZLEhBoekTrLnN2p43rT0cbvull78hI2iVfa5xnPj18NlDzJL2UTN+DpSWyUImreOXSkoKA2A7br7xFQ9c4TWbHG/caGMaGSGm13/DtPuXGgWDaudMd/GL0q53ilQFNhKG2Ezjmk+uXDU+Dd7ErjHnthcismSnoIjamhxVk7n5E0mkzJgN8bfzkQ9lz1kJO5r3PVsrrBxaYyd0/1//2TRmvQK/FBCGoTzJIS2s5/Oa6GlaqhRO45d6AB3AOjoJQ03kGS2nRaoUH/boWaU94g/zuuR1u/pzP7M3GtmHiGCtqacxlb3vmT9hXWfIK2wSIxASSAqbZZm5/DjCzs78G78tQr51A5wmaX0CXNLabNFmNBkhNG6JHKzGYc7epRyxR/yh4aYqRp/k8gMPP68xq0LhARBBMIVf6vGHupGuhCj5Z25BNM4KK+fQRE2fEjpO+QXu5ln8orwL1JdIB5B4MS2FlUlw9bOOGR8VRDNe5sKnLIxxRGr3ij807jO0rexFBh05N/wyhygW22HJpwXx97qGYOP/7BN50MBSFDkhaBt22/Tx0KtWmzcuSMg4f1qym7tasA2JIaKHf2fMkw0X2t41EyaUvADX/y3aLvSTcT3+0NDGu3EPiJCkYXXc6h85NGS/jxd0bxo6kHc7HTBp4Q6s9r9yPzMAaySpxx84jj/1hTtFRAunNmUCSmRlu5W85CcvgcaUfCSTsxFT7q8gERbhb9kkRADz8p3K3zXGGIG5EI0B3t6GYbvvkKY3FWXlSy65xCbn9SAcgZgiB8Wmksf0/jd1MgQmqlhbKhUBA4ghZ9EUYGYvhhRGy0StA4KmB2IXziaoExFDmFnnx8oYQIxQhQqf085PyqPMn6eG6hio7VmFPZckXYE651CLtCjYQB0CPEREyAIgCOu3CZwplSfTHK+YqrPKMKAAnakgpwQKR49BNBCZqfjDxEFTXSgEZSpyrkHRRvf5m2/PxZ3PyJO8/+FTaAdNZVyPjQCFqUQykz+hRGpsFiOYlJiVWRlgITYsKWWteCYzxpBYxEgMVLU6CDOb+vnQ8iMVC5dx8KzFtzMPQArESy4FEOsZurP4ZQYUBKjNqO1tM/R/bhT0V978eSOYjT/PBi6kQtoEMAcFlAFmLVKnrMAKsYvbzBAKShrYfHvAGcaU/ixXG2lRRGlELZt7IbYzDjYbDaRzqAdxaRrtHvjFAGXNGVKQjm3L8jDPj//RXwLkjTgTXSRY7ANQSdlqMMgIYqP9ZmdlJ7s/EQ3sRtFXlT84mz9R5XuvjTcHLaRjw3x6x7rJBikEIUXWu8AGCcyibatZKdmqtPAg8F2e9gOgSnrqS89YYlP0ON8Mt8goK48K16m+izTrznCksMrp9h/+cRaLkiM8CkbGaGL6BjEkajunrmfOrLzy9WfEiNjtIoVgEX7BtGII6LX9FltALaG5LlkzQ1FJIqFQpKh5z/ce3jnRASLShuowZjL0mUyLwnOWmixVKDfd3IuospGJzJam0ZwCeQptgxG4OaHN/sBCYCWrnhE+/3WLJKim5eHThXcVQypN+8C9ex9tRQFgzMwGwogFX+sOpuUyb9LRwVBpHQKYmOfeT3LXZ1EfqRJaY/udD/hKcGcaz1la91Qc/4IWpbuImJlgYnqa8m6+csfjn3nxycSdSm5Ks/U07mMmejZCSMwgmM6/eelHT68JEYukoIzKIBHN4heajh/tJO43nn6PYABpJ9o0dn0EyBIRT7aYMnSlzUIg50kHmDvTqJJEMEUhntlNXcrLO4//sSs4mWLwHihcCEQh6jrs0PhDWxv01Gv+NtjLIkN0n0gFQUFeYrwV+Fz2YGWH3LHdVF2ZC8doJv9TCeRwKC3rZ8zaSsQJwKTMCpoUTTgIWu75win8UhxLqNZ0KmYnGSTexNl8MnXRjGHxiHuSG11A1DeBo92M4BK/TJot/mBmIiqMLSei4iJBaOtMet/Hv0Bf91/zkUEuzsG5sSHI2IXM2EAWgDMjCWey7NaRdU94+YkffyF4LTHBWpOTdpU9Y+r8A6bzP5VEYaPJCNmx7a8yhm0guG3re4CQgtSSghB6fqsvhtE3AuGoGlUjWCenPpY463cfRUvza4orgVSRK8IwCaPAEOuNWOj+tnBVf8KO18Rv53bzg59Jrn7dZ7p+FJANe0GBlbElBEIgRcxWOR7bTC955mtuv2n9O8Tl7sRGwytbp4ZVqsSMHGpyTr/jSEaSRYXA8S6cKcSYhRNiEBmhUpHqwdgVB3i+sEkmZ22p8bMH/BVsVESzREcb+hGVVeWRDZ1KOy16+N3T7kQuAenhKL07WqdvuP1hj3iZPPvNt113a5KZtG9dd+TSYMfW3dTGm/7PF5/8Yn/jnUd1Kw50uHVoVG+t3mMDvwCIRE4zqI1sX/f8+3esyWOM2gXlFZpVYoHV1opjCCwMSPmA+IflV7wAMFnI9TwUAJk/o3knpBl0xqig3ChL0rJs3/e2x33f806c7K73xFpomDx5IWo8a1MVrmjCQAE3sqrGH4IZee1e/83W1W8ajg1gTDSpeErIu2QsetQmAwGLX12RdUPDrFYEFhPmUWWB1mIvAiMkCrPqb1sJ3b5Z7dFwLJ3cRhuSwqAk45iwwys2iodRHhsxMIp5Acjzp6XWYAOwGIAYs1sFtvkdaVFigthSHB5d3zpF6zFGu5/DUmv1s0jBYgERILCxMhJJhTouGzuOSTqEcO6N9y2bdCWyUbEYRqeekkWHHIiqMU8YrFACM3UkA7oBgAYmeCqnMsZoyEVFFtSVkVFZZAovhZarSKfwS2nDTo44nYkXGZzMqZfEZqckLsKpeg0+kHvHb1245i3APtlu1J+on98UM3V+BSYIk7BRDkYYZJmig3fOkE3G0Y1hxMEaoigGuXJQ4xQJKWbxi6nhl3r+xErAyHbWkvH7/909vGt3xXvTJvJJSC0GY3Jtg0R3/uTLMIhCRTlIG40uPd+iorsPzvzNdRATjXrhhQesC1oF5XdujtNtmue8rp//q+9Yc0kX1I/cw34vM1xq+1+dHPpDh43tm9a7W802wUTwkoL5E//vVhwYfmnQ8kO+9V92E9GY3v7uWwM5o5D98nT9mfAf334Mo7WEeg2PVJ1/9X4b4S1aUH+ivj1TLf6A2mqgWmpF9QhV/oRv9VZG7vdfeuk2Oo1hR3JO4yggIPnM3/uy6gbz0j1qDTpI034aqZ+iNdhDNrhI+2wMrnf4Hpy/4qnI/TcXNVs/PDVfpGr1X+ZC2fqNE26VfK190rxx0L31Xc/RY77NvqkhAiVJGLUTGrE7bY4DU86pg6O76SUHAILTzIMEmDnK1KA+n+yk/M8eMnau3/jq7APfVNWvO7vhzernuX0lZy5+5KEc6WbPN5PSIwESSPxN34Qm7b3B3RJpySys45ciXqNcpo0MdeXJz/tctKftbMh3mnpxw4tZSeP/+u0rdMweNyeGGXmeZExKrJhAjOrQECbnV4i06LfQnyJSrz+hJPX6E2UKDHQP/OJN0pXx0HDXub5zf/ZycPBeV0at5hZshJB4q+7pv/OlmI9n8IsCqqS1QhvLobvpnU1KgEavD/LpoXywj2AYFeUAba8ge++b0c0uGyZj0pan1nLxyyL7vU6J9j26NmSnAn7/+bhgOELSjmYkM9ubAghuO8Udq1cesgulb+l6dclwZlH+J4AW6TD1H7oO7XSfJInMes/II0uW3CvgtS8hsq2BG6z7mq9gSv6KPWx//NKIP2AxfikgjBIQMWwb0c6x8Yf+SaLskrEaJSShOXVt+Ky1/lv/e9CKOJPPLLMCEB2AXbH8MxUFVWutmrs0t+Nk9OprBzpTomWmoXY7AHYzZxq2/aOPjt/xTFg/FrsXfik72hO/zAyYKjS7aP+jtJf4/s8+Zvyxlzxm4ARqmPut3JnQPHaaSXAyfu9n0q7fktacQ6lVAPVbNxV4j/MPDKjA6mjU626N1tUMAhxBLPrBNPP+jIZIoNg18J2+C9x68GW3/5cXro2AHmTUslbQ8dhMLZFaRGiuFObmfzbyJ+r2O6oUCkV1ippUukHHJsk7J0xwEsenMrzgIbc/93ta0SXdUSDyJGlgjtaP3TaCc+gbjIwiTe0dpuWNHZs2o3hvqQLV5iesUlUzW+KkH0D60wJVoUlm/FG28dkvvt6FxGlUTQJ6NuyVuSTtO6PJjD905XH+019Dbk60xpknO2qdPjaUwDawLSKrc8eD6fyJiiq7cHJZiR8B3L5++9GR9PqXbnWlTSsfeTGe8dhLEmwrR5m2hrrBGNYxd0ZYHbHLvfuXL/10MQcGfo8D38tNKL37XkEZiQ2y0Y6ekCuCdJg3QRKJje7lCSVloxzIAcPL3B0fe/k9H3XFljfQuD5iFpJILGyEmg+yaO5kIX4pMwpWT192euXM6TbWB/yRl+E+8EyZwM1W5mC/Fs0Iyu2AtmRbDretPAyAkhjdVS31Aq31JIxl0fKLlszN/wQg4qLpp8aOKXnKCz80giJ45Xw2769OlB9mscFkI5NGOkb29O88+/irfnRn1SS3J9stFqgX0Fz8Mps/gZmjLZN/BQCxEpGs9WXn8BWnT/zfV/jVqJE411XRto3U4KIQBaZEwNxn5h9+8V8xMSDFicMSEE22kroa+FaXwvoc1UndIJejtrWZ5OlX5QeGesSFFkkrzDl6v0uDlteiqp5Yy9uO1gaS/YtHrXzo1f59P9zT0Z0pC7B7TrOiuaJd1MGZj19IRCTLRldlN3z2ZfjLV60ZcYieaACKFhnTaOimeiEekULUhTTeYNyNh7/rsuwWAJE41rRCvUDrQUjhMtt7+HNDXfJIy3pmxQKsv0I8BrnIfe79r3z49up4te98ehePiVjj3v3XuPYDfpihnfvArK00sFiNiQRFcZ4RFQZkUgMFMHTWE9nEYDQ0MY6o5XpudedLf/HKK3v+bI+XGuHMcKoDsr3HvPyGU90rp124glqAsNIBxZ9fecHSXop+gCwsnqF2tAyYPElurHH5VZef/sOnd4e9rvP75AwuomBH7XwVPL7TtV7yn7Mbrr/N4sIhpcMkF5MzQAoDTwggIwQl59loUfU7Wh1jIx2wnn7PL156RS8TTXdku7OnVqhTZLGaeV19/LV3nOj1wpbFxLdQPX7jdUYHwcKDfFvM5MMqaKoTp6UFjMcXv3TBF4e4gE67ZOWu9dgarY7TTKV1JItvepLFky4ObP/0erznA6e+OToSyYkgN4gELXKQFUkQVjmuX/7HV61c8+RLLXUjdbvBb2m6ItsrmsazX9WZWNv71Bl8kdc3TibB5VUKQe35pyZH571m7Dxpmc094nlTwlS+Abkace0VqmxPJdkxMQPX6n7gNwdO7uKSDDajmBoaKGwyaqtDZgQ6aEkA2TwYuN6ACBYxgoCugfXDkA+TpNNn8iZZy8UGGadIJfO6yop96wxVdAbuSBw/7K0x9y5zY5bWtG9PgF2/eeO0wpevOa9zPHW6m0K+9eCnEGI4trNy41i7m7r15Oddd5ebbQ96SXCRmGIPZlRkCAa3mhk3cjYmDBqvys663z7stzfCINHMG/KtdoTv5jg8NDYwSFp5QmEldyPLZ86+92P5dY++9tTpQXeQUDK9FdQLzDcU6be0FD7yuR41/EKNB6gfHZ1+f/ijLrrurdc8QjDM2KSRz0GV3f2kNnfjdOBz6v7Quwc7I2zFFSFYyku2LcAvpbtqoma//vzzO4pVo7vJO7P3ofUPn3zE2/58FNBx6Ae3ucQhLZ94nGRt23Mv+p9fO7Hd2Qqp2DFoKi1vvuVQK0G0XDqwV1AC9feHL3r/ZrH5Hx3ibX/VTg/3//UD12x7cJDpXudLIYR2a/Trf3ryw1+5b3AgZiAj0t1qLQvwi6qeZQj6XOlAUoHnftWgulYZS1R38o3v7f3uJ/u+v7bEIS2dvHZ+4b/d+t6vXmo6tzHljGjEAhynQZBOM5JmznktkZb7noqp85v1/EFWFPmDEVFIGvWvY0tdvm5S/+6Prj7+HSB2mYxH7LwZksIEZ3NHisydXuJoF9HYbRoauGBNdFYDKUcWIuo754bX/ci7+u//6uUjQRaPFO8HB4SIGKaq8kdUlK4qQyWRJVA0taMZy0U0B/WeivkXTMLCe1x2+nR47Eu+3EvzVRlptuaTfp5u+ta2cpbmzcpfB0Gt8VHENe9GWTLKDHtmq5mFXRkOH/bWC7aHKhSL1yHsK1J7HNVYIh1YpGLmk/r5hyoMVC9DINAi8n6Hrj/4msN/tdW27rZ2fyPN1imuqvQMzrGy2l0iZ87kdhzh0mCtTx0GXlc/eBMe/NZwGpfv6JomqrVU2IXxh+kSimXwcpLHvMQBL/+l6KXxMNdZM8EvPI1oCjLGACAih42WzZ72JveQjn33z28hDlvuSMhdnvRN6C1xwHNJYKK02wFMA22Ns+HK46699auto2uxpS0v0ZIyYZcNOnkF5R74hVAeE5Xalcuig5LCvfHLbKHfqZCQuK3uID3FX93Kf+Qlf3eycyFIrHqOzezbAyFNQYDJ1LjPjlce/5av3b6xcWiQjJNxO44MMiOG1em0JNXxS5U3hGltVOmh5QYrltnYw34uoL7ESFB71TmTVvpz7vvDVbX+/riinbSdxXG6hi/9p9+4/4XRx4FDZ+xJWB1rEPbQNsQJgSkr6i8xwDKbQhcAFGkPAAwyJRZ1nq0QuQjP6HCIMTLiyLtBx/3Yr/71F3uPOsb5ovhDA3Zi+k0zBlOJrA3leePVSzPtD5aF9f2vOmK/kIXFsuXdsoMAnNiMsyxLj6d41ENv//dPXF8n5qETRuZia2zUZeAhNJXiGOaCNM3SV6KldhhRSoREYhJGUIHNoG7Hrq9QfpMkT37N//+6vZ817rLs5tPJ8d1HmAx/EQvrmmbihyov+vZg4cOf33RzV8gFKDla/6Ritmqclb+CTOuL0d/LawfulPHrpIZl+JR/2nn69+OQvz7SlUAHjEBnrPQMQ3wOYwV2poZR+U4oIhURG7w3La8utYCMoQkpv+Ejw7d8ITVSnaITAGZ6bHXndW38haapcRdTWodoal0C+Pq/3ee9C2dPB8vCRQ9f9l1NAQkRRZRFMqZcOWUBIWaAVIR3YhpzTZKxW4O86Zc6R1dwoYuc8zghA8BHQphlIUGgrARipwon20pCbnUA/uoteM47v3Lz2n06itX+mVHSpSL1G2XwvRF/qCSygUqUpK45ixeXVPjl4Fi4fAdbRVo7v7k3lXOkc0wRT4bJgzJBGhgJVhAi5zZ3cqs9/ZRrO4n36/jadz/4yNU/dKRrkbCxEkAy01YECWANw3v85cnVj3165yM33HSKL4imFenio9m4L3zS9ixbA2+0ypOaSqGonqYCopgwJi7wvygBdDCOmaL3Jbb18Gs8FuEXNOSvfKA5mwdQrXQBGDpbf0lr4lu1KZQYUoZ3/qSR8di0rQUxmIwIut4H2OA6I7eSRTBnqIxUTJ2fZujUFr5X/sQ54JdSKCeT843nnlsB+D1oyVIok2x5mri59z7/gGJ2pkvpzOZ/zm6f9Q8LchLY2jzwwF1EDt0ouXgJwblUQSdahhTWgnVkEQSJLhCas8//LJhBQLEF7OsFVZQFapZrFy6ThXVpq+z3ufhFJqV0hICaLVz6D2tJulTjKE3KQFYN1mXCkwKenLYxQsSoKFSkLnKEgYtRmURsRFsYlvNiN8NcVT9xQezyY/oRiqEKtCirUtrvpdbRcqg6/chae+SlatVlV7yo7X97LOdd47d4a+X0t7OHNKW25Ot9TXUtDhMMXyWNYpLvwaoQEZNHHjKJykrx9VwXBNVEimrbXsMRU91bj9HvDr7BpsIpvkzxK2n5DrazHOVdCL4US3uRl5xMH2Bl8kV9EIooXkZPCpLiHBIpcexBWc0558zNatHy87MGFEQHgmqWycICv9AEDsyz37XCKcX+N7EfRAnEBY6cHFup6S4DaMm/sm3SYkaoWjeEpGiVyz8tKpWljFhADyWGIs4cgCp9C1RqQGWFljs6UaE2yitL+z1W+AUThVxvT3SCX0rjmBQKNZOzx+c92bt0AC/82fOCuckHe9xIe9afaMj9XDVQxecW4Zc6VfcuDJzV4g91RbIw3WTyEtVzUlHnRAeCSOcmvxYANUKhzWVI00UKpusv1Wa/gSmKW7hUTyUAruyEGkoCSnlv2A+7VC+BUvVFu8mD8/MnWIvB1uVvEX4p5A8Ljj+eDy0fkS5yw58lfqk+ORttU+ixhhzopLs6C8+yaMKija1qbdZ+3wXPe+KXb7+Q71w6S67s0nT9z7uN9s4rOHta9LzLDPgC/wBUjtpdFwmKAgAAAABJRU5ErkJggg==
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get Message on Mattermost
+      parameters:
+      - description: The ID of the post to retrieve
+        example: ''
+        in: query
+        name: Post ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Mattermost Get Message
+  tmp1:
+    post:
+      description: Get Thread on Mattermost
+      parameters:
+      - description: The ID of a post in the thread to retrieve
+        example: ''
+        in: query
+        name: Post ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Mattermost Get Thread
+  tmp2:
+    post:
+      description: Send Message on Mattermost
+      parameters:
+      - description: The channel ID to post in
+        example: ''
+        in: query
+        name: Channel ID
+        required: true
+        schema: {type: string}
+      - description: The message contents, can be formatted with Markdown
+        example: ''
+        in: query
+        name: Message
+        required: true
+        schema: {type: string}
+      - description: The post ID to comment on
+        example: ''
+        in: query
+        name: Root ID
+        required: false
+        schema: {type: string}
+      - description: Attached files to associate with the post
+        example: ''
+        in: query
+        name: File Attachments
+        required: false
+        schema: {type: string}
+      - description: A general JSON property bag to attach to the post
+        example: ''
+        in: query
+        name: Props
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Mattermost Send Message
+tags:
+- {name: Communication}

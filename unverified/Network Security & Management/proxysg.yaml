@@ -1,0 +1,106 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        cpl_return: {type: string}
+        xml_return: {type: string}
+      type: object
+    tmp1:
+      properties:
+        found: {type: string}
+      type: object
+    tmp2:
+      properties:
+        cpl_return: {type: string}
+        xml_return: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Symantec ProxySG
+  title: Symantec ProxySG
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: ProxySG Add a URL to a Policy
+      parameters:
+      - description: URL to add to ProxySG Policy
+        example: example.com
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      - description: The Exact Policy Name, can be found in the CPL file or in the
+          VPM
+        example: Block URL Policy
+        in: query
+        name: Policy Name
+        required: true
+        schema: {type: string}
+      - description: Either `Deny` or `Allow` URL, defaults to `Deny`
+        example: Deny
+        in: query
+        name: Action
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: ProxySG Add URL to Policy
+  tmp1:
+    post:
+      description: ProxySG check for a URL in a Policy
+      parameters:
+      - description: URL to check for in ProxySG Policy.
+        example: example.com
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      - description: The Exact Policy Name, can be found in the CPL file or in the
+          VPM
+        example: Block URL Policy
+        in: query
+        name: Policy Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: ProxySG Check for URL In Policy
+  tmp2:
+    post:
+      description: ProxySG Remove a URL from a Policy
+      parameters:
+      - description: URL to Remove from ProxySG Policy.
+        example: example.com
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      - description: The Exact Policy Name, can be found in the CPL file or in the
+          VPM
+        example: Block URL Policy
+        in: query
+        name: Policy Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: ProxySG Remove URL from Policy
+tags:
+- {name: Network Security & Management}

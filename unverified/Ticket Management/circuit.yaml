@@ -1,0 +1,54 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        convId: {type: string}
+        creationTime: {type: string}
+        creatorId: {type: string}
+        includeInUnreadCount: {type: string}
+        itemId: {type: string}
+        modificationTime: {type: string}
+        text_content: {type: string}
+        text_state: {type: string}
+        type: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Unify Circuit
+  title: Unify Circuit
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Post a message to a conversation
+      parameters:
+      - description: ID of the conversation to post a message to
+        example: ''
+        in: query
+        name: Conversation ID
+        required: true
+        schema: {type: string}
+      - description: Message content to post
+        example: ''
+        in: query
+        name: Message Content
+        required: true
+        schema: {type: string}
+      - description: Optional subject of the message to post
+        example: ''
+        in: query
+        name: Subject
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Circuit Post Message
+tags:
+- {name: Ticket Management}

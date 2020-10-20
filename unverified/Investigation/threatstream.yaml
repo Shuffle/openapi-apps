@@ -1,0 +1,66 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        asn: {type: string}
+        confidence: {type: string}
+        country: {type: string}
+        created_ts: {type: string}
+        description: {type: string}
+        expiration_ts: {type: string}
+        feed_id: {type: string}
+        id: {type: string}
+        import_session_id: {type: string}
+        ip: {type: string}
+        is_public: {type: string}
+        itype: {type: string}
+        latitude: {type: string}
+        longitude: {type: string}
+        meta_detail2: {type: string}
+        meta_severity: {type: string}
+        modified_ts: {type: string}
+        org: {type: string}
+        owner_organization_id: {type: string}
+        rdns: {type: string}
+        resource_uri: {type: string}
+        retina_confidence: {type: string}
+        source: {type: string}
+        source_reported_confidence: {type: string}
+        status: {type: string}
+        threat_type: {type: string}
+        threatscore: {type: string}
+        type: {type: string}
+        update_id: {type: string}
+        uuid: {type: string}
+        value: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Anomali ThreatStream
+  title: Anomali ThreatStream
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Anomali ThreatStream Lookup Indicator by source address
+      parameters:
+      - description: Target IOC to lookup
+        example: 112.3.22.1 | https://maliciousurl.com
+        in: query
+        name: Indicator
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Anomali ThreatStream Indicator Lookup
+servers: ['https://api.threatstream.com/api/v2']
+tags:
+- {name: Investigation}

@@ -1,0 +1,587 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp1:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp10:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp2:
+      properties:
+        author_email: {type: string}
+        author_name: {type: string}
+        authored_date: {type: string}
+        commit_link: {type: string}
+        committed_date: {type: string}
+        committer_email: {type: string}
+        committer_name: {type: string}
+        created_at: {type: string}
+        id: {type: string}
+        last_pipeline: {type: string}
+        message: {type: string}
+        parent_ids: {type: string}
+        project_id: {type: string}
+        short_id: {type: string}
+        stats_additions: {type: string}
+        stats_deletions: {type: string}
+        stats_total: {type: string}
+        status: {type: string}
+        title: {type: string}
+      type: object
+    tmp3:
+      properties:
+        data: {type: string}
+      type: object
+    tmp4:
+      properties:
+        attachment: {type: string}
+        author_avatar_url: {type: string}
+        author_id: {type: string}
+        author_name: {type: string}
+        author_state: {type: string}
+        author_username: {type: string}
+        author_web_url: {type: string}
+        body: {type: string}
+        created_at: {type: string}
+        id: {type: string}
+        issue_iid: {type: string}
+        noteable_id: {type: string}
+        noteable_iid: {type: string}
+        noteable_type: {type: string}
+        project_id: {type: string}
+        resolvable: {type: string}
+        system: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+      type: object
+    tmp5:
+      properties:
+        _links_award_emoji: {type: string}
+        _links_notes: {type: string}
+        _links_project: {type: string}
+        _links_self: {type: string}
+        assignee: {type: string}
+        assignees: {type: string}
+        author_avatar_url: {type: string}
+        author_id: {type: string}
+        author_name: {type: string}
+        author_state: {type: string}
+        author_username: {type: string}
+        author_web_url: {type: string}
+        closed_at: {type: string}
+        closed_by: {type: string}
+        confidential: {type: string}
+        created_at: {type: string}
+        description: {type: string}
+        discussion_locked: {type: string}
+        downvotes: {type: string}
+        due_date: {type: string}
+        id: {type: string}
+        iid: {type: string}
+        labels: {type: string}
+        milestone: {type: string}
+        project_id: {type: string}
+        state: {type: string}
+        subscribed: {type: string}
+        time_stats_human_time_estimate: {type: string}
+        time_stats_human_total_time_spent: {type: string}
+        time_stats_time_estimate: {type: string}
+        time_stats_total_time_spent: {type: string}
+        title: {type: string}
+        updated_at: {type: string}
+        upvotes: {type: string}
+        user_notes_count: {type: string}
+        web_url: {type: string}
+        weight: {type: string}
+      type: object
+    tmp6:
+      properties:
+        approvals_before_merge: {type: string}
+        assignee: {type: string}
+        author_avatar_url: {type: string}
+        author_id: {type: string}
+        author_name: {type: string}
+        author_state: {type: string}
+        author_username: {type: string}
+        author_web_url: {type: string}
+        created_at: {type: string}
+        description: {type: string}
+        discussion_locked: {type: string}
+        downvotes: {type: string}
+        force_remove_source_branch: {type: string}
+        id: {type: string}
+        iid: {type: string}
+        labels: {type: string}
+        merge_commit_sha: {type: string}
+        merge_status: {type: string}
+        merge_when_pipeline_succeeds: {type: string}
+        milestone: {type: string}
+        project_id: {type: string}
+        sha: {type: string}
+        should_remove_source_branch: {type: string}
+        source_branch: {type: string}
+        source_project_id: {type: string}
+        squash: {type: string}
+        state: {type: string}
+        target_branch: {type: string}
+        target_project_id: {type: string}
+        time_stats_human_time_estimate: {type: string}
+        time_stats_human_total_time_spent: {type: string}
+        time_stats_time_estimate: {type: string}
+        time_stats_total_time_spent: {type: string}
+        title: {type: string}
+        updated_at: {type: string}
+        upvotes: {type: string}
+        user_notes_count: {type: string}
+        web_url: {type: string}
+        work_in_progress: {type: string}
+      type: object
+    tmp7:
+      properties:
+        action_name: {type: string}
+        author_avatar_url: {type: string}
+        author_id: {type: string}
+        author_name: {type: string}
+        author_state: {type: string}
+        author_username: {type: string}
+        author_web_url: {type: string}
+        created_at: {type: string}
+        project_id: {type: string}
+        push_data_commit_count: {type: string}
+        push_data_commit_from: {type: string}
+        push_data_commit_title: {type: string}
+        push_data_commit_to: {type: string}
+        push_data_ref: {type: string}
+        push_data_ref_type: {type: string}
+      type: object
+    tmp8:
+      properties:
+        assignee: {type: string}
+        assignees: {type: string}
+        author_avatar_url: {type: string}
+        author_id: {type: string}
+        author_name: {type: string}
+        author_state: {type: string}
+        author_username: {type: string}
+        author_web_url: {type: string}
+        closed_at: {type: string}
+        closed_by: {type: string}
+        confidential: {type: string}
+        created_at: {type: string}
+        description: {type: string}
+        discussion_locked: {type: string}
+        downvotes: {type: string}
+        due_date: {type: string}
+        id: {type: string}
+        iid: {type: string}
+        labels: {type: string}
+        milestone: {type: string}
+        project_id: {type: string}
+        state: {type: string}
+        subscribed: {type: string}
+        time_stats_human_time_estimate: {type: string}
+        time_stats_human_total_time_spent: {type: string}
+        time_stats_time_estimate: {type: string}
+        time_stats_total_time_spent: {type: string}
+        title: {type: string}
+        updated_at: {type: string}
+        upvotes: {type: string}
+        user_notes_count: {type: string}
+        web_url: {type: string}
+        weight: {type: string}
+      type: object
+    tmp9:
+      properties:
+        successful: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of GitLab GitLab
+  title: GitLab GitLab
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get commit details from project ID and commit hash
+      parameters:
+      - description: Project name
+        example: ''
+        in: query
+        name: Project Name
+        required: true
+        schema: {type: string}
+      - description: Username of project owner
+        example: ''
+        in: query
+        name: Project Owner
+        required: true
+        schema: {type: string}
+      - description: Issue number to add a comment to
+        example: ''
+        in: body
+        name: Issue Number
+        required: true
+        schema: {type: string}
+      - description: Comment text body
+        example: ''
+        in: query
+        name: Comment Body
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: GitLab Add Comment To Issue
+  tmp1:
+    post:
+      description: Delete a branch from GitLab
+      parameters:
+      - description: Project name to delete a branch from
+        example: ''
+        in: query
+        name: Project Name
+        required: true
+        schema: {type: string}
+      - description: Owner of the project's username
+        example: ''
+        in: query
+        name: Project Owner
+        required: true
+        schema: {type: string}
+      - description: Name of the branch to delete
+        example: ''
+        in: query
+        name: Branch Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: GitLab Delete Branch
+  tmp10:
+    post:
+      description: Edit a pull request in a project
+      parameters:
+      - description: Project name
+        example: ''
+        in: query
+        name: Project Name
+        required: true
+        schema: {type: string}
+      - description: Username of project owner
+        example: ''
+        in: query
+        name: Project Owner
+        required: true
+        schema: {type: string}
+      - description: Number of the PR to edit
+        example: ''
+        in: body
+        name: Pull Request Number
+        required: true
+        schema: {type: string}
+      - description: If not blank will update the PR title
+        example: ''
+        in: query
+        name: PR Title
+        required: false
+        schema: {type: string}
+      - description: If not blank will update the PR description
+        example: ''
+        in: query
+        name: PR Description
+        required: false
+        schema: {type: string}
+      - description: Comma separated values of the labels that if not blank, will
+          update the PR labels
+        example: ''
+        in: query
+        name: PR Labels
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: GitLab Edit Pull Request
+  tmp2:
+    post:
+      description: Get commit details from project ID and commit hash
+      parameters:
+      - description: Project ID to search for the commit
+        example: ''
+        in: query
+        name: Project ID
+        required: true
+        schema: {type: string}
+      - description: SHA256 Hash ID of the commit to get
+        example: ''
+        in: query
+        name: Commit ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: GitLab Get Commit By ID
+  tmp3:
+    post:
+      description: Get the raw data from a file in a project
+      parameters:
+      - description: Project name
+        example: ''
+        in: query
+        name: Project Name
+        required: true
+        schema: {type: string}
+      - description: Username of project owner
+        example: ''
+        in: query
+        name: Project Owner
+        required: true
+        schema: {type: string}
+      - description: File path, relative to project root, of the file to get the raw
+          contents of
+        example: ''
+        in: query
+        name: File Path
+        required: true
+        schema: {type: string}
+      - description: Name of branch to get the file from, will default to 'master'
+          if not set
+        example: ''
+        in: query
+        name: Branch Name
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: GitLab Get File Content
+  tmp4:
+    post:
+      description: Get issue comments from a project
+      parameters:
+      - description: Project name
+        example: ''
+        in: query
+        name: Project Name
+        required: true
+        schema: {type: string}
+      - description: Username of project owner
+        example: ''
+        in: query
+        name: Project Owner
+        required: true
+        schema: {type: string}
+      - description: Number of the issue to get comments from
+        example: ''
+        in: body
+        name: Issue Number
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: GitLab Get Issue Comments
+  tmp5:
+    post:
+      description: Get issue(s) from a project
+      parameters:
+      - description: Project name
+        example: ''
+        in: query
+        name: Project Name
+        required: true
+        schema: {type: string}
+      - description: Username of project owner
+        example: ''
+        in: query
+        name: Project Owner
+        required: true
+        schema: {type: string}
+      - description: Number of the issue to get, if blank, will return all issues
+          for the project
+        example: ''
+        in: body
+        name: Issue Number
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: GitLab Get Issue(s)
+  tmp6:
+    post:
+      description: Get pull request(s) from a project
+      parameters:
+      - description: Project name
+        example: ''
+        in: query
+        name: Project Name
+        required: true
+        schema: {type: string}
+      - description: Username of project owner
+        example: ''
+        in: query
+        name: Project Owner
+        required: true
+        schema: {type: string}
+      - description: Optional pull request number to get info about, if blank will
+          return all
+        example: ''
+        in: body
+        name: Pull Request Number
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: GitLab Get Pull Request(s)
+  tmp7:
+    post:
+      description: Get commit history from username
+      parameters:
+      - description: Username to get commit history of
+        example: ''
+        in: query
+        name: Username
+        required: true
+        schema: {type: string}
+      - description: Number of results to get, maximum. For best efficiency, use multiples
+          of 20
+        example: ''
+        in: query
+        name: Max Results
+        required: true
+        schema: {type: string}
+      - description: ISO-8601 format datestring to start the commit history from,
+          going backwards in time. Blank for now
+        example: ''
+        in: query
+        name: Start Date
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: GitLab Get Commit History By Username
+  tmp8:
+    post:
+      description: Create an issue in a project
+      parameters:
+      - description: Project name
+        example: ''
+        in: query
+        name: Project Name
+        required: true
+        schema: {type: string}
+      - description: Username of project owner
+        example: ''
+        in: query
+        name: Project Owner
+        required: true
+        schema: {type: string}
+      - description: Title of the new issue to be created
+        example: ''
+        in: query
+        name: Issue Title
+        required: true
+        schema: {type: string}
+      - description: Description for the new issue to be created
+        example: ''
+        in: query
+        name: Issue Description
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: GitLab Create Issue
+  tmp9:
+    post:
+      description: Edit an issue in a project
+      parameters:
+      - description: Project name
+        example: ''
+        in: query
+        name: Project Name
+        required: true
+        schema: {type: string}
+      - description: Username of project owner
+        example: ''
+        in: query
+        name: Project Owner
+        required: true
+        schema: {type: string}
+      - description: Number of the issue to edit
+        example: ''
+        in: body
+        name: Issue Number
+        required: true
+        schema: {type: string}
+      - description: If not blank will update the issue title
+        example: ''
+        in: query
+        name: Issue Title
+        required: false
+        schema: {type: string}
+      - description: If not blank will update the issue description
+        example: ''
+        in: query
+        name: Issue Description
+        required: false
+        schema: {type: string}
+      - description: Comma separated values of the labels for the issue
+        example: ''
+        in: query
+        name: Issue Labels
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: GitLab Edit Issue
+tags:
+- {name: DevOps & Application Security}

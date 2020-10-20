@@ -1,0 +1,105 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        from: {type: string}
+        message: {type: string}
+        message_id: {type: string}
+        to: {type: string}
+      type: object
+    tmp1:
+      properties:
+        message: {type: string}
+      type: object
+    tmp2:
+      properties:
+        message: {type: string}
+        message_id: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Twilio Twilio
+  title: Twilio Twilio
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAH8UlEQVR4nO2dTW4TSxDH/21bYcOz4xOQLBFKJjlBjJAn10hOAJzgmROEG8TcgC22EOEEyYAQS3ID2wObWLabxYufjOWY6eqPqh77t0FCnnRN93/6o7qqW2ELAGCUtDtqrF5iB7tGD44xxA7O61nvvRfDIkVxG8DBKElfKeDCZxkV6OPHWf/GZxmS2ShhjQ7Sa1XBUcgy9Qw3ja+945BlSqDUwsoP00sonHHb8Qca3fqX3jm3Gb4ppbBECmqZkgusNMIaJKd7Vegf3HZQmELtN7MPt9x2uKQUwsqfpgPj1Zw0xhjWv/ea3Ga4ImphjZJ2R0H9y22HSzT0m0bW73DbYUu0wsqfvfiBWnWP2w4vTKa39W8f97nNsCE6YYXwQUlBA68bWe8ttx0UKtwGmLIpogLiftdoeqxSTNCpRDixj0JYeZJqbhskUM96UbQXIFxYg+Rkt4pHA5bCNbpKqXfL/z3DrKW0esLlgJ3irtnMPg85yjahxm3AOoKIajK9ndYmxwaNdXX/7x9e80Fyslud1K59r1Tv60R0hwAINtDr8BdgO8X38C19WBRpnK9G4RhGfA7nksUlzjAfopLSAGV+t2VEGeW04gV7r13vGkgUlxiDXH/NEit7kbK/b3Se978xxV1TWiWvop711BR3UTk9TRAhLFdfbyw+njnN7PPQlbikOZHZv+z8sH0BpV7Z/p0Yeql1OBGG1m/rX/qvHZhjDX+PtRUVAEfv4KAuXcEqLOuvdIxhGUQ1p571FMYY2vwNKUMim7AGyeme7d+Ibce/CC7eyUXd2sImLNvEhzL1VMvYvpuEpBKWTeifyWlLg95jV6BJCaDL0ad6pq8aX/vPyYasKuOg/UlVVOv/MohRoBXo4xnUNdWOn8lp65/swxX1eVtYvnqbeYCpS6HoXp1NEkPRIETTnsh2n5GzVw9esG3+n0llUaJOTRvD+CMxjAa1+wj58hWDz7FsRGXiTMyTVFNCmU0aktToO9g1ec7Ggco51+L3YxkQyqtepOFDLetj2klYJOhQaHPaS9Ehyln805ohy1Vih8l8kSpkrtNugvZY5COEJtPboj91FlT3gHBGSbvjKlvIyFaDOlgk9LFNc4IJK3/2gj5hFxRXxZXSL6kOihCux6IGtllucdgwStJXXGWvhLEuTBE/eefctpGWiUyti/wwvXRty9+QLSyNLrcJ4qDUCUMOZBBh/UraR5TnynziHRVqnVDbgEoQYdnseXGiARFBcy4I3Qayh0JmYj1CSAJbYZkS0cqME7HCog5DGvqNa1sWcblKpdoawxAdZEuHsh1hE/KxHBNF4W/l2+4V2saCha5TU7z3WBxhsq6D93zAYWPItvAurApmZ77LWAX169TQ50WerWc9paFJS3+uALyQbeF/jjXDifcyHsA066We9VQj63eL/r6R9bsmIikqWm8EbAvvMe+2cx1bFifbvmLeF8XiKubdByHbwvvXQ53kljkLxwXS61Wsu2FL3GyFtcULW2Ft8YLoU5NdE1PCaux4F5ae6SvOleG6xAdVUa3FSTB1YrtuIq2AizxJL4D/3A0m7gzX6Jm+ClWW/6Gwgs/ey3gA09zCPEn1KGmfFf39KGmfmazOFNQl62kwAdvCu7BmqHR9l7EKagMWbfw8SbWCIoX8cokrZFt4FxZHivfooP0pdJmmcNgYsi3ErgqpGTKjpN1xMadb16u46HFURbVGSbtDeVZc9tAKxAqLmiHjO+8vf5o6u2WCaqu07KFViBWWWDb1zkRDtsJaQwxDjlSCCIt6Ah83MQw5RQndBkGE9Tjr31CeM83gHSQnu5RyYoKa1UxtAyqyh0LDDN5Yz5IygpLVzJBRLltYcLsKM0VaNgy1LjgyysMJi3i+E+cqTNzmcUQr0mDCsjnfyeZsLdf4zlt8CEl1UISgQ6Ge4Yb0oMHZWs6uansgCaOR9TuusqGNbCWeL0auc0uCx5XbbIcYHcVtue3iO2E11LvwpZpFRCh3QtG8whC2xOpCCS6sKRR5rmVyGCz1Ji0TwZDEZXhjmc1hvTZ1bcv2ypN7tleeuIWl4PtLmsjxSBXoY4onOaaY919J+8jmsDQF9XzjLmkCwk5+YyT2+mGbvNuO/1JuEvWB7btxzq3msKraydW9Jbtl1cV1Kty9FSDhFnsHPY+EinRBmeqC34+l9VvbP1GGYdHJOzioS1eIULcrYZi6IiTg7LYyyOmtAAk9FtxVSBWPBjF5qssqKkCIsFxSxaNBDENjnqTa2RV4AhEjLNdfnOQwE9e2SeutACFzrEV89DZSKr7M77aMSKN8DWUck3uX86hlpIoKECoswLMLQaPrOw7c9zxPsqgAwcICAvmnJtPbaW1ybNuTDZKT3eqkdk2+SdYA6aIChJ/oN8Vd0/vKqVbdq6I6yJP0z//X6Cql3i3/fIZZS2n1ZGUaVoDadBZ67RnxygfK4Vl3QQw91Rwx7oZ1UKNBS4Nh1KkEojIW2LzeKzZBzYmix1pEWnayT2J+1yi/BuDeex1gBcbCZHprk+Argeh6rDn1bx/3ubKSfaKh38QuKiDiHmsRF1GX7JQsGjbaHmuR+vdeU0KcN5Up1H6ZRAWUpMdaJj9ML0nnSIUkwLYSJ6UU1hyRAiu5oOaUWljLjA7Sa1XBUcgy9Qw3ja+9KM9gtWGjhDVnOSPaB9Rs7bKwkcJaxShpd9RYvTReXY4xxA7O61nvvRfDIuU308Ke7y+AbRcAAAAASUVORK5CYII=
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get All Messages from Twilio with filters
+      parameters:
+      - description: Filter messages by this receiving number
+        example: ''
+        in: query
+        name: To Number
+        required: false
+        schema: {type: string}
+      - description: Filter messages by this sending number
+        example: ''
+        in: query
+        name: From Number
+        required: false
+        schema: {type: string}
+      - description: Limit number of messages retrieved
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Twilio Get All Messages
+  tmp1:
+    post:
+      description: Get an SMS message by ID
+      parameters:
+      - description: ID of message for Twilio to retrieve
+        example: ''
+        in: query
+        name: Message ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Twilio Get SMS
+  tmp2:
+    post:
+      description: Send an SMS to a phone number from Twilio
+      parameters:
+      - description: Number to send message to
+        example: 777 867 5309
+        in: query
+        name: To Number
+        required: true
+        schema: {type: string}
+      - description: Number to send message from.  This is configured in your Twilio
+          account.
+        example: 777 867 5309
+        in: query
+        name: From Number
+        required: true
+        schema: {type: string}
+      - description: Message to send through Twilio
+        example: ''
+        in: query
+        name: Message
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Twilio Send SMS
+tags:
+- {name: Communication}

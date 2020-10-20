@@ -1,0 +1,434 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        job_id: {type: string}
+      type: object
+    tmp1:
+      properties:
+        job_id: {type: string}
+      type: object
+    tmp10:
+      properties:
+        job_id: {type: string}
+      type: object
+    tmp2:
+      properties:
+        job_id: {type: string}
+      type: object
+    tmp3:
+      properties:
+        event_id: {type: string}
+        job_id: {type: string}
+      type: object
+    tmp4:
+      properties:
+        event_id: {type: string}
+        job_id: {type: string}
+      type: object
+    tmp5:
+      properties:
+        comment: {type: string}
+        investigationid: {type: string}
+        name: {type: string}
+        state: {type: string}
+      type: object
+    tmp6:
+      properties:
+        event_id: {type: string}
+        job_id: {type: string}
+      type: object
+    tmp7:
+      properties:
+        job_id: {type: string}
+      type: object
+    tmp8:
+      properties:
+        job_id: {type: string}
+      type: object
+    tmp9:
+      properties:
+        job_id: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of OpenText EnCase eDiscovery
+  title: OpenText EnCase eDiscovery
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAALvElEQVR4nO2aW6heRxXHf9/3nXMS02AobWzoJbXeEImoVB+sbXzQgoUI1VS0+iJUiaRg0QcfirQqRoWoQVSK1PhQfbB4iRcEL1URpUVpReutaq2JQtPmnpNz/24+zPydtWfP/s4lOTkmrh8M+/v2nj2zZmbNmjVrNjiO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziO4ziOczHTWmsBVkh7rQVwFqfFhaNgF4qc//eMrbUAy6Rtri0urElx0fMNoAd043UhpguFPSS5u/E6fzYFXmiz638VO8tbwPgayrISWgSLJes1JLVpuJIC3WE7N9glRH06WDtxloUmxDC7t2KlgqrFalPvjDFgG3BjfPYM8AfgyYIwORNAB5g1ZUvgQXy+HXg+8BTwc1NeqbElZB1eDFwPbIry/R44SblzOvHaN23sxftDUh+0o2yvjnn+HMvWe8ozoOqnAJxitNWSXPa6EXhtbMss8DDwRFbuIMrZp1khbLnrCEubZBwU3mvF9ue+Va9B9lxPSv1Wm1TqjF7MfBqYig3pE9bduSjsDHCA5uV0LpYxjHlPAw8SlFT+SJfQiUOT3pw1okSH0Ol9I5/eXwCmY52/BV7UUN7hWP98vOr9TcBBI5vabWXsUF36DhA6U8/ngEnTRqU+VYW7nTQox2K/DEz+Xnxnt6lrIt5biG0/CTwdy7mZoEy2nxaAE5l8Vhl/EOuezp6fyNpzp5F9B7AT2BWvUqTPAbdhdEKddCdwPBbWJymY/tvBG5KU4vXUdxLqIFvG0Xi/1FA14DjwUZp5l8k/MLKovL75P0OwHm818km5bMcpf5eqXP0sz8H4fJKggCrLKtakea+XJdEiWL+pEXUpdQnKMxPrW0+yCnnemayvjsY6FrLyxKeBMw31DgkTaibK/h4jOwSlvTL+vp+gdI8B78RkgND5/QaB1eFKPZJSnaS6PKjMPmnm2bKmSJZPVm02K3sY5bEOJcCr4jsLpIGYJ8y4BeqKZmfh5kzGo4V2TpGshJ1EfdKkkBL8iDQzrWLNx+dqm6zRLHBZzK96rEIPo7w989sO8CzwC+CqWMYO4AjVcRkAX43P76E6nno+T7I8akvTuNu0K+u/ceC6+PszwFcIBman+kUDdzgTcJYw24fA48DHCb6VGmpngTpCtGlWLG1p7wO+TBqIfOZZc61ZknfAfEzXmbwvJ/hDdtC0lGkStakrll26p4EHSAqv8EFuFSWXVSxrue4FPgl8LHb2ZoIfZdus625T3gRwtylPebrAftPWQ9QV6zjwRZKLkC/R2mDsinLtAR7K+kLpI8De2IbXUaUFXB3Luh34cJT7epspX176BEX7NfUlboykNHrnWPy/nTB4oxRLCtMmmNJ1hFmWd4J1AMeArSTrYWc5wHNI1kOzURbVWrC2SblizROsxY+BDabdt5qylqJYXdISN0Y96Kj3lb9HWEIgTBDrs+4kWZRJkqUbIwzqGHXFksWTf2gV/SbCEq4x0kTbQ91Q2IkNdVeiFETVvf+2wXZWn+R/jGKSuvm067dVrO4SypRlmCFYjEng80bgkpXcTbOD/3XCQFhL8kNSp5aWQu1gc/TMKr1ti1WspoEBuCsrQ77XpfF5aSOk/FZJLPtIFjmXQRNRG5CxhvbtWaL8S6ZNaJQcXVmJS4APkjQ6p0OwEnl0dow0cPn9SwnhirwczeafEKzNBMFB7QBvjPm0G8pnyS+BLcC1hGVG6QXA32M7LDeQZnaJiYZn3SjT2fJ2kpIoJPAXwkTaFJNtxwuBZ0m7xVaU5QpSX3wglneEerRfdbUJYZPcZ11V9lK3OouF81vA96lruN2VWIslX+imEWW+hrpF0Kx5A/Utv00nqS4HXYI/MU/VYk3F8koWS/nyjm9Rl2mlFkuWb0DVp9OGQfIOsvL0XCGLu0lne2KesgzzwCtNu0sTZFUs1tb4WzO1Q5i5mP85LeCnVB12CFasNCNkiY6OkOUxkn+imSlF3U6wek2NzS3THKkdWgoWqAZoc6wCWaybcLbY0It8wS4F38TUnW+KIOwIFSxtE/zUnxEc95wO8LtYX7tQx6rQJm39FWfRoELz0qCt/IbsvsISTYyyhOuiPBvj/04sX51ZevcUQfZxqk7yRiOHBm1dTFtpXuJXmzGqfo52aU1pgTBZO9n9y0kRc4UQbo73LbJwt5I2ZVOcB9qEreY4KfZE/L+O5hP6FvBu6mF/vd+0jr9thCzvM+9pKZiL18cpW5PNBGuVD0gnyt8iDOS4+X2ItfssZECyVPJ39lHdrdp2XELaWdo8L6FqQU+QdowWnSocIIQEzpuP1QYeJQxE7nS/P16bfIUbCs+aDmC1ft8+QpY7qJp97SQhHN/IebVcHu+XlhAIQdaXUg0NdGg+B1tt7ETV5HnTiPx9grw7svvWv7ollrOeer9vJFg8SCGdc7GkL5nTVB1GBUghCGxnGYTBOkZylOXDnDB5muJY7zB5OqZs+UJyOCcJuyh14iz18yyZdc3qnDOkI4sHqR6JlMINTct4Ho3PnffvGPmtHyWk+PdGmWWJ5ZhfG59bx7pN2PE+QQpUf5tkvfJzXY3FAsHXmjX1TMf7D2XtkmX8RNa+IaH/rSz2umS2UXVSh4QA6T8JnaFBW0+KxeiYQWv8kGoEPFesHsmf+xBpeVJw1irWMOaz/siNhcb3gL8Bz8s6YQMpFiYHeCa2SZxLxdpLVVnmYp2fjWk/yR/tZWX0CGGYK+JzKeGVwNdIE8i+Nx6TQkQLpqxZwqnGn0x++VYDwqYLqhPxDiOP7duHCeeJ91MO9ywJe3g6JJ2/2YNZu0VW0ju/ycqzijVtGqht9SxJ0XLFUicKNUhHPUqnSJ33KGFGP2PKOG1+d4GXEQa4w7lVrLtIwUjbj/YQXtxDUgjJptQFvks48ZD1mSOMhfroAVOWDdr2qMv1L6oKI7muztr3loa+mCGd6drjsCUh32rCFPokdQ0uVTognR/mWMWSVZsjLZv2kFbmekiafTlyWg9TPay1ZSjJgurA+1nCcgVJSUuK1eR/SLHyIx0r26lMppLCqu6nqU4qK3vfJCmm/M1PmfqGhGW+b/rjDGkslU+f/+TxMSuP+uMkdddF+fPvtZZNj3S42aRY/Sjs8diY0kdtpaVQgk9RLld5t2Vl2XOqa2Ke3HrlgzNv8uwjLTGroVjE//+gPoC5JdTMf6qh/tJqMBmTPmz8Hskaq55/x3v5md5B6l+nTAPfyvpDijqkrIjLViwphbbpAO8lOeX2ozylBcJXmltIu4680lyxpoEvxWcyrxow+w2VxcabFC7QgfOvSOZfjmu+9GqGj2XlwLm3WC1CINdanCaLJa7J+iBPA4JCKf6lunqEyalVQ+PUFJzOLbpOQzaTIgIAr4jy6usLlb1sxVos41WEzzxuI3xLdIhwtvUF0rLVhASD9LXDfsLHhANCKGAn8FzgEcInNEdY3rfWGsxbCJ/L9IE/At8kOK9Ny+qo8kr5O9T9F33SXKJt8g4Xyaug5i5CG7YAfyUs3Y8QlthRstnPo0uTw34Bkcuef0ZsP18emutlpKi+jXeuCG1r8yj1qM8mLNZiya+6j3roosVZbGfNe3ZGnY/Iug7GS/eXeq9VyGNXjvzdDvWYnd05l+oZ1aclF2aUZVrycdCoSqW9VqN1zqZzu5U4czobs7NMdSzHukgesvf1vRiMbl8erbflWWwZNv9iFttGuUvlDrOy9T93CWw/a4m0cvQY3X86U8zbKse+JFc+tjY2uSRGaaAKscLqd6/wrCSgZp6sUl5m7lMtV7FGyVYqf7G6mgZm1POmMux7TXLkA9WkIKV2LoeSQozqm7yeZU/81Tw3GpC233ksx7nIWU3F0nKp1LRrcZwVs1ZfEziO4yyNfBcCbrkcx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3Ecx3FG8B8XOuIFDpzLmwAAAABJRU5ErkJggg==
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: EnCase Advanced IOC Search
+      parameters:
+      - description: ID of an investigation.
+        example: '10'
+        in: query
+        name: Investigation ID
+        required: true
+        schema: {type: string}
+      - description: Criteria Name of existing filter
+        example: Forensic Artifacts
+        in: query
+        name: Criteria Name
+        required: true
+        schema: {type: string}
+      - description: Array of IP addresses, FQDNs, or hostnames
+        example: 10.0.0.1
+        in: query
+        name: Targets
+        required: true
+        schema: {type: string}
+      - description: 'Stop the search after the first hit (recommended) '
+        example: ''
+        in: query
+        name: Stop on First Match
+        required: false
+        schema: {type: boolean}
+      - description: Comment for IOC Search
+        example: Test Comment
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: EnCase Advanced IOC Search
+  tmp1:
+    post:
+      description: EnCase Collect Data
+      parameters:
+      - description: ID of an investigation.
+        example: '10'
+        in: query
+        name: Investigation ID
+        required: true
+        schema: {type: string}
+      - description: Criteria Name of existing filter
+        example: Forensic Artifacts
+        in: query
+        name: Criteria Name
+        required: true
+        schema: {type: string}
+      - description: Array of IP addresses, FQDNs, or hostnames
+        example: 10.0.0.1
+        in: query
+        name: Targets
+        required: true
+        schema: {type: string}
+      - description: Comment for collect data
+        example: Test Comment
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: EnCase Collect Data
+  tmp10:
+    post:
+      description: EnCase Reconnect Host
+      parameters:
+      - description: ID of an investigation.
+        example: '10'
+        in: query
+        name: Investigation ID
+        required: true
+        schema: {type: string}
+      - description: Comment for Snapshot
+        example: Test Comment
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      - description: Array of IP addresses, FQDNs, or hostnames
+        example: 10.0.0.1
+        in: query
+        name: Targets
+        required: true
+        schema: {type: string}
+      - description: 1 = Kill running processes only (optimized for IP ranges) 2 =
+          Kill running processes and delete process executables (optimized for IP
+          ranges) 0 = Kill running processes, forensically search filesystem, and
+          completely removespecified files (most thorough)
+        example: '2'
+        in: body
+        name: Option
+        required: false
+        schema: {type: string}
+      - description: List of hashes to kill on target.
+        example: 912ec803b2ce49e4a541068d495ab570
+        in: query
+        name: Hashes
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: EnCase Remediate
+  tmp2:
+    post:
+      description: EnCase Collect Memory
+      parameters:
+      - description: ID of an investigation.
+        example: '10'
+        in: query
+        name: Investigation ID
+        required: true
+        schema: {type: string}
+      - description: Array of IP addresses, FQDNs, or hostnames
+        example: 10.0.0.1
+        in: query
+        name: Targets
+        required: true
+        schema: {type: string}
+      - description: 'Optional comment string. Defaults to ''Action originated from
+          Swimlane Record: <RECORD ID>'''
+        example: Test Comment
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: EnCase Collect Memory
+  tmp3:
+    post:
+      description: EnCase Collect Timeline
+      parameters:
+      - description: ID of an investigation.
+        example: '10'
+        in: query
+        name: Investigation ID
+        required: true
+        schema: {type: string}
+      - description: Array of IP addresses, FQDNs, or hostnames
+        example: 10.0.0.1
+        in: query
+        name: Targets
+        required: true
+        schema: {type: string}
+      - description: Comment for Timeline
+        example: Test Comment
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: EnCase Collect Timeline
+  tmp4:
+    post:
+      description: EnCase Create Event
+      parameters:
+      - description: Array of IP addresses, FQDNs, or hostnames
+        example: 10.0.0.1
+        in: query
+        name: Targets
+        required: true
+        schema: {type: string}
+      - description: Event Source. Defaults to Swimlane
+        example: Swimlane
+        in: query
+        name: Event Source
+        required: false
+        schema: {type: string}
+      - description: Comment for Create Event
+        example: Test Comment
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      - description: External Event ID, defaults to the Origin Record ID
+        example: '1234'
+        in: query
+        name: Event ID
+        required: false
+        schema: {type: string}
+      - description: Event Score. 1-30 = assess, 31-69 = suspicious, 70-100 = malicious
+        example: '99'
+        in: body
+        name: Score
+        required: false
+        schema: {type: string}
+      - description: Optional Report URL for origin event.
+        example: ''
+        in: query
+        name: Report URL
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: EnCase Create Event
+  tmp5:
+    post:
+      description: EnCase Create Investigation
+      parameters:
+      - description: Investigation name
+        example: Swimlane Investigation
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: Comment for Create Investigation
+        example: Test Comment
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: EnCase Create Investigation
+  tmp6:
+    post:
+      description: EnCase Create Snapshot
+      parameters:
+      - description: ID of an investigation.
+        example: '10'
+        in: query
+        name: Investigation ID
+        required: true
+        schema: {type: string}
+      - description: Comment for Snapshot
+        example: Test Comment
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      - description: Array of IP addresses, FQDNs, or hostnames
+        example: 10.0.0.1
+        in: query
+        name: Targets
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: EnCase Create Snapshot
+  tmp7:
+    post:
+      description: EnCase Find Items of Interest
+      parameters:
+      - description: ID of an investigation.
+        example: '10'
+        in: query
+        name: Investigation ID
+        required: true
+        schema: {type: string}
+      - description: Array of IP addresses, FQDNs, or hostnames
+        example: 10.0.0.1
+        in: query
+        name: Targets
+        required: true
+        schema: {type: string}
+      - description: List of hashes.
+        example: ''
+        in: query
+        name: Hashes
+        required: false
+        schema: {type: string}
+      - description: List of Domain Names
+        example: ''
+        in: query
+        name: Domain Names
+        required: false
+        schema: {type: string}
+      - description: List of IPs
+        example: ''
+        in: query
+        name: IPs
+        required: false
+        schema: {type: string}
+      - description: Comment for Search
+        example: Test Comment
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: EnCase Find Items of Interest
+  tmp8:
+    post:
+      description: EnCase Isolate Host
+      parameters:
+      - description: ID of an investigation.
+        example: '10'
+        in: query
+        name: Investigation ID
+        required: true
+        schema: {type: string}
+      - description: FQDN
+        example: ir518w-win10.iridiumelectronics.com
+        in: query
+        name: Target
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: EnCase Isolate Host
+  tmp9:
+    post:
+      description: EnCase Reconnect Host
+      parameters:
+      - description: ID of an investigation.
+        example: '10'
+        in: query
+        name: Investigation ID
+        required: true
+        schema: {type: string}
+      - description: FQDN
+        example: ir518w-win10.iridiumelectronics.com
+        in: query
+        name: Target
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: EnCase Reconnect Host
+tags:
+- {name: Endpoint Security & Management}

@@ -1,0 +1,213 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        assessment_href: {type: string}
+        assessment_name: {type: string}
+        assessment_system: {type: string}
+        bulletinFamily: {type: string}
+        cpe: {type: string}
+        cvelist: {type: string}
+        cvss_score: {type: string}
+        cvss_vector: {type: string}
+        description: {type: string}
+        edition: {type: string}
+        enchantments_score_value: {type: string}
+        enchantments_score_vector: {type: string}
+        enchantments_vulnersScore: {type: string}
+        hash: {type: string}
+        hashmap_hash: {type: string}
+        hashmap_key: {type: string}
+        history_bulletin_assessment_href: {type: string}
+        history_bulletin_assessment_name: {type: string}
+        history_bulletin_assessment_system: {type: string}
+        history_bulletin_bulletinFamily: {type: string}
+        history_bulletin_cpe: {type: string}
+        history_bulletin_cvelist: {type: string}
+        history_bulletin_cvss_score: {type: string}
+        history_bulletin_cvss_vector: {type: string}
+        history_bulletin_description: {type: string}
+        history_bulletin_edition: {type: string}
+        history_bulletin_enchantments_score_value: {type: string}
+        history_bulletin_enchantments_score_vector: {type: string}
+        history_bulletin_hash: {type: string}
+        history_bulletin_hashmap_hash: {type: string}
+        history_bulletin_hashmap_key: {type: string}
+        history_bulletin_history: {type: string}
+        history_bulletin_href: {type: string}
+        history_bulletin_id: {type: string}
+        history_bulletin_lastseen: {type: string}
+        history_bulletin_modified: {type: string}
+        history_bulletin_objectVersion: {type: string}
+        history_bulletin_published: {type: string}
+        history_bulletin_references: {type: string}
+        history_bulletin_reporter: {type: string}
+        history_bulletin_scanner: {type: string}
+        history_bulletin_title: {type: string}
+        history_bulletin_type: {type: string}
+        history_bulletin_viewCount: {type: string}
+        history_differentElements: {type: string}
+        history_edition: {type: string}
+        history_lastseen: {type: string}
+        href: {type: string}
+        id: {type: string}
+        lastseen: {type: string}
+        modified: {type: string}
+        objectVersion: {type: string}
+        published: {type: string}
+        references: {type: string}
+        reporter: {type: string}
+        scanner: {type: string}
+        title: {type: string}
+        type: {type: string}
+        viewCount: {type: string}
+      type: object
+    tmp1:
+      properties:
+        bulletinFamily: {type: string}
+        cvss_score: {type: string}
+        cvss_vector: {type: string}
+        description: {type: string}
+        href: {type: string}
+        id: {type: string}
+        modified: {type: string}
+        published: {type: string}
+        title: {type: string}
+        type: {type: string}
+        vhref: {type: string}
+      type: object
+    tmp2:
+      properties:
+        bulletinFamily: {type: string}
+        cvss_score: {type: string}
+        cvss_vector: {type: string}
+        description: {type: string}
+        href: {type: string}
+        id: {type: string}
+        modified: {type: string}
+        published: {type: string}
+        title: {type: string}
+        type: {type: string}
+        vhref: {type: string}
+      type: object
+    tmp3:
+      properties:
+        affectedSoftware_name: {type: string}
+        affectedSoftware_operator: {type: string}
+        affectedSoftware_version: {type: string}
+        bulletinFamily: {type: string}
+        cvelist: {type: string}
+        cvss_score: {type: string}
+        cvss_vector: {type: string}
+        description: {type: string}
+        edition: {type: string}
+        enchantments_score_modified: {type: string}
+        enchantments_score_value: {type: string}
+        enchantments_score_vector: {type: string}
+        hash: {type: string}
+        hashmap_hash: {type: string}
+        hashmap_key: {type: string}
+        history: {type: string}
+        href: {type: string}
+        id: {type: string}
+        lastseen: {type: string}
+        modified: {type: string}
+        objectVersion: {type: string}
+        published: {type: string}
+        references: {type: string}
+        reporter: {type: string}
+        title: {type: string}
+        type: {type: string}
+        viewCount: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Vulners Vulners
+  title: Vulners Vulners
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get information about document by identificator
+      parameters:
+      - description: Bulletin ID
+        example: CVE-2017-14174
+        in: query
+        name: Identificator
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Vulners Document Information
+  tmp1:
+    post:
+      description: Search the Vulners Database
+      parameters:
+      - description: An abstract Vulners query.
+        example: heartbleed
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: Search size. Default is 100 elements limit.
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Vulners Search
+  tmp2:
+    post:
+      description: Search Vulners Database for Exploits
+      parameters:
+      - description: ''
+        example: test
+        in: query
+        name: Search query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Vulners Search Exploits
+  tmp3:
+    post:
+      description: Search Vulners Database for Vulnerabilities
+      parameters:
+      - description: Software Name
+        example: Windows
+        in: query
+        name: Software Name
+        required: true
+        schema: {type: string}
+      - description: Software Version
+        example: '10'
+        in: query
+        name: Software Version
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Vulners Search Vulnerabilities
+tags:
+- {name: Investigation}

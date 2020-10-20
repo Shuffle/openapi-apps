@@ -1,0 +1,220 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        impersonationCount: {type: string}
+        maliciousAttachmentsCount: {type: string}
+        maliciousLinksCount: {type: string}
+        openIncidentCount: {type: string}
+        phishingCount: {type: string}
+        remediationCount: {type: string}
+        reportedByEmployeesCount: {type: string}
+        resolvedIncidentCount: {type: string}
+      type: object
+    tmp2:
+      properties:
+        affected_mailbox_count: {type: string}
+        attachments: {type: string}
+        banner_displayed: {type: string}
+        classification: {type: string}
+        company_id: {type: string}
+        company_name: {type: string}
+        federation: {type: string}
+        first_reported_by: {type: string}
+        first_reported_date: {type: string}
+        incident_id: {type: string}
+        links: {type: string}
+        mail_server: {type: string}
+        reply_to: {type: string}
+        reports: {type: string}
+        sender_email: {type: string}
+        sender_is_internal: {type: string}
+        sender_reputation: {type: string}
+        spf_result: {type: string}
+        themis_proba: {type: string}
+        themis_verdict: {type: string}
+      type: object
+    tmp3:
+      properties:
+        incidentID: {type: string}
+        incidentType: {type: string}
+        mailboxEmail: {type: string}
+        mailboxId: {type: string}
+        remediatedTime: {type: string}
+        remediations: {type: string}
+        reportedBy: {type: string}
+        resolution: {type: string}
+        senderEmail: {type: string}
+        subject: {type: string}
+      type: object
+    tmp4:
+      properties:
+        affectedMailboxCount: {type: string}
+        detectionType: {type: string}
+        incidentID: {type: string}
+        incidentState: {type: string}
+        mailboxEmail: {type: string}
+        mailboxId: {type: string}
+        messages: {type: string}
+        remediatedTime: {type: string}
+        reportedBy: {type: string}
+        senderEmail: {type: string}
+        subject: {type: string}
+        threatType: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Ironscales Ironscales
+  title: Ironscales Ironscales
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Submit new classification for incident by ID
+      parameters:
+      - description: The Company ID
+        example: '3866'
+        in: body
+        name: Company ID
+        required: true
+        schema: {type: string}
+      - description: The Incident ID
+        example: '748512'
+        in: body
+        name: Incident ID
+        required: true
+        schema: {type: string}
+      - description: 'The new classification of the incident.Options: Attack, Spam,
+          False Positive.'
+        example: Spam
+        in: query
+        name: New Classification
+        required: true
+        schema: {type: string}
+      - description: 'The current classification of the incident. Can be found in
+          Incident Details. Options: Report, Attack, Spam, False Positive.'
+        example: Attack
+        in: query
+        name: Current Classification
+        required: true
+        schema: {type: string}
+      - description: Email of the API user classifying the incident.
+        example: Swim.And.Soar@swimlane.com
+        in: query
+        name: Classifying User Email
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Ironscales Classify Incident
+  tmp1:
+    post:
+      description: Counts for various mitigation statistics
+      parameters:
+      - description: The Company ID
+        example: '3866'
+        in: body
+        name: Company ID
+        required: true
+        schema: {type: string}
+      - description: 'Time range to query, defaults to 0. Options: 0 - Last 24 hours,
+          1 - Last 7 days, 2 - Last 90 days, 3 - Last 180 days, 4 - Last 360 days,
+          5 - Current year to date, 6 - All time'
+        example: '1'
+        in: body
+        name: Period
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: 'Ironscales Get Company Mitigation Statistics '
+  tmp2:
+    post:
+      description: Get details for incident by ID
+      parameters:
+      - description: The Company ID
+        example: '3866'
+        in: body
+        name: Company ID
+        required: true
+        schema: {type: string}
+      - description: The Incident ID
+        example: '748512'
+        in: body
+        name: Incident ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Ironscales Get Incident Details
+  tmp3:
+    post:
+      description: Get details of impersonation incidents
+      parameters:
+      - description: The Company ID
+        example: '3866'
+        in: body
+        name: Company ID
+        required: true
+        schema: {type: string}
+      - description: 'Time range to query, defaults to 0. Options: 0 - Last 24 hours,
+          1 - Last 7 days, 2 - Last 90 days, 3 - Last 180 days, 4 - Last 360 days,
+          5 - Current year to date, 6 - All time'
+        example: '1'
+        in: body
+        name: Period
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Ironscales Get Mitigation Impersonation Incidents
+  tmp4:
+    post:
+      description: Get details for latest incidents.
+      parameters:
+      - description: The Company ID
+        example: '3866'
+        in: body
+        name: Company ID
+        required: true
+        schema: {type: string}
+      - description: 'Time range to query, defaults to 0. Options: 0 - Last 24 hours,
+          1 - Last 7 days, 2 - Last 90 days, 3 - Last 180 days, 4 - Last 360 days,
+          5 - Current year to date, 6 - All time'
+        example: '1'
+        in: body
+        name: Period
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Ironscales Get Mitigation Incidents
+tags:
+- {name: Communication}

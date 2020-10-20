@@ -1,0 +1,157 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        Assets_Type: {type: string}
+        Assets_Value: {type: string}
+        Assignees: {type: string}
+        Details_Description: {type: string}
+        Details_Images: {type: string}
+        Details_Severity: {type: string}
+        Details_Source_Date: {type: string}
+        Details_Source_NetworkType: {type: string}
+        Details_Source_Type: {type: string}
+        Details_Source_URL: {type: string}
+        Details_SubType: {type: string}
+        Details_Tags_CreatedBy: {type: string}
+        Details_Tags_Name: {type: string}
+        Details_Tags__id: {type: string}
+        Details_Title: {type: string}
+        Details_Type: {type: string}
+        FoundDate: {type: string}
+        IsClosed: {type: string}
+        IsFlagged: {type: string}
+        TakedownStatus: {type: string}
+        _id: {type: string}
+      type: object
+    tmp1:
+      properties:
+        Assets_Type: {type: string}
+        Assets_Value: {type: string}
+        Assignees: {type: string}
+        Details_Description: {type: string}
+        Details_Images: {type: string}
+        Details_Severity: {type: string}
+        Details_Source_Date: {type: string}
+        Details_Source_NetworkType: {type: string}
+        Details_Source_Type: {type: string}
+        Details_Source_URL: {type: string}
+        Details_SubType: {type: string}
+        Details_Tags_CreatedBy: {type: string}
+        Details_Tags_Name: {type: string}
+        Details_Tags__id: {type: string}
+        Details_Title: {type: string}
+        Details_Type: {type: string}
+        FoundDate: {type: string}
+        IsClosed: {type: string}
+        IsFlagged: {type: string}
+        TakedownStatus: {type: string}
+        _id: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Intsights Cyber Threat Command
+  title: Intsights Cyber Threat Command
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAFhUlEQVR4nO3bX2gcRRwH8N9uElJJNSg1R8lpUkNebK1obfLY9tIktCLY5igIzYuBgokP16OpBIuKKDGkvealLQbiSwKFeGkFKSX/TvSl5K4FqaQvRUnwilwabKtGWiVZH8wcc5PZu5nb3cu/7wcCd7dzs3N735uZnd0QAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADARmaoFqxvDlp226ZGo8r1wOaQNRDZwiRzuHF/18en3v/CWZNgI5AGSzdQIvRgsCIAdqFaWqLZxHi02q6izk96en64kTjNniNcm1vGly8LVe1LL14duhQ5yp733nzYPj775AJ7vntbybmz+547JasH4dq80l+8LFQsGEe+mZtYWLQaVCoca/EZRER7G4MzpklVquHqHxwODgwNf83vl4iotq073a67A10562LlWdm6nuvaw3r8g0MZ+wnHkrZ1RAJ+27LiNtU6dd6brRxflpXLtV+VtqgcD5Po/xCIBdiX2zSSslRDxco3jaSsxHi0emo0ajidr/H4kBVKri9C94vq+v7eZyrvCceSVj4h8FI4ljyvejyKiYhMk6r4jXyo8m1E00jKGmvxGW4Ph7Vt3ZZKz8WIvQ9RZi8m285k6xnCseR5IgqptoPV92Qx85CK9fbGU+2//fVveqoRnvzVijS8kNlGyyIy8jussh5OowcM2ZUTA2eK71xaolki+1B9+XrFU2MtPoP9ZWmEo2CuJbKDHQn4T9aUl7bmGoqYyV/+zvjxRgJ+Q/bezjrfxYzXDWNlr5hnqJzIFT72WnooFIcq2ZkfH6QdO4zHdttkDXIrXHwvVYgh8cKt+8dzlenY8/yQan3XZn6fYY9VwsiXefdAZanqflYT3+YVPRZPDAwbY/k/sXxZkTEp1rMew8WHZnnYyxvfW6n2cKxsJOA3dhnGP07275I+ncLSYDUOp+J8oAZuzx9ZDlFILCsG7OrbFQetRUroNGIdCDmZSPO91XoVCfhPsscqJxbFsheNItrLVzI9/1hWLEM4lrTYr3H8mK/Oq/nV3YEug/VWuhN5XZGA3+APoM5pfqEU8swxy/Ho44NHZBOsXJNyFaE95Tv7bj2aZs/ZWaLTeolWN1yMuD7klEpA1kKYbY5HKBxLhth2IiKzrGzLj3wJcTKv+mFKi4zP2eP+weHg4eotd/Jo95rE5jq5TtU3C5XjURy7MvSaGKa3Wt/77tvBSwf4inRWnwuhkL0Wj1vBTq9j8dMAp/WKnKzQq7zfKdmKfjiWtKST97m5+/tlFUQCfmP71pKO5Zf6ZKmtbw5aJ1qPRd1rur1CL0HwxDlFDn1O98ePCGuRmAOTSH6xuL45aMkux7AFPPHA2pWHlWdUqu/jy3bvqzzjdru8lO6x7C69sMDIrieybXyg7Fbu3Zq4i7zstby6XqdSZ2881e72fp0Kx5LW5ekHSteNTSKi49fnrhBlv83FNKmKD5Jd75Ttni2veDG/sltm4F7TWjTVuUMgHEta/PXC1T4bvHnvj22svYnUwoTss/Ofp6GqfHcxEdHQoYqj/EXjfIc0u4vXXvVWXsq2hiUr63adunV76Y3KZ+YvTz84mEgtTCy/lF5ekHmz5umf0kPhWIvPaBpJWR/dePjh1GhU666Es2dO17hxR4QTXvRautf0VOvUCaJO3V56Z+ezkzrHY0VBFgyxl2E37rHnr+56+av+c5+2seeNw6k4v2LPrMfeyg7rYbZvLenorPNddLtekqxgr1XXfv7zlcnZR7eJ5D+AnHckOLk1ZiOFCvTYfvFOhzSEanNz/UY9BAqINP4TGkMeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHjqPz2h6cSmvdR+AAAAAElFTkSuQmCC
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Gets alert details by ID
+      parameters:
+      - description: Alert ID
+        example: ''
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Intsights Cyber Threat Command Get Alert By ID
+  tmp1:
+    post:
+      description: Get details for all alerts
+      parameters:
+      - description: Show assigned/unassigned alerts
+        example: ''
+        in: query
+        name: Assigned
+        required: false
+        schema: {type: boolean}
+      - description: 'Can be CSV. Allowed types are: AttackIndication, DataLeakage,
+          Phishing, BrandSecurity, ExploitableData, vip'
+        example: ''
+        in: query
+        name: Alert Type
+        required: false
+        schema: {type: string}
+      - description: Source end date, in ISO 8601 format, to fetch to
+        example: '2019-11-13T15:30:43+00:00'
+        in: query
+        name: End Date
+        required: false
+        schema: {type: string}
+      - description: Source start date, in ISO 8601 format, to fetch from
+        example: '2019-11-13T15:30:43+00:00'
+        in: query
+        name: Source Start Date
+        required: false
+        schema: {type: string}
+      - description: Found end date, in ISO 8601 format, to fetch to
+        example: '2019-11-13T15:30:43+00:00'
+        in: query
+        name: Found End Date
+        required: false
+        schema: {type: string}
+      - description: 'Can be CSV. Allowed types are: High, Medium, Low'
+        example: ''
+        in: query
+        name: Alert Severity
+        required: false
+        schema: {type: string}
+      - description: Show flagged/unflagged alerts
+        example: ''
+        in: query
+        name: Flagged
+        required: false
+        schema: {type: boolean}
+      - description: Show closed/open alerts
+        example: ''
+        in: query
+        name: Closed
+        required: false
+        schema: {type: boolean}
+      - description: 'Can be CSV. Allowed types are: ClearWeb, DarkWeb'
+        example: ''
+        in: query
+        name: Alert Network Type
+        required: false
+        schema: {type: string}
+      - description: Found start date, in ISO 8601 format, to fetch from
+        example: '2019-11-13T15:30:43+00:00'
+        in: query
+        name: Found Start Date
+        required: false
+        schema: {type: string}
+      - description: 'Can be CSV. Allowed types are: ApplicationStores, BlackMarkets,
+          HackingForums, SocialMedia, PasteSites, Others'
+        example: ''
+        in: query
+        name: Alert Source Type
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Intsights Cyber Threat Command Get All Alerts
+tags:
+- {name: Endpoint Security & Management}

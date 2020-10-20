@@ -1,0 +1,266 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        createdat: {type: string}
+        createdby: {type: string}
+        data: {type: string}
+        datatype: {type: string}
+        id: {type: string}
+        ioc: {type: string}
+        message: {type: string}
+        reports: {type: string}
+        sighted: {type: string}
+        startdate: {type: string}
+        status: {type: string}
+        tags: {type: string}
+        tlp: {type: string}
+      type: object
+    tmp1:
+      properties:
+        caseid: {type: string}
+        createdat: {type: string}
+        createdby: {type: string}
+        customfields: {type: string}
+        description: {type: string}
+        flag: {type: string}
+        id: {type: string}
+        metrics: {type: string}
+        owner: {type: string}
+        severity: {type: string}
+        startdate: {type: string}
+        status: {type: string}
+        tags: {type: string}
+        title: {type: string}
+        tlp: {type: string}
+      type: object
+    tmp2:
+      properties:
+        caseid: {type: string}
+        createdat: {type: string}
+        createdby: {type: string}
+        customfields: {type: string}
+        description: {type: string}
+        flag: {type: string}
+        id: {type: string}
+        metrics: {type: string}
+        owner: {type: string}
+        severity: {type: string}
+        startdate: {type: string}
+        status: {type: string}
+        tags: {type: string}
+        title: {type: string}
+        tlp: {type: string}
+      type: object
+    tmp3:
+      properties:
+        createdat: {type: string}
+        createdby: {type: string}
+        data: {type: string}
+        datatype: {type: string}
+        id: {type: string}
+        ioc: {type: string}
+        message: {type: string}
+        sighted: {type: string}
+        startdate: {type: string}
+        status: {type: string}
+        tags: {type: string}
+        tlp: {type: string}
+        updatedat: {type: string}
+        updatedby: {type: string}
+      type: object
+    tmp4:
+      properties:
+        caseid: {type: string}
+        createdat: {type: string}
+        createdby: {type: string}
+        customfields: {type: string}
+        description: {type: string}
+        flag: {type: string}
+        id: {type: string}
+        metrics: {type: string}
+        owner: {type: string}
+        severity: {type: string}
+        startdate: {type: string}
+        status: {type: string}
+        tags: {type: string}
+        title: {type: string}
+        tlp: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of TheHive Project TheHive
+  title: TheHive Project TheHive
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAEMElEQVR4nO2dQXLbMAxFvzvd5iyZ3P8QmZwlB0gXHU9dDWWTFAD+D+KtExoEHkFGUuQbEvL99fGzOoYe3t4/b6tj8OLX6gCsUZEK0Ip1lFRiKRZKMeYeUolV8JBGLOWVrxz7Gb9XB+AJ6+E4o0hHUnSsDIXKMIdHUojVgrVbAdyxWSEvVqaVnmku0mKdFUKhI5zFmEUuabFaKEh1RynWUWTFyrKyW2SYm6xYLRQ7gGLMPUiKlWFFv0J9jmkukI6s/GPRrLrG7Lhv7583dZGOyHWsVgGuimFR1KtjtOagLJuUWMqJnkV1zlJitch0+M00FxmxLFeu9bbjsT2/Gp8dGbFaXCmelVzWUmXpWhJiKa5Ya9RyQC9W9P3AkQJ6FTvDfUR6sVpYSeUhJ3NskVCLpbRCo1DJCa1YUVvgcbyR8a/87sz4StAGzvKsldftn9nPXxXHKJTBrU5m73azOh5muWi3wiOri3j1Z6/ALNAZdGKtPJzOXiBdFTPzQZ5OrBYRK5a5SIBe16ISS3nlK8fuAZVYLZRWqneRlXJBIxbrylOAMXcUYq38c5qxKM9QuY9IIVYLpbYfjUJulovFttKUYcrlcrFaRK5IhdXfgj1uSrGYVt4IkcVmz9FysRhWnkUMWeZhBUUgbDdZ2W5CH2HLVwuaQBSSxYL3fwVZsHwrvMOWGFYUpAKIxDqD/ZAaiVIuqMRiXHnssOaMSiwg38sxrFDLAZ1YRT+s3QogFWtV1xp9GvT+896xqXUrgFSsM7wSbCFH9CPKzN0KIBYr6pEZaxkUu4sH1NYDttdteoo+OrbHmK/GZu9WAHHHeobV64ai8H63FyMSQc52rdGCenbC0c9R7laAaMfqwbJLWJ/FZsdSkQoQEcvj3GPJTMFfxagkUQvp4I9cEepZIe/j9vyM9WerItGxevC8xhX5GVlIsVI8Xt7/bFzPf8HK0r2kO9bKF3J4kWU+0mIVvEi2XeYLjsyxRVIdq3BBakVYnz8Y3hXfg2LnkulYWQ61MyjOXUasQgsJsTxWrOf24jG2WteiF0stoZ4o5SLNd0KPYHnP72ysjN/zPAJ1x4oujMIDhCqy0oqlksAVKOSGViwvPG4gqz/t6cGWZ6wWKi+NvfP99fHDLC5lYNHfXOpNtvn0sN1WWMRQYhUubCPWym2DecvyYguxGArLEEMkW4hVxLP15YYd/1qLIn3HYioyUyzeUIpV3/r1GnZJKcWygvGCKLsQVtCesbwfO1G7hfOIgpz0Ac4UWiHx2d84Q78VjiZSJfEzcarMDRDoWI9kPbtkf6VRURQFN9u1WIW3/WWA/vBeaFJiFS5sJ1bk1rTrNghsKFYRw5ZiRXSSnbsVsKlY3uwuFbCxWFV8X7YVC/CRq4T9y9ZiAbYilFT/2F4swEaIkup/KhkHor6KLjuVlBOyPqITxR84M3QeoL32jAAAAABJRU5ErkJggg==
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Add an Observable/IOC to a Case
+      parameters:
+      - description: The ID of the case
+        example: ''
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Data of the observable, like the IP or Hash
+        example: ''
+        in: query
+        name: Data
+        required: true
+        schema: {type: string}
+      - description: Description of the Observable/IOC
+        example: ''
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: Traffic light protocol value, 0 - white, 1 - green, 2 - amber,
+          3 - red
+        example: ''
+        in: body
+        name: TLP Value
+        required: true
+        schema: {type: string}
+      - description: Is this Observable an Indicator of Compromise?
+        example: ''
+        in: query
+        name: Is IOC
+        required: true
+        schema: {type: boolean}
+      - description: Type of data the Observable is. Must be one of autonomous-system,
+          domain, file, filename, fqdn, hash, ip, mail, mail_subject, other, regexp,
+          registry, uri_path, url, or user-agent
+        example: ''
+        in: query
+        name: Data Type
+        required: true
+        schema: {type: string}
+      - description: Comma seperated tag values to be applied to this Observable
+        example: ''
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Add Observable/IOC to Case
+  tmp1:
+    post:
+      description: Create a case in the Hive
+      parameters:
+      - description: Title of the case
+        example: Example Case
+        in: query
+        name: Title
+        required: true
+        schema: {type: string}
+      - description: Description of the case
+        example: Description of example case
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: Traffic Light Protocol value of this case
+        example: '2'
+        in: body
+        name: TLP
+        required: false
+        schema: {type: string}
+      - description: Severity of the case
+        example: '2'
+        in: body
+        name: Severity
+        required: false
+        schema: {type: string}
+      - description: Flag of the case
+        example: ''
+        in: query
+        name: Flag
+        required: false
+        schema: {type: boolean}
+      - description: List of tags to add to the case. CSV.
+        example: tag1,tag2
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      - description: Date the case started
+        example: ''
+        in: query
+        name: Start Date
+        required: false
+        schema: {type: string}
+      - description: List of custom fields. JSON object.
+        example: ''
+        in: query
+        name: Custom Fields
+        required: false
+        schema: {type: string}
+      - description: Template for the case
+        example: ''
+        in: query
+        name: Template
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: The Hive Create Case
+  tmp2:
+    post:
+      description: Get details about a case in the Hive
+      parameters:
+      - description: The ID of the case
+        example: ''
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Get Case Details
+  tmp3:
+    post:
+      description: Get observables that belong to a case in the Hive
+      parameters:
+      - description: The ID of the case
+        example: ''
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Get Case Observables Details
+  tmp4:
+    post:
+      description: List all cases in the Hive
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: List All Cases
+tags:
+- {name: Investigation}

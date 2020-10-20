@@ -1,0 +1,724 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp1:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp10:
+      properties:
+        accountExpires: {type: string}
+        badPasswordTime: {type: string}
+        badPwdCount: {type: string}
+        cn: {type: string}
+        codePage: {type: string}
+        countryCode: {type: string}
+        dSCorePropagationData: {type: string}
+        distinguishedName: {type: string}
+        instanceType: {type: string}
+        isCriticalSystemObject: {type: string}
+        lastLogoff: {type: string}
+        lastLogon: {type: string}
+        localPolicyFlags: {type: string}
+        location: {type: string}
+        logonCount: {type: string}
+        name: {type: string}
+        objectCategory: {type: string}
+        objectClass: {type: string}
+        objectGUID: {type: string}
+        objectSid: {type: string}
+        primaryGroupID: {type: string}
+        pwdLastSet: {type: string}
+        raw_json: {type: string}
+        sAMAccountName: {type: string}
+        sAMAccountType: {type: string}
+        uSNChanged: {type: string}
+        uSNCreated: {type: string}
+        userAccountControl: {type: string}
+        whenChanged: {type: string}
+        whenCreated: {type: string}
+      type: object
+    tmp11:
+      properties:
+        accountExpires: {type: string}
+        badPasswordTime: {type: string}
+        badPwdCount: {type: string}
+        cn: {type: string}
+        codePage: {type: string}
+        countryCode: {type: string}
+        dSCorePropagationData: {type: string}
+        department: {type: string}
+        description: {type: string}
+        displayName: {type: string}
+        distinguishedName: {type: string}
+        givenName: {type: string}
+        instanceType: {type: string}
+        lastLogoff: {type: string}
+        lastLogon: {type: string}
+        logonCount: {type: string}
+        mail: {type: string}
+        manager: {type: string}
+        name: {type: string}
+        objectCategory: {type: string}
+        objectClass: {type: string}
+        objectGUID: {type: string}
+        objectSid: {type: string}
+        physicalDeliveryOfficeName: {type: string}
+        primaryGroupID: {type: string}
+        pwdLastSet: {type: string}
+        raw_json: {type: string}
+        sAMAccountName: {type: string}
+        sAMAccountType: {type: string}
+        sn: {type: string}
+        telephoneNumber: {type: string}
+        title: {type: string}
+        uSNChanged: {type: string}
+        uSNCreated: {type: string}
+        userAccountControl: {type: string}
+        userPrincipalName: {type: string}
+        whenChanged: {type: string}
+        whenCreated: {type: string}
+      type: object
+    tmp12:
+      properties:
+        result: {type: string}
+      type: object
+    tmp13:
+      properties:
+        result: {type: string}
+      type: object
+    tmp14:
+      properties:
+        is_member: {type: string}
+      type: object
+    tmp2:
+      properties:
+        success: {type: string}
+      type: object
+    tmp3:
+      properties:
+        success: {type: string}
+      type: object
+    tmp4:
+      properties:
+        success: {type: string}
+      type: object
+    tmp5:
+      properties:
+        success: {type: string}
+      type: object
+    tmp6:
+      properties:
+        json: {type: string}
+      type: object
+    tmp7:
+      properties:
+        success: {type: string}
+      type: object
+    tmp8:
+      properties:
+        result: {type: string}
+      type: object
+    tmp9:
+      properties:
+        result: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Microsoft Active Directory
+  title: Microsoft Active Directory
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Change a password in active directory
+      parameters:
+      - description: Full User DN
+        example: CN=Helen Powers,CN=Users,DC=example,DC=com
+        in: query
+        name: User DN
+        required: true
+        schema: {type: string}
+      - description: The new password. Will fail if the password doesn't meet domain
+          requirements
+        example: mynewp@55word!
+        in: query
+        name: New Password
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: AD Change Password
+  tmp1:
+    post:
+      description: Change a password in active directory
+      parameters:
+      - description: User to test the password of
+        example: ''
+        in: query
+        name: User
+        required: true
+        schema: {type: string}
+      - description: Password to try for the user
+        example: ''
+        in: query
+        name: Password
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: AD Test Password
+  tmp10:
+    post:
+      description: Search for a computer in Active Directory
+      parameters:
+      - description: The name of the attribute to search on
+        example: cn
+        in: query
+        name: Search Attribute
+        required: true
+        schema: {type: string}
+      - description: The value to match against
+        example: DC01
+        in: query
+        name: Search Value
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Query System
+  tmp11:
+    post:
+      description: Search for a user in Active Directory
+      parameters:
+      - description: The name of the attribute to search on
+        example: givenName
+        in: query
+        name: Search Attribute
+        required: true
+        schema: {type: string}
+      - description: The value to match against
+        example: Evan
+        in: query
+        name: Search Value
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: Query User
+  tmp12:
+    post:
+      description: Move a computer to a new container in Active Directory
+      parameters:
+      - description: The name of the attribute to search on
+        example: CN
+        in: query
+        name: Search Attribute
+        required: true
+        schema: {type: string}
+      - description: The value to match against
+        example: DC01
+        in: query
+        name: Search Value
+        required: true
+        schema: {type: string}
+      - description: 'DN Prefix + Base DN is the complete DN of the container to which
+          the system will be moved: OU=lockdown,CN=Dept_X,DC=example,DC=com'
+        example: OU=lockdown,CN=Dept_X
+        in: query
+        name: Destination Container's DN Prefix
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: Update Container
+  tmp13:
+    post:
+      description: Edit the value of a computer's attribute in Active Directory
+      parameters:
+      - description: The name of the attribute to search on
+        example: CN
+        in: query
+        name: Search Attribute
+        required: true
+        schema: {type: string}
+      - description: The value to match against
+        example: DC01
+        in: query
+        name: Search Value
+        required: true
+        schema: {type: string}
+      - description: The name of the attribute to update
+        example: operatingSystem
+        in: query
+        name: Update Attribute
+        required: true
+        schema: {type: string}
+      - description: The value to assign to the chosen attribute
+        example: Windows Server 2012
+        in: query
+        name: Update Value
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: Update System
+  tmp14:
+    post:
+      description: Check if a user is a member of a group, including nested groups.
+      parameters:
+      - description: The name of the attribute to search on
+        example: distinguishedName
+        in: query
+        name: Search Attribute
+        required: true
+        schema: {type: string}
+      - description: The value to match.
+        example: CN=Leeroy Jenkins,OU=friends,DC=testdomain,DC=local
+        in: query
+        name: Search Value
+        required: true
+        schema: {type: string}
+      - description: The distinguished name of the group
+        example: CN=test group 2,DC=testdomain,DC=local
+        in: query
+        name: Group DN
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp14'}
+          description: Successful request
+      summary: ' User is member of group'
+  tmp2:
+    post:
+      description: Add a user to one or more groups.
+      parameters:
+      - description: The distinguished name of the user.
+        example: CN=MyUser,DC=testdomain,DC=local
+        in: query
+        name: DN
+        required: true
+        schema: {type: string}
+      - description: A list of distinguished names for each group that the user will
+          be added to.
+        example: '[''CN=MyGroup,CN=Users,DC=testdomain,DC=local'']'
+        in: query
+        name: Groups
+        required: false
+        schema: {type: string}
+      - description: The distinguished name for a single group that the user will
+          be added to.
+        example: CN=MyGroup,CN=Users,DC=testdomain,DC=local
+        in: query
+        name: Group
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: ' Add User to Groups'
+  tmp3:
+    post:
+      description: Require a user to change their password the next time they log
+        in.
+      parameters:
+      - description: The distinguished name of the user.
+        example: CN=MyUser,DC=testdomain,DC=local
+        in: query
+        name: DN
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: ' Change Password at Next Login'
+  tmp4:
+    post:
+      description: Create a new AD user.
+      parameters:
+      - description: Distinguished Name
+        example: CN=My Name,OU=friends,DC=testdomain,DC=local
+        in: query
+        name: DN
+        required: true
+        schema: {type: string}
+      - description: A JSON string containing a mapping of attribute names to attribute
+          values.
+        example: '{"cn": "Leeroy Jenkins", "displayName": "Leeroy Jenkins", "name":
+          "Leeroy Jenkins", "sn": "Jenkins", "givenName": "Leeroy"}'
+        in: query
+        name: Extra Attributes
+        required: false
+        schema: {type: string}
+      - description: Country
+        example: United States
+        in: query
+        name: Country
+        required: false
+        schema: {type: string}
+      - description: Country Code
+        example: '840'
+        in: body
+        name: Country Code
+        required: false
+        schema: {type: string}
+      - description: A list of user account control flags.  See README for options
+        example: '["NORMAL_ACCOUNT"]'
+        in: query
+        name: User Account Control Flags
+        required: false
+        schema: {type: string}
+      - description: User Principal Name
+        example: my.name@testdomain.local
+        in: query
+        name: User Principal Name
+        required: false
+        schema: {type: string}
+      - description: The DN of the user's manager
+        example: CN=Chuck Norris,OU=friends,DC=testdomain,DC=local
+        in: query
+        name: Manager
+        required: false
+        schema: {type: string}
+      - description: Instance Type
+        example: '4'
+        in: body
+        name: Instance Type
+        required: false
+        schema: {type: string}
+      - description: Description
+        example: Employee
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: Title
+        example: job title
+        in: query
+        name: Title
+        required: false
+        schema: {type: string}
+      - description: Street Address
+        example: 123 street st
+        in: query
+        name: Street Address
+        required: false
+        schema: {type: string}
+      - description: City
+        example: Boulder
+        in: query
+        name: City
+        required: false
+        schema: {type: string}
+      - description: State
+        example: Co
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      - description: Postal Code
+        example: '11111'
+        in: query
+        name: Postal Code
+        required: false
+        schema: {type: string}
+      - description: ISO standard country code
+        example: US
+        in: query
+        name: ISO standard country code
+        required: false
+        schema: {type: string}
+      - description: Department
+        example: department name
+        in: query
+        name: Department
+        required: false
+        schema: {type: string}
+      - description: EMail
+        example: testemail@tester.com
+        in: query
+        name: EMail
+        required: false
+        schema: {type: string}
+      - description: sAMAccountName
+        example: leeroy.jenkins
+        in: query
+        name: sAMaccountName
+        required: false
+        schema: {type: string}
+      - description: Object Category
+        example: CN=Person,CN=Schema,CN=Configuration,DC=testdomain,DC=local
+        in: query
+        name: Object Category
+        required: false
+        schema: {type: string}
+      - description: Company
+        example: company
+        in: query
+        name: Company
+        required: false
+        schema: {type: string}
+      - description: Display Name
+        example: My Name
+        in: query
+        name: Display Name
+        required: false
+        schema: {type: string}
+      - description: Telephone Number
+        example: '1111111111'
+        in: query
+        name: Telephone Number
+        required: false
+        schema: {type: string}
+      - description: Web Page
+        example: http://www.sample.com
+        in: query
+        name: Web Page
+        required: false
+        schema: {type: string}
+      - description: Physical Delivery Office Name
+        example: home
+        in: query
+        name: Physical Delivery Office Name
+        required: false
+        schema: {type: string}
+      - description: Name
+        example: My Name
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: Specifies the code page for the user's language of choice.
+        example: '0'
+        in: body
+        name: Code Page
+        required: false
+        schema: {type: string}
+      - description: SN
+        example: lastname
+        in: query
+        name: SN
+        required: false
+        schema: {type: string}
+      - description: Given Name
+        example: Leeroy
+        in: query
+        name: Given Name
+        required: false
+        schema: {type: string}
+      - description: Initials
+        example: LJ
+        in: query
+        name: Initials
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: ' Create User'
+  tmp5:
+    post:
+      description: Add and entry into AD.
+      parameters:
+      - description: The distinguished name for the object being created.
+        example: CN=Nacho Libre,OU=friends,DC=testdomain,DC=local
+        in: query
+        name: Dn
+        required: true
+        schema: {type: string}
+      - description: A comma separated list of object classes to add this object to.
+        example: top,person,organizationalPerson,user
+        in: query
+        name: Class Names
+        required: true
+        schema: {type: string}
+      - description: A JSON string containing a mapping of attribute names to attribute
+          values.
+        example: '{"attribute1": "value1", "attribute2": "value2"}'
+        in: query
+        name: Attributes
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: ' Custom Create'
+  tmp6:
+    post:
+      description: Execute a custom LDAP query.  You can use the available inputs
+        to generate the query or create the query yourself and pass it in using the
+        Search Filter parameter.
+      parameters:
+      - description: An LDAP search filter.
+        example: (sn=an_sn_value)
+        in: query
+        name: Search Filter
+        required: false
+        schema: {type: string}
+      - description: Attribute to search on
+        example: sn
+        in: query
+        name: Search Attribute
+        required: false
+        schema: {type: string}
+      - description: Desired value of the search attribute
+        example: surfadmin
+        in: query
+        name: Search Value
+        required: false
+        schema: {type: string}
+      - description: A comma separated list of attributes to return
+        example: sn,creatorsName
+        in: query
+        name: Return Attributes
+        required: false
+        schema: {type: string}
+      - description: Object Class to search in.
+        example: user
+        in: query
+        name: Object Class
+        required: false
+        schema: {type: string}
+      - description: Object Categoty to search in.
+        example: person
+        in: query
+        name: Object Category
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: ' Custom Query'
+  tmp7:
+    post:
+      description: Execute a custom LDAP update. You can update a single attribute
+        using the inputs provided, or pass in a json mapping of attributes to values
+        to update.
+      parameters:
+      - description: The DN of the object to update
+        example: cn=Tom Riddle,ou=Groups,dc=swimlane,dc=us
+        in: query
+        name: DN
+        required: true
+        schema: {type: string}
+      - description: JSON with a mapping of attributes to values to update.
+        example: '{"attribute1": "value1", "attribute2": "value2"}'
+        in: query
+        name: Update JSON
+        required: false
+        schema: {type: string}
+      - description: The attribute to update
+        example: sn
+        in: query
+        name: Update Attribute
+        required: false
+        schema: {type: string}
+      - description: The value to update the attribute to.
+        example: swimlane
+        in: query
+        name: Update Value
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: ' Custom Update'
+  tmp8:
+    post:
+      description: Disable a user in Active Directory
+      parameters:
+      - description: The name of the attribute to search on
+        example: CN
+        in: query
+        name: Search Attribute
+        required: true
+        schema: {type: string}
+      - description: The value to match against
+        example: Evan Contreras
+        in: query
+        name: Search Value
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Disable User
+  tmp9:
+    post:
+      description: Enable a user in Active Directory
+      parameters:
+      - description: The name of the attribute to search on
+        example: CN
+        in: query
+        name: Search Attribute
+        required: true
+        schema: {type: string}
+      - description: The value to match against
+        example: Evan Contreras
+        in: query
+        name: Search Value
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Enable User
+tags:
+- {name: Identity & Access Management}

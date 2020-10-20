@@ -1,0 +1,251 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        Command: {type: string}
+        CommandArgument: {type: string}
+        Failed: {type: string}
+        HasSubscriptions: {type: string}
+        Information: {type: string}
+        IsEndpoint: {type: string}
+        IsTransitioned: {type: string}
+        Passed: {type: string}
+        RelatedIP: {type: string}
+        ReportingNameServer: {type: string}
+        TimeRecorded: {type: string}
+        TimeToComplete: {type: string}
+        Transcript: {type: string}
+        UID: {type: string}
+      type: object
+    tmp1:
+      properties:
+        Command: {type: string}
+        CommandArgument: {type: string}
+        Failed: {type: string}
+        HasSubscriptions: {type: string}
+        Information: {type: string}
+        IsEndpoint: {type: string}
+        IsTransitioned: {type: string}
+        Passed: {type: string}
+        RelatedIP: {type: string}
+        ReportingNameServer: {type: string}
+        TimeRecorded: {type: string}
+        TimeToComplete: {type: string}
+        Transcript: {type: string}
+        UID: {type: string}
+      type: object
+    tmp2:
+      properties:
+        Command: {type: string}
+        CommandArgument: {type: string}
+        Failed: {type: string}
+        HasSubscriptions: {type: string}
+        Information: {type: string}
+        IsEndpoint: {type: string}
+        IsTransitioned: {type: string}
+        Passed: {type: string}
+        RelatedIP: {type: string}
+        ReportingNameServer: {type: string}
+        TimeRecorded: {type: string}
+        TimeToComplete: {type: string}
+        Transcript: {type: string}
+        UID: {type: string}
+      type: object
+    tmp3:
+      properties:
+        Command: {type: string}
+        CommandArgument: {type: string}
+        Failed: {type: string}
+        HasSubscriptions: {type: string}
+        Information: {type: string}
+        IsEndpoint: {type: string}
+        IsTransitioned: {type: string}
+        Passed: {type: string}
+        RelatedIP: {type: string}
+        ReportingNameServer: {type: string}
+        TimeRecorded: {type: string}
+        TimeToComplete: {type: string}
+        Transcript: {type: string}
+        UID: {type: string}
+      type: object
+    tmp4:
+      properties:
+        Command: {type: string}
+        CommandArgument: {type: string}
+        Failed: {type: string}
+        HasSubscriptions: {type: string}
+        Information: {type: string}
+        IsEndpoint: {type: string}
+        IsTransitioned: {type: string}
+        Passed: {type: string}
+        RelatedIP: {type: string}
+        ReportingNameServer: {type: string}
+        TimeRecorded: {type: string}
+        TimeToComplete: {type: string}
+        Transcript: {type: string}
+        UID: {type: string}
+      type: object
+    tmp5:
+      properties:
+        Command: {type: string}
+        CommandArgument: {type: string}
+        Failed: {type: string}
+        HasSubscriptions: {type: string}
+        Information: {type: string}
+        IsEndpoint: {type: string}
+        IsTransitioned: {type: string}
+        Passed: {type: string}
+        RelatedIP: {type: string}
+        ReportingNameServer: {type: string}
+        TimeRecorded: {type: string}
+        TimeToComplete: {type: string}
+        Transcript: {type: string}
+        UID: {type: string}
+      type: object
+    tmp6:
+      properties:
+        Command: {type: string}
+        CommandArgument: {type: string}
+        Failed: {type: string}
+        HasSubscriptions: {type: string}
+        Information: {type: string}
+        IsEndpoint: {type: string}
+        IsTransitioned: {type: string}
+        Passed: {type: string}
+        RelatedIP: {type: string}
+        ReportingNameServer: {type: string}
+        TimeRecorded: {type: string}
+        TimeToComplete: {type: string}
+        Transcript: {type: string}
+        UID: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of MxToolbox MxToolbox
+  title: MxToolbox MxToolbox
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Lookup A Record
+      parameters:
+      - description: ''
+        example: example.com
+        in: query
+        name: Host
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: MxToolbox Lookup A Record
+  tmp1:
+    post:
+      description: DNS Record Lookup
+      parameters:
+      - description: ''
+        example: example.com
+        in: query
+        name: Host
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: MxToolbox DNS Record Lookup
+  tmp2:
+    post:
+      description: Lookup MX Record
+      parameters:
+      - description: ''
+        example: example.com
+        in: query
+        name: Host
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: MxToolbox Lookup MX
+  tmp3:
+    post:
+      description: Lookup PTR Record
+      parameters:
+      - description: ''
+        example: 1.2.3.4
+        in: query
+        name: IP
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: MxToolbox Lookup PTR Record
+  tmp4:
+    post:
+      description: Lookup SOA Record
+      parameters:
+      - description: ''
+        example: example.com
+        in: query
+        name: Host
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: MxToolbox Lookup SOA Record
+  tmp5:
+    post:
+      description: Lookup SPF Record
+      parameters:
+      - description: ''
+        example: example.com
+        in: query
+        name: Host
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: MxToolbox Lookup SPF Record
+  tmp6:
+    post:
+      description: Lookup TXT Record
+      parameters:
+      - description: ''
+        example: example.com
+        in: query
+        name: Host
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: MxToolbox Lookup TXT Record
+tags:
+- {name: Investigation}

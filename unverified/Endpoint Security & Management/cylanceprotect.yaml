@@ -1,0 +1,958 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp1:
+      properties:
+        date_created: {type: string}
+        date_email_confirmed: {type: string}
+        date_last_login: {type: string}
+        date_modified: {type: string}
+        default_zone_role_name: {type: string}
+        default_zone_role_type: {type: string}
+        email: {type: string}
+        first_name: {type: string}
+        has_logged_in: {type: string}
+        id: {type: string}
+        last_name: {type: string}
+        role_name: {type: string}
+        role_type: {type: string}
+        tenant_id: {type: string}
+        zones_id: {type: string}
+        zones_role_name: {type: string}
+        zones_role_type: {type: string}
+      type: object
+    tmp10:
+      properties:
+        classification: {type: string}
+        cylance_score: {type: string}
+        date_found: {type: string}
+        file_path: {type: string}
+        file_status: {type: string}
+        name: {type: string}
+        sha256: {type: string}
+        sub_classification: {type: string}
+      type: object
+    tmp11:
+      properties:
+        criticality: {type: string}
+        date_created: {type: string}
+        date_modified: {type: string}
+        id: {type: string}
+        name: {type: string}
+        policy_id: {type: string}
+        update_type: {type: string}
+        zone_rule_id: {type: string}
+      type: object
+    tmp12:
+      properties:
+        agent_version: {type: string}
+        date_first_registered: {type: string}
+        id: {type: string}
+        ip_addresses: {type: string}
+        mac_addresses: {type: string}
+        name: {type: string}
+        policy_id: {type: string}
+        policy_name: {type: string}
+        state: {type: string}
+      type: object
+    tmp13:
+      properties:
+        added: {type: string}
+        added_by: {type: string}
+        av_industry: {type: string}
+        category: {type: string}
+        classification: {type: string}
+        cylance_score: {type: string}
+        list_type: {type: string}
+        md5: {type: string}
+        name: {type: string}
+        reason: {type: string}
+        sha256: {type: string}
+        sub_classification: {type: string}
+      type: object
+    tmp14:
+      properties:
+        date_added: {type: string}
+        date_modified: {type: string}
+        device_count: {type: string}
+        id: {type: string}
+        name: {type: string}
+        zone_count: {type: string}
+      type: object
+    tmp15:
+      properties:
+        appcontrol_allowed_folders: {type: string}
+        appcontrol_changewindow_enabled: {type: string}
+        appcontrol_lockdown_action: {type: string}
+        appcontrol_lockdown_lockdown_type: {type: string}
+        checksum: {type: string}
+        file_exclusions_checksum: {type: string}
+        file_exclusions_error_rate: {type: string}
+        file_exclusions_exclusionlisthash: {type: string}
+        file_exclusions_exclusionlisthash_secondary: {type: string}
+        filetype_actions_suspicious_files_actions: {type: string}
+        filetype_actions_suspicious_files_file_type: {type: string}
+        filetype_actions_threat_files_actions: {type: string}
+        filetype_actions_threat_files_file_type: {type: string}
+        logpolicy_log_upload: {type: string}
+        logpolicy_maxlogsize: {type: string}
+        logpolicy_retentiondays: {type: string}
+        memoryviolation_actions_memory_exclusion_list: {type: string}
+        memoryviolation_actions_memory_violations_action: {type: string}
+        memoryviolation_actions_memory_violations_ext_action: {type: string}
+        memoryviolation_actions_memory_violations_ext_violation_type: {type: string}
+        memoryviolation_actions_memory_violations_violation_type: {type: string}
+        policy_id: {type: string}
+        policy_name: {type: string}
+        policy_utctimestamp: {type: string}
+        policy_value: {type: string}
+        real_policy_name: {type: string}
+        script_control_activescript_settings_control_mode: {type: string}
+        script_control_global_settings_allowed_folders: {type: string}
+        script_control_global_settings_control_mode: {type: string}
+        script_control_macro_settings_control_mode: {type: string}
+        script_control_powershell_settings_console_mode: {type: string}
+        script_control_powershell_settings_control_mode: {type: string}
+      type: object
+    tmp16:
+      properties:
+        auto_run: {type: string}
+        av_industry: {type: string}
+        cert_issuer: {type: string}
+        cert_publisher: {type: string}
+        cert_timestamp: {type: string}
+        classification: {type: string}
+        cylance_score: {type: string}
+        detected_by: {type: string}
+        file_size: {type: string}
+        global_quarantined: {type: string}
+        md5: {type: string}
+        name: {type: string}
+        running: {type: string}
+        safelisted: {type: string}
+        sha256: {type: string}
+        signed: {type: string}
+        sub_classification: {type: string}
+        unique_to_cylance: {type: string}
+      type: object
+    tmp17:
+      properties:
+        agent_version: {type: string}
+        date_found: {type: string}
+        file_path: {type: string}
+        file_status: {type: string}
+        id: {type: string}
+        ip_addresses: {type: string}
+        mac_addresses: {type: string}
+        name: {type: string}
+        policy_id: {type: string}
+        state: {type: string}
+      type: object
+    tmp18:
+      properties:
+        url: {type: string}
+      type: object
+    tmp19:
+      properties:
+        av_industry: {type: string}
+        classification: {type: string}
+        cylance_score: {type: string}
+        file_size: {type: string}
+        global_quarantined: {type: string}
+        last_found: {type: string}
+        md5: {type: string}
+        name: {type: string}
+        safelisted: {type: string}
+        sha256: {type: string}
+        sub_classification: {type: string}
+        unique_to_cylance: {type: string}
+      type: object
+    tmp2:
+      properties:
+        criticality: {type: string}
+        date_created: {type: string}
+        id: {type: string}
+        name: {type: string}
+        policy_id: {type: string}
+      type: object
+    tmp20:
+      properties:
+        date_created: {type: string}
+        date_email_confirmed: {type: string}
+        date_last_login: {type: string}
+        date_modified: {type: string}
+        default_zone_role_name: {type: string}
+        default_zone_role_type: {type: string}
+        email: {type: string}
+        first_name: {type: string}
+        has_logged_in: {type: string}
+        id: {type: string}
+        last_name: {type: string}
+        role_name: {type: string}
+        role_type: {type: string}
+        tenant_id: {type: string}
+        zones: {type: string}
+        zones_id: {type: string}
+        zones_role_name: {type: string}
+        zones_role_type: {type: string}
+      type: object
+    tmp21:
+      properties:
+        date_created: {type: string}
+        date_email_confirmed: {type: string}
+        date_last_login: {type: string}
+        date_modified: {type: string}
+        default_zone_role_name: {type: string}
+        default_zone_role_type: {type: string}
+        email: {type: string}
+        first_name: {type: string}
+        has_logged_in: {type: string}
+        id: {type: string}
+        last_name: {type: string}
+        role_name: {type: string}
+        role_type: {type: string}
+        tenant_id: {type: string}
+        zones: {type: string}
+        zones_id: {type: string}
+        zones_role_name: {type: string}
+        zones_role_type: {type: string}
+      type: object
+    tmp22:
+      properties:
+        criticality: {type: string}
+        date_created: {type: string}
+        date_modified: {type: string}
+        id: {type: string}
+        name: {type: string}
+        policy_id: {type: string}
+        update_type: {type: string}
+        zone_rule_id: {type: string}
+      type: object
+    tmp23:
+      properties:
+        id: {type: string}
+        name: {type: string}
+        policy_id: {type: string}
+      type: object
+    tmp24:
+      properties:
+        criticality: {type: string}
+        date_created: {type: string}
+        date_modified: {type: string}
+        id: {type: string}
+        name: {type: string}
+        policy_id: {type: string}
+        update_type: {type: string}
+        zone_rule_id: {type: string}
+      type: object
+    tmp25:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp26:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp27:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp3:
+      properties:
+        request_id: {type: string}
+      type: object
+    tmp4:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp5:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp6:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp7:
+      properties:
+        url: {type: string}
+      type: object
+    tmp8:
+      properties:
+        agent_version: {type: string}
+        background_detection: {type: string}
+        date_first_registered: {type: string}
+        date_last_modified: {type: string}
+        date_offline: {type: string}
+        host_name: {type: string}
+        id: {type: string}
+        ip_addresses: {type: string}
+        is_safe: {type: string}
+        last_logged_in_user: {type: string}
+        mac_addresses: {type: string}
+        name: {type: string}
+        os_version: {type: string}
+        policy_id: {type: string}
+        policy_name: {type: string}
+        state: {type: string}
+        update_available: {type: string}
+        update_type: {type: string}
+      type: object
+    tmp9:
+      properties:
+        agent_version: {type: string}
+        background_detection: {type: string}
+        date_first_registered: {type: string}
+        date_last_modified: {type: string}
+        date_offline: {type: string}
+        host_name: {type: string}
+        id: {type: string}
+        ip_addresses: {type: string}
+        is_safe: {type: string}
+        last_logged_in_user: {type: string}
+        mac_addresses: {type: string}
+        name: {type: string}
+        os_version: {type: string}
+        policy_id: {type: string}
+        policy_name: {type: string}
+        state: {type: string}
+        update_available: {type: string}
+        update_type: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Cylance CylancePROTECT
+  title: Cylance CylancePROTECT
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Allows a caller to add a convicted threat to either the Global
+        Quarantine or Global Safe list for a Tenant.
+      parameters:
+      - description: The SHA256 Hash for the threat.
+        example: ''
+        in: query
+        name: SHA256
+        required: true
+        schema: {type: string}
+      - description: The list type to which the threat belongs.
+        example: GlobalQuarantine or GlobalSafe
+        in: query
+        name: List Type
+        required: true
+        schema: {type: string}
+      - description: The reason the file was added to the list.
+        example: ''
+        in: query
+        name: Reason
+        required: true
+        schema: {type: string}
+      - description: The field is only required for GlobalSafe list types.
+        example: AdminTool, CommercialSoftware, Drivers, InternalApplication, OperatingSystem,
+          SecuritySoftware, or None.
+        in: query
+        name: Category
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Cylance Add to Global List
+  tmp1:
+    post:
+      description: Creates a new User.
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Email
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: First Name
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Name
+        required: true
+        schema: {type: string}
+      - description: Zone ID or a comma separated list of Zone ID's, role type is
+          required if zone ID is given.
+        example: ''
+        in: query
+        name: Zone ID
+        required: true
+        schema: {type: string}
+      - description: Zone Role Type or a comma separated list of Zone Role Type's,
+          must have a role type for every Zone ID given.
+        example: 'Zone Manager: 00000000-0000-0000-0000-000000000001, User: 00000000-0000-0000-0000-000000000002'
+        in: query
+        name: Zone Role Type
+        required: true
+        schema: {type: string}
+      - description: Zone ID or a comma separated list of Zone ID's, role type is
+          required if zone ID is given.
+        example: 'User: 00000000-0000-0000-0000-000000000001, Administrator: 00000000-0000-0000-0000-000000000002,
+          Zone Manager: 00000000-0000-0000-0000-000000000003'
+        in: query
+        name: User Role
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Cylance Create User
+  tmp10:
+    post:
+      description: Retrieves information about the threats discovered on a device.
+        Returns duplicate if a threat has been cleared.
+      parameters:
+      - description: Unique ID of device to be searched for.
+        example: ''
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Cylance Get Device Threats
+  tmp11:
+    post:
+      description: Gets all zones for a given device.
+      parameters:
+      - description: Unique ID of device to be searched for.
+        example: ''
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: Cylance Get Device Zones
+  tmp12:
+    post:
+      description: Gets all devices for a given Tenant
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: Cylance Get Devices
+  tmp13:
+    post:
+      description: Get a list of global list resources for a tenant, sorted by date.
+      parameters:
+      - description: The type of the list to retrieve hashes for.
+        example: 0=GlobalQuarantined, 1=GlobalSafe
+        in: query
+        name: List Type ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: Cylance Get Global List
+  tmp14:
+    post:
+      description: Gets all policies for a given Tenant
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp14'}
+          description: Successful request
+      summary: Cylance Get Policies
+  tmp15:
+    post:
+      description: Retrieves specific information about a policy
+      parameters:
+      - description: Unique ID of the policy to be searched for.
+        example: ''
+        in: query
+        name: Policy ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp15'}
+          description: Successful request
+      summary: Cylance Get Policy
+  tmp16:
+    post:
+      description: Retrieves specific information about a threat, given the SHA256
+        code of the threat.
+      parameters:
+      - description: Unique ID of threat to be searched for, can be found in the threat
+          protection section.
+        example: ''
+        in: query
+        name: SHA256
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp16'}
+          description: Successful request
+      summary: Cylance Get Threat
+  tmp17:
+    post:
+      description: Retrieves which devices contain the specified threat.
+      parameters:
+      - description: Unique ID of threat to be searched for, can be found in the threat
+          protection section.
+        example: ''
+        in: query
+        name: SHA256
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp17'}
+          description: Successful request
+      summary: Cylance Get Threat Devices
+  tmp18:
+    post:
+      description: Retrieves a download link for a given threat.
+      parameters:
+      - description: Unique ID of threat to be searched for, can be found in the threat
+          protection section.
+        example: ''
+        in: query
+        name: SHA256
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp18'}
+          description: Successful request
+      summary: Cylance Get Threat Download URL
+  tmp19:
+    post:
+      description: Retrieves a list of Console threat resources belonging to a Tenant.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp19'}
+          description: Successful request
+      summary: Cylance Get Threats
+  tmp2:
+    post:
+      description: Creates a new Zone based on the name and policy ID specified by
+        the user.
+      parameters:
+      - description: The value of the zone - Low, Normal, or High
+        example: ''
+        in: query
+        name: Criticality
+        required: true
+        schema: {type: string}
+      - description: Name of the Zone
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: The unique ID for the policy assigned to the zone.
+        example: ''
+        in: query
+        name: Policy ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Cylance Create Zone
+  tmp20:
+    post:
+      description: Retrieves information about a user.
+      parameters:
+      - description: The email of the user. Primary method of search.
+        example: ''
+        in: query
+        name: Email
+        required: true
+        schema: {type: string}
+      - description: User ID to be searched for - back up option if user email is
+          not known.
+        example: ''
+        in: query
+        name: User ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp20'}
+          description: Successful request
+      summary: Cylance Get User
+  tmp21:
+    post:
+      description: Retrieves a list of users belonging to a tenant.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp21'}
+          description: Successful request
+      summary: Cylance Get Users
+  tmp22:
+    post:
+      description: Gets Zone information by Zone ID
+      parameters:
+      - description: Unique ID of zone to be searched for.
+        example: ''
+        in: query
+        name: Zone ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp22'}
+          description: Successful request
+      summary: Cylance Get Zone
+  tmp23:
+    post:
+      description: Gets all devices for a given zone.
+      parameters:
+      - description: Unique Zone ID of zone to check. Zone ID is found at the end
+          of the Zone URL.
+        example: ''
+        in: query
+        name: Zone ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp23'}
+          description: Successful request
+      summary: Cylance Get Zone Devices
+  tmp24:
+    post:
+      description: Gets all zones for a given Tenant
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp24'}
+          description: Successful request
+      summary: Cylance Get Zones
+  tmp25:
+    post:
+      description: Updates specified information about a device
+      parameters:
+      - description: Unique ID of device to be searched for.
+        example: ''
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      - description: The name of the device.
+        example: ''
+        in: query
+        name: Device Name
+        required: true
+        schema: {type: string}
+      - description: ID of the Policy assigned to the device.
+        example: ''
+        in: query
+        name: Policy ID
+        required: true
+        schema: {type: string}
+      - description: The comma separated list of zone identifiers which the device
+          is to be assigned. Zone ID's can be retrieved using the API or by looking
+          at the end of a URL for a zone.
+        example: ''
+        in: query
+        name: Add Zone ID
+        required: false
+        schema: {type: string}
+      - description: The comma separated list of zone ID's from which the device is
+          to be removed. Zone ID's can be found on the end of the url for a zone.
+        example: ''
+        in: query
+        name: Remove Zone ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp25'}
+          description: Successful request
+      summary: Cylance Update Device
+  tmp26:
+    post:
+      description: Updates information about device threat.
+      parameters:
+      - description: Unique ID of device to be searched for.
+        example: ''
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      - description: The SHA256 hash of the convicted threat.
+        example: ''
+        in: query
+        name: Threat ID
+        required: true
+        schema: {type: string}
+      - description: The requested status update for the convicted threat.
+        example: 'Options are: Quarantine and Waive.'
+        in: query
+        name: Event
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp26'}
+          description: Successful request
+      summary: Cylance Update Device Threat
+  tmp27:
+    post:
+      description: Updates Zone by Zone ID
+      parameters:
+      - description: Unique ID of zone to be searched for.
+        example: ''
+        in: query
+        name: Zone ID
+        required: true
+        schema: {type: string}
+      - description: Updated Name for the specified zone.
+        example: ''
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: Updated Policy ID for the zone.
+        example: ''
+        in: query
+        name: Policy ID
+        required: false
+        schema: {type: string}
+      - description: "The value of the zone \u2013 Low, Normal, or High."
+        example: ''
+        in: query
+        name: Criticality
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp27'}
+          description: Successful request
+      summary: Cylance Update Zone
+  tmp3:
+    post:
+      description: Delete device(s).
+      parameters:
+      - description: Unique Device ID of device to be deleted. If multiple devices
+          (max of 20) are to be deleted, separate ID's with a comma.
+        example: ''
+        in: query
+        name: Device ID(s)
+        required: true
+        schema: {type: string}
+      - description: The URL of the callback upon completion.
+        example: ''
+        in: query
+        name: Callback URL
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Cylance Delete Device(s)
+  tmp4:
+    post:
+      description: Allows a caller to remove a convicted threat from either the Global
+        Quarantine or Global Safe list for a particular Tenant.
+      parameters:
+      - description: The SHA256 Hash for the threat.
+        example: ''
+        in: query
+        name: SHA256
+        required: true
+        schema: {type: string}
+      - description: The list type to which the threat belongs.
+        example: GlobalQuarantine or GlobalSafe
+        in: query
+        name: List Type
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Cylance Delete From Global List
+  tmp5:
+    post:
+      description: Delete user.
+      parameters:
+      - description: User ID, which can be retrieved via the Get User method.
+        example: ''
+        in: query
+        name: User ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Cylance Delete User
+  tmp6:
+    post:
+      description: Delete zone.
+      parameters:
+      - description: Unique Zone ID of zone to be deleted.
+        example: ''
+        in: query
+        name: Unique Zone ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Cylance Delete Zone
+  tmp7:
+    post:
+      description: Retrieves a secured link to download the Agent Installer
+      parameters:
+      - description: Specify the Cylance product installer to download.
+        example: Protect, Optics
+        in: query
+        name: Product
+        required: true
+        schema: {type: string}
+      - description: Specify the operating system (OS) family.
+        example: CentOS7, Linux, Mac, Ubuntu1404, Ubuntu1604, Windows
+        in: query
+        name: OS
+        required: true
+        schema: {type: string}
+      - description: Specify the target architecture.
+        example: X86, X64, CentOS6, CentOS6UI, CentOS7, CentOS7UI, Ubuntu1404, Ubuntu1404UI,
+          Ubuntu1604, Ubuntu1604UI
+        in: query
+        name: Architecture
+        required: true
+        schema: {type: string}
+      - description: Specify the installer format. Required for Mac and Windows.
+        example: exe (windows), msi (windows), dmg (macOS), pkg (macOS)
+        in: query
+        name: Package
+        required: true
+        schema: {type: string}
+      - description: The Agent Version
+        example: '1480'
+        in: query
+        name: Build
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Cylance Get Agent Installer Link
+  tmp8:
+    post:
+      description: Retrieves specific information about a device
+      parameters:
+      - description: Unique ID of device to be searched for.
+        example: ''
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Cylance Get Device
+  tmp9:
+    post:
+      description: Retrieves specific information about a device given the MAC address
+        of the device.
+      parameters:
+      - description: The MAC address of the device.
+        example: "Acceptable formats are: \u2022 00-00-00-00-00-00 and 00:00:00:00:00:00"
+        in: query
+        name: Device MAC Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Cylance Get Device by MAC Address
+tags:
+- {name: Endpoint Security & Management}

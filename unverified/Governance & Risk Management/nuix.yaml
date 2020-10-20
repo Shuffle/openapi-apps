@@ -1,0 +1,968 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        auth_token: {type: string}
+        functionKey: {type: string}
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        action: {type: string}
+        auth_token: {type: string}
+        cancelled: {type: string}
+        caseId: {type: string}
+        caseLocation: {type: string}
+        caseName: {type: string}
+        done: {type: string}
+        finishTime: {type: string}
+        friendlyName: {type: string}
+        functionKey: {type: string}
+        hasSuccessfullyCompleted: {type: string}
+        participatingInCaseFunctionQueue: {type: string}
+        percentComplete: {type: string}
+        progress: {type: string}
+        requestTime: {type: string}
+        requestor: {type: string}
+        startTime: {type: string}
+        status: {type: string}
+        token: {type: string}
+        total: {type: string}
+        updatedOn: {type: string}
+      type: object
+    tmp10:
+      properties:
+        auth_token: {type: string}
+        functionKey: {type: string}
+        location: {type: string}
+      type: object
+    tmp11:
+      properties:
+        auth_token: {type: string}
+        functionKey: {type: string}
+        location: {type: string}
+      type: object
+    tmp12:
+      properties:
+        auth_token: {type: string}
+        description: {type: string}
+        name: {type: string}
+      type: object
+    tmp13:
+      properties:
+        auth_token: {type: string}
+        functionKey: {type: string}
+        location: {type: string}
+      type: object
+    tmp14:
+      properties:
+        auth_token: {type: string}
+        success: {type: string}
+      type: object
+    tmp15:
+      properties:
+        JSON: {type: string}
+        auth_token: {type: string}
+      type: object
+    tmp2:
+      properties:
+        JSON: {type: string}
+        auth_token: {type: string}
+      type: object
+    tmp3:
+      properties:
+        auth_token: {type: string}
+        success: {type: string}
+      type: object
+    tmp4:
+      properties:
+        auth_token: {type: string}
+        binaryStoreLocation: {type: string}
+        caseCreationDate: {type: string}
+        caseDescription: {type: string}
+        caseId: {type: string}
+        caseInvestigationTimeZone: {type: string}
+        caseInvestigator: {type: string}
+        caseName: {type: string}
+        casePath: {type: string}
+        casePathParent: {type: string}
+        caseSize: {type: string}
+        compound: {type: string}
+        creationDate: {type: string}
+        description: {type: string}
+        elastic: {type: string}
+        hasCalculatedAuditSize: {type: string}
+        hasExclusions: {type: string}
+        hasNuixSystemTags: {type: string}
+        hasProductionSets: {type: string}
+        indexId: {type: string}
+        investigator: {type: string}
+        name: {type: string}
+        path: {type: string}
+      type: object
+    tmp5:
+      properties:
+        auth_token: {type: string}
+        caseId: {type: string}
+        success: {type: string}
+      type: object
+    tmp6:
+      properties:
+        auth_token: {type: string}
+        binaryStoreLocation: {type: string}
+        caseCreationDate: {type: string}
+        caseDescription: {type: string}
+        caseId: {type: string}
+        caseInvestigationTimeZone: {type: string}
+        caseInvestigator: {type: string}
+        caseName: {type: string}
+        casePath: {type: string}
+        casePathParent: {type: string}
+        caseSize: {type: string}
+        compound: {type: string}
+        creationDate: {type: string}
+        description: {type: string}
+        elastic: {type: string}
+        hasCalculatedAuditSize: {type: string}
+        hasExclusions: {type: string}
+        hasNuixSystemTags: {type: string}
+        hasProductionSets: {type: string}
+        indexId: {type: string}
+        investigator: {type: string}
+        name: {type: string}
+        path: {type: string}
+      type: object
+    tmp7:
+      properties:
+        auth_token: {type: string}
+        functions: {type: string}
+      type: object
+    tmp8:
+      properties:
+        auth_token: {type: string}
+        binaryStoreLocation: {type: string}
+        caseId: {type: string}
+        childCases: {type: string}
+        compound: {type: string}
+        creationDate: {type: string}
+        description: {type: string}
+        elastic: {type: string}
+        indexId: {type: string}
+        investigator: {type: string}
+        isOpen: {type: string}
+        name: {type: string}
+        path: {type: string}
+        physicalPath: {type: string}
+        productName: {type: string}
+        serverId: {type: string}
+        url: {type: string}
+        version: {type: string}
+      type: object
+    tmp9:
+      properties:
+        auth_token: {type: string}
+        binaryStoreLocation: {type: string}
+        caseCreationDate: {type: string}
+        caseDescription: {type: string}
+        caseId: {type: string}
+        caseInvestigationTimeZone: {type: string}
+        caseInvestigator: {type: string}
+        caseName: {type: string}
+        casePath: {type: string}
+        casePathParent: {type: string}
+        caseSize: {type: string}
+        compound: {type: string}
+        creationDate: {type: string}
+        description: {type: string}
+        elastic: {type: string}
+        hasCalculatedAuditSize: {type: string}
+        hasExclusions: {type: string}
+        hasNuixSystemTags: {type: string}
+        hasProductionSets: {type: string}
+        indexId: {type: string}
+        investigator: {type: string}
+        name: {type: string}
+        path: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Nuix Nuix
+  title: Nuix Nuix
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Nuix Advanced Process Case Evidence
+      parameters:
+      - description: Case Evidence JSON Parameter. See example at http://<YOUR_NUIX_INSTANCE>:8080/nuix-restful-service/svc/swagger-ui.html#!/Processing/bulkIngestionIntoSimpleCaseUsingPOST
+        example: ''
+        in: query
+        name: Process Case Evidence JSON
+        required: true
+        schema: {type: string}
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True. If Logout is false, the Authorization Token
+          will be returned
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Nuix Advanced Process Case Evidence
+  tmp1:
+    post:
+      description: Nuix Cancel Asynchronous Job
+      parameters:
+      - description: Job Key
+        example: ''
+        in: query
+        name: Job Key
+        required: true
+        schema: {type: string}
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True. If Logout is false, the Authorization Token
+          will be returned
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Nuix Cancel Asynchronous Job
+  tmp10:
+    post:
+      description: Nuix Add Metadata to Item
+      parameters:
+      - description: Case ID containing Items
+        example: ''
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Item ID to add metadata to.
+        example: ''
+        in: query
+        name: Item ID
+        required: true
+        schema: {type: string}
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: Apply metadata to family items
+        example: ''
+        in: query
+        name: Apply To Family
+        required: false
+        schema: {type: boolean}
+      - description: Apply metadata to duplicate items
+        example: ''
+        in: query
+        name: Apply To Duplicates
+        required: false
+        schema: {type: boolean}
+      - description: JSON Object of Custom Metadata. Example can be found in README
+          or at this URL http://<NUIX_HOST>:8080/nuix-restful-service/svc/swagger-ui.html#!/Culling/addCustomMetadataUsingPUT
+        example: ''
+        in: query
+        name: Custom Metadata
+        required: true
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True. If Logout is false, the Authorization Token
+          will be returned.
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Nuix Add Metadata to Item
+  tmp11:
+    post:
+      description: Nuix Create Item Set
+      parameters:
+      - description: Case ID to add item set to.
+        example: ''
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: Query items that should be included. If a query is not supplied
+          it defaults to an empty string, which returns all items.
+        example: ''
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: Defaults to date in format yy/MM/dd kk:mm:ss z
+        example: ''
+        in: query
+        name: Batch Name
+        required: false
+        schema: {type: string}
+      - description: How the deduplication is applied. None returns all items matching
+          the query including duplicates. Other options return deduplicated items
+          based on the deduplication methods used. Defaults to None = ['MD5', 'Per
+          Custodian', 'MD5 Ranked Custodian', 'Scripted', 'None']
+        example: ''
+        in: query
+        name: Deduplication
+        required: false
+        schema: {type: string}
+      - description: Comma Separated list of custodian names ordered from highest
+          ranked to lowest ranked. If this parameter is present and the deduplication
+          parameter has not been specified, MD5 Randed Custodian is assumed. If deduplication
+          is any value other than MD5 Randed Custodian this list is ignored.
+        example: ''
+        in: query
+        name: Custodian Ranking
+        required: false
+        schema: {type: string}
+      - description: Deduplicate by value. Defaults to INDIVIDUAL = ['INDIVIDUAL',
+          'FAMILY']
+        example: ''
+        in: query
+        name: Deduplicate By
+        required: false
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True. If Logout is false, the Authorization Token
+          will be returned.
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: Nuix Create Item Set
+  tmp12:
+    post:
+      description: Nuix Get Item Set
+      parameters:
+      - description: Case ID to get Item Sets from.
+        example: ''
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True. If Logout is false, the Authorization Token
+          will be returned.
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: Nuix Get Item Set
+  tmp13:
+    post:
+      description: Nuix Run Case Functions
+      parameters:
+      - description: Case ID to run available functions.
+        example: ''
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Function to run
+        example: MIGRATE
+        in: query
+        name: Function
+        required: true
+        schema: {type: string}
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True. If Logout is false, the Authorization Token
+          will be returned.
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: Nuix Run Case Functions
+  tmp14:
+    post:
+      description: Nuix Add Child Cases
+      parameters:
+      - description: Case ID to retrieve available functions.
+        example: ''
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Comma separated IDs of Child Cases
+        example: 16a2315c685c456d9463031f0bdf9b8e,42e7c0410ffd4c019887f4abdae7c806
+        in: query
+        name: Child IDs
+        required: true
+        schema: {type: string}
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True. If Logout is false, the Authorization Token
+          will be returned.
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp14'}
+          description: Successful request
+      summary: Nuix Add Child Cases
+  tmp15:
+    post:
+      description: Nuix Search In Case
+      parameters:
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True. If Logout is false, the Authorization Token
+          will be returned.
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      - description: Case ID to retrieve available functions.
+        example: ''
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Deduplicate content based on the Value field selection. Defaults
+          to no deduplication. = ['MD5', 'Per Custodian']
+        example: ''
+        in: query
+        name: Duplicate
+        required: false
+        schema: {type: string}
+      - description: 'Comma Separated List of entity names to include in response
+          (e.g. company,email) '
+        example: ''
+        in: query
+        name: Entities
+        required: false
+        schema: {type: string}
+      - description: List of fields to be returned for each item in the results.
+        example: ''
+        in: query
+        name: Field List
+        required: false
+        schema: {type: string}
+      - description: Specifies whether the cached results should be deleted before
+          performing the search. Defaults to false.
+        example: ''
+        in: query
+        name: Force Cache Delete
+        required: false
+        schema: {type: boolean}
+      - description: Defines the metadata profile to be applied to the results. Needed
+          to get custom metadata. Defaults to no metadata profile.
+        example: ''
+        in: query
+        name: Metadata Profile
+        required: false
+        schema: {type: string}
+      - description: The number of records that should be returned. Defaults to all
+          records.
+        example: ''
+        in: body
+        name: Number Of Records Requested
+        required: false
+        schema: {type: string}
+      - description: Comma Separated List of properties to be returned for each item
+          in the results.
+        example: ''
+        in: query
+        name: Property List
+        required: false
+        schema: {type: string}
+      - description: Identifies what items should be returned. If a query is not supplied
+          it defaults to an empty string, which returns all items.
+        example: ''
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: The relation to apply to the found items. For performance reaons,
+          the family option is run against the top-level items. = ['family', 'topTypes',
+          'descendants']
+        example: ''
+        in: query
+        name: Relation Type
+        required: false
+        schema: {type: string}
+      - description: Any field in the metadata profile which you want to sort by.
+        example: ''
+        in: query
+        name: Sort Field
+        required: false
+        schema: {type: string}
+      - description: Sets the sort order for the results. Defaults to 'ASC'. = ['ASC',
+          'DESC']
+        example: ''
+        in: query
+        name: Sort Order
+        required: false
+        schema: {type: string}
+      - description: The index of the first record that should be returned. Defaults
+          to 0.
+        example: ''
+        in: body
+        name: Start Index
+        required: false
+        schema: {type: string}
+      - description: Specifies whether the results should be loaded from and stored
+          in cache. Defaults to false.
+        example: ''
+        in: query
+        name: Use Cache
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp15'}
+          description: Successful request
+      summary: Nuix Search In Case
+  tmp2:
+    post:
+      description: Nuix Get Asynchronous Job Statuses
+      parameters:
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True. If Logout is false, the Authorization Token
+          will be returned
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Nuix Get Asynchronous Job Statuses
+  tmp3:
+    post:
+      description: Nuix Close Case
+      parameters:
+      - description: Case ID to close
+        example: ''
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True. If Logout is false, the Authorization Token
+          will be returned
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Nuix Close Case
+  tmp4:
+    post:
+      description: Nuix Create Case
+      parameters:
+      - description: JSON Object of case data, examples found in http://<YOUR_NUIX_HOST_HERE>:8080/nuix-restful-service/svc/swagger-ui.html#!/Inventory/createCaseUsingPOST
+        example: ''
+        in: query
+        name: Case Data
+        required: true
+        schema: {type: string}
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True. If Logout is false, the Authorization Token
+          will be returned
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Nuix Create Case
+  tmp5:
+    post:
+      description: Nuix Delete Case
+      parameters:
+      - description: Case ID to Delete
+        example: ''
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True. If Logout is false, the Authorization Token
+          will be returned
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Nuix Delete Case
+  tmp6:
+    post:
+      description: Nuix Get Case
+      parameters:
+      - description: Case ID to get
+        example: ''
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True, if Logout is false, the Authorization Token
+          will be returned
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Nuix Get Case
+  tmp7:
+    post:
+      description: Nuix Get Case Functions
+      parameters:
+      - description: Case ID to retrieve available functions.
+        example: ''
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True. If Logout is false, the Authorization Token
+          will be returned
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Nuix Get Case Functions
+  tmp8:
+    post:
+      description: Nuix Get Case Inventory
+      parameters:
+      - description: Case ID to retrieve available functions.
+        example: ''
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True. If Logout is false, the Authorization Token
+          will be returned
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Nuix Get Case Inventory
+  tmp9:
+    post:
+      description: Nuix Get Child Cases
+      parameters:
+      - description: Case ID to retrieve available functions.
+        example: ''
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Returns more information about the case including hasExclusions,
+          hasProductionSets, hasCalculatedAuditSize, and hasSystemTags
+        example: ''
+        in: query
+        name: Determine Additional Attributes
+        required: false
+        schema: {type: boolean}
+      - description: Nuix License Shortname, this will override the licence set in
+          the asset.
+        example: ''
+        in: query
+        name: Licence Shortname
+        required: false
+        schema: {type: string}
+      - description: Provide an authorization token to be used with this integration.
+        example: ''
+        in: query
+        name: Optional Authorization Token
+        required: false
+        schema: {type: string}
+      - description: Defaults to True. If Logout is false, the Authorization Token
+          will be returned
+        example: ''
+        in: query
+        name: Logout
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Nuix Get Child Cases
+tags:
+- {name: Governance & Risk Management}

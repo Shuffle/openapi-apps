@@ -1,0 +1,97 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        extra: {type: string}
+        id: {type: string}
+        image: {type: string}
+        name: {type: string}
+        private_ips: {type: string}
+        public_ips: {type: string}
+        size: {type: string}
+        state: {type: string}
+      type: object
+    tmp1:
+      properties:
+        previous_state: {type: string}
+      type: object
+    tmp2:
+      properties:
+        previous_state: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Microsoft Azure Virtual Machines
+  title: Microsoft Azure Virtual Machines
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: List all Microsoft Azure Virtual Machines instances
+      parameters:
+      - description: Azure Resource Group
+        example: ''
+        in: query
+        name: Resource Group
+        required: false
+        schema: {type: string}
+      - description: Fetch NIC resources in order to get IP address information for
+          nodes.
+        example: ''
+        in: query
+        name: Fetch NIC
+        required: false
+        schema: {type: boolean}
+      - description: Fetch node power state (if false, node state will be returned
+          based on provisioning state only).
+        example: ''
+        in: query
+        name: Fetch Power States
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Microsoft Azure Virtual Machines List Instances
+  tmp1:
+    post:
+      description: Start Microsoft Azure Virtual Machines instance
+      parameters:
+      - description: Azure Virtual Machines Instance ID
+        example: ''
+        in: query
+        name: Instance ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Microsoft Azure Virtual Machines Start Instance
+  tmp2:
+    post:
+      description: Stop Microsoft Azure Virtual Machines instance
+      parameters:
+      - description: Azure Virtual Machines Instance ID
+        example: ''
+        in: query
+        name: Instance ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Microsoft Azure Virtual Machines Stop Instance
+tags:
+- {name: Infrastructure}

@@ -1,0 +1,896 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        alertId: {type: string}
+        createTime: {type: string}
+        customerId: {type: string}
+        data_domainId_customerPrimaryDomain: {type: string}
+        data_maliciousEntity_fromHeader: {type: string}
+        data_messages_attachmentsSha256Hash: {type: string}
+        data_messages_date: {type: string}
+        data_messages_md5HashSubject: {type: string}
+        data_messages_messageBodySnippet: {type: string}
+        data_messages_messageId: {type: string}
+        data_messages_recipient: {type: string}
+        data_messages_subjectText: {type: string}
+        data_type: {type: string}
+        endTime: {type: string}
+        raw_json: {type: string}
+        source: {type: string}
+        startTime: {type: string}
+        type: {type: string}
+        updateTime: {type: string}
+      type: object
+    tmp1:
+      properties:
+        success: {type: string}
+      type: object
+    tmp10:
+      properties:
+        createTime: {type: string}
+        id: {type: string}
+        matterId: {type: string}
+        name: {type: string}
+        status: {type: string}
+      type: object
+    tmp11:
+      properties:
+        corpus: {type: string}
+        holdId: {type: string}
+        name: {type: string}
+        updateTime: {type: string}
+      type: object
+    tmp12:
+      properties:
+        matterId: {type: string}
+        state: {type: string}
+      type: object
+    tmp13:
+      properties:
+        createTime: {type: string}
+        id: {type: string}
+        matterId: {type: string}
+        name: {type: string}
+        status: {type: string}
+      type: object
+    tmp14:
+      properties:
+        description: {type: string}
+        matterId: {type: string}
+        name: {type: string}
+        state: {type: string}
+      type: object
+    tmp15:
+      properties:
+        createTime: {type: string}
+        id: {type: string}
+        matterId: {type: string}
+        name: {type: string}
+        status: {type: string}
+      type: object
+    tmp16:
+      properties:
+        description: {type: string}
+        matterId: {type: string}
+        name: {type: string}
+        state: {type: string}
+      type: object
+    tmp2:
+      properties:
+        alternateLink: {type: string}
+        appDataContents: {type: string}
+        attachments: {type: string}
+        capabilities_canCopy: {type: string}
+        capabilities_canEdit: {type: string}
+        copyRequiresWriterPermission: {type: string}
+        copyable: {type: string}
+        createdDate: {type: string}
+        downloadUrl: {type: string}
+        editable: {type: string}
+        embedLink: {type: string}
+        etag: {type: string}
+        explicitlyTrashed: {type: string}
+        fileExtension: {type: string}
+        fileSize: {type: string}
+        headRevisionId: {type: string}
+        iconLink: {type: string}
+        id: {type: string}
+        kind: {type: string}
+        labels_hidden: {type: string}
+        labels_restricted: {type: string}
+        labels_starred: {type: string}
+        labels_trashed: {type: string}
+        labels_viewed: {type: string}
+        lastModifyingUserName: {type: string}
+        lastModifyingUser_displayName: {type: string}
+        lastModifyingUser_emailAddress: {type: string}
+        lastModifyingUser_isAuthenticatedUser: {type: string}
+        lastModifyingUser_kind: {type: string}
+        lastModifyingUser_permissionId: {type: string}
+        lastViewedByMeDate: {type: string}
+        markedViewedByMeDate: {type: string}
+        md5Checksum: {type: string}
+        mimeType: {type: string}
+        modifiedByMeDate: {type: string}
+        modifiedDate: {type: string}
+        originalFilename: {type: string}
+        ownerNames: {type: string}
+        owners_displayName: {type: string}
+        owners_emailAddress: {type: string}
+        owners_isAuthenticatedUser: {type: string}
+        owners_kind: {type: string}
+        owners_permissionId: {type: string}
+        parents_id: {type: string}
+        parents_isRoot: {type: string}
+        parents_kind: {type: string}
+        parents_parentLink: {type: string}
+        parents_selfLink: {type: string}
+        quotaBytesUsed: {type: string}
+        selfLink: {type: string}
+        shared: {type: string}
+        spaces: {type: string}
+        thumbnailLink: {type: string}
+        title: {type: string}
+        userPermission_etag: {type: string}
+        userPermission_id: {type: string}
+        userPermission_kind: {type: string}
+        userPermission_role: {type: string}
+        userPermission_selfLink: {type: string}
+        userPermission_type: {type: string}
+        version: {type: string}
+        webContentLink: {type: string}
+        writersCanShare: {type: string}
+      type: object
+    tmp3:
+      properties:
+        status: {type: string}
+      type: object
+    tmp4:
+      properties:
+        attach_info: {type: string}
+        attachments: {type: string}
+        attachments_md5: {type: string}
+        attachments_sha1: {type: string}
+        attachments_sha256: {type: string}
+        cc: {type: string}
+        date: {type: string}
+        error: {type: string}
+        headers: {type: string}
+        html_body: {type: string}
+        id: {type: string}
+        raw_content: {type: string}
+        raw_headers: {type: string}
+        recipients: {type: string}
+        reply_to: {type: string}
+        result: {type: string}
+        rtf_body: {type: string}
+        sender: {type: string}
+        subject: {type: string}
+        text_body: {type: string}
+        type: {type: string}
+        valid_recipients_email: {type: string}
+        valid_reply_to_email: {type: string}
+        valid_sender_email: {type: string}
+      type: object
+    tmp5:
+      properties:
+        attach_info: {type: string}
+        attachments: {type: string}
+        attachments_md5: {type: string}
+        attachments_sha1: {type: string}
+        attachments_sha256: {type: string}
+        cc: {type: string}
+        date: {type: string}
+        error: {type: string}
+        headers: {type: string}
+        html_body: {type: string}
+        id: {type: string}
+        raw_content: {type: string}
+        raw_headers: {type: string}
+        recipients: {type: string}
+        reply_to: {type: string}
+        result: {type: string}
+        rtf_body: {type: string}
+        sender: {type: string}
+        subject: {type: string}
+        text_body: {type: string}
+        type: {type: string}
+        valid_recipients_email: {type: string}
+        valid_reply_to_email: {type: string}
+        valid_sender_email: {type: string}
+      type: object
+    tmp6:
+      properties:
+        id: {type: string}
+        threadId: {type: string}
+      type: object
+    tmp7:
+      properties:
+        id: {type: string}
+        labelListVisibility: {type: string}
+        messageListVisibility: {type: string}
+        name: {type: string}
+        type: {type: string}
+      type: object
+    tmp8:
+      properties:
+        labels_updated: {type: string}
+      type: object
+    tmp9:
+      properties:
+        description: {type: string}
+        matterId: {type: string}
+        name: {type: string}
+        state: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Google GSuite
+  title: Google GSuite
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get AlertCenter alerts from GSuite
+      parameters:
+      - description: Filter string to filter alert results
+        example: createTime >= "2017-01-01T00:00:00Z" AND createTime < "2018-01-01T00:00:00Z"
+        in: query
+        name: Filter String
+        required: false
+        schema: {type: string}
+      - description: Filter string to use when state tracking is enabled
+        example: createTime >= "{last_run}"
+        in: query
+        name: State Filter String
+        required: false
+        schema: {type: string}
+      - description: Field to use for state tracking
+        example: createTime
+        in: query
+        name: State Field
+        required: false
+        schema: {type: string}
+      - description: Clear the state attached to this task
+        example: 'True'
+        in: query
+        name: Clear State
+        required: true
+        schema: {type: boolean}
+      - description: Track the state of this query using the State Field
+        example: 'True'
+        in: query
+        name: Track State
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: GSuite AlertCenter Get Alerts
+  tmp1:
+    post:
+      description: Drive Delete File from GSuite
+      parameters:
+      - description: File ID of file to delete
+        example: ''
+        in: query
+        name: ID
+        required: false
+        schema: {type: string}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Drive Delete File
+  tmp10:
+    post:
+      description: Create new Mail export
+      parameters:
+      - description: Matter to create new export under
+        example: 833e043b-c9cf-4ed6-9cb0-162735a9373a
+        in: query
+        name: Matter ID
+        required: true
+        schema: {type: string}
+      - description: New Unique Export Name
+        example: ''
+        in: query
+        name: Export Name
+        required: true
+        schema: {type: string}
+      - description: Scope of data to export. Must be one of ALL_DATA, HELD_DATA,
+          UNPROCESSED_DATA
+        example: ''
+        in: query
+        name: Data Scope
+        required: true
+        schema: {type: string}
+      - description: Mailbox export format. Must be one of MBOX, PST. Defaults to
+          MBOX
+        example: ''
+        in: query
+        name: Export Format
+        required: false
+        schema: {type: string}
+      - description: Export filter terms
+        example: has:attachment is:sent -label:drafts
+        in: query
+        name: Query Terms
+        required: false
+        schema: {type: string}
+      - description: Enable to exclude drafts from export. Defaults to true
+        example: ''
+        in: query
+        name: Exclude Drafts
+        required: false
+        schema: {type: boolean}
+      - description: CSV list of email addresses to target. Must provide this or Organization
+          Unit Path
+        example: user1@example.org,user2@example.org
+        in: query
+        name: Email Addresses
+        required: false
+        schema: {type: string}
+      - description: Full path to OU or OU id (root OU must use id, see README for
+          more info). Must provide this or Email Addresses
+        example: /full/path/to/ou OR id:asdf71fh140hg
+        in: query
+        name: Organization Unit Path
+        required: false
+        schema: {type: string}
+      - description: Filter to messages sent after this time (ISO-8601 format)
+        example: '2017-04-02T00:00:00Z'
+        in: query
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: Filter to messages sent before this time (ISO-8601 format)
+        example: '2017-04-02T00:00:00Z'
+        in: query
+        name: End Time
+        required: false
+        schema: {type: string}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: GSuite Vault Create Mail Export
+  tmp11:
+    post:
+      description: Create new Mail hold
+      parameters:
+      - description: Matter to create new export under
+        example: 833e043b-c9cf-4ed6-9cb0-162735a9373a
+        in: query
+        name: Matter ID
+        required: true
+        schema: {type: string}
+      - description: New Unique Hold Name
+        example: ''
+        in: query
+        name: Hold Name
+        required: true
+        schema: {type: string}
+      - description: Export filter terms
+        example: has:attachment is:sent -label:drafts
+        in: query
+        name: Query Terms
+        required: false
+        schema: {type: string}
+      - description: CSV list of email addresses to target. Must provide this or Organization
+          Unit Path
+        example: user1@example.org,user2@example.org
+        in: query
+        name: Email Addresses
+        required: false
+        schema: {type: string}
+      - description: Full path to OU or OU id (root OU must use id, see README for
+          more info). Must provide this or Email Addresses
+        example: /full/path/to/ou OR id:asdf71fh140hg
+        in: query
+        name: Organization Unit Path
+        required: false
+        schema: {type: string}
+      - description: Filter to messages sent after this time (ISO-8601 format)
+        example: '2017-04-02T00:00:00Z'
+        in: query
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: Filter to messages sent before this time (ISO-8601 format)
+        example: '2017-04-02T00:00:00Z'
+        in: query
+        name: End Time
+        required: false
+        schema: {type: string}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: GSuite Vault Create Mail Hold
+  tmp12:
+    post:
+      description: Create new matter in Vault
+      parameters:
+      - description: New Matter name
+        example: ''
+        in: query
+        name: Matter Name
+        required: true
+        schema: {type: string}
+      - description: New Matter description
+        example: ''
+        in: query
+        name: Matter Description
+        required: false
+        schema: {type: string}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: GSuite Vault Create Matter
+  tmp13:
+    post:
+      description: Retrieve export metadata
+      parameters:
+      - description: Export Parent Matter
+        example: 833e043b-c9cf-4ed6-9cb0-162735a9373a
+        in: query
+        name: Matter ID
+        required: true
+        schema: {type: string}
+      - description: Export ID
+        example: ''
+        in: query
+        name: Export ID
+        required: true
+        schema: {type: string}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: GSuite Vault Get Export Details
+  tmp14:
+    post:
+      description: Get Vault Matter by ID
+      parameters:
+      - description: Matter Unique ID
+        example: 833e043b-c9cf-4ed6-9cb0-162735a9373a
+        in: query
+        name: Matter ID
+        required: true
+        schema: {type: string}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp14'}
+          description: Successful request
+      summary: GSuite Vault Get Matter
+  tmp15:
+    post:
+      description: List all exports for a Matter
+      parameters:
+      - description: Export Parent Matter
+        example: 833e043b-c9cf-4ed6-9cb0-162735a9373a
+        in: query
+        name: Matter ID
+        required: true
+        schema: {type: string}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp15'}
+          description: Successful request
+      summary: GSuite Vault List Exports
+  tmp16:
+    post:
+      description: Retrieve all Matters, optionally filtered by state
+      parameters:
+      - description: Optional filter to retrieve only Matters of provided state. Must
+          be one of OPEN, CLOSED, DELETED
+        example: OPEN
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      - description: Optional max number of Matters to retrieve. Defaults to all Matters
+        example: ''
+        in: body
+        name: Max Items
+        required: false
+        schema: {type: string}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp16'}
+          description: Successful request
+      summary: GSuite Vault List Matters
+  tmp2:
+    post:
+      description: Drive Retrieve Files from GSuite
+      parameters:
+      - description: File ID of file to retrieve
+        example: ''
+        in: query
+        name: ID
+        required: false
+        schema: {type: string}
+      - description: Query for Drive, accepts same query parameters as Google Drive's
+          Search Bar
+        example: title = 'MyFile.txt'
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: If True, this will retrieve the file which can be attached to
+          a record.
+        example: ''
+        in: query
+        name: Get Content
+        required: false
+        schema: {type: boolean}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Drive Retrieve Files
+  tmp3:
+    post:
+      description: Delete an email from Gmail by ID
+      parameters:
+      - description: Gmail User ID defaults to logged in user 'me'
+        example: user@domain.com or me
+        in: query
+        name: Gmail User ID
+        required: false
+        schema: {type: string}
+      - description: Gmail Message ID
+        example: 162d95c451686a7b
+        in: query
+        name: Message ID
+        required: true
+        schema: {type: string}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: GSuite Delete Email
+  tmp4:
+    post:
+      description: Get emails from Gmail
+      parameters:
+      - description: Gmail User ID defaults to logged in user 'me'
+        example: user@domain.com or me
+        in: query
+        name: Gmail User ID
+        required: false
+        schema: {type: string}
+      - description: Will mark email as read if true
+        example: ''
+        in: query
+        name: Mark As Read
+        required: false
+        schema: {type: boolean}
+      - description: Will only retrieve unread emails
+        example: ''
+        in: query
+        name: Only Unread
+        required: true
+        schema: {type: boolean}
+      - description: Unzip email attachments. Used when parsing attached EML files,
+          which should be zipped first. See README for more details.
+        example: ''
+        in: query
+        name: Unzip Attachments
+        required: false
+        schema: {type: boolean}
+      - description: Maximum emails to return, defaults to 10
+        example: ''
+        in: body
+        name: Max Results
+        required: false
+        schema: {type: string}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      - description: A csv of extensions you would like to ignore. Useful if image
+          files are being parsed out of email footer as attachments. Default is .jp(e)g,
+          .png, .gif. Filling this value will OVERWRITE existing default
+        example: .jpeg,.png,.exe,.gif
+        in: query
+        name: exclude extensions
+        required: false
+        schema: {type: string}
+      - description: Ignore errors parsing an email. Defaults to False
+        example: ''
+        in: query
+        name: Ignore Errors
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: GSuite Get Emails
+  tmp5:
+    post:
+      description: Get an email from Gmail by ID
+      parameters:
+      - description: Gmail User ID defaults to logged in user 'me'
+        example: user@domain.com or me
+        in: query
+        name: Gmail User ID
+        required: false
+        schema: {type: string}
+      - description: Gmail Message ID
+        example: 162d95c451686a7b
+        in: query
+        name: Message ID
+        required: true
+        schema: {type: string}
+      - description: Format for returned message, choose from 'full', 'metadata',
+          'minimal', 'raw'. Defaults to 'full'
+        example: full
+        in: query
+        name: Format
+        required: false
+        schema: {type: string}
+      - description: Will mark email as read if true
+        example: ''
+        in: query
+        name: Mark As Read
+        required: false
+        schema: {type: boolean}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      - description: A csv of extensions you would like to ignore. Useful if image
+          files are being parsed out of email footer as attachments. Default is .jp(e)g,
+          .png, .gif. Filling this value will OVERWRITE existing default
+        example: .jpeg,.png,.exe,.gif
+        in: query
+        name: Exclude Extensions
+        required: false
+        schema: {type: string}
+      - description: Ignore errors parsing an email. Defaults to False
+        example: ''
+        in: query
+        name: Ignore Errors
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: GSuite Get Email By ID
+  tmp6:
+    post:
+      description: List emails from Gmail
+      parameters:
+      - description: Gmail User ID defaults to logged in user 'me'
+        example: user@domain.com or me
+        in: query
+        name: Gmail User ID
+        required: false
+        schema: {type: string}
+      - description: Filter for retrieving messages, supports same format as Gmail
+          Search Box
+        example: from:someuser@example.com rfc822msgid:<somemsgid@example.com> is:unread
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: Maximum number of results returned
+        example: ''
+        in: body
+        name: Maximum Results
+        required: false
+        schema: {type: string}
+      - description: Will mark email as read if true
+        example: ''
+        in: query
+        name: Mark As Read
+        required: false
+        schema: {type: boolean}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: GSuite List Emails
+  tmp7:
+    post:
+      description: List Labels in Gmail
+      parameters:
+      - description: Gmail User ID defaults to logged in user 'me'
+        example: user@domain.com or me
+        in: query
+        name: Gmail User ID
+        required: false
+        schema: {type: string}
+      - description: Maximum number of results returned
+        example: ''
+        in: body
+        name: Maximum Results
+        required: false
+        schema: {type: string}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: GSuite List Gmail Labels
+  tmp8:
+    post:
+      description: Update Email Labels
+      parameters:
+      - description: Gmail User ID defaults to logged in user 'me'
+        example: user@domain.com or me
+        in: query
+        name: Gmail User ID
+        required: false
+        schema: {type: string}
+      - description: Gmail Message ID
+        example: 162d95c451686a7b
+        in: query
+        name: Message ID
+        required: true
+        schema: {type: string}
+      - description: Comma Separated Labels to add to Email
+        example: MY_CUSTOM_LABEL
+        in: query
+        name: Add Labels
+        required: false
+        schema: {type: string}
+      - description: Comma Separated Labels to remove from Email
+        example: MY_CUSTOM_LABEL
+        in: query
+        name: Remove Labels
+        required: false
+        schema: {type: string}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: GSuite Update Email Labels
+  tmp9:
+    post:
+      description: Close Vault Matter by ID
+      parameters:
+      - description: Matter Unique ID
+        example: 833e043b-c9cf-4ed6-9cb0-162735a9373a
+        in: query
+        name: Matter ID
+        required: true
+        schema: {type: string}
+      - description: Optionally override delegate account from GSuite asset
+        example: user@example.org
+        in: query
+        name: Delegate Account
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: GSuite Vault Close Matter
+tags:
+- {name: Governance & Risk Management}

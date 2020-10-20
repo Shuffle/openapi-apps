@@ -1,0 +1,40 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        event_time: {type: string}
+        event_type: {type: string}
+        message: {type: string}
+        severity: {type: string}
+        subsystem: {type: string}
+        user: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Imperva Securesphere
+  title: Imperva Securesphere
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get System Events from Imperva SecureSphere
+      parameters:
+      - description: Limit of entries to return. Cannot be zero
+        example: '10'
+        in: body
+        name: Entry Limit
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Imperva SecureSphere Get System Events
+tags:
+- {name: Network Security & Management}

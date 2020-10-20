@@ -1,0 +1,688 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        errorMessage: {type: string}
+        id: {type: string}
+      type: object
+    tmp1:
+      properties:
+        errorMessage: {type: string}
+        id: {type: string}
+      type: object
+    tmp2:
+      properties:
+        errorMessage: {type: string}
+        id: {type: string}
+      type: object
+    tmp3:
+      properties:
+        errorMessage: {type: string}
+        id: {type: string}
+      type: object
+    tmp4:
+      properties:
+        certificates: {type: string}
+        configuration_profiles: {type: string}
+        errorMessage: {type: string}
+        extension_attributes: {type: string}
+        general_alt_mac_address: {type: string}
+        general_asset_tag: {type: string}
+        general_barcode_1: {type: string}
+        general_barcode_2: {type: string}
+        general_distribution_point: {type: string}
+        general_id: {type: string}
+        general_initial_entry_date: {type: string}
+        general_initial_entry_date_epoch: {type: string}
+        general_initial_entry_date_utc: {type: string}
+        general_ip_address: {type: string}
+        general_itunes_store_account_is_active: {type: string}
+        general_jamf_version: {type: string}
+        general_last_cloud_backup_date_epoch: {type: string}
+        general_last_cloud_backup_date_utc: {type: string}
+        general_last_contact_time: {type: string}
+        general_last_contact_time_epoch: {type: string}
+        general_last_contact_time_utc: {type: string}
+        general_last_enrolled_date_epoch: {type: string}
+        general_last_enrolled_date_utc: {type: string}
+        general_last_reported_ip: {type: string}
+        general_mac_address: {type: string}
+        general_management_status_enrolled_via_dep: {type: string}
+        general_management_status_user_approved_enrollment: {type: string}
+        general_management_status_user_approved_mdm: {type: string}
+        general_mdm_capable: {type: string}
+        general_name: {type: string}
+        general_netboot_server: {type: string}
+        general_platform: {type: string}
+        general_remote_management_managed: {type: string}
+        general_remote_management_management_password_sha256: {type: string}
+        general_remote_management_management_username: {type: string}
+        general_report_date: {type: string}
+        general_report_date_epoch: {type: string}
+        general_report_date_utc: {type: string}
+        general_serial_number: {type: string}
+        general_site_id: {type: string}
+        general_site_name: {type: string}
+        general_sus: {type: string}
+        general_udid: {type: string}
+        groups_accounts_computer_group_memberships: {type: string}
+        groups_accounts_local_accounts_administrator: {type: string}
+        groups_accounts_local_accounts_filevault_enabled: {type: string}
+        groups_accounts_local_accounts_home: {type: string}
+        groups_accounts_local_accounts_home_size: {type: string}
+        groups_accounts_local_accounts_home_size_mb: {type: string}
+        groups_accounts_local_accounts_name: {type: string}
+        groups_accounts_local_accounts_realname: {type: string}
+        groups_accounts_local_accounts_uid: {type: string}
+        groups_accounts_user_inventories_disable_automatic_login: {type: string}
+        groups_accounts_user_inventories_user_password_history_depth: {type: string}
+        groups_accounts_user_inventories_user_password_max_age: {type: string}
+        groups_accounts_user_inventories_user_password_min_complex_characters: {type: string}
+        groups_accounts_user_inventories_user_password_min_length: {type: string}
+        groups_accounts_user_inventories_user_password_require_alphanumeric: {type: string}
+        groups_accounts_user_inventories_user_username: {type: string}
+        hardware_active_directory_status: {type: string}
+        hardware_available_ram_slots: {type: string}
+        hardware_battery_capacity: {type: string}
+        hardware_ble_capable: {type: string}
+        hardware_boot_rom: {type: string}
+        hardware_bus_speed: {type: string}
+        hardware_bus_speed_mhz: {type: string}
+        hardware_cache_size: {type: string}
+        hardware_cache_size_kb: {type: string}
+        hardware_disk_encryption_configuration: {type: string}
+        hardware_filevault2_users: {type: string}
+        hardware_gatekeeper_status: {type: string}
+        hardware_institutional_recovery_key: {type: string}
+        hardware_make: {type: string}
+        hardware_mapped_printers: {type: string}
+        hardware_master_password_set: {type: string}
+        hardware_model: {type: string}
+        hardware_model_identifier: {type: string}
+        hardware_nic_speed: {type: string}
+        hardware_number_cores: {type: string}
+        hardware_number_processors: {type: string}
+        hardware_optical_drive: {type: string}
+        hardware_os_build: {type: string}
+        hardware_os_name: {type: string}
+        hardware_os_version: {type: string}
+        hardware_processor_architecture: {type: string}
+        hardware_processor_speed: {type: string}
+        hardware_processor_speed_mhz: {type: string}
+        hardware_processor_type: {type: string}
+        hardware_service_pack: {type: string}
+        hardware_sip_status: {type: string}
+        hardware_smc_version: {type: string}
+        hardware_storage_connection_type: {type: string}
+        hardware_storage_disk: {type: string}
+        hardware_storage_drive_capacity_mb: {type: string}
+        hardware_storage_model: {type: string}
+        hardware_storage_partition_boot_drive_available_mb: {type: string}
+        hardware_storage_partition_filevault2_percent: {type: string}
+        hardware_storage_partition_filevault2_status: {type: string}
+        hardware_storage_partition_filevault_percent: {type: string}
+        hardware_storage_partition_filevault_status: {type: string}
+        hardware_storage_partition_lvUUID: {type: string}
+        hardware_storage_partition_lvgUUID: {type: string}
+        hardware_storage_partition_name: {type: string}
+        hardware_storage_partition_partition_capacity_mb: {type: string}
+        hardware_storage_partition_percentage_full: {type: string}
+        hardware_storage_partition_pvUUID: {type: string}
+        hardware_storage_partition_size: {type: string}
+        hardware_storage_partition_type: {type: string}
+        hardware_storage_revision: {type: string}
+        hardware_storage_serial_number: {type: string}
+        hardware_storage_size: {type: string}
+        hardware_storage_smart_status: {type: string}
+        hardware_total_ram: {type: string}
+        hardware_total_ram_mb: {type: string}
+        hardware_xprotect_version: {type: string}
+        iphones: {type: string}
+        location_building: {type: string}
+        location_department: {type: string}
+        location_email_address: {type: string}
+        location_phone: {type: string}
+        location_phone_number: {type: string}
+        location_position: {type: string}
+        location_real_name: {type: string}
+        location_realname: {type: string}
+        location_room: {type: string}
+        location_username: {type: string}
+        peripherals: {type: string}
+        purchasing_applecare_id: {type: string}
+        purchasing_attachments: {type: string}
+        purchasing_is_leased: {type: string}
+        purchasing_is_purchased: {type: string}
+        purchasing_lease_expires: {type: string}
+        purchasing_lease_expires_epoch: {type: string}
+        purchasing_lease_expires_utc: {type: string}
+        purchasing_life_expectancy: {type: string}
+        purchasing_os_applecare_id: {type: string}
+        purchasing_os_maintenance_expires: {type: string}
+        purchasing_po_date: {type: string}
+        purchasing_po_date_epoch: {type: string}
+        purchasing_po_date_utc: {type: string}
+        purchasing_po_number: {type: string}
+        purchasing_purchase_price: {type: string}
+        purchasing_purchasing_account: {type: string}
+        purchasing_purchasing_contact: {type: string}
+        purchasing_vendor: {type: string}
+        purchasing_warranty_expires: {type: string}
+        purchasing_warranty_expires_epoch: {type: string}
+        purchasing_warranty_expires_utc: {type: string}
+        software_applications_name: {type: string}
+        software_applications_path: {type: string}
+        software_applications_version: {type: string}
+        software_available_software_updates: {type: string}
+        software_cached_by_casper: {type: string}
+        software_fonts: {type: string}
+        software_installed_by_casper: {type: string}
+        software_installed_by_installer_swu: {type: string}
+        software_licensed_software: {type: string}
+        software_plugins: {type: string}
+        software_running_services: {type: string}
+        software_unix_executables: {type: string}
+      type: object
+    tmp5:
+      properties:
+        account_maintenance_accounts: {type: string}
+        account_maintenance_directory_bindings: {type: string}
+        account_maintenance_management_account_action: {type: string}
+        account_maintenance_open_firmware_efi_password_of_mode: {type: string}
+        account_maintenance_open_firmware_efi_password_of_password_sha256: {type: string}
+        disk_encryption_action: {type: string}
+        dock_items: {type: string}
+        errorMessage: {type: string}
+        files_processes_delete_file: {type: string}
+        files_processes_kill_process: {type: string}
+        files_processes_locate_file: {type: string}
+        files_processes_run_command: {type: string}
+        files_processes_search_by_path: {type: string}
+        files_processes_search_for_process: {type: string}
+        files_processes_spotlight_search: {type: string}
+        files_processes_update_locate_database: {type: string}
+        general_category_id: {type: string}
+        general_category_name: {type: string}
+        general_date_time_limitations_activation_date: {type: string}
+        general_date_time_limitations_activation_date_epoch: {type: string}
+        general_date_time_limitations_activation_date_utc: {type: string}
+        general_date_time_limitations_expiration_date: {type: string}
+        general_date_time_limitations_expiration_date_epoch: {type: string}
+        general_date_time_limitations_expiration_date_utc: {type: string}
+        general_date_time_limitations_no_execute_end: {type: string}
+        general_date_time_limitations_no_execute_on_day: {type: string}
+        general_date_time_limitations_no_execute_start: {type: string}
+        general_enabled: {type: string}
+        general_frequency: {type: string}
+        general_id: {type: string}
+        general_location_user_only: {type: string}
+        general_name: {type: string}
+        general_network_limitations_any_ip_address: {type: string}
+        general_network_limitations_minimum_network_connection: {type: string}
+        general_network_limitations_network_segments: {type: string}
+        general_network_requirements: {type: string}
+        general_offline: {type: string}
+        general_override_default_settings_distribution_point: {type: string}
+        general_override_default_settings_force_afp_smb: {type: string}
+        general_override_default_settings_netboot_server: {type: string}
+        general_override_default_settings_sus: {type: string}
+        general_override_default_settings_target_drive: {type: string}
+        general_site_id: {type: string}
+        general_site_name: {type: string}
+        general_target_drive: {type: string}
+        general_trigger: {type: string}
+        general_trigger_checkin: {type: string}
+        general_trigger_enrollment_complete: {type: string}
+        general_trigger_login: {type: string}
+        general_trigger_logout: {type: string}
+        general_trigger_network_state_changed: {type: string}
+        general_trigger_other: {type: string}
+        general_trigger_startup: {type: string}
+        maintenance_byhost: {type: string}
+        maintenance_heal: {type: string}
+        maintenance_install_all_cached_packages: {type: string}
+        maintenance_permissions: {type: string}
+        maintenance_prebindings: {type: string}
+        maintenance_recon: {type: string}
+        maintenance_reset_name: {type: string}
+        maintenance_system_cache: {type: string}
+        maintenance_user_cache: {type: string}
+        maintenance_verify: {type: string}
+        package_configuration_packages: {type: string}
+        printers: {type: string}
+        reboot_file_vault_2_reboot: {type: string}
+        reboot_message: {type: string}
+        reboot_minutes_until_reboot: {type: string}
+        reboot_no_user_logged_in: {type: string}
+        reboot_specify_startup: {type: string}
+        reboot_start_reboot_timer_immediately: {type: string}
+        reboot_startup_disk: {type: string}
+        reboot_user_logged_in: {type: string}
+        scope_all_computers: {type: string}
+        scope_buildings: {type: string}
+        scope_computer_groups: {type: string}
+        scope_computers: {type: string}
+        scope_departments: {type: string}
+        scope_exclusions_buildings: {type: string}
+        scope_exclusions_computer_groups: {type: string}
+        scope_exclusions_computers: {type: string}
+        scope_exclusions_departments: {type: string}
+        scope_exclusions_ibeacons: {type: string}
+        scope_exclusions_network_segments: {type: string}
+        scope_exclusions_user_groups: {type: string}
+        scope_exclusions_users: {type: string}
+        scope_limit_to_users_user_groups: {type: string}
+        scope_limitations_ibeacons: {type: string}
+        scope_limitations_network_segments: {type: string}
+        scope_limitations_user_groups: {type: string}
+        scope_limitations_users: {type: string}
+        scripts: {type: string}
+        self_service_feature_on_main_page: {type: string}
+        self_service_force_users_to_view_description: {type: string}
+        self_service_install_button_text: {type: string}
+        self_service_reinstall_button_text: {type: string}
+        self_service_self_service_categories: {type: string}
+        self_service_self_service_description: {type: string}
+        self_service_self_service_display_name: {type: string}
+        self_service_use_for_self_service: {type: string}
+        user_interaction_allow_deferral_until_utc: {type: string}
+        user_interaction_allow_users_to_defer: {type: string}
+        user_interaction_message_finish: {type: string}
+        user_interaction_message_start: {type: string}
+      type: object
+    tmp6:
+      properties:
+        building: {type: string}
+        department: {type: string}
+        id: {type: string}
+        mac_address: {type: string}
+        managed: {type: string}
+        model: {type: string}
+        name: {type: string}
+        report_date_epoch: {type: string}
+        report_date_utc: {type: string}
+        serial_number: {type: string}
+        udid: {type: string}
+        username: {type: string}
+      type: object
+    tmp7:
+      properties:
+        id: {type: string}
+        name: {type: string}
+      type: object
+    tmp8:
+      properties:
+        errorMessage: {type: string}
+        id: {type: string}
+      type: object
+    tmp9:
+      properties:
+        errorMessage: {type: string}
+        id: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Jamf Jamf
+  title: Jamf Jamf
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Enrolls/creates a new computer in JAMF
+      parameters:
+      - description: The ID of the computer
+        example: '1'
+        in: body
+        name: ID
+        required: true
+        schema: {type: string}
+      - description: Name of the computer
+        example: Lauras MacBook Pro
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: The serial number of the computer
+        example: C02Q7KHTGFWF
+        in: query
+        name: Serial Number
+        required: false
+        schema: {type: string}
+      - description: The unique identifier of the computer
+        example: 55900BDC-347C-58B1-D249-F32244B11D30
+        in: query
+        name: UDID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: JAMF Create Computer
+  tmp1:
+    post:
+      description: Creates a new policy in JAMF
+      parameters:
+      - description: The ID number of the policy
+        example: '1'
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      - description: The name of the policy
+        example: Disk Encryption
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: Whether the policy is enabled
+        example: ''
+        in: query
+        name: Enabled
+        required: false
+        schema: {type: boolean}
+      - description: How often the policy is executed
+        example: Once every week
+        in: query
+        name: Frequency
+        required: false
+        schema: {type: string}
+      - description: Whether the policy is triggered at the recurring check-in frequency
+        example: ''
+        in: query
+        name: Trigger Check-in
+        required: false
+        schema: {type: boolean}
+      - description: Whether the policy is triggered right after a computer is enrolled
+        example: ''
+        in: query
+        name: Trigger Enrollment Complete
+        required: false
+        schema: {type: boolean}
+      - description: Whether the policy is triggered when a user logs into a computer
+        example: ''
+        in: query
+        name: Trigger Login
+        required: false
+        schema: {type: boolean}
+      - description: Whether the policy is triggered when a use logs out of a computer
+        example: ''
+        in: query
+        name: Trigger Logout
+        required: false
+        schema: {type: boolean}
+      - description: Whether the policy is triggered when a computer's network state
+          changes
+        example: ''
+        in: query
+        name: Trigger Network State Changed
+        required: false
+        schema: {type: boolean}
+      - description: Whether the policy triggers when a computer starts up
+        example: ''
+        in: query
+        name: Trigger Startup
+        required: false
+        schema: {type: boolean}
+      - description: Another event that causes a policy to trigger
+        example: beaconStateChange
+        in: query
+        name: Trigger Other
+        required: false
+        schema: {type: string}
+      - description: The drive on which to run the policy
+        example: /Volumes/Restore/
+        in: query
+        name: Target Drive
+        required: false
+        schema: {type: string}
+      - description: Network connection to require to run the policy
+        example: Ethernet
+        in: query
+        name: Network Requirements
+        required: false
+        schema: {type: string}
+      - description: Whether the policy is only run for the user assigned to the computer
+          in Jamf Pro
+        example: ''
+        in: query
+        name: Location User Only
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: JAMF Create Policy
+  tmp2:
+    post:
+      description: Deletes a computer from JAMF
+      parameters:
+      - description: The ID of the computer
+        example: '1'
+        in: body
+        name: ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: JAMF Delete Computer
+  tmp3:
+    post:
+      description: Deletes a policy from JAMF
+      parameters:
+      - description: The ID of the policy
+        example: '1'
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: JAMF Delete Policy
+  tmp4:
+    post:
+      description: Gets information about a computer in JAMF
+      parameters:
+      - description: The ID of the computer
+        example: '1'
+        in: body
+        name: ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: JAMF Find Computer
+  tmp5:
+    post:
+      description: Gets information about a policy in JAMF
+      parameters:
+      - description: The ID of the policy
+        example: '1'
+        in: body
+        name: ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: JAMF Find Policy
+  tmp6:
+    post:
+      description: Lists all computers in JAMF
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: JAMF List Computers
+  tmp7:
+    post:
+      description: Lists all policies in JAMF
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: JAMF List Policies
+  tmp8:
+    post:
+      description: Changes attributes of a computer in JAMF
+      parameters:
+      - description: The ID of the computer
+        example: '1'
+        in: body
+        name: ID
+        required: true
+        schema: {type: string}
+      - description: Name of the computer
+        example: Lauras MacBook Pro
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: The serial number of the computer
+        example: C02Q7KHTGFWF
+        in: query
+        name: Serial Number
+        required: false
+        schema: {type: string}
+      - description: The unique identifier of the computer
+        example: 55900BDC-347C-58B1-D249-F32244B11D30
+        in: query
+        name: UDID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: JAMF Update Computer
+  tmp9:
+    post:
+      description: Changes attributes of a policy in JAMF
+      parameters:
+      - description: The ID number of the policy
+        example: '1'
+        in: body
+        name: ID
+        required: true
+        schema: {type: string}
+      - description: The name of the policy
+        example: Disk Encryption
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: Whether the policy is enabled
+        example: ''
+        in: query
+        name: Enabled
+        required: false
+        schema: {type: boolean}
+      - description: How often the policy is executed
+        example: Once every week
+        in: query
+        name: Frequency
+        required: false
+        schema: {type: string}
+      - description: Whether the policy is triggered at the recurring check-in frequency
+        example: ''
+        in: query
+        name: Trigger Check-in
+        required: false
+        schema: {type: boolean}
+      - description: Whether the policy is triggered right after a computer is enrolled
+        example: ''
+        in: query
+        name: Trigger Enrollment Complete
+        required: false
+        schema: {type: boolean}
+      - description: Whether the policy is triggered when a user logs into a computer
+        example: ''
+        in: query
+        name: Trigger Login
+        required: false
+        schema: {type: boolean}
+      - description: Whether the policy is triggered when a use logs out of a computer
+        example: ''
+        in: query
+        name: Trigger Logout
+        required: false
+        schema: {type: boolean}
+      - description: Whether the policy is triggered when a computer's network state
+          changes
+        example: ''
+        in: query
+        name: Trigger Network State Changed
+        required: false
+        schema: {type: boolean}
+      - description: Whether the policy triggers when a computer starts up
+        example: ''
+        in: query
+        name: Trigger Startup
+        required: false
+        schema: {type: boolean}
+      - description: Another even that causes a policy to trigger
+        example: beaconStateChange
+        in: query
+        name: Trigger Other
+        required: false
+        schema: {type: string}
+      - description: The drive on which to run the policy
+        example: /Volumes/Restore/
+        in: query
+        name: Target Drive
+        required: false
+        schema: {type: string}
+      - description: Network connection to require to run the policy
+        example: Ethernet
+        in: query
+        name: Network Requirements
+        required: false
+        schema: {type: string}
+      - description: Whether the policy is only run for the user assigned to the computer
+          in Jamf Pro
+        example: ''
+        in: query
+        name: Location User Only
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: JAMF Update Policy
+tags:
+- {name: Endpoint Security & Management}

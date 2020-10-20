@@ -1,0 +1,96 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        assets: {type: string}
+        duration: {type: string}
+        endTime: {type: string}
+        engineId: {type: string}
+        engineName: {type: string}
+        id: {type: string}
+        message: {type: string}
+        scanName: {type: string}
+        scanType: {type: string}
+        startTime: {type: string}
+        startedBy: {type: string}
+        status: {type: string}
+        vulnerabilities_critical: {type: string}
+        vulnerabilities_moderate: {type: string}
+        vulnerabilities_severe: {type: string}
+        vulnerabilities_total: {type: string}
+      type: object
+    tmp1:
+      properties:
+        id: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Rapid7 InsightVM
+  title: Rapid7 InsightVM
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get scan details from Rapid7 InsightVM
+      parameters:
+      - description: The identifier of the scan.
+        example: '1'
+        in: body
+        name: Scan ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Rapid7 InsightVM Get Scan
+  tmp1:
+    post:
+      description: Start Scan on Rapid7 InsightVM
+      parameters:
+      - description: The identifier of the site to scan.
+        example: '1'
+        in: body
+        name: Site ID
+        required: true
+        schema: {type: string}
+      - description: The identifier of the scan engine.
+        example: '3'
+        in: query
+        name: Engine ID
+        required: true
+        schema: {type: string}
+      - description: The hosts that should be included as a part of the scan. This
+          should be a mixture of IP Addresses and Hostnames as a String array.
+        example: google.com,yahoo.com
+        in: query
+        name: Hosts
+        required: true
+        schema: {type: string}
+      - description: The user-driven scan name for the scan.
+        example: Example Scan
+        in: query
+        name: Scan Name
+        required: true
+        schema: {type: string}
+      - description: The identifier of the scan template
+        example: full-audit-without-web-spider
+        in: query
+        name: Template ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Rapid7 InsightVM Start Scan
+tags:
+- {name: SIEM & Log Management}

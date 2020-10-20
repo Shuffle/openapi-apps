@@ -1,0 +1,186 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        author: {type: string}
+        body: {type: string}
+        forum: {type: string}
+        id: {type: string}
+        legacy_id: {type: string}
+        native_id: {type: string}
+        platform_url: {type: string}
+        published_at: {type: string}
+        reply_number: {type: string}
+        room: {type: string}
+        thread: {type: string}
+        url: {type: string}
+      type: object
+    tmp1:
+      properties:
+        basetypes: {type: string}
+        category: {type: string}
+        event_id: {type: string}
+        fpid: {type: string}
+        header__indexed_at: {type: string}
+        header__ingested_at: {type: string}
+        header__is_visible: {type: string}
+        header__observed_at: {type: string}
+        header__source: {type: string}
+        timestamp: {type: string}
+        type: {type: string}
+        uuid: {type: string}
+        value: {type: string}
+      type: object
+    tmp2:
+      properties:
+        asset_ids: {type: string}
+        body: {type: string}
+        id: {type: string}
+        ingested_at: {type: string}
+        is_featured: {type: string}
+        notified_at: {type: string}
+        platform_url: {type: string}
+        posted_at: {type: string}
+        published_status: {type: string}
+        sources_original: {type: string}
+        summary: {type: string}
+        tags: {type: string}
+        title: {type: string}
+        title_asset_id: {type: string}
+        updated_at: {type: string}
+        version_posted_at: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Flashpoint Api
+  title: Flashpoint Api
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Retrieve forum posts that match the search parameters.
+      parameters:
+      - description: The number of results to return, max of 10,000
+        example: '20'
+        in: body
+        name: Result Limit
+        required: false
+        schema: {type: string}
+      - description: The word or phrase to search for
+        example: threat
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: Only get posts that were posted after this time. Most standard
+          datetime formats will work. You can also use a relative time period.  For
+          example -5h indicates the previous five hours and +2d indicates the two
+          following days. Valid units are; years(y), months(M), weeks(w), days(d),
+          hours(h), minutes(m), seconds(s).
+        example: 2019-10-01T16:58:00+00:00 or -5h
+        in: query
+        name: Since
+        required: false
+        schema: {type: string}
+      - description: Only get posts that were posted before this time.  Most standard
+          datetime formats will work. You can also use a relative time period.  For
+          example -5h indicates the previous five hours and +2d indicates the two
+          following days. Valid units are; years(y), months(M), weeks(w), days(d),
+          hours(h), minutes(m), seconds(s).
+        example: 2019-10-01T16:58:00+00:00 or -5h
+        in: query
+        name: Until
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Flashpoint API Get Forum Posts
+  tmp1:
+    post:
+      description: Retrieve indicators of compromise that match the search parameters.
+      parameters:
+      - description: The number of results to return, max of 10,000
+        example: '20'
+        in: body
+        name: Result Limit
+        required: false
+        schema: {type: string}
+      - description: The word or phrase to search for
+        example: threat
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: Only get indicators of compromise that were created after this
+          time. Most standard datetime formats will work.
+        example: '2019-10-01T16:58:00+00:00'
+        in: query
+        name: Start Date
+        required: false
+        schema: {type: string}
+      - description: Only get indicators of compromise that were created before this
+          time. Most standard datetime formats will work.
+        example: '2019-10-01T16:58:00+00:00'
+        in: query
+        name: End Date
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Flashpoint API Get IOCs
+  tmp2:
+    post:
+      description: Get reports that match the given search parameters.
+      parameters:
+      - description: The word or phrase to search for
+        example: threat
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: Only get reports that were published after this time.  Most standard
+          datetime formats will work. You can also use a relative time period.  For
+          example -5h indicates the previous five hours and +2d indicates the two
+          following days. Valid units are; years(y), months(M), weeks(w), days(d),
+          hours(h), minutes(m), seconds(s).
+        example: 2019-10-01T16:58:00+00:00 or -5h
+        in: query
+        name: Since
+        required: false
+        schema: {type: string}
+      - description: The number of results to return, max of 10,000
+        example: '20'
+        in: body
+        name: Result Limit
+        required: false
+        schema: {type: string}
+      - description: Only get reports that were published before this time.  Most
+          standard datetime formats will work. You can also use a relative time period.  For
+          example -5h indicates the previous five hours and +2d indicates the two
+          following days. Valid units are; years(y), months(M), weeks(w), days(d),
+          hours(h), minutes(m), seconds(s).
+        example: 2019-10-01T16:58:00+00:00 or -5h
+        in: query
+        name: Until
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Flashpoint API Get Reports
+tags:
+- {name: Investigation}

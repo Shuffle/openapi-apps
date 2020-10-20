@@ -1,0 +1,98 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        result: {type: string}
+      type: object
+    tmp1:
+      properties:
+        _messagetime: {type: string}
+        _raw: {type: string}
+        _receipttime: {type: string}
+        _sourcecategory: {type: string}
+        _sourcehost: {type: string}
+        _sourcename: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Sumo Logic Sumo Logic
+  title: Sumo Logic Sumo Logic
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Use the Sumo Logic Search Query Language to analyze and present
+        log message data using a search aggregation.
+      parameters:
+      - description: Query
+        example: '| count by _sourceCategory'
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: From Date Time in ISO 8601 format.
+        example: '2019-02-22T13:37:00'
+        in: query
+        name: From Date Time
+        required: true
+        schema: {type: string}
+      - description: To Date Time in ISO 8601 format.
+        example: '2019-03-25T09:15:00'
+        in: query
+        name: To Time
+        required: true
+        schema: {type: string}
+      - description: Time Zone
+        example: ''
+        in: query
+        name: Time Zone
+        required: false
+        schema: {type: string}
+      - description: Limit number of records to return, default is 100.
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Sumo Logic Aggregate Search Job
+  tmp1:
+    post:
+      description: Use the Sumo Logic Search Query Language to analyze and present
+        log message data.
+      parameters:
+      - description: Query
+        example: _sourceCategory="linux/system"
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: Number of minutes in the past to retrieve logs for
+        example: '60'
+        in: body
+        name: Minutes Ago
+        required: true
+        schema: {type: string}
+      - description: Time Zone
+        example: ''
+        in: query
+        name: Time Zone
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Sumo Logic Search Logs
+tags:
+- {name: SIEM & Log Management}

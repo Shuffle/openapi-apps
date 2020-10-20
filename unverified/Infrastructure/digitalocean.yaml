@@ -1,0 +1,78 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        created_at: {type: string}
+        extra: {type: string}
+        id: {type: string}
+        image: {type: string}
+        name: {type: string}
+        private_ips: {type: string}
+        public_ips: {type: string}
+        size: {type: string}
+        state: {type: string}
+      type: object
+    tmp1:
+      properties:
+        previous_state: {type: string}
+      type: object
+    tmp2:
+      properties:
+        previous_state: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of DigitalOcean DigitalOcean
+  title: DigitalOcean DigitalOcean
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: List all DigitalOcean instances
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: DigitalOcean List Instances
+  tmp1:
+    post:
+      description: Start DigitalOcean instance
+      parameters:
+      - description: DigitalOcean Instance ID
+        example: ''
+        in: query
+        name: Instance ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: DigitalOcean Start Instance
+  tmp2:
+    post:
+      description: Stop DigitalOcean instance
+      parameters:
+      - description: DigitalOcean Instance ID
+        example: ''
+        in: query
+        name: Instance ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: DigitalOcean Stop Instance
+tags:
+- {name: Infrastructure}

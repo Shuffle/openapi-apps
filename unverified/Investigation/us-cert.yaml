@@ -1,0 +1,247 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        submissionId: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of United States Department of Homeland Security
+    US-CERT
+  title: United States Department of Homeland Security US-CERT
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Submit Indicators to US-CERT
+      parameters:
+      - description: Submitter's first name.
+        example: John
+        in: query
+        name: First Name
+        required: true
+        schema: {type: string}
+      - description: Submitter's last name.
+        example: Doe
+        in: query
+        name: Last Name
+        required: true
+        schema: {type: string}
+      - description: Submitter's telephone number.
+        example: 000-000-0000
+        in: query
+        name: Telephone Number
+        required: true
+        schema: {type: string}
+      - description: Submitter's e-mail address.
+        example: john.doe@mail.com
+        in: query
+        name: Email Address
+        required: true
+        schema: {type: string}
+      - description: Submitter's organization name.
+        example: Department X
+        in: query
+        name: Organization Name
+        required: true
+        schema: {type: string}
+      - description: 'Submitter''s organization type: Unite States Federal Government;
+          Foreign Government; United States State, Local, Tribal, or Territorial (SLTT)
+          Government; Private Sector; Individual'
+        example: Private Sector
+        in: query
+        name: Organization Type
+        required: true
+        schema: {type: string}
+      - description: Submitter's national affiliation.
+        example: Australia (AU)
+        in: query
+        name: Nation
+        required: true
+        schema: {type: string}
+      - description: Submitter's US Federal Government Department.
+        example: Department of Homeland Security (DHS)
+        in: query
+        name: US Federal Government Department/Agency
+        required: false
+        schema: {type: string}
+      - description: Submitter's US Federal Government Department Sub-Agency.
+        example: NCSD
+        in: query
+        name: US Federal Government Department Sub-Agency
+        required: false
+        schema: {type: string}
+      - description: Submitter's US State.
+        example: AZ
+        in: query
+        name: Submitter's US State
+        required: true
+        schema: {type: string}
+      - description: Submitter's affiliation with critical infrastructure.
+        example: Defense Industrial Base
+        in: query
+        name: Critical Infrastructure Sector
+        required: false
+        schema: {type: string}
+      - description: Traffic Light Protocol Color. (See https://www.us-cert.gov/tlp.)
+        example: Green
+        in: query
+        name: Traffic Light Protocol Color
+        required: false
+        schema: {type: string}
+      - description: Audience with whom contact info may be shared.
+        example: Everyone
+        in: query
+        name: Contact Info Sharing Audience
+        required: true
+        schema: {type: string}
+      - description: Proprietary status of submission.
+        example: 'True'
+        in: query
+        name: Proprietary Submission
+        required: true
+        schema: {type: boolean}
+      - description: Title of indicator.
+        example: Indicator X
+        in: query
+        name: Indicator Title
+        required: true
+        schema: {type: string}
+      - description: Description of indicator.
+        example: Description of Indicator X
+        in: query
+        name: Indicator Description
+        required: true
+        schema: {type: string}
+      - description: IP Address of associated observable.
+        example: 119.228.219.186
+        in: query
+        name: IP Address
+        required: false
+        schema: {type: string}
+      - description: TCP/IP Port of associated observable.
+        example: '33333'
+        in: query
+        name: TCP/IP Port
+        required: false
+        schema: {type: string}
+      - description: Protocol of associated observable.
+        example: FTP
+        in: query
+        name: Protocol
+        required: false
+        schema: {type: string}
+      - description: Domain name of associated observable.
+        example: swimlane.com
+        in: query
+        name: Domain Name
+        required: false
+        schema: {type: string}
+      - description: MD5 hash value of associated observable.
+        example: e57e712e4b29b76cfb337b6c5c1743da
+        in: query
+        name: MD5 Hash Value
+        required: false
+        schema: {type: string}
+      - description: Sender of associated e-mail observable.
+        example: john.doe@mail.com
+        in: query
+        name: Email Sender
+        required: false
+        schema: {type: string}
+      - description: Suspected spoofing of sender of associated e-mail observable.
+        example: 'True'
+        in: query
+        name: Sender Spoofed
+        required: false
+        schema: {type: boolean}
+      - description: Subject of e-mail observable.
+        example: Meeting cancelled
+        in: query
+        name: Email Subject
+        required: false
+        schema: {type: string}
+      - description: Body of e-mail observable.
+        example: The meeting has been rescheduled...
+        in: query
+        name: Email Body
+        required: false
+        schema: {type: string}
+      - description: Pertinent kill chain stages given in comma delimited list.
+        example: Reconnaissance,Delivery,Command and Control
+        in: query
+        name: Kill Chain Stages
+        required: false
+        schema: {type: string}
+      - description: Defensive measure title.
+        example: First measure...
+        in: query
+        name: Defensive Measure Title
+        required: false
+        schema: {type: string}
+      - description: Defensive measure description.
+        example: Close ports and patch software...
+        in: query
+        name: Defensive Measure Description.
+        required: false
+        schema: {type: string}
+      - description: Additional defensive measure title.
+        example: Second measure...
+        in: query
+        name: Additional Defensive Measure Title
+        required: false
+        schema: {type: string}
+      - description: Additional defensive measure description.
+        example: Disable user accounts...
+        in: query
+        name: Additional Defensive Measure Description.
+        required: false
+        schema: {type: string}
+      - description: Attack Pattern CAPEC ID.
+        example: CAPEC-123
+        in: query
+        name: Attack Pattern CAPEC ID
+        required: false
+        schema: {type: string}
+      - description: Attack Pattern Title.
+        example: Unsecured encryption key exploitation
+        in: query
+        name: Attack Pattern Title
+        required: false
+        schema: {type: string}
+      - description: Attack Pattern Description.
+        example: Adversary seeks for unprotected keys by...
+        in: query
+        name: Attack Pattern Description
+        required: false
+        schema: {type: string}
+      - description: Vulnerability CVE ID.
+        example: CVE-1999-0067
+        in: query
+        name: Vulnerability CVE ID
+        required: false
+        schema: {type: string}
+      - description: Vulnerability Title.
+        example: Misconfigured web server...
+        in: query
+        name: Vulnerability Title
+        required: false
+        schema: {type: string}
+      - description: Vulnerability Description.
+        example: Cross site scripting enabled...
+        in: query
+        name: Vulnerability Description
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: US-CERT Indicator Submission
+tags:
+- {name: Investigation}

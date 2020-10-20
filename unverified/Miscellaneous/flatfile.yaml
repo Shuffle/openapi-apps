@@ -1,0 +1,41 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        file_contents: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Swimlane Flatfile
+  title: Swimlane Flatfile
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Captures flat file content as a string.
+      parameters:
+      - description: The maximum number of valid files you would like to ingest, 0
+          for all files
+        example: '20'
+        in: body
+        name: Max Number of Files
+        required: false
+        schema: {type: string}
+      - description: Read oldest files first
+        example: ''
+        in: query
+        name: Sort Order
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Flat file contents Raw
+tags:
+- {name: Miscellaneous}

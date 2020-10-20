@@ -1,0 +1,35 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        parsed_domains: {type: string}
+        parsed_urls: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Microsoft Safelinks
+  title: Microsoft Safelinks
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWCAMAAABiiJHFAAADAFBMVEUAAAABAQECAgIDAwMEBAQFBQUGBgYHBwcICAgJCQkKCgoLCwsMDAwNDQ0ODg4PDw8QEBARERESEhITExMUFBQVFRUWFhYXFxcYGBgZGRkaGhobGxscHBwdHR0eHh4fHx8gICAhISEiIiIjIyMkJCQlJSUmJiYnJycoKCgpKSkqKiorKyssLCwtLS0uLi4vLy8wMDAxMTEyMjIzMzM0NDQ1NTU2NjY3Nzc4ODg5OTk6Ojo7Ozs8PDw9PT0+Pj4/Pz9AQEBBQUFCQkJDQ0NERERFRUVGRkZHR0dISEhJSUlKSkpLS0tMTExNTU1OTk5PT09QUFBRUVFSUlJTU1NUVFRVVVVWVlZXV1dYWFhZWVlaWlpbW1tcXFxdXV1eXl5fX19gYGBhYWFiYmJjY2NkZGRlZWVmZmZnZ2doaGhpaWlqampra2tsbGxtbW1ubm5vb29wcHBxcXFycnJzc3N0dHR1dXV2dnZ3d3d4eHh5eXl6enp7e3t8fHx9fX1+fn5/f3+AgICBgYGCgoKDg4OEhISFhYWGhoaHh4eIiIiJiYmKioqLi4uMjIyNjY2Ojo6Pj4+QkJCRkZGSkpKTk5OUlJSVlZWWlpaXl5eYmJiZmZmampqbm5ucnJydnZ2enp6fn5+goKChoaGioqKjo6OkpKSlpaWmpqanp6eoqKipqamqqqqrq6usrKytra2urq6vr6+wsLCxsbGysrKzs7O0tLS1tbW2tra3t7e4uLi5ubm6urq7u7u8vLy9vb2+vr6/v7/AwMDBwcHCwsLDw8PExMTFxcXGxsbHx8fIyMjJycnKysrLy8vMzMzNzc3Ozs7Pz8/Q0NDR0dHS0tLT09PU1NTV1dXW1tbX19fY2NjZ2dna2trb29vc3Nzd3d3e3t7f39/g4ODh4eHi4uLj4+Pk5OTl5eXm5ubn5+fo6Ojp6enq6urr6+vs7Ozt7e3u7u7v7+/w8PDx8fHy8vLz8/P09PT19fX29vb39/f4+Pj5+fn6+vr7+/v8/Pz9/f3+/v7////isF19AAABmUlEQVR4nO2TzytEURTHv0tRwsKPGZ1bM4spWb80pJkyNmMjspAFI2mkyNgrykJIiSwt1ItixYKFUiTNTvMHOffHey9qZp6w0fnU3HPOvPc+79w5dwBBEARBEARBEJrR6mhDu6NFtIE2lUohSjIxbQNEXQ21RIQwGQ2KZvB9RUw01i7oqIx/MWa3tAT0UiNtjjwTsyrsNFm2scCf8qzNy0kTEiv2qdVm2vEexeGQ9Mb2aN70z2lezRDZnF97ZL7Drr3mESmy6ZXjEteOG6flhsF3BlqPNoAt1rLmlE6APvZqdQJDNAXMab/ibid1O7eOO9w7HkItYYyGA62bWl7ZydiVaDss9fvUstM+O17w6ngKtCWFLCHUXnzVKoUCb3jNlV5MLfiXykRaFWmVwueegzKeligdaWkQSFttXhWBEXtUuvWoct/R2jac9k2P2bNamJF79nR4ev/2eBttifO6Wr9DL/oP7Puo+ZucTO8fmEqzXqkmOBxXzjrNia5Wzs1TNV7633fqan/IH2sff1crCIIgCIIgCML/4gP6/9hBsUWp8QAAAABJRU5ErkJggg==
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Decode Microsoft Safelinks URLs
+      parameters:
+      - description: URLs from Microsoft Safelinks that need to be decoded
+        example: https://google.com,https://swimlane.com
+        in: query
+        name: URLs to Decode
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Microsoft Safelinks
+tags:
+- {name: Communication}

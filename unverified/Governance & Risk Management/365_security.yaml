@@ -1,0 +1,155 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        activityGroupName: {type: string}
+        assignedTo: {type: string}
+        azureSubscriptionId: {type: string}
+        azureTenantId: {type: string}
+        category: {type: string}
+        closedDateTime: {type: string}
+        cloudAppStates: {type: string}
+        comments: {type: string}
+        confidence: {type: string}
+        createdDateTime: {type: string}
+        description: {type: string}
+        detectionIds: {type: string}
+        eventDateTime: {type: string}
+        feedback: {type: string}
+        fileStates: {type: string}
+        historyStates: {type: string}
+        hostStates: {type: string}
+        id: {type: string}
+        lastModifiedDateTime: {type: string}
+        malwareStates: {type: string}
+        networkConnections: {type: string}
+        processes: {type: string}
+        raw_json: {type: string}
+        recommendedActions: {type: string}
+        registryKeyStates: {type: string}
+        riskScore: {type: string}
+        severity: {type: string}
+        sourceMaterials: {type: string}
+        status: {type: string}
+        tags: {type: string}
+        title: {type: string}
+        triggers: {type: string}
+        userStates_aadUserId: {type: string}
+        userStates_accountName: {type: string}
+        userStates_domainName: {type: string}
+        userStates_emailRole: {type: string}
+        userStates_isVpn: {type: string}
+        userStates_logonDateTime: {type: string}
+        userStates_logonId: {type: string}
+        userStates_logonIp: {type: string}
+        userStates_logonLocation: {type: string}
+        userStates_logonType: {type: string}
+        userStates_onPremisesSecurityIdentifier: {type: string}
+        userStates_riskScore: {type: string}
+        userStates_userAccountType: {type: string}
+        userStates_userPrincipalName: {type: string}
+        vendorInformation_provider: {type: string}
+        vendorInformation_providerVersion: {type: string}
+        vendorInformation_subProvider: {type: string}
+        vendorInformation_vendor: {type: string}
+        vulnerabilityStates: {type: string}
+      type: object
+    tmp1:
+      properties:
+        activityGroupName: {type: string}
+        assignedTo: {type: string}
+        azureSubscriptionId: {type: string}
+        azureTenantId: {type: string}
+        category: {type: string}
+        closedDateTime: {type: string}
+        cloudAppStates: {type: string}
+        comments: {type: string}
+        confidence: {type: string}
+        createdDateTime: {type: string}
+        description: {type: string}
+        detectionIds: {type: string}
+        eventDateTime: {type: string}
+        feedback: {type: string}
+        fileStates: {type: string}
+        historyStates: {type: string}
+        hostStates: {type: string}
+        id: {type: string}
+        lastModifiedDateTime: {type: string}
+        malwareStates: {type: string}
+        networkConnections: {type: string}
+        processes: {type: string}
+        raw_json: {type: string}
+        recommendedActions: {type: string}
+        registryKeyStates: {type: string}
+        riskScore: {type: string}
+        severity: {type: string}
+        sourceMaterials: {type: string}
+        status: {type: string}
+        tags: {type: string}
+        title: {type: string}
+        triggers: {type: string}
+        userStates_aadUserId: {type: string}
+        userStates_accountName: {type: string}
+        userStates_domainName: {type: string}
+        userStates_emailRole: {type: string}
+        userStates_isVpn: {type: string}
+        userStates_logonDateTime: {type: string}
+        userStates_logonId: {type: string}
+        userStates_logonIp: {type: string}
+        userStates_logonLocation: {type: string}
+        userStates_logonType: {type: string}
+        userStates_onPremisesSecurityIdentifier: {type: string}
+        userStates_riskScore: {type: string}
+        userStates_userAccountType: {type: string}
+        userStates_userPrincipalName: {type: string}
+        vendorInformation_provider: {type: string}
+        vendorInformation_providerVersion: {type: string}
+        vendorInformation_subProvider: {type: string}
+        vendorInformation_vendor: {type: string}
+        vulnerabilityStates: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Microsoft 365 Security
+  title: Microsoft 365 Security
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAABVklEQVR4nO3dsW0CQRBA0TliJ+6BXshcgXux3AsVkNELPZAQ+8gh9Uc68V64yWhWP59lXuD2tV9fMafycbosj2+/59nsTj+Hedrnv+3qAbwnYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWAADAO8uPTs/MLMfrZg9zz8ys359P/7Sed5vdaTn8OTbONgmLhLBICIuEsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIvEHbIbD704gR02AAAAAElFTkSuQmCC
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get the details of a single alert given the ID.
+      parameters:
+      - description: The ID of the alert.
+        example: a4cfcd87-c598-4954-d823-02d7fb7f1234
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Microsoft 365 Security Get Alert
+  tmp1:
+    post:
+      description: Retrieve multiple alerts from 365 security matching the given criteria.
+      parameters:
+      - description: An OData query filter, see README for more info.
+        example: status ne 'newAlert'
+        in: query
+        name: Custom Filter
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Microsoft 365 Security Get Alerts
+tags:
+- {name: Governance & Risk Management}

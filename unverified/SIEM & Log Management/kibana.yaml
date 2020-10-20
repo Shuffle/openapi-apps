@@ -1,0 +1,2507 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        closed_at: {type: string}
+        closed_by_email: {type: string}
+        closed_by_full_name: {type: string}
+        closed_by_username: {type: string}
+        comments_comment: {type: string}
+        comments_created_at: {type: string}
+        comments_created_by_email: {type: string}
+        comments_created_by_full_name: {type: string}
+        comments_created_by_username: {type: string}
+        comments_id: {type: string}
+        comments_pushed_at: {type: string}
+        comments_pushed_by: {type: string}
+        comments_updated_at: {type: string}
+        comments_updated_by: {type: string}
+        comments_version: {type: string}
+        connector_id: {type: string}
+        created_at: {type: string}
+        created_by_email: {type: string}
+        created_by_full_name: {type: string}
+        created_by_username: {type: string}
+        description: {type: string}
+        external_service: {type: string}
+        id: {type: string}
+        status: {type: string}
+        tags: {type: string}
+        title: {type: string}
+        totalComment: {type: string}
+        updated_at: {type: string}
+        updated_by_email: {type: string}
+        updated_by_full_name: {type: string}
+        updated_by_username: {type: string}
+        version: {type: string}
+      type: object
+    tmp1:
+      properties:
+        rules_installed: {type: string}
+        rules_updated: {type: string}
+      type: object
+    tmp10:
+      properties:
+        acknowledged: {type: string}
+      type: object
+    tmp11:
+      properties:
+        code: {type: string}
+        message: {type: string}
+        timeline_columns_id: {type: string}
+        timeline_created: {type: string}
+        timeline_createdBy: {type: string}
+        timeline_dataProviders_and: {type: string}
+        timeline_dataProviders_enabled: {type: string}
+        timeline_dataProviders_excluded: {type: string}
+        timeline_dataProviders_name: {type: string}
+        timeline_dataProviders_queryMatch_field: {type: string}
+        timeline_dataProviders_queryMatch_operator: {type: string}
+        timeline_dataProviders_queryMatch_value: {type: string}
+        timeline_dateRange_end: {type: string}
+        timeline_dateRange_start: {type: string}
+        timeline_description: {type: string}
+        timeline_excludedRowRendererIds: {type: string}
+        timeline_savedObjectId: {type: string}
+        timeline_status: {type: string}
+        timeline_timelineType: {type: string}
+        timeline_title: {type: string}
+        timeline_updated: {type: string}
+        timeline_updatedBy: {type: string}
+        timeline_version: {type: string}
+      type: object
+    tmp12:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp13:
+      properties:
+        success: {type: string}
+      type: object
+    tmp14:
+      properties:
+        attachment: {type: string}
+      type: object
+    tmp15:
+      properties:
+        closed_at: {type: string}
+        closed_by: {type: string}
+        closed_by_email: {type: string}
+        closed_by_full_name: {type: string}
+        closed_by_username: {type: string}
+        comments: {type: string}
+        connector_id: {type: string}
+        created_at: {type: string}
+        created_by_email: {type: string}
+        created_by_full_name: {type: string}
+        created_by_username: {type: string}
+        description: {type: string}
+        external_service: {type: string}
+        id: {type: string}
+        status: {type: string}
+        tags: {type: string}
+        title: {type: string}
+        totalComment: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+        updated_by_email: {type: string}
+        updated_by_full_name: {type: string}
+        updated_by_username: {type: string}
+        version: {type: string}
+      type: object
+    tmp16:
+      properties:
+        actions: {type: string}
+        created_at: {type: string}
+        created_by: {type: string}
+        description: {type: string}
+        enabled: {type: string}
+        false_positives: {type: string}
+        filters: {type: string}
+        from: {type: string}
+        id: {type: string}
+        immutable: {type: string}
+        index: {type: string}
+        interval: {type: string}
+        language: {type: string}
+        last_success_at: {type: string}
+        last_success_message: {type: string}
+        max_signals: {type: string}
+        meta_from: {type: string}
+        meta_kibana_siem_app_url: {type: string}
+        name: {type: string}
+        output_index: {type: string}
+        query: {type: string}
+        references: {type: string}
+        risk_score: {type: string}
+        rule_id: {type: string}
+        severity: {type: string}
+        status: {type: string}
+        status_date: {type: string}
+        tags: {type: string}
+        threat: {type: string}
+        threat_framework: {type: string}
+        threat_tactic_id: {type: string}
+        threat_tactic_name: {type: string}
+        threat_tactic_reference: {type: string}
+        threat_technique_id: {type: string}
+        threat_technique_name: {type: string}
+        threat_technique_reference: {type: string}
+        throttle: {type: string}
+        to: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+        version: {type: string}
+      type: object
+    tmp17:
+      properties:
+        _tags: {type: string}
+        _version: {type: string}
+        created_at: {type: string}
+        created_by: {type: string}
+        description: {type: string}
+        id: {type: string}
+        immutable: {type: string}
+        list_id: {type: string}
+        name: {type: string}
+        namespace_type: {type: string}
+        tags: {type: string}
+        tie_breaker_id: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+        version: {type: string}
+      type: object
+    tmp18:
+      properties:
+        _tags: {type: string}
+        _version: {type: string}
+        comments: {type: string}
+        created_at: {type: string}
+        created_by: {type: string}
+        description: {type: string}
+        entries: {type: string}
+        id: {type: string}
+        item_id: {type: string}
+        list_id: {type: string}
+        name: {type: string}
+        namespace_type: {type: string}
+        tags: {type: string}
+        tie_breaker_id: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+      type: object
+    tmp19:
+      properties:
+        _version: {type: string}
+        created_at: {type: string}
+        created_by: {type: string}
+        id: {type: string}
+        list_id: {type: string}
+        tie_breaker_id: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+        value: {type: string}
+      type: object
+    tmp2:
+      properties:
+        closed_at: {type: string}
+        closed_by: {type: string}
+        comments: {type: string}
+        connector_id: {type: string}
+        created_at: {type: string}
+        created_by_email: {type: string}
+        created_by_full_name: {type: string}
+        created_by_username: {type: string}
+        description: {type: string}
+        external_service: {type: string}
+        id: {type: string}
+        status: {type: string}
+        tags: {type: string}
+        title: {type: string}
+        totalComment: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+        version: {type: string}
+      type: object
+    tmp20:
+      properties:
+        _version: {type: string}
+        created_at: {type: string}
+        created_by: {type: string}
+        id: {type: string}
+        list_id: {type: string}
+        tie_breaker_id: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+        value: {type: string}
+      type: object
+    tmp21:
+      properties:
+        closed_at: {type: string}
+        closed_by: {type: string}
+        comments: {type: string}
+        connector_id: {type: string}
+        created_at: {type: string}
+        created_by_email: {type: string}
+        created_by_full_name: {type: string}
+        created_by_username: {type: string}
+        description: {type: string}
+        external_service: {type: string}
+        id: {type: string}
+        status: {type: string}
+        tags: {type: string}
+        title: {type: string}
+        totalComment: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+        version: {type: string}
+      type: object
+    tmp22:
+      properties:
+        actions: {type: string}
+        created_at: {type: string}
+        created_by: {type: string}
+        description: {type: string}
+        enabled: {type: string}
+        false_positives: {type: string}
+        from: {type: string}
+        id: {type: string}
+        immutable: {type: string}
+        interval: {type: string}
+        language: {type: string}
+        max_signals: {type: string}
+        name: {type: string}
+        output_index: {type: string}
+        query: {type: string}
+        references: {type: string}
+        risk_score: {type: string}
+        rule_id: {type: string}
+        severity: {type: string}
+        tags: {type: string}
+        threat: {type: string}
+        throttle: {type: string}
+        to: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+        version: {type: string}
+      type: object
+    tmp23:
+      properties:
+        color: {type: string}
+        description: {type: string}
+        disabledFeatures: {type: string}
+        id: {type: string}
+        name: {type: string}
+        reserved: {type: string}
+      type: object
+    tmp24:
+      properties:
+        address: {type: string}
+        agent_ephemeral_id: {type: string}
+        agent_id: {type: string}
+        agent_name: {type: string}
+        agent_type: {type: string}
+        agent_version: {type: string}
+        bytes: {type: string}
+        client_address: {type: string}
+        client_bytes: {type: string}
+        client_geo_city_name: {type: string}
+        client_geo_continent_name: {type: string}
+        client_geo_country_iso_code: {type: string}
+        client_geo_country_name: {type: string}
+        client_geo_location_lat: {type: string}
+        client_geo_location_lon: {type: string}
+        client_ip: {type: string}
+        client_mac: {type: string}
+        client_nat_ip: {type: string}
+        client_nat_port: {type: string}
+        client_packets: {type: string}
+        client_port: {type: string}
+        client_registered_domain: {type: string}
+        cloud_account_id: {type: string}
+        cloud_availability_zone: {type: string}
+        cloud_instance_id: {type: string}
+        cloud_instance_name: {type: string}
+        cloud_machine_type: {type: string}
+        cloud_provider: {type: string}
+        cloud_region: {type: string}
+        code_signature_exists: {type: string}
+        code_signature_status: {type: string}
+        code_signature_subject_name: {type: string}
+        code_signature_trusted: {type: string}
+        code_signature_valid: {type: string}
+        container_id: {type: string}
+        container_image_name: {type: string}
+        container_image_tag: {type: string}
+        container_name: {type: string}
+        container_runtime: {type: string}
+        destination_address: {type: string}
+        destination_bytes: {type: string}
+        destination_geo_city_name: {type: string}
+        destination_geo_continent_name: {type: string}
+        destination_geo_country_iso_code: {type: string}
+        destination_geo_country_name: {type: string}
+        destination_geo_location_lat: {type: string}
+        destination_geo_location_lon: {type: string}
+        destination_ip: {type: string}
+        destination_mac: {type: string}
+        destination_nat_ip: {type: string}
+        destination_nat_port: {type: string}
+        destination_packets: {type: string}
+        destination_port: {type: string}
+        destination_registered_domain: {type: string}
+        dll_code_signature_exists: {type: string}
+        dll_code_signature_status: {type: string}
+        dll_code_signature_subject_name: {type: string}
+        dll_code_signature_trusted: {type: string}
+        dll_code_signature_valid: {type: string}
+        dll_hash_md5: {type: string}
+        dll_hash_sha1: {type: string}
+        dll_hash_sha256: {type: string}
+        dll_name: {type: string}
+        dll_path: {type: string}
+        dll_pe_company: {type: string}
+        dll_pe_description: {type: string}
+        dll_pe_file_version: {type: string}
+        dll_pe_original_file_name: {type: string}
+        dns_answers_class: {type: string}
+        dns_answers_data: {type: string}
+        dns_answers_name: {type: string}
+        dns_answers_ttl: {type: string}
+        dns_answers_type: {type: string}
+        dns_header_flags: {type: string}
+        dns_id: {type: string}
+        dns_op_code: {type: string}
+        dns_question_class: {type: string}
+        dns_question_name: {type: string}
+        dns_question_registered_domain: {type: string}
+        dns_question_type: {type: string}
+        dns_resolved_ip: {type: string}
+        dns_response_code: {type: string}
+        domain: {type: string}
+        ecs_version: {type: string}
+        event_action: {type: string}
+        event_category: {type: string}
+        event_code: {type: string}
+        event_created: {type: string}
+        event_dataset: {type: string}
+        event_id: {type: string}
+        event_kind: {type: string}
+        event_module: {type: string}
+        event_outcome: {type: string}
+        event_provider: {type: string}
+        event_risk_score_norm: {type: string}
+        event_risk_socre: {type: string}
+        event_severity: {type: string}
+        event_start: {type: string}
+        event_type: {type: string}
+        file_accessed: {type: string}
+        file_attributes: {type: string}
+        file_code_signature_exists: {type: string}
+        file_code_signature_status: {type: string}
+        file_code_signature_subject_name: {type: string}
+        file_code_signature_trusted: {type: string}
+        file_code_signature_valid: {type: string}
+        file_created: {type: string}
+        file_ctime: {type: string}
+        file_directory: {type: string}
+        file_drive_letter: {type: string}
+        file_extension: {type: string}
+        file_gid: {type: string}
+        file_hash_md5: {type: string}
+        file_hash_sha1: {type: string}
+        file_hash_sha256: {type: string}
+        file_mime_type: {type: string}
+        file_name: {type: string}
+        file_path: {type: string}
+        file_pe_company: {type: string}
+        file_pe_description: {type: string}
+        file_pe_file_version: {type: string}
+        file_pe_original_file_name: {type: string}
+        file_size: {type: string}
+        file_type: {type: string}
+        geo_city_name: {type: string}
+        geo_continent_name: {type: string}
+        geo_country_iso_code: {type: string}
+        geo_country_name: {type: string}
+        geo_location_lat: {type: string}
+        geo_location_lon: {type: string}
+        host_architecture: {type: string}
+        host_domain: {type: string}
+        host_geo_city_name: {type: string}
+        host_geo_continent_name: {type: string}
+        host_geo_country_iso_code: {type: string}
+        host_geo_country_name: {type: string}
+        host_geo_location_lat: {type: string}
+        host_geo_location_lon: {type: string}
+        host_hostname: {type: string}
+        host_id: {type: string}
+        host_ip: {type: string}
+        host_mac: {type: string}
+        host_name: {type: string}
+        host_os_family: {type: string}
+        host_os_full: {type: string}
+        host_os_name: {type: string}
+        host_os_platform: {type: string}
+        host_os_version: {type: string}
+        host_type: {type: string}
+        http_request_body_bytes: {type: string}
+        http_request_body_content: {type: string}
+        http_request_bytes: {type: string}
+        http_request_method: {type: string}
+        http_request_referrer: {type: string}
+        http_response_body_bytes: {type: string}
+        http_response_body_content: {type: string}
+        http_response_bytes: {type: string}
+        http_response_status_code: {type: string}
+        id: {type: string}
+        index: {type: string}
+        ip: {type: string}
+        labels_status: {type: string}
+        labels_type: {type: string}
+        mac: {type: string}
+        message: {type: string}
+        nat_ip: {type: string}
+        nat_port: {type: string}
+        network_application: {type: string}
+        network_direction: {type: string}
+        network_forwaded_ip: {type: string}
+        network_protocol: {type: string}
+        network_transport: {type: string}
+        network_type: {type: string}
+        organization_id: {type: string}
+        organization_name: {type: string}
+        package_architecture: {type: string}
+        package_build_version: {type: string}
+        package_checksum: {type: string}
+        package_install_scope: {type: string}
+        package_installed: {type: string}
+        package_name: {type: string}
+        package_path: {type: string}
+        package_size: {type: string}
+        package_version: {type: string}
+        packets: {type: string}
+        port: {type: string}
+        registry_data_strings: {type: string}
+        registry_data_type: {type: string}
+        registry_hive: {type: string}
+        registry_key: {type: string}
+        registry_path: {type: string}
+        registry_value: {type: string}
+        score: {type: string}
+        server_address: {type: string}
+        server_bytes: {type: string}
+        server_geo_city_name: {type: string}
+        server_geo_continent_name: {type: string}
+        server_geo_country_iso_code: {type: string}
+        server_geo_country_name: {type: string}
+        server_geo_location_lat: {type: string}
+        server_geo_location_lon: {type: string}
+        server_ip: {type: string}
+        server_mac: {type: string}
+        server_packets: {type: string}
+        server_port: {type: string}
+        signal_ancestors_depth: {type: string}
+        signal_ancestors_id: {type: string}
+        signal_ancestors_index: {type: string}
+        signal_ancestors_rule: {type: string}
+        signal_ancestors_type: {type: string}
+        signal_original_event_action: {type: string}
+        signal_original_event_category: {type: string}
+        signal_original_event_code: {type: string}
+        signal_original_event_created: {type: string}
+        signal_original_event_dataset: {type: string}
+        signal_original_event_id: {type: string}
+        signal_original_event_kind: {type: string}
+        signal_original_event_module: {type: string}
+        signal_original_event_outcome: {type: string}
+        signal_original_event_provider: {type: string}
+        signal_original_event_risk_score_norm: {type: string}
+        signal_original_event_risk_socre: {type: string}
+        signal_original_event_severity: {type: string}
+        signal_original_event_start: {type: string}
+        signal_original_event_type: {type: string}
+        signal_original_time: {type: string}
+        signal_parent_depth: {type: string}
+        signal_parent_id: {type: string}
+        signal_parent_index: {type: string}
+        signal_parent_rule: {type: string}
+        signal_parent_type: {type: string}
+        signal_rule_actions: {type: string}
+        signal_rule_author: {type: string}
+        signal_rule_created_at: {type: string}
+        signal_rule_created_by: {type: string}
+        signal_rule_description: {type: string}
+        signal_rule_enabled: {type: string}
+        signal_rule_exceptions_list: {type: string}
+        signal_rule_false_positives: {type: string}
+        signal_rule_filters: {type: string}
+        signal_rule_from: {type: string}
+        signal_rule_id: {type: string}
+        signal_rule_immutable: {type: string}
+        signal_rule_index: {type: string}
+        signal_rule_interval: {type: string}
+        signal_rule_language: {type: string}
+        signal_rule_license: {type: string}
+        signal_rule_max_signals: {type: string}
+        signal_rule_meta_from: {type: string}
+        signal_rule_meta_kibana_siem_app_url: {type: string}
+        signal_rule_name: {type: string}
+        signal_rule_output_index: {type: string}
+        signal_rule_query: {type: string}
+        signal_rule_references: {type: string}
+        signal_rule_risk_score: {type: string}
+        signal_rule_risk_score_mapping: {type: string}
+        signal_rule_rule_id: {type: string}
+        signal_rule_severity: {type: string}
+        signal_rule_severity_mapping: {type: string}
+        signal_rule_tags: {type: string}
+        signal_rule_threat: {type: string}
+        signal_rule_to: {type: string}
+        signal_rule_type: {type: string}
+        signal_rule_updated_at: {type: string}
+        signal_rule_updated_by: {type: string}
+        signal_rule_version: {type: string}
+        signal_status: {type: string}
+        tags: {type: string}
+        timestamp: {type: string}
+        type: {type: string}
+      type: object
+    tmp25:
+      properties:
+        batches: {type: string}
+        deleted: {type: string}
+        failures: {type: string}
+        noops: {type: string}
+        requests_per_second: {type: string}
+        retries_bulk: {type: string}
+        retries_search: {type: string}
+        throttled_millis: {type: string}
+        throttled_until_millis: {type: string}
+        timed_out: {type: string}
+        took: {type: string}
+        total: {type: string}
+        updated: {type: string}
+        version_conflicts: {type: string}
+      type: object
+    tmp26:
+      properties:
+        closed_at: {type: string}
+        closed_by: {type: string}
+        comments: {type: string}
+        connector_id: {type: string}
+        created_at: {type: string}
+        created_by_email: {type: string}
+        created_by_full_name: {type: string}
+        created_by_username: {type: string}
+        description: {type: string}
+        external_service: {type: string}
+        id: {type: string}
+        status: {type: string}
+        tags: {type: string}
+        title: {type: string}
+        totalComment: {type: string}
+        updated_at: {type: string}
+        updated_by_email: {type: string}
+        updated_by_full_name: {type: string}
+        updated_by_username: {type: string}
+        version: {type: string}
+      type: object
+    tmp27:
+      properties:
+        actions: {type: string}
+        created_at: {type: string}
+        created_by: {type: string}
+        description: {type: string}
+        enabled: {type: string}
+        false_positives: {type: string}
+        from: {type: string}
+        id: {type: string}
+        immutable: {type: string}
+        interval: {type: string}
+        language: {type: string}
+        max_signals: {type: string}
+        name: {type: string}
+        output_index: {type: string}
+        query: {type: string}
+        references: {type: string}
+        risk_score: {type: string}
+        rule_id: {type: string}
+        severity: {type: string}
+        tags: {type: string}
+        threat: {type: string}
+        throttle: {type: string}
+        to: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+        version: {type: string}
+      type: object
+    tmp28:
+      properties:
+        _version: {type: string}
+        created_at: {type: string}
+        created_by: {type: string}
+        description: {type: string}
+        id: {type: string}
+        immutable: {type: string}
+        name: {type: string}
+        tie_breaker_id: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+        version: {type: string}
+      type: object
+    tmp29:
+      properties:
+        _version: {type: string}
+        created_at: {type: string}
+        created_by: {type: string}
+        id: {type: string}
+        list_id: {type: string}
+        tie_breaker_id: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+        value: {type: string}
+      type: object
+    tmp3:
+      properties:
+        actions: {type: string}
+        created_at: {type: string}
+        created_by: {type: string}
+        description: {type: string}
+        enabled: {type: string}
+        false_positives: {type: string}
+        from: {type: string}
+        id: {type: string}
+        immutable: {type: string}
+        interval: {type: string}
+        language: {type: string}
+        max_signals: {type: string}
+        name: {type: string}
+        output_index: {type: string}
+        query: {type: string}
+        references: {type: string}
+        risk_score: {type: string}
+        rule_id: {type: string}
+        severity: {type: string}
+        tags: {type: string}
+        threat: {type: string}
+        throttle: {type: string}
+        to: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+        version: {type: string}
+      type: object
+    tmp4:
+      properties:
+        _tags: {type: string}
+        _version: {type: string}
+        created_at: {type: string}
+        created_by: {type: string}
+        description: {type: string}
+        id: {type: string}
+        immutable: {type: string}
+        list_id: {type: string}
+        name: {type: string}
+        namespace_type: {type: string}
+        tags: {type: string}
+        tie_breaker_id: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+        version: {type: string}
+      type: object
+    tmp5:
+      properties:
+        _tags: {type: string}
+        _version: {type: string}
+        comments: {type: string}
+        created_at: {type: string}
+        created_by: {type: string}
+        description: {type: string}
+        entries: {type: string}
+        id: {type: string}
+        item_id: {type: string}
+        list_id: {type: string}
+        name: {type: string}
+        namespace_type: {type: string}
+        tags: {type: string}
+        tie_breaker_id: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+      type: object
+    tmp6:
+      properties:
+        description: {type: string}
+        disabledFeatures: {type: string}
+        id: {type: string}
+        name: {type: string}
+      type: object
+    tmp7:
+      properties:
+        _version: {type: string}
+        created_at: {type: string}
+        created_by: {type: string}
+        description: {type: string}
+        id: {type: string}
+        immutable: {type: string}
+        name: {type: string}
+        tie_breaker_id: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+        version: {type: string}
+      type: object
+    tmp8:
+      properties:
+        _version: {type: string}
+        created_at: {type: string}
+        created_by: {type: string}
+        id: {type: string}
+        list_id: {type: string}
+        tie_breaker_id: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+        updated_by: {type: string}
+        value: {type: string}
+      type: object
+    tmp9:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Elastic Kibana
+  title: Elastic Kibana
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAEMUlEQVR4nO3cv0tVYRzH8c+596a1CArqtaA2p6BJbNHGgpoaImxxDQkMrOYaa4vcWiXoBzi0WCA0hv+BQ0tTBNHQkJHdhjr+uN57PV6/5zzfH5/3JCiHx8eX3+ccL94Myvpy+Ukr9RqsNb52L0u9hvZqqRfAjpdGVABhmU4rKoCwzKYZFUBYJtOOCiAsc42tLZn4mZlYJNstQ2biqZmwDGXhCMwjLCNZQgUQlomsoQIIS30WUQGEpTqrqADCYiVFWEqzPK0AwlKZdVQAYanLAyqAsFTlBRVAWGr6OvRjMPUaJCMsJZ1/9fBX6jVIRlgK8nQE5hFW4jyiAggraV5RAYSVLM+oAMJKUgvZXOo1lB1hJai5tvQi9RrKjrAqzvsRmEdYFRYFFUBYlRUJFUBYlRQNFUBYpTfwszGceg0pIqySG/5w93vqNaSIsEos4hGYR1glFRkVQFilFB0VQFjiEdW/CEu01oPUK9ASYQk2vnb/ceo1aEnd2J6ammoBQB21zxcaY58eDc1eSr2mIvEI3J+6zchhHbW3Izekl1I4ojqYug3pF1anqsBGVJ1TtymSsNqThkZU3WukXkCVXfv2cufj4yL7vb197rjr8Zy637gyJ1a3+kHGadU7dZuTAlZeUWBEdXjqNiglrL11Q0ZUxVK3SVpg5e0FRlTFU7dR2mDlbWxsqNsrzfElnQJlZ5ub0yvLrYuvnz9LvRYrEVaBsutXJgGgtbW1ML2yrHKiakvdeNd2FNYW57t+7uOtBXX7pyVOrB71QgUAnF7dU/cbp2ViHYaqPU6v/XFideioqABOr/YISzDi2k3d+E59FPYzrToV/WjkxNqTFCoAmHn3KvT0Iqz/SaICgKxxArPrq2FxERbkUQ1OnNn5OCqu8LDKRJUXEVd0WH8kL9YJVV40XKFh1Rbnxb7/XqjyIuEKC0vyCMzqxbcxCq6QsKTvqwbGJo709RFwhYNVxc16kbzjCgVLC6o8z7hCwZLsuKjyvOIKA0tyWkmhyptZX30qekEFhYAl+gTYkP/n8Qy4I37RxLmHJf4EODouer08b0eia1jabtYPyxMut7CsofKWW1iSVYnKy9RyCUvzE2CRPOByB0v6CGT95QqWp/sq61PLDSxPqPIs43IByyMq67mAJZk2VFanlnlY1p8AvWYaVpQnQItTyyws3lfpziSsiKisTS1zsLLbc6IbbAGVxezBGhwQe7MNa6gsTS1TsCSPwIHmabFrsYOZgSX+ph2ZzXcZsjK1TMCKeLNuPfWwiMpmqmFlzdFNyet5QWXhONQN6+bVSalreUFlJbWwZF8D5BNg1amEJf8aoM0nwF5pPw7VweLNuo/UwZKMqNLlFlYEVJqPQ5ewIqDSnjtY9ZOnUi+BwSGsxvBI6iUwOIMV8Qicff9G9C3FpXIDKyIqAEC9rvKPdH8B3AHvsrRvZpYAAAAASUVORK5CYII=
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Add a case comment
+      parameters:
+      - description: Comment to add to case
+        example: adding a test commment
+        in: query
+        name: Comment
+        required: true
+        schema: {type: string}
+      - description: The case ID to add a comment to
+        example: 802c26f0-c008-11ea-b18c-8920d0438dd6
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Elastic Kibana Add Case Comment
+  tmp1:
+    post:
+      description: Add Elastic Kibana & SIEM pre-packaged detection rules to Kibana
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Elastic Kibana Add Pre-Packaged Detection Rules
+  tmp10:
+    post:
+      description: Creates a signal index
+      parameters:
+      - description: Space to create signal index
+        example: testspace
+        in: query
+        name: Space
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Elastic Kibana Create Signal Index
+  tmp11:
+    post:
+      description: Create a timeline or timeline template
+      parameters:
+      - description: And Query is excluded or not
+        example: 'False'
+        in: query
+        name: And Query Excluded
+        required: false
+        schema: {type: boolean}
+      - description: The title value in the timelines title field
+        example: test-query-title
+        in: query
+        name: Query Title
+        required: true
+        schema: {type: string}
+      - description: One or more columns to display in the timeline
+        example: '[''@timestamp'', ''destination.ip'']'
+        in: query
+        name: Column Ids
+        required: true
+        schema: {type: string}
+      - description: The operator to use in the data provider query between the field
+          and value
+        example: ':'
+        in: query
+        name: Query Operator
+        required: true
+        schema: {type: string}
+      - description: The value of a And Query
+        example: mimikatz.exe
+        in: query
+        name: And Query Value
+        required: false
+        schema: {type: string}
+      - description: A KQL Filter Query JSON object
+        example: '''kuery'': {''expression'': ''host.os.platform : windows'',''kind'':
+          ''kuery''}'
+        in: query
+        name: KQL Filter Query
+        required: false
+        schema: {type: string}
+      - description: Whether or not the data provider query is enabled
+        example: 'False'
+        in: query
+        name: Query Enabled
+        required: false
+        schema: {type: boolean}
+      - description: Range Query for the specified field to filter
+        example: '{''@timestamp'':{''gte'':''now-1d'',''lt'':''now''}}'
+        in: query
+        name: Range Filter
+        required: false
+        schema: {type: string}
+      - description: A name of who created this Timeline
+        example: Swimlane User
+        in: query
+        name: Created By
+        required: true
+        schema: {type: string}
+      - description: The value of the data provider query field
+        example: 123.123.123.123
+        in: query
+        name: Query Value
+        required: true
+        schema: {type: string}
+      - description: The ECS field to use in the data providers query
+        example: destination.ip
+        in: query
+        name: Query Field
+        required: true
+        schema: {type: string}
+      - description: And Query Name
+        example: my-and-query-name
+        in: query
+        name: And Query Name
+        required: false
+        schema: {type: string}
+      - description: Exists term query for a specified field to filter out
+        example: '{''field'':''user.name''}'
+        in: query
+        name: Exists Filter
+        required: false
+        schema: {type: string}
+      - description: Whether or not the data provider query is an exclusion
+        example: 'True'
+        in: query
+        name: Query Excluded
+        required: false
+        schema: {type: boolean}
+      - description: A Template Timeline Version number
+        example: '1'
+        in: body
+        name: Template Timeline Version
+        required: false
+        schema: {type: string}
+      - description: A timeline data provider AND object in JSON.  Use this or inputs
+          starting with And.
+        example: '[{''name'': ''event.category'',''enabled'': true,''excluded'': false,''queryMatch'':
+          {''field'': ''event.category'',''value'': ''process'',''operator'': '':''}},{''name'':
+          ''user.name'',''enabled'': true,''excluded'': false,''queryMatch'': {''field'':
+          ''user.name'',''value'': ''SYSTEM'',''operator'': '':''}}]'
+        in: query
+        name: Data Provider And JSON
+        required: false
+        schema: {type: string}
+      - description: The KQL Mode to use.  Only accepts filter at this time
+        example: filter
+        in: query
+        name: KQL Mode
+        required: false
+        schema: {type: string}
+      - description: The description for this timeline query
+        example: example query description
+        in: query
+        name: Query Description
+        required: true
+        schema: {type: string}
+      - description: If you are wanting to create a Timeline template provide a Template
+          Timeline ID
+        example: 6acb2c90-a01c-11ea-8e47-5dc21077d10c
+        in: query
+        name: Template Timeline ID
+        required: false
+        schema: {type: string}
+      - description: DSL Query for the specified field to filter out
+        example: '{''match_phrase'':{''ecs.version'':''1.4.0''}}'
+        in: query
+        name: Query Filter
+        required: false
+        schema: {type: string}
+      - description: Match all term query for the specified field to filter out
+        example: '{}'
+        in: query
+        name: Match All Filter
+        required: false
+        schema: {type: string}
+      - description: The timelines start time range
+        example: '2020-09-03T13:26:35-05:00'
+        in: query
+        name: Start Timestamp
+        required: true
+        schema: {type: string}
+      - description: The timelines end time range
+        example: '2020-09-03T13:26:35-05:00'
+        in: query
+        name: End Timestamp
+        required: true
+        schema: {type: string}
+      - description: A timestamp of when this Timeline was created
+        example: '2020-08-03T13:26:35-05:00'
+        in: query
+        name: Created
+        required: false
+        schema: {type: string}
+      - description: And Query is enabled or not
+        example: 'true'
+        in: query
+        name: And Query Enabled
+        required: false
+        schema: {type: boolean}
+      - description: And Query ECS Field Name
+        example: process.name
+        in: query
+        name: And Query Field
+        required: false
+        schema: {type: string}
+      - description: The operator of a And Query
+        example: ':'
+        in: query
+        name: And Query Operator
+        required: false
+        schema: {type: string}
+      - description: The name of the query used in this timeline
+        example: test-query-name2
+        in: query
+        name: Query Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: Elastic Kibana Create Timeline
+  tmp12:
+    post:
+      description: Deletes a SIEM Detection Rule
+      parameters:
+      - description: Detection rule ID
+        example: 04643be2-8330-48c6-bfc9-021c340de9ea
+        in: query
+        name: ID
+        required: false
+        schema: {type: string}
+      - description: Detection rule ID
+        example: 35df0dd8-092d-4a83-88c1-5151a804f31b
+        in: query
+        name: Rule ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: Elastic Kibana Delete Detection Rule
+  tmp13:
+    post:
+      description: Deletes an exception item
+      parameters:
+      - description: Exception ID
+        example: 8b3b58fc-a422-4f56-869a-a4d20f1c822e
+        in: query
+        name: ID
+        required: false
+        schema: {type: string}
+      - description: Exception Item ID
+        example: external-IPs
+        in: query
+        name: Exception Item ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: Elastic Kibana Delete Exception Item
+  tmp14:
+    post:
+      description: Export SIEM detection rules
+      parameters:
+      - description: Exclude Export Details
+        example: 'false'
+        in: query
+        name: Exclude Export Details
+        required: false
+        schema: {type: boolean}
+      - description: Filename of the exported attachment
+        example: export.json
+        in: query
+        name: File Name
+        required: false
+        schema: {type: string}
+      - description: Array of rule_id values
+        example: '''35df0dd8-092d-4a83-88c1-5151a804f31b'',''5151a804f31b-092d-4a83-88c1-88c14a83'
+        in: query
+        name: Rule ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp14'}
+          description: Successful request
+      summary: Elastic Kibana Export Detection Rules
+  tmp15:
+    post:
+      description: Find or search for cases
+      parameters:
+      - description: Filters the returned cases by state, which can be open or closed
+        example: open
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: The number of rules to return per page
+        example: '20'
+        in: body
+        name: Per Page
+        required: false
+        schema: {type: string}
+      - description: Filters the returned cases by tags
+        example: '''phishing'',''macro'''
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      - description: Determines which field is used to sort the results, createdAt
+          or updatedAt
+        example: createdAt
+        in: query
+        name: Sort Field
+        required: false
+        schema: {type: string}
+      - description: Determines the sort order which can be desc or asc
+        example: desc
+        in: query
+        name: Sort Order
+        required: false
+        schema: {type: string}
+      - description: "Filters the returned cases by the reporter\u2019s username"
+        example: first.last
+        in: query
+        name: Reporters
+        required: false
+        schema: {type: string}
+      - description: The page number to return
+        example: '1'
+        in: body
+        name: Page
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp15'}
+          description: Successful request
+      summary: Elastic Kibana Find Cases
+  tmp16:
+    post:
+      description: Retrieve detection rules from SIEM
+      parameters:
+      - description: Filter by a given name value
+        example: windows
+        in: query
+        name: Name Filter
+        required: false
+        schema: {type: string}
+      - description: Filter by rule tag
+        example: windows
+        in: query
+        name: Tag Filter
+        required: false
+        schema: {type: string}
+      - description: Filter by a rules configured interval
+        example: 5min
+        in: query
+        name: Interval Filter
+        required: false
+        schema: {type: string}
+      - description: Filter by whether a rule is enabled or not
+        example: 'true'
+        in: query
+        name: Enabled Filter
+        required: false
+        schema: {type: string}
+      - description: Filter by the creator of a rule
+        example: Swimlane User
+        in: query
+        name: Created By Filter
+        required: false
+        schema: {type: string}
+      - description: Determines the sort order, which can be desc or asc.
+        example: asc
+        in: query
+        name: Sort Order
+        required: false
+        schema: {type: string}
+      - description: The number of rules to return per page
+        example: '20'
+        in: body
+        name: Per Page
+        required: false
+        schema: {type: string}
+      - description: Determines which field is used to sort the rules
+        example: name
+        in: query
+        name: Sort Field
+        required: false
+        schema: {type: string}
+      - description: The page number to return
+        example: '1'
+        in: body
+        name: Page
+        required: false
+        schema: {type: string}
+      - description: Filter by who last updated a rule
+        example: Swimlane User
+        in: query
+        name: Updated By Filter
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp16'}
+          description: Successful request
+      summary: Elastic Kibana Find Detection Rules
+  tmp17:
+    post:
+      description: Returns a subset of exception containers
+      parameters:
+      - description: Determines whether the returned containers are Kibana associated
+          with a Kibana space or available in all spaces (agnostic or single)
+        example: agnostic
+        in: query
+        name: Namespace Type
+        required: false
+        schema: {type: string}
+      - description: Filters the returned results according to the value of the specified
+          field. Field names are name, type, created_by, updated_by
+        example: name:*
+        in: query
+        name: Filter
+        required: false
+        schema: {type: string}
+      - description: Determines the sort order, which can be desc or asc
+        example: asc
+        in: query
+        name: Sort Order
+        required: false
+        schema: {type: string}
+      - description: The number of containers to return per page
+        example: '5'
+        in: body
+        name: Per Page
+        required: false
+        schema: {type: string}
+      - description: Determines which field is used to sort the results
+        example: name
+        in: query
+        name: Sort Field
+        required: false
+        schema: {type: string}
+      - description: The page number to return
+        example: '1'
+        in: body
+        name: Page
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp17'}
+          description: Successful request
+      summary: Elastic Kibana Find Exception Containers
+  tmp18:
+    post:
+      description: Retrieves a subset of exception items in a specified container
+      parameters:
+      - description: Returns the items that come after the last item returned in the
+          previous call (use the cursor value returned in the previous call). This
+          parameter uses the tie_breaker_id field to ensure all items are sorted and
+          returned correctly. See Search After for more information.
+        example: 79d79f13-bbd0-4558-9226-ea978df0c0c2
+        in: query
+        name: Cursor
+        required: false
+        schema: {type: string}
+      - description: Determines the sort order, which can be desc or asc
+        example: asc
+        in: query
+        name: Sort Order
+        required: false
+        schema: {type: string}
+      - description: ID of the exception container
+        example: 531a04ea-162f-4550-b358-bb3600f4cfd3
+        in: query
+        name: List ID
+        required: true
+        schema: {type: string}
+      - description: The number of items to return per page
+        example: '5'
+        in: body
+        name: Per Page
+        required: false
+        schema: {type: string}
+      - description: Determines which field is used to sort the results
+        example: name
+        in: query
+        name: Sort Field
+        required: false
+        schema: {type: string}
+      - description: The page number to return
+        example: '1'
+        in: body
+        name: Page
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp18'}
+          description: Successful request
+      summary: Elastic Kibana Find Exception Items
+  tmp19:
+    post:
+      description: Returns a subset of list items in the specified container
+      parameters:
+      - description: Returns the items that come after the last item returned in the
+          previous call (use the cursor value returned in the previous call). This
+          parameter uses the tie_breaker_id field to ensure all items are sorted and
+          returned correctly. See Search After for more information.
+        example: 79d79f13-bbd0-4558-9226-ea978df0c0c2
+        in: query
+        name: Cursor
+        required: false
+        schema: {type: string}
+      - description: Determines the sort order, which can be desc or asc
+        example: asc
+        in: query
+        name: Sort Order
+        required: false
+        schema: {type: string}
+      - description: ID of the list container
+        example: 531a04ea-162f-4550-b358-bb3600f4cfd3
+        in: query
+        name: List ID
+        required: true
+        schema: {type: string}
+      - description: The number of items to return per page
+        example: '5'
+        in: body
+        name: Per Page
+        required: false
+        schema: {type: string}
+      - description: Determines which field is used to sort the results
+        example: name
+        in: query
+        name: Sort Field
+        required: false
+        schema: {type: string}
+      - description: The page number to return
+        example: '1'
+        in: body
+        name: Page
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp19'}
+          description: Successful request
+      summary: Elastic Kibana Find List Containers
+  tmp2:
+    post:
+      description: Create a case in Kibana
+      parameters:
+      - description: The title of the case
+        example: Phishing Attempt
+        in: query
+        name: Title
+        required: true
+        schema: {type: string}
+      - description: Case Description
+        example: My case description
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: Case Tags
+        example: phishing, bec
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Elastic Kibana Create Case
+  tmp20:
+    post:
+      description: Retrieves a subset of list items in the specified list container
+      parameters:
+      - description: Returns the items that come after the last item returned in the
+          previous call (use the cursor value returned in the previous call). This
+          parameter uses the tie_breaker_id field to ensure all items are sorted and
+          returned correctly. See Search After for more information.
+        example: 79d79f13-bbd0-4558-9226-ea978df0c0c2
+        in: query
+        name: Cursor
+        required: false
+        schema: {type: string}
+      - description: Determines the sort order, which can be desc or asc
+        example: asc
+        in: query
+        name: Sort Order
+        required: false
+        schema: {type: string}
+      - description: ID of the list container
+        example: 531a04ea-162f-4550-b358-bb3600f4cfd3
+        in: query
+        name: List ID
+        required: true
+        schema: {type: string}
+      - description: The number of items to return per page
+        example: '5'
+        in: body
+        name: Per Page
+        required: false
+        schema: {type: string}
+      - description: Determines which field is used to sort the results
+        example: name
+        in: query
+        name: Sort Field
+        required: false
+        schema: {type: string}
+      - description: The page number to return
+        example: '1'
+        in: body
+        name: Page
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp20'}
+          description: Successful request
+      summary: Elastic Kibana Find List Items
+  tmp21:
+    post:
+      description: Get a single case
+      parameters:
+      - description: The case ID to retrieve
+        example: 7c696050-c00d-11ea-b18c-8920d0438dd6
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Whether or not to include comments.  Default is true
+        example: 'false'
+        in: query
+        name: Include Comments
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp21'}
+          description: Successful request
+      summary: Elastic Kibana Get Case
+  tmp22:
+    post:
+      description: Retrieve a detection rule from Kibana
+      parameters:
+      - description: The rule ID to get
+        example: 0164cbb8-07ce-470a-bd58-27606e3310d6
+        in: query
+        name: ID
+        required: false
+        schema: {type: string}
+      - description: The rule ID to get
+        example: 0164cbb8-07ce-470a-bd58-27606e3310d6
+        in: query
+        name: Rule ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp22'}
+          description: Successful request
+      summary: Elastic Kibana Get Detection Rule
+  tmp23:
+    post:
+      description: Retrieve a list of Kibana spaces
+      parameters:
+      - description: The space name to retrieve.  If not provided then all spaces
+          will be returned.
+        example: testspace
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp23'}
+          description: Successful request
+      summary: Elastic Kibana Get Kibana Spaces
+  tmp24:
+    post:
+      description: Retrieve signals from elasticsearch
+      parameters:
+      - description: Matching a field (signal.status) to a value (open)
+        example: signal.status:open
+        in: query
+        name: Match Filter
+        required: false
+        schema: {type: string}
+      - description: The oldest aggregration field. Typically @timestamp
+        example: '@timestamp'
+        in: query
+        name: Oldest Aggregration Field
+        required: false
+        schema: {type: string}
+      - description: The range filter is the field (signal.rule.risk_score) the comparison
+          operator (gte) and the value (1).
+        example: signal.rule.risk_score:gte:1
+        in: query
+        name: Range Filter
+        required: false
+        schema: {type: string}
+      - description: The latest aggregration field.  Typically @timestamp
+        example: '@timestamp'
+        in: query
+        name: Latest Aggregration Field
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp24'}
+          description: Successful request
+      summary: Elastic Kibana Get Signals
+  tmp25:
+    post:
+      description: Set a single or list of signals status
+      parameters:
+      - description: Status to set a signal to. Options are closed or open
+        example: closed
+        in: query
+        name: Status
+        required: true
+        schema: {type: string}
+      - description: A single or array of signal IDs
+        example: bde3700c9432f7a892a8bcac524a696177576e7620a16e71e886ac94af0cc3de
+        in: query
+        name: Signal IDs
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp25'}
+          description: Successful request
+      summary: Elastic Kibana Set Signal Status
+  tmp26:
+    post:
+      description: Update a Kibana case
+      parameters:
+      - description: Case ID to update
+        example: a95aa7e0-c00d-11ea-b18c-8920d0438dd6
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: The case title
+        example: Updated Test Case 3
+        in: query
+        name: Title
+        required: false
+        schema: {type: string}
+      - description: The case connector ID
+        example: .slack
+        in: query
+        name: Connector ID
+        required: false
+        schema: {type: string}
+      - description: the updated case description
+        example: Updated Test Case description
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: The updated case status
+        example: closed
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: The updated case tags
+        example: '''phishing'',''bec'''
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp26'}
+          description: Successful request
+      summary: Elastic Kibana Update Case
+  tmp27:
+    post:
+      description: Update an existing detection rule
+      parameters:
+      - description: Time from which data is analyzed each time the rule executes
+        example: now-70m
+        in: query
+        name: From
+        required: false
+        schema: {type: string}
+      - description: "The rule\u2019s description"
+        example: Process started by MS Office program - possible payload
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: Determines the query language, which must be kuery or lucene
+        example: kuery
+        in: query
+        name: Language
+        required: false
+        schema: {type: string}
+      - description: String array containing words and phrases to help categorize,
+          filter, and search rules
+        example: '''child process'',''ms office'''
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      - description: String array used to describe common reasons why the rule may
+          issue false-positive signals.
+        example: '''unknown reason'',''office not installed'''
+        in: query
+        name: False Positives
+        required: false
+        schema: {type: string}
+      - description: String array containing notes about or references to relevant
+          information about the rule.
+        example: '''https://threatreport.com/report.pd'',''https://doc.google.com/adsfds'''
+        in: query
+        name: References
+        required: false
+        schema: {type: string}
+      - description: 'Determines how often actions are taken. Options are: no_actions,
+          rule, 1h, 1d, 7d'
+        example: rule
+        in: query
+        name: Throttle
+        required: false
+        schema: {type: string}
+      - description: The rule version number
+        example: '1'
+        in: query
+        name: Version
+        required: false
+        schema: {type: string}
+      - description: 'Severity level of signals produced by the rule, which must be
+          one of the following: low,medium,high,critical'
+        example: low
+        in: query
+        name: Severity
+        required: true
+        schema: {type: string}
+      - description: Frequency of rule execution, using a date math range. For example,
+          1h means the rule runs every hour.
+        example: 1h
+        in: query
+        name: Interval
+        required: false
+        schema: {type: string}
+      - description: Determines whether the rule is enabled
+        example: 'false'
+        in: query
+        name: Enabled
+        required: false
+        schema: {type: boolean}
+      - description: "A numerical representation of the signal\u2019s severity from\
+          \ 0 to 100, where 0-21 (low), 22-47 (medium), 48-73 (high), 74-100 (critical)"
+        example: '50'
+        in: body
+        name: Risk Score
+        required: true
+        schema: {type: string}
+      - description: Maximum number of signals the rule can create during a single
+          execution.
+        example: '50'
+        in: body
+        name: Max Signals
+        required: false
+        schema: {type: string}
+      - description: Anomaly score threshold above which the rule creates signals.
+          Valid values are from 0 to 100. Required for machine learning rules
+        example: '50'
+        in: body
+        name: Anomaly Threshold
+        required: false
+        schema: {type: string}
+      - description: Query used by the rule to create a signal.
+        example: process.parent.name:EXCEL.EXE or process.parent.name:MSPUB.EXE or
+          process.parent.name:OUTLOOK.EXE or process.parent.name:POWERPNT.EXE or process.parent.name:VISIO.EXE
+          or process.parent.name:WINWORD.EXE
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: 'Data type on which the rule is based: query, save_query, machine_learning'
+        example: query
+        in: query
+        name: Type
+        required: true
+        schema: {type: string}
+      - description: Index to which signals detected by the rule are saved.
+        example: .siem-signals-my-kibana-space
+        in: query
+        name: Output Index
+        required: false
+        schema: {type: string}
+      - description: Kibana saved search used by the rule to create signals.
+        example: my-saved-query-rule
+        in: query
+        name: Saved ID
+        required: false
+        schema: {type: string}
+      - description: Unique ID used to identify rules. For example, when a rule is
+          converted from a third-party security solution
+        example: 1a8c3951-559c-451d-9f67-a4e2afd2f9d9
+        in: query
+        name: ID
+        required: false
+        schema: {type: string}
+      - description: Unique ID used to identify rules. For example, when a rule is
+          converted from a third-party security solution
+        example: 1a8c3951-559c-451d-9f67-a4e2afd2f9d9
+        in: query
+        name: Rule ID
+        required: false
+        schema: {type: string}
+      - description: Machine learning job ID the rule monitors for anomaly scores.
+          Required for machine-learning rules
+        example: 1a8c3951-559c-451d-9f67-a4e2afd2f9d9
+        in: query
+        name: Machine Learning Job ID
+        required: false
+        schema: {type: string}
+      - description: Indices on which the rule functions.
+        example: winlogbeat-
+        in: query
+        name: Index
+        required: false
+        schema: {type: string}
+      - description: "The rule\u2019s name."
+        example: MS Office child process
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: Notes to help investigate signals produced by the rule.
+        example: Look in multiple indicies for issue
+        in: query
+        name: Note
+        required: false
+        schema: {type: string}
+      - description: 'The action type used for sending notifications, can be: .slack,
+          .email, .webhook'
+        example: .slack
+        in: query
+        name: Action Type ID
+        required: false
+        schema: {type: string}
+      - description: Optionally groups actions by use cases. Use default for signal
+          notifications.
+        example: default
+        in: query
+        name: Action Group
+        required: false
+        schema: {type: string}
+      - description: The action connector ID
+        example: some-connector-id
+        in: query
+        name: Action Connector ID
+        required: false
+        schema: {type: string}
+      - description: The action message
+        example: New Alert Created
+        in: query
+        name: Action Message
+        required: false
+        schema: {type: string}
+      - description: The action To address
+        example: first.last@company.com
+        in: query
+        name: Action To
+        required: false
+        schema: {type: string}
+      - description: The action CC address
+        example: first.last@company.com
+        in: query
+        name: Action CC
+        required: false
+        schema: {type: string}
+      - description: The action BCC address
+        example: first.last@company.com
+        in: query
+        name: Action BCC
+        required: false
+        schema: {type: string}
+      - description: The action message subject
+        example: 'New Alert: {{context.rule.name}}'
+        in: query
+        name: Action Subject
+        required: false
+        schema: {type: string}
+      - description: The action body
+        example: 'New Alert: {{context.rule.name}}'
+        in: query
+        name: Action Body
+        required: false
+        schema: {type: string}
+      - description: Relevant attack framework
+        example: MITRE ATT&CK
+        in: query
+        name: Framework
+        required: false
+        schema: {type: string}
+      - description: The tactic ID
+        example: T0000
+        in: query
+        name: Tactic ID
+        required: false
+        schema: {type: string}
+      - description: The tactic name
+        example: Execution
+        in: query
+        name: Tactic Name
+        required: false
+        schema: {type: string}
+      - description: The tactic reference
+        example: https://attack.mitre.org/tactics/TA0002/
+        in: query
+        name: Tactic Reference
+        required: false
+        schema: {type: string}
+      - description: The technique ID
+        example: T1155
+        in: query
+        name: Technique ID
+        required: false
+        schema: {type: string}
+      - description: The technique name
+        example: AppleScript
+        in: query
+        name: Technique Name
+        required: false
+        schema: {type: string}
+      - description: The technique reference
+        example: https://attack.mitre.org/techniques/T1155/
+        in: query
+        name: Technique Reference
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp27'}
+          description: Successful request
+      summary: Elastic Kibana Update Detection Rule
+  tmp28:
+    post:
+      description: Updates an existing list container
+      parameters:
+      - description: The list containers version number
+        example: '1'
+        in: query
+        name: Version
+        required: false
+        schema: {type: string}
+      - description: The list containers unique identifier
+        example: my-test-list-container
+        in: query
+        name: List ID
+        required: true
+        schema: {type: string}
+      - description: "The list container\u2019s name"
+        example: test name for list container
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: Describes the list container
+        example: test list container
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp28'}
+          description: Successful request
+      summary: Elastic Kibana Update List Container
+  tmp29:
+    post:
+      description: Updates an existing list item
+      parameters:
+      - description: The list containers version number
+        example: '1'
+        in: query
+        name: Version
+        required: false
+        schema: {type: string}
+      - description: The list containers unique identifier
+        example: my-test-list-container
+        in: query
+        name: List ID
+        required: true
+        schema: {type: string}
+      - description: The list container item value
+        example: 1.1.1.1
+        in: query
+        name: Value
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp29'}
+          description: Successful request
+      summary: Elastic Kibana Update List Item
+  tmp3:
+    post:
+      description: Create a new detection rule
+      parameters:
+      - description: Time from which data is analyzed each time the rule executes
+        example: now-70m
+        in: query
+        name: From
+        required: false
+        schema: {type: string}
+      - description: "The rule\u2019s description"
+        example: Process started by MS Office program - possible payload
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: Determines the query language, which must be kuery or lucene
+        example: kuery
+        in: query
+        name: Language
+        required: false
+        schema: {type: string}
+      - description: String array containing words and phrases to help categorize,
+          filter, and search rules
+        example: '''child process'',''ms office'''
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      - description: String array used to describe common reasons why the rule may
+          issue false-positive signals.
+        example: '''unknown reason'',''office not installed'''
+        in: query
+        name: False Positives
+        required: false
+        schema: {type: string}
+      - description: String array containing notes about or references to relevant
+          information about the rule.
+        example: '''https://threatreport.com/report.pd'',''https://doc.google.com/adsfds'''
+        in: query
+        name: References
+        required: false
+        schema: {type: string}
+      - description: 'Determines how often actions are taken. Options are: no_actions,
+          rule, 1h, 1d, 7d'
+        example: rule
+        in: query
+        name: Throttle
+        required: false
+        schema: {type: string}
+      - description: The rule version number
+        example: '1'
+        in: query
+        name: Version
+        required: false
+        schema: {type: string}
+      - description: 'Severity level of signals produced by the rule, which must be
+          one of the following: low,medium,high,critical'
+        example: low
+        in: query
+        name: Severity
+        required: true
+        schema: {type: string}
+      - description: Frequency of rule execution, using a date math range. For example,
+          1h means the rule runs every hour.
+        example: 1h
+        in: query
+        name: Interval
+        required: false
+        schema: {type: string}
+      - description: Determines whether the rule is enabled
+        example: 'false'
+        in: query
+        name: Enabled
+        required: false
+        schema: {type: boolean}
+      - description: "A numerical representation of the signal\u2019s severity from\
+          \ 0 to 100, where 0-21 (low), 22-47 (medium), 48-73 (high), 74-100 (critical)"
+        example: '50'
+        in: body
+        name: Risk Score
+        required: true
+        schema: {type: string}
+      - description: Maximum number of signals the rule can create during a single
+          execution.
+        example: '50'
+        in: body
+        name: Max Signals
+        required: false
+        schema: {type: string}
+      - description: Anomaly score threshold above which the rule creates signals.
+          Valid values are from 0 to 100. Required for machine learning rules
+        example: '50'
+        in: body
+        name: Anomaly Threshold
+        required: false
+        schema: {type: string}
+      - description: Query used by the rule to create a signal.
+        example: process.parent.name:EXCEL.EXE or process.parent.name:MSPUB.EXE or
+          process.parent.name:OUTLOOK.EXE or process.parent.name:POWERPNT.EXE or process.parent.name:VISIO.EXE
+          or process.parent.name:WINWORD.EXE
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: 'Data type on which the rule is based: query, save_query, machine_learning'
+        example: query
+        in: query
+        name: Type
+        required: true
+        schema: {type: string}
+      - description: Index to which signals detected by the rule are saved.
+        example: .siem-signals-my-kibana-space
+        in: query
+        name: Output Index
+        required: false
+        schema: {type: string}
+      - description: Kibana saved search used by the rule to create signals.
+        example: my-saved-query-rule
+        in: query
+        name: Saved ID
+        required: false
+        schema: {type: string}
+      - description: Unique ID used to identify rules. For example, when a rule is
+          converted from a third-party security solution
+        example: 1a8c3951-559c-451d-9f67-a4e2afd2f9d9
+        in: query
+        name: Rule ID
+        required: false
+        schema: {type: string}
+      - description: Machine learning job ID the rule monitors for anomaly scores.
+          Required for machine-learning rules
+        example: 1a8c3951-559c-451d-9f67-a4e2afd2f9d9
+        in: query
+        name: Machine Learning Job ID
+        required: false
+        schema: {type: string}
+      - description: Indices on which the rule functions.
+        example: winlogbeat-
+        in: query
+        name: Index
+        required: false
+        schema: {type: string}
+      - description: "The rule\u2019s name."
+        example: MS Office child process
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: Notes to help investigate signals produced by the rule.
+        example: Look in multiple indicies for issue
+        in: query
+        name: Note
+        required: false
+        schema: {type: string}
+      - description: 'The action type used for sending notifications, can be: .slack,
+          .email, .webhook'
+        example: .slack
+        in: query
+        name: Action Type ID
+        required: false
+        schema: {type: string}
+      - description: Optionally groups actions by use cases. Use default for signal
+          notifications.
+        example: default
+        in: query
+        name: Action Group
+        required: false
+        schema: {type: string}
+      - description: The action connector ID
+        example: some-connector-id
+        in: query
+        name: Action Connector ID
+        required: false
+        schema: {type: string}
+      - description: The action message
+        example: New Alert Created
+        in: query
+        name: Action Message
+        required: false
+        schema: {type: string}
+      - description: The action To address
+        example: first.last@company.com
+        in: query
+        name: Action To
+        required: false
+        schema: {type: string}
+      - description: The action CC address
+        example: first.last@company.com
+        in: query
+        name: Action CC
+        required: false
+        schema: {type: string}
+      - description: The action BCC address
+        example: first.last@company.com
+        in: query
+        name: Action BCC
+        required: false
+        schema: {type: string}
+      - description: The action message subject
+        example: 'New Alert: {{context.rule.name}}'
+        in: query
+        name: Action Subject
+        required: false
+        schema: {type: string}
+      - description: The action body
+        example: 'New Alert: {{context.rule.name}}'
+        in: query
+        name: Action Body
+        required: false
+        schema: {type: string}
+      - description: Relevant attack framework
+        example: MITRE ATT&CK
+        in: query
+        name: Framework
+        required: false
+        schema: {type: string}
+      - description: The tactic ID
+        example: T0000
+        in: query
+        name: Tactic ID
+        required: false
+        schema: {type: string}
+      - description: The tactic name
+        example: Execution
+        in: query
+        name: Tactic Name
+        required: false
+        schema: {type: string}
+      - description: The tactic reference
+        example: https://attack.mitre.org/tactics/TA0002/
+        in: query
+        name: Tactic Reference
+        required: false
+        schema: {type: string}
+      - description: The technique ID
+        example: T1155
+        in: query
+        name: Technique ID
+        required: false
+        schema: {type: string}
+      - description: The technique name
+        example: AppleScript
+        in: query
+        name: Technique Name
+        required: false
+        schema: {type: string}
+      - description: The technique reference
+        example: https://attack.mitre.org/techniques/T1155/
+        in: query
+        name: Technique Reference
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Elastic Kibana Create Detection Rule
+  tmp4:
+    post:
+      description: Creates an exception container for detection rules
+      parameters:
+      - description: 'The type of exception container: detection or endpoint'
+        example: detection
+        in: query
+        name: Type
+        required: true
+        schema: {type: string}
+      - description: Describes the exception container
+        example: my exception container
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: The exception containers name
+        example: my-test-exception-container
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: Determines whether the exception container is available in all
+          Kibana spaces or just the space in which it is created
+        example: agnostic
+        in: query
+        name: Namespace Type
+        required: false
+        schema: {type: string}
+      - description: String array containing words and phrases to help categorize
+          exception containers.
+        example: Linux, Process
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Elastic Kibana Create Exception Container
+  tmp5:
+    post:
+      description: Creates an exception item and associates it with the specified
+        exception container.
+      parameters:
+      - description: List Container type. Common values are keyword, ip, ip_range
+        example: ip
+        in: query
+        name: Entry Container Type
+        required: false
+        schema: {type: string}
+      - description: Describes the exception item
+        example: test create exception item
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: Determines whether the exception item is available in all Kibana
+          spaces or just the space in which it is created
+        example: agnostic
+        in: query
+        name: Namespace Type
+        required: false
+        schema: {type: string}
+      - description: String array containing words and phrases to help categorize
+          exception containers.
+        example: Linux, Process
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      - description: 'The type of query: match, match_any, exists, lists, nested'
+        example: match
+        in: query
+        name: Entry Type
+        required: true
+        schema: {type: string}
+      - description: List container ID to add exception to
+        example: 8b3b58fc-a422-4f56-869a-a4d20f1c822e
+        in: query
+        name: Entry Container ID
+        required: false
+        schema: {type: string}
+      - description: The operator used to determine when the exception is used. Can
+          be included or excluded
+        example: included
+        in: query
+        name: Entry Operator
+        required: true
+        schema: {type: string}
+      - description: Comments about the exception item.
+        example: My comments about this exception item
+        in: query
+        name: Comments
+        required: false
+        schema: {type: string}
+      - description: A JSON field for non-standard entry field lists. If populated,
+          all other entry inputs will be ignored.
+        example: '[{''field'': ''process.name'',''operator'': ''included'',''type'':
+          ''exists''},{''field'': ''destination.ip,''operator'': ''included'',''type'':
+          ''match'', ''value'': ''123.123.123.123''}]'
+        in: query
+        name: Entry JSON
+        required: false
+        schema: {type: string}
+      - description: Field value or values. match is string, match_any is list. Not
+          required with exists or list
+        example: my_process.exe
+        in: query
+        name: Entry Value
+        required: false
+        schema: {type: string}
+      - description: The source event field used to define the exception
+        example: process.name
+        in: query
+        name: Entry Field
+        required: true
+        schema: {type: string}
+      - description: 'For endpoint rules only, defines the OS on which the exception
+          is implemented. Valid values are: os:windows, os:linux, os:macos'
+        example: os:linux
+        in: query
+        name: Endpoint Type
+        required: false
+        schema: {type: string}
+      - description: ID of the associated exception container
+        example: 8b3b58fc-a422-4f56-869a-a4d20f1c822e
+        in: query
+        name: List ID
+        required: true
+        schema: {type: string}
+      - description: Unique identifier of the exception item
+        example: 8b3b58fc-a422-4f56-869a-a4d20f1c822e
+        in: query
+        name: Item ID
+        required: false
+        schema: {type: string}
+      - description: Exception query type
+        example: simple
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      - description: "The exception item\u2019s name"
+        example: test item name for exception item
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Elastic Kibana Create Exception Item
+  tmp6:
+    post:
+      description: Create or update a Kibana space
+      parameters:
+      - description: Kibana space ID
+        example: my-kibana-space
+        in: query
+        name: ID
+        required: false
+        schema: {type: string}
+      - description: Kibana Space Name
+        example: my-kibana-space
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: Kibana space description
+        example: My space description
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: Initials for Kibana space
+        example: mks
+        in: query
+        name: Initials
+        required: false
+        schema: {type: string}
+      - description: Color for Kibana space
+        example: '#00000'
+        in: query
+        name: Color
+        required: false
+        schema: {type: string}
+      - description: URL of image for Kibana space
+        example: https://google.com/image.png
+        in: query
+        name: Image URL
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Elastic Kibana Create Kibana Space
+  tmp7:
+    post:
+      description: Creates a list container of common exceptions
+      parameters:
+      - description: The list containers unique identifier
+        example: 8b3b58fc-a422-4f56-869a-a4d20f1c822e
+        in: query
+        name: ID
+        required: false
+        schema: {type: string}
+      - description: The list containers version number
+        example: '1'
+        in: query
+        name: Version
+        required: false
+        schema: {type: string}
+      - description: Specifies the Elasticsearch data type of excludes the list container
+          holds
+        example: ip
+        in: query
+        name: Type
+        required: true
+        schema: {type: string}
+      - description: Describes the list container
+        example: test list container
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: "The list container\u2019s name"
+        example: test name for list container
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Elastic Kibana Create List Container
+  tmp8:
+    post:
+      description: Creates a list item and associate it with a specified list container
+      parameters:
+      - description: Unique identifer of the list item
+        example: 14339259-fd62-402c-971d-1c78ab9244fddmhgVHQBVZSnanJD2aFa
+        in: query
+        name: ID
+        required: false
+        schema: {type: string}
+      - description: The value used to evaluate exceptions
+        example: 123.123.123.123
+        in: query
+        name: Value
+        required: true
+        schema: {type: string}
+      - description: ID of the associated list container
+        example: dmhgVHQBVZSnanJD2aFa
+        in: query
+        name: List ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Elastic Kibana Create List Item
+  tmp9:
+    post:
+      description: Creates the .lists and .items indexes
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Elastic Kibana Create Lists Index
+tags:
+- {name: SIEM & Log Management}

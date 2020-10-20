@@ -1,0 +1,226 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        report: {type: string}
+      type: object
+    tmp1:
+      properties:
+        report: {type: string}
+      type: object
+    tmp2:
+      properties:
+        data_apiReportURL: {type: string}
+        data_blockSet: {type: string}
+        data_campaignBrandSet: {type: string}
+        data_domainSet: {type: string}
+        data_executableSet: {type: string}
+        data_extractedStringSet: {type: string}
+        data_feeds: {type: string}
+        data_filename: {type: string}
+        data_firstPublished: {type: string}
+        data_hasReport: {type: string}
+        data_id: {type: string}
+        data_label: {type: string}
+        data_lastPublished: {type: string}
+        data_malwareFamilySet: {type: string}
+        data_reportURL: {type: string}
+        data_senderEmailSet: {type: string}
+        data_senderIpSet: {type: string}
+        data_senderNameSet: {type: string}
+        data_spamUrlSet: {type: string}
+        data_subjectSet: {type: string}
+        data_threatDetailURL: {type: string}
+        data_threatType: {type: string}
+        success: {type: string}
+      type: object
+    tmp3:
+      properties:
+        report: {type: string}
+      type: object
+    tmp4:
+      properties:
+        data_actionURLs: {type: string}
+        data_brands: {type: string}
+        data_confirmedDate: {type: string}
+        data_feeds: {type: string}
+        data_id: {type: string}
+        data_ipDetail: {type: string}
+        data_isConfirmedPhishingWebsite: {type: string}
+        data_phishingURL: {type: string}
+        data_processingstate: {type: string}
+        data_reportedURLs: {type: string}
+        data_screenshot_url: {type: string}
+        success: {type: string}
+      type: object
+    tmp5:
+      properties:
+        screenshot: {type: string}
+      type: object
+    tmp6:
+      properties:
+        data_urlCount: {type: string}
+        success: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Cofense Intelligence
+  title: Cofense Intelligence
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Retrieve Aggregated Reports
+      parameters:
+      - description: 'The format of the report, either: bluecoat, cef, html or stix'
+        example: stix
+        in: query
+        name: Format
+        required: true
+        schema: {type: string}
+      - description: The seconds since epoch from which we should start returning
+          data. If omitted, the current time minus 24 hours is used as the default.
+        example: '1465588234'
+        in: query
+        name: Begin
+        required: false
+        schema: {type: string}
+      - description: The seconds since epoch from which we should end returning data.
+          If omitted, the current time is used as the default.
+        example: '1465588234'
+        in: query
+        name: End
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Aggregated Reports
+  tmp1:
+    post:
+      description: Retrieve a Malware Intelligence Report
+      parameters:
+      - description: The Threat ID for the report to retrieve
+        example: '2000'
+        in: query
+        name: Threat ID
+        required: true
+        schema: {type: string}
+      - description: 'The format of the report, either: bluecoat, cef, html or stix'
+        example: stix
+        in: query
+        name: Format
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Malware Intelligence Report
+  tmp2:
+    post:
+      description: Retrieve a Malware Campaign Report
+      parameters:
+      - description: The Threat ID of the Malware Campaign Report to retrieve.
+        example: '2000'
+        in: query
+        name: Threat ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Malware Campaign Report
+  tmp3:
+    post:
+      description: Retrieve a Phishing Intelligence Report
+      parameters:
+      - description: The Threat ID for the report to retrieve
+        example: '2000'
+        in: query
+        name: Threat ID
+        required: true
+        schema: {type: string}
+      - description: 'The format of the report, either: cef or stix'
+        example: stix
+        in: query
+        name: Format
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Phishing Intelligence Report
+  tmp4:
+    post:
+      description: Retrieve a Phishing Campaign Report
+      parameters:
+      - description: The Threat ID of the Phishing Campaign Report to retrieve.
+        example: '2000'
+        in: query
+        name: Threat ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Phishing Campaign Report
+  tmp5:
+    post:
+      description: Retrieve a Threat ID Screenshot
+      parameters:
+      - description: The Threat ID for the screenshot to retrieve
+        example: '6258068'
+        in: query
+        name: Threat ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Threat ID Screenshot
+  tmp6:
+    post:
+      description: Submit URL to Intelligence
+      parameters:
+      - description: The URL to submit to Intelligence.
+        example: https://www.google.com
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      - description: The feed to submit the URL, must have write access.
+        example: '200'
+        in: query
+        name: Feed
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Submit URL
+tags:
+- {name: Investigation}

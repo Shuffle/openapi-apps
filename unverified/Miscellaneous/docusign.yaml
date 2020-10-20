@@ -1,0 +1,150 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        envelopeId: {type: string}
+        status: {type: string}
+        statusDateTime: {type: string}
+        uri: {type: string}
+      type: object
+    tmp1:
+      properties:
+        folderId: {type: string}
+        hasSubFolders: {type: string}
+        itemCount: {type: string}
+        name: {type: string}
+        owner_email: {type: string}
+        owner_userId: {type: string}
+        owner_userName: {type: string}
+        subFolderCount: {type: string}
+        type: {type: string}
+        uri: {type: string}
+      type: object
+    tmp2:
+      properties:
+        agents: {type: string}
+        carbonCopies: {type: string}
+        currentRoutingOrder: {type: string}
+        editors: {type: string}
+        inPersonSigners: {type: string}
+        intermediaries: {type: string}
+        name: {type: string}
+        recipientCount: {type: string}
+        seals: {type: string}
+        signers_canSignOffline: {type: string}
+        signers_completedCount: {type: string}
+        signers_creationReason: {type: string}
+        signers_deliveryMethod: {type: string}
+        signers_email: {type: string}
+        signers_firstName: {type: string}
+        signers_isBulkRecipient: {type: string}
+        signers_lastName: {type: string}
+        signers_name: {type: string}
+        signers_note: {type: string}
+        signers_offlineAttributes_offlineSigningHash: {type: string}
+        signers_recipientId: {type: string}
+        signers_recipientIdGuid: {type: string}
+        signers_recipientSuppliesTabs: {type: string}
+        signers_recipientType: {type: string}
+        signers_requireIdLookup: {type: string}
+        signers_requireUploadSignature: {type: string}
+        signers_roleName: {type: string}
+        signers_routingOrder: {type: string}
+        signers_status: {type: string}
+        signers_userId: {type: string}
+        witnesses: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Docusign Docusign
+  title: Docusign Docusign
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Create a new envelope with one document and signer.
+      parameters:
+      - description: The document encoded in base64
+        example: JVBERi0xLjUKJb/3ov4KNDQgMCBvY...=
+        in: query
+        name: Document (base64)
+        required: true
+        schema: {type: string}
+      - description: The documents file extension
+        example: .pdf
+        in: query
+        name: File Extension
+        required: true
+        schema: {type: string}
+      - description: The name of the document
+        example: example.pdf
+        in: query
+        name: Document Name
+        required: true
+        schema: {type: string}
+      - description: Subject of the email to be sent out to signers.
+        example: Please sign this pdf
+        in: query
+        name: Email Subject
+        required: true
+        schema: {type: string}
+      - description: Comma separated list of emails of the people who needs to sign.
+          The position of each email should align with the name (ex. [1,2] and [one,two]).
+        example: example@example.com,example2@example.com
+        in: query
+        name: Signers Email
+        required: true
+        schema: {type: string}
+      - description: Comma separated list of names that needs to sign. The position
+          of each name should align with the name (ex. [1,2] and [one,two]).
+        example: Rick Roberts,Mary Sue
+        in: query
+        name: Signers Name
+        required: true
+        schema: {type: string}
+      - description: Status can be 'created' or 'sent'
+        example: sent
+        in: query
+        name: Status
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: DocuSign Create Envelope
+  tmp1:
+    post:
+      description: Get all folders.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: DocuSign Get Folders
+  tmp2:
+    post:
+      description: Get all recipient signature details for a particular envelope.
+      parameters:
+      - description: Envelope ID from where the document is housed.
+        example: 548d2e28-xxxx-xxxx-xxxx-3408c4d6fe6e
+        in: query
+        name: Envelope ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: DocuSign Get All Recipient Signature Details
+tags:
+- {name: Miscellaneous}

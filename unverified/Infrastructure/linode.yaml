@@ -1,0 +1,78 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        created_at: {type: string}
+        extra: {type: string}
+        id: {type: string}
+        image: {type: string}
+        name: {type: string}
+        private_ips: {type: string}
+        public_ips: {type: string}
+        size: {type: string}
+        state: {type: string}
+      type: object
+    tmp1:
+      properties:
+        previous_state: {type: string}
+      type: object
+    tmp2:
+      properties:
+        previous_state: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Linode Linode
+  title: Linode Linode
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: List all Linode instances
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Linode List Instances
+  tmp1:
+    post:
+      description: Start Linode instance
+      parameters:
+      - description: Linode Instance ID
+        example: ''
+        in: query
+        name: Instance ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Linode Start Instance
+  tmp2:
+    post:
+      description: Stop Linode instance
+      parameters:
+      - description: Linode Instance ID
+        example: ''
+        in: query
+        name: Instance ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Linode Stop Instance
+tags:
+- {name: Infrastructure}

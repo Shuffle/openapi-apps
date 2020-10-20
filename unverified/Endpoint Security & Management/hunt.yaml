@@ -1,0 +1,383 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        archived: {type: string}
+        createdOn: {type: string}
+        fileRepId: {type: string}
+        hostScanId: {type: string}
+        hostname: {type: string}
+        id: {type: string}
+        itemId: {type: string}
+        managed: {type: string}
+        name: {type: string}
+        scanId: {type: string}
+        signed: {type: string}
+        type: {type: string}
+      type: object
+    tmp1:
+      properties: {}
+      type: object
+    tmp2:
+      properties: {}
+      type: object
+    tmp4:
+      properties:
+        accountCount: {type: string}
+        applicationCount: {type: string}
+        artifactCount: {type: string}
+        autostartCount: {type: string}
+        completedOn: {type: string}
+        connectionCount: {type: string}
+        data_counts_compromised_accounts: {type: string}
+        data_counts_compromised_artifacts: {type: string}
+        data_counts_compromised_autostarts: {type: string}
+        data_counts_compromised_drivers: {type: string}
+        data_counts_compromised_files: {type: string}
+        data_counts_compromised_hosts: {type: string}
+        data_counts_compromised_memory: {type: string}
+        data_counts_compromised_modules: {type: string}
+        data_counts_compromised_processes: {type: string}
+        data_counts_compromised_scripts: {type: string}
+        data_counts_compromised_vulnerabilities: {type: string}
+        data_counts_suspicious_artifacts: {type: string}
+        data_counts_suspicious_autostarts: {type: string}
+        data_counts_suspicious_drivers: {type: string}
+        data_counts_suspicious_files: {type: string}
+        data_counts_suspicious_memory: {type: string}
+        data_counts_suspicious_modules: {type: string}
+        data_counts_suspicious_processes: {type: string}
+        data_counts_suspicious_scripts: {type: string}
+        data_counts_total_accounts: {type: string}
+        data_counts_total_applications: {type: string}
+        data_counts_total_artifacts: {type: string}
+        data_counts_total_autostarts: {type: string}
+        data_counts_total_connections: {type: string}
+        data_counts_total_drivers: {type: string}
+        data_counts_total_files: {type: string}
+        data_counts_total_hooks: {type: string}
+        data_counts_total_hosts: {type: string}
+        data_counts_total_memory: {type: string}
+        data_counts_total_modules: {type: string}
+        data_counts_total_processes: {type: string}
+        data_counts_total_scripts: {type: string}
+        data_counts_total_totalHosts: {type: string}
+        data_counts_unknown_artifacts: {type: string}
+        data_counts_unknown_autostarts: {type: string}
+        data_counts_unknown_drivers: {type: string}
+        data_counts_unknown_files: {type: string}
+        data_counts_unknown_memory: {type: string}
+        data_counts_unknown_modules: {type: string}
+        data_counts_unknown_processes: {type: string}
+        data_counts_unknown_scripts: {type: string}
+        driverCount: {type: string}
+        hookCount: {type: string}
+        hostCount: {type: string}
+        id: {type: string}
+        memoryCount: {type: string}
+        moduleCount: {type: string}
+        name: {type: string}
+        processCount: {type: string}
+        scriptCount: {type: string}
+        startedOn: {type: string}
+        targetId: {type: string}
+        totalHostCount: {type: string}
+        updatedOn: {type: string}
+        updating: {type: string}
+      type: object
+    tmp5:
+      properties:
+        archived: {type: string}
+        createdOn: {type: string}
+        data: {type: string}
+        data_scanId: {type: string}
+        data_scanName: {type: string}
+        data_updatedOn: {type: string}
+        endedOn: {type: string}
+        id: {type: string}
+        itemCount: {type: string}
+        jobId: {type: string}
+        message: {type: string}
+        name: {type: string}
+        progress: {type: string}
+        relatedId: {type: string}
+        startedOn: {type: string}
+        stats: {type: string}
+        stats_itemCounts_host-access_complete: {type: string}
+        stats_itemCounts_host-access_failed: {type: string}
+        stats_itemCounts_host-access_isComplete: {type: string}
+        stats_itemCounts_host-access_progress: {type: string}
+        stats_itemCounts_host-access_total: {type: string}
+        stats_itemCounts_scan_complete: {type: string}
+        stats_itemCounts_scan_failed: {type: string}
+        stats_itemCounts_scan_isComplete: {type: string}
+        stats_itemCounts_scan_progress: {type: string}
+        stats_itemCounts_scan_total: {type: string}
+        stats_status_active_count: {type: string}
+        stats_status_active_name: {type: string}
+        stats_status_active_order: {type: string}
+        stats_status_active_status: {type: string}
+        stats_status_analyze_count: {type: string}
+        stats_status_analyze_name: {type: string}
+        stats_status_analyze_order: {type: string}
+        stats_status_analyze_status: {type: string}
+        stats_status_cancelled_count: {type: string}
+        stats_status_cancelled_name: {type: string}
+        stats_status_cancelled_order: {type: string}
+        stats_status_cancelled_status: {type: string}
+        stats_status_completed_count: {type: string}
+        stats_status_completed_name: {type: string}
+        stats_status_completed_order: {type: string}
+        stats_status_completed_status: {type: string}
+        stats_status_created_count: {type: string}
+        stats_status_created_name: {type: string}
+        stats_status_created_order: {type: string}
+        stats_status_created_status: {type: string}
+        stats_status_failed_count: {type: string}
+        stats_status_failed_name: {type: string}
+        stats_status_failed_order: {type: string}
+        stats_status_failed_status: {type: string}
+        stats_status_total_count: {type: string}
+        stats_status_total_name: {type: string}
+        stats_status_total_status: {type: string}
+        stats_status_upload_count: {type: string}
+        stats_status_upload_name: {type: string}
+        stats_status_upload_order: {type: string}
+        stats_status_upload_status: {type: string}
+        stats_status_wait_count: {type: string}
+        stats_status_wait_name: {type: string}
+        stats_status_wait_order: {type: string}
+        stats_status_wait_status: {type: string}
+        status: {type: string}
+        type: {type: string}
+        userId: {type: string}
+      type: object
+    tmp6:
+      properties:
+        accountCount: {type: string}
+        applicationCount: {type: string}
+        artifactCount: {type: string}
+        autostartCount: {type: string}
+        completedOn: {type: string}
+        connectionCount: {type: string}
+        data_counts_compromised_accounts: {type: string}
+        data_counts_compromised_artifacts: {type: string}
+        data_counts_compromised_autostarts: {type: string}
+        data_counts_compromised_drivers: {type: string}
+        data_counts_compromised_files: {type: string}
+        data_counts_compromised_hosts: {type: string}
+        data_counts_compromised_memory: {type: string}
+        data_counts_compromised_modules: {type: string}
+        data_counts_compromised_processes: {type: string}
+        data_counts_compromised_scripts: {type: string}
+        data_counts_compromised_vulnerabilities: {type: string}
+        data_counts_suspicious_artifacts: {type: string}
+        data_counts_suspicious_autostarts: {type: string}
+        data_counts_suspicious_drivers: {type: string}
+        data_counts_suspicious_files: {type: string}
+        data_counts_suspicious_memory: {type: string}
+        data_counts_suspicious_modules: {type: string}
+        data_counts_suspicious_processes: {type: string}
+        data_counts_suspicious_scripts: {type: string}
+        data_counts_total_accounts: {type: string}
+        data_counts_total_applications: {type: string}
+        data_counts_total_artifacts: {type: string}
+        data_counts_total_autostarts: {type: string}
+        data_counts_total_connections: {type: string}
+        data_counts_total_drivers: {type: string}
+        data_counts_total_files: {type: string}
+        data_counts_total_hooks: {type: string}
+        data_counts_total_hosts: {type: string}
+        data_counts_total_memory: {type: string}
+        data_counts_total_modules: {type: string}
+        data_counts_total_processes: {type: string}
+        data_counts_total_scripts: {type: string}
+        data_counts_total_totalHosts: {type: string}
+        data_counts_unknown_artifacts: {type: string}
+        data_counts_unknown_autostarts: {type: string}
+        data_counts_unknown_drivers: {type: string}
+        data_counts_unknown_files: {type: string}
+        data_counts_unknown_memory: {type: string}
+        data_counts_unknown_modules: {type: string}
+        data_counts_unknown_processes: {type: string}
+        data_counts_unknown_scripts: {type: string}
+        driverCount: {type: string}
+        hookCount: {type: string}
+        hostCount: {type: string}
+        id: {type: string}
+        memoryCount: {type: string}
+        moduleCount: {type: string}
+        name: {type: string}
+        processCount: {type: string}
+        scriptCount: {type: string}
+        startedOn: {type: string}
+        targetId: {type: string}
+        totalHostCount: {type: string}
+        updatedOn: {type: string}
+        updating: {type: string}
+      type: object
+    tmp7:
+      properties:
+        accessibleAddressCont: {type: string}
+        activeAgentCont: {type: string}
+        deleted: {type: string}
+        id: {type: string}
+        lastScannedOn: {type: string}
+        name: {type: string}
+        reachableAddressCont: {type: string}
+        totalAddressCont: {type: string}
+      type: object
+    tmp8:
+      properties:
+        userTaskId: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Infocyte Hunt
+  title: Infocyte Hunt
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get an alert its ID
+      parameters:
+      - description: ID of a specific alert to get information on
+        example: 0c0aa083-b4a7-40d3-b527-dd93df9ce3ee
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Infocyte Hunt Alert Search
+  tmp1:
+    post:
+      description: Archive alerts will archive all active alerts, or a specific alert
+        if an ID is passed
+      parameters:
+      - description: Optional ID of a specific alert to archive
+        example: ca295e3a-e488-4f4e-ae6f-2fd20e683755
+        in: query
+        name: Alert ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Infocyte Hunt Archive Alerts
+  tmp2:
+    post:
+      description: Cancel a task that is currently running
+      parameters:
+      - description: Cancel task with the given task id
+        example: 1265802a-b7df-43f1-ad0b-47a470fcd286
+        in: query
+        name: Task Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Infocyte Hunt Cancel
+  tmp3:
+    post:
+      description: Infocyte Hunt Get and filter alerts.
+      parameters:
+      - description: Get Only New Alerts
+        example: ''
+        in: query
+        name: New Alerts
+        required: true
+        schema: {type: boolean}
+      - description: Get more detailed information about alerts. (Verbose)
+        example: ''
+        in: query
+        name: Detailed
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200': {description: Successful request}
+      summary: Infocyte Hunt Get Alerts
+  tmp4:
+    post:
+      description: Retrieve a history of all scans performed associated with the access
+        token
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Infocyte Hunt Get All Scans
+  tmp5:
+    post:
+      description: Get all tasks the user has run
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Infocyte Hunt Get All Tasks
+  tmp6:
+    post:
+      description: Retrieve scan information by scan ID
+      parameters:
+      - description: ID of a specific scan to get information on
+        example: 0396a2dd-b4e3-40fd-8ce9-0d4206b4ee0b
+        in: query
+        name: Scan ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Infocyte Hunt Get Scan
+  tmp7:
+    post:
+      description: List all target groups associated with a given account
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Infocyte Hunt Get Targets
+  tmp8:
+    post:
+      description: Scan a target group
+      parameters:
+      - description: Scan hosts within this specific target group
+        example: 9259b759-2320-44f6-9801-2acef3c9f66d
+        in: query
+        name: Target Group
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Infocyte Hunt Scan
+tags:
+- {name: Endpoint Security & Management}

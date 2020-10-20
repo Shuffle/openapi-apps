@@ -1,0 +1,137 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        as_name: {type: string}
+        blacklist_description: {type: string}
+        blacklist_first_seen: {type: string}
+        blacklist_last_seen: {type: string}
+        blacklist_source: {type: string}
+        classification: {type: string}
+        creation_time: {type: string}
+        dnssec: {type: string}
+        domain: {type: string}
+        domain_consonants: {type: string}
+        domain_lenght: {type: string}
+        email: {type: string}
+        entropy: {type: string}
+        hostname: {type: string}
+        message: {type: string}
+        modification_time: {type: string}
+        nameserver: {type: string}
+        registrant_name: {type: string}
+        resolved_ip_ip_addr: {type: string}
+        resolved_ip_timestamp: {type: string}
+        status: {type: string}
+        tag: {type: string}
+        tld: {type: string}
+        type: {type: string}
+        whois_server: {type: string}
+      type: object
+    tmp1:
+      properties:
+        address: {type: string}
+        asn_cidr: {type: string}
+        asn_country_code: {type: string}
+        asn_date: {type: string}
+        asn_registry: {type: string}
+        blacklist_description: {type: string}
+        blacklist_first_seen: {type: string}
+        blacklist_last_seen: {type: string}
+        blacklist_source: {type: string}
+        cidr: {type: string}
+        classification: {type: string}
+        country_code: {type: string}
+        creation_time: {type: string}
+        email: {type: string}
+        id: {type: string}
+        ip_addr: {type: string}
+        last_updated: {type: string}
+        location_lat: {type: string}
+        location_lon: {type: string}
+        message: {type: string}
+        modification_time: {type: string}
+        registrant_name: {type: string}
+        tag: {type: string}
+        type: {type: string}
+      type: object
+    tmp2:
+      properties:
+        blacklist_description: {type: string}
+        blacklist_first_seen: {type: string}
+        blacklist_last_seen: {type: string}
+        blacklist_source: {type: string}
+        classification: {type: string}
+        creation_time: {type: string}
+        domain: {type: string}
+        hostname: {type: string}
+        message: {type: string}
+        modification_time: {type: string}
+        tag: {type: string}
+        tld: {type: string}
+        type: {type: string}
+        url: {type: string}
+        urlchecksum: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Maltiverse Maltiverse
+  title: Maltiverse Maltiverse
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Maltiverse Hostname Lookup
+      parameters:
+      - description: Hostname to lookup
+        example: example.com
+        in: query
+        name: Hostname
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Maltiverse Hostname Lookup
+  tmp1:
+    post:
+      description: Maltiverse IP Lookup
+      parameters:
+      - description: IP Address to lookup
+        example: 1.2.3.4
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Maltiverse IP Lookup
+  tmp2:
+    post:
+      description: Maltiverse URL Lookup
+      parameters:
+      - description: URL to lookup
+        example: http://example.com/foo/bar
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Maltiverse URL Lookup
+tags:
+- {name: Investigation}

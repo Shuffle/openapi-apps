@@ -1,0 +1,445 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        rejected_indicators: {type: string}
+        threat_indicator_count: {type: string}
+        threat_name: {type: string}
+        threat_note: {type: string}
+        threat_published: {type: string}
+      type: object
+    tmp1:
+      properties:
+        ids: {type: string}
+        num_closed: {type: string}
+      type: object
+    tmp2:
+      properties:
+        alerts: {type: string}
+        created_time: {type: string}
+        id: {type: string}
+        source: {type: string}
+        status: {type: string}
+        title: {type: string}
+      type: object
+    tmp3:
+      properties:
+        id: {type: string}
+        links: {type: string}
+        logset_info: {type: string}
+        name: {type: string}
+        retention_period: {type: string}
+        source_type: {type: string}
+        structures: {type: string}
+        token_seed: {type: string}
+        tokens: {type: string}
+        user_data: {type: string}
+      type: object
+    tmp4:
+      properties:
+        id: {type: string}
+        links: {type: string}
+        logset_info: {type: string}
+        name: {type: string}
+        retention_period: {type: string}
+        source_type: {type: string}
+        structures: {type: string}
+        token_seed: {type: string}
+        tokens: {type: string}
+        user_data: {type: string}
+      type: object
+    tmp5:
+      properties:
+        events: {type: string}
+        leql_during_from: {type: string}
+        leql_during_time_range: {type: string}
+        leql_during_to: {type: string}
+        leql_statement: {type: string}
+        logs: {type: string}
+        only_link: {type: string}
+      type: object
+    tmp6:
+      properties:
+        during_from: {type: string}
+        during_time_range: {type: string}
+        during_to: {type: string}
+        from: {type: string}
+        groups: {type: string}
+        groups_timeseries: {type: string}
+        leql: {type: string}
+        logs: {type: string}
+        only_link: {type: string}
+        others: {type: string}
+        statement: {type: string}
+        statistics: {type: string}
+        stats: {type: string}
+        timeseries: {type: string}
+        to: {type: string}
+      type: object
+    tmp7:
+      properties:
+        rejected_indicators: {type: string}
+        threat_indicator_count: {type: string}
+        threat_name: {type: string}
+        threat_note: {type: string}
+        threat_published: {type: string}
+      type: object
+    tmp8:
+      properties:
+        alerts_first_event_time: {type: string}
+        alerts_type: {type: string}
+        alerts_type_description: {type: string}
+        created_time: {type: string}
+        id: {type: string}
+        source: {type: string}
+        status: {type: string}
+        title: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Rapid7 Insightidr
+  title: Rapid7 Insightidr
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAFCElEQVR4nO2dPXIbRxCFeyEUEIqIQDOhzC3l0gmsI9ARICekT2D5BKZPIPkEIhMV4MRHsHUCybFraTOhgAh0SBaEcUDDIl2SuLvTfzN4X4zq6Rq8ed07mMUUFMl8tHdIRfEyNg64QaAfh9PqyDqNGAqOILNReVwUdMARC3ycEOhke1odWudRFxZhERGdj8uLe0T3ueKBzzOcVGzfnQSsyc3HZeCMB2qworPhz9UD6zT+D7vqIS47PLmYSCIQly0eBCaWAMRlTKfzePjqj7dmw1sNDIRZrd5YLm4xYXmwY2BXOcS/fJREH/T6y8Hg5OxCazzxUvie6G/pMcDdXF12F+fj8q3WeCrlCq7lC402RaV57/WXA41xQD00Frpagw3X8oekc6ltN+Ap0R+Six37WBvO+bi8kIirKiy4lj/uEd1fHOxucceFYwG6uuwuuGOqCwv7Wj7h7rfUhbUzqba0xwT1eDfafcAVC6UQ/Een6P7JFcusmdbY19qEhwWJeeSYNzgWEAHCShgp1+eIayasVVh+aTU2kMdMWF9Mz/6SjJ/7D9+zUXksGT/WtbIthZqH2izw/oJwtsIC8cS4lqmw0Ge1I4UjSKbCku6zgB1ZlsJN2BjVoq07ZimsnEmhDBJBWKAGbc5rmQsrhPDaOodUmI/KI4tx25zXMhfW9vT0CWe8QOF7zniuKOgH6xTqYi4sbrYnpy+scwAZCitXpF56qMu7UfmkyechrESw/hvOTkG/Nvq8VCImhPCtdQrgmqyENZyeHlvnIEEqe1c3yUpYwA8QlnNm471n1jm0AcJyTkHFc+sc1jTZoO0K5qGOdi+ycT92X2/QHtX5KBzLMSk27WsgrJZsnFs1BMICIkBYbVDYiE25DBJBWK3IdSOWEwjLIfPR3qF1DrFAWA1RadozuLEWwgIimAvL6rhtKzqdx9JDpN60rzEXVkrHbS2vaUsNe2GBLIGwaqLRtOdSBokgLNCAJv94DWHVQOOVstnTcl96jFiKQPu1PyuYx53Mnpb7RaBfLHOoA8rgNU3mwdSxUhAVaAdK4R3ArdoBYQERIKzPEAr62jqHVMn6ZopYUAY/0HQu4FhABAjrE8Ct4jAR1nxcvrAYF+hh5VjfGY1bixDoxDoHT7Rxb5TCj7A9rQ6lx8i5DBIZCEv6DhjgA3Vheb8DRqNpT2lxtZ0PlEIDvC8uDlSF5b6vwD8C3iLGveFYN9B4EdX94mJCTVjeX8JscjpyE4i92EHPsZy/hLkzqbasc/BE7MUOKIWKJFQGf4oNoCIs7xOK/7q6zXBSPYuNAcdSIpXfR7kWmbiwvLvVe6LflYZy/fsoN6LC8v4kSES0M6keWefgBc6WQNaxnD8JauHdtYn4+0wxYW3iZIIPoHkHIgtMRFgpuJUW3udCyrXZhWV9YWNdUAZl54BdWNYXNnrC8wVL0guLVVjebX+Nllt5umDpJr3+ciA9BtslTamIatPRWlQsjrU42N3iiKOB1vEYjwtNs69kEdbVZXfBEUeDTT0eo/2wEi0sjysT3MbiCThKWKmJSqNpJfIzL73+cmC1rdK6eZ+N9n5jzEOFwcnZhXUOWljv07US1vybh49otfqKO5kcsD7RYS2oNe0ca7V6w5yHOGoTbnSiw4ug1jQWlpf+AVzjTVBrGiWVqqi0Jl9rfnr95cB7v1jbsVIVVS54daZPcaew/m3Uk+upUiWE8Dr2nT4P/AN9RphNllqcOgAAAABJRU5ErkJggg==
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Add indicators to a threat with the given threat key.
+      parameters:
+      - description: The Threat Key of the thread to update
+        example: 82313b20-d991-4ea8-a44b-6f9d5ddbb306
+        in: query
+        name: Threat Key
+        required: true
+        schema: {type: string}
+      - description: A list of IPs
+        example: '[''123.123.123.123'']'
+        in: query
+        name: IPs
+        required: false
+        schema: {type: string}
+      - description: A list of hashes
+        example: '[''b95663ec7339033cf1fde459a34b6606'']'
+        in: query
+        name: Hashes
+        required: false
+        schema: {type: string}
+      - description: a list of domains
+        example: '[''rapid.com'']'
+        in: query
+        name: Domain Names
+        required: false
+        schema: {type: string}
+      - description: a list of URLs
+        example: '[''https://myuniqueexample.com/endpoint'', ''https://google.com'']'
+        in: query
+        name: URLs
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Rapid7 InsightIDR Add Indicators to Threat
+  tmp1:
+    post:
+      description: Close all investigations that match the parameters provided.
+      parameters:
+      - description: The name of an investigation source. Only investigations from
+          this source will be closed.
+        example: ALERT
+        in: query
+        name: Source
+        required: true
+        schema: {type: string}
+      - description: The category of alerts that should be closed. This parameter
+          is required if the source is ALERT and ignored for other sources.
+        example: Lateral Movement - Service Account
+        in: query
+        name: Alert Type
+        required: false
+        schema: {type: string}
+      - description: Only investigations whose createTime is after this date will
+          be closed.  If you want to use a relative time, see the README for details.
+        example: '2020-01-10T00:00:00Z'
+        in: query
+        name: From
+        required: true
+        schema: {type: string}
+      - description: Only investigations whose createTime is before this date will
+          be closed.  If you want to use a relative time, see the README for details.
+        example: '2020-04-21T00:00:00Z'
+        in: query
+        name: To
+        required: true
+        schema: {type: string}
+      - description: If this parameter is not specified then there is no maximum.
+          If this limit is exceeded, then the task will fail and nothing will be closed.
+        example: '1'
+        in: body
+        name: Max Investigations To Close
+        required: false
+        schema: {type: string}
+      - description: HTTP errors will contain more detail about the request and response
+          if selected.
+        example: ''
+        in: query
+        name: Verbose Errors
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Rapid7 InsightIDR Bulk Close Investigations
+  tmp2:
+    post:
+      description: Retrieve investigations matching the given parameters.
+      parameters:
+      - description: Only investigations whose createTime is after this date will
+          be returned.  If you want to use a relative time, see the README for details.
+        example: '2020-01-10T00:00:00Z'
+        in: query
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: Only investigations whose createTime is before this date will
+          be returned.  If you want to use a relative time, see the README for details.
+        example: '2020-04-21T00:00:00Z'
+        in: query
+        name: End Time
+        required: false
+        schema: {type: string}
+      - description: The maximum number of results to return. Results are sorted by
+          createTime in descending order.
+        example: '50'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: A comma separated list of statuses. Only investigations whose
+          status matches one of the entries in the list will be returned.
+        example: open,closed
+        in: query
+        name: Statuses
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Rapid7 InsightIDR Get Investigations
+  tmp3:
+    post:
+      description: Get log from specific ID
+      parameters:
+      - description: The specific log ID from account
+        example: 991be941-5a85-4593-91c1-eea02a41debd
+        in: query
+        name: Log ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Rapid7 InsightIDR Get Log
+  tmp4:
+    post:
+      description: Get all logs
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Rapid7 InsightIDR Get Logs
+  tmp5:
+    post:
+      description: Query your Log entries using a LEQL query.
+      parameters:
+      - description: The specific log ID from account
+        example: 991be941-5a85-4593-91c1-eea02a41debd
+        in: query
+        name: Log ID
+        required: true
+        schema: {type: string}
+      - description: A valid LEQL query to run against the log.
+        example: where(/Error/)
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: Upper bound of the time range you want to query against.
+        example: 2020-09-17T18:41:37+00:00 or 1600368097846
+        in: query
+        name: To
+        required: true
+        schema: {type: string}
+      - description: Lower bound of the time range you want to query against.
+        example: 2020-09-17T18:24:57+00:00 or 1600367097846
+        in: query
+        name: From
+        required: true
+        schema: {type: string}
+      - description: Use a Time Range for your query. Must use Time Range or 'to/from'
+          inputs.
+        example: Today
+        in: query
+        name: Time Range
+        required: false
+        schema: {type: string}
+      - description: Number of log entries to return per page.
+        example: '50'
+        in: query
+        name: Per Page
+        required: false
+        schema: {type: string}
+      - description: The earlier sequence number of a log entry to start searching
+          from..
+        example: T
+        in: query
+        name: Sequence Number
+        required: false
+        schema: {type: string}
+      - description: Return only the URL if 'True' and complete Query Request if 'False'.
+          Use ID with 'Get Long Running Query' Task.
+        example: 'False'
+        in: query
+        name: Long Running Query Link
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Rapid7 InsightIDR Get Query
+  tmp6:
+    post:
+      description: Used to query your Log using a Saved Query.
+      parameters:
+      - description: The specific saved query.
+        example: 991be941-5a85-4593-91c1-eea02a41debd
+        in: query
+        name: Saved Query
+        required: true
+        schema: {type: string}
+      - description: Number of log entries to return per page.
+        example: '50'
+        in: query
+        name: Per Page
+        required: false
+        schema: {type: string}
+      - description: The earlier sequence number of a log entry to start searching
+          from..
+        example: T
+        in: query
+        name: Sequence Number
+        required: false
+        schema: {type: string}
+      - description: Upper bound of the time range you want to query against.
+        example: 2020-09-17T18:41:37+00:00 or 1600368097846
+        in: query
+        name: To
+        required: false
+        schema: {type: string}
+      - description: Lower bound of the time range you want to query against.
+        example: 2020-09-17T18:24:57+00:00 or 1600367097846
+        in: query
+        name: From
+        required: false
+        schema: {type: string}
+      - description: Return only the URL if 'True' and complete Query Request if 'False'.
+          Use ID with 'Get Long Running Query' Task.
+        example: 'False'
+        in: query
+        name: Long Running Query Link
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Rapid7 InsightIDR Get a Saved Query
+  tmp7:
+    post:
+      description: Replace indicators for a threat with the given threat key.
+      parameters:
+      - description: The Threat Key of the thread to update
+        example: 82313b20-d991-4ea8-a44b-6f9d5ddbb306
+        in: query
+        name: Threat Key
+        required: true
+        schema: {type: string}
+      - description: A list of IPs
+        example: '[''123.123.123.123'']'
+        in: query
+        name: IPs
+        required: false
+        schema: {type: string}
+      - description: A list of hashes
+        example: '[''b95663ec7339033cf1fde459a34b6606'']'
+        in: query
+        name: Hashes
+        required: false
+        schema: {type: string}
+      - description: a list of domains
+        example: '[''rapid.com'']'
+        in: query
+        name: Domain Names
+        required: false
+        schema: {type: string}
+      - description: a list of URLs
+        example: '[''https://myuniqueexample.com/endpoint'', ''https://google.com'']'
+        in: query
+        name: URLs
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Rapid7 InsightIDR Replace Indicators for Threat
+  tmp8:
+    post:
+      description: Set the status of the investigation with the given id.
+      parameters:
+      - description: 'The status to set the investigation to. Valid values are: OPEN,
+          CLOSED.'
+        example: CLOSED
+        in: query
+        name: Status
+        required: true
+        schema: {type: string}
+      - description: The ID of the investigation
+        example: 19b5e39e-1bdd-4a0a-a840-86db7ee6fba5
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Rapid7 InsightIDR Set Investigation Status
+tags:
+- {name: SIEM & Log Management}

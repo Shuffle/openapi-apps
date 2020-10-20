@@ -1,0 +1,172 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        task_id: {type: string}
+      type: object
+    tmp1:
+      properties:
+        task_id: {type: string}
+      type: object
+    tmp2:
+      properties:
+        attachment: {type: string}
+      type: object
+    tmp3:
+      properties:
+        analysis_link: {type: string}
+      type: object
+    tmp4:
+      properties:
+        task_added_on: {type: string}
+        task_category: {type: string}
+        task_completed_on: {type: string}
+        task_custom: {type: string}
+        task_enforce_timeout: {type: string}
+        task_errors: {type: string}
+        task_id: {type: string}
+        task_machine: {type: string}
+        task_memory: {type: string}
+        task_options: {type: string}
+        task_owner: {type: string}
+        task_package: {type: string}
+        task_platform: {type: string}
+        task_priority: {type: string}
+        task_sample_id: {type: string}
+        task_status: {type: string}
+        task_tags: {type: string}
+        task_target: {type: string}
+        task_timeout: {type: string}
+      type: object
+    tmp5:
+      properties:
+        category: {type: string}
+        json: {type: string}
+        machine_name: {type: string}
+        score: {type: string}
+        status: {type: string}
+        task_end: {type: string}
+        task_start: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Cuckoo Cuckoo Sandbox
+  title: Cuckoo Cuckoo Sandbox
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Adds a File to the list of pending tasks to be processed and analyzed.
+      parameters:
+      - description: The File to submit to Cuckoo for analysis
+        example: malware.exe
+        in: query
+        name: file
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Cuckoo Analyze File
+  tmp1:
+    post:
+      description: Adds a URL to the list of pending tasks to be processed and analyzed.
+      parameters:
+      - description: The URL to submit to Cuckoo for analysis
+        example: http://google.com
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Cuckoo Analyze URL
+  tmp2:
+    post:
+      description: Returns the full task report generated out of the analysis of the
+        task associated with the specified ID
+      parameters:
+      - description: The Task ID of the Report Returned
+        example: '13'
+        in: body
+        name: Task ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Cuckoo Full Task Report
+  tmp3:
+    post:
+      description: Returns the analysis summary link.
+      parameters:
+      - description: The Task ID of the Report Returned
+        example: '13'
+        in: body
+        name: Task ID
+        required: true
+        schema: {type: string}
+      - description: UI Host address
+        example: https://10.20.10.10:8000
+        in: query
+        name: UI Host
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Cuckoo Get Analysis Summary Link
+  tmp4:
+    post:
+      description: Returns the task summary.
+      parameters:
+      - description: The Task ID of the Report Returned
+        example: '13'
+        in: body
+        name: Task ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Cuckoo Task Status
+  tmp5:
+    post:
+      description: Returns the report summary generated out of the analysis of the
+        task associated with the specified ID
+      parameters:
+      - description: The Task ID of the Report Returned
+        example: '13'
+        in: body
+        name: Task ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Cuckoo Report Summary
+tags:
+- {name: Investigation}

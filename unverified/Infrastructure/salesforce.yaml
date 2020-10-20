@@ -1,0 +1,6631 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        id: {type: string}
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        id: {type: string}
+        success: {type: string}
+      type: object
+    tmp10:
+      properties:
+        success: {type: string}
+      type: object
+    tmp11:
+      properties:
+        success: {type: string}
+      type: object
+    tmp12:
+      properties:
+        success: {type: string}
+      type: object
+    tmp13:
+      properties:
+        success: {type: string}
+      type: object
+    tmp14:
+      properties:
+        AccountNumber: {type: string}
+        AccountSource: {type: string}
+        Active__c: {type: string}
+        AnnualRevenue: {type: string}
+        Attributes_type: {type: string}
+        Attributes_url: {type: string}
+        BillingAddress: {type: string}
+        BillingCity: {type: string}
+        BillingCountry: {type: string}
+        BillingGeocodeAccuracy: {type: string}
+        BillingLatitude: {type: string}
+        BillingLongitude: {type: string}
+        BillingPostalCode: {type: string}
+        BillingState: {type: string}
+        BillingStreet: {type: string}
+        CleanStatus: {type: string}
+        CreatedById: {type: string}
+        CreatedDate: {type: string}
+        CustomerPriority__c: {type: string}
+        DandbCompanyId: {type: string}
+        Description: {type: string}
+        DunsNumber: {type: string}
+        Fax: {type: string}
+        Industry: {type: string}
+        IsDeleted: {type: string}
+        Jigsaw: {type: string}
+        JigsawCompanyId: {type: string}
+        LastActivityDate: {type: string}
+        LastModifiedById: {type: string}
+        LastModifiedDate: {type: string}
+        LastReferencedDate: {type: string}
+        LastViewedDate: {type: string}
+        MasterRecordId: {type: string}
+        NaicsCode: {type: string}
+        NaicsDesc: {type: string}
+        Name: {type: string}
+        NumberOfEmployees: {type: string}
+        NumberofLocations__c: {type: string}
+        OwnerId: {type: string}
+        Ownership: {type: string}
+        ParentId: {type: string}
+        Phone: {type: string}
+        PhotoUrl: {type: string}
+        Rating: {type: string}
+        SLAExpirationDate__c: {type: string}
+        SLASerialNumber__c: {type: string}
+        SLA__c: {type: string}
+        ShippingAddress: {type: string}
+        ShippingCity: {type: string}
+        ShippingCountry: {type: string}
+        ShippingGeocodeAccuracy: {type: string}
+        ShippingLatitude: {type: string}
+        ShippingLongitude: {type: string}
+        ShippingPostalCode: {type: string}
+        ShippingState: {type: string}
+        ShippingStreet: {type: string}
+        Sic: {type: string}
+        SicDesc: {type: string}
+        Site: {type: string}
+        SystemModstamp: {type: string}
+        TickerSymbol: {type: string}
+        Tradestyle: {type: string}
+        Type: {type: string}
+        UpsellOpportunity__c: {type: string}
+        Website: {type: string}
+        YearStarted: {type: string}
+      type: object
+    tmp15:
+      properties:
+        AccountId: {type: string}
+        AssetId: {type: string}
+        CaseNumber: {type: string}
+        ClosedDate: {type: string}
+        ContactEmail: {type: string}
+        ContactFax: {type: string}
+        ContactId: {type: string}
+        ContactMobile: {type: string}
+        ContactPhone: {type: string}
+        CreatedById: {type: string}
+        CreatedDate: {type: string}
+        Description: {type: string}
+        EngineeringReqNumber__c: {type: string}
+        Id: {type: string}
+        IsClosed: {type: string}
+        IsDeleted: {type: string}
+        IsEscalated: {type: string}
+        LastModifiedById: {type: string}
+        LastModifiedDate: {type: string}
+        LastReferencedDate: {type: string}
+        LastViewedDate: {type: string}
+        Origin: {type: string}
+        OwnerId: {type: string}
+        ParentId: {type: string}
+        PotentialLiability__c: {type: string}
+        Priority: {type: string}
+        Product__c: {type: string}
+        Reason: {type: string}
+        SLAViolation__c: {type: string}
+        SourceId: {type: string}
+        Status: {type: string}
+        Subject: {type: string}
+        SuppliedCompany: {type: string}
+        SuppliedEmail: {type: string}
+        SuppliedName: {type: string}
+        SuppliedPhone: {type: string}
+        SystemModstamp: {type: string}
+        Type: {type: string}
+        attributes_type: {type: string}
+        attributes_url: {type: string}
+      type: object
+    tmp16:
+      properties:
+        case_comments: {type: string}
+      type: object
+    tmp17:
+      properties:
+        AccountId: {type: string}
+        AssistantName: {type: string}
+        AssistantPhone: {type: string}
+        Birthdate: {type: string}
+        CleanStatus: {type: string}
+        CreatedById: {type: string}
+        CreatedDate: {type: string}
+        Department: {type: string}
+        Description: {type: string}
+        Email: {type: string}
+        EmailBouncedDate: {type: string}
+        EmailBouncedReason: {type: string}
+        Fax: {type: string}
+        FirstName: {type: string}
+        HomePhone: {type: string}
+        Id: {type: string}
+        IsDeleted: {type: string}
+        IsEmailBounced: {type: string}
+        Jigsaw: {type: string}
+        JigsawContactId: {type: string}
+        LastActivityDate: {type: string}
+        LastCURequestDate: {type: string}
+        LastCUUpdateDate: {type: string}
+        LastModifiedById: {type: string}
+        LastModifiedDate: {type: string}
+        LastName: {type: string}
+        LastReferencedDate: {type: string}
+        LastViewedDate: {type: string}
+        LeadSource: {type: string}
+        MailingAddress: {type: string}
+        MailingCity: {type: string}
+        MailingCountry: {type: string}
+        MailingGeocodeAccuracy: {type: string}
+        MailingLatitude: {type: string}
+        MailingLongitude: {type: string}
+        MailingPostalCode: {type: string}
+        MailingState: {type: string}
+        MailingStreet: {type: string}
+        MasterRecordId: {type: string}
+        MobilePhone: {type: string}
+        Name: {type: string}
+        OtherAddress: {type: string}
+        OtherCity: {type: string}
+        OtherCountry: {type: string}
+        OtherGeocodeAccuracy: {type: string}
+        OtherLatitude: {type: string}
+        OtherLongitude: {type: string}
+        OtherPhone: {type: string}
+        OtherPostalCode: {type: string}
+        OtherState: {type: string}
+        OtherStreet: {type: string}
+        OwnerId: {type: string}
+        Phone: {type: string}
+        PhotoUrl: {type: string}
+        ReportsToId: {type: string}
+        Salutation: {type: string}
+        SystemModstamp: {type: string}
+        Title: {type: string}
+      type: object
+    tmp18:
+      properties:
+        Address: {type: string}
+        AnnualRevenue: {type: string}
+        Attributes_type: {type: string}
+        Attributes_url: {type: string}
+        City: {type: string}
+        CleanStatus: {type: string}
+        Company: {type: string}
+        CompanyDunsNumber: {type: string}
+        ConvertedAccountId: {type: string}
+        ConvertedContactId: {type: string}
+        ConvertedDate: {type: string}
+        ConvertedOpportunityId: {type: string}
+        Country: {type: string}
+        CreatedById: {type: string}
+        CreatedDate: {type: string}
+        DandbCompanyId: {type: string}
+        Description: {type: string}
+        Email: {type: string}
+        EmailBouncedDate: {type: string}
+        EmailBouncedReason: {type: string}
+        Fax: {type: string}
+        FirstName: {type: string}
+        GeocodeAccuracy: {type: string}
+        Id: {type: string}
+        Industry: {type: string}
+        IsConverted: {type: string}
+        IsDeleted: {type: string}
+        IsUnreadByOwner: {type: string}
+        Jigsaw: {type: string}
+        JigsawContactId: {type: string}
+        LastActivityDate: {type: string}
+        LastModifiedById: {type: string}
+        LastModifiedDate: {type: string}
+        LastName: {type: string}
+        LastReferencedDate: {type: string}
+        LastViewedDate: {type: string}
+        Latitude: {type: string}
+        LeadSource: {type: string}
+        Longitude: {type: string}
+        MasterRecordId: {type: string}
+        MobilePhone: {type: string}
+        Name: {type: string}
+        NumberOfEmployees: {type: string}
+        OwnerId: {type: string}
+        Phone: {type: string}
+        PhotoUrl: {type: string}
+        PostalCode: {type: string}
+        Primary__c: {type: string}
+        ProductInterest__c: {type: string}
+        Rating: {type: string}
+        SICCode__c: {type: string}
+        Salutation: {type: string}
+        State: {type: string}
+        Status: {type: string}
+        Street: {type: string}
+        SystemModstamp: {type: string}
+        Title: {type: string}
+        Website: {type: string}
+      type: object
+    tmp19:
+      properties:
+        AccountId: {type: string}
+        Amount: {type: string}
+        Attributes_type: {type: string}
+        Attributes_url: {type: string}
+        CampaignId: {type: string}
+        CloseDate: {type: string}
+        CreatedById: {type: string}
+        CreatedDate: {type: string}
+        CurrentGenerators__c: {type: string}
+        DeliveryInstallationStatus__c: {type: string}
+        Description: {type: string}
+        ExpectedRevenue: {type: string}
+        Fiscal: {type: string}
+        FiscalQuarter: {type: string}
+        FiscalYear: {type: string}
+        ForecastCategory: {type: string}
+        ForecastCategoryName: {type: string}
+        HasOpenActivity: {type: string}
+        HasOpportunityLineItem: {type: string}
+        HasOverdueTask: {type: string}
+        Id: {type: string}
+        IsClosed: {type: string}
+        IsDeleted: {type: string}
+        IsPrivate: {type: string}
+        IsWon: {type: string}
+        LastActivityDate: {type: string}
+        LastModifiedById: {type: string}
+        LastModifiedDate: {type: string}
+        LastReferencedDate: {type: string}
+        LastViewedDate: {type: string}
+        LeadSource: {type: string}
+        MainCompetitors__c: {type: string}
+        Name: {type: string}
+        NextStep: {type: string}
+        OrderNumber__c: {type: string}
+        OwnerId: {type: string}
+        Pricebook2Id: {type: string}
+        Probability: {type: string}
+        StageName: {type: string}
+        SystemModstamp: {type: string}
+        TotalOpportunityQuantity: {type: string}
+        TrackingNumber__c: {type: string}
+        Type: {type: string}
+      type: object
+    tmp2:
+      properties:
+        id: {type: string}
+        success: {type: string}
+      type: object
+    tmp20:
+      properties:
+        Attributes_type: {type: string}
+        Attributes_url: {type: string}
+        CreatedById: {type: string}
+        CreatedDate: {type: string}
+        Description: {type: string}
+        DeveloperName: {type: string}
+        FolderName: {type: string}
+        Format: {type: string}
+        Id: {type: string}
+        IsDeleted: {type: string}
+        LastModifiedById: {type: string}
+        LastModifiedDate: {type: string}
+        LastReferencedDate: {type: string}
+        LastRunDate: {type: string}
+        LastViewedDate: {type: string}
+        Name: {type: string}
+        NamespacePrefix: {type: string}
+        OwnerId: {type: string}
+        SystemModstamp: {type: string}
+      type: object
+    tmp21:
+      properties:
+        AccountId: {type: string}
+        ActivityDate: {type: string}
+        Attributes_type: {type: string}
+        Attributes_url: {type: string}
+        CallDisposition: {type: string}
+        CallDurationInSeconds: {type: string}
+        CallObject: {type: string}
+        CallType: {type: string}
+        CreatedById: {type: string}
+        CreatedDate: {type: string}
+        Description: {type: string}
+        Id: {type: string}
+        IsArchived: {type: string}
+        IsClosed: {type: string}
+        IsDeleted: {type: string}
+        IsHighPriority: {type: string}
+        IsRecurrence: {type: string}
+        IsReminderSet: {type: string}
+        LastModifiedById: {type: string}
+        LastModifiedDate: {type: string}
+        OwnerId: {type: string}
+        Priority: {type: string}
+        RecurrenceActivityId: {type: string}
+        RecurrenceDayOfMonth: {type: string}
+        RecurrenceDayOfWeekMask: {type: string}
+        RecurrenceEndDateOnly: {type: string}
+        RecurrenceInstance: {type: string}
+        RecurrenceInterval: {type: string}
+        RecurrenceMonthOfYear: {type: string}
+        RecurrenceRegeneratedType: {type: string}
+        RecurrenceStartDateOnly: {type: string}
+        RecurrenceTimeZoneSidKey: {type: string}
+        RecurrenceType: {type: string}
+        ReminderDateTime: {type: string}
+        Status: {type: string}
+        Subject: {type: string}
+        SystemModstamp: {type: string}
+        TaskSubtype: {type: string}
+        WhatId: {type: string}
+        WhoId: {type: string}
+      type: object
+    tmp22:
+      properties:
+        AboutMe: {type: string}
+        AccountId: {type: string}
+        Address_city: {type: string}
+        Address_country: {type: string}
+        Address_countryCode: {type: string}
+        Address_geocodeAccuracy: {type: string}
+        Address_latitude: {type: string}
+        Address_longitude: {type: string}
+        Address_postalCode: {type: string}
+        Address_state: {type: string}
+        Address_stateCode: {type: string}
+        Address_street: {type: string}
+        Alias: {type: string}
+        Attributes_type: {type: string}
+        Attributes_url: {type: string}
+        BadgeText: {type: string}
+        BannerPhotoUrl: {type: string}
+        CallCenterId: {type: string}
+        City: {type: string}
+        CommunityNickname: {type: string}
+        CompanyName: {type: string}
+        ContactId: {type: string}
+        Country: {type: string}
+        CreatedById: {type: string}
+        CreatedDate: {type: string}
+        DefaultGroupNotificationFrequency: {type: string}
+        DelegatedApproverId: {type: string}
+        Department: {type: string}
+        DigestFrequency: {type: string}
+        Division: {type: string}
+        Email: {type: string}
+        EmailEncodingKey: {type: string}
+        EmailPreferencesAutoBcc: {type: string}
+        EmailPreferencesAutoBccStayInTouch: {type: string}
+        EmailPreferencesStayInTouchReminder: {type: string}
+        EmployeeNumber: {type: string}
+        Extension: {type: string}
+        Fax: {type: string}
+        FederationIdentifier: {type: string}
+        FirstName: {type: string}
+        ForecastEnabled: {type: string}
+        FullPhotoUrl: {type: string}
+        GeocodeAccuracy: {type: string}
+        Id: {type: string}
+        IsActive: {type: string}
+        IsProfilePhotoActive: {type: string}
+        JigsawImportLimitOverride: {type: string}
+        LanguageLocaleKey: {type: string}
+        LastLoginDate: {type: string}
+        LastModifiedById: {type: string}
+        LastModifiedDate: {type: string}
+        LastName: {type: string}
+        LastPasswordChangeDate: {type: string}
+        LastReferencedDate: {type: string}
+        LastViewedDate: {type: string}
+        Latitude: {type: string}
+        LocaleSidKey: {type: string}
+        Longitude: {type: string}
+        ManagerId: {type: string}
+        MediumBannerPhotoUrl: {type: string}
+        MediumPhotoUrl: {type: string}
+        MobilePhone: {type: string}
+        Name: {type: string}
+        OfflinePdaTrialExpirationDate: {type: string}
+        OfflineTrialExpirationDate: {type: string}
+        Phone: {type: string}
+        PostalCode: {type: string}
+        ProfileId: {type: string}
+        ReceivesAdminInfoEmails: {type: string}
+        ReceivesInfoEmails: {type: string}
+        SenderEmail: {type: string}
+        SenderName: {type: string}
+        Signature: {type: string}
+        SmallBannerPhotoUrl: {type: string}
+        SmallPhotoUrl: {type: string}
+        State: {type: string}
+        StayInTouchNote: {type: string}
+        StayInTouchSignature: {type: string}
+        StayInTouchSubject: {type: string}
+        Street: {type: string}
+        SystemModstamp: {type: string}
+        TimeZoneSidKey: {type: string}
+        Title: {type: string}
+        UserPermissionsCallCenterAutoLogin: {type: string}
+        UserPermissionsInteractionUser: {type: string}
+        UserPermissionsJigsawProspectingUser: {type: string}
+        UserPermissionsKnowledgeUser: {type: string}
+        UserPermissionsMarketingUser: {type: string}
+        UserPermissionsMobileUser: {type: string}
+        UserPermissionsOfflineUser: {type: string}
+        UserPermissionsSFContentUser: {type: string}
+        UserPermissionsSiteforceContributorUser: {type: string}
+        UserPermissionsSiteforcePublisherUser: {type: string}
+        UserPermissionsSupportUser: {type: string}
+        UserPermissionsWorkDotComUserFeature: {type: string}
+        UserPreferencesActivityRemindersPopup: {type: string}
+        UserPreferencesApexPagesDeveloperMode: {type: string}
+        UserPreferencesCacheDiagnostics: {type: string}
+        UserPreferencesContentEmailAsAndWhen: {type: string}
+        UserPreferencesContentNoEmail: {type: string}
+        UserPreferencesCreateLEXAppsWTShown: {type: string}
+        UserPreferencesDisCommentAfterLikeEmail: {type: string}
+        UserPreferencesDisMentionsCommentEmail: {type: string}
+        UserPreferencesDisProfPostCommentEmail: {type: string}
+        UserPreferencesDisableAllFeedsEmail: {type: string}
+        UserPreferencesDisableBookmarkEmail: {type: string}
+        UserPreferencesDisableChangeCommentEmail: {type: string}
+        UserPreferencesDisableEndorsementEmail: {type: string}
+        UserPreferencesDisableFeedbackEmail: {type: string}
+        UserPreferencesDisableFileShareNotificationsForApi: {type: string}
+        UserPreferencesDisableFollowersEmail: {type: string}
+        UserPreferencesDisableLaterCommentEmail: {type: string}
+        UserPreferencesDisableLikeEmail: {type: string}
+        UserPreferencesDisableMentionsPostEmail: {type: string}
+        UserPreferencesDisableMessageEmail: {type: string}
+        UserPreferencesDisableProfilePostEmail: {type: string}
+        UserPreferencesDisableSharePostEmail: {type: string}
+        UserPreferencesDisableWorkEmail: {type: string}
+        UserPreferencesEnableAutoSubForFeeds: {type: string}
+        UserPreferencesEventRemindersCheckboxDefault: {type: string}
+        UserPreferencesGlobalNavBarWTShown: {type: string}
+        UserPreferencesGlobalNavGridMenuWTShown: {type: string}
+        UserPreferencesHideBiggerPhotoCallout: {type: string}
+        UserPreferencesHideCSNDesktopTask: {type: string}
+        UserPreferencesHideCSNGetChatterMobileTask: {type: string}
+        UserPreferencesHideChatterOnboardingSplash: {type: string}
+        UserPreferencesHideEndUserOnboardingAssistantModal: {type: string}
+        UserPreferencesHideLightningMigrationModal: {type: string}
+        UserPreferencesHideS1BrowserUI: {type: string}
+        UserPreferencesHideSecondChatterOnboardingSplash: {type: string}
+        UserPreferencesHideSfxWelcomeMat: {type: string}
+        UserPreferencesJigsawListUser: {type: string}
+        UserPreferencesLightningExperiencePreferred: {type: string}
+        UserPreferencesPathAssistantCollapsed: {type: string}
+        UserPreferencesPreviewLightning: {type: string}
+        UserPreferencesReminderSoundOff: {type: string}
+        UserPreferencesShowCityToExternalUsers: {type: string}
+        UserPreferencesShowCityToGuestUsers: {type: string}
+        UserPreferencesShowCountryToExternalUsers: {type: string}
+        UserPreferencesShowCountryToGuestUsers: {type: string}
+        UserPreferencesShowEmailToExternalUsers: {type: string}
+        UserPreferencesShowEmailToGuestUsers: {type: string}
+        UserPreferencesShowFaxToExternalUsers: {type: string}
+        UserPreferencesShowFaxToGuestUsers: {type: string}
+        UserPreferencesShowManagerToExternalUsers: {type: string}
+        UserPreferencesShowManagerToGuestUsers: {type: string}
+        UserPreferencesShowMobilePhoneToExternalUsers: {type: string}
+        UserPreferencesShowMobilePhoneToGuestUsers: {type: string}
+        UserPreferencesShowPostalCodeToExternalUsers: {type: string}
+        UserPreferencesShowPostalCodeToGuestUsers: {type: string}
+        UserPreferencesShowProfilePicToGuestUsers: {type: string}
+        UserPreferencesShowStateToExternalUsers: {type: string}
+        UserPreferencesShowStateToGuestUsers: {type: string}
+        UserPreferencesShowStreetAddressToExternalUsers: {type: string}
+        UserPreferencesShowStreetAddressToGuestUsers: {type: string}
+        UserPreferencesShowTitleToExternalUsers: {type: string}
+        UserPreferencesShowTitleToGuestUsers: {type: string}
+        UserPreferencesShowWorkPhoneToExternalUsers: {type: string}
+        UserPreferencesShowWorkPhoneToGuestUsers: {type: string}
+        UserPreferencesSortFeedByComment: {type: string}
+        UserPreferencesTaskRemindersCheckboxDefault: {type: string}
+        UserRoleId: {type: string}
+        UserType: {type: string}
+        Username: {type: string}
+      type: object
+    tmp23:
+      properties:
+        errors: {type: string}
+        id: {type: string}
+        success: {type: string}
+      type: object
+    tmp24:
+      properties:
+        Ids: {type: string}
+      type: object
+    tmp25:
+      properties:
+        AccountId: {type: string}
+        CaseNumber: {type: string}
+        ClosedDate: {type: string}
+        ContactEmail: {type: string}
+        ContactFax: {type: string}
+        ContactId: {type: string}
+        ContactMobile: {type: string}
+        ContactPhone: {type: string}
+        CreatedById: {type: string}
+        CreatedDate: {type: string}
+        Description: {type: string}
+        Id: {type: string}
+        IsClosed: {type: string}
+        IsDeleted: {type: string}
+        IsEscalated: {type: string}
+        LastModifiedById: {type: string}
+        LastModifiedDate: {type: string}
+        LastReferencedDate: {type: string}
+        LastViewedDate: {type: string}
+        Origin: {type: string}
+        OwnerId: {type: string}
+        ParentId: {type: string}
+        Priority: {type: string}
+        Reason: {type: string}
+        Status: {type: string}
+        Subject: {type: string}
+        SuppliedCompany: {type: string}
+        SuppliedEmail: {type: string}
+        SuppliedName: {type: string}
+        SuppliedPhone: {type: string}
+        SystemModstamp: {type: string}
+        Type: {type: string}
+      type: object
+    tmp26:
+      properties:
+        Ids: {type: string}
+      type: object
+    tmp27:
+      properties:
+        json: {type: string}
+      type: object
+    tmp28:
+      properties:
+        success: {type: string}
+      type: object
+    tmp29:
+      properties:
+        success: {type: string}
+      type: object
+    tmp3:
+      properties:
+        id: {type: string}
+        success: {type: string}
+      type: object
+    tmp30:
+      properties:
+        msg: {type: string}
+        success: {type: string}
+      type: object
+    tmp31:
+      properties:
+        success: {type: string}
+      type: object
+    tmp32:
+      properties:
+        success: {type: string}
+      type: object
+    tmp33:
+      properties:
+        success: {type: string}
+      type: object
+    tmp34:
+      properties:
+        success: {type: string}
+      type: object
+    tmp35:
+      properties:
+        success: {type: string}
+      type: object
+    tmp4:
+      properties:
+        id: {type: string}
+        success: {type: string}
+      type: object
+    tmp5:
+      properties:
+        id: {type: string}
+        success: {type: string}
+      type: object
+    tmp6:
+      properties:
+        id: {type: string}
+        success: {type: string}
+      type: object
+    tmp7:
+      properties:
+        success: {type: string}
+      type: object
+    tmp8:
+      properties:
+        success: {type: string}
+      type: object
+    tmp9:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Salesforce Salesforce
+  title: Salesforce Salesforce
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAcPklEQVR4nO2deXicR53nP1X1vt2tW7Id35LlI0Bs5yIkEwIJMRCWYRIgQBxC7BBnAwnHsuEIsMuCww6zswwMMLMwTwgJSWyHQ9xXYIDgOBchCRsy5PYhW7J8RPKlu/utqt/88Xa3JFu3ZEmW+/s8bT/qrvd9q976vr/7rVJMRYgobkGxAgXAKSiaEZ5BuAVBKZnkHhYwBNRkdwCAOjGsVi7/9/r1AS97/zIivxLlS1BSigqaQV7C2udZt3hfn2OfQfi88pPR9QL6x+QRqzeZNjZdhdjPovRpeAfagLOAi8niEAwKhyIMFMrE59BhJ+K+T1v7Z/nAy5sAWC+6QLLJx8QSS0TxAzSrleOePZ9D5PN4C1HkCJQCo0d0PucEpR3iDYmkQqQe13UJ7z11B8C4qsxc34E+0rU36iRm/BX4k11dTzyxlBI2Nn4d+BCu2yOBR6tgTOd1TtBeUAlNEB7A2fNZW709T+KxYL3EZOotBf/l0XKKi4sIwiIAutKd+KCTD69sz7epE3MyE2xiiJWzg5bu2Yny1djIovXYyDQgsurThLvx/n9zTe0dIz5Fb8l6+45FFKc+i3evRgfLsRlAgfTii8r9IxAkIN3dQZi8kyj9D6xbvA+R+D6fRCQ7vsRaL5oVKDKNV+LlnljlBea4XjMHax3aCAlzkKtr5gzL9soRYMOearS/DliPsyBYlNOoYHiq2jlBawuEoIQw8RTIJbw4/+DJ4tUef4lV11BEWnVirR2zyhsprBVCLajgNtbWfOAY7/NorBfNom0LMEVPYagi3T062y8HcR4nglKaZGoP7W1nUfXyQyeDFzu6GzZcbGp6nozuJMrIhJMKIAgUojXWXs+mphdo37E8b2D3Ru67JU1/Ab0L212Js8TSdZSkAlBGEwQGYxRR1zzC8CXSTfexZOeZ/fZjGuH4Saw765uBSpQKpkS0zIvF6ADnX01t7ROsUjb/2z1Nf8T788mkj7+q9mLRXqOLfsXa+W89rteaRIzvlOdUzcbd27DRokmRUoNBJI6RZWwt5Z17Wb0yw4ZGi7MTL1G9WFBp1tWWslmCPkSfBhhfVbhaOb70lxKQpagpRioApcDbiKKijaxemWHj7s8QpZmUB0CpAC0lbNp7LauUzTsO0wTjN5g6MXTt/m9ovoofW+jouEMij0lpXNoP29M7XrBWSCWFq6unlc01PsQSUdxyv2HpkmhCQwrTBdY6dOIA62rmDNn26AR9f5gCyfqxq4D1olHKs6lpH7bLF0g1CgSBQVwVGxtvJ7nwhj4hkc0ScDEuT5J/3ZqgJngFtuQsvF+K8qUISZRqJ9D1WHuYhV1PcMumHUB8zCRkAcYusfIGe6NMeRU4leGcECYVaxeqfKYCelJJGxpfD34dQbAML+cQB1/JcQdUbEM6C0Z1IOYRvP8u+Me5puZpYEIJNj6qcFPjT0inLytIqzHCe0uQ+DZrF97AN/5aTWn5BpS6GIBMWjCBQ7wCNMYMPHe55Ly3ChMYtAYd7Ab1fva+9AA3n9VxvKtAxkasOjFk9nwb8dcUpNV4wcaORSYtiIyjaZHNAqA0ibCZrvRruH7Z+CTq+8HYJdbGRpmQwGIB4wexPp751D60/wfW1vxbvvJknDB6YhU8wRMc1uOUIkwqPK+kaMF/jGcOc/QxnB+gWbZsPd5HBVKdiAhiOy1KC7b7cdJNv2Vxw2LWy7gEi8emCu/e0YGTokENyQJODORyqZ6bKK75+ljtrrFFnYNUcYFU0wRaBfjIY/TXuAKfr5wdJcYm9mxmTIcXMMWggtgb3dToWfFoMBaDfnTSZr1oFm1figleHNXxBUxtOCcEoULk69TUfHQ0lRejE3crUCRT52BtIXg1HWGMIsoI3t/I7sbL2Dxyg370ejRIVqL1tK/dPmkRBArvFFrdOnESC8BGNXhfMNynM4LAENkqNjR9eaSl1GOw/H3R6I8t4ISBUiG4j7P3TyUjOWz0xBLTNupjCzix4DOeyuqd3LVrxXDDEKMnljaHCjbWSQIVaLSvIjSfGu4hoydWd8cL2RKOAk4GWGvxfu1wc4mjI9YzCOnMU5iwkCM8WaBVgLWWjbu/ORxDfnTEugVhX9TcU71YwEkBLRrt3z6cPOLoiKWU8PmVGYLkqA4fbxilMAomO2uZ64PO/j/97ASjcczmirrjJLFysG4rYid3DQIvvG1hissWFPHGualJEaJaAVY4b2aCu14zk1++fja3nT+TBUVm+pHLOcvfnbt+qGj86MddJ4aO+nfg/XcntR4r7ZH3LQaEwxmh6p6GCRVdWsHZFSG/vGQOs5IaLxBqUEpReU8DrU6ml8HgnJAIu1hTM2hca/QS6wo8xm8hMGbSpRYACjUJ4sE7YePrTmFukSFel0ZxKIqpdKTTTS9SQZxHFIqHajb6spm4nOIl7topeKU4Cf1DBVQkNKdVhEReeKwlw2t/vgdlFOIEkpP7kvVxg/cMVVIzemKtF03tzovQSuFlWA+mzr76FverZ4Eg18/ROW0mZNfyyP7tZeRmlOl1rCL7+t0gJzEqvob3PX2W7PG9xxJqxS1nV5J2QtIo3vWH/QQpgwDO9DRWKlYNPjeO3D046rq5dqBwIvlrxysIEr9kM9i4NNl2fc+rs47EcMc/JJwV7tr1euC+gZqMnFi5lVGWNTxE5M5DFJhgSCWkvHD6jASXVxfzttpiDPDQvjSPNHdzz4vtSKLX0512nLegiHVLS5lbEjCvyLCzPeL5QxFf+MthIqP6TPKgyHhW1RRz48vLmJ3StEbCrS+08sudneiE7nMeBUjG87lXVfHKWUmWlQU0dlo2bGtny740jW0WgnhWzpiZ4MwZCVbXluQn+HXziig2mqSBW59viyVX2jOjxPD3Z1dx1qwETZ2W5w9F/P2Th3GByk+wAhYXB7xmdoJQKzZsa2dRScAHX1ZGoBUPt6Spq+9A6VjlS9rzkTMqOHtmgtMqExzOOB7Y280jLWnu29sNSqEVeCusmJngkyvKWVYe0m6F7+xo587n2lAJPTpVrYwjMG9mEGKNziqJ38q9jygSgmGQCihWcOA9NSR7GdaS/e2ube2se6gFpRXihS+cXcmnz6js1wZ/+KU0r/35HsgRMW+8w5HIU7kpNt6zgoE3zUtx7yVzjhnom3+7n39v6Ow5D4ATbr1gJje8vCzftxwOpD0X/3ovz7RaJOOpe+Ns3rGoh1QiglIxUYwC9a16CBUfWV7Ox1eUU13Sd5mwB/Z387pf7IFEbEMEWvHhU0v50rlVBFqx8LsNPPuuhZSFOn+cur0ek4zXMrl71Slcs7S0Tz9zElF9ux4CDRnPsqqQp9++gET2nuTwsccP8rVnW0GpkZPLWkey6EesWXDlQE1GbgRsaPQQ/Q4RhkMqiKVA+9pFhFl99uTBDNvaekp8rl1WCk7ybvtnzoxJZQUOZDxNnXE8ToBzZyWof3c1eBn0qZCM53OnV/CLN8wGEVrSnueORLRG8Xub914yG3/9YsjEfodW8NXzZsR9Adoiz+MH0hzK/l4eKm4+vQKtYElFyMVzU9kX3GOvT2U9B6OgocNCqPjVG+fwpVdVMT8bdmjssKSzIvKCU5LI9Usg7fPkdFlyAuy+qobSICaVE7hzazthdoGc7utquWpxCZJVbfu7HQczHq2gJe1jXRd5OtfVsvWdCwk0dFrh2cMR+7odIsL/PaeKL55ThWRG5XdptF45WIORqcINjRaflpEs/WMUvGtpCdYL7VY47+d72N7p8CKoSBAR3reiAkz8tKuE5sotzdRtbY/vWs5AyHjml4c0vbua2tIAvCB6YGptvnQeF89N4UV45x+a+VlDJ16D9vCZsypYf1Yl1gvXn1bGhp2dZDotN60oB+DlP9rNiwczqKSJjXDrqa5McCTj8QI7Oi2zNzaAE+TGJQDc8WI773ugGRFBa0VNWcBbFhYBQlsklN9WDymN9oKPBLlhCZEX7n79Kbx3czNBKuf99MigC361l8f2dscSJauCv3LBTBSxfTf3uw3sb7NxfEOIF4zWiiCh+R8rKwkUWBG+9mwbn/rTAbzRaBEunJPi/r+dw80rK1haFnLFA83DNy0gJm7GVQ3WZHgEqRPDxqYLwZuRrielUMwpCfDEqqqt2xFohVIKk9TolOFbz7bmrXMB6ra1o5KaZMoQhpog0BSXBexpi/LnLU6avkti90bkuXhuCucFrRQ/2d6OClRsn4Saf3zqCCYrGd5aU3yMFX2ky0MiDh/oQKFThsZ2S6v1eekUFhnmVYb5Y7a3RySKDEFRQJgyvHNxCRkfk+QrT7eSKAtQRqETBlKax1rSAFxWXczSqrCP9PUCHU74054udEoTpDQmUCwoD7iytgStoDnt2N/hCIsDVKDQoSJIGXRCY72wenEJAgRK8X/+/yFMwsTGvVFsaewkR97zZyfxdjSW1uDlM8MjyaE/a8Q+MOBEDgKP8JeWNEZBTUnA3jWLuGxBCsl4rMuqs0TfbpiERjKet8xLcdNpZXzx7Eo+flo5V5xalm9TGSoYSIrnvCVgR7tFJTR40FnXzkY+3+y1c1JkrM9LTC/CvjU1/P5Nc6jKGt8KUEHeRct6qsKFc1NEXmiNPPc2dBJ5wXkhHXluWl6OBh5rSXPLU4fJOEEErI8l2gcfOUCoFVUJzUeXl9MjfGMn+/qHWjBFBiexSQDw6dMrmF9sCJTist/uRyc1kY/P67PtvAAZz8rKkCBrPx3KeLwTtIASINTs63KknTC/yMBowpDGDcqdwVVhnRjSja/EqS1E6WEZ6kfDCzywr5t9XZ45qdgL+d7rTsGsmk1Du+X7Ozv41KMH8+RSCJ87o5LPnVlJ2nkUioSJz+Olx0gezO9YUBIPyyjFktIAf23tMW1sVvYXm1jFhEnN6T9t4tnLFxB54cI5SVreUwPAPz19hK8/20ZTt8tz2QGX1xTjgcdb0jx1KAITe2LihQXFBkHx8P5uiDwkewJ9IvDXIz3S9+xZSbzP/SYEWvHng5k+gtQLvHZuKv/3Ewcz+IEiwtnvVVatyn9dfEwTJ0Lkj3ZRhgkR8LpzsCaDEyteqPYxXLcbDal6rqKp/l4DF80vYt2yUq5ZVooC5hUbPrq8nE+urEDdXg8Kzp2T4n+dUQHAvz3fTt2uDuoPR6QChWjFrnctHPJyuY4KQlOn597Gzj6/5eZDBNpt7MZZDy+0W4Jv13PHRaewal6KmpIAJ8JHl5dz84pyPvjoQW7b1h5LLCu8pboIA/xwZyd5dzC+cK9VqwZ/CLLNj2nSn3bqYwcNI82glCLywh0vtvfxsHP3QASKAzXyFJhBSAR7BmsyMLFEFBuem4G3MA65VBVqtjR1sWV3Fz/c2cE/nzeDU8vC2KsSWFoVsv1wxJqlJViJn7aPPdiMThi8BhMpXNfwXhY5nFV1XmBXW8T7H2gZpGNANp4jAjrQXHt/M7NKDJ85s5KblpejEDzwj+dUcevzbeggDouUhRovwgutPf2KSZINOyDMLjL9GhzlYc+Xh7rdkDxRCvZ39VSrlIWKI9FQeUjBAR/Y/FIcfhigTW9pOiw4BKcGJdbAelIpgfLHsNaNeQFYyX5CDQnNr/d2c9pP97DyJ020pD0ZL/z3FRWUFxvetKAIBXzj2TZMSYAPVE8dSq9uDDYP7b0m4II5WfWR1Md8dEr3te+s5Il2wAqf+PMh1De305L2GKWoTOg4LILKhzuMUvz5pW4Is/aXxPbYvbu7EODS6iLOmpGgtwMbaMV1WU8ZYNOOjiFvoQI2bY/3gIq88D9PryAxkFec/TrykMrdu4HGP1JSAWgjuPSWQZsM+MsVdQblloy1ckErWDU7yd2vmQkZj8p4nBMQwXrBZCPEO1ojOtOendn41tplpbhOh87lcKyP71QOgzEradi8r5tQx6mRuktmQ9qhMj4+Tyb+LC6KjTetgMjjr6tlWUmAynjESrzdU7Z/eYhgnWdWcY+wb+32BEdN8o0Px8Z5eah47G3z8R0WnKAiT9Tl+OK5M/DAN19o4/tb24d0953Ad15o42vPtiICN6+s4NUzE/FYouwn40mIECQ0n33ycByBEOG5d1dD2sVtcuNPOxZlxz9iKAK8/G7wJv1hswQ0NH4Z7z40ljXQlQJxwo53LWROSlOclThbW2PD9dTyECcxudQd9WAUsxKa5vfU5L8/Enka2i21pUFW9cRqsuaHTexut2Cl38g7Gc/7l5dz6wUzibzkn27rY+M4F6Uu37CLNhHmJDT7rqrBSxyi6LDCC0cizqhKoJRgPXyvvoN1fzyApD1vXVLCjy4+BaUVwR31/aaHbr9gJmuXxNUloVY0dztmpWK7IsqGQoI74mi6UooPLCvhn8+bQagVS37cxK4O2+ecRoHLeLqvrc0Lcd1Lh+Yj79/aAVrRvGYRs7KeY6hVNtQVjz+n+l/9qz08cSgaGb9MCGsWDKq8+5dYq5RFhxeh/dhVoIrzXsWBJuOFbuc5tTzk1PKQdDbc8OD+7tijMoqWLkdz2qFQdDlPaaA4vSpBkVFknM8mZoc2+YKE5rZnW2nNeEIVnyudrY3qzq6a6EU4f14KrRWHI+FwxqOUott5UgZeOTOBJ+5j0ihufuxgPiu+siLEA4fSDkz/aZEbH24h1IpQK7qsZ2ZSk3FC2sUTfdX9L8Upmny+UA0a0XESh2Le+vuXCLMPR7fzZJwn44RMzrUMFCahedNv9vHkwQyBjsdkfTz+jBOibKbjitqSkRvQMnR4YuBzjuMqyEaB6/a8pbaYs2YlOHdmXNL8m6Yu7mvqYnu77RNFV06oLQtYu6yUOSlDeaho6nTs7XLct7uLpw9l4ki0im2dN81N4QW6nOfhA1GfUSknzCkyXPuyUhYUBVQm4nP9vqmLJw9mOJDx+eCsskJVSnPjK8pYXBqyoNhQ3275ytNH2H4oG4kHtAiPXzafFRUB39nRyfWPHuj3iVfEqaVUqPjwinLOrEqwr8vz3JEM336uDZ3skXIKmJ1QLC+P7bEHW9JkBiCZVuC7HX9bW8LpMxKcVhFyJOP5w95u/uNghp2dtkeFeyGlFNe/ooyzqhKEBpq7PFv2d/Oz+qxtF45AfjjnSJQ8wZq55w/WrH9i1e0vpbOzbbwr5+I6cEWu/M1kK276mxSdFfO5ihylQInCc2z73t5yf+UgirgATySX1wNycbH+2qrsdegR6blrBgretrCYH646BRHhdb/exyMHMoOWoeSu70Wy4+g/nJDLYA00jqNhstLbS0/eVDjWbOp9/dzfw73GMbBWSBVdxIvzHxnsVbD+7af27lVo5wfxUUeFeCA9o7GDyH2fjYLncdSxx553YMS2/9HnGqRtr+vm75wIRits2nPnhbOAOFD7YFP3kAV9fa4/xLVHMtkuZygNgWPGPxYkkoqrFzw0VLP+74h2S/DTr6p21BCh3MSVBfNKA8qCOKDqheO94+PUgnOCNgeG07R/iRWk/ob0oBH7kwZawRtmp/jtm+fmhWYm62UurmuMi+VOhkfQOUGLkI4uH3KnWgYilkS14xFtnw4QgYvmF7Gn0zG7SNNhhX/6ayu3PtfK4WwC+KSAFoFAcd2iB4fTvH/y3Fn/V5RbPulbrk0VWE9p0rC8ImRPl2P34Qwq1IPWg007KAWKH7Ot5orhrN8wgCo0rbjCKpB5BJoOJzxxKFtxkA07nDTwYjHmX1lb/fHhHtK/RDLhU0zDV+LGgpwbf9KovhysFRLJgGuqPz6SVf36J1Y6/fC4dayAExthQtHeegoiaiSbCvRPLOUbMeYkfAW1gL6wHq1aueEVLSNd731g63PDrpPI5SngGHixhIlgqGTzQCh4fQUcC5GIMPglHXsTo936pP+D6sSg+BFeRry+dwEnOMRHBOEvWVN9OXvOcaPdZm4QNppf4O1JFKgpALGeIBmydevqsW7tOzhxNjTIcGpvCjjBYa2QSCg0bVxdUz4eu60OLLHqxKD0PXhfUIfTFdZK1kh3HGkt4+qa+FXwcdjCd2BiPYOA/QriDXZUr8oWMJVhrRAoIQgCvPwdH1rROdJtTQbD0DbUhoZmxM8arwsWMMnIrb4YFGVw3Wfy3qUvDqdaYaQY2pX8xaNzMcFvCh7iCQxrHc4JJgSV2ocyK1mzoIgdS7YBjDepYDgSK7fQ2j17hO7OUb1mX8A4IGdgCxClBR0MQAYBpQJMEC8baAKLdz+lq/vT3PCy7QBj9fiGg+GRZL1oljV9ARd9It4NqoCJh4AOt4Cbh+hT4yJ2F2fFRbLrTAbZdSCtwwRPYaN7EP8k1y7eDMQO2RX48TDOh8LIpM+Ghn/Hu1U4FxQk1wTCWiERtrB20ewRhQI2S0AzcjxU3VAYOTnu3PULjLoUn/GFQsAJgPcWEwRcU3NCPcgjJ0ZJzdu5pkYRFrmCQX+cYa3DpA6j/DmjzdlNFkb+FIgo7sewa+eFBOEfSHe7Sd2ZYjrDOQF9KdctvneyuzJSjPwpUEpYpSz1tVtYs1CRTDwVeyAF6TWu8F5Ar2Fx7W8nuyujwejFa85d3Vp9LmsWKkz4EYzyKA0+8lNjG5QTEF5svJqKfhWLa+tGs4P8VMDYDUIRxQ/QrFaOO7ZfSqroKuA92ExsI2gt8U6s6qiFRhG88nivCqo0i1xxnfifsrb68snuzlgwvp5GHCcRlPJ8c3sFxUWXoeVMrF1FIpyPlWKMaFSQJtN1CBM8gQ4exkVfzy/CeSLBix3LMk9AHErQxmFMgNY/Yc3CdxyPFMtE4/i5sDlJBgOnDOKkpyHd9P+wmevQemyTNFGw1hEmDCb8Mt5+gkw6Jod3ZljxPecEpR1aBWgTofSDbH3xv8DF/nhHxCcKUyc2srFBThippQ0o9S8kDn+S1Ssz3LnzNQTB65HMTZjUDFzUEw3vDQHCJNh0Nzq8HSWf5+oFLRORYploTB1ibWrKkO6a+hF9sZ6w6BCR/Rvqa+pZQc9rUd/cOY9icyXevYIg9UpQc5AogQks6Ba6u54mCH+GTT/NusXPAxOaZplITI1JXC+ahduWkAjjrYCnekQ/0z6T9608eMz3uRgf98OqVcd6c7l6p2eQ6SahjsbUIBbEk3JP4+8Q3jBlVaIXSyKxiXD+9Se6cX28MXWIlcNdO9eAvXvKSS2xHp30XFNdqO4YBqbW5G2WgGtrNxEWTa1+OSeI8Yh8ejzLd6czpp7EElF845kSKiracHZYW3scVzgnhAmFCX7Ae+atntzOnDiYWpIB4lxk84pOMl2zCcL4rdzJQq5q88iRsgKpRoapRyyI85ANpx6gY1+CROpbE553jNcssiSLFGuqNc0rCutmjhBTTxX2Ri5weNfuTiQKhx3ZHiu8WIwOwKwmteDHBQ9w5JiaEiuHXKzn2oXFmOCrpBJdWHv8JtmLRWkIgvWk2pIFUo0eU1ti9UYuMXv3rivR+nu4tEeMH3MSOKdmdUKj1EOsrb5wukbDJxInDrGgh1wbGq5GuCvehSrtQTHiuJfYmJhGB0iQwfgtbN32Vrg4M92j4hOBE4tYOfQuK7m7cS2hvgUvS+KtHSJQ3uN1X3Iop8FotI6TyNo8j7N/xNqPsW7xYdaL5hakIKXGBycmsXrj6Nql7+yaT9qfgWYJostAQpADKNkB6iV27Pwrn8/m8Qoq77jhxCfW0VgvmhUDjOsZpCCVJgb/Ce6x3xtM4N9FAAAAAElFTkSuQmCC
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Create Account
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Annual Revenue
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Trade Style
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Master Record Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Year Started
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing Geocode Accuracy
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping Country
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Jigsaw Company Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Sic
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping Postal Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: SLA
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Owner Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: SLA Expiration Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing City
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Website
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping Address
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Fax
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Account Source
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Niacs Desc
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping Latitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Number of Employees
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Referenced Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Ownership
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing Country
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Viewed Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: D and B Company Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Deleted
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing Address
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Jigsaw
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Number of Locations
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Industry
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Sic Desc
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Duns Number
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing Street
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Parent Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Customer Priority
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping City
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping Longitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing Latitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Naics Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Rating
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing Postal Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Account Number
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping Geocode Accuracy
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Activity Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Site
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Upsell Opportunity
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Clean Status
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Modstamp
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping Street
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: SLA Serial Number
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Active
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing Longitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Ticker Symbol
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Salesforce Create Account
+  tmp1:
+    post:
+      description: Create a new Salesforce Case
+      parameters:
+      - description: 'The subject of the case. Limit: 255 characters.'
+        example: ''
+        in: query
+        name: Subject
+        required: true
+        schema: {type: string}
+      - description: The company name that was entered when the case was created.
+          This field can't be updated after the case has been created. Label is Company.
+        example: ''
+        in: query
+        name: Supplied Company
+        required: false
+        schema: {type: string}
+      - description: 'A text description of the case. Limit: 32 KB.'
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: The importance or urgency of the case, such as High, Medium,
+          or Low.
+        example: High
+        in: query
+        name: Priority
+        required: false
+        schema: {type: string}
+      - description: ID of the contact who owns the case.
+        example: 0054T000000LLnUQAW
+        in: query
+        name: Owner ID
+        required: false
+        schema: {type: string}
+      - description: The type of case, such as Feature Request or Question.
+        example: Feature Request
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      - description: The status of the case, such as New, Closed, or Escalated. This
+          field directly controls the IsClosed flag. Each predefined Status value
+          implies an IsClosed flag value.
+        example: New
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: Indicates whether the case has been escalated (true) or not.
+          A case's escalated state does not affect how you can use a case, or whether
+          you can query, delete, or update it. You can set this flag via the API.
+          Label is Escalated.
+        example: ''
+        in: body
+        name: Is Escalated
+        required: false
+        schema: {type: string}
+      - description: The phone number that was entered when the case was created.
+        example: (111) 111-1111
+        in: query
+        name: Supplied Phone
+        required: false
+        schema: {type: string}
+      - description: ID of the associated Contact.
+        example: 0054T000000LLnUQAW
+        in: query
+        name: Contact ID
+        required: false
+        schema: {type: string}
+      - description: The reason why the case was created, such as Instructions not
+          clear, or User didn't attend training.
+        example: ''
+        in: query
+        name: Reason
+        required: false
+        schema: {type: string}
+      - description: The name that was entered when the case was created. This field
+          can't be updated after the case has been created. Label is Name.
+        example: ''
+        in: query
+        name: Supplied Name
+        required: false
+        schema: {type: string}
+      - description: The email address that was entered when the case was created.
+          If your organization has an active auto-response rule, SuppliedEmail is
+          required when creating a case via the API. Auto-response rules use the email
+          in the contact specified by ContactId. If no email address is in the contact
+          record, the email specified here is used.
+        example: ''
+        in: query
+        name: Supplied Email
+        required: false
+        schema: {type: string}
+      - description: ID of the account associated with this case.
+        example: 0054T000000LLnUQAW
+        in: query
+        name: Account ID
+        required: false
+        schema: {type: string}
+      - description: The ID of the parent case in the hierarchy. The label is Parent
+          Case.
+        example: 0054T000000LLnUQAW
+        in: query
+        name: Parent ID
+        required: false
+        schema: {type: string}
+      - description: The source of the case, such as Email, Phone, or Web. Label is
+          Case Origin.
+        example: Phone
+        in: query
+        name: Origin
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Salesforce Create Case
+  tmp10:
+    post:
+      description: Delete Lead by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Lead Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Salesforce Delete Lead
+  tmp11:
+    post:
+      description: Delete Opportunity by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Opportunity Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: Salesforce Delete Opportunity
+  tmp12:
+    post:
+      description: Delete Task by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Task Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: Salesforce Delete Task
+  tmp13:
+    post:
+      description: Delete User by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: User Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: Salesforce Delete User
+  tmp14:
+    post:
+      description: Get Account by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Contact Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp14'}
+          description: Successful request
+      summary: Salesforce Get Account
+  tmp15:
+    post:
+      description: Get a Salesfore case by ID
+      parameters:
+      - description: ID of the case you want to get info about
+        example: 5004T000000dv2lQAA
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp15'}
+          description: Successful request
+      summary: Salesforce Get Case
+  tmp16:
+    post:
+      description: Returns all comments and feeds for a specific case
+      parameters:
+      - description: Case ID
+        example: 5003m000011Q8flAAC
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp16'}
+          description: Successful request
+      summary: Salesforce Get Case Comments
+  tmp17:
+    post:
+      description: Get Contact by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Contact Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp17'}
+          description: Successful request
+      summary: Salesforce Get Contact
+  tmp18:
+    post:
+      description: Get Lead by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Contact Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp18'}
+          description: Successful request
+      summary: Salesforce Get Lead
+  tmp19:
+    post:
+      description: Get Opportunity by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Contact Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp19'}
+          description: Successful request
+      summary: Salesforce Get Opportunity
+  tmp2:
+    post:
+      description: Create New Contact
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Is Deleted
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Master Record Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Account Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Name
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: First Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Salutation
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Street
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other City
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Postal Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Country
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Latitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Longitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Geocode Accuracy
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Address
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing Street
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing City
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing Postal Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing Country
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing Latitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing Longitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing Geocode Accuracy
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing Address
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Fax
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mobile Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Home Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Assistant Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Reports To Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Title
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Department
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Assistant Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Lead Source
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Birthdate
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Owner Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Modstamp
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Activity Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last CU Request Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last CU Update Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Viewed Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Referenced Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Bounced Reason
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Bounced Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Email Bounced
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Jigsaw
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Jigsaw Contact Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Clean Status
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Salesforce Create Contact
+  tmp20:
+    post:
+      description: Get Report by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Contact Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp20'}
+          description: Successful request
+      summary: Salesforce Get Report
+  tmp21:
+    post:
+      description: Get Task by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Task Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp21'}
+          description: Successful request
+      summary: Salesforce Get Task
+  tmp22:
+    post:
+      description: Get User by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: User Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp22'}
+          description: Successful request
+      summary: Salesforce Get User
+  tmp23:
+    post:
+      description: Posts a new comment to the case.
+      parameters:
+      - description: Case ID
+        example: 5003m000011Q8flAAC
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Text of the comment.
+        example: Swimlane Automation
+        in: query
+        name: Comment Body
+        required: true
+        schema: {type: string}
+      - description: True to Publish.
+        example: ''
+        in: query
+        name: IsPublished
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp23'}
+          description: Successful request
+      summary: Salesforce Post Case Comment
+  tmp24:
+    post:
+      description: Search based on a SOQL formatted Query
+      parameters:
+      - description: ''
+        example: SELECT Id, Email FROM Contact WHERE LastName = 'Smith'
+        in: query
+        name: SOQL Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp24'}
+          description: Successful request
+      summary: Salesforce Query
+  tmp25:
+    post:
+      description: Salesforce Get all records where a field is within a given range
+      parameters:
+      - description: the Salesforce field you wand to filter on. Must be a datetime
+          field
+        example: ClosedDate
+        in: query
+        name: Field
+        required: true
+        schema: {type: string}
+      - description: The minimum accepted value for the field given.
+        example: '2019-10-02T10:00:00-08:00'
+        in: query
+        name: Minimum Date
+        required: false
+        schema: {type: string}
+      - description: The maximum accepted value for the field given
+        example: '2019-10-02T10:00:00-08:00'
+        in: query
+        name: Maximum Date
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp25'}
+          description: Successful request
+      summary: Salesforce Query Range
+  tmp26:
+    post:
+      description: Search based on a key
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Search Term
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp26'}
+          description: Successful request
+      summary: Salesforce Search
+  tmp27:
+    post:
+      description: Return search results as JSON data
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Search Term
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp27'}
+          description: Successful request
+      summary: Salesforce Search JSON
+  tmp28:
+    post:
+      description: Update Account by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Account Id
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Create if Account doesnt exist
+        required: false
+        schema: {type: boolean}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Annual Revenue
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Trade Style
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Master Record Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Year Started
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing Geocode Accuracy
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping Country
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Jigsaw Company Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Sic
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping Postal Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: SLA
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Owner Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: SLA Expiration Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing City
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Website
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping Address
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Fax
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Account Source
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Niacs Desc
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping Latitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Number of Employees
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Referenced Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Ownership
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing Country
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Viewed Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: D and B Company Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Deleted
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing Address
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Jigsaw
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Number of Locations
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Industry
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Sic Desc
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Duns Number
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing Street
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Parent Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Customer Priority
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping City
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping Longitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing Latitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Naics Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Rating
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing Postal Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Account Number
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping Geocode Accuracy
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Activity Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Site
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Upsell Opportunity
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Clean Status
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Modstamp
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Shipping Street
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: SLA Serial Number
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Active
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Billing Longitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Ticker Symbol
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp28'}
+          description: Successful request
+      summary: Salesforce Update Account
+  tmp29:
+    post:
+      description: Update an existing Salesforce case
+      parameters:
+      - description: ID of the case you want to update
+        example: 5004T000000dv2lQAA
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: 'The subject of the case. Limit: 255 characters.'
+        example: ''
+        in: query
+        name: Subject
+        required: true
+        schema: {type: string}
+      - description: The company name that was entered when the case was created.
+          This field can't be updated after the case has been created. Label is Company.
+        example: ''
+        in: query
+        name: Supplied Company
+        required: false
+        schema: {type: string}
+      - description: 'A text description of the case. Limit: 32 KB.'
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: The importance or urgency of the case, such as High, Medium,
+          or Low.
+        example: High
+        in: query
+        name: Priority
+        required: false
+        schema: {type: string}
+      - description: ID of the contact who owns the case.
+        example: 0054T000000LLnUQAW
+        in: query
+        name: Owner ID
+        required: false
+        schema: {type: string}
+      - description: The type of case, such as Feature Request or Question.
+        example: Feature Request
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      - description: The status of the case, such as New, Closed, or Escalated. This
+          field directly controls the IsClosed flag. Each predefined Status value
+          implies an IsClosed flag value.
+        example: New
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: Indicates whether the case has been escalated (true) or not.
+          A case's escalated state does not affect how you can use a case, or whether
+          you can query, delete, or update it. You can set this flag via the API.
+          Label is Escalated.
+        example: ''
+        in: body
+        name: Is Escalated
+        required: false
+        schema: {type: string}
+      - description: The phone number that was entered when the case was created.
+        example: (111) 111-1111
+        in: query
+        name: Supplied Phone
+        required: false
+        schema: {type: string}
+      - description: ID of the associated Contact.
+        example: 0054T000000LLnUQAW
+        in: query
+        name: Contact ID
+        required: false
+        schema: {type: string}
+      - description: The reason why the case was created, such as Instructions not
+          clear, or User didn't attend training.
+        example: ''
+        in: query
+        name: Reason
+        required: false
+        schema: {type: string}
+      - description: The name that was entered when the case was created. This field
+          can't be updated after the case has been created. Label is Name.
+        example: ''
+        in: query
+        name: Supplied Name
+        required: false
+        schema: {type: string}
+      - description: The email address that was entered when the case was created.
+          If your organization has an active auto-response rule, SuppliedEmail is
+          required when creating a case via the API. Auto-response rules use the email
+          in the contact specified by ContactId. If no email address is in the contact
+          record, the email specified here is used.
+        example: ''
+        in: query
+        name: Supplied Email
+        required: false
+        schema: {type: string}
+      - description: ID of the account associated with this case.
+        example: 0054T000000LLnUQAW
+        in: query
+        name: Account ID
+        required: false
+        schema: {type: string}
+      - description: The ID of the parent case in the hierarchy. The label is Parent
+          Case.
+        example: 0054T000000LLnUQAW
+        in: query
+        name: Parent ID
+        required: false
+        schema: {type: string}
+      - description: The source of the case, such as Email, Phone, or Web. Label is
+          Case Origin.
+        example: Phone
+        in: query
+        name: Origin
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp29'}
+          description: Successful request
+      summary: Salesforce Update Case
+  tmp3:
+    post:
+      description: Create New Lead
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Converted Opportunity Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: City
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Annual Revenue
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Jigsaw Contact Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Master Record Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: First Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Title
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Name
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Referenced Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Converted Account Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Unread By Owner
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Latitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Owner Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: SIC Code C
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Website
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Fax
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Number of Employees
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Company
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Geocode Accuracy
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Converted Contact Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Converted Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Viewed Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: D and B Company Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Deleted
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Jigsaw
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Bounced Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Country
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Industry
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Longitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Lead Source
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Product Interest
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Converted
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Postal Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Primary
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Company Duns Number
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Rating
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mobile Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Activity Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Bounced Reason
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Clean Status
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Street
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Modstamp
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Salutation
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Salesforce Create Lead
+  tmp30:
+    post:
+      description: Update a Case Comment By ID
+      parameters:
+      - description: Comment ID
+        example: 5003m000011Q8flAAC
+        in: query
+        name: Comment ID
+        required: true
+        schema: {type: string}
+      - description: Text of the comment
+        example: Swimlane Automation
+        in: query
+        name: Comment Body
+        required: false
+        schema: {type: string}
+      - description: True to Publish.
+        example: ''
+        in: query
+        name: IsPublished
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp30'}
+          description: Successful request
+      summary: Salesforce Update Case Comment
+  tmp31:
+    post:
+      description: Update Contact by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Contact Id
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Create if Contact doesnt exist
+        required: false
+        schema: {type: boolean}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Deleted
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Master Record Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Account Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: First Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Salutation
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Street
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other City
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Postal Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Country
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Latitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Longitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Geocode Accuracy
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Address
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing Street
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing City
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing Postal Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing Country
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing Latitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing Longitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing Geocode Accuracy
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mailing Address
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Fax
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mobile Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Home Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Other Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Assistant Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Reports To Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Title
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Department
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Assistant Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Lead Source
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Birthdate
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Owner Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Modstamp
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Activity Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last CU Request Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last CU Update Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Viewed Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Referenced Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Bounced Reason
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Bounced Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Email Bounced
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Jigsaw
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Jigsaw Contact Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Clean Status
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp31'}
+          description: Successful request
+      summary: Salesforce Update Contact
+  tmp32:
+    post:
+      description: Update Lead by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Lead Id
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Create if Lead doesnt exist
+        required: false
+        schema: {type: boolean}
+      - description: ''
+        example: ''
+        in: query
+        name: Converted Opportunity Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: City
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Annual Revenue
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Jigsaw Contact Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Master Record Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: First Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Title
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Referenced Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Converted Account Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Unread By Owner
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Latitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Owner Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: SIC Code C
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Website
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Fax
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Number of Employees
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Company
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Geocode Accuracy
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Converted Contact Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Converted Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Viewed Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: D and B Company Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Deleted
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Jigsaw
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Bounced Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Country
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Industry
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Longitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Lead Source
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Product Interest
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Converted
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Postal Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Primary
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Company Duns Number
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Rating
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mobile Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Activity Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Bounced Reason
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Clean Status
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Street
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Modstamp
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Salutation
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp32'}
+          description: Successful request
+      summary: Salesforce Update Lead
+  tmp33:
+    post:
+      description: Update Opportunity by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Opportunity Id
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Create if Opportunity doesnt exist
+        required: false
+        schema: {type: boolean}
+      - description: ''
+        example: ''
+        in: query
+        name: HasOpenActivity
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Fiscal Quarter
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Close Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Order Number
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Stage Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Campaign Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Forecast Category Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Main Competitors
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Viewed Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Deleted
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Account Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Fiscal
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Current Generators
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Fiscal Year
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Won
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Tracking Number
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Amount
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Lead Source
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Referenced Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Private
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Total Opportunity Quantity
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Price Book 2 Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Delivery Installation Status
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Probability
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Activity Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Has Opportunity Line Item
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Closed
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Next Step
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Modstamp
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Owner Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Has Overdue Task
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Forecast Category
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Expected Revenue
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp33'}
+          description: Successful request
+      summary: Salesforce Update Opportunity
+  tmp34:
+    post:
+      description: Update Task by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Task Id
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Create if Task doesnt exist
+        required: false
+        schema: {type: boolean}
+      - description: ''
+        example: ''
+        in: query
+        name: Call Duration
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Call Object
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Priority
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Owner Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Recurrence
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Call Disposition
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Start Date Only
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Day Of Week
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Instance
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Who Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Activity Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is High Priority
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Deleted
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Account Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Call Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: What Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Task Subtype
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Archived
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Regenerated Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Time Zone Sid Key
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Month of Year
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Reminder Set
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Day of Month
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Closed
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Reminder Date Time
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Modstamp
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence End Date Only
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Interval
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Activity Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Subject
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp34'}
+          description: Successful request
+      summary: Salesforce Update Task
+  tmp35:
+    post:
+      description: Update User by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: User Id
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Change Comment Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Title
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Preferences Auto Bcc
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Department
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Medium Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Fax
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide End User Onboarding Assistant Modal
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide Lightning Migration Modal
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Feedback Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Path Assistant Collapsed
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Sort Feed By Comment
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Message Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Dis Comment After Like Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Postal Code To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_state
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Call Center Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Encoding Key
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_street
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Account Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Small Banner Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Jigsaw Import Limit Override
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Preferences Auto Bcc Stay In Touch
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Longitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Street Address To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Referenced Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Marketing User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Viewed Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions SF Content User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mobile Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Time Zone Sid Key
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Forecast Enabled
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Fax To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Enable Auto Sub For Feeds
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: About Me
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Profile Pic To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Community Nickname
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Like Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Stay In Touch Signature
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Active
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Postal Code To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide S1 Browser UI
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Later Comment Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Badge Text
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Work Phone To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Work Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Latitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Lightning Experience Preferred
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_geocode Accuracy
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_latitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Username
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Followers Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_postal Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Jigsaw Prospecting User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Banner Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Language Locale Key
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Contact Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Street Address To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Federation Identifier
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes_type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Global Nav Grid Menu WT Shown
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Offline User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Extension
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Siteforce Contributor User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Email To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Digest Frequency
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide Bigger Photo Callout
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Profile Post Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Medium Banner Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Receives Admin Info Emails
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Cache Diagnostics
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_state Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Country To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_country Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Interaction User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Share Post Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Dis Mentions Comment Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Call Center Auto Login
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show State To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Support User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Modstamp
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Country To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Mentions Post Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Work Dot Com User Feature
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: First Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Name
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Signature
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Title To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Dis Prof Post Comment Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Endorsement Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes_url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Global Nav Bar WT Shown
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Fax To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Delegated Approver Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Knowledge User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Mobile User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Manager To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show State To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_longitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Activity Reminders Popup
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Work Phone To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_country
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Preferences Stay In Touch Reminder
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Siteforce Publisher User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Content Email As And When
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Preview Lightning
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Create LE XApps WT Shown
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Offline Pda Trial Expiration Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Email To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Postal Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide CS NDesktop Task
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Company Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Apex Pages Developer Mode
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Login Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Offline Trial Expiration Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: City
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_city
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Mobile Phone To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide Chatter Onboarding Splash
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide Sfx Welcome Mat
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Reminder Sound Off
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Full Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Task Reminders Checkbox Default
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Event Reminders Checkbox Default
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Bookmark Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Profile Id
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Title To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Default Group Notification Frequency
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Division
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable File Share Notifications For Api
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Small Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Profile Photo Active
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Locale Sid Key
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Content No Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Geocode Accuracy
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Stay In Touch Note
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Role Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide Second Chatter Onboarding Splash
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide CS NGet Chatter Mobile Task
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Sender Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Password Change Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Country
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Alias
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show City To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable All Feeds Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Stay In Touch Subject
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Manager To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Manager Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Sender Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Street
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Employee Number
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Mobile Phone To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show City To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Jigsaw List User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Receives Info Emails
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp35'}
+          description: Successful request
+      summary: Salesforce Update User
+  tmp4:
+    post:
+      description: Create Opportunity
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: HasOpenActivity
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Fiscal Quarter
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Close Date
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Order Number
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Stage Name
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Campaign Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Forecast Category Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Main Competitors
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Viewed Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Deleted
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Account Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Fiscal
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Current Generators
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Fiscal Year
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Won
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Tracking Number
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Amount
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Lead Source
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Referenced Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Private
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Total Opportunity Quantity
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Price Book 2 Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Delivery Installation Status
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Probability
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Activity Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Has Opportunity Line Item
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Closed
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Next Step
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Modstamp
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Owner Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Has Overdue Task
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Forecast Category
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Expected Revenue
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Salesforce Create Opportunity
+  tmp5:
+    post:
+      description: Create New Task
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Call Duration
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Call Object
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Priority
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Owner Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Recurrence
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Call Disposition
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Start Date Only
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Day Of Week
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Instance
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Who Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Activity Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is High Priority
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Deleted
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Account Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Call Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: What Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Task Subtype
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Archived
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Regenerated Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Time Zone Sid Key
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Month of Year
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Reminder Set
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Day of Month
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Closed
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Reminder Date Time
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Modstamp
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence End Date Only
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Interval
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Recurrence Activity Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Subject
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Salesforce Create Task
+  tmp6:
+    post:
+      description: Create New User
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Change Comment Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Title
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Preferences Auto Bcc
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Department
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Medium Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Fax
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide End User Onboarding Assistant Modal
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide Lightning Migration Modal
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Feedback Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Path Assistant Collapsed
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Sort Feed By Comment
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Message Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Dis Comment After Like Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Postal Code To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_state
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Call Center Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Encoding Key
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_street
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Account Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Small Banner Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Jigsaw Import Limit Override
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Preferences Auto Bcc Stay In Touch
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Longitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Street Address To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Referenced Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Marketing User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Viewed Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions SF Content User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Mobile Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Time Zone Sid Key
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Forecast Enabled
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Fax To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Enable Auto Sub For Feeds
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: About Me
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Profile Pic To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Community Nickname
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Like Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Stay In Touch Signature
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Active
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Postal Code To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide S1 Browser UI
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Later Comment Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Badge Text
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Work Phone To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Work Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Latitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Lightning Experience Preferred
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_geocode Accuracy
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_latitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Username
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Followers Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_postal Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Jigsaw Prospecting User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Banner Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Language Locale Key
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Contact Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Street Address To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Federation Identifier
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes_type
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Global Nav Grid Menu WT Shown
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Offline User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Extension
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Siteforce Contributor User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Email To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Digest Frequency
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide Bigger Photo Callout
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Profile Post Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Medium Banner Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Receives Admin Info Emails
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Cache Diagnostics
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_state Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Country To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_country Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Interaction User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Share Post Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Dis Mentions Comment Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Call Center Auto Login
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show State To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Support User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Modstamp
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Country To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Mentions Post Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Work Dot Com User Feature
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: First Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Name
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Signature
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Title To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Dis Prof Post Comment Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Endorsement Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Attributes_url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Global Nav Bar WT Shown
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Fax To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Delegated Approver Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Knowledge User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Mobile User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Manager To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show State To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Phone
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_longitude
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Activity Reminders Popup
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Work Phone To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_country
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email Preferences Stay In Touch Reminder
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Permissions Siteforce Publisher User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Content Email As And When
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Preview Lightning
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Create LE XApps WT Shown
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Modified By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Offline Pda Trial Expiration Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Email To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Postal Code
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide CS NDesktop Task
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Company Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Apex Pages Developer Mode
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Login Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Offline Trial Expiration Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: City
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Address_city
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Mobile Phone To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide Chatter Onboarding Splash
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide Sfx Welcome Mat
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Reminder Sound Off
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Full Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Task Reminders Checkbox Default
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Event Reminders Checkbox Default
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable Bookmark Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Profile Id
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Title To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Default Group Notification Frequency
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Division
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable File Share Notifications For Api
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Small Photo Url
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Profile Photo Active
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Locale Sid Key
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Content No Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Geocode Accuracy
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Email
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Stay In Touch Note
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Created By Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Role Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide Second Chatter Onboarding Splash
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Hide CS NGet Chatter Mobile Task
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Sender Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Password Change Date
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Country
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Alias
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show City To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Disable All Feeds Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Stay In Touch Subject
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Manager To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Manager Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Sender Email
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Street
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Employee Number
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show Mobile Phone To External Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Show City To Guest Users
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: User Preferences Jigsaw List User
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Receives Info Emails
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Salesforce Create User
+  tmp7:
+    post:
+      description: Delete Account by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Account Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Salesforce Delete Account
+  tmp8:
+    post:
+      description: Delete an existing Salesforce Case
+      parameters:
+      - description: ID of the case you want to delete
+        example: 5004T000000dv2lQAA
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Salesforce Delete Case
+  tmp9:
+    post:
+      description: Delete Contact by Id
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Contact Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Salesforce Delete Contact
+tags:
+- {name: Infrastructure}

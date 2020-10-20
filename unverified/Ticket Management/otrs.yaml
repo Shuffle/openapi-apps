@@ -1,0 +1,240 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        ArticleID: {type: string}
+        TicketID: {type: string}
+        TicketNumber: {type: string}
+      type: object
+    tmp1:
+      properties:
+        Age: {type: string}
+        ArchiveFlag: {type: string}
+        ChangeBy: {type: string}
+        Changed: {type: string}
+        CreateBy: {type: string}
+        Created: {type: string}
+        CustomerID: {type: string}
+        CustomerUserID: {type: string}
+        EscalationResponseTime: {type: string}
+        EscalationSolutionTime: {type: string}
+        EscalationTime: {type: string}
+        EscalationUpdateTime: {type: string}
+        GroupID: {type: string}
+        Lock: {type: string}
+        LockID: {type: string}
+        Owner: {type: string}
+        OwnerID: {type: string}
+        Priority: {type: string}
+        PriorityID: {type: string}
+        Queue: {type: string}
+        QueueID: {type: string}
+        RealTillTimeNotUsed: {type: string}
+        Responsible: {type: string}
+        ResponsibleID: {type: string}
+        SLAID: {type: string}
+        ServiceID: {type: string}
+        State: {type: string}
+        StateID: {type: string}
+        StateType: {type: string}
+        TicketID: {type: string}
+        TicketNumber: {type: string}
+        TimeUnit: {type: string}
+        Title: {type: string}
+        Type: {type: string}
+        TypeID: {type: string}
+        UnlockTimeout: {type: string}
+        UntilTime: {type: string}
+      type: object
+    tmp2:
+      properties:
+        results: {type: string}
+      type: object
+    tmp3:
+      properties:
+        ArticleID: {type: string}
+        TicketID: {type: string}
+        TicketNumber: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of OTRS OTRS
+  title: OTRS OTRS
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Create a ticket in OTRS from Swimlane
+      parameters:
+      - description: Title of the ticket to create
+        example: 'New Incident #24'
+        in: query
+        name: Title
+        required: true
+        schema: {type: string}
+      - description: Queue to create the ticket in
+        example: New Tickets
+        in: query
+        name: Queue
+        required: true
+        schema: {type: string}
+      - description: State to create the ticket with
+        example: 4 critical
+        in: query
+        name: State
+        required: true
+        schema: {type: string}
+      - description: Priority of the ticket to be created with
+        example: 1 high
+        in: query
+        name: Priority
+        required: true
+        schema: {type: string}
+      - description: User to create the ticket as
+        example: ReviewUser
+        in: query
+        name: User
+        required: true
+        schema: {type: string}
+      - description: Article to attach to the ticket's subject
+        example: Problem with X
+        in: query
+        name: Article Subject
+        required: true
+        schema: {type: string}
+      - description: Article to attach to the ticket's body
+        example: I can't find X!
+        in: query
+        name: Article Body
+        required: true
+        schema: {type: string}
+      - description: JSON String of extra data to append to the ticket. See README
+        example: '{"TypeID": 5}'
+        in: query
+        name: Extra Ticket Data JSON
+        required: false
+        schema: {type: string}
+      - description: JSON String of extra data to append to the article. See README
+        example: '{"MyCustomField": "My Custom Data Here"}'
+        in: query
+        name: Extra Article Data JSON
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: OTRS Create Ticket
+  tmp1:
+    post:
+      description: Get a ticket from OTRS into Swimlane
+      parameters:
+      - description: Ticket ID to get information about
+        example: '35'
+        in: body
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: OTRS Get Ticket
+  tmp2:
+    post:
+      description: Search for a ticket in OTRS
+      parameters:
+      - description: Parameter to search by
+        example: Title
+        in: query
+        name: Search Parameter
+        required: true
+        schema: {type: string}
+      - description: Value to search for, see README for examples
+        example: MyTitle
+        in: query
+        name: Search Value
+        required: true
+        schema: {type: string}
+      - description: Treat the Search Value as a timestamp and convert it automatically
+        example: 'True'
+        in: query
+        name: Value is Timestamp
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: OTRS Search Ticket
+  tmp3:
+    post:
+      description: Update a ticket in OTRS
+      parameters:
+      - description: Ticket ID to update
+        example: '21'
+        in: query
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      - description: Optional new article subject
+        example: New Symptoms
+        in: query
+        name: Article Subject
+        required: false
+        schema: {type: string}
+      - description: Optional new article body
+        example: Our issue now needs to find Y
+        in: query
+        name: Article Body
+        required: false
+        schema: {type: string}
+      - description: JSON String of extra data to append to the article
+        example: '{"MyCustomField": "My Custom Data Here"}'
+        in: query
+        name: Extra Article Data JSON
+        required: false
+        schema: {type: string}
+      - description: State of the ticket to update
+        example: new
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      - description: Title of the ticket to update
+        example: Now where is Y?
+        in: query
+        name: Title
+        required: false
+        schema: {type: string}
+      - description: Queue the ticket is in to update
+        example: YFinderQueue
+        in: query
+        name: Queue
+        required: false
+        schema: {type: string}
+      - description: Priority of the ticket to update
+        example: 4 critical
+        in: query
+        name: Priority
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: OTRS Update Ticket
+tags:
+- {name: Ticket Management}

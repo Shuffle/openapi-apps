@@ -1,0 +1,130 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        addressSpaceDesc: {type: string}
+        maxAddress: {type: string}
+        minAddress: {type: string}
+        netmask: {type: string}
+        networkAddress: {type: string}
+        numPossibleHosts: {type: string}
+        reportedAddress_abuseConfidenceScore: {type: string}
+        reportedAddress_countryCode: {type: string}
+        reportedAddress_ipAddress: {type: string}
+        reportedAddress_mostRecentReport: {type: string}
+        reportedAddress_numReports: {type: string}
+      type: object
+    tmp1:
+      properties:
+        abuseConfidenceScore: {type: string}
+        categories: {type: string}
+        comment: {type: string}
+        countryCode: {type: string}
+        countryName: {type: string}
+        domain: {type: string}
+        ipAddress: {type: string}
+        ipVersion: {type: string}
+        isPublic: {type: string}
+        isWhitelisted: {type: string}
+        isp: {type: string}
+        lastReportedAt: {type: string}
+        numDistinctUsers: {type: string}
+        reportedAt: {type: string}
+        reporterCountryCode: {type: string}
+        reporterCountryName: {type: string}
+        reporterId: {type: string}
+        totalReports: {type: string}
+        usageType: {type: string}
+      type: object
+    tmp2:
+      properties:
+        abuseConfidenceScore: {type: string}
+        ipAddress: {type: string}
+        success: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Marathon Studios Inc. AbuseIPDB
+  title: Marathon Studios Inc. AbuseIPDB
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Check a CIDR block against AbuseIPDB
+      parameters:
+      - description: CIDR block to pass to AbuseIPDB
+        example: 207.126.144.0/20
+        in: query
+        name: CIDR Block
+        required: true
+        schema: {type: string}
+      - description: Number of days to check
+        example: ''
+        in: body
+        name: Days
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: AbuseIPDB Check CIDR
+  tmp1:
+    post:
+      description: Check an IP against AbuseIPDB
+      parameters:
+      - description: IP address to pass to AbuseIPDB
+        example: ''
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      - description: Number of days to check
+        example: ''
+        in: body
+        name: Max Age in Days
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: AbuseIPDB Check IP
+  tmp2:
+    post:
+      description: Report an IP to AbuseIPDB
+      parameters:
+      - description: IP address to pass to AbuseIPDB
+        example: ''
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      - description: Comma delineated list of category IDs
+        example: ''
+        in: query
+        name: Categories
+        required: true
+        schema: {type: string}
+      - description: Describe the type of malicious activity
+        example: ''
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: AbuseIPDB Report IP
+tags:
+- {name: Investigation}

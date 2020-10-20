@@ -1,0 +1,244 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        id: {type: string}
+      type: object
+    tmp1:
+      properties:
+        status_code: {type: string}
+        status_message: {type: string}
+      type: object
+    tmp2:
+      properties:
+        status_code: {type: string}
+        status_message: {type: string}
+      type: object
+    tmp3:
+      properties:
+        comment: {type: string}
+        entries_action: {type: string}
+        entries_domain: {type: string}
+        entries_id: {type: string}
+        entries_obj_seq: {type: string}
+        entries_status: {type: string}
+        entries_type: {type: string}
+        id: {type: string}
+        name: {type: string}
+      type: object
+    tmp4:
+      properties:
+        allow-routing: {type: string}
+        associated-interface: {type: string}
+        color: {type: string}
+        comment: {type: string}
+        dynamic_mapping: {type: string}
+        end-mac: {type: string}
+        list: {type: string}
+        name: {type: string}
+        organization: {type: string}
+        policy-group: {type: string}
+        sdn-addr-type: {type: string}
+        start-mac: {type: string}
+        subnet: {type: string}
+        subnet-name: {type: string}
+        tagging: {type: string}
+        type: {type: string}
+        uuid: {type: string}
+        visibility: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Fortinet Fortimanager
+  title: Fortinet Fortimanager
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Add a domain filter in FortiManager to block a host or domain
+      parameters:
+      - description: CSV string of domains or IPs or Hosts to block
+        example: downloadavirus.com,123.123.123.123
+        in: query
+        name: Domain CSV
+        required: true
+        schema: {type: string}
+      - description: Comment to add to the filter
+        example: this filter does x
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      - description: Filter name
+        example: ''
+        in: query
+        name: Filter Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: FortiManager Block Domain or Host
+  tmp1:
+    post:
+      description: FortiManager block a file Hash
+      parameters:
+      - description: Uploaded file to block in the FortiManager firewall. If not provided,
+          must provide file hash, name and length
+        example: ''
+        in: query
+        name: File To Block
+        required: false
+        schema: {type: string}
+      - description: CRC32 Hash (signed) of the file to block. Only needed if 'File
+          To Block' isn't uploaded
+        example: '2362324337'
+        in: query
+        name: File CRC32 Hash Value
+        required: false
+        schema: {type: string}
+      - description: Name of the file to block. Only needed if 'File To Block' isn't
+          uploaded
+        example: myfile.exe
+        in: query
+        name: File Name
+        required: false
+        schema: {type: string}
+      - description: Length of the file content (in bytes) to block. Only needed if
+          'File To Block' isn't uploaded
+        example: '854'
+        in: body
+        name: File Length
+        required: false
+        schema: {type: string}
+      - description: Unique name to tag the entry with. Cannot be set in conjunction
+          with Randomize Tag
+        example: MyNewTag
+        in: query
+        name: Rule Tag Name
+        required: false
+        schema: {type: string}
+      - description: Randomly generate a tag name. Cannot be used if Rule Tag Name
+          is set
+        example: ''
+        in: query
+        name: Randomize Tag
+        required: true
+        schema: {type: boolean}
+      - description: Comment to add to the entry
+        example: Block virus.exe
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: FortiManager Block Hash
+  tmp2:
+    post:
+      description: FortiManager block an IP
+      parameters:
+      - description: Enable/disable use of this address in the static route configuration.
+        example: ''
+        in: query
+        name: Allow Routing
+        required: true
+        schema: {type: boolean}
+      - description: Name of the entry
+        example: ''
+        in: query
+        name: Entry Name
+        required: true
+        schema: {type: string}
+      - description: Entry type to block, see README for a full list
+        example: iprange
+        in: query
+        name: Entry Type
+        required: true
+        schema: {type: string}
+      - description: Network interface associated with this address. Defaults to 'any'
+        example: any
+        in: query
+        name: Interface
+        required: false
+        schema: {type: string}
+      - description: If blocking an IP range, this is the start IP of the range
+        example: 192.168.1.5
+        in: query
+        name: Start IP
+        required: true
+        schema: {type: string}
+      - description: If blocking an IP range, this is the end IP of the range
+        example: 192.168.1.9
+        in: query
+        name: End IP
+        required: true
+        schema: {type: string}
+      - description: Gateway of the entry
+        example: 192.168.1.0
+        in: query
+        name: Subnet Gateway
+        required: true
+        schema: {type: string}
+      - description: Gateway of the entry
+        example: 255.255.255.0
+        in: query
+        name: Subnet Mask
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: FortiManager Block IP
+  tmp3:
+    post:
+      description: List domain filters or get domain filter in FortiManager
+      parameters:
+      - description: ID of a domain filter to get information about. If unset, will
+          return all
+        example: '1'
+        in: body
+        name: Domain ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: FortiManager Get Domain Filters
+  tmp4:
+    post:
+      description: Get all entries or single entry in FortiManager
+      parameters:
+      - description: Address to look up in the firewall. If not specified, will return
+          all firewall entries
+        example: FIREWALL_AUTH_PORTAL_ADDRESS
+        in: query
+        name: Address
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: FortiManager Get Firewall Entry
+tags:
+- {name: Network Security & Management}

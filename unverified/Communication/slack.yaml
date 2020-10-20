@@ -1,0 +1,241 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        errorMessage: {type: string}
+        successful: {type: string}
+      type: object
+    tmp1:
+      properties:
+        errorMessage: {type: string}
+        successful: {type: string}
+      type: object
+    tmp2:
+      properties:
+        errorMessage: {type: string}
+        successful: {type: string}
+      type: object
+    tmp3:
+      properties:
+        errorMessage: {type: string}
+        json: {type: string}
+        successful: {type: string}
+      type: object
+    tmp4:
+      properties:
+        errorMessage: {type: string}
+        successful: {type: string}
+        usernames: {type: string}
+      type: object
+    tmp5:
+      properties:
+        errorMessage: {type: string}
+        successful: {type: string}
+      type: object
+    tmp6:
+      properties:
+        errorMessage: {type: string}
+        successful: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Slack Slack
+  title: Slack Slack
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Archive A Conversation
+      parameters:
+      - description: Archives a conversation by channel name
+        example: random
+        in: query
+        name: Channel Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Slack Archive Conversation
+  tmp1:
+    post:
+      description: Broadcast message to everyone in the channel or conversation
+      parameters:
+      - description: Public, private  or IM channel to send message to. Can be an
+          encoded ID, or a name.
+        example: C1234567890 or mychannel or G012AC86C
+        in: query
+        name: Channel
+        required: true
+        schema: {type: string}
+      - description: The title of the message
+        example: New Incident
+        in: query
+        name: Title
+        required: true
+        schema: {type: string}
+      - description: The message body
+        example: IR-23 was created on 1/12/15
+        in: query
+        name: Message
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Slack Broadcast Message
+  tmp2:
+    post:
+      description: Create A Conversation
+      parameters:
+      - description: Name of the public or private channel to create
+        example: mychannel
+        in: query
+        name: Channel Name
+        required: true
+        schema: {type: string}
+      - description: Create a private channel instead of a public one. If set to True
+          a private channel is created,otherwise a public channel is created.
+        example: True or False
+        in: query
+        name: Is Private
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Slack Create A Conversation
+  tmp3:
+    post:
+      description: Get The History of a Specific Conversation by Channel ID
+      parameters:
+      - description: Channel Name to fetch history for
+        example: random
+        in: query
+        name: Channel Name
+        required: true
+        schema: {type: string}
+      - description: Include messages with latest or oldest timestamp in results only
+          when either timestamp is specified
+        example: True or False
+        in: query
+        name: Inclusive
+        required: false
+        schema: {type: boolean}
+      - description: Creates a time range that extends back X minutes ago. (Default
+          is 30)
+        example: '5'
+        in: body
+        name: Minutes Ago
+        required: false
+        schema: {type: string}
+      - description: Limit the number of conversation objects returned per request.
+          (Default is 10)
+        example: '9'
+        in: body
+        name: Limit Results
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Slack Get Conversation History
+  tmp4:
+    post:
+      description: Get Current Usernames In A Conversation
+      parameters:
+      - description: Name of the conversation to retrieve usernames for.
+        example: C1234567890
+        in: query
+        name: Channel Name
+        required: true
+        schema: {type: string}
+      - description: Limit the number of usernames returned per request. (Default
+          is 10)
+        example: '9'
+        in: body
+        name: Limit Results
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Slack Get Users In A Conversation
+  tmp5:
+    post:
+      description: Invite a User or List of Users to a Conversation
+      parameters:
+      - description: The channel that the users will be invited to.
+        example: random
+        in: query
+        name: Channel Name
+        required: true
+        schema: {type: string}
+      - description: A list of usernames(s) to invite to a conversation.
+        example: username1,username2,username3
+        in: query
+        name: Usernames
+        required: false
+        schema: {type: string}
+      - description: A group to invite to a conversation.
+        example: MyNewUserGroup
+        in: query
+        name: Group Name
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Slack Invite Users to A Conversation
+  tmp6:
+    post:
+      description: Remove Users from a Conversation
+      parameters:
+      - description: The channel that the users will be removed from.
+        example: random
+        in: query
+        name: Channel Name
+        required: true
+        schema: {type: string}
+      - description: A list of usernames(s) to remove from a conversation.
+        example: username1,username2,username3
+        in: query
+        name: Usernames
+        required: false
+        schema: {type: string}
+      - description: A group to remove from a conversation.
+        example: MyNewUserGroup
+        in: query
+        name: Group Name
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Slack Remove Users
+tags:
+- {name: Communication}

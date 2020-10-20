@@ -1,0 +1,642 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        data: {type: string}
+        errorCode: {type: string}
+        errors: {type: string}
+        msg: {type: string}
+        status: {type: string}
+      type: object
+    tmp1:
+      properties:
+        access_method: {type: string}
+        acked: {type: string}
+        act_user: {type: string}
+        action: {type: string}
+        activity: {type: string}
+        alert: {type: string}
+        alert_name: {type: string}
+        alert_type: {type: string}
+        app: {type: string}
+        app_action_cnt: {type: string}
+        app_activity: {type: string}
+        app_session_id: {type: string}
+        appcategory: {type: string}
+        bin_timestamp: {type: string}
+        breach_date: {type: string}
+        breach_id: {type: string}
+        breach_media_references: {type: string}
+        breach_score: {type: string}
+        breach_target_references: {type: string}
+        browser: {type: string}
+        browser_session_id: {type: string}
+        browser_version: {type: string}
+        category: {type: string}
+        cci: {type: string}
+        ccl: {type: string}
+        client_bytes: {type: string}
+        count: {type: string}
+        device: {type: string}
+        device_classification: {type: string}
+        dlp_file: {type: string}
+        dlp_incident_id: {type: string}
+        dlp_is_unique_count: {type: string}
+        dlp_parent_id: {type: string}
+        dlp_profile: {type: string}
+        dlp_rule: {type: string}
+        dlp_rule_count: {type: string}
+        dlp_rule_severity: {type: string}
+        domain: {type: string}
+        dst_country: {type: string}
+        dst_geoip_src: {type: string}
+        dst_latitude: {type: string}
+        dst_location: {type: string}
+        dst_longitude: {type: string}
+        dst_region: {type: string}
+        dst_timezone: {type: string}
+        dst_zipcode: {type: string}
+        dstip: {type: string}
+        dynamic_classification: {type: string}
+        email_source: {type: string}
+        event_type: {type: string}
+        external_email: {type: string}
+        file_lang: {type: string}
+        file_size: {type: string}
+        file_type: {type: string}
+        from_object: {type: string}
+        from_storage: {type: string}
+        from_user: {type: string}
+        hostname: {type: string}
+        id: {type: string}
+        insertion_epoch_timestamp: {type: string}
+        instance_id: {type: string}
+        instance_name: {type: string}
+        last_app: {type: string}
+        last_country: {type: string}
+        last_device: {type: string}
+        last_location: {type: string}
+        last_region: {type: string}
+        last_timestamp: {type: string}
+        latency_max: {type: string}
+        latency_min: {type: string}
+        latency_total: {type: string}
+        managed_app: {type: string}
+        managementID: {type: string}
+        matched_username: {type: string}
+        md5: {type: string}
+        msg: {type: string}
+        notify_template: {type: string}
+        ns_activity: {type: string}
+        nsdeviceuid: {type: string}
+        numbytes: {type: string}
+        object: {type: string}
+        object_id: {type: string}
+        object_type: {type: string}
+        org: {type: string}
+        organization_unit: {type: string}
+        orig_ty: {type: string}
+        os: {type: string}
+        os_version: {type: string}
+        other_categories: {type: string}
+        page: {type: string}
+        page_duration: {type: string}
+        page_endtime: {type: string}
+        page_id: {type: string}
+        page_site: {type: string}
+        page_starttime: {type: string}
+        parent_id: {type: string}
+        policy: {type: string}
+        profile_id: {type: string}
+        referer: {type: string}
+        req_cnt: {type: string}
+        request_id: {type: string}
+        resp_cnt: {type: string}
+        risk_level: {type: string}
+        risk_level_id: {type: string}
+        server_bytes: {type: string}
+        severity: {type: string}
+        sha256: {type: string}
+        shared_credential_user: {type: string}
+        site: {type: string}
+        slc_latitude: {type: string}
+        slc_longitude: {type: string}
+        src_country: {type: string}
+        src_geoip_src: {type: string}
+        src_latitude: {type: string}
+        src_location: {type: string}
+        src_longitude: {type: string}
+        src_region: {type: string}
+        src_timezone: {type: string}
+        src_zipcode: {type: string}
+        srcip: {type: string}
+        status: {type: string}
+        sv: {type: string}
+        telemetry_app: {type: string}
+        tenantid: {type: string}
+        threshold: {type: string}
+        threshold_time: {type: string}
+        timestamp: {type: string}
+        to_object: {type: string}
+        to_user: {type: string}
+        traffic_type: {type: string}
+        transaction_id: {type: string}
+        true_obj_category: {type: string}
+        true_obj_type: {type: string}
+        tss_mode: {type: string}
+        type: {type: string}
+        ur_normalized: {type: string}
+        url: {type: string}
+        user: {type: string}
+        user_category: {type: string}
+        user_generated: {type: string}
+        user_id: {type: string}
+        user_name: {type: string}
+        user_role: {type: string}
+        useragent: {type: string}
+        userip: {type: string}
+        userkey: {type: string}
+        web_universal_connector: {type: string}
+      type: object
+    tmp2:
+      properties:
+        access_method: {type: string}
+        action: {type: string}
+        activity: {type: string}
+        activity_status: {type: string}
+        alarm_description: {type: string}
+        alarm_name: {type: string}
+        alert: {type: string}
+        alert_type: {type: string}
+        app: {type: string}
+        app_action_cnt: {type: string}
+        app_session_id: {type: string}
+        appcategory: {type: string}
+        audit_log_event: {type: string}
+        browser: {type: string}
+        browser_session_id: {type: string}
+        browser_version: {type: string}
+        bypass_reason: {type: string}
+        bypass_traffic: {type: string}
+        category: {type: string}
+        cci: {type: string}
+        ccl: {type: string}
+        client_bytes: {type: string}
+        count: {type: string}
+        data: {type: string}
+        device: {type: string}
+        device_classification: {type: string}
+        device_name: {type: string}
+        dlp_file: {type: string}
+        dlp_incident_id: {type: string}
+        dlp_is_unique_count: {type: string}
+        dlp_parent_id: {type: string}
+        dlp_profile: {type: string}
+        dlp_rule: {type: string}
+        dlp_rule_count: {type: string}
+        dlp_rule_severity: {type: string}
+        domain: {type: string}
+        dst_country: {type: string}
+        dst_geoip_src: {type: string}
+        dst_latitude: {type: string}
+        dst_location: {type: string}
+        dst_longitude: {type: string}
+        dst_region: {type: string}
+        dst_timezone: {type: string}
+        dst_zipcode: {type: string}
+        dstip: {type: string}
+        file_lang: {type: string}
+        file_size: {type: string}
+        file_type: {type: string}
+        from_object: {type: string}
+        from_user: {type: string}
+        hostname: {type: string}
+        http_transaction_count: {type: string}
+        id: {type: string}
+        insertion_epoch_timestamp: {type: string}
+        instance_id: {type: string}
+        instance_name: {type: string}
+        latency_max: {type: string}
+        latency_min: {type: string}
+        latency_total: {type: string}
+        managed_app: {type: string}
+        managementID: {type: string}
+        md5: {type: string}
+        metric_value: {type: string}
+        msg: {type: string}
+        notify_template: {type: string}
+        nsdeviceuid: {type: string}
+        numbytes: {type: string}
+        object: {type: string}
+        object_count: {type: string}
+        object_id: {type: string}
+        object_type: {type: string}
+        org: {type: string}
+        organization_unit: {type: string}
+        os: {type: string}
+        os_version: {type: string}
+        other_categories: {type: string}
+        page: {type: string}
+        page_duration: {type: string}
+        page_endtime: {type: string}
+        page_id: {type: string}
+        page_site: {type: string}
+        page_starttime: {type: string}
+        parent_id: {type: string}
+        policy: {type: string}
+        referer: {type: string}
+        req_cnt: {type: string}
+        request_id: {type: string}
+        resp_cnt: {type: string}
+        resp_content_len: {type: string}
+        resp_content_type: {type: string}
+        serial: {type: string}
+        server_bytes: {type: string}
+        severity: {type: string}
+        severity_level: {type: string}
+        sha256: {type: string}
+        site: {type: string}
+        slc_latitude: {type: string}
+        slc_longitude: {type: string}
+        src_country: {type: string}
+        src_geoip_src: {type: string}
+        src_latitude: {type: string}
+        src_location: {type: string}
+        src_longitude: {type: string}
+        src_region: {type: string}
+        src_timezone: {type: string}
+        src_zipcode: {type: string}
+        srcip: {type: string}
+        ssl_decrypt_policy: {type: string}
+        status: {type: string}
+        supporting_data: {type: string}
+        suppression_end_time: {type: string}
+        suppression_start_time: {type: string}
+        sv: {type: string}
+        telemetry_app: {type: string}
+        timestamp: {type: string}
+        to_object: {type: string}
+        to_user: {type: string}
+        traffic_type: {type: string}
+        transaction_id: {type: string}
+        true_obj_category: {type: string}
+        true_obj_type: {type: string}
+        trust_computer_checked: {type: string}
+        two_factor_auth: {type: string}
+        type: {type: string}
+        ur_normalized: {type: string}
+        url: {type: string}
+        user: {type: string}
+        user_category: {type: string}
+        user_generated: {type: string}
+        useragent: {type: string}
+        userip: {type: string}
+        userkey: {type: string}
+        web_universal_connector: {type: string}
+      type: object
+    tmp3:
+      properties:
+        errorCode: {type: string}
+        errors: {type: string}
+        json: {type: string}
+        status: {type: string}
+      type: object
+    tmp4:
+      properties:
+        errorCode: {type: string}
+        errors: {type: string}
+        json: {type: string}
+        status: {type: string}
+      type: object
+    tmp5:
+      properties:
+        errorCode: {type: string}
+        errors: {type: string}
+        json: {type: string}
+        status: {type: string}
+      type: object
+    tmp6:
+      properties:
+        errorCode: {type: string}
+        errors: {type: string}
+        msg: {type: string}
+        status: {type: string}
+        warnings: {type: string}
+      type: object
+    tmp7:
+      properties:
+        errorCode: {type: string}
+        errors: {type: string}
+        msg: {type: string}
+        status: {type: string}
+        warnings: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Netskope Netskope
+  title: Netskope Netskope
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Netskope Acknowledge the anomalies for a user or list of users
+      parameters:
+      - description: List of users to be acknowledged. A comma separated list or array
+          can be used.
+        example: user1@email.com,user2@email.com
+        in: query
+        name: Users
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Netskope Acknowledge Alerts
+  tmp1:
+    post:
+      description: Netskope Ingest alerts generated by Netskope, including policy,
+        DLP, and watch list alerts
+      parameters:
+      - description: 'Selects alert type. If None, it gets all alert types. Options:
+          anomaly | ''Compromised Credential'' | policy | ''Legal Hold'' | malsite
+          | Malware | DLP | ''Security Assessment'' | watchlist | quarantine | Remediation'
+        example: anomaly
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Netskope Get Alerts
+  tmp2:
+    post:
+      description: Netskope Ingest events extracted from SaaS traffic and logs
+      parameters:
+      - description: 'Selects event type. Defaults to all types. Types are: page |
+          application | audit | infrastructure | network'
+        example: page
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Netskope Get Events
+  tmp3:
+    post:
+      description: Netskope Return filtered alerts generated by Netskope, including
+        policy, DLP, and watch list alerts
+      parameters:
+      - description: Case sensitive filter for all cloud app events in the events
+          database
+        example: alert_type eq DLP
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: Selects alert type. If blank, it gets all alert types.
+        example: anomaly
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      - description: Selects only acknowledged or unacknowledged alerts. If blank,
+          it gets both alert types.
+        example: 'True'
+        in: query
+        name: Acknowledged
+        required: false
+        schema: {type: string}
+      - description: Recent time period in epoch time. Valid inputs are 3600, 86400,
+          604800, 2592000, 5184000, and 7776000. Either time period or start time
+          and end time must be included.
+        example: '3600'
+        in: body
+        name: Time Period
+        required: false
+        schema: {type: string}
+      - description: Restrict events to those that have epoch timestamps greater than
+          this. Needed if time period is blank.
+        example: ''
+        in: body
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: Restrict events to those that have epoch timestamps less than
+          or equal to this. Needed if time period is blank.
+        example: ''
+        in: body
+        name: End Time
+        required: false
+        schema: {type: string}
+      - description: Maximum number of events that can be returned. Must be less than
+          5000.
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Skip over some of the events
+        example: '5'
+        in: body
+        name: Skip
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Netskope Query Alerts
+  tmp4:
+    post:
+      description: Netskope Return filtered events extracted from SaaS traffic and
+        logs
+      parameters:
+      - description: Case sensitive filter for all cloud app events in the events
+          database
+        example: app eq Dropbox
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: Selects event type
+        example: page
+        in: query
+        name: Type
+        required: true
+        schema: {type: string}
+      - description: Recent time period in epoch time. Valid inputs are 3600, 86400,
+          604800, 2592000, 5184000, and 7776000. Either time period or start time
+          and end time must be included.
+        example: '3600'
+        in: body
+        name: Time Period
+        required: false
+        schema: {type: string}
+      - description: Restrict events to those that have epoch timestamps greater than
+          this. Needed if time period is blank.
+        example: ''
+        in: body
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: Restrict events to those that have epoch timestamps less than
+          or equal to this. Needed if time period is blank.
+        example: ''
+        in: body
+        name: End Time
+        required: false
+        schema: {type: string}
+      - description: Maximum number of events that can be returned. Must be less than
+          5000.
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Skip over some of the events
+        example: '5'
+        in: body
+        name: Skip
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Netskope Query Events
+  tmp5:
+    post:
+      description: Netskope Return the result of a report generated on one of the
+        fields in the summarization database
+      parameters:
+      - description: Case sensitive filter for all cloud app events in the events
+          database
+        example: alert_type eq DLP
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: Selects event type. Valid types are 'application', 'connection',
+          and 'alert'
+        example: alert
+        in: query
+        name: Type
+        required: true
+        schema: {type: string}
+      - description: How to group results. Valid inputs are 'application', 'user',
+          'device', and 'activity'. 'Activity' cannot be used for connection events.
+        example: application
+        in: query
+        name: Group By
+        required: true
+        schema: {type: string}
+      - description: Recent time period in epoch time. Valid inputs are 3600, 86400,
+          604800, 2592000, 5184000, and 7776000. Either time period or start time
+          and end time must be included.
+        example: '3600'
+        in: body
+        name: Time Period
+        required: false
+        schema: {type: string}
+      - description: Restrict events to those that have epoch timestamps greater than
+          this. Needed if time period is blank.
+        example: ''
+        in: body
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: Restrict events to those that have epoch timestamps less than
+          or equal to this. Needed if time period is blank.
+        example: ''
+        in: body
+        name: End Time
+        required: false
+        schema: {type: string}
+      - description: Maximum number of events that can be returned. Must be less than
+          5000.
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Skip over some of the events
+        example: '5'
+        in: body
+        name: Skip
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Netskope Query Report
+  tmp6:
+    post:
+      description: Netskope Replace existing hashes stored in a specified list
+      parameters:
+      - description: Name of an existing file hash list to be updated
+        example: My Hash List
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: Comma-separated list of file hashes
+        example: e28eb9739b6e84d0f796e3acc0f5b71e, e28eb9739b6e84d0f697e3acc0f5b71a,
+          e28eb9839b6e74d0f696e3acc0f6b710
+        in: query
+        name: Hash List
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Netskope Update Hash List
+  tmp7:
+    post:
+      description: Netskope Replace existing URLs stored in a specified list
+      parameters:
+      - description: Name of an existing URL list to be updated (case sensitive)
+        example: My URL List
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: Comma-separated list of URLs
+        example: linkedin.com,facebook.com,instagram.com,twitter.com
+        in: query
+        name: URL List
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Netskope Update URLs
+tags:
+- {name: Endpoint Security & Management}

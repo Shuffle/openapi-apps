@@ -1,0 +1,129 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        ack: {type: string}
+        action: {type: string}
+        alert_url: {type: string}
+        appliance_id: {type: string}
+        dst_ip: {type: string}
+        dst_mac: {type: string}
+        dst_port: {type: string}
+        explanation_malware_detected_malware__name: {type: string}
+        id: {type: string}
+        malicious: {type: string}
+        name: {type: string}
+        occurred: {type: string}
+        product: {type: string}
+        sc_version: {type: string}
+        severity: {type: string}
+        src_ip: {type: string}
+        src_port: {type: string}
+        uuid: {type: string}
+        vlan: {type: string}
+      type: object
+    tmp1:
+      properties:
+        ack: {type: string}
+        action: {type: string}
+        alert_url: {type: string}
+        appliance_id: {type: string}
+        dst_ip: {type: string}
+        dst_mac: {type: string}
+        dst_port: {type: string}
+        explanation_malware_detected_malware__name: {type: string}
+        id: {type: string}
+        malicious: {type: string}
+        name: {type: string}
+        occurred: {type: string}
+        product: {type: string}
+        sc_version: {type: string}
+        severity: {type: string}
+        src_ip: {type: string}
+        src_port: {type: string}
+        uuid: {type: string}
+        vlan: {type: string}
+      type: object
+    tmp2:
+      properties:
+        artifacts: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of FireEye Nx
+  title: FireEye Nx
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get an Alert by ID in FireEye NX
+      parameters:
+      - description: Numerical ID of the Alert
+        example: '78'
+        in: body
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: FireEye NX Get Alert
+  tmp1:
+    post:
+      description: Get alerts within a specified time range from FireEye NX
+      parameters:
+      - description: Query from the start of a time, or the end of a time. If not
+          given, defaults to 'end_time'
+        example: start_time
+        in: query
+        name: Use Start or End Time
+        required: false
+        schema: {type: string}
+      - description: Must be one of '1_hour', '2_hours', '6_hours', '12_hours', '24_hours',
+          or '48_hours' This duration is how long to look for events. Defaults to
+          24_hours
+        example: 24_hours
+        in: query
+        name: Duration Value
+        required: false
+        schema: {type: string}
+      - description: ISO 8601 or parsable datetime value to start (or end) the search
+          for alerts at. If not given, defaults to current datetime
+        example: '2019-08-28T14:35:37.000-06:00'
+        in: query
+        name: Time Value
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: FireEye NX Get Alerts By Time Range
+  tmp2:
+    post:
+      description: Get Artifacts in FireEye NX from an Alert ID
+      parameters:
+      - description: Numerical ID of the Alert
+        example: '78'
+        in: body
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: FireEye NX Get Artifacts from Alert ID
+tags:
+- {name: Network Security & Management}

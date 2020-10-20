@@ -1,0 +1,176 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        html_formatted_link: {type: string}
+        msg: {type: string}
+      type: object
+    tmp1:
+      properties:
+        html_formatted_link: {type: string}
+        msg: {type: string}
+        ticketnumber: {type: string}
+      type: object
+    tmp2:
+      properties:
+        attachments: {type: string}
+      type: object
+    tmp3:
+      properties:
+        html_formatted_link: {type: string}
+        msg: {type: string}
+      type: object
+    tmp4:
+      properties:
+        admincc: {type: string}
+        cc: {type: string}
+        creator: {type: string}
+        due: {type: string}
+        id: {type: string}
+        owner: {type: string}
+        priority: {type: string}
+        queue: {type: string}
+        requestors: {type: string}
+        resolved: {type: string}
+        starts: {type: string}
+        status: {type: string}
+        subject: {type: string}
+        timeestimated: {type: string}
+        timeleft: {type: string}
+        timeworked: {type: string}
+        told: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Request Tracker Request Tracker
+  title: Request Tracker Request Tracker
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Request Tracker Add Comment to Ticket
+      parameters:
+      - description: Optionally test the ability to read a specific ticket
+        example: '762'
+        in: body
+        name: Test Specific Ticket Number
+        required: true
+        schema: {type: string}
+      - description: Comment text to add to the ticket. If your comment contains multiple
+          lines, each new line must be preceded by a space (e.g. "line 1\n line 2").
+        example: 'Comment message #1'
+        in: query
+        name: Comment
+        required: true
+        schema: {type: string}
+      - description: File(s) to attach to the request tracker ticket
+        example: Text File.txt
+        in: query
+        name: File(s)
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Request Tracker Add Comment to Ticket
+  tmp1:
+    post:
+      description: Create Request Tracker Ticket
+      parameters:
+      - description: Ticket queue to create ticket in
+        example: General
+        in: query
+        name: Queue
+        required: true
+        schema: {type: string}
+      - description: Ticket subject
+        example: New ticket
+        in: query
+        name: Ticket Subject
+        required: true
+        schema: {type: string}
+      - description: New ticket text
+        example: My ticket text
+        in: query
+        name: text
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Request Tracker Create Ticket
+  tmp2:
+    post:
+      description: Search Request Get Attachments
+      parameters:
+      - description: Ticket ID
+        example: '10'
+        in: query
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Request Tracker Get Attachments
+  tmp3:
+    post:
+      description: Modify Request Tracker Ticket
+      parameters:
+      - description: Ticket Number to modify
+        example: '223'
+        in: body
+        name: Ticket Number
+        required: true
+        schema: {type: string}
+      - description: Custom/Other fields to modify. Must be valid JSON format.
+        example: '{"CF.{Department}": "Threat Intel", "Title": "Some Title"}'
+        in: query
+        name: Custom Fields
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Request Tracker Modify Ticket
+  tmp4:
+    post:
+      description: Search Request Tracker Tickets
+      parameters:
+      - description: Search Query String
+        example: Queue='General'&orderby=+Created
+        in: query
+        name: Search Query String
+        required: true
+        schema: {type: string}
+      - description: Set this if you would like to ensure you will not receive duplicate
+          tickets. Do not add sort order to the query in this case.
+        example: ''
+        in: query
+        name: Track State
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Request Tracker Search Ticket
+tags:
+- {name: Ticket Management}

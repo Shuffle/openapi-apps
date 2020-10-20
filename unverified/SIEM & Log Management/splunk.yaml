@@ -1,0 +1,271 @@
+components:
+  schemas:
+    tmp1:
+      properties:
+        failure_count: {type: string}
+        message: {type: string}
+        success: {type: string}
+        success_count: {type: string}
+      type: object
+    tmp2:
+      properties:
+        entry_author_name: {type: string}
+        entry_content: {type: string}
+        entry_title: {type: string}
+        entry_updated: {type: string}
+        id: {type: string}
+        messages: {type: string}
+      type: object
+    tmp3:
+      properties:
+        _bkt: {type: string}
+        _cd: {type: string}
+        _indextime: {type: string}
+        _raw: {type: string}
+        _serial: {type: string}
+        _sourcetype: {type: string}
+        _time: {type: string}
+        host: {type: string}
+        index: {type: string}
+        linecount: {type: string}
+        source: {type: string}
+        sourcetype: {type: string}
+        splunk_server: {type: string}
+      type: object
+    tmp4:
+      properties:
+        json_results: {type: string}
+        results_length: {type: string}
+        searchresults: {type: string}
+      type: object
+    tmp5:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Splunk Splunk
+  title: Splunk Splunk
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Search, monitor, and analyze machine-generated big data.
+      parameters:
+      - description: The human-readable name of a saved search.
+        example: Errors in the last hour
+        in: query
+        name: Search
+        required: true
+        schema: {type: string}
+      - description: The report owner's Splunk username
+        example: admin
+        in: query
+        name: Owner
+        required: false
+        schema: {type: string}
+      - description: The Splunk app name that the saved report resides in
+        example: Recent Events
+        in: query
+        name: App
+        required: false
+        schema: {type: string}
+      - description: Maximum number of minutes into the past to query events
+        example: '60'
+        in: body
+        name: Since
+        required: false
+        schema: {type: string}
+      responses:
+        '200': {description: Successful request}
+      summary: Splunk Data
+  tmp1:
+    post:
+      description: Edit Notable Events in Splunk
+      parameters:
+      - description: A comma seperated list of notable event IDs. Must be provided
+          if a searchID is not provided. Include multiples of this attribute to edit
+          multiple events.
+        example: 29439FBC-FFCB-45FF-93C2-420202012E1E,38439BBC-EECB-44FF-91C2-420121A12E12
+        in: query
+        name: Rule UIDs
+        required: false
+        schema: {type: string}
+      - description: An ID of a search. All of the events associated with this search
+          will be modified unless a list of ruleUIDs are provided that limit the scope
+          to a subset of the results.
+        example: ''
+        in: query
+        name: Search ID
+        required: false
+        schema: {type: string}
+      - description: An owner. Only required if reassigning the event.
+        example: ''
+        in: query
+        name: New Owner
+        required: false
+        schema: {type: string}
+      - description: An urgency. Only required if you are changing the urgency of
+          the event.
+        example: ''
+        in: query
+        name: Urgency
+        required: false
+        schema: {type: string}
+      - description: A status ID matching a status in reviewstatuses.conf. Only required
+          if you are changing the status of the event.
+        example: ''
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: A description of the change or some information about the notable
+          events.
+        example: ''
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Splunk Edit Notable Events
+  tmp2:
+    post:
+      description: Get a saved search from Splunk
+      parameters:
+      - description: Name of the saved search
+        example: MySavedSearch
+        in: query
+        name: Saved Search Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Splunk Get Saved Search
+  tmp3:
+    post:
+      description: Perform splunk one-shot searches and return the results into Swimlane
+        records
+      parameters:
+      - description: Splunk Search Query
+        example: 123.123.123.123 | head 5
+        in: query
+        name: Search String
+        required: true
+        schema: {type: string}
+      - description: If True 'search' will be removed from the prefix of the Search
+          Query, false will leave the 'search' prefix. Defaults to 'False'.
+        example: 'True'
+        in: query
+        name: Remove Search
+        required: true
+        schema: {type: boolean}
+      - description: Earliest time modifier. If time modifiers are included in the
+          search string, these values will be overridden
+        example: -24h
+        in: query
+        name: Earliest Time
+        required: true
+        schema: {type: string}
+      - description: Latest time modifier. If time modifiers are included in the search
+          string, these values will be overridden
+        example: Now
+        in: query
+        name: Latest Time
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Splunk One-shot Search
+  tmp4:
+    post:
+      description: Perform splunk one-shot searches and return the results into Swimlane
+        records as raw HTML
+      parameters:
+      - description: Splunk Search Query
+        example: 123.123.123.123 | head 5
+        in: query
+        name: Search String
+        required: true
+        schema: {type: string}
+      - description: Earliest time modifier. If time modifiers are included in the
+          search string, these values will be overridden
+        example: -24h
+        in: query
+        name: Earliest Time
+        required: true
+        schema: {type: string}
+      - description: Latest time modifier. If time modifiers are included in the search
+          string, these values will be overridden
+        example: Now
+        in: query
+        name: Latest Time
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Splunk One-shot Search (HTML)
+  tmp5:
+    post:
+      description: Write an event to index in Splunk
+      parameters:
+      - description: The index name to write event to, defaults to 'default'
+        example: shadow
+        in: query
+        name: Index
+        required: false
+        schema: {type: string}
+      - description: Raw event text to be passed into the index.
+        example: Sun Jul 10 15:56:02 PDT 2011 User myusername logged in successfully.
+        in: query
+        name: Raw Text Event
+        required: true
+        schema: {type: string}
+      - description: The value to populate in the host field for events from this
+          data input.
+        example: deafultHost
+        in: query
+        name: Host
+        required: false
+        schema: {type: string}
+      - description: The source value to fill in the metadata for this input's events.
+        example: www
+        in: query
+        name: Source
+        required: false
+        schema: {type: string}
+      - description: The sourcetype to apply to events from this input.
+        example: web_event
+        in: query
+        name: Source Type
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Splunk Write Event To Index
+tags:
+- {name: SIEM & Log Management}

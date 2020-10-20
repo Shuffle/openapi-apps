@@ -1,0 +1,64 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        dispositions: {type: string}
+        modules: {type: string}
+      type: object
+    tmp1:
+      properties:
+        type: {type: string}
+        value: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Cisco Threat Response
+  title: Cisco Threat Response
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get contextual information for the given observable.
+      parameters:
+      - description: The type of the observable to enrich (returned by Inspect Observables
+          task).
+        example: sha256
+        in: query
+        name: Type
+        required: true
+        schema: {type: string}
+      - description: The value of the observable.
+        example: f42dd791495a93802851cfc98975b0ced502d66f0cd11c2d1d3d0b145be91e95
+        in: query
+        name: Value
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Cisco Threat Response Enrich Observable
+  tmp1:
+    post:
+      description: Get value and type from observable
+      parameters:
+      - description: A text string that you want to pull observables out of.
+        example: test string with an ip 1.1.1.1 and a hash f42dd791495a93802851cfc98975b0ced502d66f0cd11c2d1d3d0b145be91e95
+        in: query
+        name: Investigation String
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Cisco Threat Response Inspect Observables
+tags:
+- {name: Investigation}

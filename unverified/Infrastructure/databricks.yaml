@@ -1,0 +1,158 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        autoscale_max_workers: {type: string}
+        autoscale_min_workers: {type: string}
+        autotermination_minutes: {type: string}
+        aws_attributes_availability: {type: string}
+        aws_attributes_ebs_volume_count: {type: string}
+        aws_attributes_first_on_demand: {type: string}
+        aws_attributes_spot_bid_price_percent: {type: string}
+        aws_attributes_zone_id: {type: string}
+        cluster_cores: {type: string}
+        cluster_id: {type: string}
+        cluster_memory_mb: {type: string}
+        cluster_name: {type: string}
+        cluster_source: {type: string}
+        creator_user_name: {type: string}
+        default_tags_ClusterId: {type: string}
+        default_tags_ClusterName: {type: string}
+        default_tags_Creator: {type: string}
+        default_tags_Vendor: {type: string}
+        driver_host_private_ip: {type: string}
+        driver_instance_id: {type: string}
+        driver_node_aws_attributes_is_spot: {type: string}
+        driver_node_id: {type: string}
+        driver_node_type_id: {type: string}
+        driver_private_ip: {type: string}
+        driver_public_dns: {type: string}
+        driver_start_timestamp: {type: string}
+        enable_elastic_disk: {type: string}
+        executors_host_private_ip: {type: string}
+        executors_instance_id: {type: string}
+        executors_node_aws_attributes_is_spot: {type: string}
+        executors_node_id: {type: string}
+        executors_private_ip: {type: string}
+        executors_public_dns: {type: string}
+        executors_start_timestamp: {type: string}
+        init_scripts_safe_mode: {type: string}
+        jdbc_port: {type: string}
+        last_state_loss_time: {type: string}
+        node_type_id: {type: string}
+        spark_context_id: {type: string}
+        spark_version: {type: string}
+        start_time: {type: string}
+        state: {type: string}
+        state_message: {type: string}
+      type: object
+    tmp1:
+      properties:
+        cluster_id: {type: string}
+        details: {type: string}
+        timestamp: {type: string}
+        type: {type: string}
+      type: object
+    tmp2:
+      properties:
+        autoscale_max_workers: {type: string}
+        autoscale_min_workers: {type: string}
+        autotermination_minutes: {type: string}
+        aws_attributes_availability: {type: string}
+        aws_attributes_ebs_volume_count: {type: string}
+        aws_attributes_first_on_demand: {type: string}
+        aws_attributes_spot_bid_price_percent: {type: string}
+        aws_attributes_zone_id: {type: string}
+        cluster_cores: {type: string}
+        cluster_id: {type: string}
+        cluster_memory_mb: {type: string}
+        cluster_name: {type: string}
+        cluster_source: {type: string}
+        creator_user_name: {type: string}
+        default_tags_ClusterId: {type: string}
+        default_tags_ClusterName: {type: string}
+        default_tags_Creator: {type: string}
+        default_tags_Vendor: {type: string}
+        driver_host_private_ip: {type: string}
+        driver_instance_id: {type: string}
+        driver_node_aws_attributes_is_spot: {type: string}
+        driver_node_id: {type: string}
+        driver_node_type_id: {type: string}
+        driver_private_ip: {type: string}
+        driver_public_dns: {type: string}
+        driver_start_timestamp: {type: string}
+        enable_elastic_disk: {type: string}
+        executors_host_private_ip: {type: string}
+        executors_instance_id: {type: string}
+        executors_node_aws_attributes_is_spot: {type: string}
+        executors_node_id: {type: string}
+        executors_private_ip: {type: string}
+        executors_public_dns: {type: string}
+        executors_start_timestamp: {type: string}
+        init_scripts_safe_mode: {type: string}
+        jdbc_port: {type: string}
+        last_state_loss_time: {type: string}
+        node_type_id: {type: string}
+        spark_context_id: {type: string}
+        spark_env_vars_PYSPARK_PYTHON: {type: string}
+        spark_version: {type: string}
+        start_time: {type: string}
+        state: {type: string}
+        state_message: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Databricks Databricks
+  title: Databricks Databricks
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get Cluster by ID
+      parameters:
+      - description: The ID of the cluster.
+        example: ''
+        in: query
+        name: Cluster ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Databricks Clusters Get By ID
+  tmp1:
+    post:
+      description: Get events by cluster ID
+      parameters:
+      - description: The ID of the cluster.
+        example: ''
+        in: query
+        name: Cluster ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Databricks Clusters Get Events
+  tmp2:
+    post:
+      description: Get list of clusters
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Databricks Clusters List
+tags:
+- {name: Infrastructure}

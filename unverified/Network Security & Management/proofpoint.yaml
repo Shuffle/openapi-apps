@@ -1,0 +1,349 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        clusterName: {type: string}
+        decodedUrl: {type: string}
+        encodedUrl: {type: string}
+        messageGuid: {type: string}
+        recipientEmail: {type: string}
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        decoded_urls: {type: string}
+      type: object
+    tmp2:
+      properties:
+        forensics_display: {type: string}
+        forensics_malicious: {type: string}
+        forensics_note: {type: string}
+        forensics_platforms_name: {type: string}
+        forensics_platforms_os: {type: string}
+        forensics_platforms_version: {type: string}
+        forensics_time: {type: string}
+        forensics_type: {type: string}
+        forensics_what_action: {type: string}
+        forensics_what_cnames: {type: string}
+        forensics_what_host: {type: string}
+        forensics_what_ip: {type: string}
+        forensics_what_ips: {type: string}
+        forensics_what_path: {type: string}
+        forensics_what_port: {type: string}
+        forensics_what_rule: {type: string}
+        forensics_what_sha256: {type: string}
+        forensics_what_size: {type: string}
+        forensics_what_type: {type: string}
+        forensics_what_url: {type: string}
+        id: {type: string}
+        name: {type: string}
+        scope: {type: string}
+        threatStatus: {type: string}
+        type: {type: string}
+      type: object
+    tmp3:
+      properties:
+        forensics_display: {type: string}
+        forensics_malicious: {type: string}
+        forensics_note: {type: string}
+        forensics_platforms_name: {type: string}
+        forensics_platforms_os: {type: string}
+        forensics_platforms_version: {type: string}
+        forensics_time: {type: string}
+        forensics_type: {type: string}
+        forensics_what_action: {type: string}
+        forensics_what_cnames: {type: string}
+        forensics_what_host: {type: string}
+        forensics_what_ip: {type: string}
+        forensics_what_ips: {type: string}
+        forensics_what_path: {type: string}
+        forensics_what_port: {type: string}
+        forensics_what_rule: {type: string}
+        forensics_what_sha256: {type: string}
+        forensics_what_size: {type: string}
+        forensics_what_type: {type: string}
+        forensics_what_url: {type: string}
+        id: {type: string}
+        name: {type: string}
+        scope: {type: string}
+        threatStatus: {type: string}
+        type: {type: string}
+      type: object
+    tmp4:
+      properties:
+        campaignId: {type: string}
+        classification: {type: string}
+        clickIP: {type: string}
+        clickTime: {type: string}
+        messageID: {type: string}
+        recipient: {type: string}
+        sender: {type: string}
+        senderIP: {type: string}
+        threatID: {type: string}
+        threatTime: {type: string}
+        threatURL: {type: string}
+        url: {type: string}
+        userAgent: {type: string}
+      type: object
+    tmp5:
+      properties:
+        campaignId: {type: string}
+        classification: {type: string}
+        clickIP: {type: string}
+        clickTime: {type: string}
+        messageID: {type: string}
+        recipient: {type: string}
+        sender: {type: string}
+        senderIP: {type: string}
+        threatID: {type: string}
+        threatTime: {type: string}
+        threatURL: {type: string}
+        url: {type: string}
+        userAgent: {type: string}
+      type: object
+    tmp6:
+      properties:
+        GUID: {type: string}
+        QID: {type: string}
+        ccAddresses: {type: string}
+        cluster: {type: string}
+        completelyRewritten: {type: string}
+        fromAddress: {type: string}
+        headerFrom: {type: string}
+        headerReplyTo: {type: string}
+        impostorScore: {type: string}
+        malwareScore: {type: string}
+        messageID: {type: string}
+        messageParts_contentType: {type: string}
+        messageParts_disposition: {type: string}
+        messageParts_filename: {type: string}
+        messageParts_md5: {type: string}
+        messageParts_oContentType: {type: string}
+        messageParts_sandboxStatus: {type: string}
+        messageParts_sha256: {type: string}
+        messageSize: {type: string}
+        messageTime: {type: string}
+        modulesRun: {type: string}
+        phishScore: {type: string}
+        policyRoutes: {type: string}
+        quarantineFolder: {type: string}
+        quarantineRule: {type: string}
+        recipient: {type: string}
+        replyToAddress: {type: string}
+        sender: {type: string}
+        senderIP: {type: string}
+        spamScore: {type: string}
+        subject: {type: string}
+        threatsInfoMap_campaignID: {type: string}
+        threatsInfoMap_classification: {type: string}
+        threatsInfoMap_threat: {type: string}
+        threatsInfoMap_threatID: {type: string}
+        threatsInfoMap_threatStatus: {type: string}
+        threatsInfoMap_threatTime: {type: string}
+        threatsInfoMap_threatType: {type: string}
+        threatsInfoMap_threatUrl: {type: string}
+        toAddresses: {type: string}
+        xmailer: {type: string}
+      type: object
+    tmp7:
+      properties:
+        GUID: {type: string}
+        QID: {type: string}
+        ccAddresses: {type: string}
+        cluster: {type: string}
+        completelyRewritten: {type: string}
+        fromAddress: {type: string}
+        headerFrom: {type: string}
+        headerReplyTo: {type: string}
+        impostorScore: {type: string}
+        malwareScore: {type: string}
+        messageID: {type: string}
+        messageParts_contentType: {type: string}
+        messageParts_disposition: {type: string}
+        messageParts_filename: {type: string}
+        messageParts_md5: {type: string}
+        messageParts_oContentType: {type: string}
+        messageParts_sandboxStatus: {type: string}
+        messageParts_sha256: {type: string}
+        messageSize: {type: string}
+        messageTime: {type: string}
+        modulesRun: {type: string}
+        phishScore: {type: string}
+        policyRoutes: {type: string}
+        quarantineFolder: {type: string}
+        quarantineRule: {type: string}
+        recipient: {type: string}
+        replyToAddress: {type: string}
+        sender: {type: string}
+        senderIP: {type: string}
+        spamScore: {type: string}
+        subject: {type: string}
+        threatsInfoMap_campaignID: {type: string}
+        threatsInfoMap_classification: {type: string}
+        threatsInfoMap_threat: {type: string}
+        threatsInfoMap_threatID: {type: string}
+        threatsInfoMap_threatStatus: {type: string}
+        threatsInfoMap_threatTime: {type: string}
+        threatsInfoMap_threatType: {type: string}
+        threatsInfoMap_threatUrl: {type: string}
+        toAddresses: {type: string}
+        xmailer: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Proofpoint Proofpoint
+  title: Proofpoint Proofpoint
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Decode URLs which have been rewritten by TAP to their original,
+        target URL.
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: URLs
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Proofpoint Decode URLs
+  tmp1:
+    post:
+      description: Decodes the URLs locally. Supports v1, v2, and v3 URLs.
+      parameters:
+      - description: Proofpoint URLs to be decoded. Supports v1, v2 and v3.
+        example: ''
+        in: query
+        name: Rewritten URLs
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Proofpoint Decode URLS - Offline
+  tmp2:
+    post:
+      description: Returns aggregate forensics for an entire campaign
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Campaign ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Proofpoint Get Forensics By Campaign ID
+  tmp3:
+    post:
+      description: Returns aggregate forensics for the specified threat
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Threat ID
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Include Campaign Forensics
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Proofpoint Get Forensics By Threat ID
+  tmp4:
+    post:
+      description: Fetch events for clicks to malicious URLs blocked in the specified
+        time period
+      parameters:
+      - description: Get SIEM Logs from X minutes ago, max is 60.
+        example: '30'
+        in: body
+        name: Minutes Ago
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Proofpoint SIEM Clicks Blocked
+  tmp5:
+    post:
+      description: Fetch events for clicks to malicious URLs permitted in the specified
+        time period
+      parameters:
+      - description: Get SIEM Logs from X minutes ago, max is 60.
+        example: '30'
+        in: body
+        name: Minutes Ago
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Proofpoint SIEM Clicks Permitted
+  tmp6:
+    post:
+      description: Fetch events for messages blocked in the specified time period
+        which contained a known threat
+      parameters:
+      - description: Get SIEM Logs from X minutes ago, max is 60.
+        example: '30'
+        in: body
+        name: Minutes Ago
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Proofpoint SIEM Messages Blocked
+  tmp7:
+    post:
+      description: Fetch events for messages delivered in the specified time period
+        which contained a known threat
+      parameters:
+      - description: Get SIEM Logs from X minutes ago, max is 60.
+        example: '30'
+        in: body
+        name: Minutes Ago
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Proofpoint SIEM Messages Delivered
+tags:
+- {name: Network Security & Management}

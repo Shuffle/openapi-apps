@@ -1,0 +1,525 @@
+components:
+  schemas:
+    tmp1:
+      properties:
+        applicationName: {type: string}
+        applicationPath: {type: string}
+        numEvents: {type: string}
+        privatePid: {type: string}
+        processId: {type: string}
+        sha256Hash: {type: string}
+      type: object
+    tmp2:
+      properties:
+        alertCategory: {type: string}
+        alertScore: {type: string}
+        attackStage: {type: string}
+        createTime: {type: string}
+        deviceDetails_agentLocation: {type: string}
+        deviceDetails_deviceHostName: {type: string}
+        deviceDetails_deviceId: {type: string}
+        deviceDetails_deviceIpAddress: {type: string}
+        deviceDetails_deviceIpV4Address: {type: string}
+        deviceDetails_deviceLocation_areaCode: {type: string}
+        deviceDetails_deviceLocation_city: {type: string}
+        deviceDetails_deviceLocation_countryCode: {type: string}
+        deviceDetails_deviceLocation_countryName: {type: string}
+        deviceDetails_deviceLocation_dmaCode: {type: string}
+        deviceDetails_deviceLocation_latitude: {type: string}
+        deviceDetails_deviceLocation_longitude: {type: string}
+        deviceDetails_deviceLocation_metroCode: {type: string}
+        deviceDetails_deviceLocation_postalCode: {type: string}
+        deviceDetails_deviceLocation_region: {type: string}
+        deviceDetails_deviceName: {type: string}
+        deviceDetails_deviceOwnerName: {type: string}
+        deviceDetails_deviceType: {type: string}
+        deviceDetails_deviceVersion: {type: string}
+        deviceDetails_email: {type: string}
+        deviceDetails_policyId: {type: string}
+        deviceDetails_policyName: {type: string}
+        deviceDetails_targetPriorityCode: {type: string}
+        deviceDetails_targetPriorityType: {type: string}
+        eventId: {type: string}
+        eventTime: {type: string}
+        eventType: {type: string}
+        incidentId: {type: string}
+        longDescription: {type: string}
+        netFlow_destAddress: {type: string}
+        netFlow_destPort: {type: string}
+        netFlow_peerFqdn: {type: string}
+        netFlow_peerIpAddress: {type: string}
+        netFlow_peerIpV4Address: {type: string}
+        netFlow_peerLocation: {type: string}
+        netFlow_peerLocation_areaCode: {type: string}
+        netFlow_peerLocation_city: {type: string}
+        netFlow_peerLocation_countryCode: {type: string}
+        netFlow_peerLocation_countryName: {type: string}
+        netFlow_peerLocation_dmaCode: {type: string}
+        netFlow_peerLocation_latitude: {type: string}
+        netFlow_peerLocation_longitude: {type: string}
+        netFlow_peerLocation_metroCode: {type: string}
+        netFlow_peerLocation_postalCode: {type: string}
+        netFlow_peerLocation_region: {type: string}
+        netFlow_peerSiteReputation: {type: string}
+        netFlow_service: {type: string}
+        netFlow_sourceAddress: {type: string}
+        netFlow_sourcePort: {type: string}
+        parentApp_applicationName: {type: string}
+        parentApp_applicationPath: {type: string}
+        parentApp_effectiveReputation: {type: string}
+        parentApp_effectiveReputationSource: {type: string}
+        parentApp_md5Hash: {type: string}
+        parentApp_reputationProperty: {type: string}
+        parentApp_sha256Hash: {type: string}
+        parentApp_virusCategory: {type: string}
+        parentApp_virusName: {type: string}
+        parentApp_virusSubCategory: {type: string}
+        processDetails_commandLine: {type: string}
+        processDetails_fullUserName: {type: string}
+        processDetails_interpreterHash: {type: string}
+        processDetails_interpreterName: {type: string}
+        processDetails_milisSinceProcessStart: {type: string}
+        processDetails_name: {type: string}
+        processDetails_parentCommandLine: {type: string}
+        processDetails_parentName: {type: string}
+        processDetails_parentPid: {type: string}
+        processDetails_parentPrivatePid: {type: string}
+        processDetails_privatePid: {type: string}
+        processDetails_processId: {type: string}
+        processDetails_targetCommandLine: {type: string}
+        processDetails_targetName: {type: string}
+        processDetails_targetPid: {type: string}
+        processDetails_targetPrivatePid: {type: string}
+        processDetails_userName: {type: string}
+        registryValue: {type: string}
+        securityEventCode: {type: string}
+        selectedApp_applicationName: {type: string}
+        selectedApp_applicationPath: {type: string}
+        selectedApp_effectiveReputation: {type: string}
+        selectedApp_effectiveReputationSource: {type: string}
+        selectedApp_md5Hash: {type: string}
+        selectedApp_reputationProperty: {type: string}
+        selectedApp_sha256Hash: {type: string}
+        selectedApp_virusCategory: {type: string}
+        selectedApp_virusName: {type: string}
+        selectedApp_virusSubCategory: {type: string}
+        shortDescription: {type: string}
+        targetApp_applicationName: {type: string}
+        targetApp_applicationPath: {type: string}
+        targetApp_effectiveReputation: {type: string}
+        targetApp_effectiveReputationSource: {type: string}
+        targetApp_md5Hash: {type: string}
+        targetApp_reputationProperty: {type: string}
+        targetApp_sha256Hash: {type: string}
+        targetApp_virusCategory: {type: string}
+        targetApp_virusName: {type: string}
+        targetApp_virusSubCategory: {type: string}
+        threatIndicators: {type: string}
+      type: object
+    tmp3:
+      properties:
+        alertCategory: {type: string}
+        alertScore: {type: string}
+        attackStage: {type: string}
+        createTime: {type: string}
+        deviceDetails_agentLocation: {type: string}
+        deviceDetails_deviceHostName: {type: string}
+        deviceDetails_deviceId: {type: string}
+        deviceDetails_deviceIpAddress: {type: string}
+        deviceDetails_deviceIpV4Address: {type: string}
+        deviceDetails_deviceLocation_areaCode: {type: string}
+        deviceDetails_deviceLocation_city: {type: string}
+        deviceDetails_deviceLocation_countryCode: {type: string}
+        deviceDetails_deviceLocation_countryName: {type: string}
+        deviceDetails_deviceLocation_dmaCode: {type: string}
+        deviceDetails_deviceLocation_latitude: {type: string}
+        deviceDetails_deviceLocation_longitude: {type: string}
+        deviceDetails_deviceLocation_metroCode: {type: string}
+        deviceDetails_deviceLocation_postalCode: {type: string}
+        deviceDetails_deviceLocation_region: {type: string}
+        deviceDetails_deviceName: {type: string}
+        deviceDetails_deviceOwnerName: {type: string}
+        deviceDetails_deviceType: {type: string}
+        deviceDetails_deviceVersion: {type: string}
+        deviceDetails_email: {type: string}
+        deviceDetails_policyId: {type: string}
+        deviceDetails_policyName: {type: string}
+        deviceDetails_targetPriorityCode: {type: string}
+        deviceDetails_targetPriorityType: {type: string}
+        eventId: {type: string}
+        eventTime: {type: string}
+        eventType: {type: string}
+        incidentId: {type: string}
+        longDescription: {type: string}
+        netFlow_destAddress: {type: string}
+        netFlow_destPort: {type: string}
+        netFlow_peerFqdn: {type: string}
+        netFlow_peerIpAddress: {type: string}
+        netFlow_peerIpV4Address: {type: string}
+        netFlow_peerLocation: {type: string}
+        netFlow_peerLocation_areaCode: {type: string}
+        netFlow_peerLocation_city: {type: string}
+        netFlow_peerLocation_countryCode: {type: string}
+        netFlow_peerLocation_countryName: {type: string}
+        netFlow_peerLocation_dmaCode: {type: string}
+        netFlow_peerLocation_latitude: {type: string}
+        netFlow_peerLocation_longitude: {type: string}
+        netFlow_peerLocation_metroCode: {type: string}
+        netFlow_peerLocation_postalCode: {type: string}
+        netFlow_peerLocation_region: {type: string}
+        netFlow_peerSiteReputation: {type: string}
+        netFlow_service: {type: string}
+        netFlow_sourceAddress: {type: string}
+        netFlow_sourcePort: {type: string}
+        parentApp_applicationName: {type: string}
+        parentApp_applicationPath: {type: string}
+        parentApp_effectiveReputation: {type: string}
+        parentApp_effectiveReputationSource: {type: string}
+        parentApp_md5Hash: {type: string}
+        parentApp_reputationProperty: {type: string}
+        parentApp_sha256Hash: {type: string}
+        parentApp_virusCategory: {type: string}
+        parentApp_virusName: {type: string}
+        parentApp_virusSubCategory: {type: string}
+        processDetails_commandLine: {type: string}
+        processDetails_fullUserName: {type: string}
+        processDetails_interpreterHash: {type: string}
+        processDetails_interpreterName: {type: string}
+        processDetails_milisSinceProcessStart: {type: string}
+        processDetails_name: {type: string}
+        processDetails_parentCommandLine: {type: string}
+        processDetails_parentName: {type: string}
+        processDetails_parentPid: {type: string}
+        processDetails_parentPrivatePid: {type: string}
+        processDetails_privatePid: {type: string}
+        processDetails_processId: {type: string}
+        processDetails_targetCommandLine: {type: string}
+        processDetails_targetName: {type: string}
+        processDetails_targetPid: {type: string}
+        processDetails_targetPrivatePid: {type: string}
+        processDetails_userName: {type: string}
+        registryValue: {type: string}
+        securityEventCode: {type: string}
+        selectedApp_applicationName: {type: string}
+        selectedApp_applicationPath: {type: string}
+        selectedApp_effectiveReputation: {type: string}
+        selectedApp_effectiveReputationSource: {type: string}
+        selectedApp_md5Hash: {type: string}
+        selectedApp_reputationProperty: {type: string}
+        selectedApp_sha256Hash: {type: string}
+        selectedApp_virusCategory: {type: string}
+        selectedApp_virusName: {type: string}
+        selectedApp_virusSubCategory: {type: string}
+        shortDescription: {type: string}
+        targetApp_applicationName: {type: string}
+        targetApp_applicationPath: {type: string}
+        targetApp_effectiveReputation: {type: string}
+        targetApp_effectiveReputationSource: {type: string}
+        targetApp_md5Hash: {type: string}
+        targetApp_reputationProperty: {type: string}
+        targetApp_sha256Hash: {type: string}
+        targetApp_virusCategory: {type: string}
+        targetApp_virusName: {type: string}
+        targetApp_virusSubCategory: {type: string}
+        threatIndicators: {type: string}
+      type: object
+    tmp4:
+      properties:
+        description: {type: string}
+        id: {type: string}
+        latestRevision: {type: string}
+        name: {type: string}
+        policy: {type: string}
+        priorityLevel: {type: string}
+        systemPolicy: {type: string}
+        version: {type: string}
+      type: object
+    tmp5:
+      properties:
+        description: {type: string}
+        id: {type: string}
+        latestRevision: {type: string}
+        name: {type: string}
+        policy: {type: string}
+        priorityLevel: {type: string}
+        systemPolicy: {type: string}
+        version: {type: string}
+      type: object
+    tmp6:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of VMware Carbon Black Cloud Endpoint Standard
+  title: VMware Carbon Black Cloud Endpoint Standard
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Add a rule to an existing policy
+      parameters:
+      - description: Policy ID to add rule to
+        example: '2232'
+        in: query
+        name: Policy ID
+        required: true
+        schema: {type: string}
+      - description: 'Policy action for rule. Options: TERMINATE, IGNORE, TERMINATE_THREAD,
+          ALLOW, DENY, TERMINATE_PROCESS'
+        example: TERMINATE
+        in: query
+        name: Policy Action
+        required: true
+        schema: {type: string}
+      - description: 'Application Type for Rule. Options: REPUTATION, SIGNED_BY, NAME_PATH'
+        example: REPUTATION
+        in: query
+        name: Application Type
+        required: true
+        schema: {type: string}
+      - description: 'Application Value for Rule. Options: UNKNOWN, COMPROMISED, DLP,
+          IGNORE, TRUSTED_WHITE_LIST, ADAPTIVE_WHITE_LIST, PUP, ADWARE, HEURISTIC,
+          SUSPECT_MALWARE, KNOWN_MALWARE, ADMIN_RESTRICTED, COMPANY_BLACK_LIST, NOT_LISTED,
+          COMMON_WHITE_LIST, COMPANY_GREY_LIST, NOT_COMPANY_WHITE_LIST, COMPANY_WHITE_LIST'
+        example: COMPANY_BLACK_LIST
+        in: query
+        name: Application Value
+        required: true
+        schema: {type: string}
+      - description: 'Operation for Rule. Options: MODIFY_SYSTEM_EXE, PASSTHRU, CRED,
+          RANSOM, NETWORK_SERVER, POL_INVOKE_NOT_TRUSTED, IMPERSONATE, MICROPHONE_CAMERA,
+          INVOKE_SYSAPP, NETWORK_CLIENT, BYPASS_REG, BUFFER_OVERFLOW, BYPASS_API,
+          USER_DOC, CODE_INJECTION, BYPASS_NET, KEYBOARD, BYPASS_ALL, RUN, INVOKE_CMD_INTERPRETER,
+          MODIFY_SYTEM_CONFIG, ESCALATE, BYPASS_FILE, RUN_AS_ADMIN, BYPASS_PROCESS,
+          NETWORK, KERNEL_ACCESS, NETWORK_PEER, PACKED, INVOKE_SCRIPT, MEMORY_SCRAPE,
+          BYPASS_SELF_PROTECT, TAMPER_API'
+        example: RANSOM
+        in: query
+        name: Operation
+        required: true
+        schema: {type: string}
+      - description: Is Rule Required. Defaults to False.
+        example: ''
+        in: query
+        name: Required
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200': {description: Successful request}
+      summary: VMware Carbon Black Cloud Endpoint Standard Add Policy Rule
+  tmp1:
+    post:
+      description: Filter and return list of processes.
+      parameters:
+      - description: filter on the exact hostname. For example hostName=WIN-IA9NQ1GN8OI
+          will only return devices with the exact hostname WIN-IA9NQ1GN8OI but not
+          a host named win-IA9NQ1GN8OI
+        example: WIN-IA9NQ1GN8OI
+        in: query
+        name: Exact Host Name
+        required: false
+        schema: {type: string}
+      - description: Filter on owner name case insensitive (partial match).
+        example: Owner
+        in: query
+        name: Owner Name
+        required: false
+        schema: {type: string}
+      - description: Same as Owner Name but case sensitive.
+        example: Owner
+        in: query
+        name: Owner Name Exact
+        required: false
+        schema: {type: string}
+      - description: Filter on events generated by a device with a given external
+          or internal IP address
+        example: 1.2.3.4
+        in: query
+        name: IP Address
+        required: false
+        schema: {type: string}
+      - description: filter on events generated within a given relative time frame.
+          Note that the default is one day if a searchWindow is not specified. Maximum
+          search window is one day.
+        example: 3h
+        in: query
+        name: Search Window
+        required: false
+        schema: {type: string}
+      - description: Filter on process's SHA256 hash.
+        example: 1e4700737ce8c73349503865710ed2512f87272cd530f9115fc61bccbb07fb1e
+        in: query
+        name: Sha256 Hash
+        required: false
+        schema: {type: string}
+      - description: Filter on process's application name.
+        example: swimlane.exe
+        in: query
+        name: Application Name
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Endpoint Standard Find Processes
+  tmp2:
+    post:
+      description: Get details for a specific event
+      parameters:
+      - description: ID of the event to retrieve.
+        example: ''
+        in: query
+        name: Event ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Endpoint Standard Get Event by ID
+  tmp3:
+    post:
+      description: Query events
+      parameters:
+      - description: filter on the exact hostname. For example hostName=WIN-IA9NQ1GN8OI
+          will only return devices with the exact hostname WIN-IA9NQ1GN8OI but not
+          a host named win-IA9NQ1GN8OI
+        example: WIN-IA9NQ1GN8OI
+        in: query
+        name: Exact Host Name
+        required: false
+        schema: {type: string}
+      - description: Filter on owner name case insensitive (partial match).
+        example: Owner
+        in: query
+        name: Owner Name
+        required: false
+        schema: {type: string}
+      - description: Same as Owner Name but case sensitive.
+        example: Owner
+        in: query
+        name: Owner Name Exact
+        required: false
+        schema: {type: string}
+      - description: Filter on events generated by a device with a given external
+          or internal IP address
+        example: 1.2.3.4
+        in: query
+        name: IP Address
+        required: false
+        schema: {type: string}
+      - description: 'filter on events generated within a given relative time frame.
+          Note that the default is one day if a searchWindow is not specified. Note
+          that events may not be available past 30 days due to retention policies.
+          Maximum search window is two weeks. Example values are: 4d for the past
+          four days, 2w for the past two weeks'
+        example: 2w
+        in: query
+        name: Search Window
+        required: false
+        schema: {type: string}
+      - description: Filter on events generated by a process with the given SHA-256
+          hash. Note that this hash must be lowercase.
+        example: ''
+        in: query
+        name: SHA256 Hash
+        required: false
+        schema: {type: string}
+      - description: Filter on events generated by a process with the given application
+          name (for example, google update.exe. Note that this name must be lowercase)
+        example: ''
+        in: query
+        name: Application Name
+        required: false
+        schema: {type: string}
+      - description: 'filter on events with a given event type. Possible Event Types
+          are: NETWORK, FILE_CREATE, REGISTRY_ACCESS, SYSTEM_API_CALL, CREATE_PROCESS,
+          DATA_ACCESS, INJECT_CODE'
+        example: ''
+        in: query
+        name: Event Type
+        required: false
+        schema: {type: string}
+      - description: 'startTime / endTime: Using a combination of startTime and endTime
+          filters events for the given absolute timeframe.'
+        example: '2017-11-15'
+        in: query
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: 'startTime / endTime: Using a combination of startTime and endTime
+          filters events for the given absolute timeframe.'
+        example: '2017-11-15'
+        in: query
+        name: End Time
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Endpoint Standard Get Events
+  tmp4:
+    post:
+      description: Get details for all policies
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Endpoint Standard Get Policies
+  tmp5:
+    post:
+      description: Get details for a specific policy.
+      parameters:
+      - description: ID of which policy details to retrieve.
+        example: '35717'
+        in: body
+        name: Policy ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Endpoint Standard Get Policy by ID
+  tmp6:
+    post:
+      description: Remove a rule from an existing policy.
+      parameters:
+      - description: ID for which rule to remove.
+        example: ''
+        in: body
+        name: Rule ID
+        required: true
+        schema: {type: string}
+      - description: ID of the policy.
+        example: ''
+        in: body
+        name: Policy ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Endpoint Standard Remove Rule from Policy
+tags:
+- {name: Endpoint Security & Management}

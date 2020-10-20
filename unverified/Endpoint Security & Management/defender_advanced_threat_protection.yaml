@@ -1,0 +1,1335 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp1:
+      properties:
+        alertCreationTime: {type: string}
+        alertFiles_fileName: {type: string}
+        alertFiles_filePath: {type: string}
+        alertFiles_sha1: {type: string}
+        alertFiles_sha256: {type: string}
+        alertFiles_threatFamilyName: {type: string}
+        assignedTo: {type: string}
+        category: {type: string}
+        classification: {type: string}
+        comments: {type: string}
+        description: {type: string}
+        detectionSource: {type: string}
+        determination: {type: string}
+        firstEventTime: {type: string}
+        id: {type: string}
+        incidentId: {type: string}
+        investigationId: {type: string}
+        investigationState: {type: string}
+        lastEventTime: {type: string}
+        lastUpdateTime: {type: string}
+        machineId: {type: string}
+        resolvedTime: {type: string}
+        severity: {type: string}
+        status: {type: string}
+        threatFamilyName: {type: string}
+        title: {type: string}
+      type: object
+    tmp10:
+      properties:
+        fileProductName: {type: string}
+        filePublisher: {type: string}
+        fileType: {type: string}
+        globalFirstObserved: {type: string}
+        globalLastObserved: {type: string}
+        globalPrevalence: {type: string}
+        isPeFile: {type: string}
+        isValidCertificate: {type: string}
+        issuer: {type: string}
+        md5: {type: string}
+        sha1: {type: string}
+        sha256: {type: string}
+        signer: {type: string}
+        signerHash: {type: string}
+        size: {type: string}
+        windowsDefenderAVThreatName: {type: string}
+      type: object
+    tmp11:
+      properties:
+        alertCreationTime: {type: string}
+        assignedTo: {type: string}
+        category: {type: string}
+        classification: {type: string}
+        description: {type: string}
+        detectionSource: {type: string}
+        determination: {type: string}
+        firstEventTime: {type: string}
+        id: {type: string}
+        incidentId: {type: string}
+        investigationState: {type: string}
+        lastEventTime: {type: string}
+        machineId: {type: string}
+        resolvedTime: {type: string}
+        severity: {type: string}
+        status: {type: string}
+        threatFamilyName: {type: string}
+        title: {type: string}
+      type: object
+    tmp12:
+      properties:
+        aadDeviceId: {type: string}
+        agentVersion: {type: string}
+        computerDnsName: {type: string}
+        firstSeen: {type: string}
+        healthStatus: {type: string}
+        id: {type: string}
+        lastExternalIpAddress: {type: string}
+        lastIpAddress: {type: string}
+        lastSeen: {type: string}
+        machineTags: {type: string}
+        osBuild: {type: string}
+        osPlatform: {type: string}
+        osVersion: {type: string}
+        rbacGroupId: {type: string}
+        riskScore: {type: string}
+      type: object
+    tmp13:
+      properties:
+        orgFirstSeen: {type: string}
+        orgLastSeen: {type: string}
+        orgPrevalence: {type: string}
+        sha1: {type: string}
+        topFileNames: {type: string}
+      type: object
+    tmp14:
+      properties:
+        file: {type: string}
+      type: object
+    tmp15:
+      properties:
+        ips: {type: string}
+      type: object
+    tmp16:
+      properties:
+        aadDeviceId: {type: string}
+        agentVersion: {type: string}
+        computerDnsName: {type: string}
+        firstSeen: {type: string}
+        healthStatus: {type: string}
+        id: {type: string}
+        isAadJoined: {type: string}
+        lastExternalIpAddress: {type: string}
+        lastIpAddress: {type: string}
+        lastSeen: {type: string}
+        machineTags: {type: string}
+        osBuild: {type: string}
+        osPlatform: {type: string}
+        osVersion: {type: string}
+        rbacGroupId: {type: string}
+        rbacGroupName: {type: string}
+        riskScore: {type: string}
+      type: object
+    tmp17:
+      properties:
+        ipAddress: {type: string}
+        orgFirstSeen: {type: string}
+        orgLastSeen: {type: string}
+        orgPrevalence: {type: string}
+      type: object
+    tmp18:
+      properties:
+        aadDeviceId: {type: string}
+        agentVersion: {type: string}
+        computerDnsName: {type: string}
+        firstSeen: {type: string}
+        healthStatus: {type: string}
+        id: {type: string}
+        isAadJoined: {type: string}
+        lastExternalIpAddress: {type: string}
+        lastIpAddress: {type: string}
+        lastSeen: {type: string}
+        machineTags: {type: string}
+        osBuild: {type: string}
+        osPlatform: {type: string}
+        osVersion: {type: string}
+        rbacGroupId: {type: string}
+        rbacGroupName: {type: string}
+        riskScore: {type: string}
+      type: object
+    tmp19:
+      properties:
+        firstSeen: {type: string}
+        id: {type: string}
+        isDomainAdmin: {type: string}
+        isOnlyNetworkUser: {type: string}
+        lastSeen: {type: string}
+        leastPrevalentMachineId: {type: string}
+        logOnMachinesCount: {type: string}
+        logonTypes: {type: string}
+        mostPrevalentMachineId: {type: string}
+      type: object
+    tmp2:
+      properties:
+        host: {type: string}
+      type: object
+    tmp20:
+      properties:
+        alertCreationTime: {type: string}
+        alertFiles_fileName: {type: string}
+        alertFiles_filePath: {type: string}
+        alertFiles_sha1: {type: string}
+        alertFiles_sha256: {type: string}
+        alertFiles_threatFamilyName: {type: string}
+        assignedTo: {type: string}
+        category: {type: string}
+        classification: {type: string}
+        comments: {type: string}
+        description: {type: string}
+        detectionSource: {type: string}
+        determination: {type: string}
+        firstEventTime: {type: string}
+        id: {type: string}
+        incidentId: {type: string}
+        investigationId: {type: string}
+        investigationState: {type: string}
+        lastEventTime: {type: string}
+        lastUpdateTime: {type: string}
+        machineId: {type: string}
+        resolvedTime: {type: string}
+        severity: {type: string}
+        status: {type: string}
+        threatFamilyName: {type: string}
+        title: {type: string}
+      type: object
+    tmp21:
+      properties:
+        alertCreationTime: {type: string}
+        alertFiles: {type: string}
+        assignedTo: {type: string}
+        category: {type: string}
+        classification: {type: string}
+        comments: {type: string}
+        description: {type: string}
+        detectionSource: {type: string}
+        determination: {type: string}
+        firstEventTime: {type: string}
+        id: {type: string}
+        incidentId: {type: string}
+        investigationId: {type: string}
+        investigationState: {type: string}
+        lastEventTime: {type: string}
+        lastUpdateTime: {type: string}
+        machineId: {type: string}
+        resolvedTime: {type: string}
+        severity: {type: string}
+        status: {type: string}
+        threatFamilyName: {type: string}
+        title: {type: string}
+      type: object
+    tmp22:
+      properties:
+        aadDeviceId: {type: string}
+        agentVersion: {type: string}
+        computerDnsName: {type: string}
+        firstSeen: {type: string}
+        healthStatus: {type: string}
+        id: {type: string}
+        lastExternalIpAddress: {type: string}
+        lastIpAddress: {type: string}
+        lastSeen: {type: string}
+        machineTags: {type: string}
+        osBuild: {type: string}
+        osPlatform: {type: string}
+        osVersion: {type: string}
+        rbacGroupId: {type: string}
+        rbacGroupName: {type: string}
+        riskScore: {type: string}
+      type: object
+    tmp23:
+      properties:
+        creationDateTimeUtc: {type: string}
+        id: {type: string}
+        lastUpdateTimeUtc: {type: string}
+        machineId: {type: string}
+        relatedFileInfo: {type: string}
+        requestor: {type: string}
+        requestorComment: {type: string}
+        status: {type: string}
+        type: {type: string}
+      type: object
+    tmp24:
+      properties:
+        creationDateTimeUtc: {type: string}
+        id: {type: string}
+        lastUpdateTimeUtc: {type: string}
+        machineId: {type: string}
+        relatedFileInfo: {type: string}
+        requestor: {type: string}
+        requestorComment: {type: string}
+        status: {type: string}
+        type: {type: string}
+      type: object
+    tmp25:
+      properties:
+        host: {type: string}
+      type: object
+    tmp26:
+      properties:
+        id: {type: string}
+      type: object
+    tmp27:
+      properties:
+        alertCreationTime: {type: string}
+        alertFiles: {type: string}
+        assignedTo: {type: string}
+        category: {type: string}
+        classification: {type: string}
+        description: {type: string}
+        detectionSource: {type: string}
+        determination: {type: string}
+        firstEventTime: {type: string}
+        id: {type: string}
+        incidentId: {type: string}
+        investigationId: {type: string}
+        investigationState: {type: string}
+        lastEventTime: {type: string}
+        lastUpdateTime: {type: string}
+        machineId: {type: string}
+        resolvedTime: {type: string}
+        severity: {type: string}
+        status: {type: string}
+        threatFamilyName: {type: string}
+        title: {type: string}
+      type: object
+    tmp28:
+      properties:
+        action: {type: string}
+        createdBy: {type: string}
+        creationTimeDateTimeUtc: {type: string}
+        description: {type: string}
+        expirationTime: {type: string}
+        indicatorType: {type: string}
+        indicatorValue: {type: string}
+        rbacGroupIds: {type: string}
+        rbacGroupNames: {type: string}
+        recommendedActions: {type: string}
+        severity: {type: string}
+        title: {type: string}
+      type: object
+    tmp29:
+      properties:
+        aadDeviceId: {type: string}
+        agentVersion: {type: string}
+        computerDnsName: {type: string}
+        firstSeen: {type: string}
+        healthStatus: {type: string}
+        id: {type: string}
+        isAadJoined: {type: string}
+        lastExternalIpAddress: {type: string}
+        lastIpAddress: {type: string}
+        lastSeen: {type: string}
+        machineTags: {type: string}
+        osBuild: {type: string}
+        osPlatform: {type: string}
+        osVersion: {type: string}
+        rbacGroupId: {type: string}
+        rbacGroupName: {type: string}
+        riskScore: {type: string}
+      type: object
+    tmp3:
+      properties:
+        fileProductName: {type: string}
+        filePublisher: {type: string}
+        fileType: {type: string}
+        globalFirstObserved: {type: string}
+        globalLastObserved: {type: string}
+        globalPrevalence: {type: string}
+        isPeFile: {type: string}
+        isValidCertificate: {type: string}
+        issuer: {type: string}
+        md5: {type: string}
+        sha1: {type: string}
+        sha256: {type: string}
+        signer: {type: string}
+        signerHash: {type: string}
+        size: {type: string}
+        windowsDefenderAVThreatName: {type: string}
+      type: object
+    tmp30:
+      properties:
+        creationDateTimeUtc: {type: string}
+        id: {type: string}
+        lastUpdateTimeUtc: {type: string}
+        machineId: {type: string}
+        relatedFileInfo: {type: string}
+        requestor: {type: string}
+        status: {type: string}
+        type: {type: string}
+      type: object
+    tmp31:
+      properties:
+        creationDateTimeUtc: {type: string}
+        id: {type: string}
+        lastUpdateTimeUtc: {type: string}
+        machineId: {type: string}
+        relatedFileInfo: {type: string}
+        requestor: {type: string}
+        requestorComment: {type: string}
+        status: {type: string}
+        type: {type: string}
+      type: object
+    tmp32:
+      properties:
+        creationDateTimeUtc: {type: string}
+        id: {type: string}
+        lastUpdateDateTimeUtc: {type: string}
+        machineId: {type: string}
+        relatedFileInfo: {type: string}
+        requestor: {type: string}
+        requestorComment: {type: string}
+        status: {type: string}
+        type: {type: string}
+      type: object
+    tmp33:
+      properties:
+        creationDateTimeUtc: {type: string}
+        id: {type: string}
+        lastUpdateDateTimeUtc: {type: string}
+        machineId: {type: string}
+        relatedFileInfo: {type: string}
+        requestor: {type: string}
+        requestorComment: {type: string}
+        status: {type: string}
+        type: {type: string}
+      type: object
+    tmp34:
+      properties:
+        creationDateTimeUtc: {type: string}
+        id: {type: string}
+        lastUpdateDateTimeUtc: {type: string}
+        machineId: {type: string}
+        relatedFileInfo: {type: string}
+        requestor: {type: string}
+        requestorComment: {type: string}
+        status: {type: string}
+        type: {type: string}
+      type: object
+    tmp35:
+      properties:
+        query_results: {type: string}
+      type: object
+    tmp36:
+      properties:
+        creationDateTimeUtc: {type: string}
+        id: {type: string}
+        lastUpdateDateTimeUtc: {type: string}
+        machineId: {type: string}
+        relatedFileInfo: {type: string}
+        relatedFileInfo_fileIdentifier: {type: string}
+        relatedFileInfo_fileIdentifierType: {type: string}
+        requestor: {type: string}
+        requestorComment: {type: string}
+        status: {type: string}
+        type: {type: string}
+      type: object
+    tmp37:
+      properties:
+        action: {type: string}
+        createdBy: {type: string}
+        creationTimeDateTimeUtc: {type: string}
+        description: {type: string}
+        expirationTime: {type: string}
+        indicatorType: {type: string}
+        indicatorValue: {type: string}
+        rbacGroupIds: {type: string}
+        rbacGroupNames: {type: string}
+        recommendedActions: {type: string}
+        severity: {type: string}
+        title: {type: string}
+      type: object
+    tmp38:
+      properties:
+        alertCreationTime: {type: string}
+        alertFiles: {type: string}
+        assignedTo: {type: string}
+        category: {type: string}
+        classification: {type: string}
+        comments: {type: string}
+        description: {type: string}
+        detectionSource: {type: string}
+        determination: {type: string}
+        firstEventTime: {type: string}
+        id: {type: string}
+        incidentId: {type: string}
+        investigationId: {type: string}
+        investigationState: {type: string}
+        lastEventTime: {type: string}
+        lastUpdateTime: {type: string}
+        machineId: {type: string}
+        resolvedTime: {type: string}
+        severity: {type: string}
+        status: {type: string}
+        threatFamilyName: {type: string}
+        title: {type: string}
+      type: object
+    tmp4:
+      properties:
+        id: {type: string}
+      type: object
+    tmp5:
+      properties:
+        aadDeviceId: {type: string}
+        agentVersion: {type: string}
+        computerDnsName: {type: string}
+        firstSeen: {type: string}
+        healthStatus: {type: string}
+        id: {type: string}
+        isAadJoined: {type: string}
+        lastExternalIpAddress: {type: string}
+        lastIpAddress: {type: string}
+        lastSeen: {type: string}
+        machineTags: {type: string}
+        osBuild: {type: string}
+        osPlatform: {type: string}
+        osVersion: {type: string}
+        rbacGroupId: {type: string}
+        rbacGroupName: {type: string}
+        riskScore: {type: string}
+      type: object
+    tmp6:
+      properties:
+        firstSeen: {type: string}
+        id: {type: string}
+        isDomainAdmin: {type: string}
+        isOnlyNetworkUser: {type: string}
+        lastSeen: {type: string}
+        leastPrevalentMachineId: {type: string}
+        logOnMachinesCount: {type: string}
+        logonTypes: {type: string}
+        mostPrevalentMachineId: {type: string}
+      type: object
+    tmp7:
+      properties:
+        domains: {type: string}
+      type: object
+    tmp8:
+      properties:
+        aadDeviceId: {type: string}
+        agentVersion: {type: string}
+        computerDnsName: {type: string}
+        firstSeen: {type: string}
+        healthStatus: {type: string}
+        id: {type: string}
+        isAadJoined: {type: string}
+        lastExternalIpAddress: {type: string}
+        lastIpAddress: {type: string}
+        lastSeen: {type: string}
+        machineTags: {type: string}
+        osBuild: {type: string}
+        osPlatform: {type: string}
+        osVersion: {type: string}
+        rbacGroupId: {type: string}
+        rbacGroupName: {type: string}
+        riskScore: {type: string}
+      type: object
+    tmp9:
+      properties:
+        host: {type: string}
+        orgFirstSeen: {type: string}
+        orgLastSeen: {type: string}
+        orgPrevalence: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Microsoft Defender Advanced Threat Protection
+  title: Microsoft Defender Advanced Threat Protection
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: MDATP Delete a Indicator
+      parameters:
+      - description: A Indicator ID
+        example: 220e7d15b0b3d7fac48f2bd61114db1022197f7f
+        in: query
+        name: Indicator ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: MDATP Delete Indicator
+  tmp1:
+    post:
+      description: MDATP Get a single Alert
+      parameters:
+      - description: A Alert ID
+        example: da636972645033942704_533969862
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: MDATP Get Alert
+  tmp10:
+    post:
+      description: MDATP Get file information based on a hash
+      parameters:
+      - description: A MD5, SHA1, or SHA256 Hash
+        example: 6532ec91d513acc05f43ee0aa3002599729fd3e1
+        in: query
+        name: File Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: MDATP Get File Information
+  tmp11:
+    post:
+      description: MDATP Get alerts based on a file hash
+      parameters:
+      - description: A MD5, SHA1, or SHA256 Hash
+        example: 6532ec91d513acc05f43ee0aa3002599729fd3e1
+        in: query
+        name: File Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: MDATP Get File Related Alerts
+  tmp12:
+    post:
+      description: MDATP Get machines based on a file hash
+      parameters:
+      - description: A MD5, SHA1, or SHA256 Hash
+        example: 6532ec91d513acc05f43ee0aa3002599729fd3e1
+        in: query
+        name: File Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: MDATP Get File Related Machines
+  tmp13:
+    post:
+      description: MDATP Get statistics based on a file hash
+      parameters:
+      - description: Hash
+        example: 02d14d3529bb1be124f6ac084c908c73
+        in: query
+        name: Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: MDATP Get File Statistics
+  tmp14:
+    post:
+      description: MDATP Get a investigation collection package
+      parameters:
+      - description: A Action ID
+        example: 5b1c0caf-14fe-41e1-83bf-118b1a9e391d
+        in: query
+        name: Action ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp14'}
+          description: Successful request
+      summary: MDATP Get Investigation Collection Package
+  tmp15:
+    post:
+      description: MDATP Get alerts based on a IP address
+      parameters:
+      - description: IP address
+        example: 192.168.1.1
+        in: query
+        name: IP
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp15'}
+          description: Successful request
+      summary: MDATP Get IP Related Alerts
+  tmp16:
+    post:
+      description: MDATP Get machines related to an ip address
+      parameters:
+      - description: IP address
+        example: 192.168.1.1
+        in: query
+        name: IP
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp16'}
+          description: Successful request
+      summary: MDATP Get IP Related Machines
+  tmp17:
+    post:
+      description: MDATP Get statistics related to an ip address
+      parameters:
+      - description: IP address
+        example: 192.168.1.1
+        in: query
+        name: IP
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp17'}
+          description: Successful request
+      summary: MDATP Get IP Statistics
+  tmp18:
+    post:
+      description: MMDATP Get a single machine by id
+      parameters:
+      - description: ID
+        example: d38a3151bafb30dac30bd7d19015e5d10a5e72a1
+        in: query
+        name: Machine ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp18'}
+          description: Successful request
+      summary: MDATP Get Machine By Id
+  tmp19:
+    post:
+      description: MDATP Get a single machines log on users
+      parameters:
+      - description: ID
+        example: d38a3151bafb30dac30bd7d19015e5d10a5e72a1
+        in: query
+        name: Machine ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp19'}
+          description: Successful request
+      summary: MDATP Get Machine Log On Users
+  tmp2:
+    post:
+      description: MDATP Get a single Alert Domains
+      parameters:
+      - description: An Alert ID
+        example: '636688558380765161_2136280442'
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: MDATP Get Alert Domains
+  tmp20:
+    post:
+      description: MDATP Get a single machines related alerts
+      parameters:
+      - description: ID
+        example: d38a3151bafb30dac30bd7d19015e5d10a5e72a1
+        in: query
+        name: Machine ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp20'}
+          description: Successful request
+      summary: MDATP Get Machine Related Alerts
+  tmp21:
+    post:
+      description: MDATP Get alerts related to a user
+      parameters:
+      - description: A user name
+        example: first.last
+        in: query
+        name: User
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp21'}
+          description: Successful request
+      summary: MDATP Get User Related Alerts
+  tmp22:
+    post:
+      description: MDATP Get machines related to a user
+      parameters:
+      - description: A user name
+        example: first.last
+        in: query
+        name: User
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp22'}
+          description: Successful request
+      summary: MDATP Get User Related Machines
+  tmp23:
+    post:
+      description: MDATP Isolate a machine
+      parameters:
+      - description: ID
+        example: d38a3151bafb30dac30bd7d19015e5d10a5e72a1
+        in: query
+        name: Machine ID
+        required: true
+        schema: {type: string}
+      - description: A comment for this antivirus scan
+        example: This is my message
+        in: query
+        name: Comment
+        required: true
+        schema: {type: string}
+      - description: The isolation type to perform on a machine
+        example: Selective or Full
+        in: query
+        name: Isolation Type
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp23'}
+          description: Successful request
+      summary: MDATP Isolate Machine
+  tmp24:
+    post:
+      description: MDATP Invoke the collection of a investigation package for a single
+        machine
+      parameters:
+      - description: A machine ID
+        example: d38a3151bafb30dac30bd7d19015e5d10a5e72a1
+        in: query
+        name: Machine ID
+        required: true
+        schema: {type: string}
+      - description: A comment about this action
+        example: 'Invoking collection of investigation package for ticket #'
+        in: query
+        name: Comment
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp24'}
+          description: Successful request
+      summary: MDATP Invoke Collection of Investigation Package
+  tmp25:
+    post:
+      description: MDATP Has the domain been seen in the organization
+      parameters:
+      - description: A Domain
+        example: google.com
+        in: query
+        name: Domain
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp25'}
+          description: Successful request
+      summary: MDATP Is Domain Seen in Organization
+  tmp26:
+    post:
+      description: MDATP Has a IP Address been seen in an organization
+      parameters:
+      - description: IP address
+        example: 192.168.1.1
+        in: query
+        name: IP
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp26'}
+          description: Successful request
+      summary: MDATP Is IP Address seen in organization
+  tmp27:
+    post:
+      description: MDATP List Alerts from MDATP
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp27'}
+          description: Successful request
+      summary: MDATP List Alerts
+  tmp28:
+    post:
+      description: MDATP Get a list of Indicators
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp28'}
+          description: Successful request
+      summary: MDATP List Indicators
+  tmp29:
+    post:
+      description: MDATP Get a list of machines
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp29'}
+          description: Successful request
+      summary: MDATP List Machines
+  tmp3:
+    post:
+      description: MDATP Get a single Alert Files
+      parameters:
+      - description: A Alert ID
+        example: '636688558380765161_2136280442'
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: MDATP Get Alert Files
+  tmp30:
+    post:
+      description: MDATP Offboard a Machine
+      parameters:
+      - description: ID
+        example: d38a3151bafb30dac30bd7d19015e5d10a5e72a1
+        in: query
+        name: Machine ID
+        required: true
+        schema: {type: string}
+      - description: A comment for this antivirus scan
+        example: This is my message
+        in: query
+        name: Comment
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp30'}
+          description: Successful request
+      summary: MDATP Offboard Machine
+  tmp31:
+    post:
+      description: MDATP Release a machine from isolation
+      parameters:
+      - description: ID
+        example: d38a3151bafb30dac30bd7d19015e5d10a5e72a1
+        in: query
+        name: Machine ID
+        required: true
+        schema: {type: string}
+      - description: A comment for this antivirus scan
+        example: This is my message
+        in: query
+        name: Comment
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp31'}
+          description: Successful request
+      summary: MDATP Release Machine from Isolation
+  tmp32:
+    post:
+      description: MDATP Remove application restriction from machine
+      parameters:
+      - description: ID
+        example: d38a3151bafb30dac30bd7d19015e5d10a5e72a1
+        in: query
+        name: Machine ID
+        required: true
+        schema: {type: string}
+      - description: A comment for this antivirus scan
+        example: This is my message
+        in: query
+        name: Comment
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp32'}
+          description: Successful request
+      summary: MDATP Remove App Restriction
+  tmp33:
+    post:
+      description: MDATP Restrict application execution on a machine
+      parameters:
+      - description: ID
+        example: d38a3151bafb30dac30bd7d19015e5d10a5e72a1
+        in: query
+        name: Machine ID
+        required: true
+        schema: {type: string}
+      - description: A comment for this app restriction
+        example: This is my message
+        in: query
+        name: Comment
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp33'}
+          description: Successful request
+      summary: MDATP Restrict App Execution
+  tmp34:
+    post:
+      description: MDATP Run a antivirus scan on a machine
+      parameters:
+      - description: A single machine ID
+        example: d38a3151bafb30dac30bd7d19015e5d10a5e72a1
+        in: query
+        name: Machine ID
+        required: true
+        schema: {type: string}
+      - description: A comment for this antivirus scan
+        example: This is my message
+        in: query
+        name: Comment
+        required: true
+        schema: {type: string}
+      - description: The scan type to run
+        example: Quick or Full
+        in: query
+        name: Scan Type
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp34'}
+          description: Successful request
+      summary: MDATP Run Antivirus Scan
+  tmp35:
+    post:
+      description: MDATP Run an advanced query on machines
+      parameters:
+      - description: A query to run on machines
+        example: RegistryEvents | limit 10
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp35'}
+          description: Successful request
+      summary: MDATP Run Advance Query
+  tmp36:
+    post:
+      description: MDATP Stop and quarantine a file from a machine
+      parameters:
+      - description: ID
+        example: d38a3151bafb30dac30bd7d19015e5d10a5e72a1
+        in: query
+        name: Machine ID
+        required: true
+        schema: {type: string}
+      - description: A comment for this antivirus scan
+        example: This is my message
+        in: query
+        name: Comment
+        required: true
+        schema: {type: string}
+      - description: A SHA1 Hash of a file to stop and quarantine
+        example: 87662bc3d60e4200ceaf7aae249d1c343f4b83c9
+        in: query
+        name: SHA1
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp36'}
+          description: Successful request
+      summary: MDATP Stop and Quarantine File
+  tmp37:
+    post:
+      description: MDATP Submit a indicator
+      parameters:
+      - description: The value of the indicator
+        example: 192.168.1.1
+        in: query
+        name: Indicator Value
+        required: true
+        schema: {type: string}
+      - description: The type of indicator.  Value can be FileSha1, FileSha256, IpAddress,
+          DomainName,Url
+        example: DomainName
+        in: query
+        name: Indicator Type
+        required: true
+        schema: {type: string}
+      - description: The action to perform when this indicator is identified.  Value
+          can be Alert,AlertAndBlock,Allowed
+        example: AlertAndBlock
+        in: query
+        name: Action
+        required: true
+        schema: {type: string}
+      - description: The title of the indicator
+        example: Malicious IP Address
+        in: query
+        name: Title
+        required: false
+        schema: {type: string}
+      - description: The time this indicator expires.
+        example: '2020-12-12T00:00:00Z'
+        in: query
+        name: Expiration Time
+        required: false
+        schema: {type: string}
+      - description: 'The severity of the indicator. possible values are: Informational,
+          Low, Medium, High.'
+        example: High
+        in: query
+        name: Severity
+        required: false
+        schema: {type: string}
+      - description: Description of the indicator.
+        example: My indicator description
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: TI indicator alert recommended actions.
+        example: My recommendations are ...
+        in: query
+        name: Recommended Actions
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp37'}
+          description: Successful request
+      summary: MDATP Submit Indicator
+  tmp38:
+    post:
+      description: MDATP Update a Alert
+      parameters:
+      - description: A Alert ID
+        example: da636972645033942704_533969862
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      - description: 'Specifies the current status of the alert. The property values
+          are: ''New'', ''InProgress'' and ''Resolved''.'
+        example: Resolved
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: Owner of the alert
+        example: first.last@company.com
+        in: query
+        name: Assigned Owner
+        required: false
+        schema: {type: string}
+      - description: 'Specifies the specification of the alert. The property values
+          are: ''Unknown'', ''FalsePositive'', ''TruePositive''.'
+        example: FalsePositive
+        in: query
+        name: Classification
+        required: false
+        schema: {type: string}
+      - description: 'Specifies the determination of the alert. The property values
+          are: ''NotAvailable'', ''Apt'', ''Malware'', ''SecurityPersonnel'', ''SecurityTesting'',
+          ''UnwantedSoftware'', ''Other''.'
+        example: Malware
+        in: query
+        name: Determination
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp38'}
+          description: Successful request
+      summary: MDATP Update Alert
+  tmp4:
+    post:
+      description: MDATP Get a single Alert IPs
+      parameters:
+      - description: A Alert ID
+        example: '636688558380765161_2136280442'
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: MDATP Get Alert IPs
+  tmp5:
+    post:
+      description: MDATP Get a single Alert Machine Information
+      parameters:
+      - description: An Alert ID
+        example: '636688558380765161_2136280442'
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: MDATP Get Alert Machine Information
+  tmp6:
+    post:
+      description: MDATP Get a single Alert User Information
+      parameters:
+      - description: An Alert ID
+        example: '636688558380765161_2136280442'
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: MDATP Get Alert User Information
+  tmp7:
+    post:
+      description: MDATP Get a list of domain related alerts
+      parameters:
+      - description: A Domain
+        example: google.com
+        in: query
+        name: Domain
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: MDATP Get Domain Related Alerts
+  tmp8:
+    post:
+      description: MDATP Get machines related to a domain
+      parameters:
+      - description: A Domain
+        example: google.com
+        in: query
+        name: Domain
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: MDATP Get Domain Related Machines
+  tmp9:
+    post:
+      description: MDATP Get domain statistics
+      parameters:
+      - description: A Domain
+        example: google.com
+        in: query
+        name: Domain
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: MDATP Get Domain Statistics
+tags:
+- {name: Endpoint Security & Management}

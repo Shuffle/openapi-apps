@@ -1,0 +1,104 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp1:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp2:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp3:
+      properties:
+        successful: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Spotify Spotify
+  title: Spotify Spotify
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Spotify Add To Playlist
+      parameters:
+      - description: Search Query to pass to spotify
+        example: ''
+        in: query
+        name: Search Query
+        required: true
+        schema: {type: string}
+      - description: Playlist ID to add to
+        example: ''
+        in: query
+        name: Playlist ID
+        required: true
+        schema: {type: string}
+      - description: Will skip to the next song in the playlist
+        example: ''
+        in: query
+        name: Skip Current Playing Song (PREMIUM ONLY)
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Spotify Add to Playlist
+  tmp1:
+    post:
+      description: Spotify Add To Queue. Only works if you have Spotify Premium
+      parameters:
+      - description: Search Query to pass to spotify
+        example: ''
+        in: query
+        name: Search Query
+        required: true
+        schema: {type: string}
+      - description: Will skip to the next song in the queue
+        example: ''
+        in: query
+        name: Skip Current Playing Song (PREMIUM ONLY)
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Spotify Add to Queue (PREMIUM ONLY)
+  tmp2:
+    post:
+      description: Spotify Resume Playback. Only works if you have Spotify Premium
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Spotify Resume Playback (PREMIUM ONLY)
+  tmp3:
+    post:
+      description: Spotify Skip a song in the playing queue. Only works if you have
+        Spotify Premium
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Spotify Skip Song in Queue (PREMIUM ONLY)
+tags:
+- {name: Miscellaneous}

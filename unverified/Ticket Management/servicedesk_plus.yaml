@@ -1,0 +1,483 @@
+components:
+  schemas:
+    tmp1:
+      properties:
+        approval_status: {type: string}
+        assets: {type: string}
+        assigned_time_display_value: {type: string}
+        assigned_time_value: {type: string}
+        attachments: {type: string}
+        category_deleted: {type: string}
+        category_id: {type: string}
+        category_name: {type: string}
+        completed_time: {type: string}
+        created_by_department: {type: string}
+        created_by_email_id: {type: string}
+        created_by_id: {type: string}
+        created_by_is_technician: {type: string}
+        created_by_is_vip_user: {type: string}
+        created_by_mobile: {type: string}
+        created_by_name: {type: string}
+        created_by_phone: {type: string}
+        created_by_photo_url: {type: string}
+        created_by_sms_mail: {type: string}
+        created_time_display_value: {type: string}
+        created_time_value: {type: string}
+        deleted_time: {type: string}
+        department: {type: string}
+        description: {type: string}
+        display_id: {type: string}
+        due_by_time_display_value: {type: string}
+        due_by_time_value: {type: string}
+        email_bcc: {type: string}
+        email_cc: {type: string}
+        email_ids_to_notify: {type: string}
+        email_to: {type: string}
+        first_response_due_by_time_display_value: {type: string}
+        first_response_due_by_time_value: {type: string}
+        group: {type: string}
+        has_attachments: {type: string}
+        has_draft: {type: string}
+        has_linked_requests: {type: string}
+        has_notes: {type: string}
+        has_problem: {type: string}
+        has_project: {type: string}
+        has_request_initiated_change: {type: string}
+        id: {type: string}
+        impact_details: {type: string}
+        impact_id: {type: string}
+        impact_name: {type: string}
+        is_escalated: {type: string}
+        is_fcr: {type: string}
+        is_first_response_overdue: {type: string}
+        is_overdue: {type: string}
+        is_read: {type: string}
+        is_reopened: {type: string}
+        is_service_request: {type: string}
+        is_trashed: {type: string}
+        item: {type: string}
+        last_updated_time_display_value: {type: string}
+        last_updated_time_value: {type: string}
+        level_id: {type: string}
+        level_name: {type: string}
+        lifecycle: {type: string}
+        linked_to_request: {type: string}
+        mode_id: {type: string}
+        mode_name: {type: string}
+        notification_status: {type: string}
+        priority_color: {type: string}
+        priority_id: {type: string}
+        priority_name: {type: string}
+        request_type_id: {type: string}
+        request_type_name: {type: string}
+        requester_department: {type: string}
+        requester_email_id: {type: string}
+        requester_id: {type: string}
+        requester_is_technician: {type: string}
+        requester_is_vip_user: {type: string}
+        requester_mobile: {type: string}
+        requester_name: {type: string}
+        requester_phone: {type: string}
+        requester_photo_url: {type: string}
+        requester_sms_mail: {type: string}
+        resolution_content: {type: string}
+        resolved_time: {type: string}
+        responded_time_display_value: {type: string}
+        responded_time_value: {type: string}
+        site: {type: string}
+        sla: {type: string}
+        status_color: {type: string}
+        status_id: {type: string}
+        status_in_progress: {type: string}
+        status_internal_name: {type: string}
+        status_name: {type: string}
+        status_stop_timer: {type: string}
+        subcategory: {type: string}
+        subject: {type: string}
+        technician_cost_per_hour: {type: string}
+        technician_email_id: {type: string}
+        technician_id: {type: string}
+        technician_mobile: {type: string}
+        technician_name: {type: string}
+        technician_phone: {type: string}
+        technician_photo_url: {type: string}
+        technician_sms_mail_id: {type: string}
+        template_id: {type: string}
+        template_name: {type: string}
+        time_elapsed: {type: string}
+        unreplied_count: {type: string}
+        urgency_id: {type: string}
+        urgency_name: {type: string}
+      type: object
+    tmp2:
+      properties:
+        approval_status: {type: string}
+        assets: {type: string}
+        assigned_time_display_value: {type: string}
+        assigned_time_value: {type: string}
+        attachments: {type: string}
+        category_deleted: {type: string}
+        category_id: {type: string}
+        category_name: {type: string}
+        completed_time: {type: string}
+        created_by_department: {type: string}
+        created_by_email_id: {type: string}
+        created_by_id: {type: string}
+        created_by_is_technician: {type: string}
+        created_by_is_vip_user: {type: string}
+        created_by_mobile: {type: string}
+        created_by_name: {type: string}
+        created_by_phone: {type: string}
+        created_by_photo_url: {type: string}
+        created_by_sms_mail: {type: string}
+        created_time_display_value: {type: string}
+        created_time_value: {type: string}
+        deleted_time: {type: string}
+        department: {type: string}
+        description: {type: string}
+        display_id: {type: string}
+        due_by_time_display_value: {type: string}
+        due_by_time_value: {type: string}
+        email_bcc: {type: string}
+        email_cc: {type: string}
+        email_ids_to_notify: {type: string}
+        email_to: {type: string}
+        first_response_due_by_time_display_value: {type: string}
+        first_response_due_by_time_value: {type: string}
+        group: {type: string}
+        has_attachments: {type: string}
+        has_draft: {type: string}
+        has_linked_requests: {type: string}
+        has_notes: {type: string}
+        has_problem: {type: string}
+        has_project: {type: string}
+        has_request_initiated_change: {type: string}
+        id: {type: string}
+        impact_details: {type: string}
+        impact_id: {type: string}
+        impact_name: {type: string}
+        is_escalated: {type: string}
+        is_fcr: {type: string}
+        is_first_response_overdue: {type: string}
+        is_overdue: {type: string}
+        is_read: {type: string}
+        is_reopened: {type: string}
+        is_service_request: {type: string}
+        is_trashed: {type: string}
+        item: {type: string}
+        last_updated_time_display_value: {type: string}
+        last_updated_time_value: {type: string}
+        level_id: {type: string}
+        level_name: {type: string}
+        lifecycle: {type: string}
+        linked_to_request: {type: string}
+        mode_id: {type: string}
+        mode_name: {type: string}
+        notification_status: {type: string}
+        priority_color: {type: string}
+        priority_id: {type: string}
+        priority_name: {type: string}
+        request_type_id: {type: string}
+        request_type_name: {type: string}
+        requester_department: {type: string}
+        requester_email_id: {type: string}
+        requester_id: {type: string}
+        requester_is_technician: {type: string}
+        requester_is_vip_user: {type: string}
+        requester_mobile: {type: string}
+        requester_name: {type: string}
+        requester_phone: {type: string}
+        requester_photo_url: {type: string}
+        requester_sms_mail: {type: string}
+        resolution_content: {type: string}
+        resolved_time: {type: string}
+        responded_time_display_value: {type: string}
+        responded_time_value: {type: string}
+        site: {type: string}
+        sla: {type: string}
+        status_color: {type: string}
+        status_id: {type: string}
+        status_in_progress: {type: string}
+        status_internal_name: {type: string}
+        status_name: {type: string}
+        status_stop_timer: {type: string}
+        subcategory: {type: string}
+        subject: {type: string}
+        technician_cost_per_hour: {type: string}
+        technician_email_id: {type: string}
+        technician_id: {type: string}
+        technician_mobile: {type: string}
+        technician_name: {type: string}
+        technician_phone: {type: string}
+        technician_photo_url: {type: string}
+        technician_sms_mail_id: {type: string}
+        template_id: {type: string}
+        template_name: {type: string}
+        time_elapsed: {type: string}
+        unreplied_count: {type: string}
+        urgency_id: {type: string}
+        urgency_name: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Manageengine Servicedesk Plus
+  title: Manageengine Servicedesk Plus
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: ServiceDesk Plus add a new request
+      parameters:
+      - description: The desired category value
+        example: example category
+        in: query
+        name: Category
+        required: false
+        schema: {type: string}
+      - description: HTML or text to put in the description field
+        example: this is my description<br>
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: The date/time the request is due by
+        example: ''
+        in: query
+        name: Due By Time
+        required: false
+        schema: {type: string}
+      - description: The date/time the first response is due by
+        example: ''
+        in: query
+        name: First Response Due By Time
+        required: false
+        schema: {type: string}
+      - description: Description about the impact of this request
+        example: example impact details
+        in: query
+        name: Impact Details
+        required: false
+        schema: {type: string}
+      - description: The desired impact value
+        example: example impact
+        in: query
+        name: Impact
+        required: false
+        schema: {type: string}
+      - description: The desired level value
+        example: example level
+        in: query
+        name: Level
+        required: false
+        schema: {type: string}
+      - description: The desired mode value
+        example: example mode
+        in: query
+        name: Mode
+        required: false
+        schema: {type: string}
+      - description: The desired priority value
+        example: example priority
+        in: query
+        name: Priority
+        required: false
+        schema: {type: string}
+      - description: The desired request type value
+        example: example request type
+        in: query
+        name: Request Type
+        required: false
+        schema: {type: string}
+      - description: the account email of the desired requester
+        example: my.email@company.com
+        in: query
+        name: Requester
+        required: false
+        schema: {type: string}
+      - description: HTML/text describing the resolution of the request
+        example: this is a resolution<br>
+        in: query
+        name: Resolution
+        required: false
+        schema: {type: string}
+      - description: The desired status value
+        example: example status
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: the subject of the request
+        example: request subject
+        in: query
+        name: Subject
+        required: false
+        schema: {type: string}
+      - description: the account email of the desired technician
+        example: my.email@company.com
+        in: query
+        name: Technician
+        required: false
+        schema: {type: string}
+      - description: the reason the request was updated
+        example: This is the reason I updated the request
+        in: query
+        name: Update Reason
+        required: false
+        schema: {type: string}
+      - description: The desired urgency value
+        example: example urgency
+        in: query
+        name: Urgency
+        required: false
+        schema: {type: string}
+      responses:
+        '200': {description: Successful request}
+      summary: ServiceDesk Plus Add Request
+  tmp1:
+    post:
+      description: Get all Requests from ManageEngine ServiceDesk Plus
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: ServiceDesk Plus Get All Requests
+  tmp2:
+    post:
+      description: Get a Request from ManageEngine ServiceDesk Plus
+      parameters:
+      - description: Request ID parameter to be appended to the request params
+        example: ''
+        in: query
+        name: Request ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: ServiceDesk Plus Get Request
+  tmp3:
+    post:
+      description: Update a Request from ManageEngine ServiceDesk Plus
+      parameters:
+      - description: The API ID of the request, used to search for specific requests
+        example: '108583000000147001'
+        in: query
+        name: Request ID
+        required: false
+        schema: {type: string}
+      - description: The desired category value
+        example: example category
+        in: query
+        name: Category
+        required: false
+        schema: {type: string}
+      - description: HTML or text to put in the description field
+        example: this is my description<br>
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: The date/time the request is due by
+        example: ''
+        in: query
+        name: Due By Time
+        required: false
+        schema: {type: string}
+      - description: The date/time the first response is due by
+        example: ''
+        in: query
+        name: First Response Due By Time
+        required: false
+        schema: {type: string}
+      - description: Description about the impact of this request
+        example: example impact details
+        in: query
+        name: Impact Details
+        required: false
+        schema: {type: string}
+      - description: The desired impact value
+        example: example impact
+        in: query
+        name: Impact
+        required: false
+        schema: {type: string}
+      - description: The desired level value
+        example: example level
+        in: query
+        name: Level
+        required: false
+        schema: {type: string}
+      - description: The desired mode value
+        example: example mode
+        in: query
+        name: Mode
+        required: false
+        schema: {type: string}
+      - description: The desired priority value
+        example: example priority
+        in: query
+        name: Priority
+        required: false
+        schema: {type: string}
+      - description: The desired request type value
+        example: example request type
+        in: query
+        name: Request Type
+        required: false
+        schema: {type: string}
+      - description: the account email of the desired requester
+        example: my.email@company.com
+        in: query
+        name: Requester
+        required: false
+        schema: {type: string}
+      - description: HTML/text describing the resolution of the request
+        example: this is a resolution<br>
+        in: query
+        name: Resolution
+        required: false
+        schema: {type: string}
+      - description: The desired status value
+        example: example status
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: the subject of the request
+        example: request subject
+        in: query
+        name: Subject
+        required: false
+        schema: {type: string}
+      - description: the account email of the desired technician
+        example: my.email@company.com
+        in: query
+        name: Technician
+        required: false
+        schema: {type: string}
+      - description: the reason the request was updated
+        example: This is the reason I updated the request
+        in: query
+        name: Update Reason
+        required: false
+        schema: {type: string}
+      - description: The desired urgency value
+        example: example urgency
+        in: query
+        name: Urgency
+        required: false
+        schema: {type: string}
+      responses:
+        '200': {description: Successful request}
+      summary: ServiceDesk Plus Update Request
+tags:
+- {name: Ticket Management}

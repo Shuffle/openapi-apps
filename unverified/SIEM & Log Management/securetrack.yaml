@@ -1,0 +1,109 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        rules: {type: string}
+      type: object
+    tmp1:
+      properties:
+        pathImage: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Tufin SecureTrack
+  title: Tufin SecureTrack
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get Applicable Rules for IP from SecureTrack Policy Browser
+      parameters:
+      - description: IP address to get rules for
+        example: ''
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: SecureTrack Get IP Rules
+  tmp1:
+    post:
+      description: Get Image of Network Topology Between Two Endpoints
+      parameters:
+      - description: Source parameter may contain multiple, comma separated values.
+        example: ''
+        in: query
+        name: Source Address/Addresses
+        required: true
+        schema: {type: string}
+      - description: Destination parameter may contain multiple, comma separated values.
+        example: ''
+        in: query
+        name: Destination Address/Addresses
+        required: true
+        schema: {type: string}
+      - description: "Service parameter can be a port (for example, \u201Ctcp:80\u201D\
+          , \u201Cany\u201D), an application (for example, \u201CSkype\u201D, \u201C\
+          Facebook\u201D), or a combination of the two (for example \u201Ctcp:80,\
+          \ Skype, Facebook\u201D)."
+        example: ''
+        in: query
+        name: Service/Services
+        required: true
+        schema: {type: string}
+      - description: If Source Domain ID is provided, the path starting points will
+          be restricted to the specified domain ID. Source Domain ID is valid only
+          if overlapping IP mode is enabled.
+        example: ''
+        in: body
+        name: Source Domain ID
+        required: false
+        schema: {type: string}
+      - description: If Global MSSP Context is provided, path will be calculated for
+          the specified domain context, otherwise the default domain context is used.
+          Global MSSP Context is valid only if MSSP mode is enabled.
+        example: ''
+        in: body
+        name: Global MSSP Context
+        required: false
+        schema: {type: string}
+      - description: If this parameter is set to true, all nodes on the path will
+          be displayed, even if the node cannot reach the destination, or if the source
+          and destination are the same.
+        example: ''
+        in: query
+        name: Display Incomplete Paths
+        required: false
+        schema: {type: boolean}
+      - description: If this parameter is set to true, blocked traffic icons will
+          be displayed next to devices blocking the traffic.
+        example: ''
+        in: query
+        name: Display Blocked Status
+        required: false
+        schema: {type: boolean}
+      - description: If this parameter is set to false, NAT simulation will not be
+          used when calculating the path.
+        example: ''
+        in: query
+        name: Simulate NAT
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: SecureTrack Get Topology Image
+tags:
+- {name: SIEM & Log Management}

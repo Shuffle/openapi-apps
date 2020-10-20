@@ -1,0 +1,263 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        _id: {type: string}
+        _index: {type: string}
+        _routing: {type: string}
+        _score: {type: string}
+        _source_Product: {type: string}
+        _source_Vendor: {type: string}
+        _source_action: {type: string}
+        _source_activity_type: {type: string}
+        _source_additional_info: {type: string}
+        _source_alert_name: {type: string}
+        _source_alert_severity: {type: string}
+        _source_alert_type: {type: string}
+        _source_beat_name: {type: string}
+        _source_beat_version: {type: string}
+        _source_browser: {type: string}
+        _source_bytes: {type: string}
+        _source_bytes_in: {type: string}
+        _source_bytes_out: {type: string}
+        _source_category: {type: string}
+        _source_computer_name: {type: string}
+        _source_data_type: {type: string}
+        _source_dest_country: {type: string}
+        _source_dest_host: {type: string}
+        _source_dest_ip: {type: string}
+        _source_dest_network_zone: {type: string}
+        _source_dest_port: {type: string}
+        _source_dest_translated_ip: {type: string}
+        _source_dest_translated_port: {type: string}
+        _source_directory: {type: string}
+        _source_domain: {type: string}
+        _source_event_code: {type: string}
+        _source_event_data_HandleId: {type: string}
+        _source_event_data_MandatoryLabel: {type: string}
+        _source_event_data_NewProcessId: {type: string}
+        _source_event_data_NewProcessName: {type: string}
+        _source_event_data_NewSd: {type: string}
+        _source_event_data_ObjectName: {type: string}
+        _source_event_data_ObjectServer: {type: string}
+        _source_event_data_ObjectType: {type: string}
+        _source_event_data_OldSd: {type: string}
+        _source_event_data_ParentProcessName: {type: string}
+        _source_event_data_PrivilegeList: {type: string}
+        _source_event_data_ProcessId: {type: string}
+        _source_event_data_ProcessName: {type: string}
+        _source_event_data_Service: {type: string}
+        _source_event_data_Status: {type: string}
+        _source_event_data_SubjectDomainName: {type: string}
+        _source_event_data_SubjectLogonId: {type: string}
+        _source_event_data_SubjectUserName: {type: string}
+        _source_event_data_SubjectUserSid: {type: string}
+        _source_event_data_TargetDomainName: {type: string}
+        _source_event_data_TargetLogonId: {type: string}
+        _source_event_data_TargetUserName: {type: string}
+        _source_event_data_TargetUserSid: {type: string}
+        _source_event_data_TokenElevationType: {type: string}
+        _source_event_id: {type: string}
+        _source_event_name: {type: string}
+        _source_exa_activity_type: {type: string}
+        _source_exa_adjustedEventTime: {type: string}
+        _source_exa_category: {type: string}
+        _source_exa_device_type: {type: string}
+        _source_exa_outcome: {type: string}
+        _source_exa_parser_name: {type: string}
+        _source_exa_rawEventTime: {type: string}
+        _source_forwarder: {type: string}
+        _source_full_url: {type: string}
+        _source_fullname: {type: string}
+        _source_host: {type: string}
+        _source_indexTime: {type: string}
+        _source_is_phishing_domain: {type: string}
+        _source_is_ransomware_dest_ip: {type: string}
+        _source_is_ransomware_src_ip: {type: string}
+        _source_is_reputation_domain: {type: string}
+        _source_is_threat_dest_ip: {type: string}
+        _source_is_threat_src_ip: {type: string}
+        _source_is_tor_dest_ip: {type: string}
+        _source_is_tor_src_ip: {type: string}
+        _source_keywords: {type: string}
+        _source_level: {type: string}
+        _source_log_name: {type: string}
+        _source_log_type: {type: string}
+        _source_logon_id: {type: string}
+        _source_malware_url: {type: string}
+        _source_message: {type: string}
+        _source_metadata_beat: {type: string}
+        _source_metadata_topic: {type: string}
+        _source_metadata_type: {type: string}
+        _source_metadata_version: {type: string}
+        _source_method: {type: string}
+        _source_mime: {type: string}
+        _source_network_app: {type: string}
+        _source_object_server: {type: string}
+        _source_object_type: {type: string}
+        _source_opcode: {type: string}
+        _source_os: {type: string}
+        _source_outcome: {type: string}
+        _source_parent_process_guid: {type: string}
+        _source_path: {type: string}
+        _source_pid: {type: string}
+        _source_port: {type: string}
+        _source_privileges: {type: string}
+        _source_process: {type: string}
+        _source_process_directory: {type: string}
+        _source_process_guid: {type: string}
+        _source_process_id: {type: string}
+        _source_process_name: {type: string}
+        _source_protocol: {type: string}
+        _source_provider_guid: {type: string}
+        _source_query: {type: string}
+        _source_query_flags: {type: string}
+        _source_query_type: {type: string}
+        _source_record_number: {type: string}
+        _source_rule: {type: string}
+        _source_source_name: {type: string}
+        _source_src_country: {type: string}
+        _source_src_domain: {type: string}
+        _source_src_ip: {type: string}
+        _source_src_network_zone: {type: string}
+        _source_src_port: {type: string}
+        _source_src_translated_ip: {type: string}
+        _source_src_translated_port: {type: string}
+        _source_src_user: {type: string}
+        _source_subtype: {type: string}
+        _source_task: {type: string}
+        _source_threat_category: {type: string}
+        _source_time: {type: string}
+        _source_timestamp: {type: string}
+        _source_title: {type: string}
+        _source_type: {type: string}
+        _source_uri_path: {type: string}
+        _source_uri_query: {type: string}
+        _source_user: {type: string}
+        _source_user_agent: {type: string}
+        _source_user_sid: {type: string}
+        _source_version: {type: string}
+        _source_web_domain: {type: string}
+        _source_xml: {type: string}
+        _type: {type: string}
+        fields_indexTime: {type: string}
+        highlight_data_type: {type: string}
+        highlight_message: {type: string}
+        sort: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Exabeam Security Management Platform
+  title: Exabeam Security Management Platform
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Query Data Lake
+      parameters:
+      - description: Cluster name to query
+        example: local
+        in: query
+        name: Cluster Name
+        required: true
+        schema: {type: string}
+      - description: Text list or CSV string of indices to query.
+        example: exabeam-*
+        in: query
+        name: Indices
+        required: true
+        schema: {type: string}
+      - description: The IOC to use in the default queries. Please see the plugin
+          documentation for more information.
+        example: 1.2.3.4
+        in: query
+        name: IOC to Query
+        required: false
+        schema: {type: string}
+      - description: If supplied, this query will be used and the IOC/default query
+          will be ignored.
+        example: ''
+        in: query
+        name: Custom Query
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: message
+        in: query
+        name: Query Analyze Field
+        required: false
+        schema: {type: string}
+      - description: How far back to look. More examples can be found in documentation.
+        example: '{time.now():-1months}'
+        in: query
+        name: Time Ago
+        required: false
+        schema: {type: string}
+      - description: What field to sort by.
+        example: indexTime
+        in: query
+        name: Sort Field
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: '[*]'
+        in: query
+        name: Sorted Fields
+        required: false
+        schema: {type: string}
+      - description: Defaults to True.
+        example: ''
+        in: query
+        name: Source
+        required: false
+        schema: {type: boolean}
+      - description: Sort order, defaults to 'desc'
+        example: desc
+        in: query
+        name: Sort Order
+        required: false
+        schema: {type: string}
+      - description: Defaults to True.
+        example: ''
+        in: query
+        name: Highlight
+        required: false
+        schema: {type: boolean}
+      - description: Defaults to True.
+        example: ''
+        in: query
+        name: Query Analyze Wildcard
+        required: false
+        schema: {type: boolean}
+      - description: 'List of Doc Values. Defaults to single list: [indexTime]'
+        example: indexTime
+        in: query
+        name: Doc Values
+        required: false
+        schema: {type: string}
+      - description: If filtering by relative time, which time key to filter by. Defaults
+          to indexTime if relative time is provided.
+        example: indexTime
+        in: query
+        name: Time Key
+        required: false
+        schema: {type: string}
+      - description: How many records to return. Defaults to 100
+        example: '100'
+        in: body
+        name: Size
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Exabeam Security Management Platform Query
+tags:
+- {name: SIEM & Log Management}

@@ -1,0 +1,637 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        affected: {type: string}
+        errors_code: {type: string}
+        errors_detail: {type: string}
+        errors_title: {type: string}
+      type: object
+    tmp1:
+      properties:
+        affected: {type: string}
+        errors_code: {type: string}
+        errors_detail: {type: string}
+        errors_title: {type: string}
+      type: object
+    tmp2:
+      properties:
+        affected: {type: string}
+        errors_code: {type: string}
+        errors_detail: {type: string}
+        errors_title: {type: string}
+      type: object
+    tmp3:
+      properties:
+        errors_code: {type: string}
+        errors_detail: {type: string}
+        errors_title: {type: string}
+        installedDate: {type: string}
+        name: {type: string}
+        publisher: {type: string}
+        size: {type: string}
+        version: {type: string}
+      type: object
+    tmp4:
+      properties:
+        activeDirectory_computerDistinguishedName: {type: string}
+        activeDirectory_computerMemberOf: {type: string}
+        activeDirectory_lastUserDistinguishedName: {type: string}
+        activeDirectory_lastUserMemberOf: {type: string}
+        activeThreats: {type: string}
+        agentVersion: {type: string}
+        allowRemoteShell: {type: string}
+        appsVulnerabilityStatus: {type: string}
+        computerName: {type: string}
+        consoleMigrationStatus: {type: string}
+        coreCount: {type: string}
+        cpuCount: {type: string}
+        cpuId: {type: string}
+        createdAt: {type: string}
+        domain: {type: string}
+        encryptedApplications: {type: string}
+        errors_code: {type: string}
+        errors_detail: {type: string}
+        errors_title: {type: string}
+        externalIp: {type: string}
+        groupId: {type: string}
+        groupIp: {type: string}
+        groupName: {type: string}
+        id: {type: string}
+        inRemoteShellSession: {type: string}
+        infected: {type: string}
+        isActive: {type: string}
+        isDecommissioned: {type: string}
+        isPendingUninstall: {type: string}
+        isUninstalled: {type: string}
+        isUpToDate: {type: string}
+        lastActiveDate: {type: string}
+        lastLoggedInUserName: {type: string}
+        licenseKey: {type: string}
+        machineType: {type: string}
+        mitigationMode: {type: string}
+        mitigationModeSuspicious: {type: string}
+        modelName: {type: string}
+        networkInterfaces_id: {type: string}
+        networkInterfaces_inet: {type: string}
+        networkInterfaces_inet6: {type: string}
+        networkInterfaces_name: {type: string}
+        networkInterfaces_physical: {type: string}
+        networkStatus: {type: string}
+        osArch: {type: string}
+        osName: {type: string}
+        osRevision: {type: string}
+        osStartTime: {type: string}
+        osType: {type: string}
+        osUsername: {type: string}
+        registeredAt: {type: string}
+        scanAbortedAt: {type: string}
+        scanFinishedAt: {type: string}
+        scanStartedAt: {type: string}
+        scanStatus: {type: string}
+        siteId: {type: string}
+        siteName: {type: string}
+        totalMemory: {type: string}
+        updatedAt: {type: string}
+        userActionsNeeded: {type: string}
+        uuid: {type: string}
+      type: object
+    tmp5:
+      properties:
+        errors_code: {type: string}
+        errors_detail: {type: string}
+        errors_title: {type: string}
+        rank: {type: string}
+      type: object
+    tmp6:
+      properties:
+        agentComputerName: {type: string}
+        agentDomain: {type: string}
+        agentId: {type: string}
+        agentInfected: {type: string}
+        agentIp: {type: string}
+        agentIsActive: {type: string}
+        agentIsDecommissioned: {type: string}
+        agentMachineType: {type: string}
+        agentNetworkStatus: {type: string}
+        agentOsType: {type: string}
+        agentVersion: {type: string}
+        annotation: {type: string}
+        annotationUrl: {type: string}
+        browserType: {type: string}
+        certId: {type: string}
+        classification: {type: string}
+        classificationSource: {type: string}
+        classifierName: {type: string}
+        cloudVerdict: {type: string}
+        collectionId: {type: string}
+        createdAt: {type: string}
+        createdDate: {type: string}
+        description: {type: string}
+        engines: {type: string}
+        fileContentHash: {type: string}
+        fileCreatedDate: {type: string}
+        fileDisplayName: {type: string}
+        fileExtensionType: {type: string}
+        fileIsDotNet: {type: string}
+        fileIsExecutable: {type: string}
+        fileIsSystem: {type: string}
+        fileMaliciousContent: {type: string}
+        fileObjectId: {type: string}
+        filePath: {type: string}
+        fileSha256: {type: string}
+        fileVerificationType: {type: string}
+        fromCloud: {type: string}
+        fromScan: {type: string}
+        id: {type: string}
+        indicators: {type: string}
+        isCertValid: {type: string}
+        isInteractiveSession: {type: string}
+        isPartialStory: {type: string}
+        maliciousGroupId: {type: string}
+        maliciousProcessArguments: {type: string}
+        markedAsBenign: {type: string}
+        mitigationMode: {type: string}
+        mitigationReport_kill_status: {type: string}
+        mitigationReport_network_quarantine_status: {type: string}
+        mitigationReport_quarantine_status: {type: string}
+        mitigationReport_remediate_status: {type: string}
+        mitigationReport_rollback_status: {type: string}
+        mitigationStatus: {type: string}
+        publisher: {type: string}
+        rank: {type: string}
+        resolved: {type: string}
+        siteId: {type: string}
+        siteName: {type: string}
+        threatAgentVersion: {type: string}
+        threatName: {type: string}
+        updatedAt: {type: string}
+        username: {type: string}
+        whiteningOptions: {type: string}
+      type: object
+    tmp7:
+      properties:
+        affected: {type: string}
+        errors_code: {type: string}
+        errors_detail: {type: string}
+        errors_title: {type: string}
+      type: object
+    tmp8:
+      properties:
+        affected: {type: string}
+        errors_code: {type: string}
+        errors_detail: {type: string}
+        errors_title: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of SentinelOne SentinelOne
+  title: SentinelOne SentinelOne
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: SentinelOne Add IoC hash to blacklist.
+      parameters:
+      - description: Agent that Reported the IOC event
+        example: '225494730938493804'
+        in: query
+        name: Agent ID
+        required: true
+        schema: {type: string}
+      - description: List of hashes to add to black list
+        example: ''
+        in: query
+        name: Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: SentinelOne Blacklist Hash
+  tmp1:
+    post:
+      description: Connect all agents matching the input filter to the network.
+      parameters:
+      - description: Migration status of agent (Failed, N/A, Pending, or Migrated)
+        example: Failed
+        in: query
+        name: Migration Status
+        required: false
+        schema: {type: string}
+      - description: Agent's universally unique identifier
+        example: ff819e70af13be381993075eb0ce5f2f6de05be2
+        in: query
+        name: UUID
+        required: false
+        schema: {type: string}
+      - description: Scan status of the agent (started, none, finished, or aborted)
+        example: started
+        in: query
+        name: Scan Status
+        required: false
+        schema: {type: string}
+      - description: Match computer name partially (substring)
+        example: Lab1
+        in: query
+        name: Computer Name Like
+        required: false
+        schema: {type: string}
+      - description: Included OS types
+        example: windows
+        in: query
+        name: OS Types
+        required: false
+        schema: {type: string}
+      - description: A list of agent IDs
+        example: 225494730938493804,225494730938493915
+        in: query
+        name: IDs
+        required: false
+        schema: {type: string}
+      - description: List of Group IDs to filter by
+        example: 225494730938493804,225494730938493915
+        in: query
+        name: Group IDs
+        required: false
+        schema: {type: string}
+      - description: Included network domains
+        example: mybusiness.net,workgroup
+        in: query
+        name: Domains
+        required: false
+        schema: {type: string}
+      - description: List of site IDs to filter by
+        example: 225494730938493804,225494730938493915
+        in: query
+        name: Site IDs
+        required: false
+        schema: {type: string}
+      - description: Included machine types
+        example: laptop,desktop
+        in: query
+        name: Machine Types
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: SentinelOne Connect Agents
+  tmp2:
+    post:
+      description: Disconnect agents from the network.
+      parameters:
+      - description: List of site IDs to filter by
+        example: 225494730938493804,225494730938493915
+        in: query
+        name: Site IDs
+        required: false
+        schema: {type: string}
+      - description: A list of agent IDs
+        example: 225494730938493804,225494730938493915
+        in: query
+        name: IDs
+        required: false
+        schema: {type: string}
+      - description: Only include uninstalled agents
+        example: ''
+        in: query
+        name: Is Uninstalled
+        required: false
+        schema: {type: boolean}
+      - description: Include active, decommissioned, or both
+        example: true,false
+        in: query
+        name: Is Decommissioned
+        required: false
+        schema: {type: string}
+      - description: A free-text search term, will match applicable attributes (substring)
+        example: Linux
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: A list of network groups
+        example: 225494730938493804,225494730938493915
+        in: query
+        name: Group IDs
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: SentinelOne Disconnect Agents
+  tmp3:
+    post:
+      description: Retrieve running applications for a specific agent.
+      parameters:
+      - description: Agent ID list
+        example: '225494730938493804'
+        in: query
+        name: Agent ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: SentinelOne Get Agent Applications
+  tmp4:
+    post:
+      description: Retrieve information about agents.
+      parameters:
+      - description: Included network domains
+        example: mybusiness.net,workgroup
+        in: query
+        name: Domains
+        required: false
+        schema: {type: string}
+      - description: Free-test filter by visible IP (supports multiple values)
+        example: 205,127.0
+        in: query
+        name: External IP Contains
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: SentinelOne Get Agents
+  tmp5:
+    post:
+      description: Return the classification of a hash.
+      parameters:
+      - description: The hash to check the reputation of
+        example: ddd5030a3d029f3845fc1052419829f08f312240
+        in: query
+        name: Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: SentinelOne Get Hash
+  tmp6:
+    post:
+      description: Get threats using a variety of filters.
+      parameters:
+      - description: Content hash of the threat to get
+        example: ddd5030a3d029f3845fc1052419829f08f312240
+        in: query
+        name: Content Hash
+        required: false
+        schema: {type: string}
+      - description: List of collection IDs to search
+        example: 225494730938493804,225494730938493915
+        in: query
+        name: Collection IDs
+        required: false
+        schema: {type: string}
+      - description: Status of the threat (suspicious, mitigated, suspicious_resolved,
+          active, pending, or blocked)
+        example: suspicious
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: List of groups to search for
+        example: 0B0EFFE24B359FAF,2C9BAB7614F9B77F
+        in: query
+        name: Malicious Group IDs
+        required: false
+        schema: {type: string}
+      - description: List of site IDs to filter by
+        example: 225494730938493804,225494730938493915
+        in: query
+        name: Site IDs
+        required: false
+        schema: {type: string}
+      - description: List of threat IDs
+        example: 225494730938493804,225494730938493915
+        in: query
+        name: IDs
+        required: false
+        schema: {type: string}
+      - description: ID of the agent associated with the threats
+        example: '225494730938493804'
+        in: query
+        name: Agent ID
+        required: false
+        schema: {type: string}
+      - description: Limit number of returned items (1-100)
+        example: '10'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: SentinelOne Get Threats
+  tmp7:
+    post:
+      description: Mark hashes as benign and threat as resolved.
+      parameters:
+      - description: Scope to be used for exclusions (group, site, or tenant)
+        example: site
+        in: query
+        name: Target Scope
+        required: true
+        schema: {type: string}
+      - description: Selected whitening option (file_hash, path, file-type, certificate,
+          or browser-type)
+        example: file_hash
+        in: query
+        name: Whitening Option
+        required: false
+        schema: {type: string}
+      - description: Vigilance annotation
+        example: ''
+        in: query
+        name: Annotation
+        required: false
+        schema: {type: string}
+      - description: Vigilance annotation URL
+        example: ''
+        in: query
+        name: Annotation URL
+        required: false
+        schema: {type: string}
+      - description: Threat status (suspicious, mitigated, suspicious_resolved, active,
+          pending, or blocked)
+        example: suspicious
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: List of site IDs to filter by
+        example: 225494730938493804,225494730938493915
+        in: query
+        name: Site IDs
+        required: false
+        schema: {type: string}
+      - description: List of sha1 hashes to search for
+        example: ddd5030a3d029f3845fc1052419829f08f312240
+        in: query
+        name: Content Hashes
+        required: false
+        schema: {type: string}
+      - description: ID of agent associated with threat
+        example: '225494730938493804'
+        in: query
+        name: Agent ID
+        required: false
+        schema: {type: string}
+      - description: Included OS types
+        example: windows
+        in: query
+        name: OS Types
+        required: false
+        schema: {type: string}
+      - description: List of groups to search for
+        example: 0B0EFFE24B359FAF,2C9BAB7614F9B77F
+        in: query
+        name: Malicious Group IDs
+        required: false
+        schema: {type: string}
+      - description: List of collection IDs to search for
+        example: 225494730938493804,225494730938493915
+        in: query
+        name: Collection IDs
+        required: false
+        schema: {type: string}
+      - description: List of threat classifications to search (must be capitalized)
+        example: Virus,Trojan
+        in: query
+        name: Classifications
+        required: false
+        schema: {type: string}
+      - description: List of threat IDs
+        example: 225494730938493804,225494730938493915
+        in: query
+        name: IDs
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: SentinelOne Mark as Benign
+  tmp8:
+    post:
+      description: Mark suspicious threats as threats.
+      parameters:
+      - description: Scope to be used for exclusions (group, site, or tenant)
+        example: site
+        in: query
+        name: Target Scope
+        required: true
+        schema: {type: string}
+      - description: Selected whitening option (file_hash, path, file-type, certificate,
+          or browser-type)
+        example: file_hash
+        in: query
+        name: Whitening Option
+        required: false
+        schema: {type: string}
+      - description: Vigilance annotation
+        example: ''
+        in: query
+        name: Annotation
+        required: false
+        schema: {type: string}
+      - description: Vigilance annotation URL
+        example: ''
+        in: query
+        name: Annotation URL
+        required: false
+        schema: {type: string}
+      - description: Threat status (suspicious, mitigated, suspicious_resolved, active,
+          pending, or blocked)
+        example: suspicious
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: List of site IDs to filter by
+        example: 225494730938493804,225494730938493915
+        in: query
+        name: Site IDs
+        required: false
+        schema: {type: string}
+      - description: List of sha1 hashes to search for
+        example: ddd5030a3d029f3845fc1052419829f08f312240
+        in: query
+        name: Content Hashes
+        required: false
+        schema: {type: string}
+      - description: ID of agent associated with threat
+        example: '225494730938493804'
+        in: query
+        name: Agent ID
+        required: false
+        schema: {type: string}
+      - description: Included OS types
+        example: windows
+        in: query
+        name: OS Types
+        required: false
+        schema: {type: string}
+      - description: List of groups to search for
+        example: 0B0EFFE24B359FAF,2C9BAB7614F9B77F
+        in: query
+        name: Malicious Group IDs
+        required: false
+        schema: {type: string}
+      - description: List of collection IDs to search for
+        example: 225494730938493804,225494730938493915
+        in: query
+        name: Collection IDs
+        required: false
+        schema: {type: string}
+      - description: List of threat classifications to search
+        example: Virus,Trojan
+        in: query
+        name: Classifications
+        required: false
+        schema: {type: string}
+      - description: List of threat IDs
+        example: 225494730938493804,225494730938493915
+        in: query
+        name: IDs
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: SentinelOne Mark as Threat
+tags:
+- {name: Endpoint Security & Management}

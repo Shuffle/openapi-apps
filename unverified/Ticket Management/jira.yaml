@@ -1,0 +1,247 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        fields_assignee_displayName: {type: string}
+        fields_assignee_emailAddress: {type: string}
+        fields_created: {type: string}
+        fields_description: {type: string}
+        fields_issuetype_name: {type: string}
+        fields_project_name: {type: string}
+        fields_reporter_displayName: {type: string}
+        fields_reporter_emailAddress: {type: string}
+        fields_resolutiondate: {type: string}
+        fields_status_name: {type: string}
+        fields_summary: {type: string}
+        fields_updated: {type: string}
+        key: {type: string}
+        self: {type: string}
+      type: object
+    tmp1:
+      properties:
+        fields_assignee_displayName: {type: string}
+        fields_assignee_emailAddress: {type: string}
+        fields_created: {type: string}
+        fields_description: {type: string}
+        fields_issuetype_name: {type: string}
+        fields_project_name: {type: string}
+        fields_reporter_displayName: {type: string}
+        fields_reporter_emailAddress: {type: string}
+        fields_resolutiondate: {type: string}
+        fields_status_name: {type: string}
+        fields_summary: {type: string}
+        fields_updated: {type: string}
+        key: {type: string}
+        self: {type: string}
+      type: object
+    tmp2:
+      properties:
+        attachments: {type: string}
+        comment_list: {type: string}
+        comment_poster: {type: string}
+        fields_assignee_displayName: {type: string}
+        fields_assignee_emailAddress: {type: string}
+        fields_created: {type: string}
+        fields_description: {type: string}
+        fields_issuetype_name: {type: string}
+        fields_project_name: {type: string}
+        fields_reporter_displayName: {type: string}
+        fields_reporter_emailAddress: {type: string}
+        fields_resolutiondate: {type: string}
+        fields_status_name: {type: string}
+        fields_summary: {type: string}
+        fields_updated: {type: string}
+        key: {type: string}
+        self: {type: string}
+      type: object
+    tmp3:
+      properties:
+        attachments: {type: string}
+        fields_assignee_displayName: {type: string}
+        fields_assignee_emailAddress: {type: string}
+        fields_created: {type: string}
+        fields_description: {type: string}
+        fields_issuetype_name: {type: string}
+        fields_project_name: {type: string}
+        fields_reporter_displayName: {type: string}
+        fields_reporter_emailAddress: {type: string}
+        fields_resolutiondate: {type: string}
+        fields_status_name: {type: string}
+        fields_summary: {type: string}
+        fields_updated: {type: string}
+        key: {type: string}
+        self: {type: string}
+      type: object
+    tmp4:
+      properties:
+        fields_assignee_displayName: {type: string}
+        fields_assignee_emailAddress: {type: string}
+        fields_created: {type: string}
+        fields_description: {type: string}
+        fields_issuetype_name: {type: string}
+        fields_project_name: {type: string}
+        fields_reporter_displayName: {type: string}
+        fields_reporter_emailAddress: {type: string}
+        fields_resolutiondate: {type: string}
+        fields_status_name: {type: string}
+        fields_summary: {type: string}
+        fields_updated: {type: string}
+        key: {type: string}
+        self: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Atlassian JIRA
+  title: Atlassian JIRA
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Add a comment to a ticket
+      parameters:
+      - description: The key of the ticket
+        example: SW-1212
+        in: query
+        name: Ticket Key
+        required: true
+        schema: {type: string}
+      - description: Comment to append to the ticket specified
+        example: ''
+        in: query
+        name: Comment
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: JIRA Add Comment
+  tmp1:
+    post:
+      description: Create a JIRA Ticket
+      parameters:
+      - description: Key of the project
+        example: SW
+        in: query
+        name: Project
+        required: true
+        schema: {type: string}
+      - description: Summary of the ticket
+        example: DOS attack
+        in: query
+        name: Summary
+        required: true
+        schema: {type: string}
+      - description: Description of the ticket
+        example: A attack from 1.1.1.1 occurred on server localhost
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: Type of the ticket
+        example: Bug
+        in: query
+        name: Ticket Type
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: JIRA Create Ticket
+  tmp2:
+    post:
+      description: Fetch an individual ticket
+      parameters:
+      - description: The key of the ticket
+        example: SW-1212
+        in: query
+        name: Ticket Key
+        required: true
+        schema: {type: string}
+      - description: Enable to retrieve attachments
+        example: ''
+        in: query
+        name: Get Attachments
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: JIRA Get Ticket
+  tmp3:
+    post:
+      description: Search and return a list issues using JQL query language
+      parameters:
+      - description: JQL Search Query
+        example: assignee=admin
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: Enable to retrieve attachments
+        example: ''
+        in: query
+        name: Get Attachments
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: JIRA Search
+  tmp4:
+    post:
+      description: Update a JIRA Ticket
+      parameters:
+      - description: Key of the ticket
+        example: SW-1212
+        in: query
+        name: Ticket Key
+        required: true
+        schema: {type: string}
+      - description: Update the summary to a new value
+        example: ''
+        in: query
+        name: Summary
+        required: false
+        schema: {type: string}
+      - description: Update the description to a new value
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: Update the assignee to a new value of type 'Name'
+        example: Bob Brown
+        in: query
+        name: Assignee
+        required: false
+        schema: {type: string}
+      - description: Change the state of the ticket, transitioning it
+        example: ''
+        in: query
+        name: Transition Ticket
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: JIRA Update Ticket
+tags:
+- {name: Ticket Management}

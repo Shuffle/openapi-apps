@@ -1,0 +1,388 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        analysis_analyzer_id: {type: string}
+        analysis_analyzer_name: {type: string}
+        analysis_analyzer_version: {type: string}
+        analysis_configuration_id: {type: string}
+        analysis_configuration_name: {type: string}
+        analysis_created: {type: string}
+        analysis_document_password: {type: string}
+        analysis_id: {type: string}
+        analysis_ioc_aggregation_state: {type: string}
+        analysis_job_id: {type: string}
+        analysis_job_started: {type: string}
+        analysis_job_type: {type: string}
+        analysis_jobrule_id: {type: string}
+        analysis_jobrule_sampletype: {type: string}
+        analysis_prescript_force_admin: {type: string}
+        analysis_prescript_id: {type: string}
+        analysis_priority: {type: string}
+        analysis_report_version: {type: string}
+        analysis_result_code: {type: string}
+        analysis_result_str: {type: string}
+        analysis_sample_id: {type: string}
+        analysis_sample_md5: {type: string}
+        analysis_sample_sha1: {type: string}
+        analysis_sample_sha256: {type: string}
+        analysis_sample_ssdeep: {type: string}
+        analysis_severity: {type: string}
+        analysis_size: {type: string}
+        analysis_snapshot_id: {type: string}
+        analysis_snapshot_name: {type: string}
+        analysis_static_config_id: {type: string}
+        analysis_submission_id: {type: string}
+        analysis_system_time: {type: string}
+        analysis_tags: {type: string}
+        analysis_user_email: {type: string}
+        analysis_user_id: {type: string}
+        analysis_vm_id: {type: string}
+        analysis_vm_name: {type: string}
+        analysis_vmhost_id: {type: string}
+        analysis_vmhost_name: {type: string}
+        analysis_vti_aggregation_state: {type: string}
+        analysis_vti_built_in_rules_version: {type: string}
+        analysis_vti_custom_rules_hash: {type: string}
+        analysis_vti_score: {type: string}
+        analysis_webif_url: {type: string}
+        analysis_yara_latest_ruleset_date: {type: string}
+        analysis_yara_match_count: {type: string}
+        message: {type: string}
+      type: object
+    tmp1:
+      properties:
+        msg: {type: string}
+        sample_created: {type: string}
+        sample_filename: {type: string}
+        sample_filesize: {type: string}
+        sample_id: {type: string}
+        sample_imphash: {type: string}
+        sample_is_multipart: {type: string}
+        sample_md5hash: {type: string}
+        sample_priority: {type: string}
+        sample_sha1hash: {type: string}
+        sample_sha256hash: {type: string}
+        sample_ssdeephash: {type: string}
+        sample_type: {type: string}
+        sample_url: {type: string}
+        sample_webif_url: {type: string}
+        submission_filename: {type: string}
+      type: object
+    tmp2:
+      properties:
+        analysis_details_cmdline_parameters: {type: string}
+        analysis_details_creation_time: {type: string}
+        analysis_details_execution_successful: {type: string}
+        analysis_details_number_of_processes: {type: string}
+        analysis_details_prescript_filename: {type: string}
+        analysis_details_reputation_enabled: {type: string}
+        analysis_details_termination_reason: {type: string}
+        analysis_details_type: {type: string}
+        analysis_details_url: {type: string}
+        analysis_details_version: {type: string}
+        analysis_details_vm_analysis_duration_time: {type: string}
+        analysis_details_whois_enabled: {type: string}
+        artifacts_domains: {type: string}
+        artifacts_files: {type: string}
+        artifacts_ips: {type: string}
+        artifacts_mutexes: {type: string}
+        artifacts_registry_operations: {type: string}
+        artifacts_registry_reg_key_name: {type: string}
+        artifacts_registry_type: {type: string}
+        artifacts_registry_version: {type: string}
+        artifacts_type: {type: string}
+        artifacts_urls: {type: string}
+        artifacts_version: {type: string}
+        classification: {type: string}
+        extracted_files: {type: string}
+        process_dumps: {type: string}
+        processes_cmd_line: {type: string}
+        processes_filename: {type: string}
+        processes_id: {type: string}
+        processes_image_name: {type: string}
+        processes_monitor_reason: {type: string}
+        processes_monitored_id: {type: string}
+        processes_origin_monitor_id: {type: string}
+        processes_ref_parent_process: {type: string}
+        processes_regions_dump_filename: {type: string}
+        processes_regions_dump_flags: {type: string}
+        processes_regions_dump_info: {type: string}
+        processes_regions_dump_permissions: {type: string}
+        processes_regions_dump_ref_process_dump: {type: string}
+        processes_regions_dump_size: {type: string}
+        processes_regions_dump_start_va: {type: string}
+        processes_regions_dump_type: {type: string}
+        processes_regions_dump_version: {type: string}
+        processes_regions_end_va: {type: string}
+        processes_regions_entry_point: {type: string}
+        processes_regions_filename: {type: string}
+        processes_regions_id: {type: string}
+        processes_regions_name: {type: string}
+        processes_regions_norm_filename: {type: string}
+        processes_regions_region_type: {type: string}
+        processes_regions_start_va: {type: string}
+        processes_regions_timestamp: {type: string}
+        processes_regions_type: {type: string}
+        processes_regions_version: {type: string}
+        processes_terminate_reason: {type: string}
+        processes_type: {type: string}
+        processes_unmonitor_reason: {type: string}
+        processes_version: {type: string}
+        remarks_errors: {type: string}
+        remarks_infos: {type: string}
+        remarks_type: {type: string}
+        remarks_version: {type: string}
+        remarks_warnings: {type: string}
+        sample_details_filename: {type: string}
+        sample_details_id: {type: string}
+        sample_details_imp_hash: {type: string}
+        sample_details_md5_hash: {type: string}
+        sample_details_sample_type: {type: string}
+        sample_details_sha1_hash: {type: string}
+        sample_details_sha256_hash: {type: string}
+        sample_details_size: {type: string}
+        sample_details_ssdeep_hash: {type: string}
+        sample_details_type: {type: string}
+        sample_details_version: {type: string}
+        screenshots_screenshot_archive_path: {type: string}
+        screenshots_size: {type: string}
+        screenshots_thumbnail_archive_path: {type: string}
+        screenshots_timestamp: {type: string}
+        screenshots_type: {type: string}
+        screenshots_version: {type: string}
+        type: {type: string}
+        version: {type: string}
+        vm_and_analyzer_details_adobe_acrobat_reader_version: {type: string}
+        vm_and_analyzer_details_analyzer_build_date: {type: string}
+        vm_and_analyzer_details_analyzer_version: {type: string}
+        vm_and_analyzer_details_chrome_version: {type: string}
+        vm_and_analyzer_details_firefox_version: {type: string}
+        vm_and_analyzer_details_flash_version: {type: string}
+        vm_and_analyzer_details_internet_explorer_version: {type: string}
+        vm_and_analyzer_details_java_version: {type: string}
+        vm_and_analyzer_details_microsoft_excel_version: {type: string}
+        vm_and_analyzer_details_microsoft_office_version: {type: string}
+        vm_and_analyzer_details_microsoft_power_point_version: {type: string}
+        vm_and_analyzer_details_microsoft_project_version: {type: string}
+        vm_and_analyzer_details_microsoft_publisher_version: {type: string}
+        vm_and_analyzer_details_microsoft_visio_version: {type: string}
+        vm_and_analyzer_details_microsoft_word_version: {type: string}
+        vm_and_analyzer_details_randomly_created_artifacts_directories: {type: string}
+        vm_and_analyzer_details_randomly_created_artifacts_files: {type: string}
+        vm_and_analyzer_details_randomly_created_artifacts_processes: {type: string}
+        vm_and_analyzer_details_randomly_created_artifacts_type: {type: string}
+        vm_and_analyzer_details_randomly_created_artifacts_version: {type: string}
+        vm_and_analyzer_details_silverlight_version: {type: string}
+        vm_and_analyzer_details_type: {type: string}
+        vm_and_analyzer_details_version: {type: string}
+        vm_and_analyzer_details_vm_architecture: {type: string}
+        vm_and_analyzer_details_vm_computer_name: {type: string}
+        vm_and_analyzer_details_vm_description: {type: string}
+        vm_and_analyzer_details_vm_kernel_version: {type: string}
+        vm_and_analyzer_details_vm_name: {type: string}
+        vm_and_analyzer_details_vm_os: {type: string}
+        vm_and_analyzer_details_vm_system_root: {type: string}
+        vm_and_analyzer_details_vm_temp_dir: {type: string}
+        vm_and_analyzer_details_vm_user_domain: {type: string}
+        vm_and_analyzer_details_vm_user_profile: {type: string}
+        vm_and_analyzer_details_vm_username: {type: string}
+        vti_type: {type: string}
+        vti_version: {type: string}
+        vti_vti_built_in_rules_version: {type: string}
+        vti_vti_rule_matches: {type: string}
+        vti_vti_rule_type: {type: string}
+        vti_vti_score: {type: string}
+        yara_apply_yara: {type: string}
+        yara_apply_yara_on_created_files: {type: string}
+        yara_apply_yara_on_modified_files: {type: string}
+        yara_apply_yara_on_pcap_file: {type: string}
+        yara_apply_yara_on_process_dumps: {type: string}
+        yara_apply_yara_on_sample_files: {type: string}
+        yara_match_count: {type: string}
+        yara_matches: {type: string}
+        yara_ruleset_count: {type: string}
+        yara_type: {type: string}
+        yara_version: {type: string}
+      type: object
+    tmp3:
+      properties:
+        message: {type: string}
+        sample_classifications: {type: string}
+        sample_created: {type: string}
+        sample_filename: {type: string}
+        sample_filesize: {type: string}
+        sample_highest_vti_score: {type: string}
+        sample_highest_vti_severity: {type: string}
+        sample_id: {type: string}
+        sample_imphash: {type: string}
+        sample_is_multipart: {type: string}
+        sample_last_md_score: {type: string}
+        sample_last_reputation_severity: {type: string}
+        sample_last_vt_score: {type: string}
+        sample_md5hash: {type: string}
+        sample_priority: {type: string}
+        sample_score: {type: string}
+        sample_severity: {type: string}
+        sample_sha1hash: {type: string}
+        sample_sha256hash: {type: string}
+        sample_ssdeephash: {type: string}
+        sample_type: {type: string}
+        sample_url: {type: string}
+        sample_vti_score: {type: string}
+        sample_webif_url: {type: string}
+      type: object
+    tmp4:
+      properties:
+        message: {type: string}
+        submission_analyzer_mode_analyzer_mode: {type: string}
+        submission_analyzer_mode_enable_reputation: {type: string}
+        submission_analyzer_mode_enable_triage: {type: string}
+        submission_analyzer_mode_enable_whois: {type: string}
+        submission_analyzer_mode_id: {type: string}
+        submission_analyzer_mode_triage_error_handling: {type: string}
+        submission_comment: {type: string}
+        submission_created: {type: string}
+        submission_dll_call_mode: {type: string}
+        submission_dll_calls: {type: string}
+        submission_document_password: {type: string}
+        submission_filename: {type: string}
+        submission_finish_time: {type: string}
+        submission_finished: {type: string}
+        submission_has_errors: {type: string}
+        submission_id: {type: string}
+        submission_ip_id: {type: string}
+        submission_ip_ip: {type: string}
+        submission_known_configuration: {type: string}
+        submission_original_filename: {type: string}
+        submission_prescript_force_admin: {type: string}
+        submission_prescript_id: {type: string}
+        submission_priority: {type: string}
+        submission_reputation_mode: {type: string}
+        submission_sample_id: {type: string}
+        submission_sample_md5: {type: string}
+        submission_sample_sha1: {type: string}
+        submission_sample_sha256: {type: string}
+        submission_sample_ssdeep: {type: string}
+        submission_shareable: {type: string}
+        submission_system_time: {type: string}
+        submission_tags: {type: string}
+        submission_triage_error_handling: {type: string}
+        submission_type: {type: string}
+        submission_user_account_id: {type: string}
+        submission_user_account_name: {type: string}
+        submission_user_account_subscription_mode: {type: string}
+        submission_user_email: {type: string}
+        submission_user_id: {type: string}
+        submission_webif_url: {type: string}
+        submission_whois_mode: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of VMRay VMRay Cloud
+  title: VMRay VMRay Cloud
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get the results from an analyzed file.
+      parameters:
+      - description: Sample ID, returned from a file upload.
+        example: ''
+        in: body
+        name: Sample ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: VMRay Get File Analysis Results
+  tmp1:
+    post:
+      description: Submit file to VMRay for analysis
+      parameters:
+      - description: File to submit
+        example: ''
+        in: query
+        name: File
+        required: true
+        schema: {type: string}
+      - description: Type of sample submitted to VMRay, will default to Unknown.
+        example: Windows Script File
+        in: query
+        name: Submission Type
+        required: false
+        schema: {type: string}
+      - description: If True, the file will be reanalyzed. If False, the existing
+          data will be returned. Defaults to False.
+        example: ''
+        in: query
+        name: Reanalyze
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: VMRay File Submit
+  tmp2:
+    post:
+      description: Get report from a file analysis
+      parameters:
+      - description: Analysis ID, returned from analysis results.
+        example: ''
+        in: body
+        name: Analysis ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: VMRay Get File Analysis Report
+  tmp3:
+    post:
+      description: Retrieve sample by MD5 hash
+      parameters:
+      - description: MD5 hash of a sample to lookup
+        example: 183ec40ed7dee200ff201071a8433e4c
+        in: query
+        name: MD5
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: VMRay MD5 Lookup
+  tmp4:
+    post:
+      description: Submit URL to VMRay for analysis.
+      parameters:
+      - description: URL of website to be submitted for analysis.
+        example: https://example.com
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: VMRay Submit URL
+tags:
+- {name: Investigation}

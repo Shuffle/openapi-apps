@@ -1,0 +1,282 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        accessIp: {type: string}
+        approved: {type: string}
+        deviceType_model: {type: string}
+        deviceType_vendor: {type: string}
+        deviceType_version: {type: string}
+        name: {type: string}
+        organization_id: {type: string}
+        organization_name: {type: string}
+        unmanaged: {type: string}
+      type: object
+    tmp1:
+      properties:
+        bizService: {type: string}
+        count: {type: string}
+        custId: {type: string}
+        customer: {type: string}
+        dataStr: {type: string}
+        eventName: {type: string}
+        eventSeverity: {type: string}
+        eventSeverityCat: {type: string}
+        eventType: {type: string}
+        id: {type: string}
+        incidentClearedReason: {type: string}
+        incidentClearedTime: {type: string}
+        incidentClearedUser: {type: string}
+        incidentComments: {type: string}
+        incidentDetail: {type: string}
+        incidentExtClearedTime: {type: string}
+        incidentExtTicketId: {type: string}
+        incidentExtTicketState: {type: string}
+        incidentExtTicketType: {type: string}
+        incidentExtUser: {type: string}
+        incidentFirstSeen: {type: string}
+        incidentId: {type: string}
+        incidentLastSeen: {type: string}
+        incidentNotiRecipients: {type: string}
+        incidentNotiStatus: {type: string}
+        incidentReso: {type: string}
+        incidentRptDevName: {type: string}
+        incidentRptDevStatus: {type: string}
+        incidentRptIp: {type: string}
+        incidentSrc: {type: string}
+        incidentStatus: {type: string}
+        incidentTarget: {type: string}
+        incidentTicketId: {type: string}
+        incidentTicketStatus: {type: string}
+        incidentTicketUser: {type: string}
+        incidentTitle: {type: string}
+        incidentViewStatus: {type: string}
+        incidentViewUsers: {type: string}
+        index: {type: string}
+        nid: {type: string}
+        phEventCategory: {type: string}
+        phIncidentCategory: {type: string}
+        phIncidentImpacts: {type: string}
+        phRecvTime: {type: string}
+        phSubIncidentCategory: {type: string}
+        queryId: {type: string}
+        receiveTime: {type: string}
+        srcIpAddr: {type: string}
+        user: {type: string}
+      type: object
+    tmp2:
+      properties:
+        bizService: {type: string}
+        count: {type: string}
+        custId: {type: string}
+        customer: {type: string}
+        dataStr: {type: string}
+        eventName: {type: string}
+        eventSeverity: {type: string}
+        eventSeverityCat: {type: string}
+        eventType: {type: string}
+        id: {type: string}
+        incidentClearedReason: {type: string}
+        incidentClearedTime: {type: string}
+        incidentClearedUser: {type: string}
+        incidentComments: {type: string}
+        incidentDetail: {type: string}
+        incidentExtClearedTime: {type: string}
+        incidentExtTicketId: {type: string}
+        incidentExtTicketState: {type: string}
+        incidentExtTicketType: {type: string}
+        incidentExtUser: {type: string}
+        incidentFirstSeen: {type: string}
+        incidentId: {type: string}
+        incidentLastSeen: {type: string}
+        incidentNotiRecipients: {type: string}
+        incidentNotiStatus: {type: string}
+        incidentReso: {type: string}
+        incidentRptDevName: {type: string}
+        incidentRptDevStatus: {type: string}
+        incidentRptIp: {type: string}
+        incidentSrc: {type: string}
+        incidentStatus: {type: string}
+        incidentTarget: {type: string}
+        incidentTicketId: {type: string}
+        incidentTicketStatus: {type: string}
+        incidentTicketUser: {type: string}
+        incidentTitle: {type: string}
+        incidentViewStatus: {type: string}
+        incidentViewUsers: {type: string}
+        index: {type: string}
+        nid: {type: string}
+        phEventCategory: {type: string}
+        phIncidentCategory: {type: string}
+        phIncidentImpacts: {type: string}
+        phRecvTime: {type: string}
+        phSubIncidentCategory: {type: string}
+        receiveTime: {type: string}
+        srcIpAddr: {type: string}
+        user: {type: string}
+      type: object
+    tmp3:
+      properties:
+        attributes: {type: string}
+        bizService: {type: string}
+        count: {type: string}
+        custId: {type: string}
+        customer: {type: string}
+        dataStr: {type: string}
+        eventName: {type: string}
+        eventSeverity: {type: string}
+        eventSeverityCat: {type: string}
+        eventType: {type: string}
+        id: {type: string}
+        incidentClearedReason: {type: string}
+        incidentClearedTime: {type: string}
+        incidentClearedUser: {type: string}
+        incidentComments: {type: string}
+        incidentDetail: {type: string}
+        incidentExtClearedTime: {type: string}
+        incidentExtTicketId: {type: string}
+        incidentExtTicketState: {type: string}
+        incidentExtTicketType: {type: string}
+        incidentExtUser: {type: string}
+        incidentFirstSeen: {type: string}
+        incidentId: {type: string}
+        incidentLastSeen: {type: string}
+        incidentNotiRecipients: {type: string}
+        incidentNotiStatus: {type: string}
+        incidentReso: {type: string}
+        incidentRptDevName: {type: string}
+        incidentRptDevStatus: {type: string}
+        incidentRptIp: {type: string}
+        incidentSrc: {type: string}
+        incidentStatus: {type: string}
+        incidentTarget: {type: string}
+        incidentTicketId: {type: string}
+        incidentTicketStatus: {type: string}
+        incidentTicketUser: {type: string}
+        incidentTitle: {type: string}
+        incidentViewStatus: {type: string}
+        incidentViewUsers: {type: string}
+        index: {type: string}
+        nid: {type: string}
+        phEventCategory: {type: string}
+        phIncidentCategory: {type: string}
+        phIncidentImpacts: {type: string}
+        phRecvTime: {type: string}
+        phSubIncidentCategory: {type: string}
+        queryId: {type: string}
+        raw_json: {type: string}
+        receiveTime: {type: string}
+        reptDevIpAddr: {type: string}
+        srcIpAddr: {type: string}
+        user: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Fortinet Fortisiem
+  title: Fortinet Fortisiem
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Pull devices from FortiSIEM
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Fortinet FortiSIEM Get Devices
+  tmp1:
+    post:
+      description: Pull in incidents and event data from FortiSIEM
+      parameters:
+      - description: Query for incidents in the last X minutes
+        example: ''
+        in: query
+        name: Minutes Ago
+        required: false
+        schema: {type: string}
+      - description: Timeout for task (in minutes). Default to 10
+        example: ''
+        in: body
+        name: Timeout (Minutes)
+        required: false
+        schema: {type: string}
+      - description: Gets only Query ID, if set to 'False' the task will complete
+          the final request automatically. Defaults to 'True'
+        example: ''
+        in: query
+        name: Query ID
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Fortinet FortiSIEM Get Incidents/Events
+  tmp2:
+    post:
+      description: Used for querying all incidents based on an incomplete polling
+        of incidents from the Query ID returned
+      parameters:
+      - description: Query ID, obtained from 'Get Incidents/Events' timeout and used
+          to finish query for incidents.
+        example: ''
+        in: query
+        name: Query ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Fortinet FortiSIEM Get Incidents/Events by Query ID
+  tmp3:
+    post:
+      description: Run XML Query in FortiSIEM
+      parameters:
+      - description: XML File attachment or string to send to FortiSiem as a query.
+        example: ''
+        in: query
+        name: XML File to send
+        required: false
+        schema: {type: string}
+      - description: 'The XML may contain {key} style flags that will be patched in,
+          IE, if the xml has a tag {ip} for an ip address, this field should have
+          value `{''ip'': ''1.2.3.4''}`'
+        example: ''
+        in: query
+        name: Object of dynamic parameters to pass to the XML
+        required: false
+        schema: {type: string}
+      - description: Just return raw JSON,defaults to false.
+        example: ''
+        in: query
+        name: Return Raw JSON instead
+        required: false
+        schema: {type: boolean}
+      - description: Gets only Query ID, if set to 'False' the task will complete
+          the final request automatically. Defaults to 'True'
+        example: ''
+        in: query
+        name: Query ID
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Fortinet FortiSIEM Generic XML Query
+tags:
+- {name: SIEM & Log Management}

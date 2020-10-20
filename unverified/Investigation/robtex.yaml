@@ -1,0 +1,110 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        nets: {type: string}
+        status: {type: string}
+      type: object
+    tmp1:
+      properties:
+        act: {type: string}
+        acth: {type: string}
+        as: {type: string}
+        asdesc: {type: string}
+        asname: {type: string}
+        bgproute: {type: string}
+        city: {type: string}
+        country: {type: string}
+        pas: {type: string}
+        pash: {type: string}
+        routedesc: {type: string}
+        status: {type: string}
+        whoisdesc: {type: string}
+      type: object
+    tmp2:
+      properties:
+        final_results: {type: string}
+      type: object
+    tmp3:
+      properties:
+        results_reverse: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Robtex Robtex
+  title: Robtex Robtex
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAABWklEQVR4nO3cwQ2CQBBAUTC2Yas2640m8EADovlLkPca2D38bELIzDwN8JjWdcQ5fOY1zXN9xq0+gGsSFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBaJ+9EX+MWIwUu+48UiISwSwiIhLBLCIiEsEsIiISwSwiIhLBKn/qWzl12oGztIOS1hkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkfirsJZleR59BzZDFpdV0zF7p01M6WxM6XBawiIhLBLCIiEsEpfa3XCW9d3/8PXqxSIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIi8QZAgBPuk4juuQAAAABJRU5ErkJggg==
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Retrieve an array of networks related to a specific AS number
+      parameters:
+      - description: AS Number
+        example: '1234'
+        in: body
+        name: AS Number
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Robtex AS Query
+  tmp1:
+    post:
+      description: Retrieve the current forward and reverse of an ip address
+      parameters:
+      - description: IP Address
+        example: 192.168.1.1
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Robtex IP Query
+  tmp2:
+    post:
+      description: ' Passive DNS forward'
+      parameters:
+      - description: PDNS Forward URL
+        example: example.com
+        in: query
+        name: PDNS Forward URL
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Robtex PDNS Forward
+  tmp3:
+    post:
+      description: ' Passive DNS reverse'
+      parameters:
+      - description: PDNS Reverse IP Address
+        example: 192.168.1.1
+        in: query
+        name: PDNS Reverse IP Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Robtex PDNS Reverse
+tags:
+- {name: Investigation}

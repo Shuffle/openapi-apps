@@ -1,0 +1,190 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        BrandID: {type: string}
+        BrandName: {type: string}
+      type: object
+    tmp1:
+      properties:
+        Brand: {type: string}
+        CreatedOn: {type: string}
+        IncidentID: {type: string}
+        Message: {type: string}
+        PostedBy: {type: string}
+        Subject: {type: string}
+      type: object
+    tmp2:
+      properties:
+        Brand: {type: string}
+        ClientRef: {type: string}
+        ClosedOn: {type: string}
+        CreatedOn: {type: string}
+        IncidentID: {type: string}
+        IncidentType: {type: string}
+        Status: {type: string}
+        StatusLogs_From: {type: string}
+        StatusLogs_Status: {type: string}
+        StatusLogs_To: {type: string}
+        ThreatType: {type: string}
+        Uptime: {type: string}
+        Url: {type: string}
+      type: object
+    tmp3:
+      properties:
+        AdditionalUrls: {type: string}
+        Brand: {type: string}
+        ClientRef: {type: string}
+        ClosedOn: {type: string}
+        CreatedOn: {type: string}
+        DomainExpiredOn: {type: string}
+        DomainRegisteredOn: {type: string}
+        DomainUpdatedOn: {type: string}
+        ImagePath: {type: string}
+        IncidentID: {type: string}
+        IncidentType: {type: string}
+        IpAddress: {type: string}
+        IpServerLocation: {type: string}
+        MobileAppName: {type: string}
+        MobileAppSignature: {type: string}
+        MobileAppStatus: {type: string}
+        MobileAppVersion: {type: string}
+        RegistrarName: {type: string}
+        ServerType: {type: string}
+        Status: {type: string}
+        ThreatType: {type: string}
+        Uptime: {type: string}
+        Url: {type: string}
+        Webhost: {type: string}
+        WebhostCountry: {type: string}
+        WhoisServer: {type: string}
+      type: object
+    tmp4:
+      properties:
+        Success: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of iZOOlogic iZOOlabs
+  title: iZOOlogic iZOOlabs
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Fetch Brands API method gives an option to extract/fetch all the
+        Client brands.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: iZOOlogic iZOOlabs Fetch Brands
+  tmp1:
+    post:
+      description: Fetch Incident Messages method gives opportunity to extract/fetch
+        all the cummincation made between iZOOlogic and client.
+      parameters:
+      - description: Start/from date when message was sent from, format - dd/mm/yyyy
+          . Will default to 30 days prior if unspecified.
+        example: 04/10/2018
+        in: query
+        name: From Date
+        required: false
+        schema: {type: string}
+      - description: End/to date when message was sent till, format - dd/mm/yyyy .
+          Will default to today if unspecified.
+        example: 25/10/2018
+        in: query
+        name: To Date
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: iZOOlogic iZOOlabs Fetch Incident Messages
+  tmp2:
+    post:
+      description: Fetch Incidents method gives facility to extract/fetch all incidents
+        created between a given date range along with specific brand.
+      parameters:
+      - description: Start/from date when message was sent from, format - dd/mm/yyyy
+          . Will default to 30 days prior if unspecified.
+        example: 04/10/2018
+        in: query
+        name: From Date
+        required: false
+        schema: {type: string}
+      - description: End/to date when message was sent till, format - dd/mm/yyyy .
+          Will default to today if unspecified.
+        example: 25/10/2018
+        in: query
+        name: To Date
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: iZOOlogic iZOOlabs Fetch Incidents
+  tmp3:
+    post:
+      description: Incident Detail method gives facility to extract/fetch all the
+        details of an Incident.
+      parameters:
+      - description: ''
+        example: 123abcD
+        in: query
+        name: Incident ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: iZOOlogic iZOOlabs Incident Detail
+  tmp4:
+    post:
+      description: This API method is used to make any communication for specific
+        incident. User can send message through API such as - Request to reject/close/reopen
+        incident etc.
+      parameters:
+      - description: ''
+        example: 123abcD
+        in: query
+        name: Incident ID
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: Incident on hold
+        in: query
+        name: Subject
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: Please put the incident on hold
+        in: query
+        name: Message
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: iZOOlogic iZOOlabs Send Incident Message
+tags:
+- {name: Network Security & Management}

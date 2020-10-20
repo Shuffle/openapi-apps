@@ -1,0 +1,338 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        active: {type: string}
+        displayName: {type: string}
+        emails_primary: {type: string}
+        emails_type: {type: string}
+        id: {type: string}
+        meta_created: {type: string}
+        meta_location: {type: string}
+        meta_resourceType: {type: string}
+        meta_version: {type: string}
+        name_familyName: {type: string}
+        name_formatted: {type: string}
+        name_givenName: {type: string}
+        schemas: {type: string}
+        userName: {type: string}
+      type: object
+    tmp1:
+      properties:
+        displayName: {type: string}
+        id: {type: string}
+        meta_created: {type: string}
+        meta_lastModified: {type: string}
+        meta_location: {type: string}
+        meta_resourceType: {type: string}
+        meta_version: {type: string}
+        nativeIdentity: {type: string}
+        schemas: {type: string}
+      type: object
+    tmp2:
+      properties:
+        active: {type: string}
+        application_displayName: {type: string}
+        application_ref: {type: string}
+        application_value: {type: string}
+        displayName: {type: string}
+        hasEntitlements: {type: string}
+        id: {type: string}
+        identity_displayName: {type: string}
+        identity_ref: {type: string}
+        identity_userName: {type: string}
+        identity_value: {type: string}
+        lastRefresh: {type: string}
+        locked: {type: string}
+        manuallyCorrelated: {type: string}
+        meta_created: {type: string}
+        meta_lastModified: {type: string}
+        meta_location: {type: string}
+        meta_resourceType: {type: string}
+        meta_version: {type: string}
+        nativeIdentity: {type: string}
+        schemas: {type: string}
+      type: object
+    tmp3:
+      properties:
+        active: {type: string}
+        classifications: {type: string}
+        descriptions_locale: {type: string}
+        descriptions_value: {type: string}
+        displayableName: {type: string}
+        id: {type: string}
+        inheritance: {type: string}
+        meta_created: {type: string}
+        meta_lastModified: {type: string}
+        meta_location: {type: string}
+        meta_resourceType: {type: string}
+        meta_version: {type: string}
+        name: {type: string}
+        owner_displayName: {type: string}
+        owner_ref: {type: string}
+        owner_value: {type: string}
+        permits: {type: string}
+        requirements: {type: string}
+        schemas: {type: string}
+        type_assignmentSelector: {type: string}
+        type_autoAssignment: {type: string}
+        type_displayName: {type: string}
+        type_iiq: {type: string}
+        type_manualAssignment: {type: string}
+        type_name: {type: string}
+        type_permits: {type: string}
+        type_requirements: {type: string}
+      type: object
+    tmp4:
+      properties:
+        entitlements_accountName: {type: string}
+        entitlements_application: {type: string}
+        entitlements_display: {type: string}
+        entitlements_type: {type: string}
+        entitlements_value: {type: string}
+        id: {type: string}
+        meta: {type: string}
+        roles_accountName: {type: string}
+        roles_acquired: {type: string}
+        roles_application: {type: string}
+        roles_display: {type: string}
+        roles_type: {type: string}
+        roles_value: {type: string}
+        schemas: {type: string}
+        userName: {type: string}
+      type: object
+    tmp5:
+      properties:
+        active: {type: string}
+        classifications: {type: string}
+        descriptions_locale: {type: string}
+        descriptions_value: {type: string}
+        displayableName: {type: string}
+        id: {type: string}
+        inheritance_displayName: {type: string}
+        inheritance_ref: {type: string}
+        inheritance_value: {type: string}
+        meta_created: {type: string}
+        meta_lastModified: {type: string}
+        meta_location: {type: string}
+        meta_resourceType: {type: string}
+        meta_version: {type: string}
+        name: {type: string}
+        owner_displayName: {type: string}
+        owner_ref: {type: string}
+        owner_value: {type: string}
+        permits: {type: string}
+        requirements: {type: string}
+        schemas: {type: string}
+        type_assignmentSelector: {type: string}
+        type_autoAssignment: {type: string}
+        type_displayName: {type: string}
+        type_iiq: {type: string}
+        type_manualAssignment: {type: string}
+        type_name: {type: string}
+        type_permits: {type: string}
+        type_requirements: {type: string}
+      type: object
+    tmp6:
+      properties:
+        error: {type: string}
+        successful: {type: string}
+      type: object
+    tmp7:
+      properties:
+        active: {type: string}
+        displayName: {type: string}
+        emails_primary: {type: string}
+        emails_type: {type: string}
+        emails_value: {type: string}
+        id: {type: string}
+        meta_created: {type: string}
+        meta_lastModified: {type: string}
+        meta_location: {type: string}
+        meta_resourceType: {type: string}
+        meta_version: {type: string}
+        name_familyName: {type: string}
+        name_formatted: {type: string}
+        name_givenName: {type: string}
+        schemas: {type: string}
+        userName: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Sailpoint IdentityQ
+  title: Sailpoint IdentityQ
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Create an Identity in Sailpoint
+      parameters:
+      - description: Username of identity, must be unique
+        example: ''
+        in: query
+        name: Username
+        required: true
+        schema: {type: string}
+      - description: Password
+        example: ''
+        in: query
+        name: Password
+        required: true
+        schema: {type: string}
+      - description: Last name of identity
+        example: ''
+        in: query
+        name: Last Name
+        required: true
+        schema: {type: string}
+      - description: First Name of identity
+        example: ''
+        in: query
+        name: First Name
+        required: true
+        schema: {type: string}
+      - description: Display name of Identity. Usually just 'firstname lastname'
+        example: ''
+        in: query
+        name: Display Name
+        required: true
+        schema: {type: string}
+      - description: CSV list of capabilities the user has, can be blank
+        example: SystemAdministrator
+        in: query
+        name: Capabilities
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Sailpoint Create Identity
+  tmp1:
+    post:
+      description: Filter accounts from Sailpoint
+      parameters:
+      - description: 'Search filter to find the account. Available variables: displayName,lastRefresh,nativeIdentity,uuid,lastTargetAgg,identity,application
+          See README for filter syntax'
+        example: (displayName co "Smith")
+        in: query
+        name: Search Filter
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Sailpoint Get Account by Filter
+  tmp2:
+    post:
+      description: Get account details by account ID
+      parameters:
+      - description: Account ID
+        example: 8a8080824df45873014df45dc0dd095a
+        in: query
+        name: Account ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Sailpoint Get Account By ID
+  tmp3:
+    post:
+      description: Get all Roles in Sailpoint
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Sailpoint Get All Roles
+  tmp4:
+    post:
+      description: Get an Identity with Roles and Entitlements by ID
+      parameters:
+      - description: ID of the identity to get data from
+        example: 8a8080824df45873014df45bb6f20013
+        in: query
+        name: Identity ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Sailpoint Get Identity By ID with Entitlements and Roles
+  tmp5:
+    post:
+      description: Get Role details by the ID
+      parameters:
+      - description: ID of the role to get info on
+        example: 8a8080824df45873014df45f8afc10e4
+        in: query
+        name: Role ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Sailpoint Get Role By ID
+  tmp6:
+    post:
+      description: Mass Lock or Lock Identities in Sailpoint
+      parameters:
+      - description: True will Lock accounts, False will unlock accounts
+        example: ''
+        in: query
+        name: Lock
+        required: true
+        schema: {type: boolean}
+      - description: CSV of identity IDs to lock or unlock
+        example: 8a8080824df45873014df45bb6f20013,8a8080824df45873014df45bb334000b
+        in: query
+        name: Identity IDs
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Sailpoint Lock or Unlock Identities
+  tmp7:
+    post:
+      description: Search by filter for an Identity in Sailpoint
+      parameters:
+      - description: Search filter to find the identities. See README for syntax
+        example: (displayName co "Smith")
+        in: query
+        name: Search Filter
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Sailpoint Search for Identity
+tags:
+- {name: Identity & Access Management}

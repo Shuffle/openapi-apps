@@ -1,0 +1,371 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        analysis_id: {type: string}
+      type: object
+    tmp1:
+      properties:
+        analysis_id: {type: string}
+        analysis_time: {type: string}
+        analysis_url: {type: string}
+        family_name: {type: string}
+        is_private: {type: string}
+        sha256: {type: string}
+        sub_verdict: {type: string}
+        verdict: {type: string}
+      type: object
+    tmp10:
+      properties:
+        file_type: {type: string}
+        md5: {type: string}
+        sha1: {type: string}
+        sha256: {type: string}
+        size_in_bytes: {type: string}
+        ssdeep: {type: string}
+      type: object
+    tmp11:
+      properties:
+        success: {type: string}
+      type: object
+    tmp12:
+      properties:
+        success: {type: string}
+      type: object
+    tmp2:
+      properties:
+        success: {type: string}
+      type: object
+    tmp3:
+      properties:
+        success: {type: string}
+      type: object
+    tmp4:
+      properties:
+        file: {type: string}
+      type: object
+    tmp5:
+      properties:
+        result_url: {type: string}
+        vaccine_file: {type: string}
+      type: object
+    tmp6:
+      properties:
+        analysis_id: {type: string}
+        analysis_time: {type: string}
+        analysis_url: {type: string}
+        family_name: {type: string}
+        is_private: {type: string}
+        sha256: {type: string}
+        sub_verdict: {type: string}
+        verdict: {type: string}
+      type: object
+    tmp7:
+      properties:
+        analysis_id: {type: string}
+        analysis_time: {type: string}
+        analysis_url: {type: string}
+        family_name: {type: string}
+        is_private: {type: string}
+        sha256: {type: string}
+        sub_verdict: {type: string}
+        verdict: {type: string}
+      type: object
+    tmp8:
+      properties:
+        analysis_analysis_id: {type: string}
+        analysis_analysis_time: {type: string}
+        analysis_analysis_url: {type: string}
+        analysis_sha256: {type: string}
+        analysis_sub_analysis_id: {type: string}
+        analysis_sub_verdict: {type: string}
+        analysis_verdict: {type: string}
+        reused_genes_gene_count: {type: string}
+      type: object
+    tmp9:
+      properties:
+        sha256: {type: string}
+        source: {type: string}
+        sub_analysis_id: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Intezer Analyze
+  title: Intezer Analyze
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Analyze a file with Intezer Analyze
+      parameters:
+      - description: File attachment to analyze.
+        example: ''
+        in: query
+        name: File Attachment
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Intezer Analyze Analyze File from Attachment
+  tmp1:
+    post:
+      description: Analyze a file by hash
+      parameters:
+      - description: MD5, SHA256 hash for file
+        example: ''
+        in: query
+        name: Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Intezer Analyze Analyze by Hash
+  tmp10:
+    post:
+      description: The Get Sub-Analysis task will retrieve a sub-analysis metadata
+        by ID
+      parameters:
+      - description: The ID of an analysis
+        example: 768a3ba4-d80a-4ca6-b87c-22f071495705
+        in: query
+        name: Analysis ID
+        required: true
+        schema: {type: string}
+      - description: The ID of a sub-analysis
+        example: 568a3ba4-d80a-4ca6-b87c-22f0712345
+        in: query
+        name: Sub-Analysis ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Intezer Analyze Get Sub-Analysis Metadata By ID
+  tmp11:
+    post:
+      description: Index a file in Intezer Analyze.
+      parameters:
+      - description: SHA256 to index.
+        example: ''
+        in: query
+        name: SHA256
+        required: true
+        schema: {type: string}
+      - description: 'The type of classification of this file, as follows: malicious
+          or trusted. Defaults to `trusted`'
+        example: ''
+        in: query
+        name: Index As
+        required: false
+        schema: {type: string}
+      - description: The name of the family to index to, only available when indexing
+          as malicious
+        example: ''
+        in: query
+        name: Family Name
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: Intezer Analyze Index File by SHA256
+  tmp12:
+    post:
+      description: Label a file in Intezer by SHA256.
+      parameters:
+      - description: SHA256 to index.
+        example: ''
+        in: query
+        name: SHA256
+        required: true
+        schema: {type: string}
+      - description: Label to apply to file.
+        example: ''
+        in: query
+        name: Label
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: Intezer Analyze Label File
+  tmp2:
+    post:
+      description: Delete a file from Intezer Analyze.
+      parameters:
+      - description: SHA256 of file to delete.
+        example: ''
+        in: query
+        name: SHA256
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Intezer Analyze Delete File by SHA256
+  tmp3:
+    post:
+      description: Delete a file Index by hash
+      parameters:
+      - description: A SHA256 File hash.
+        example: ''
+        in: query
+        name: SHA256
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Intezer Analyze Delete Index by SHA256
+  tmp4:
+    post:
+      description: Download a file from Intezer Analyze.
+      parameters:
+      - description: SHA256 to index.
+        example: ''
+        in: query
+        name: SHA256
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Intezer Analyze Download File by SHA256
+  tmp5:
+    post:
+      description: Enables you to generate a vaccine for a specific file. The request
+        and response are according to the structure defined in the Request and Response
+        Structure section.
+      parameters:
+      - description: The ID of an analysis
+        example: 768a3ba4-d80a-4ca6-b87c-22f071495705
+        in: query
+        name: Analysis ID
+        required: true
+        schema: {type: string}
+      - description: The ID of a sub-analysis
+        example: 568a3ba4-d80a-4ca6-b87c-22f0712345
+        in: query
+        name: Sub-Analysis ID
+        required: true
+        schema: {type: string}
+      - description: Specifies the format of the vaccine. The default is the yara.
+          Other options are - open_ioc, stix, stix2
+        example: yara
+        in: query
+        name: Vaccine Format
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Intezer Analyze Generate Vaccine
+  tmp6:
+    post:
+      description: The Get Analysis task will retrieve analysis information.
+      parameters:
+      - description: The ID of an analysis
+        example: 768a3ba4-d80a-4ca6-b87c-22f071495705
+        in: query
+        name: Analysis ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Intezer Analyze Get Analysis
+  tmp7:
+    post:
+      description: Get Data by File Hash
+      parameters:
+      - description: MD5, SHA256 hash for file
+        example: ''
+        in: query
+        name: Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Intezer Analyze Get Analysis Data by File Hash
+  tmp8:
+    post:
+      description: Get Sub-Analysis Related Samples
+      parameters:
+      - description: The ID of an analysis
+        example: 768a3ba4-d80a-4ca6-b87c-22f071495705
+        in: query
+        name: Analysis ID
+        required: true
+        schema: {type: string}
+      - description: The ID of a sub-analysis
+        example: 568a3ba4-d80a-4ca6-b87c-22f0712345
+        in: query
+        name: Sub-Analysis ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Intezer Analyze Get Sub-Analysis Related Samples
+  tmp9:
+    post:
+      description: The Get Sub-Analysis task will retrieve all sub-analysis IDs from
+        an analysis.
+      parameters:
+      - description: The ID of an analysis
+        example: 768a3ba4-d80a-4ca6-b87c-22f071495705
+        in: query
+        name: Analysis ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Intezer Analyze Get Sub-Analyses
+tags:
+- {name: Investigation}

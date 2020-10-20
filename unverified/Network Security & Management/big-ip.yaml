@@ -1,0 +1,637 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        acceptStatus: {type: string}
+        blockingExceptionReason: {type: string}
+        captchaResult: {type: string}
+        clientIp: {type: string}
+        clientIpIntelligence: {type: string}
+        clientPort: {type: string}
+        clientType: {type: string}
+        comment: {type: string}
+        deviceId: {type: string}
+        enforcementState: {type: string}
+        enforcementState_attackTypeReferences_link: {type: string}
+        enforcementState_hasRequestViolations: {type: string}
+        enforcementState_hasResponseViolations: {type: string}
+        enforcementState_hasStagingViolations: {type: string}
+        enforcementState_hasViolations: {type: string}
+        enforcementState_isAlarmed: {type: string}
+        enforcementState_isBlocked: {type: string}
+        enforcementState_isUnblocked: {type: string}
+        enforcementState_rating: {type: string}
+        enforcementState_severity: {type: string}
+        geolocationCountryCode: {type: string}
+        host: {type: string}
+        id: {type: string}
+        isRead: {type: string}
+        isVisible: {type: string}
+        kind: {type: string}
+        loginResult: {type: string}
+        matchedLoggingProfile: {type: string}
+        maxRequestCookieLength: {type: string}
+        maxRequestHeaderLength: {type: string}
+        method: {type: string}
+        mobileAppName: {type: string}
+        mobileAppVersion: {type: string}
+        rawRequest: {type: string}
+        rawRequest_actualSize: {type: string}
+        rawRequest_httpRequest: {type: string}
+        rawRequest_httpRequestUnescaped: {type: string}
+        rawRequest_isBase64Encoded: {type: string}
+        rawRequest_isTruncated: {type: string}
+        rawResponse: {type: string}
+        rawResponse_exclusionReason: {type: string}
+        rawResponse_isBase64Encoded: {type: string}
+        rawResponse_isTruncated: {type: string}
+        rawResponse_wasCompressed: {type: string}
+        requestDatetime: {type: string}
+        requestPolicyReference: {type: string}
+        requestPolicyReference_link: {type: string}
+        responseCode: {type: string}
+        responseDatetime: {type: string}
+        schema: {type: string}
+        selfLink: {type: string}
+        serverIp: {type: string}
+        serverPort: {type: string}
+        sessionId: {type: string}
+        slot: {type: string}
+        suggestionReferences: {type: string}
+        tagReferences: {type: string}
+        url: {type: string}
+        violations: {type: string}
+        violations_attackSignatureSnippets_buffer: {type: string}
+        violations_attackSignatureSnippets_length: {type: string}
+        violations_attackSignatureSnippets_offset: {type: string}
+        violations_enforcementState_isAlarmed: {type: string}
+        violations_enforcementState_isBlocked: {type: string}
+        violations_enforcementState_isInStaging: {type: string}
+        violations_enforcementState_isLearned: {type: string}
+        violations_entityType: {type: string}
+        violations_location: {type: string}
+        violations_observedEntity_length: {type: string}
+        violations_observedEntity_name: {type: string}
+        violations_observedEntity_parameterLevel: {type: string}
+        violations_observedEntity_parameterLocation: {type: string}
+        violations_observedEntity_value: {type: string}
+        violations_policyEntityReference_link: {type: string}
+        violations_severity: {type: string}
+        violations_signatureReference_link: {type: string}
+        violations_signatureStaging: {type: string}
+        violations_snippet_buffer: {type: string}
+        violations_snippet_length: {type: string}
+        violations_snippet_offset: {type: string}
+        violations_violationReference_link: {type: string}
+        virtualServerName: {type: string}
+      type: object
+    tmp1:
+      properties:
+        acceptStatus: {type: string}
+        blockingExceptionReason: {type: string}
+        captchaResult: {type: string}
+        clientIp: {type: string}
+        clientIpIntelligence: {type: string}
+        clientPort: {type: string}
+        clientType: {type: string}
+        comment: {type: string}
+        deviceId: {type: string}
+        enforcementState_attackTypeReferences_link: {type: string}
+        enforcementState_hasRequestViolations: {type: string}
+        enforcementState_hasResponseViolations: {type: string}
+        enforcementState_hasStagingViolations: {type: string}
+        enforcementState_hasViolations: {type: string}
+        enforcementState_isAlarmed: {type: string}
+        enforcementState_isBlocked: {type: string}
+        enforcementState_isUnblocked: {type: string}
+        enforcementState_rating: {type: string}
+        enforcementState_severity: {type: string}
+        geolocationCountryCode: {type: string}
+        host: {type: string}
+        id: {type: string}
+        isRead: {type: string}
+        isVisible: {type: string}
+        kind: {type: string}
+        loginResult: {type: string}
+        matchedLoggingProfile: {type: string}
+        maxRequestCookieLength: {type: string}
+        maxRequestHeaderLength: {type: string}
+        method: {type: string}
+        mobileAppName: {type: string}
+        mobileAppVersion: {type: string}
+        rawRequest_actualSize: {type: string}
+        rawRequest_httpRequest: {type: string}
+        rawRequest_httpRequestUnescaped: {type: string}
+        rawRequest_isBase64Encoded: {type: string}
+        rawRequest_isTruncated: {type: string}
+        rawResponse_exclusionReason: {type: string}
+        rawResponse_isBase64Encoded: {type: string}
+        rawResponse_isTruncated: {type: string}
+        rawResponse_wasCompressed: {type: string}
+        requestDatetime: {type: string}
+        requestPolicyReference_link: {type: string}
+        responseCode: {type: string}
+        responseDatetime: {type: string}
+        schema: {type: string}
+        selfLink: {type: string}
+        serverIp: {type: string}
+        serverPort: {type: string}
+        sessionId: {type: string}
+        slot: {type: string}
+        suggestionReferences: {type: string}
+        tagReferences: {type: string}
+        url: {type: string}
+        username: {type: string}
+        violations_attackSignatureSnippets_buffer: {type: string}
+        violations_attackSignatureSnippets_length: {type: string}
+        violations_attackSignatureSnippets_offset: {type: string}
+        violations_enforcementState_isAlarmed: {type: string}
+        violations_enforcementState_isBlocked: {type: string}
+        violations_enforcementState_isInStaging: {type: string}
+        violations_enforcementState_isLearned: {type: string}
+        violations_entityType: {type: string}
+        violations_location: {type: string}
+        violations_observedEntity_length: {type: string}
+        violations_observedEntity_name: {type: string}
+        violations_observedEntity_parameterLevel: {type: string}
+        violations_observedEntity_parameterLocation: {type: string}
+        violations_observedEntity_value: {type: string}
+        violations_policyEntityReference_link: {type: string}
+        violations_severity: {type: string}
+        violations_signatureReference_link: {type: string}
+        violations_signatureStaging: {type: string}
+        violations_snippet_buffer: {type: string}
+        violations_snippet_length: {type: string}
+        violations_snippet_offset: {type: string}
+        violations_violationReference_link: {type: string}
+        virtualServerName: {type: string}
+      type: object
+    tmp2:
+      properties:
+        allowNat: {type: string}
+        allowSnat: {type: string}
+        description: {type: string}
+        fullPath: {type: string}
+        generation: {type: string}
+        ignorePersistedWeight: {type: string}
+        ipTosToClient: {type: string}
+        ipTosToServer: {type: string}
+        kind: {type: string}
+        linkQosToClient: {type: string}
+        linkQosToServer: {type: string}
+        loadBalancingMode: {type: string}
+        membersReference_isSubcollection: {type: string}
+        membersReference_link: {type: string}
+        minActiveMembers: {type: string}
+        minUpMembers: {type: string}
+        minUpMembersAction: {type: string}
+        minUpMembersChecking: {type: string}
+        monitor: {type: string}
+        name: {type: string}
+        queueDepthLimit: {type: string}
+        queueOnConnectionLimit: {type: string}
+        queueTimeLimit: {type: string}
+        reselectTries: {type: string}
+        selfLink: {type: string}
+        serviceDownAction: {type: string}
+        slowRampTime: {type: string}
+      type: object
+    tmp3:
+      properties:
+        addressStatus: {type: string}
+        autoLasthop: {type: string}
+        cmpEnabled: {type: string}
+        connectionLimit: {type: string}
+        destination: {type: string}
+        enabled: {type: string}
+        fullPath: {type: string}
+        generation: {type: string}
+        gtmScore: {type: string}
+        ipProtocol: {type: string}
+        kind: {type: string}
+        mask: {type: string}
+        mirror: {type: string}
+        mobileAppTunnel: {type: string}
+        name: {type: string}
+        nat64: {type: string}
+        partition: {type: string}
+        policiesReference_isSubcollection: {type: string}
+        policiesReference_link: {type: string}
+        pool: {type: string}
+        poolReference_link: {type: string}
+        profilesReference_isSubcollection: {type: string}
+        profilesReference_link: {type: string}
+        rateLimit: {type: string}
+        rateLimitDstMask: {type: string}
+        rateLimitMode: {type: string}
+        rateLimitSrcMask: {type: string}
+        selfLink: {type: string}
+        serviceDownImmediateAction: {type: string}
+        source: {type: string}
+        sourceAddressTranslation_type: {type: string}
+        sourcePort: {type: string}
+        synCookieStatus: {type: string}
+        translateAddress: {type: string}
+        translatePort: {type: string}
+        vlansDisabled: {type: string}
+        vsIndex: {type: string}
+      type: object
+    tmp4:
+      properties:
+        addressStatus: {type: string}
+        autoLasthop: {type: string}
+        cmpEnabled: {type: string}
+        connectionLimit: {type: string}
+        destination: {type: string}
+        enabled: {type: string}
+        fullPath: {type: string}
+        generation: {type: string}
+        gtmScore: {type: string}
+        ipProtocol: {type: string}
+        kind: {type: string}
+        mask: {type: string}
+        mirror: {type: string}
+        mobileAppTunnel: {type: string}
+        name: {type: string}
+        nat64: {type: string}
+        policiesReference_isSubcollection: {type: string}
+        policiesReference_link: {type: string}
+        pool: {type: string}
+        poolReference_link: {type: string}
+        profilesReference_isSubcollection: {type: string}
+        profilesReference_link: {type: string}
+        rateLimit: {type: string}
+        rateLimitDstMask: {type: string}
+        rateLimitMode: {type: string}
+        rateLimitSrcMask: {type: string}
+        selfLink: {type: string}
+        serviceDownImmediateAction: {type: string}
+        source: {type: string}
+        sourceAddressTranslation_type: {type: string}
+        sourcePort: {type: string}
+        synCookieStatus: {type: string}
+        translateAddress: {type: string}
+        translatePort: {type: string}
+        vlansDisabled: {type: string}
+        vsIndex: {type: string}
+      type: object
+    tmp5:
+      properties:
+        address: {type: string}
+        connectionLimit: {type: string}
+        dynamicRatio: {type: string}
+        ephemeral: {type: string}
+        fqdn: {type: string}
+        fullPath: {type: string}
+        generation: {type: string}
+        inheritProfile: {type: string}
+        kind: {type: string}
+        logging: {type: string}
+        monitor: {type: string}
+        name: {type: string}
+        partition: {type: string}
+        priorityGroup: {type: string}
+        rateLimit: {type: string}
+        ratio: {type: string}
+        selfLink: {type: string}
+        session: {type: string}
+        state: {type: string}
+      type: object
+    tmp6:
+      properties:
+        allowNat: {type: string}
+        allowSnat: {type: string}
+        description: {type: string}
+        fullPath: {type: string}
+        generation: {type: string}
+        ignorePersistedWeight: {type: string}
+        ipTosToClient: {type: string}
+        ipTosToServer: {type: string}
+        kind: {type: string}
+        linkQosToClient: {type: string}
+        linkQosToServer: {type: string}
+        loadBalancingMode: {type: string}
+        membersReference_isSubcollection: {type: string}
+        membersReference_link: {type: string}
+        minActiveMembers: {type: string}
+        minUpMembers: {type: string}
+        minUpMembersAction: {type: string}
+        minUpMembersChecking: {type: string}
+        monitor: {type: string}
+        name: {type: string}
+        queueDepthLimit: {type: string}
+        queueOnConnectionLimit: {type: string}
+        queueTimeLimit: {type: string}
+        reselectTries: {type: string}
+        selfLink: {type: string}
+        serviceDownAction: {type: string}
+        slowRampTime: {type: string}
+      type: object
+    tmp7:
+      properties:
+        addressStatus: {type: string}
+        autoLasthop: {type: string}
+        cmpEnabled: {type: string}
+        connectionLimit: {type: string}
+        description: {type: string}
+        destination: {type: string}
+        enabled: {type: string}
+        fullPath: {type: string}
+        generation: {type: string}
+        gtmScore: {type: string}
+        ipProtocol: {type: string}
+        kind: {type: string}
+        mask: {type: string}
+        mirror: {type: string}
+        mobileAppTunnel: {type: string}
+        name: {type: string}
+        nat64: {type: string}
+        policiesReference: {type: string}
+        pool: {type: string}
+        poolReference: {type: string}
+        profilesReference: {type: string}
+        rateLimit: {type: string}
+        rateLimitDstMask: {type: string}
+        rateLimitMode: {type: string}
+        rateLimitSrcMask: {type: string}
+        rules: {type: string}
+        rulesReference: {type: string}
+        selfLink: {type: string}
+        serviceDownImmediateAction: {type: string}
+        source: {type: string}
+        sourceAddressTranslation: {type: string}
+        sourcePort: {type: string}
+        synCookieStatus: {type: string}
+        translateAddress: {type: string}
+        translatePort: {type: string}
+        vlansDisabled: {type: string}
+        vsIndex: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of F5 Networks BIG-IP
+  title: F5 Networks BIG-IP
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get a specific ASM Alert.
+      parameters:
+      - description: ASM event ID
+        example: '13823969381731795200'
+        in: query
+        name: Event ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: F5 BIG-IP Networks Get single ASM Event details
+  tmp1:
+    post:
+      description: Get the ASM logs from a given period of time.
+      parameters:
+      - description: Subtracts the specified amount of time from the current time.
+        example: 5M = 5 Minutes or 1h = Hour or 1d = 1 day
+        in: query
+        name: Time Period
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: F5 BIG-IP Networks Get ASM Events
+  tmp2:
+    post:
+      description: Executes pool creation.
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Connection Limit
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Dynamic Ratio
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Ephemeral
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Full Path
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Generation
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Inherit Profile
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Kind
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Logging
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Monitor
+        required: false
+        schema: {type: string}
+      - description: The name of the pool.
+        example: BIG-IP_Pool
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Priority Group
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Rate Limit
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Ratio
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Self Link
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Session
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: F5 BIG-IP Networks Create Pool
+  tmp3:
+    post:
+      description: Executes virtual server creation F5 server.
+      parameters:
+      - description: The name of the F5 pool.
+        example: test_pool
+        in: query
+        name: Pool Name
+        required: true
+        schema: {type: string}
+      - description: The name of the virtual server
+        example: Test Server
+        in: query
+        name: Server Name
+        required: true
+        schema: {type: string}
+      - description: A description of the virtual server
+        example: This is a test virtual server
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: The IP of the virtual server
+        example: 192.168.1.1
+        in: query
+        name: IP
+        required: true
+        schema: {type: string}
+      - description: The port of the virtual server
+        example: '80'
+        in: query
+        name: Port
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: F5 BIG-IP Networks Create Virtual Server
+  tmp4:
+    post:
+      description: Enables or disables a virtual server based on the state requested.
+      parameters:
+      - description: The URL link to the F5 virtual server.
+        example: https://localhost/mgmt/tm/ltm/virtual/vs_name
+        in: query
+        name: Virtual Server Link
+        required: true
+        schema: {type: string}
+      - description: The desired state of the virtual server (Enabled or Disabled).
+        example: Enabled
+        in: query
+        name: State
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: F5 BIG-IP Networks Disable Virtual Server
+  tmp5:
+    post:
+      description: Gets the members for a given pool.
+      parameters:
+      - description: Link to the members reference, can be obtained from Get Pool
+        example: https://localhost/mgmt/tm/ltm/pool/~Common~test/members?ver=13.1.1.3
+        in: query
+        name: Members Reference Link
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: F5 BIG-IP Networks Get Pool Members
+  tmp6:
+    post:
+      description: Searches for a given pool name.
+      parameters:
+      - description: The name of the pool
+        example: Test Pool
+        in: query
+        name: Pool Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: F5 BIG-IP Networks Get Pool Information
+  tmp7:
+    post:
+      description: Executes virtual server creation F5 server.
+      parameters:
+      - description: The name of the virtual server
+        example: Test Server
+        in: query
+        name: Server Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: F5 BIG-IP Networks Get Virtual Server
+tags:
+- {name: Network Security & Management}

@@ -1,0 +1,938 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        asn_description: {type: string}
+        asn_number: {type: string}
+        context_brands: {type: string}
+        context_brands_properties: {type: string}
+        context_categories: {type: string}
+        context_categories_properties: {type: string}
+        context_cidrs: {type: string}
+        context_cidrs_properties: {type: string}
+        context_file_types: {type: string}
+        context_file_types_properties: {type: string}
+        context_files: {type: string}
+        context_files_properties: {type: string}
+        context_hostnames: {type: string}
+        context_hostnames_properties: {type: string}
+        context_hosts: {type: string}
+        context_hosts_properties: {type: string}
+        context_identifiers: {type: string}
+        context_identifiers_properties: {type: string}
+        context_ips_properties: {type: string}
+        context_ips_types: {type: string}
+        context_md5: {type: string}
+        context_md5_properties: {type: string}
+        context_mime_types: {type: string}
+        context_mime_types_properties: {type: string}
+        context_names: {type: string}
+        context_names_properties: {type: string}
+        context_paths: {type: string}
+        context_paths_properties: {type: string}
+        context_reasons: {type: string}
+        context_reasons_properties: {type: string}
+        context_references: {type: string}
+        context_references_properties: {type: string}
+        context_sha1: {type: string}
+        context_sha1_properties: {type: string}
+        context_sha256: {type: string}
+        context_sha256_properties: {type: string}
+        context_sha512: {type: string}
+        context_sha512_properties: {type: string}
+        context_source_urls: {type: string}
+        context_source_urls_properties: {type: string}
+        context_ssdeep: {type: string}
+        context_ssdeep_properties: {type: string}
+        context_urls: {type: string}
+        context_urls_properties: {type: string}
+        doc_ids: {type: string}
+        history_by_feed_duration: {type: string}
+        history_by_feed_end_at: {type: string}
+        history_by_feed_properties: {type: string}
+        history_by_feed_start_at: {type: string}
+        history_first_seen_at: {type: string}
+        history_global_history_duration: {type: string}
+        history_global_history_end_at: {type: string}
+        history_global_history_start_at: {type: string}
+        history_last_seen_at: {type: string}
+        id: {type: string}
+        ip_address: {type: string}
+        ip_number: {type: string}
+        ip_type: {type: string}
+        json: {type: string}
+        mitre_attack_description: {type: string}
+        mitre_attack_id: {type: string}
+        mitre_attack_name: {type: string}
+        mitre_attack_tactic_name: {type: string}
+        mitre_attack_url: {type: string}
+        passive_dns_answer_ip: {type: string}
+        passive_dns_answer_text: {type: string}
+        passive_dns_answer_type: {type: string}
+        passive_dns_domain: {type: string}
+        passive_dns_feed: {type: string}
+        passive_dns_first_seen_at: {type: string}
+        passive_dns_hostname: {type: string}
+        passive_dns_last_seen_at: {type: string}
+        predicted_category: {type: string}
+        predicted_cidr: {type: string}
+        predicted_cluster: {type: string}
+        predicted_predicted_at: {type: string}
+        predicted_valid_from: {type: string}
+        predicted_valid_until: {type: string}
+        prediction_category: {type: string}
+        prediction_cidr: {type: string}
+        prediction_cluster: {type: string}
+        prediction_predicted_at: {type: string}
+        prediction_valid_from: {type: string}
+        prediction_valid_until: {type: string}
+        predictions_category: {type: string}
+        predictions_cidr: {type: string}
+        predictions_cluster: {type: string}
+        predictions_predicted_at: {type: string}
+        predictions_valid_from: {type: string}
+        predictions_valid_until: {type: string}
+        rir_code: {type: string}
+        rir_name: {type: string}
+        type: {type: string}
+        whitelist: {type: string}
+        whois_abuse_c: {type: string}
+        whois_admin_c: {type: string}
+        whois_cidr: {type: string}
+        whois_city: {type: string}
+        whois_comment: {type: string}
+        whois_country_code: {type: string}
+        whois_country_name: {type: string}
+        whois_created_at: {type: string}
+        whois_description: {type: string}
+        whois_handle: {type: string}
+        whois_inet: {type: string}
+        whois_mnt_by: {type: string}
+        whois_mnt_irt: {type: string}
+        whois_mnt_lower: {type: string}
+        whois_mnt_upper: {type: string}
+        whois_name: {type: string}
+        whois_org: {type: string}
+        whois_owner_c: {type: string}
+        whois_parent: {type: string}
+        whois_registry: {type: string}
+        whois_status: {type: string}
+        whois_tech_c: {type: string}
+        whois_updated_at: {type: string}
+      type: object
+    tmp1:
+      properties:
+        asn_description: {type: string}
+        asn_number: {type: string}
+        cidr_block: {type: string}
+        cidr_size: {type: string}
+        cidr_status: {type: string}
+        context_brands: {type: string}
+        context_brands_properties: {type: string}
+        context_categories: {type: string}
+        context_categories_properties: {type: string}
+        context_cidrs: {type: string}
+        context_cidrs_properties: {type: string}
+        context_file_types: {type: string}
+        context_file_types_properties: {type: string}
+        context_files: {type: string}
+        context_files_properties: {type: string}
+        context_hostnames: {type: string}
+        context_hostnames_properties: {type: string}
+        context_hosts: {type: string}
+        context_hosts_properties: {type: string}
+        context_identifiers: {type: string}
+        context_identifiers_properties: {type: string}
+        context_ips_properties: {type: string}
+        context_ips_types: {type: string}
+        context_md5: {type: string}
+        context_md5_properties: {type: string}
+        context_mime_types: {type: string}
+        context_mime_types_properties: {type: string}
+        context_names: {type: string}
+        context_names_properties: {type: string}
+        context_paths: {type: string}
+        context_paths_properties: {type: string}
+        context_reasons: {type: string}
+        context_reasons_properties: {type: string}
+        context_references: {type: string}
+        context_references_properties: {type: string}
+        context_sha1: {type: string}
+        context_sha1_properties: {type: string}
+        context_sha256: {type: string}
+        context_sha256_properties: {type: string}
+        context_sha512: {type: string}
+        context_sha512_properties: {type: string}
+        context_source_urls: {type: string}
+        context_source_urls_properties: {type: string}
+        context_ssdeep: {type: string}
+        context_ssdeep_properties: {type: string}
+        context_urls: {type: string}
+        context_urls_properties: {type: string}
+        doc_ids: {type: string}
+        history_by_feed_duration: {type: string}
+        history_by_feed_end_at: {type: string}
+        history_by_feed_properties: {type: string}
+        history_by_feed_start_at: {type: string}
+        history_first_seen_at: {type: string}
+        history_global_history_duration: {type: string}
+        history_global_history_end_at: {type: string}
+        history_global_history_start_at: {type: string}
+        history_last_seen_at: {type: string}
+        id: {type: string}
+        ip_address: {type: string}
+        ip_number: {type: string}
+        ip_type: {type: string}
+        json: {type: string}
+        mitre_attack_description: {type: string}
+        mitre_attack_id: {type: string}
+        mitre_attack_name: {type: string}
+        mitre_attack_tactic_name: {type: string}
+        mitre_attack_url: {type: string}
+        passive_dns_answer_ip: {type: string}
+        passive_dns_answer_text: {type: string}
+        passive_dns_answer_type: {type: string}
+        passive_dns_domain: {type: string}
+        passive_dns_feed: {type: string}
+        passive_dns_first_seen_at: {type: string}
+        passive_dns_hostname: {type: string}
+        passive_dns_last_seen_at: {type: string}
+        predicted_category: {type: string}
+        predicted_cidr: {type: string}
+        predicted_cluster: {type: string}
+        predicted_predicted_at: {type: string}
+        predicted_valid_from: {type: string}
+        predicted_valid_until: {type: string}
+        prediction_category: {type: string}
+        prediction_cidr: {type: string}
+        prediction_cluster: {type: string}
+        prediction_predicted_at: {type: string}
+        prediction_valid_from: {type: string}
+        prediction_valid_until: {type: string}
+        predictions_category: {type: string}
+        predictions_cidr: {type: string}
+        predictions_cluster: {type: string}
+        predictions_predicted_at: {type: string}
+        predictions_valid_from: {type: string}
+        predictions_valid_until: {type: string}
+        rir_code: {type: string}
+        rir_name: {type: string}
+        type: {type: string}
+        whitelist: {type: string}
+        whois_abuse_c: {type: string}
+        whois_admin_c: {type: string}
+        whois_cidr: {type: string}
+        whois_city: {type: string}
+        whois_comment: {type: string}
+        whois_country_code: {type: string}
+        whois_country_name: {type: string}
+        whois_created_at: {type: string}
+        whois_description: {type: string}
+        whois_handle: {type: string}
+        whois_inet: {type: string}
+        whois_mnt_by: {type: string}
+        whois_mnt_irt: {type: string}
+        whois_mnt_lower: {type: string}
+        whois_mnt_upper: {type: string}
+        whois_name: {type: string}
+        whois_org: {type: string}
+        whois_owner_c: {type: string}
+        whois_parent: {type: string}
+        whois_registry: {type: string}
+        whois_status: {type: string}
+        whois_tech_c: {type: string}
+        whois_updated_at: {type: string}
+      type: object
+    tmp2:
+      properties:
+        access_by_files: {type: string}
+        asn_description: {type: string}
+        cidr_block: {type: string}
+        cidr_size: {type: string}
+        cidr_status: {type: string}
+        context_brands: {type: string}
+        context_brands_properties: {type: string}
+        context_categories: {type: string}
+        context_categories_properties: {type: string}
+        context_cidrs: {type: string}
+        context_cidrs_properties: {type: string}
+        context_file_types: {type: string}
+        context_file_types_properties: {type: string}
+        context_files: {type: string}
+        context_files_properties: {type: string}
+        context_hostnames: {type: string}
+        context_hostnames_properties: {type: string}
+        context_hosts: {type: string}
+        context_hosts_properties: {type: string}
+        context_identifiers: {type: string}
+        context_identifiers_properties: {type: string}
+        context_ips_properties: {type: string}
+        context_ips_types: {type: string}
+        context_md5: {type: string}
+        context_md5_properties: {type: string}
+        context_mime_types: {type: string}
+        context_mime_types_properties: {type: string}
+        context_names: {type: string}
+        context_names_properties: {type: string}
+        context_paths: {type: string}
+        context_paths_properties: {type: string}
+        context_reasons: {type: string}
+        context_reasons_properties: {type: string}
+        context_references: {type: string}
+        context_references_properties: {type: string}
+        context_sha1: {type: string}
+        context_sha1_properties: {type: string}
+        context_sha256: {type: string}
+        context_sha256_properties: {type: string}
+        context_sha512: {type: string}
+        context_sha512_properties: {type: string}
+        context_source_urls: {type: string}
+        context_source_urls_properties: {type: string}
+        context_ssdeep: {type: string}
+        context_ssdeep_properties: {type: string}
+        context_urls: {type: string}
+        context_urls_properties: {type: string}
+        doc_ids: {type: string}
+        domain: {type: string}
+        history_by_feed_duration: {type: string}
+        history_by_feed_end_at: {type: string}
+        history_by_feed_properties: {type: string}
+        history_by_feed_start_at: {type: string}
+        history_first_seen_at: {type: string}
+        history_global_history_duration: {type: string}
+        history_global_history_end_at: {type: string}
+        history_global_history_start_at: {type: string}
+        history_last_seen_at: {type: string}
+        hostname: {type: string}
+        id: {type: string}
+        ip_address: {type: string}
+        ip_number: {type: string}
+        ip_type: {type: string}
+        json: {type: string}
+        mitre_attack_description: {type: string}
+        mitre_attack_id: {type: string}
+        mitre_attack_name: {type: string}
+        mitre_attack_tactic_name: {type: string}
+        mitre_attack_url: {type: string}
+        passive_dns_answer_ip: {type: string}
+        passive_dns_answer_text: {type: string}
+        passive_dns_answer_type: {type: string}
+        passive_dns_domain: {type: string}
+        passive_dns_feed: {type: string}
+        passive_dns_first_seen_at: {type: string}
+        passive_dns_hostname: {type: string}
+        passive_dns_last_seen_at: {type: string}
+        predicted_category: {type: string}
+        predicted_cidr: {type: string}
+        predicted_cluster: {type: string}
+        predicted_predicted_at: {type: string}
+        predicted_valid_from: {type: string}
+        predicted_valid_until: {type: string}
+        prediction_category: {type: string}
+        prediction_cidr: {type: string}
+        prediction_cluster: {type: string}
+        prediction_predicted_at: {type: string}
+        prediction_valid_from: {type: string}
+        prediction_valid_until: {type: string}
+        predictions_category: {type: string}
+        predictions_cidr: {type: string}
+        predictions_cluster: {type: string}
+        predictions_predicted_at: {type: string}
+        predictions_valid_from: {type: string}
+        predictions_valid_until: {type: string}
+        rir_code: {type: string}
+        rir_name: {type: string}
+        subdomain: {type: string}
+        suffix: {type: string}
+        tld: {type: string}
+        type: {type: string}
+        whitelist: {type: string}
+      type: object
+    tmp3:
+      properties:
+        cidr_block: {type: string}
+        cidr_size: {type: string}
+        cidr_status: {type: string}
+        context_brands: {type: string}
+        context_brands_properties: {type: string}
+        context_categories: {type: string}
+        context_categories_properties: {type: string}
+        context_cidrs: {type: string}
+        context_cidrs_properties: {type: string}
+        context_file_types: {type: string}
+        context_file_types_properties: {type: string}
+        context_files: {type: string}
+        context_files_properties: {type: string}
+        context_hostnames: {type: string}
+        context_hostnames_properties: {type: string}
+        context_hosts: {type: string}
+        context_hosts_properties: {type: string}
+        context_identifiers: {type: string}
+        context_identifiers_properties: {type: string}
+        context_ips_properties: {type: string}
+        context_ips_types: {type: string}
+        context_md5: {type: string}
+        context_md5_properties: {type: string}
+        context_mime_types: {type: string}
+        context_mime_types_properties: {type: string}
+        context_names: {type: string}
+        context_names_properties: {type: string}
+        context_paths: {type: string}
+        context_paths_properties: {type: string}
+        context_reasons: {type: string}
+        context_reasons_properties: {type: string}
+        context_references: {type: string}
+        context_references_properties: {type: string}
+        context_sha1: {type: string}
+        context_sha1_properties: {type: string}
+        context_sha256: {type: string}
+        context_sha256_properties: {type: string}
+        context_sha512: {type: string}
+        context_sha512_properties: {type: string}
+        context_source_urls: {type: string}
+        context_source_urls_properties: {type: string}
+        context_ssdeep: {type: string}
+        context_ssdeep_properties: {type: string}
+        context_urls: {type: string}
+        context_urls_properties: {type: string}
+        doc_ids: {type: string}
+        domain: {type: string}
+        hash: {type: string}
+        hash_type: {type: string}
+        history_by_feed_duration: {type: string}
+        history_by_feed_end_at: {type: string}
+        history_by_feed_properties: {type: string}
+        history_by_feed_start_at: {type: string}
+        history_first_seen_at: {type: string}
+        history_global_history_duration: {type: string}
+        history_global_history_end_at: {type: string}
+        history_global_history_start_at: {type: string}
+        history_last_seen_at: {type: string}
+        hostname: {type: string}
+        id: {type: string}
+        ip_address: {type: string}
+        ip_number: {type: string}
+        ip_type: {type: string}
+        json: {type: string}
+        mitre_attack_description: {type: string}
+        mitre_attack_id: {type: string}
+        mitre_attack_name: {type: string}
+        mitre_attack_tactic_name: {type: string}
+        mitre_attack_url: {type: string}
+        passive_dns_answer_ip: {type: string}
+        passive_dns_answer_text: {type: string}
+        passive_dns_answer_type: {type: string}
+        passive_dns_domain: {type: string}
+        passive_dns_feed: {type: string}
+        passive_dns_first_seen_at: {type: string}
+        passive_dns_hostname: {type: string}
+        passive_dns_last_seen_at: {type: string}
+        predicted_category: {type: string}
+        predicted_cidr: {type: string}
+        predicted_cluster: {type: string}
+        predicted_predicted_at: {type: string}
+        predicted_valid_from: {type: string}
+        predicted_valid_until: {type: string}
+        prediction_category: {type: string}
+        prediction_cidr: {type: string}
+        prediction_cluster: {type: string}
+        prediction_predicted_at: {type: string}
+        prediction_valid_from: {type: string}
+        prediction_valid_until: {type: string}
+        predictions_category: {type: string}
+        predictions_cidr: {type: string}
+        predictions_cluster: {type: string}
+        predictions_predicted_at: {type: string}
+        predictions_valid_from: {type: string}
+        predictions_valid_until: {type: string}
+        subdomain: {type: string}
+        suffix: {type: string}
+        tld: {type: string}
+        type: {type: string}
+        whitelist: {type: string}
+      type: object
+    tmp4:
+      properties:
+        accessed_by_files: {type: string}
+        cidr_block: {type: string}
+        cidr_size: {type: string}
+        cidr_status: {type: string}
+        context_brands: {type: string}
+        context_brands_properties: {type: string}
+        context_categories: {type: string}
+        context_categories_properties: {type: string}
+        context_cidrs: {type: string}
+        context_cidrs_properties: {type: string}
+        context_file_types: {type: string}
+        context_file_types_properties: {type: string}
+        context_files: {type: string}
+        context_files_properties: {type: string}
+        context_hostnames: {type: string}
+        context_hostnames_properties: {type: string}
+        context_hosts: {type: string}
+        context_hosts_properties: {type: string}
+        context_identifiers: {type: string}
+        context_identifiers_properties: {type: string}
+        context_ips_properties: {type: string}
+        context_ips_types: {type: string}
+        context_md5: {type: string}
+        context_md5_properties: {type: string}
+        context_mime_types: {type: string}
+        context_mime_types_properties: {type: string}
+        context_names: {type: string}
+        context_names_properties: {type: string}
+        context_paths: {type: string}
+        context_paths_properties: {type: string}
+        context_reasons: {type: string}
+        context_reasons_properties: {type: string}
+        context_references: {type: string}
+        context_references_properties: {type: string}
+        context_sha1: {type: string}
+        context_sha1_properties: {type: string}
+        context_sha256: {type: string}
+        context_sha256_properties: {type: string}
+        context_sha512: {type: string}
+        context_sha512_properties: {type: string}
+        context_source_urls: {type: string}
+        context_source_urls_properties: {type: string}
+        context_ssdeep: {type: string}
+        context_ssdeep_properties: {type: string}
+        context_urls: {type: string}
+        context_urls_properties: {type: string}
+        doc_ids: {type: string}
+        domain: {type: string}
+        history_by_feed_duration: {type: string}
+        history_by_feed_end_at: {type: string}
+        history_by_feed_properties: {type: string}
+        history_by_feed_start_at: {type: string}
+        history_first_seen_at: {type: string}
+        history_global_history_duration: {type: string}
+        history_global_history_end_at: {type: string}
+        history_global_history_start_at: {type: string}
+        history_last_seen_at: {type: string}
+        hostname: {type: string}
+        id: {type: string}
+        ip_address: {type: string}
+        ip_number: {type: string}
+        ip_type: {type: string}
+        json: {type: string}
+        mitre_attack_description: {type: string}
+        mitre_attack_id: {type: string}
+        mitre_attack_name: {type: string}
+        mitre_attack_tactic_name: {type: string}
+        mitre_attack_url: {type: string}
+        passive_dns_answer_ip: {type: string}
+        passive_dns_answer_text: {type: string}
+        passive_dns_answer_type: {type: string}
+        passive_dns_domain: {type: string}
+        passive_dns_feed: {type: string}
+        passive_dns_first_seen_at: {type: string}
+        passive_dns_hostname: {type: string}
+        passive_dns_last_seen_at: {type: string}
+        predicted_category: {type: string}
+        predicted_cidr: {type: string}
+        predicted_cluster: {type: string}
+        predicted_predicted_at: {type: string}
+        predicted_valid_from: {type: string}
+        predicted_valid_until: {type: string}
+        prediction_category: {type: string}
+        prediction_cidr: {type: string}
+        prediction_cluster: {type: string}
+        prediction_predicted_at: {type: string}
+        prediction_valid_from: {type: string}
+        prediction_valid_until: {type: string}
+        predictions_category: {type: string}
+        predictions_cidr: {type: string}
+        predictions_cluster: {type: string}
+        predictions_predicted_at: {type: string}
+        predictions_valid_from: {type: string}
+        predictions_valid_until: {type: string}
+        subdomain: {type: string}
+        suffix: {type: string}
+        tld: {type: string}
+        type: {type: string}
+        whitelist: {type: string}
+      type: object
+    tmp5:
+      properties:
+        accessed_by_files: {type: string}
+        asn_description: {type: string}
+        asn_number: {type: string}
+        cidr_block: {type: string}
+        cidr_size: {type: string}
+        cidr_status: {type: string}
+        context_brands: {type: string}
+        context_brands_properties: {type: string}
+        context_categories: {type: string}
+        context_categories_properties: {type: string}
+        context_cidrs: {type: string}
+        context_cidrs_properties: {type: string}
+        context_file_types: {type: string}
+        context_file_types_properties: {type: string}
+        context_files: {type: string}
+        context_files_properties: {type: string}
+        context_hostnames: {type: string}
+        context_hostnames_properties: {type: string}
+        context_hosts: {type: string}
+        context_hosts_properties: {type: string}
+        context_identifiers: {type: string}
+        context_identifiers_properties: {type: string}
+        context_ips_properties: {type: string}
+        context_ips_types: {type: string}
+        context_md5: {type: string}
+        context_md5_properties: {type: string}
+        context_mime_types: {type: string}
+        context_mime_types_properties: {type: string}
+        context_names: {type: string}
+        context_names_properties: {type: string}
+        context_paths: {type: string}
+        context_paths_properties: {type: string}
+        context_reasons: {type: string}
+        context_reasons_properties: {type: string}
+        context_references: {type: string}
+        context_references_properties: {type: string}
+        context_sha1: {type: string}
+        context_sha1_properties: {type: string}
+        context_sha256: {type: string}
+        context_sha256_properties: {type: string}
+        context_sha512: {type: string}
+        context_sha512_properties: {type: string}
+        context_source_urls: {type: string}
+        context_source_urls_properties: {type: string}
+        context_ssdeep: {type: string}
+        context_ssdeep_properties: {type: string}
+        context_urls: {type: string}
+        context_urls_properties: {type: string}
+        doc_ids: {type: string}
+        history_by_feed_duration: {type: string}
+        history_by_feed_end_at: {type: string}
+        history_by_feed_properties: {type: string}
+        history_by_feed_start_at: {type: string}
+        history_first_seen_at: {type: string}
+        history_global_history_duration: {type: string}
+        history_global_history_end_at: {type: string}
+        history_global_history_start_at: {type: string}
+        history_last_seen_at: {type: string}
+        id: {type: string}
+        ip_address: {type: string}
+        ip_number: {type: string}
+        ip_type: {type: string}
+        json: {type: string}
+        mitre_attack_description: {type: string}
+        mitre_attack_id: {type: string}
+        mitre_attack_name: {type: string}
+        mitre_attack_tactic_name: {type: string}
+        mitre_attack_url: {type: string}
+        passive_dns_answer_ip: {type: string}
+        passive_dns_answer_text: {type: string}
+        passive_dns_answer_type: {type: string}
+        passive_dns_domain: {type: string}
+        passive_dns_feed: {type: string}
+        passive_dns_first_seen_at: {type: string}
+        passive_dns_hostname: {type: string}
+        passive_dns_last_seen_at: {type: string}
+        predicted_category: {type: string}
+        predicted_cidr: {type: string}
+        predicted_cluster: {type: string}
+        predicted_predicted_at: {type: string}
+        predicted_valid_from: {type: string}
+        predicted_valid_until: {type: string}
+        prediction_category: {type: string}
+        prediction_cidr: {type: string}
+        prediction_cluster: {type: string}
+        prediction_predicted_at: {type: string}
+        prediction_valid_from: {type: string}
+        prediction_valid_until: {type: string}
+        predictions_category: {type: string}
+        predictions_cidr: {type: string}
+        predictions_cluster: {type: string}
+        predictions_predicted_at: {type: string}
+        predictions_valid_from: {type: string}
+        predictions_valid_until: {type: string}
+        rir_code: {type: string}
+        rir_name: {type: string}
+        type: {type: string}
+        whois_abuse_c: {type: string}
+        whois_admin_c: {type: string}
+        whois_cidr: {type: string}
+        whois_city: {type: string}
+        whois_comment: {type: string}
+        whois_country_code: {type: string}
+        whois_country_name: {type: string}
+        whois_created_at: {type: string}
+        whois_description: {type: string}
+        whois_handle: {type: string}
+        whois_inet: {type: string}
+        whois_mnt_by: {type: string}
+        whois_mnt_irt: {type: string}
+        whois_mnt_lower: {type: string}
+        whois_mnt_upper: {type: string}
+        whois_name: {type: string}
+        whois_org: {type: string}
+        whois_owner_c: {type: string}
+        whois_parent: {type: string}
+        whois_registry: {type: string}
+        whois_status: {type: string}
+        whois_tech_c: {type: string}
+        whois_updated_at: {type: string}
+      type: object
+    tmp6:
+      properties:
+        hostname: {type: string}
+        ips: {type: string}
+      type: object
+    tmp7:
+      properties:
+        cidr_block: {type: string}
+        cidr_size: {type: string}
+        cidr_status: {type: string}
+        context_brands: {type: string}
+        context_brands_properties: {type: string}
+        context_categories: {type: string}
+        context_categories_properties: {type: string}
+        context_cidrs: {type: string}
+        context_cidrs_properties: {type: string}
+        context_file_types: {type: string}
+        context_file_types_properties: {type: string}
+        context_files: {type: string}
+        context_files_properties: {type: string}
+        context_hostnames: {type: string}
+        context_hostnames_properties: {type: string}
+        context_hosts: {type: string}
+        context_hosts_properties: {type: string}
+        context_identifiers: {type: string}
+        context_identifiers_properties: {type: string}
+        context_ips_properties: {type: string}
+        context_ips_types: {type: string}
+        context_md5: {type: string}
+        context_md5_properties: {type: string}
+        context_mime_types: {type: string}
+        context_mime_types_properties: {type: string}
+        context_names: {type: string}
+        context_names_properties: {type: string}
+        context_paths: {type: string}
+        context_paths_properties: {type: string}
+        context_reasons: {type: string}
+        context_reasons_properties: {type: string}
+        context_references: {type: string}
+        context_references_properties: {type: string}
+        context_sha1: {type: string}
+        context_sha1_properties: {type: string}
+        context_sha256: {type: string}
+        context_sha256_properties: {type: string}
+        context_sha512: {type: string}
+        context_sha512_properties: {type: string}
+        context_source_urls: {type: string}
+        context_source_urls_properties: {type: string}
+        context_ssdeep: {type: string}
+        context_ssdeep_properties: {type: string}
+        context_urls: {type: string}
+        context_urls_properties: {type: string}
+        domain: {type: string}
+        first_seen_at: {type: string}
+        history_by_feed_duration: {type: string}
+        history_by_feed_end_at: {type: string}
+        history_by_feed_properties: {type: string}
+        history_by_feed_start_at: {type: string}
+        history_first_seen_at: {type: string}
+        history_global_history_duration: {type: string}
+        history_global_history_end_at: {type: string}
+        history_global_history_start_at: {type: string}
+        history_last_seen_at: {type: string}
+        hostname: {type: string}
+        id: {type: string}
+        ip_address: {type: string}
+        ip_number: {type: string}
+        ip_type: {type: string}
+        json: {type: string}
+        last_seen_at: {type: string}
+        mitre_attack_description: {type: string}
+        mitre_attack_name: {type: string}
+        mitre_attack_tactic_name: {type: string}
+        mitre_attack_url: {type: string}
+        passive_dns_answer_ip: {type: string}
+        passive_dns_answer_text: {type: string}
+        passive_dns_answer_type: {type: string}
+        passive_dns_domain: {type: string}
+        passive_dns_feed: {type: string}
+        passive_dns_first_seen_at: {type: string}
+        passive_dns_hostname: {type: string}
+        passive_dns_last_seen_at: {type: string}
+        predicted_category: {type: string}
+        predicted_cidr: {type: string}
+        predicted_cluster: {type: string}
+        predicted_predicted_at: {type: string}
+        predicted_valid_from: {type: string}
+        predicted_valid_until: {type: string}
+        prediction_category: {type: string}
+        prediction_cidr: {type: string}
+        prediction_cluster: {type: string}
+        prediction_predicted_at: {type: string}
+        prediction_valid_from: {type: string}
+        prediction_valid_until: {type: string}
+        predictions_category: {type: string}
+        predictions_cidr: {type: string}
+        predictions_cluster: {type: string}
+        predictions_predicted_at: {type: string}
+        predictions_valid_from: {type: string}
+        predictions_valid_until: {type: string}
+        subdomain: {type: string}
+        suffix: {type: string}
+        tld: {type: string}
+        type: {type: string}
+        url: {type: string}
+        whitelist: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Seclytics Seclytics
+  title: Seclytics Seclytics
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Seclytics Get Threat Data for ASNs
+      parameters:
+      - description: List of ASNs
+        example: '268972'
+        in: query
+        name: ASNs
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Seclytics Get ASN Intel
+  tmp1:
+    post:
+      description: Seclytics Get threat data for CIDRs
+      parameters:
+      - description: List of CIDRs
+        example: 8.8.8.8/24
+        in: query
+        name: CIDRs
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Seclytics Get CIDR Intel
+  tmp2:
+    post:
+      description: Seclytics Get threat data for domains
+      parameters:
+      - description: List of Domains
+        example: ''
+        in: query
+        name: Domains
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Seclytics Get Domain Intel
+  tmp3:
+    post:
+      description: Seclytics Get Threat Data for Files
+      parameters:
+      - description: List of File Hashes
+        example: 8e64affa40735f152d419a56ce1fc27c
+        in: query
+        name: File Hashes
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Seclytics Get File Intel
+  tmp4:
+    post:
+      description: Seclytics Get Threat Data for Hostnames
+      parameters:
+      - description: List of Hosts
+        example: ''
+        in: query
+        name: Hosts
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Seclytics Get Host Intel
+  tmp5:
+    post:
+      description: Seclytics Get threat intel for IP(s) or IPs in a specific CIDR.
+      parameters:
+      - description: List of IPs or CIDRs
+        example: 8.8.8.8/32
+        in: query
+        name: IPs or a CIDR
+        required: true
+        schema: {type: string}
+      - description: Is input a CIDR
+        example: ''
+        in: query
+        name: Is CIDR Block
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Seclytics Get IP Intel
+  tmp6:
+    post:
+      description: Seclytics Returns list of IPs resolving to hosts
+      parameters:
+      - description: List of Hosts
+        example: ''
+        in: query
+        name: Hosts
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Seclytics Get IPs Resolving to Host
+  tmp7:
+    post:
+      description: Seclytics Get Threat Data for hashed URL
+      parameters:
+      - description: List of URLs
+        example: ''
+        in: query
+        name: URLs
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Seclytics Get URL Intel
+tags:
+- {name: Endpoint Security & Management}

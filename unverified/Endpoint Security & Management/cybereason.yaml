@@ -1,0 +1,422 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        outcome: {type: string}
+      type: object
+    tmp1:
+      properties:
+        affectedMachines_elementType: {type: string}
+        affectedMachines_guid: {type: string}
+        affectedMachines_hasMalops: {type: string}
+        affectedMachines_hasSuspicions: {type: string}
+        affectedMachines_name: {type: string}
+        affectedUsers_elementType: {type: string}
+        affectedUsers_guid: {type: string}
+        affectedUsers_hasMalops: {type: string}
+        affectedUsers_hasSuspicions: {type: string}
+        affectedUsers_name: {type: string}
+        allRansomwareProcessesSuspended: {type: string}
+        closeTime: {type: string}
+        closerName: {type: string}
+        creationTime: {type: string}
+        customClassification: {type: string}
+        decisionFeature: {type: string}
+        decisionStatuses: {type: string}
+        detectionEngines: {type: string}
+        detectionType: {type: string}
+        detectionTypes: {type: string}
+        displayName: {type: string}
+        edr: {type: string}
+        elementDisplayName: {type: string}
+        escalated: {type: string}
+        guid: {type: string}
+        hasRansomwareSuspendedProcesses: {type: string}
+        iconBase64: {type: string}
+        isBlocked: {type: string}
+        labels: {type: string}
+        lastUpdateTime: {type: string}
+        machines_connected: {type: string}
+        machines_displayName: {type: string}
+        machines_guid: {type: string}
+        machines_isolated: {type: string}
+        machines_lastConnected: {type: string}
+        machines_osType: {type: string}
+        malopActivityTypes: {type: string}
+        malopDetectionType: {type: string}
+        malopLastUpdateTime: {type: string}
+        malopStartTime: {type: string}
+        managementStatus: {type: string}
+        primaryRootCauseElements_elementType: {type: string}
+        primaryRootCauseElements_guid: {type: string}
+        primaryRootCauseElements_hasMalops: {type: string}
+        primaryRootCauseElements_hasSuspicions: {type: string}
+        primaryRootCauseElements_name: {type: string}
+        priority: {type: string}
+        rootCauseElementCompanyProduct: {type: string}
+        rootCauseElementHashes: {type: string}
+        rootCauseElementNames: {type: string}
+        rootCauseElementNamesCount: {type: string}
+        rootCauseElementType: {type: string}
+        rootCauseElementTypes: {type: string}
+        severity: {type: string}
+        status: {type: string}
+        users_admin: {type: string}
+        users_displayName: {type: string}
+        users_domainUser: {type: string}
+        users_guid: {type: string}
+        users_localSystem: {type: string}
+      type: object
+    tmp2:
+      properties:
+        blocking: {type: string}
+        direction: {type: string}
+        domain: {type: string}
+        ipAddress: {type: string}
+        ipAddressString: {type: string}
+        lastUpdated: {type: string}
+        port: {type: string}
+        ruleId: {type: string}
+      type: object
+    tmp3:
+      properties:
+        blacklistClassification: {type: string}
+        classificationLink: {type: string}
+        containsTorDomain: {type: string}
+        domainClassificationSuspicion: {type: string}
+        domainNameUniqueId: {type: string}
+        elementDisplayName: {type: string}
+        everResolvedDomain: {type: string}
+        everResolvedSecondLevelDomain: {type: string}
+        extendedDisplayId: {type: string}
+        federationSegments: {type: string}
+        getIpDiscoveryDomainList: {type: string}
+        hasMalops: {type: string}
+        hasResolvedClassificationEvidence: {type: string}
+        hasSuspicions: {type: string}
+        indifferentClassification: {type: string}
+        isDomainMalicious: {type: string}
+        isInIpDiscoveryDomainList: {type: string}
+        isInternalDomain: {type: string}
+        isInternalDomainByName: {type: string}
+        isReverseLookup: {type: string}
+        isTorrentDomain: {type: string}
+        lookupDomainClassification: {type: string}
+        maliciousClassification: {type: string}
+        maliciousClassificationString: {type: string}
+        maliciousClassificationType: {type: string}
+        malwareClassification: {type: string}
+        name: {type: string}
+        relatedToMalop: {type: string}
+        rootCauseKey: {type: string}
+        secondLevelDomain: {type: string}
+        sinkholedClassification: {type: string}
+        sinkholedClassificationEvidence: {type: string}
+        topLevelDomain: {type: string}
+        unknownClassification: {type: string}
+        unresolvedClassification: {type: string}
+        unwantedClassification: {type: string}
+        whitelistClassification: {type: string}
+      type: object
+    tmp4:
+      properties:
+        attemptExecutionProcessSuspicion: {type: string}
+        attributes: {type: string}
+        blackListClassification: {type: string}
+        canonizedPath: {type: string}
+        classificationLink: {type: string}
+        correctedPath: {type: string}
+        createdTime: {type: string}
+        detectionEventData: {type: string}
+        dualExtensionName: {type: string}
+        elementDisplayName: {type: string}
+        extendedDisplayId: {type: string}
+        extension: {type: string}
+        extensionRecord: {type: string}
+        extensionType: {type: string}
+        externalProductClassification: {type: string}
+        externalProductClassificationIsSigned: {type: string}
+        externalProductClassificationSignatureVerificationStatus: {type: string}
+        externalProductClassificationSignatureVerified: {type: string}
+        externalProductClassificationSignatureVerifiedByVerificationStatus: {type: string}
+        externalProductClassificationType: {type: string}
+        federationSegments: {type: string}
+        fileHasSystem32SubDirectories: {type: string}
+        fileHasSystemSubDirectories: {type: string}
+        fileHashUniqueId: {type: string}
+        fileInSystemPath: {type: string}
+        fileReputationSuspicion: {type: string}
+        fileReputationSuspicionDecision: {type: string}
+        fileVersionSuspicionDecision: {type: string}
+        getNetworkScannersNames: {type: string}
+        getToolsForUnusualNetworkEvidence: {type: string}
+        hackingToolClassification: {type: string}
+        hasAutorun: {type: string}
+        hasClassification: {type: string}
+        hasInternalName: {type: string}
+        hasLegitClassification: {type: string}
+        hasMalops: {type: string}
+        hasNonLegitClassification: {type: string}
+        hasNonLegitClassificationEvidence: {type: string}
+        hasProductClassification: {type: string}
+        hasRansomwareClassificationSubType: {type: string}
+        hasSuspicions: {type: string}
+        identifiedProduct: {type: string}
+        indifferentClassification: {type: string}
+        isDocument: {type: string}
+        isExecutable: {type: string}
+        isFromRemovableDevice: {type: string}
+        isFromTemp: {type: string}
+        isNoTypeFoundClassification: {type: string}
+        isPEFile: {type: string}
+        isProcessImageFile: {type: string}
+        isScreenSaver: {type: string}
+        isSigned: {type: string}
+        isSuspicious: {type: string}
+        lastDetectionEventData: {type: string}
+        maliciousClassification: {type: string}
+        maliciousClassificationString: {type: string}
+        maliciousClassificationType: {type: string}
+        maliciousToolClassification: {type: string}
+        malwareClassification: {type: string}
+        malwareClassificationEvidence: {type: string}
+        malwareType: {type: string}
+        md5: {type: string}
+        md5String: {type: string}
+        missingInterperterSectionValue: {type: string}
+        modifiedTime: {type: string}
+        name: {type: string}
+        nameWithoutExtension: {type: string}
+        path: {type: string}
+        peSignedAndVerified: {type: string}
+        productClassificationType: {type: string}
+        productType: {type: string}
+        profileId: {type: string}
+        ransomwareClassification: {type: string}
+        reasonSignatureVerificationStatus: {type: string}
+        relatedToMalop: {type: string}
+        reportedByAntiMalwareEvidence: {type: string}
+        reportedByAntiMalwareSuspicion: {type: string}
+        rootCauseKey: {type: string}
+        sha1: {type: string}
+        sha1String: {type: string}
+        signatureVerified: {type: string}
+        signatureVerifiedByVerificationStatus: {type: string}
+        signatureVerifiedInternalOrExternal: {type: string}
+        signedByApple: {type: string}
+        signedByLinux: {type: string}
+        signedByMicrosoft: {type: string}
+        signedByOperatingSystem: {type: string}
+        signedInternalOrExternal: {type: string}
+        size: {type: string}
+        suspiciousClassification: {type: string}
+        suspiciousScreenSaverCondition: {type: string}
+        unknownClassification: {type: string}
+        unsignedPeFileEvidence: {type: string}
+        unwantedClassification: {type: string}
+        whitelistClassification: {type: string}
+      type: object
+    tmp5:
+      properties:
+        address: {type: string}
+        addressInternalExternalLocal: {type: string}
+        addressString: {type: string}
+        blackListClassification: {type: string}
+        countryCode: {type: string}
+        countryName: {type: string}
+        countryNameOrNotExternalType: {type: string}
+        elementDisplayName: {type: string}
+        extendedDisplayId: {type: string}
+        federationSegments: {type: string}
+        geolocationLookup: {type: string}
+        hasMalops: {type: string}
+        hasSuspicions: {type: string}
+        isDynamicConfiguration: {type: string}
+        isExternalAddress: {type: string}
+        isInternalAddress: {type: string}
+        isLocalAddress: {type: string}
+        latitude: {type: string}
+        longitude: {type: string}
+        lookupIpClassification: {type: string}
+        maliciousClassification: {type: string}
+        maliciousClassificationType: {type: string}
+        rootCauseKey: {type: string}
+        uniqueIpAddressHash: {type: string}
+        version: {type: string}
+        whiteListClassification: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Cybereason Cybereason
+  title: Cybereason Cybereason
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Cybereason Block or Unblock an Item
+      parameters:
+      - description: IP, Domain, or Hash CSV values to blacklist or whitelist
+        example: ''
+        in: query
+        name: Values
+        required: true
+        schema: {type: string}
+      - description: Either 'blacklist' or 'whitelist'
+        example: ''
+        in: query
+        name: Action
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Cybereason Block Item
+  tmp1:
+    post:
+      description: Cybereason get alerts from MalOps
+      parameters:
+      - description: Filter MalOps returned by any time greater than creation time.
+          See README for relative time formats
+        example: Thursday, July 30, 2020 1:08:18.571 AM
+        in: query
+        name: Creation Time
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Cybereason Get MalOps Alerts
+  tmp2:
+    post:
+      description: Cybereason isolate a host by port
+      parameters:
+      - description: IP to block
+        example: ''
+        in: query
+        name: IP
+        required: true
+        schema: {type: string}
+      - description: Port to block
+        example: ''
+        in: query
+        name: Port
+        required: true
+        schema: {type: string}
+      - description: Direction to block traffic, one of 'ALL', 'INCOMING', 'OUTGOING'
+        example: ''
+        in: query
+        name: Direction to block
+        required: true
+        schema: {type: string}
+      - description: If true will isolate, false will remove from isolation
+        example: ''
+        in: query
+        name: Block
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Cybereason Isolate Host
+  tmp3:
+    post:
+      description: Check Cybereason for a domain
+      parameters:
+      - description: Domain to search for
+        example: ''
+        in: query
+        name: Domain
+        required: true
+        schema: {type: string}
+      - description: Limit of results to return
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Timeout
+        example: '12000'
+        in: body
+        name: Timeout (ms)
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Cybereason Query for Domain
+  tmp4:
+    post:
+      description: Check Cybereason for a hash
+      parameters:
+      - description: Hash to search for
+        example: ''
+        in: query
+        name: Hash
+        required: true
+        schema: {type: string}
+      - description: Limit of results to return
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Timeout
+        example: '12000'
+        in: body
+        name: Timeout (ms)
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Cybereason Query for Hash
+  tmp5:
+    post:
+      description: Check Cybereason for a IP
+      parameters:
+      - description: IP to search for
+        example: ''
+        in: query
+        name: IP
+        required: true
+        schema: {type: string}
+      - description: Limit of results to return
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Timeout
+        example: '12000'
+        in: body
+        name: Timeout (ms)
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Cybereason Query for IP
+tags:
+- {name: Endpoint Security & Management}

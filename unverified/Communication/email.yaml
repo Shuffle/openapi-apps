@@ -1,0 +1,313 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        attach_info: {type: string}
+        attachments: {type: string}
+        attachments_md5: {type: string}
+        attachments_sha1: {type: string}
+        attachments_sha256: {type: string}
+        bcc: {type: string}
+        cc: {type: string}
+        date: {type: string}
+        error: {type: string}
+        headers: {type: string}
+        html_body: {type: string}
+        id: {type: string}
+        raw_content: {type: string}
+        raw_headers: {type: string}
+        recipients: {type: string}
+        reply_to: {type: string}
+        result: {type: string}
+        rtf_body: {type: string}
+        sender: {type: string}
+        subject: {type: string}
+        text_body: {type: string}
+        type: {type: string}
+        valid_recipients_email: {type: string}
+        valid_reply_to_email: {type: string}
+        valid_sender_email: {type: string}
+      type: object
+    tmp1:
+      properties:
+        attach_info: {type: string}
+        attachments: {type: string}
+        attachments_md5: {type: string}
+        attachments_sha1: {type: string}
+        attachments_sha256: {type: string}
+        bcc: {type: string}
+        cc: {type: string}
+        date: {type: string}
+        error: {type: string}
+        fingerprints: {type: string}
+        headers: {type: string}
+        html_body: {type: string}
+        id: {type: string}
+        is_encrypted: {type: string}
+        is_signed: {type: string}
+        is_verified: {type: string}
+        message_type: {type: string}
+        raw_content: {type: string}
+        raw_headers: {type: string}
+        recipients: {type: string}
+        reply_to: {type: string}
+        result: {type: string}
+        rtf_body: {type: string}
+        sender: {type: string}
+        subject: {type: string}
+        text_body: {type: string}
+        type: {type: string}
+        valid_recipients_email: {type: string}
+        valid_reply_to_email: {type: string}
+        valid_sender_email: {type: string}
+        warnings: {type: string}
+      type: object
+    tmp2:
+      properties:
+        base64_data: {type: string}
+        error: {type: string}
+        render_html: {type: string}
+        rendered_image: {type: string}
+        thumbnail_image: {type: string}
+      type: object
+    tmp3:
+      properties:
+        attach_filenames: {type: string}
+        attach_hashes_md5: {type: string}
+        attach_hashes_sha1: {type: string}
+        attach_hashes_sha256: {type: string}
+        debug_info: {type: string}
+        message_type: {type: string}
+        num_attachments: {type: string}
+        sent_to: {type: string}
+        subject: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Swimlane Email
+  title: Swimlane Email
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Parser for metadata of EML or MSG attachment files
+      parameters:
+      - description: Attachment from an email, parses eml or msg
+        example: ''
+        in: query
+        name: Email Attachment
+        required: true
+        schema: {type: string}
+      - description: check if emails adhere to rfc882 format
+        example: ''
+        in: query
+        name: rfc882 Only
+        required: false
+        schema: {type: boolean}
+      - description: A csv of extensions you would like to ignore. Useful if image
+          files are being parsed out of email footer as attachments. Default is .jp(e)g,
+          .png, .gif. Filling this value will OVERWRITE existing default
+        example: .jpeg,.png,.exe,.gif
+        in: query
+        name: exclude extensions
+        required: false
+        schema: {type: string}
+      - description: Ignore errors parsing an email. Defaults to False
+        example: ''
+        in: query
+        name: Ignore Errors
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Email Get Email Metadata
+  tmp1:
+    post:
+      description: Ingest from IMAP server
+      parameters:
+      - description: Ingest unread emails only
+        example: ''
+        in: query
+        name: Ingest Unread Only
+        required: true
+        schema: {type: boolean}
+      - description: Limit the number of email ingested
+        example: ''
+        in: body
+        name: Email Limit
+        required: false
+        schema: {type: string}
+      - description: Filter by subject of the Email
+        example: ''
+        in: query
+        name: Subject
+        required: false
+        schema: {type: string}
+      - description: Filter by sender email address
+        example: ''
+        in: query
+        name: Sender Address
+        required: false
+        schema: {type: string}
+      - description: True will mark mail as read, False will mark mail as unread.
+        example: ''
+        in: query
+        name: Mark as Read or Unread
+        required: false
+        schema: {type: boolean}
+      - description: Ignore parsing errors, continue parsing
+        example: ''
+        in: query
+        name: Ignore Parsing Errors
+        required: false
+        schema: {type: boolean}
+      - description: Exclude extension types from the attachments of the parsed email
+        example: .png,.jpg,.jpeg,.gif
+        in: query
+        name: Exclude Extensions
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Email Ingest from IMAP
+  tmp2:
+    post:
+      description: Render HTML from an Email to an Image
+      parameters:
+      - description: HTML data to render
+        example: ''
+        in: query
+        name: HTML Data
+        required: true
+        schema: {type: string}
+      - description: Disable javascript when rendering the HTML
+        example: ''
+        in: query
+        name: Disable Javascript
+        required: true
+        schema: {type: boolean}
+      - description: Disable access to files on the local machine (might be needed
+          for images)
+        example: ''
+        in: query
+        name: Disable Local File Access
+        required: true
+        schema: {type: boolean}
+      - description: Proxy to route all requests to, defaults to 127.0.0.1
+        example: ''
+        in: query
+        name: Request Proxy
+        required: false
+        schema: {type: string}
+      - description: Use a proxy for all requests (recommended)
+        example: ''
+        in: query
+        name: Use Proxy
+        required: true
+        schema: {type: boolean}
+      - description: No images in output, defaults to true
+        example: ''
+        in: query
+        name: No Images
+        required: false
+        schema: {type: boolean}
+      - description: Two integers, comma separated for the width & height of the thumbnail.
+          Defaults to 800,600
+        example: ''
+        in: query
+        name: Thumbnail Size Max (Width, Height)
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Email Render HTML
+  tmp3:
+    post:
+      description: Send an email through an SMTP server
+      parameters:
+      - description: CSV list of email addresses to send to
+        example: email1@domain.com,email2@domain.com
+        in: query
+        name: Recipients
+        required: true
+        schema: {type: string}
+      - description: Subject of the Email
+        example: ''
+        in: query
+        name: Subject
+        required: true
+        schema: {type: string}
+      - description: CSV list of email addresses to Carbon Copy
+        example: email1@domain.com,email2@domain.com
+        in: query
+        name: CC
+        required: false
+        schema: {type: string}
+      - description: CSV list of email addresses to Blind Carbon Copy
+        example: email1@domain.com,email2@domain.com
+        in: query
+        name: BCC
+        required: false
+        schema: {type: string}
+      - description: Text body of the Email body
+        example: ''
+        in: query
+        name: Text Body
+        required: false
+        schema: {type: string}
+      - description: HTML body of the Email body
+        example: ''
+        in: query
+        name: HTML Body
+        required: false
+        schema: {type: string}
+      - description: Attachments to include in the Email. Must be Swimlane Attachment
+          Type
+        example: ''
+        in: query
+        name: Attachments
+        required: false
+        schema: {type: string}
+      - description: Sign the email with PGP
+        example: 'True'
+        in: query
+        name: PGP Sign
+        required: true
+        schema: {type: string}
+      - description: Encrypt the email with PGP
+        example: 'True'
+        in: query
+        name: PGP Encrypt
+        required: true
+        schema: {type: string}
+      - description: Collect debug info on send, without sending mail. Fills output
+          'debug info'
+        example: ''
+        in: query
+        name: Debug Send (Won't actually send mail)
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Email Send with SMTP
+tags:
+- {name: Communication}

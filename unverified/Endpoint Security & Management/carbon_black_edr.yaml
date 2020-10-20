@@ -1,0 +1,315 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        cb_version: {type: string}
+        company_name: {type: string}
+        copied_mod_len: {type: string}
+        digsig_issuer: {type: string}
+        digsig_prog_name: {type: string}
+        digsig_publisher: {type: string}
+        digsig_result: {type: string}
+        digsig_result_code: {type: string}
+        digsig_sign_time: {type: string}
+        digsig_subject: {type: string}
+        endpoint: {type: string}
+        file_desc: {type: string}
+        file_version: {type: string}
+        group: {type: string}
+        host_count: {type: string}
+        icon: {type: string}
+        internal_name: {type: string}
+        is_64bit: {type: string}
+        is_executable_image: {type: string}
+        last_seen: {type: string}
+        legal_copyright: {type: string}
+        md5: {type: string}
+        observed_filename: {type: string}
+        orig_mod_len: {type: string}
+        original_filename: {type: string}
+        os_type: {type: string}
+        product_name: {type: string}
+        product_version: {type: string}
+        server_added_timestamp: {type: string}
+        signed: {type: string}
+        timestamp: {type: string}
+      type: object
+    tmp1:
+      properties:
+        message: {type: string}
+      type: object
+    tmp2:
+      properties:
+        _version_: {type: string}
+        alert_severity: {type: string}
+        alert_type: {type: string}
+        created_time: {type: string}
+        digsig_result: {type: string}
+        feed_id: {type: string}
+        feed_name: {type: string}
+        feed_rating: {type: string}
+        host_count: {type: string}
+        hostname: {type: string}
+        ioc_confidence: {type: string}
+        ioc_type: {type: string}
+        md5: {type: string}
+        observed_filename: {type: string}
+        observed_filename_total_count: {type: string}
+        os_type: {type: string}
+        report_score: {type: string}
+        segment_id: {type: string}
+        sensor_criticality: {type: string}
+        sha256: {type: string}
+        status: {type: string}
+        total_hosts: {type: string}
+        unique_id: {type: string}
+        watchlist_id: {type: string}
+        watchlist_name: {type: string}
+      type: object
+    tmp3:
+      properties:
+        results: {type: string}
+      type: object
+    tmp4:
+      properties:
+        audit: {type: string}
+        block_count: {type: string}
+        enabled: {type: string}
+        last_block_hostname: {type: string}
+        last_block_sensor_id: {type: string}
+        last_block_time: {type: string}
+        md5hash: {type: string}
+        text: {type: string}
+        timestamp: {type: string}
+        user_id: {type: string}
+        username: {type: string}
+      type: object
+    tmp5:
+      properties:
+        cb_version: {type: string}
+        company_name: {type: string}
+        copied_mod_len: {type: string}
+        digsig_issuer: {type: string}
+        digsig_prog_name: {type: string}
+        digsig_publisher: {type: string}
+        digsig_result: {type: string}
+        digsig_result_code: {type: string}
+        digsig_sign_time: {type: string}
+        digsig_subject: {type: string}
+        endpoint: {type: string}
+        file_desc: {type: string}
+        file_version: {type: string}
+        group: {type: string}
+        host_count: {type: string}
+        internal_name: {type: string}
+        is_64bit: {type: string}
+        is_executable_image: {type: string}
+        last_seen: {type: string}
+        legal_copyright: {type: string}
+        md5: {type: string}
+        orig_mod_len: {type: string}
+        original_filename: {type: string}
+        os_type: {type: string}
+        product_name: {type: string}
+        product_version: {type: string}
+        server_added_timestamp: {type: string}
+        signed: {type: string}
+        timestamp: {type: string}
+        watchlists: {type: string}
+      type: object
+    tmp6:
+      properties:
+        childproc_count: {type: string}
+        cmdline: {type: string}
+        comms_ip: {type: string}
+        crossproc_count: {type: string}
+        emet_config: {type: string}
+        emet_count: {type: string}
+        filemod_count: {type: string}
+        filtering_known_dlls: {type: string}
+        group: {type: string}
+        host_type: {type: string}
+        hostname: {type: string}
+        id: {type: string}
+        interface_ip: {type: string}
+        last_server_update: {type: string}
+        last_update: {type: string}
+        modload_count: {type: string}
+        netconn_count: {type: string}
+        os_type: {type: string}
+        parent_id: {type: string}
+        parent_md5: {type: string}
+        parent_name: {type: string}
+        parent_pid: {type: string}
+        parent_unique_id: {type: string}
+        path: {type: string}
+        process_md5: {type: string}
+        process_name: {type: string}
+        process_pid: {type: string}
+        process_sha256: {type: string}
+        processblock_count: {type: string}
+        regmod_count: {type: string}
+        segment_id: {type: string}
+        sensor_id: {type: string}
+        start: {type: string}
+        terminated: {type: string}
+        unique_id: {type: string}
+        username: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of VMware Carbon Black EDR
+  title: VMware Carbon Black EDR
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get binary details by MD5 hash.
+      parameters:
+      - description: The MD5 hash of the binary to retrieve details.
+        example: 3FFDE4C5047462B1209D98678B406A55
+        in: query
+        name: MD5 Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: VMware Carbon Black EDR Binary Details
+  tmp1:
+    post:
+      description: Isolate a file or remove from isolation
+      parameters:
+      - description: The MD5 Hash to block/Unblock
+        example: f41d8cd98f00b214e9800998ecf8427e
+        in: query
+        name: MD5 Hash
+        required: true
+        schema: {type: string}
+      - description: Optional message. Defaults to "Swimlane Automation"
+        example: Auto banned by watchlist
+        in: query
+        name: Text
+        required: false
+        schema: {type: string}
+      - description: True to ban the binary, False to remove ban.
+        example: ''
+        in: query
+        name: Ban File
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: VMware Carbon Black EDR Block/Unblock MD5 Hash
+  tmp2:
+    post:
+      description: Get Alerts
+      parameters:
+      - description: Query string for filtering alerts. Defaults to return unresolved
+          alerts. Please see link in the documentation for more query options.
+        example: status:"Unresolved"
+        in: query
+        name: Query String
+        required: false
+        schema: {type: string}
+      - description: Maximum number of alerts to return, defaults to 10
+        example: '50'
+        in: query
+        name: Maximum Number of Alerts
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: VMware Carbon Black EDR Get Alerts
+  tmp3:
+    post:
+      description: Isolate host by hostname
+      parameters:
+      - description: The name of the host to be isolated from the network.
+        example: Bob-Laptop
+        in: query
+        name: Hostname
+        required: true
+        schema: {type: string}
+      - description: If True, the host will be isolated. Set to False to remove from
+          isolation.
+        example: ''
+        in: query
+        name: Isolate Host
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: VMware Carbon Black EDR Isolate Host
+  tmp4:
+    post:
+      description: Returns a list of banned MD5 hashes.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: VMware Carbon Black EDR List Banned MD5 Hashes
+  tmp5:
+    post:
+      description: Returns details for MD5s provided.
+      parameters:
+      - description: A list of binary MD5s to get information about
+        example: '["0BE64FAB577BFA54443C680343AEC85F", "565EE825DA9F0965FE6A117F2243171E"]'
+        in: query
+        name: md5s
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: VMware Carbon Black EDR MD5 Search
+  tmp6:
+    post:
+      description: Query processes
+      parameters:
+      - description: Query string for filtering processes. Options can be found at
+          https://developer.carbonblack.com/resources/query_overview.pdf
+        example: process_name:svchost.exe
+        in: query
+        name: Query String
+        required: false
+        schema: {type: string}
+      - description: Limit the number of processes returned. Defaults to 10
+        example: '30'
+        in: query
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: VMware Carbon Black EDR Process Search
+tags:
+- {name: Endpoint Security & Management}

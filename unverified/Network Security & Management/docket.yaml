@@ -1,0 +1,90 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        pcap_file: {type: string}
+      type: object
+    tmp1:
+      properties:
+        id: {type: string}
+        query: {type: string}
+        state: {type: string}
+        time: {type: string}
+        url: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of RockNSM Docket
+  title: RockNSM Docket
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: RockNSM Docket Get PCAP
+      parameters:
+      - description: PCAP ID to download, output from a query
+        example: 68369c7b77d4b33bb8e91fec69a97dbf
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: RockNSM Docket Get PCAP
+  tmp1:
+    post:
+      description: RockNSM Docket Query
+      parameters:
+      - description: After Date/Time
+        example: '2019-04-20T21:07:59.689Z'
+        in: query
+        name: After
+        required: false
+        schema: {type: string}
+      - description: Before Date/Time
+        example: '2019-04-30T21:07:59.689Z'
+        in: query
+        name: Before
+        required: false
+        schema: {type: string}
+      - description: Comma-separated list of hosts to filter on
+        example: 192.168.1.1,10.1.2.3
+        in: query
+        name: Host
+        required: false
+        schema: {type: string}
+      - description: Comma-separated list of CIDR notation networks to filter on
+        example: 192.168.1.0/24,10.1.0.0/16
+        in: query
+        name: Networks
+        required: false
+        schema: {type: string}
+      - description: TCP, UDP, or ICMP
+        example: TCP
+        in: query
+        name: Protocol
+        required: false
+        schema: {type: string}
+      - description: Comma-separated list of ports to filter on
+        example: 80,443
+        in: query
+        name: Port
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: RockNSM Docket Query
+tags:
+- {name: Network Security & Management}

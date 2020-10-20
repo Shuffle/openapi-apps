@@ -1,0 +1,120 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        response_domain_blacklist: {type: string}
+        response_domain_blacklist_mx: {type: string}
+        response_domain_blacklist_ns: {type: string}
+        response_domain_mx: {type: string}
+        response_domain_ns: {type: string}
+        response_domain_score: {type: string}
+        response_ip_address: {type: string}
+        response_ip_blacklist: {type: string}
+        response_ip_is_quarantined: {type: string}
+        response_ip_score: {type: string}
+        response_score: {type: string}
+        response_source_ip_address: {type: string}
+        response_source_ip_blacklist: {type: string}
+        response_source_ip_is_quarantined: {type: string}
+        response_source_ip_score: {type: string}
+        type: {type: string}
+      type: object
+    tmp1:
+      properties:
+        response_address_is_role: {type: string}
+        response_address_is_well_formed: {type: string}
+        response_address_score: {type: string}
+        response_disposable_is_disposable: {type: string}
+        response_disposable_score: {type: string}
+        response_domain_blacklist: {type: string}
+        response_domain_blacklist_mx: {type: string}
+        response_domain_blacklist_ns: {type: string}
+        response_domain_mx: {type: string}
+        response_domain_ns: {type: string}
+        response_domain_score: {type: string}
+        response_email_blacklist: {type: string}
+        response_email_score: {type: string}
+        response_freemail_is_freemail: {type: string}
+        response_freemail_score: {type: string}
+        response_ip_address: {type: string}
+        response_ip_blacklist: {type: string}
+        response_ip_is_quarantined: {type: string}
+        response_ip_score: {type: string}
+        response_score: {type: string}
+        response_smtp_exist_address: {type: string}
+        response_smtp_exist_catchall: {type: string}
+        response_smtp_exist_mx: {type: string}
+        response_smtp_score: {type: string}
+        response_source_ip_address: {type: string}
+        response_source_ip_blacklist: {type: string}
+        response_source_ip_is_quarantined: {type: string}
+        response_source_ip_score: {type: string}
+        type: {type: string}
+      type: object
+    tmp2:
+      properties:
+        response: {type: string}
+        type: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Apility Apility
+  title: Apility Apility
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAFI0lEQVR4nO3d3XHbRhQF4ANYo2ewglAdSBVE6kAcJZPHKB04FUSpQE4FYh4zNrVOBVYqkFyBnQp2nzUONg8UFIshib+93LvL8814xuIfLojDuxAILQrQZsaeA4V5/rnGHBfVT/EKSkcRuwC1jPMb75tVfN9alLELUGlbqLrcT3vQsdaFoMYdLqqzzo/fhJ1ro7w71qaQlDjFO3e/42r2Sp7BunXXrZ3nFY5x665HLcfYq633L5yBcf7531v3CcZWo5aZiDyDVeB158cZOx28nLr4duN9xnmUOH9x2wGmQGFh7OXgZSYiz2D18aX4EPw1W4fZ4ib4MpU5iF1AdAeYBn29rjv/xnnATzCbuKDLV4IdK6rCxq5ACoMVkrGvY5egBYMVVhW7AC0YLBLBYJEI/laYAmMv/ztE4U8wmzzELKcLBkuztYcuinsYt/yv4u8qORRq1eV42MKFP7gbCIOlUdeDrCVOZQsZjsFK3cKZ9gftHoOVutUvupVgsEgEg0UiGCwSwWCRCAaLRDBYJILBIhEMFolgsEgEg0UiGCwSwWCRCAaLROg/g9TYKR6LexyiAvwZZpO72CVRO73BunXXz3MwHDY3Fh9gHPAIhx+qSaTKqAO9Q+G2iT0O+fd72ukMVpdTc43zo6chIjH6gtVnip+u0xXRzukL1h5M8bMPFAaLcsBgkQgGi0QwWCSCwSIRDBaJYLBIBINFIhgsEsFgkQgGa4zS/7ZyyzxGGRoxWP/gYfBzZ5P3Kz9/HlVLRvY7WI9w+K46Gfzcdb7gc+fXUDyH6Fh5BmtWFZ060bqzULtu7E1nsH5fHaHuMCRmHCog12ABaO1ENd5vvtO3nPbccn/rBcn9sC6ZEL3nvIfQdAVjp6iLa5T+I4B5677Q8opczXPPURc/ovQfMZtcDVj2FeriG5T+717PT5y+dtz3Qt45DikZvAf5DoUUFYNFIhgsEsFgkQgGi0QwWCSCwSIRDBaJYLBIhL5g1biLXUJSlL5f+oJV+r96Pd7Yc5lCIukzKQoAlP5PmULGUfcdE4AsvisbLJN119exKAsMFonII1hv3afYJQTxh7OxSwhFZ7A83vR6/AGmInXsWt+5Vfu+TzukcscPQP+dWEDtjmwnma2vzo5FycsrWKnuo6Ra9xaKg+Vb/tJljVTnfx9U94D3Z4fUjtEAhu13AKr3Pf4n03VU3LGAwZ9KY6dh6xAyuE7d3QrQ3rGAbD/RALJeN/UFAhi+AeBPMJs8BK0lBGOPgeJ+0HMTCBWgfigca+DGE6e1rnASCVbbXApbGOd7n4oixdjL4d0XGPU+7FgSbRXA8ljPqMMJkYfFMcMfkNw1GtMJFjBiX+tJrI0z+kOBZPatGokMhU/6TGq2ziGqp6HxNEg9bYw9hXF+dKjGzDoYSVKfgmdjO1ejxrx9LqsBFu4GJS6DvFZinaqRVsdqbJqmsa8Sy53phQtzjcSFu4FxPlioQq1nBEl+GgCE61ob+V+3TpRm7BVQ/CJaQqLdCkg5WEDYIUcTqSF6h9IOFrCDzhVBwp2qkeY+1tcy2AgvZLI+6QcLeNoY6RyVXs9PcgkVkMNQuCrFoTGjQDXy6FhfS20jpVZvR/kFC2iGRuWT9PujXEMF5DgUrjJ2ChSK/qDVH+3DxZzyD1ZDw75Xxh1q1d6s6Avv3D1e4Vh8OTXucFGdiS9Hof0MVsPYanmNnYBH72vMUfqfn67Hs7f2O1jrGHu5vCgTTlsfW+MOpf8ds8lcvK7E/AvdAGkdL4Dx0QAAAABJRU5ErkJggg==
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Lookup Domain
+      parameters:
+      - description: Bad Domain to lookup on Apility
+        example: ''
+        in: query
+        name: Bad Domain
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Apility Domain Lookup
+  tmp1:
+    post:
+      description: Lookup Email
+      parameters:
+      - description: Bad Email to lookup on Apility
+        example: ''
+        in: query
+        name: Bad Email
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Apility Email Lookup
+  tmp2:
+    post:
+      description: Lookup IP
+      parameters:
+      - description: Bad IP to lookup on Apility
+        example: ''
+        in: query
+        name: Bad IP
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Apility IP Lookup
+tags:
+- {name: Investigation}

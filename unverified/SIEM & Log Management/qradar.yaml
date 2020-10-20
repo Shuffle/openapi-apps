@@ -1,0 +1,431 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        local_destination_ips: {type: string}
+      type: object
+    tmp1:
+      properties:
+        destination_ips: {type: string}
+        msg: {type: string}
+      type: object
+    tmp10:
+      properties:
+        logsourcename_logsourceid: {type: string}
+      type: object
+    tmp2:
+      properties:
+        source_ips: {type: string}
+      type: object
+    tmp3:
+      properties:
+        create_time: {type: string}
+        id: {type: string}
+      type: object
+    tmp4:
+      properties:
+        assigned_to: {type: string}
+        categories: {type: string}
+        category_count: {type: string}
+        close_time: {type: string}
+        closing_reason_id: {type: string}
+        closing_user: {type: string}
+        credibility: {type: string}
+        description: {type: string}
+        destination_networks: {type: string}
+        device_count: {type: string}
+        domain_id: {type: string}
+        event_count: {type: string}
+        flow_count: {type: string}
+        follow_up: {type: string}
+        id: {type: string}
+        inactive: {type: string}
+        last_updated_time: {type: string}
+        local_destination_address_ids: {type: string}
+        local_destination_count: {type: string}
+        magnitude: {type: string}
+        offense_source: {type: string}
+        offense_type: {type: string}
+        policy_category_count: {type: string}
+        protected: {type: string}
+        relevance: {type: string}
+        remote_destination_count: {type: string}
+        security_category_count: {type: string}
+        severity: {type: string}
+        source_address_ids: {type: string}
+        source_count: {type: string}
+        source_network: {type: string}
+        start_time: {type: string}
+        status: {type: string}
+        username_count: {type: string}
+      type: object
+    tmp5:
+      properties:
+        result: {type: string}
+      type: object
+    tmp6:
+      properties:
+        data: {type: string}
+      type: object
+    tmp7:
+      properties:
+        create_time: {type: string}
+        id: {type: string}
+        note_text: {type: string}
+        username: {type: string}
+      type: object
+    tmp8:
+      properties:
+        assigned_to: {type: string}
+        categories: {type: string}
+        category_count: {type: string}
+        close_time: {type: string}
+        closing_reason_id: {type: string}
+        closing_user: {type: string}
+        credibility: {type: string}
+        description: {type: string}
+        destination_networks: {type: string}
+        device_count: {type: string}
+        domain_id: {type: string}
+        event_count: {type: string}
+        flow_count: {type: string}
+        follow_up: {type: string}
+        id: {type: string}
+        inactive: {type: string}
+        last_updated_time: {type: string}
+        local_destination_address_ids: {type: string}
+        local_destination_count: {type: string}
+        magnitude: {type: string}
+        offense_source: {type: string}
+        offense_type: {type: string}
+        policy_category_count: {type: string}
+        protected: {type: string}
+        relevance: {type: string}
+        remote_destination_count: {type: string}
+        rules_id: {type: string}
+        rules_type: {type: string}
+        security_category_count: {type: string}
+        severity: {type: string}
+        source_address_ids: {type: string}
+        source_count: {type: string}
+        source_network: {type: string}
+        start_time: {type: string}
+        status: {type: string}
+        username_count: {type: string}
+      type: object
+    tmp9:
+      properties:
+        description: {type: string}
+        destinationip: {type: string}
+        event_count: {type: string}
+        event_name: {type: string}
+        hash: {type: string}
+        payload: {type: string}
+        sourceip: {type: string}
+        src_workstation: {type: string}
+        url: {type: string}
+        username: {type: string}
+        virus_name: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of IBM QRadar
+  title: IBM QRadar
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get local destination IPs from list of IDs
+      parameters:
+      - description: Local Destination IDs
+        example: '12'
+        in: query
+        name: Local Destination IDs
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: IBM QRadar Get Local Destination IPs
+  tmp1:
+    post:
+      description: Includes local or remote destination IPs from events associated
+        with offense ID
+      parameters:
+      - description: Offense ID
+        example: '12'
+        in: body
+        name: Offense ID
+        required: true
+        schema: {type: string}
+      - description: 'How far back to query. Options: X Minutes, X Days, X Hours.
+          Defaults to 15 minutes.'
+        example: 15 Minutes
+        in: query
+        name: Time Span
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: IBM QRadar Get All Destination IPs by AQL Query
+  tmp10:
+    post:
+      description: Pull log sources relating to an offense in QRadar
+      parameters:
+      - description: Offense ID to pull log sources from
+        example: '1'
+        in: body
+        name: Offense ID
+        required: true
+        schema: {type: string}
+      - description: Number of minutes ago to limit the sources pulled
+        example: '30'
+        in: body
+        name: Minutes Ago
+        required: true
+        schema: {type: string}
+      - description: Maximum number of sources to pull
+        example: '10'
+        in: body
+        name: Event Limit
+        required: false
+        schema: {type: string}
+      - description: Which field to grab the ID source from, if unsure leave this
+          blank. Must be one of 'search_id' or 'cursor_id'
+        example: search_id
+        in: query
+        name: ID Source
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: IBM QRadar Pull Log Sources
+  tmp2:
+    post:
+      description: Get source IPs from list of IDs
+      parameters:
+      - description: Source Address IDs
+        example: '12'
+        in: query
+        name: Source Address IDs
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: IBM QRadar Get Source IPs
+  tmp3:
+    post:
+      description: Add a note to an offense in QRadar
+      parameters:
+      - description: Note Text
+        example: This is some text
+        in: query
+        name: Note Text
+        required: true
+        schema: {type: string}
+      - description: Offense ID to add the note to
+        example: '1'
+        in: body
+        name: Offense ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: IBM QRadar Add Note to Offense
+  tmp4:
+    post:
+      description: Assign an offense to a user
+      parameters:
+      - description: Username to assign the offense to
+        example: userguy
+        in: query
+        name: Assigned User
+        required: true
+        schema: {type: string}
+      - description: Offense ID to add an assigned user to
+        example: '13'
+        in: body
+        name: Offense ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: IBM QRadar Assign Offense To User
+  tmp5:
+    post:
+      description: Changes the Status of an Offense in QRadar
+      parameters:
+      - description: Set the Offense status to OPEN, CLOSED, or HIDDEN
+        example: OPEN
+        in: query
+        name: Status to Change To
+        required: true
+        schema: {type: string}
+      - description: Offense ID to change
+        example: '13'
+        in: query
+        name: Offense ID
+        required: true
+        schema: {type: string}
+      - description: Close Reason
+        example: Non-Issue
+        in: query
+        name: Close Reason
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: IBM QRadar Change Offense Status
+  tmp6:
+    post:
+      description: Run a custom query on QRadar
+      parameters:
+      - description: Query string to run, check README for help
+        example: Select LOGSOURCENAME(logsourceid) from events where INOFFENSE(2)
+          LIMIT 500 START '2019-05-12 06:00'
+        in: query
+        name: Query String
+        required: true
+        schema: {type: string}
+      - description: Which field to grab the ID source from, if unsure leave this
+          blank. Must be one of 'search_id' or 'cursor_id'
+        example: search_id
+        in: query
+        name: ID Source
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: IBM QRadar Custom Query
+  tmp7:
+    post:
+      description: Get notes from an offense in QRadar
+      parameters:
+      - description: Offense ID to add the note to
+        example: '1'
+        in: body
+        name: Offense ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: IBM QRadar Get Note From Offense
+  tmp8:
+    post:
+      description: Returns alerts & offenses from QRadar
+      parameters:
+      - description: Re-running this integration will give only new offenses, otherwise
+          all offenses will be returned
+        example: 'True'
+        in: query
+        name: Only Get New Offenses
+        required: true
+        schema: {type: boolean}
+      - description: Only grab these fields, CSV. See README
+        example: id,inactive,offense_source
+        in: query
+        name: Fields to Grab
+        required: false
+        schema: {type: string}
+      - description: Ending offense index to grab to, must be used with Start Index
+        example: '5'
+        in: body
+        name: End Index
+        required: false
+        schema: {type: string}
+      - description: Starting offense index to grab from, must be used with End Index
+        example: '0'
+        in: body
+        name: Start Index
+        required: false
+        schema: {type: string}
+      - description: Filter fields based on values. See README for examples
+        example: id>=2
+        in: query
+        name: Field Filter
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: IBM QRadar Get Offenses
+  tmp9:
+    post:
+      description: Pull events relating to an offense in QRadar
+      parameters:
+      - description: Offense ID to pull events from
+        example: '1'
+        in: body
+        name: Offense ID
+        required: true
+        schema: {type: string}
+      - description: 'Last X amount of time to pull events from, valid units: MINUTES,
+          HOURS, DAYS'
+        example: 200 minutes
+        in: query
+        name: Time Window
+        required: true
+        schema: {type: string}
+      - description: Maximum number of events to pull
+        example: '10'
+        in: body
+        name: Event Limit
+        required: false
+        schema: {type: string}
+      - description: Which field to grab the ID source from, if unsure leave this
+          blank. Must be one of 'search_id' or 'cursor_id'
+        example: search_id
+        in: query
+        name: ID Source
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: IBM QRadar Pull Events
+tags:
+- {name: SIEM & Log Management}

@@ -1,0 +1,262 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        success: {type: string}
+      type: object
+    tmp2:
+      properties:
+        accessProfileId: {type: string}
+        accessProfileName: {type: string}
+        action: {type: string}
+        approvedAction: {type: string}
+        businessApplication: {type: string}
+        description: {type: string}
+        domainId: {type: string}
+        expirationDate: {type: string}
+        id: {type: string}
+        name: {type: string}
+        results: {type: string}
+        reviewDate: {type: string}
+        sources: {type: string}
+        status: {type: string}
+      type: object
+    tmp3:
+      properties:
+        gpcEventRelationshipTypes: {type: string}
+        id: {type: string}
+        name: {type: string}
+      type: object
+    tmp4:
+      properties:
+        Device Object Changes: {type: string}
+        accessProfiles: {type: string}
+        accessRules: {type: string}
+        averageNetworksUsed: {type: string}
+        devicePolicies: {type: string}
+        deviceRuleChanges: {type: string}
+        deviceRules: {type: string}
+        devices: {type: string}
+        referencedApplications: {type: string}
+        referencedNetworkGroups: {type: string}
+        referencedNetworks: {type: string}
+        referencedServiceGroups: {type: string}
+        referencedServices: {type: string}
+        totalApplications: {type: string}
+        totalNetworkGroups: {type: string}
+        totalNetworks: {type: string}
+        totalServiceGroup: {type: string}
+        totalServices: {type: string}
+      type: object
+    tmp5:
+      properties:
+        automated: {type: string}
+        id: {type: string}
+        location: {type: string}
+        message: {type: string}
+        name: {type: string}
+        refRuleMatchId: {type: string}
+        status: {type: string}
+      type: object
+    tmp6:
+      properties:
+        accessProfileId: {type: string}
+        accessProfileName: {type: string}
+        action: {type: string}
+        approvedAction: {type: string}
+        businessApplication: {type: string}
+        description: {type: string}
+        domainId: {type: string}
+        expirationDate: {type: string}
+        id: {type: string}
+        name: {type: string}
+        reviewDate: {type: string}
+        sources: {type: string}
+        status: {type: string}
+      type: object
+    tmp7:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Firemon Global Policy Controller
+  title: Firemon Global Policy Controller
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAEqklEQVR4nO3YS2wbVRQG4P/OtZ2HCK1KRXk4M0OGbkBFJUNREctKdInTSGUBSHTBgtci7CoBXbBhAQ0LpLJAKgseVaVQp2wCCyQ2qKCYIFG1CzLujO0CVXm0VUjSxPdeNnGUuHbbZMZJ3PzfKvadnHNy54zvcQAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIqI7lvCy7gwkOhstGmltLRaLV1cT2LPtHyGsJ4MoFPFKBDzHNUtfK6MvSyGOBVF0JG7sPtseE8La32w9bv0LtasgClMN17O9f0LKHUnsU0013z8BiN211xqqnMn9YicV33Nco2Amwyja2Ww9BYnOjununkYXnLt8bmq1ybW20pZc7W/faGmNU11TPRLioue478S9IUJY+2H0Tx0zd+2LX2VTcmc2++BvlcrF+vSQckdSSczIY/cqmb4E6LOp3M+L+zKf94ered8Y4JN0rvByErkkxMPZbHZbpVL5p9F6CojXQGulrsYpAJbnuMaz3eNBKTwUJ7Yxlm7pHhjxhpapCoBlD4HnuNoY/a0Q1jOxUxyBpWT6kpxLd4uDZ2aWrqVzhSFj8KYa9bU5+chr4uC5ubj5tm6/J3Plr7/nUPc31VhxE6wrhVljsHu9y7iVoHTho4Ufb9jvYqnU9BheibnH/VkFpeqbqkYIGAN8qjJd15PIVygU5pXR5foxpaa9G0uiU1jm8HqXcTsMzPOu4yzeVM9xqzB4L6n4EkhntNh1s2vSuUKsT/Z6YalkA4Bnu8fr11IA4GZ7lw/oAiIsl+9Osoi4+mx7cQYysF63BHIAdBBFY3FjCwt7Gz15SQ7UxSj6wnPcz5e8JYNSmOhDIQ5MnE8y3u0IolAs7N2ypk0BQFgpb1nrglZMiJcExCCALmHwYZI33WicKZbDp5KK10zt6FBGl6FUlHR8M+LfLwYLfyQd99aJccxzXLP0nrTNUViMoheDKOwGoJVWr6x3PatROzqksHqDStlNMrZSMMrCVze7Zv5UfyLzXL2gFL6qlJrvc9xi7b22aayaIAqllLLDy7oNh9SNLohCkeSnbU1G6iwE9t7sGiHEmDbi6aRzA0BYKWcE8JDnus8BbdhYwMLsI9Hp2e6X613LRiFyE7/D4Ltq3jfmtH/DP0Ored8o4EpmYPyHltWQTm2BwQlgYcZqSRJLX25l39aGxj7H+b4YRR/HCKWaDe+1PDFir6nUQGHf9dE9j0LrqJr3l60pJXZ1DI6fnT/1xGB6YHykFfknJyeveY7zLiDebkV82qCqed9U837DByhpbXkU0sqZk/7iN/9q3n9rPWuhO0x1tP8wAEwftUenP7B/bWWutpkfKBkzw/biUShgnu0cKp9uRR4ehZtM11BJAIAyeKDD6vimVXnYWJtQ11BJSIGjs3pudup9W7ciBxtrk1IGewBAytaMQ5yxNrH/hp0D3ee3f31t+t85q2ru6zlx4VJSsdlYm9zVF/oWh/ktnxUT6wcehZuc0dVtgJpKsqmIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIaOX+B/ZWnxzsIxz8AAAAAElFTkSuQmCC
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Firemon GPC Delete Device
+      parameters:
+      - description: Domain ID (defaults to '1')
+        example: '1'
+        in: query
+        name: Domain ID
+        required: false
+        schema: {type: string}
+      - description: Device Identification Number
+        example: '2'
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Firemon GPC Delete Device
+  tmp1:
+    post:
+      description: Firemon GPC Delete Rule
+      parameters:
+      - description: Domain ID (defaults to '1')
+        example: '1'
+        in: query
+        name: Domain ID
+        required: false
+        schema: {type: string}
+      - description: Access Profile Identification
+        example: '1'
+        in: query
+        name: Access Profile ID
+        required: true
+        schema: {type: string}
+      - description: Rule Identification
+        example: '1'
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Firemon GPC Delete Rule
+  tmp2:
+    post:
+      description: Firemon GPC Get All Rules
+      parameters:
+      - description: Domain ID (defaults to '1')
+        example: '1'
+        in: query
+        name: Domain ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Firemon GPC Get All Rules
+  tmp3:
+    post:
+      description: Firemon GPC Get Event Logs
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Firemon GPC Get Event Logs
+  tmp4:
+    post:
+      description: Firemon GPC Get License Usage
+      parameters:
+      - description: Domain ID (defaults to '1')
+        example: '1'
+        in: query
+        name: Domain ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Firemon GPC Get License Usage
+  tmp5:
+    post:
+      description: Firemon GPC Get Policy
+      parameters:
+      - description: Domain ID (defaults to '1')
+        example: '1'
+        in: query
+        name: Domain ID
+        required: false
+        schema: {type: string}
+      - description: Device Identification Number
+        example: '1'
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Firemon GPC Get Policy
+  tmp6:
+    post:
+      description: Firemon GPC Get Rule
+      parameters:
+      - description: Domain ID (defaults to '1')
+        example: '1'
+        in: query
+        name: Domain ID
+        required: false
+        schema: {type: string}
+      - description: Name of Rule
+        example: test_global_access
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Firemon GPC Get Rule
+  tmp7:
+    post:
+      description: Firemon GPC Import Device
+      parameters:
+      - description: Domain ID (defaults to '1')
+        example: '1'
+        in: query
+        name: Domain ID
+        required: false
+        schema: {type: string}
+      - description: Device Identification Number
+        example: '4'
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Firemon GPC Import Device
+tags:
+- {name: SIEM & Log Management}

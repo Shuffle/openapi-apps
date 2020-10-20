@@ -1,0 +1,610 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        commandID_computer: {type: string}
+        commandID_group: {type: string}
+      type: object
+    tmp1:
+      properties:
+        message: {type: string}
+      type: object
+    tmp10:
+      properties:
+        message: {type: string}
+      type: object
+    tmp2:
+      properties:
+        id: {type: string}
+      type: object
+    tmp3:
+      properties:
+        message: {type: string}
+      type: object
+    tmp4:
+      properties:
+        commandID_computer: {type: string}
+        commandID_group: {type: string}
+      type: object
+    tmp5:
+      properties:
+        agentId: {type: string}
+        agentTimeStamp: {type: string}
+        agentType: {type: string}
+        agentUsn: {type: string}
+        agentVersion: {type: string}
+        apOnOff: {type: string}
+        atpDeviceId: {type: string}
+        atpServer: {type: string}
+        attributeExtension: {type: string}
+        avDefsetRevision: {type: string}
+        avDefsetSequence: {type: string}
+        avDefsetVersion: {type: string}
+        avEngineOnOff: {type: string}
+        bashStatus: {type: string}
+        biosVersion: {type: string}
+        bwf: {type: string}
+        cidsBrowserFfOnOff: {type: string}
+        cidsBrowserIeOnOff: {type: string}
+        cidsDefsetVersion: {type: string}
+        cidsDrvMulfCode: {type: string}
+        cidsDrvOnOff: {type: string}
+        cidsEngineVersion: {type: string}
+        cidsSilentMode: {type: string}
+        computerDescription: {type: string}
+        computerName: {type: string}
+        computerTimeStamp: {type: string}
+        computerUsn: {type: string}
+        contentUpdate: {type: string}
+        creationTime: {type: string}
+        currentClientId: {type: string}
+        daOnOff: {type: string}
+        deleted: {type: string}
+        department: {type: string}
+        deploymentMessage: {type: string}
+        deploymentPreVersion: {type: string}
+        deploymentRunningVersion: {type: string}
+        deploymentStatus: {type: string}
+        deploymentTargetVersion: {type: string}
+        description: {type: string}
+        dhcpServer: {type: string}
+        diskDrive: {type: string}
+        dnsServers: {type: string}
+        domainOrWorkgroup: {type: string}
+        edrStatus: {type: string}
+        elamOnOff: {type: string}
+        email: {type: string}
+        employeeNumber: {type: string}
+        employeeStatus: {type: string}
+        encryptedDevicePassword: {type: string}
+        fbwf: {type: string}
+        firewallOnOff: {type: string}
+        freeDisk: {type: string}
+        freeMem: {type: string}
+        fullName: {type: string}
+        gateways: {type: string}
+        groupUpdateProvider: {type: string}
+        group_domain_id: {type: string}
+        group_domain_name: {type: string}
+        group_externalReferenceId: {type: string}
+        group_fullPathName: {type: string}
+        group_id: {type: string}
+        group_name: {type: string}
+        group_source: {type: string}
+        hardwareKey: {type: string}
+        homePhone: {type: string}
+        hypervisorVendorId: {type: string}
+        idsChecksum: {type: string}
+        idsSerialNo: {type: string}
+        idsVersion: {type: string}
+        infected: {type: string}
+        installType: {type: string}
+        ipAddresses: {type: string}
+        isGrace: {type: string}
+        isNpvdiClient: {type: string}
+        jobTitle: {type: string}
+        kernel: {type: string}
+        lastConnectedIpAddr: {type: string}
+        lastDeploymentTime: {type: string}
+        lastDownloadTime: {type: string}
+        lastHeuristicThreatTime: {type: string}
+        lastScanTime: {type: string}
+        lastServerId: {type: string}
+        lastServerName: {type: string}
+        lastSiteId: {type: string}
+        lastSiteName: {type: string}
+        lastUpdateTime: {type: string}
+        lastVirusTime: {type: string}
+        licenseExpiry: {type: string}
+        licenseId: {type: string}
+        licenseStatus: {type: string}
+        logicalCpus: {type: string}
+        loginDomain: {type: string}
+        logonUserName: {type: string}
+        macAddresses: {type: string}
+        majorVersion: {type: string}
+        memory: {type: string}
+        minorVersion: {type: string}
+        mobilePhone: {type: string}
+        officePhone: {type: string}
+        onlineStatus: {type: string}
+        operatingSystem: {type: string}
+        osBitness: {type: string}
+        osElamStatus: {type: string}
+        osFlavorNumber: {type: string}
+        osFunction: {type: string}
+        osLanguage: {type: string}
+        osMajor: {type: string}
+        osMinor: {type: string}
+        osName: {type: string}
+        osServicePack: {type: string}
+        osVersion: {type: string}
+        patternIdx: {type: string}
+        pepOnOff: {type: string}
+        physicalCpus: {type: string}
+        processorClock: {type: string}
+        processorType: {type: string}
+        profileChecksum: {type: string}
+        profileSerialNo: {type: string}
+        profileVersion: {type: string}
+        pskVersion: {type: string}
+        ptpOnOff: {type: string}
+        publicKey: {type: string}
+        quarantineCode: {type: string}
+        quarantineDesc: {type: string}
+        quarantineStatus: {type: string}
+        rebootReason: {type: string}
+        rebootRequired: {type: string}
+        securityVirtualAppliance: {type: string}
+        serialNumber: {type: string}
+        snacLicenseId: {type: string}
+        subnetMasks: {type: string}
+        svaId: {type: string}
+        tamperOnOff: {type: string}
+        tdadGlobalDataDownloadTime: {type: string}
+        tdadOnOff: {type: string}
+        tdadStatusId: {type: string}
+        telemetryHwid: {type: string}
+        telemetryMid: {type: string}
+        timeZone: {type: string}
+        tmpDevice: {type: string}
+        totalDiskSpace: {type: string}
+        tpmDevice: {type: string}
+        uniqueId: {type: string}
+        uuid: {type: string}
+        uwf: {type: string}
+        virtualizationPlatform: {type: string}
+        vsicStatus: {type: string}
+        winServers: {type: string}
+        worstInfectionIdx: {type: string}
+        writeFiltersStatus: {type: string}
+        wssStatus: {type: string}
+      type: object
+    tmp6:
+      properties:
+        adminstratorCount: {type: string}
+        companyName: {type: string}
+        contactInfo: {type: string}
+        createdTime: {type: string}
+        description: {type: string}
+        enable: {type: string}
+        id: {type: string}
+        name: {type: string}
+      type: object
+    tmp7:
+      properties:
+        data: {type: string}
+        description: {type: string}
+        groupIds: {type: string}
+        hashType: {type: string}
+        id: {type: string}
+        name: {type: string}
+        source: {type: string}
+      type: object
+    tmp8:
+      properties:
+        created: {type: string}
+        createdBy: {type: string}
+        customIpsNumber: {type: string}
+        description: {type: string}
+        domain_id: {type: string}
+        domain_name: {type: string}
+        fullPathName: {type: string}
+        id: {type: string}
+        lastModified: {type: string}
+        name: {type: string}
+        numberOfPhysicalComputers: {type: string}
+        numberOfRegisteredUsers: {type: string}
+        policyDate: {type: string}
+        policyInheritanceEnabled: {type: string}
+        policySerialNumber: {type: string}
+      type: object
+    tmp9:
+      properties:
+        beginTime: {type: string}
+        binaryFileId: {type: string}
+        computerId: {type: string}
+        computerIp: {type: string}
+        computerName: {type: string}
+        currentLoginUserName: {type: string}
+        direction: {type: string}
+        domainName: {type: string}
+        hardwareKey: {type: string}
+        lastUpdateTime: {type: string}
+        number: {type: string}
+        property: {type: string}
+        resultInXML: {type: string}
+        stateId: {type: string}
+        subStateDesc: {type: string}
+        subStateId: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Symantec Symantec Endpoint Protection Manager
+  title: Symantec Symantec Endpoint Protection Manager
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAATYUlEQVR4nO2de3AVVZ7Hv6e7c+/NzYO8AwkhwTAIQTETcEpIqBmxNsDie1jL9QmI4JbrUm5FQf9gCnUYRqeyBVsUlIo83CqrojAuK2KCQBQCCAmjyEMjDw2QBPK6IeTm9n30b/+4SQzm3pA+3enuG/xU8Qe5fc759Tnf/p3T55w+P4Zf6aWsrEwsykdSnHA13SZ0PEeuaggx2c+T13X9hWLsT+Rp/IQl/BZeJW5DhxJ/OWP8I02mGG1RmNkGmIzQfupP4yRP/Q5BbrwVPg/AOKqEASACJDsU+6jv/Y6M+0fkrTwDQNHb4EjhphKWu+WLLPy44VO4m29jBt06gQBnygnkPPfPzuTfXzCkUAtwUwjLc670PaVxzwIoPjAyxwYCADEKclL+LYkT/nzeHCuMY1gLq/Ns6SbWUDGfkYV6JAYQBNCoezbH5L60wGxzhophJyyX63ii/fSrreT3Wv7miAEQbPDmrUpKSJjcZrY9emL1uleF5+SyKqX12HSjxk96QSAISVMOOiatLjTbFr2IrBYIQ1fN/GNw1//WbDt0wZnxj+gpmwvMNkMrES+srgPFBJMG5EMGA6KLKiK6bQSzDeBFrlv/+LAUFQBQ8IGR69Y/brYpvETkU+HeX0wRabhKep4Z54zI814RZXD7qeXJUW1fNzPFQtMHBkCCAF9ifsqIvNUtZtsyWCSzDVBDVEtNc6S98ekBIwVRLTXNiCBHEBGGyuf/q1y5+Gnx0JrbZ7Am2iAkToQQOx5CfAEgxoKx7meQ/CC5AYr7ByjXaqG0nQYFvGCMYajHewSCOHpWhX1syayhLUk7lheW57tXyqmppji40Ds0ZTB7DMSRsyFlPgUSbGDEBrkYTSACwAjw1CPQ9CkCjZ+B5M6hMbS7TCF1aoV9wl8sLS5LC8vz3avl1FRdrGeeBAAMsN9RCiFmYreA9K4GAojgv7AB/gs7gjsfdIal5lc4JrxpWXFZVljB7m+XrqICCLaC/4bgHA/jbp1A7h8gH/t33csURs+psI990ZLisqyw9J1SIEi5T0Ma9a8wb+pOgb/hA/jObtWt0gnWnYqwnFEXv1qenOQ91qyXYVF3/BVCXL7mGyWi4ABdaz5QoHQch++bl6FH9RMAX3KB5aYiLDfznuT/WjdROYo+hahRVESETZs2wW63Y+XKlSCN4yUGAWJcPuxFu3R5F2EAbG3fNOuQla5YymNp7/4IYAyOu7YDYoymnBoaGjBr1ix8++23/X4bM2YMdu3ahYkTJ2r3YoFOeA49rC2PbqIt1C1axmO5695+XHt3BdgK1msSVSAQwLJly5CZmRlSVABQV1eHSZMmITU1FT6fj7ssAIAYA9uU9Zo9IUCw0tqiZRSux4KyY/rfAcHJlZaI8Oijj+Kjjz6ComLJiDGGGTNmoLKyUpP3ooAb8uGHNM/VWcVrWcIIzaISo+CY9n9QeztEhAsXLmDcuHHaPQ8AURSxePFirFu3jlNkBM+h+4CABlsssuXG9K6wq2b+MU2ikqLgmPa/UCMqIsKePXuQnJyMnJwcXUQFBLvR9evXIzY2Flu2bOHo3hjsd30MSFGa7HDVlSVpykAHTFd21/5iTc7fUfQZBnMbRARFUTBy5Ei0tLToMKa5MYwxOJ1ObNmyBQ8//LAKL0boqpqt4YsiQvSM3aa2rakey3NyeRVfSgJAcEzbjhuJiohw4sQJ5OTkICoqCs3NzapExRhDfHw8qqurMXr0aFVdHBGhs7MT8+bNQ0pKCvbu3TvIshmi79oO/vEB01C3+mCasFyu44lKa810vtQMtoJ1A779KYqCw4cPIysrC5MnT0ZdXZ1qL8UYw5kzZ+ByuTBlyhTU1dWhqakJoiiqtri1tRX33HMPUlJSsGPHjhvbIsbAXrBOdTk9KK01012u44ncGWjENHfZdehegt/LldZ+14dgUny/vxMRXnzxRaxdu1aXrm7jxo1YuHBhv79//fXXKCgo0D5ZyhhSU1PR2NgY1hOS/yrkw//CV4BkQ/S0T0xpY9M8FnGKCiAwKS7sr2vWrOFqcMYYlixZMqiu7pfXvPbaa1xvgUSEK1euDGhv8F45Bcxdx9oxRVies6WbuB4jBtgLd0EvR8sYQ1RUFDweDwKBADZs2MCVT0lJCRRFgd/vx6JFi3RZU+xjJeyFu7jHW56zpZt0NGbQmCIspaF8vvpUhKjb3wBj6sc3ocjNzUVDQwNkWYbdbtdFDKIo4p133sG1a9dQVFSkm8AYE2G7/Q2utNRYMV8XI1RiuLA850rfYxxdFQEQ46dyl9vjndrb26EoCs6cOYP09HSdvUsQp9OJ/fv3IxAIQJZlzJs3T3M54ojfgatLVBR4zpW+p6lwDgwXltK4h+sgDCn7j9DSBR48eBCyLCM+Pn5IxBQKxhhsNhs+/PBDyLKsXVzZf+RKx1vnWjBUWO6WL7IYz3IFEaTRz2oqWxAEwwQVCknS/kGUNHoR1zZnrjrXiLEe68cNn6p158QAW/5bYMz01SfTYUxEVP5bXGlbz+4eobM5A2JoazF3822quzMChNjJQ2NQBCLGTQbPpjWn9COfIjkx2A2orxHb7a/xnQs6bGGw3faa6lR0cbu2sYRKjBSWwPNWI464cwhMiWy46kTxAwa2t2EFec6uGsf3Vvert+oPU/+IMob2U6vGDYU1oTBMWIH28ztUJ5Js+FVYoWGiTV0CAiQPRxtwYpxrlBtuVZtGSh82JyfqDIPIUTc8bcCLYcIiv6w6jTh68RBYMjyQshZD9ZjVL6OsrEyfNbEbYIiw6mvLUtVPThIgJQyFOcMCxlU3DLOLYMi2ZUOEFSdcTVc92hTEX4dXA8FYsI5UpQGY+2r60Bh0PYYIK0roeE5tGhabiZvxkDU1sNhMdQkIsHG0BQ+GCEtx/UN1GiE2l6ssM9cDB8Lj8eicI4MQM1ZlGgJxtAUPhghLihn9vNo0QtxtUNsXMsYgCKFvqaGhQa0JutLR0aH7l0Es/na1KSBwtAUPhgirX7y/wWBLheoFa6KwHzqcP29uXKRLly6F/Y3Xywq2NNVpuNqCA4OmGzi2eggO8Izew21POXnypOq89KS2tlb/TAWH/nnqhDHCMuiQf8YYMjNDD2h37txpyEeq4di2bVvY3wy1y6CyjBEWj6sPXOMq6s47Qy/Qqv1QVW++/PLLkH9njPG/cHDUERn0cmOMsMTYn9QmUTrPcBW1eHHo2Xq/38+Vn140NYUPGc0rrABHHTGOtuDBEGEFPI2fqE2juH8CTx86bdq0kH8nIlPHWeG8pd1u58+zS71GeNqCB0OEJSZwRHxz873FRUWFP6mltLSUK089CCescF33jTNUgE51dUTgbAsODBFWi+vgSrVplGuNXGUNNGbZunUrV55aOXToUNjfNm7cyJcpY1x15FXi+L7KVYkxY6xYjrMHSAHv62S4uSwiMmUAv2TJkpB/Z4whN5dvhQFAdx0NHgaAnPGX+QscPIYIK2P8I03qRcKgdPCNiVasWBHy70SEAwcOcOUZDsZYr2BDCbe1tTXsWaYzZ84Mu1JwI5RrJ9S/bRMhPuOR8G8ROmLcnndJ/WSev7GMq6jly5eH7Q4ffPBBXb0WEeEPf/gDYmNjERcXh6ysLOzbt6+3jLlz54ZN+/bbb3OX628oU/+sRhk3oWqYsBT7yO9Vp2mq4SpLkqSwb1ttbW1obOQbv4Xj6NGjcLvd6OzsxKVLlzBz5kw4HA7IsowjR46ETTd2rNpF5J/hqRueNuDFMGGJI8berzoRBcC1HMQY6uvrQ2dJhKysLNV59qWkpKSf1/vll9ZerxcOhyPsCcySJGnYiUGAElCXhHG2ASeGCcuR+6r62TxCt7jUk5CQELbheg7r4CEQCODzzz/v/T9jDMuWLYPL5UJ7ezv27t07qHHT5s2bucoHwFcnRHxtwImR3xVyxdv1fb8cvF7rscceC/u70+lUvUeKiJCY+PPpi2lpaVAUBatXr0ZcXBzi4uJw9913IxAIoKxs4PHhk08+iUCA56EheL9TXycsNgPgbAMeDP0SmufwMH/zcfBOO2zdujWs91AUBRkZGaoG8pcuXcK1a8H1OcYYzp07F/bavkcX9cyt9fWgRITo6GhVwQp6bW85DtU7P5KK3lFdkAaM/cTemXJCbRIGBn9bJXjEJQgCVq9eHfb3trY2zJ49e9D5vf/++71CLCoqgtMZPgpGz9GTH3zwAdxuN/x+Pzo7O5Gamtp7jc/nw4gRas7qIARa94FnO5E7Lucl1Yk0YOg+XnfLF1ns1Bt1qiNIgBA9/RNAUPmRZjeiKA7oGdauXYsXXngBQFCMPeLZuHEjFixYgG+++QaFhYVwu929acrLy1FczBen0+/3w2az9ZbT2dk5oEh7IR+6quaq/hbAjLiGhnosZ/LvLwS/blY5PgCD74z6gzB6qKysHPD3pUuXYtOmTf26RcYYSkpKUFBQcJ2oAKC9vZ3bHkmSrntrfeaZZwaVzvvDSr4PTERtkS540H4amEo8ifm3OJqPnlPbswWajkL6DV8wyhkzZuDChQsYM2ZMyDEVEWHhwoVoaWnpnUkHgPr6+usWrgVBQGFhIRwOx4DbYAbDyJEjIQgCFEXBtm3bbhhok4igXDmqviAGyEn5twA7NVjLVazxdB2YRep3MhKk8f8GKe0h7nLfffddPPss32k+DocDbrdb16+A+g7uA4HAgHn7r/wd/lr168fEGJxF5Ya3synH5LFRszZzpIK/dj2IfOB9S1y0aBHX2hxjDBcvXjTt0zIiH/y167nSClx1rR1ThOXI/U/Ow1YZ5Krwa2+Dwe/3q94DlZmZiaQkfb9M79slJyQkDHRl9z1zBCiAlrrWhnkHe0p8b3gAA8mhl2sGlZoxfPXVV6q8j9bxVCjWrfs5Ts6KFSvChzyR68E7YmHcdawd04QlZ6xK4o22IFcvhNL6BXi7xJ4xzeOPDy7SrSzLmDJlCldZv8Tr9SItLa13eoMxhqVLl/a/kACltRLy0f6xfAYDgSBPXGVa3EJTv0f3nFxeRa3H+CKAMcB+51Ywm7YzLt58800sW7ZsUNfOnTsXL7/8sspJzSAdHR3YvXs3Xn/99eu6wQceeAAff/xxv+vJexmeo09xxyxkSQUHHZNWm3bAmOkHHWgLhEmwF30GptHx5uXl4fTp05ry4KGgoADV1dX9ukGCAs+B2dyHohAIzps5ECYAwJmh4ZQKBrlqDkjRFuXq1KlTukSOGCwxMTE4fPgwampq+otK8cJTNUfTE+/NfjZZm4XaMd1jAbzzWtfjKNoFrc/J5cuXkZOTo2rXgyRJyMvLG9S1EydOxJo1a5CWlhZGxAq6quZoCNkLywQbN92AHrTGhgYItt9thWBLh9bbamlpQWpq6sBxBBnDnDlzsHOnPjPa5G2E58hTms8EizZ4TTAc5neF3QjZDz2h7ZAHBu+RpxFo2aPZluTkZNTW1sLhCL1HXJIk7Nu3TzdRBVo+h3zkac1POWXPe0IXg3TAEuruwb2/mCeaRz/sU98Gc4yB1tsjItjtdvh8Pwc5EgQBXV1dsNn0mCMiUFcd5Brth/iasYNhICxjSA/uqjnE1O7nDgURHIX8W236Ul9fj/Hjx6OyshJTp/LHTOwLkReeqnu7G0DjAyCIcBbuslRbWqYr7MGXeEeKLhkxBs/Be+Fv+B9oPUcpIyMDHR0dOolKgb/+fchV93aPpzSKCjrWmY5YSuV96TpQzDsx3w8CQUyeBNutqwGB/xAOLRZA8cL7/SsItJzUr9It8gYYCst5rB6EzDkVeuXFwKC0nkLXwfvgv7Idhp0EBwAg+K98jK6D90HRU1TQt470xpJq70H+7tVypamab/9vGIIb6gApdz7E9HlgQhT0rwYCFB/kU/8Bcp0bgvwBlppf4Zjw5izdM9YJSwsLAOTvXilXmmp0FVc/GIOQ8BtIt7wIwZENXBfNdaAqouA/IgTaDiDQ+BGUth+G9jhGBggpUyrsE/5iWVEBESAsAJDP/61cuVgxxOJCdw9JABiYPR7MmQ4hLg/MlgQIMcHrAm4oXT+BuupA7kaQfLVPBkMNQRg1q8I+rsTSogIiRFg96DXPFYlYbZ7qRlh28B6KVltBCnEe+xPJkCDAl1xguSmFgYiYJ6AvP68rBrut4UrPSC2SPFUPEfn4R8+oYEL2Q08M6yDkDBCzH3oiEkUFDIPHXc+JVEvQ3SJWnfgcLBHpsfoSXVTBmhIXJVPPq3/EQsF96mMWJUe6qIBh4LH64jm5rEppPTY90uIcEghCUsFBx6S/Dpsg2JHVAoPA5TqeaD/9aiv5ZcsH0iQEP9GSM1YlJWRPbjPbHj2xds1rxHO2dJPSUD6fmRhDpx8MIAgQRhVvNutjUiMY1sLqofNc6Xuscc8CBHym3TCBgh+QJubfEj3hz+YGTzSAm0JYfWk9u3uEU/rxLeXi9meZ4g+ela63Q2PBxW4hdhSQNOMdtz/npaTcf+I/9ygCuemE9QuE9lN/Gid56ncIcuOt8HnUHcrPguvNjAFQCIhyQLGP/N7vyLh/RN7KMzDwzE+rcbML6zrKysrE2UVIYu6r6Tah47mAqxpSTPbz5HX1URAAMfYn8lz6hCVMhVeJ20DO+MtGRXyIFP4fJL0N86HkGmsAAAAASUVORK5CYII=
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Sends a command from Symantec Endpoint Protection Manager to Symantec
+        Endpoint Protection clients to request an active scan on the client(s) computer
+        or group(s).
+      parameters:
+      - description: The list of computers on which to run the command.
+        example: Text List from an application record field.
+        in: query
+        name: Computer ID(s)
+        required: false
+        schema: {type: string}
+      - description: The list of groups on which to run the command.
+        example: Text List from an application record field.
+        in: query
+        name: Group ID(s)
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Symantec Endpoint Protection Manager Active Scan
+  tmp1:
+    post:
+      description: Add Fingerprint to Symantec Endpoint Protection Group for System
+        Lockdown
+      parameters:
+      - description: ID of Symantec Endpoint Protection Group
+        example: 76c0783596f8dc77528ff692a9dc82d1
+        in: query
+        name: Group ID
+        required: true
+        schema: {type: string}
+      - description: ID of Fingerprint list in Symantec Endpoint Protection
+        example: 25c0783596f8dc77528ff692a9dc82d1
+        in: query
+        name: Fingerprint ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Symantec Endpoint Protection Manager Add Fingerprint Blacklist to Group
+  tmp10:
+    post:
+      description: Updates a Blacklist Policy on Symantec Endpoint Protection Manager
+      parameters:
+      - description: The blacklist file's ID.
+        example: 25c0783596f8dc77528ff692a9dc82d1
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      - description: The domain ID to which the blacklist file is applied.
+        example: ''
+        in: query
+        name: Domain ID
+        required: true
+        schema: {type: string}
+      - description: The blacklist file's hash type. Possible values are MD5 or SHA256.
+        example: ''
+        in: query
+        name: Hash Type
+        required: false
+        schema: {type: string}
+      - description: The blacklist file's description.
+        example: ''
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: The blacklist file
+        example: ac20a4ed0c586b32e80f2156188cd1a2 C:/Boot/bg-BG/bootmgr.exe.mui, Attachment
+          Field.
+        in: query
+        name: File
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Symantec Endpoint Protection Manager Update A Blacklist Policy
+  tmp2:
+    post:
+      description: Creates a blacklist policy from a file fingerprint list to Symantec
+        Endpoint Protection Manager.
+      parameters:
+      - description: Blacklist file to upload to Symantec Endpoint Protection as created
+          using checksum.exe provided by Symantec Endpoint Protection Manager
+        example: Attachment Field
+        in: query
+        name: File
+        required: true
+        schema: {type: string}
+      - description: The MD5 domain ID to which the blacklist file is applied.
+        example: ''
+        in: query
+        name: Domain ID
+        required: true
+        schema: {type: string}
+      - description: The blacklist file's description.
+        example: ''
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: The blacklist file's hash type. Possible values are MD5 or SHA256.
+          Defaults to MD5.
+        example: ''
+        in: query
+        name: Hash Type
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Symantec Endpoint Protection Manager Create A Blacklist Policy
+  tmp3:
+    post:
+      description: Deletes a Blacklist on Symantec Endpoint Protection Manager.
+      parameters:
+      - description: The blacklist file's ID.
+        example: 25c0783596f8dc77528ff692a9dc82d1
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Symantec Endpoint Protection Manager Delete A Blacklist Policy
+  tmp4:
+    post:
+      description: Sends a command from Symantec Endpoint Protection Manager to Symantec
+        Endpoint Protection clients to request an full scan on the client(s) computer
+        or group(s).
+      parameters:
+      - description: The list of computers on which to run the command.
+        example: Text List from an application record field.
+        in: query
+        name: Computer ID(s)
+        required: false
+        schema: {type: string}
+      - description: The list of groups on which to run the command.
+        example: Text List from an application record field.
+        in: query
+        name: Group ID(s)
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Symantec Endpoint Protection Manager Full Scan
+  tmp5:
+    post:
+      description: 'Gets the information about the computers in a specified domain '
+      parameters:
+      - description: The column by which the results are sorted. Possible values are
+          COMPUTER_NAME (Default value), COMPUTER_ID, COMPUTER_DOMAIN_NAME, or DOMAIN_ID.
+        example: COMPUTER_NAME
+        in: query
+        name: Sort
+        required: false
+        schema: {type: string}
+      - description: Indicates when a computer last updated its status. The default
+          value of 0 gets all the results.
+        example: '0'
+        in: body
+        name: Last Update
+        required: false
+        schema: {type: string}
+      - description: Returns a reduced set of computer information, if true.
+        example: True or False
+        in: query
+        name: Verbose
+        required: false
+        schema: {type: boolean}
+      - description: List of features to return operational state information in reduced
+          mode. Possible values are av, mem, fw, ips, tdad
+        example: B44691C60A20008B168FF0033488FE19
+        in: query
+        name: Feature
+        required: false
+        schema: {type: string}
+      - description: The host name of computer. Wild card is supported as '*'
+        example: Johns-MacBook-Pro or WIN-77HIH42UHO9
+        in: query
+        name: Computer Name
+        required: false
+        schema: {type: string}
+      - description: The MAC address of computer. Wild card is supported as '*'.
+        example: 00-50-56-BD-95-B3
+        in: query
+        name: MAC Address
+        required: false
+        schema: {type: string}
+      - description: Specifies whether the results are in ascending order (ASC) or
+          descending order (DESC).
+        example: ASEC or DESC
+        in: query
+        name: Order
+        required: false
+        schema: {type: string}
+      - description: The list of OS to filter.
+        example: CentOs, Debian, Fedora, MacOSX, Oracle, OSX, RedHat, SUSE, Ubuntu,
+          Win10, Win2K, Win7, Win8, Win81, WinEmb7, WinEmb8, WinEmb81, WinFundamental,
+          WinNT, Win2K3, Win2K8, Win2K8R2, Win2K12, Win2K12R2, Win2K16, WinVista,
+          WinXP, WinXPEmb, WinXPProf64
+        in: query
+        name: Operating System
+        required: false
+        schema: {type: string}
+      - description: The domain from which to get computer information.
+        example: B44691C60A20008B168FF0033488FE19
+        in: query
+        name: Domain ID
+        required: false
+        schema: {type: string}
+      - description: Limit the number of results returned. (Default is 10)
+        example: '9'
+        in: body
+        name: Limit Results
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Symantec Endpoint Protection Manager Get Computers
+  tmp6:
+    post:
+      description: Gets Domains from Symantec Endpoint Protection Manager
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Symantec Endpoint Protection Manager Get Domains
+  tmp7:
+    post:
+      description: Gets the file fingerprint list for a specified Name as a set of
+        hash values
+      parameters:
+      - description: Name of File
+        example: ''
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: ID of File
+        example: 25c0783596f8dc77528ff692a9dc82d1
+        in: query
+        name: ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Symantec Endpoint Protection Manager Get File Fingerprint By Name
+  tmp8:
+    post:
+      description: Get Groups from Symantec Endpoint Protection
+      parameters:
+      - description: The column by which the results are sorted. The default is by
+          name.
+        example: '0'
+        in: query
+        name: Sort
+        required: false
+        schema: {type: string}
+      - description: Retrieve Group Information from a specific domain.
+        example: B44691C60A20008B168FF0033488FE19
+        in: query
+        name: Domain ID
+        required: false
+        schema: {type: string}
+      - description: Specifies whether the results are in ascending order (ASC) or
+          descending order (DESC).
+        example: ASEC or DESC
+        in: query
+        name: Order
+        required: false
+        schema: {type: string}
+      - description: Limit the number of results returned. (Default is 10)
+        example: '9'
+        in: body
+        name: Limit Results
+        required: false
+        schema: {type: string}
+      - description: The full path name of the group.
+        example: My Company
+        in: query
+        name: Full Path Name
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Symantec Endpoint Protection Manager Get Groups
+  tmp9:
+    post:
+      description: Gets The Details Of A Command Status
+      parameters:
+      - description: The command ID for which details are needed.
+        example: 1849C2F12F99421F843583BE0B13D406
+        in: query
+        name: Command ID
+        required: true
+        schema: {type: string}
+      - description: "The column by which the results are sorted. The default is by\
+          \ command\u2019s start time."
+        example: '20'
+        in: body
+        name: Sort
+        required: false
+        schema: {type: string}
+      - description: Specifies whether the results are in ascending order or descending
+          order.
+        example: ASC for ascending order or DESC for descending order.
+        in: query
+        name: Order
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Symantec Endpoint Protection Manager Get Status Of A Command
+tags:
+- {name: Endpoint Security & Management}

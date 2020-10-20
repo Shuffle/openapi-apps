@@ -1,0 +1,325 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        message: {type: string}
+      type: object
+    tmp1:
+      properties:
+        data_attributes_caseType: {type: string}
+        data_attributes_created: {type: string}
+        data_attributes_hint: {type: string}
+        data_attributes_investigated: {type: string}
+        data_attributes_isAutomatic: {type: string}
+        data_attributes_lastModified: {type: string}
+        data_attributes_name: {type: string}
+        data_attributes_owner: {type: string}
+        data_attributes_priority: {type: string}
+        data_attributes_source: {type: string}
+        data_attributes_status: {type: string}
+        data_attributes_summary: {type: string}
+        data_id: {type: string}
+        data_type: {type: string}
+        raw_json: {type: string}
+      type: object
+    tmp2:
+      properties:
+        attributes_createdBy: {type: string}
+        attributes_createdOn: {type: string}
+        attributes_criteria: {type: string}
+        attributes_epoTenantGUID: {type: string}
+        attributes_executeOnAsci: {type: string}
+        attributes_family: {type: string}
+        attributes_modifiedBy: {type: string}
+        attributes_modifiedOn: {type: string}
+        attributes_name: {type: string}
+        attributes_notes: {type: string}
+        attributes_tagGroupId: {type: string}
+        attributes_uniqueKey: {type: string}
+        attributes_whereClause: {type: string}
+        id: {type: string}
+        links_self: {type: string}
+        raw_json: {type: string}
+        type: {type: string}
+      type: object
+    tmp3:
+      properties:
+        attributes_agentGuid: {type: string}
+        attributes_agentPlatform: {type: string}
+        attributes_agentState: {type: string}
+        attributes_agentVersion: {type: string}
+        attributes_computerName: {type: string}
+        attributes_cpuSpeed: {type: string}
+        attributes_cpuType: {type: string}
+        attributes_domainName: {type: string}
+        attributes_epoTenantGUID: {type: string}
+        attributes_excludedTags: {type: string}
+        attributes_ipAddress: {type: string}
+        attributes_ipHostName: {type: string}
+        attributes_isPortable: {type: string}
+        attributes_lastUpdate: {type: string}
+        attributes_macAddress: {type: string}
+        attributes_managed: {type: string}
+        attributes_managedState: {type: string}
+        attributes_name: {type: string}
+        attributes_nodeCreatedDate: {type: string}
+        attributes_nodePath: {type: string}
+        attributes_numOfCpu: {type: string}
+        attributes_osPlatform: {type: string}
+        attributes_osType: {type: string}
+        attributes_osVersion: {type: string}
+        attributes_parentId: {type: string}
+        attributes_tags: {type: string}
+        attributes_tenantId: {type: string}
+        attributes_totalPhysicalMemory: {type: string}
+        attributes_userName: {type: string}
+        id: {type: string}
+        links_self: {type: string}
+        raw_json: {type: string}
+        type: {type: string}
+      type: object
+    tmp4:
+      properties:
+        attributes_agentguid: {type: string}
+        attributes_analyzer: {type: string}
+        attributes_analyzerdatversion: {type: string}
+        attributes_analyzerdetectionmethod: {type: string}
+        attributes_analyzerengineversion: {type: string}
+        attributes_analyzerhostname: {type: string}
+        attributes_analyzeripv4: {type: string}
+        attributes_analyzeripv6: {type: string}
+        attributes_analyzermac: {type: string}
+        attributes_analyzername: {type: string}
+        attributes_analyzerversion: {type: string}
+        attributes_autoguid: {type: string}
+        attributes_detectedutc: {type: string}
+        attributes_nodepath: {type: string}
+        attributes_receivedutc: {type: string}
+        attributes_sourcehostname: {type: string}
+        attributes_sourceipv4: {type: string}
+        attributes_sourceipv6: {type: string}
+        attributes_sourcemac: {type: string}
+        attributes_sourceprocessname: {type: string}
+        attributes_sourceurl: {type: string}
+        attributes_sourceusername: {type: string}
+        attributes_targetfilename: {type: string}
+        attributes_targethostname: {type: string}
+        attributes_targetipv4: {type: string}
+        attributes_targetipv6: {type: string}
+        attributes_targetmac: {type: string}
+        attributes_targetport: {type: string}
+        attributes_targetprocessname: {type: string}
+        attributes_targetprotocol: {type: string}
+        attributes_targetusername: {type: string}
+        attributes_threatactiontaken: {type: string}
+        attributes_threatcategory: {type: string}
+        attributes_threateventid: {type: string}
+        attributes_threathandled: {type: string}
+        attributes_threatname: {type: string}
+        attributes_threatseverity: {type: string}
+        attributes_threattype: {type: string}
+        attributes_timestamp: {type: string}
+        id: {type: string}
+        links_self: {type: string}
+        raw_json: {type: string}
+        type: {type: string}
+      type: object
+    tmp5:
+      properties:
+        message: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of McAfee MVISION
+  title: McAfee MVISION
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Add a tag to a device.
+      parameters:
+      - description: The ID of the device to add the tag to
+        example: '260'
+        in: body
+        name: Device ID
+        required: true
+        schema: {type: string}
+      - description: The name of the tag
+        example: Escalated
+        in: query
+        name: Tag Name
+        required: false
+        schema: {type: string}
+      - description: the ID of the tag
+        example: '94'
+        in: body
+        name: Tag ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: McAfee MVISION Add Tag to Device
+  tmp1:
+    post:
+      description: Create an Investigation in EDR.
+      parameters:
+      - description: The type of the investigation
+        example: Malware
+        in: query
+        name: Case Type
+        required: true
+        schema: {type: string}
+      - description: 'The type of the evidence.  Valid values: Device, IP, Identifier,
+          FQDN'
+        example: FQDN
+        in: query
+        name: Evidence Type
+        required: true
+        schema: {type: string}
+      - description: the value of the evidence.
+        example: 123.123.123.123
+        in: query
+        name: Evidence Value
+        required: true
+        schema: {type: string}
+      - description: 'The priority of the investigation. Valid valies: Low, Medium,
+          High'
+        example: High
+        in: query
+        name: Case Priority
+        required: false
+        schema: {type: string}
+      - description: Event Source
+        example: A source
+        in: query
+        name: Event Src
+        required: false
+        schema: {type: string}
+      - description: Then name for the investigation.
+        example: Test Incident Name
+        in: query
+        name: Case Name
+        required: false
+        schema: {type: string}
+      - description: Hint
+        example: hint
+        in: query
+        name: Case Hint
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: McAfee MVISION Create EDR Investigation
+  tmp2:
+    post:
+      description: Get all tags associated with a device.
+      parameters:
+      - description: Grab tags of the device with this ID.
+        example: '260'
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: McAfee MVISION Get Device Tags
+  tmp3:
+    post:
+      description: Retrieve devices matching the given criteria.
+      parameters:
+      - description: The GUID of the Agent
+        example: B9634AA0-5114-43D8-AE66-3586210F1F60
+        in: query
+        name: Agent GUID
+        required: true
+        schema: {type: string}
+      - description: The maximum number of devices to retrieve
+        example: '3'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: McAfee MVISION Get Devices
+  tmp4:
+    post:
+      description: Retrieve Events from McAfee MVISION ePO.
+      parameters:
+      - description: Retrieve all events with a timestamp after this input.  For info
+          on the relative time format, see the plugin documentation.
+        example: -20 minutes
+        in: query
+        name: Since
+        required: false
+        schema: {type: string}
+      - description: Retrieve all events with a timestamp before this input.  For
+          info on the relative time format, see the plugin documentation.
+        example: now
+        in: query
+        name: Until
+        required: false
+        schema: {type: string}
+      - description: The maximum number of events to retrieve.
+        example: '3'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: McAfee MVISION Get Events
+  tmp5:
+    post:
+      description: Remove a tag from a device.
+      parameters:
+      - description: The ID of the device to remove the tag from
+        example: '260'
+        in: body
+        name: Device ID
+        required: true
+        schema: {type: string}
+      - description: The name of the tag
+        example: Escalated
+        in: query
+        name: Tag Name
+        required: false
+        schema: {type: string}
+      - description: the ID of the tag
+        example: '94'
+        in: body
+        name: Tag ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: McAfee MVISION Remove Tag from Device
+tags:
+- {name: Endpoint Security & Management}

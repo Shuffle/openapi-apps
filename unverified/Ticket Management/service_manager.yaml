@@ -1,0 +1,534 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        AffectedCI: {type: string}
+        AlertStatus: {type: string}
+        Area: {type: string}
+        Assignee: {type: string}
+        AssignmentGroup: {type: string}
+        Category: {type: string}
+        ClosedBy: {type: string}
+        ClosedTime: {type: string}
+        ClosureCode: {type: string}
+        Company: {type: string}
+        Contact: {type: string}
+        Description: {type: string}
+        Escalated: {type: string}
+        EscalationTeams: {type: string}
+        Impact: {type: string}
+        IncidentID: {type: string}
+        IncidentManager: {type: string}
+        JournalUpdates: {type: string}
+        Location: {type: string}
+        MajorIncident: {type: string}
+        OpenTime: {type: string}
+        OpenedBy: {type: string}
+        Phase: {type: string}
+        ProblemType: {type: string}
+        Service: {type: string}
+        Solution: {type: string}
+        Source: {type: string}
+        Source_text: {type: string}
+        Status: {type: string}
+        Subarea: {type: string}
+        TicketOwner: {type: string}
+        Title: {type: string}
+        UpdatedBy: {type: string}
+        UpdatedTime: {type: string}
+        Urgency: {type: string}
+      type: object
+    tmp1:
+      properties:
+        AffectedCI: {type: string}
+        AlertStatus: {type: string}
+        Area: {type: string}
+        Assignee: {type: string}
+        AssignmentGroup: {type: string}
+        Category: {type: string}
+        ClosedBy: {type: string}
+        ClosedTime: {type: string}
+        ClosureCode: {type: string}
+        Company: {type: string}
+        Contact: {type: string}
+        Description: {type: string}
+        Escalated: {type: string}
+        EscalationTeams: {type: string}
+        Impact: {type: string}
+        IncidentID: {type: string}
+        IncidentManager: {type: string}
+        JournalUpdates: {type: string}
+        Location: {type: string}
+        MajorIncident: {type: string}
+        OpenTime: {type: string}
+        OpenedBy: {type: string}
+        Phase: {type: string}
+        ProblemType: {type: string}
+        Service: {type: string}
+        Solution: {type: string}
+        Source: {type: string}
+        Source_text: {type: string}
+        Status: {type: string}
+        Subarea: {type: string}
+        TicketOwner: {type: string}
+        Title: {type: string}
+        UpdatedBy: {type: string}
+        UpdatedTime: {type: string}
+        Urgency: {type: string}
+      type: object
+    tmp2:
+      properties:
+        AffectedCI: {type: string}
+        AlertStatus: {type: string}
+        Area: {type: string}
+        Assignee: {type: string}
+        AssignmentGroup: {type: string}
+        Category: {type: string}
+        ClosedBy: {type: string}
+        ClosedTime: {type: string}
+        ClosureCode: {type: string}
+        Company: {type: string}
+        Contact: {type: string}
+        Description: {type: string}
+        Escalated: {type: string}
+        EscalationTeams: {type: string}
+        Impact: {type: string}
+        IncidentID: {type: string}
+        IncidentManager: {type: string}
+        JournalUpdates: {type: string}
+        Location: {type: string}
+        MajorIncident: {type: string}
+        OpenTime: {type: string}
+        OpenedBy: {type: string}
+        Phase: {type: string}
+        ProblemType: {type: string}
+        Service: {type: string}
+        Solution: {type: string}
+        Source: {type: string}
+        Source_text: {type: string}
+        Status: {type: string}
+        Subarea: {type: string}
+        TicketOwner: {type: string}
+        Title: {type: string}
+        UpdatedBy: {type: string}
+        UpdatedTime: {type: string}
+        Urgency: {type: string}
+      type: object
+    tmp3:
+      properties:
+        AffectedCI: {type: string}
+        AlertStatus: {type: string}
+        Area: {type: string}
+        Assignee: {type: string}
+        AssignmentGroup: {type: string}
+        Category: {type: string}
+        ClosedBy: {type: string}
+        ClosedTime: {type: string}
+        ClosureCode: {type: string}
+        Company: {type: string}
+        Contact: {type: string}
+        Description: {type: string}
+        Escalated: {type: string}
+        EscalationTeams: {type: string}
+        Impact: {type: string}
+        IncidentID: {type: string}
+        IncidentManager: {type: string}
+        JournalUpdates: {type: string}
+        Location: {type: string}
+        MajorIncident: {type: string}
+        OpenTime: {type: string}
+        OpenedBy: {type: string}
+        Phase: {type: string}
+        ProblemType: {type: string}
+        Service: {type: string}
+        Solution: {type: string}
+        Source: {type: string}
+        Source_text: {type: string}
+        Status: {type: string}
+        Subarea: {type: string}
+        TicketOwner: {type: string}
+        Title: {type: string}
+        UpdatedBy: {type: string}
+        UpdatedTime: {type: string}
+        Urgency: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Micro Focus Service Manager
+  title: Micro Focus Service Manager
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAACv0lEQVR4nO3bwVHjMBSA4eeEmb3iCQVQAtsBWwKdwMmevQRu8YntZEtgO4AOdgtIxrlyCN4LNoljO5Js2ZLyfzPMmFiRBXl+z9IoIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA7os6zaV6MNI4vq1hvTKfaN71P5xq649HhY9/F7k2yq+/H/a3/isyvy+vOjDp3SbJ5PtlmihskVNH8pvnE/Lo6TDa//Q+saHbfeZ6gsivdvFTHZZbMFncXU41nUGleNKb+JL8ddRwqZdk00J3te3Z70CaYUlj6md8cvRbJy3FDDGo/KMvjNC/CyFgiIh/yKvuTkf07rNhtJZpfjj+oBqqTDZ8km2f5JrGIVFnL/8Aq5EkiWYrIVyquP9BnV7H3z1oujz9bPFTHnzfOReeAbd1dQ/6TsvhR0nzZ2neIGcIDYTxjETzO8b8UVj7+HMxQRMIKuP2/ZZlfyrvkjeccEUbGEhFZLX7UXnlobDe1NC+qH1NP8faoT8eEE1gi9anvr+kGMoJ6lnIsuAIqhZ+mLAtjf7irOHItoErhBda5aVpu0WUhOMMqhecoix8PfnckgxFYfc3keAuJkt2/wcZQz1LJOm9p2V+5wn5Cd42eYoHUwakz9JGxYAWBBSsILFjh33LD0PvAk/Vr+3Zbzb5KQ2+409mD33R9lX5VKT4Dk7FMgkqk/UPpE/hjLhWYXkvxfQQWrPCvFNYNtTxh8jWyKfr0hP+Bhf4sfFGDwIIazcrgf2Cp3Emur+a7Pj4D/gcW+tMpc21fsa9hVgg9issz3RnL1mxlyNQfYBkZRbF7M17DU0ApdIHuyvoQFMrZAc0kQymEFWSsc2U5SxJYJRvPk2fcJ6UQVhBYptr2fhvvge/os9htjfscusz1GQsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwkf9l1e0/dXvZpQAAAABJRU5ErkJggg==
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Micro Focus Service Manager Create a ticket.
+      parameters:
+      - description: The Subcategory of the incident
+        example: failure
+        in: query
+        name: Subcategory
+        required: false
+        schema: {type: string}
+      - description: The assignee of the incident
+        example: Change.Analyst
+        in: query
+        name: Assignee
+        required: false
+        schema: {type: string}
+      - description: The assignment group of the incident
+        example: Application
+        in: query
+        name: Assignment Group
+        required: false
+        schema: {type: string}
+      - description: The category of the incident
+        example: incident
+        in: query
+        name: Category
+        required: false
+        schema: {type: string}
+      - description: the company of the incident
+        example: advantage
+        in: query
+        name: Company
+        required: false
+        schema: {type: string}
+      - description: The contact person of the incident
+        example: CAFFREY, AARON
+        in: query
+        name: Contact Person
+        required: false
+        schema: {type: string}
+      - description: The description of the incident
+        example: description text
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: The impact of the incident
+        example: '3'
+        in: query
+        name: Impact
+        required: false
+        schema: {type: string}
+      - description: The location of the incident
+        example: Australia
+        in: query
+        name: Location
+        required: false
+        schema: {type: string}
+      - description: The person who opened the incident
+        example: falcon
+        in: query
+        name: Opened By
+        required: false
+        schema: {type: string}
+      - description: The primary affected service of the incident
+        example: CI1001030
+        in: query
+        name: Primary Affected Service
+        required: true
+        schema: {type: string}
+      - description: the solution to the incident
+        example: solution text
+        in: query
+        name: Solution
+        required: false
+        schema: {type: string}
+      - description: The ID of the source of the incident
+        example: '1'
+        in: query
+        name: Source ID
+        required: false
+        schema: {type: string}
+      - description: The status of the incident
+        example: open
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: The area of the incident
+        example: function or feature not working
+        in: query
+        name: Area
+        required: false
+        schema: {type: string}
+      - description: The title of the incident
+        example: Test title
+        in: query
+        name: Title
+        required: true
+        schema: {type: string}
+      - description: The urgency of the incident
+        example: '3'
+        in: query
+        name: Urgency
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Micro Focus Service Manager Create Ticket
+  tmp1:
+    post:
+      description: Get an individual Incident.
+      parameters:
+      - description: ID of the incident
+        example: '123456'
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Micro Focus Service Manager Get Ticket
+  tmp2:
+    post:
+      description: Get all Incidents matching the given query.
+      parameters:
+      - description: Limit the search to a subcategory
+        example: failure
+        in: query
+        name: Subcategory
+        required: false
+        schema: {type: string}
+      - description: Limit the search to an assignee
+        example: Change.Analyst
+        in: query
+        name: Assignee
+        required: false
+        schema: {type: string}
+      - description: Limit the search to an assignment group
+        example: Application
+        in: query
+        name: Assignment Group
+        required: false
+        schema: {type: string}
+      - description: Limit the search to a completion code
+        example: Diagnosed Successfully
+        in: query
+        name: Completion Code
+        required: false
+        schema: {type: string}
+      - description: Limit the search to a company
+        example: advantage
+        in: query
+        name: Company
+        required: false
+        schema: {type: string}
+      - description: Limit the search to a contact person
+        example: CAFFREY, AARON
+        in: query
+        name: Contact Person
+        required: false
+        schema: {type: string}
+      - description: Limit the search to a specific impact value
+        example: '3'
+        in: query
+        name: Impact
+        required: false
+        schema: {type: string}
+      - description: Limit the search with the person who opened the incident
+        example: falcon
+        in: query
+        name: Opened By
+        required: false
+        schema: {type: string}
+      - description: Limit the search to a phase
+        example: Closure
+        in: query
+        name: Phase
+        required: false
+        schema: {type: string}
+      - description: Limit the search to a primary affected service
+        example: CI1001030
+        in: query
+        name: Primary Affected Service
+        required: false
+        schema: {type: string}
+      - description: Limit the search to a status
+        example: open
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: The area to search for
+        example: function or feature not working
+        in: query
+        name: Area
+        required: false
+        schema: {type: string}
+      - description: The title to search for
+        example: Test title
+        in: query
+        name: Title
+        required: false
+        schema: {type: string}
+      - description: limit the search with the person who last update the incident
+        example: falcon
+        in: query
+        name: Updated By
+        required: false
+        schema: {type: string}
+      - description: The urgency to search for
+        example: '3'
+        in: query
+        name: Urgency
+        required: false
+        schema: {type: string}
+      - description: The number of incidents to retrieve. defaults to 10.
+        example: '250'
+        in: body
+        name: Count
+        required: false
+        schema: {type: string}
+      - description: Retrieve only incidents opened before this time
+        example: '2020-01-27T22:13:45+00:00'
+        in: query
+        name: Opened Time Maximum
+        required: false
+        schema: {type: string}
+      - description: Retrieve only incidents opened after this time
+        example: '2010-01-27T02:13:45+00:00'
+        in: query
+        name: Opened Time Minimum
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Micro Focus Service Manager Get Incidents
+  tmp3:
+    post:
+      description: Micro Focus Service Manager Update a ticket.
+      parameters:
+      - description: ID of the incident
+        example: IM123456
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      - description: The new Subcategory for the incident
+        example: failure
+        in: query
+        name: Subcategory
+        required: false
+        schema: {type: string}
+      - description: The new assignee for the incident
+        example: Change.Analyst
+        in: query
+        name: Assignee
+        required: false
+        schema: {type: string}
+      - description: The new assignment group for the incident
+        example: Application
+        in: query
+        name: Assignment Group
+        required: false
+        schema: {type: string}
+      - description: The user that closed the incident
+        example: Incident.Analyst
+        in: query
+        name: Closed By
+        required: false
+        schema: {type: string}
+      - description: The new closure code for the incident
+        example: Diagnosed Successfully
+        in: query
+        name: Completion Code
+        required: false
+        schema: {type: string}
+      - description: The new company for the incident
+        example: advantage
+        in: query
+        name: Company
+        required: false
+        schema: {type: string}
+      - description: The new contact person for the incident
+        example: CAFFREY, AARON
+        in: query
+        name: Contact Person
+        required: false
+        schema: {type: string}
+      - description: The new description for the incident
+        example: description text
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: The new impact value for the incident
+        example: '3'
+        in: query
+        name: Impact
+        required: false
+        schema: {type: string}
+      - description: The new location for the incident
+        example: Australia
+        in: query
+        name: Location
+        required: false
+        schema: {type: string}
+      - description: The new primary affected service for the incident
+        example: CI1001030
+        in: query
+        name: Primary Affected Service
+        required: false
+        schema: {type: string}
+      - description: The new solution for the incident
+        example: solution text
+        in: query
+        name: Solution
+        required: false
+        schema: {type: string}
+      - description: The ID of the new source for the incident
+        example: '1'
+        in: query
+        name: Source ID
+        required: false
+        schema: {type: string}
+      - description: The new status for the incident
+        example: open
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: The new area for the incident
+        example: function or feature not working
+        in: query
+        name: Area
+        required: false
+        schema: {type: string}
+      - description: The new title for the incident
+        example: Test title
+        in: query
+        name: Title
+        required: false
+        schema: {type: string}
+      - description: The new urgency of the incident
+        example: '3'
+        in: query
+        name: Urgency
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Micro Focus Service Manager Update Ticket
+tags:
+- {name: Ticket Management}

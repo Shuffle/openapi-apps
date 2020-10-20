@@ -1,0 +1,473 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        accountId: {type: string}
+        account_deployments: {type: string}
+        affected_hosts: {type: string}
+        alphaId: {type: string}
+        appliances: {type: string}
+        assets_al__deployment: {type: string}
+        assets_al__region: {type: string}
+        assets_al__role: {type: string}
+        assets_al__subnet: {type: string}
+        assets_al__vpc: {type: string}
+        associatedEventCount: {type: string}
+        associatedLogCount: {type: string}
+        attacker_ip: {type: string}
+        attacker_lset_ip: {type: string}
+        autoClosed: {type: string}
+        autoClosed_by: {type: string}
+        autoClosed_userName: {type: string}
+        closed_time: {type: string}
+        createTime: {type: string}
+        createtime_str: {type: string}
+        customer: {type: string}
+        customer_status_status: {type: string}
+        customer_status_status_change_time: {type: string}
+        elaboration_lastState: {type: string}
+        elaboration_startTime: {type: string}
+        elaboration_type: {type: string}
+        findingCount: {type: string}
+        first_closed_time: {type: string}
+        generator_FQDName: {type: string}
+        generator_datacenter: {type: string}
+        generator_hostName: {type: string}
+        generator_id: {type: string}
+        generator_name: {type: string}
+        generator_time: {type: string}
+        generator_type: {type: string}
+        has_assets: {type: string}
+        humanFriendlyId: {type: string}
+        incidentId: {type: string}
+        incidentState: {type: string}
+        incident_attackClassId: {type: string}
+        incident_attackClassId_str: {type: string}
+        incident_auto_acknowledged_by: {type: string}
+        incident_auto_auto_closed: {type: string}
+        incident_auto_auto_escalated: {type: string}
+        incident_base_incident_id: {type: string}
+        incident_base_incident_keyedon_value: {type: string}
+        incident_begin_time: {type: string}
+        incident_begin_time_str: {type: string}
+        incident_description: {type: string}
+        incident_end_time: {type: string}
+        incident_end_time_str: {type: string}
+        incident_escalated: {type: string}
+        incident_escalatedBy: {type: string}
+        incident_escalationTime: {type: string}
+        incident_evolution: {type: string}
+        incident_ngx_id: {type: string}
+        incident_prefetch: {type: string}
+        incident_subType: {type: string}
+        incident_summary: {type: string}
+        incident_threatRating: {type: string}
+        incident_type: {type: string}
+        incident_update_version: {type: string}
+        logical_sort_attackClassId_str__num_score: {type: string}
+        logical_sort_attackClassId_str__score: {type: string}
+        logical_sort_source_keyword__num_score: {type: string}
+        logical_sort_source_keyword__score: {type: string}
+        logical_sort_threatRating__num_score: {type: string}
+        logical_sort_threatRating__score: {type: string}
+        observable_category: {type: string}
+        observable_dedupHint: {type: string}
+        observable_duration: {type: string}
+        observable_facts_url: {type: string}
+        observable_id: {type: string}
+        observable_startTime: {type: string}
+        retries: {type: string}
+        snooze_status_period_ms: {type: string}
+        snooze_status_reason_code: {type: string}
+        snooze_status_snoozed: {type: string}
+        source_keyword: {type: string}
+        sources: {type: string}
+        ui_version: {type: string}
+        updateTime: {type: string}
+        updatetime_str: {type: string}
+        victim_ip: {type: string}
+        victim_lset: {type: string}
+      type: object
+    tmp2:
+      properties:
+        accountId: {type: string}
+        all_assets: {type: string}
+        apex: {type: string}
+        appliances: {type: string}
+        assets_al__deployment: {type: string}
+        associatedEventCount: {type: string}
+        associatedEventSignatures: {type: string}
+        associatedLogCount: {type: string}
+        attacker_ip: {type: string}
+        attacker_lset_ip: {type: string}
+        category: {type: string}
+        closed_time: {type: string}
+        createTime: {type: string}
+        createtime_str: {type: string}
+        customer: {type: string}
+        customer_notification_time_notification_date: {type: string}
+        customer_notification_time_notification_date_str: {type: string}
+        customer_notification_time_notification_status: {type: string}
+        customer_notification_time_notified_by: {type: string}
+        customer_notification_time_notified_by_username: {type: string}
+        customer_notification_time_notified_date: {type: string}
+        customer_notification_time_notified_date_str: {type: string}
+        customer_status_status: {type: string}
+        customer_status_status_change_time: {type: string}
+        defaultThreatRating: {type: string}
+        elaboration_lastState: {type: string}
+        elaboration_priority: {type: string}
+        elaboration_startTime: {type: string}
+        elaboration_time: {type: string}
+        elaboration_type: {type: string}
+        findingCount: {type: string}
+        first_closed_time: {type: string}
+        generator_FQDName: {type: string}
+        generator_datacenter: {type: string}
+        generator_hostName: {type: string}
+        generator_id: {type: string}
+        generator_name: {type: string}
+        generator_time: {type: string}
+        generator_type: {type: string}
+        has_assets: {type: string}
+        humanFriendlyId: {type: string}
+        incidentId: {type: string}
+        incident_attackClassId: {type: string}
+        incident_attackClassId_str: {type: string}
+        incident_auto_acknowledged_by: {type: string}
+        incident_auto_auto_closed: {type: string}
+        incident_auto_auto_escalated: {type: string}
+        incident_base_incident_id: {type: string}
+        incident_base_incident_keyedon_value: {type: string}
+        incident_begin_time: {type: string}
+        incident_begin_time_str: {type: string}
+        incident_description: {type: string}
+        incident_end_time: {type: string}
+        incident_end_time_str: {type: string}
+        incident_escalated: {type: string}
+        incident_escalatedBy: {type: string}
+        incident_evolution_tree_alphaId: {type: string}
+        incident_evolution_tree_escalated: {type: string}
+        incident_evolution_tree_escalatedBy: {type: string}
+        incident_evolution_tree_evolved_from: {type: string}
+        incident_evolution_tree_incidentId: {type: string}
+        incident_evolution_tree_summary: {type: string}
+        incident_evolution_tree_threatRating: {type: string}
+        incident_ngx_id: {type: string}
+        incident_prefetch: {type: string}
+        incident_subType: {type: string}
+        incident_summary: {type: string}
+        incident_threatRating: {type: string}
+        incident_type: {type: string}
+        iris_notifications: {type: string}
+        notification_responses_code: {type: string}
+        notification_responses_created_at: {type: string}
+        notification_responses_id: {type: string}
+        notification_responses_status: {type: string}
+        notification_responses_subkey: {type: string}
+        notification_responses_who: {type: string}
+        shard_key: {type: string}
+        snooze_status_period_ms: {type: string}
+        snooze_status_reason_code: {type: string}
+        snooze_status_snoozed: {type: string}
+        sources: {type: string}
+        updateTime: {type: string}
+        updatetime_str: {type: string}
+        victim_ip: {type: string}
+        victim_lset_ip: {type: string}
+      type: object
+    tmp3:
+      properties:
+        __appliance_name: {type: string}
+        __appliance_uuid: {type: string}
+        __contentType: {type: string}
+        __datacenter: {type: string}
+        __description: {type: string}
+        __host_id: {type: string}
+        __host_name: {type: string}
+        __irisType: {type: string}
+        __messageId: {type: string}
+        __normalizedTime: {type: string}
+        __relatedOrAssociated: {type: string}
+        __source: {type: string}
+        __sourceName: {type: string}
+        __sourceType: {type: string}
+        __source_host_ip: {type: string}
+        __uuid: {type: string}
+        facility: {type: string}
+        header: {type: string}
+        host_name: {type: string}
+        message: {type: string}
+        priority: {type: string}
+        program: {type: string}
+        source_id: {type: string}
+        time_recv: {type: string}
+      type: object
+    tmp4:
+      properties:
+        accountId: {type: string}
+        account_deployments: {type: string}
+        affected_hosts: {type: string}
+        alphaId: {type: string}
+        appliances: {type: string}
+        assets_al__deployment: {type: string}
+        assets_al__region: {type: string}
+        assets_al__role: {type: string}
+        assets_al__subnet: {type: string}
+        assets_al__vpc: {type: string}
+        associatedEventCount: {type: string}
+        associatedLogCount: {type: string}
+        attacker_ip: {type: string}
+        attacker_lset_ip: {type: string}
+        autoClosed: {type: string}
+        autoClosed_by: {type: string}
+        autoClosed_userName: {type: string}
+        closed_time: {type: string}
+        createTime: {type: string}
+        createtime_str: {type: string}
+        customer: {type: string}
+        customer_status_status: {type: string}
+        customer_status_status_change_time: {type: string}
+        elaboration_lastState: {type: string}
+        elaboration_startTime: {type: string}
+        elaboration_type: {type: string}
+        findingCount: {type: string}
+        first_closed_time: {type: string}
+        generator_FQDName: {type: string}
+        generator_datacenter: {type: string}
+        generator_hostName: {type: string}
+        generator_id: {type: string}
+        generator_name: {type: string}
+        generator_time: {type: string}
+        generator_type: {type: string}
+        has_assets: {type: string}
+        humanFriendlyId: {type: string}
+        incidentId: {type: string}
+        incidentState: {type: string}
+        incident_attackClassId: {type: string}
+        incident_attackClassId_str: {type: string}
+        incident_auto_acknowledged_by: {type: string}
+        incident_auto_auto_closed: {type: string}
+        incident_auto_auto_escalated: {type: string}
+        incident_base_incident_id: {type: string}
+        incident_base_incident_keyedon_value: {type: string}
+        incident_begin_time: {type: string}
+        incident_begin_time_str: {type: string}
+        incident_description: {type: string}
+        incident_end_time: {type: string}
+        incident_end_time_str: {type: string}
+        incident_escalated: {type: string}
+        incident_escalatedBy: {type: string}
+        incident_escalationTime: {type: string}
+        incident_evolution: {type: string}
+        incident_ngx_id: {type: string}
+        incident_prefetch: {type: string}
+        incident_subType: {type: string}
+        incident_summary: {type: string}
+        incident_threatRating: {type: string}
+        incident_type: {type: string}
+        incident_update_version: {type: string}
+        logical_sort_attackClassId_str__num_score: {type: string}
+        logical_sort_attackClassId_str__score: {type: string}
+        logical_sort_source_keyword__num_score: {type: string}
+        logical_sort_source_keyword__score: {type: string}
+        logical_sort_threatRating__num_score: {type: string}
+        logical_sort_threatRating__score: {type: string}
+        observable_category: {type: string}
+        observable_dedupHint: {type: string}
+        observable_duration: {type: string}
+        observable_facts_url: {type: string}
+        observable_id: {type: string}
+        observable_startTime: {type: string}
+        retries: {type: string}
+        snooze_status_period_ms: {type: string}
+        snooze_status_reason_code: {type: string}
+        snooze_status_snoozed: {type: string}
+        source_keyword: {type: string}
+        sources: {type: string}
+        ui_version: {type: string}
+        updateTime: {type: string}
+        updatetime_str: {type: string}
+        victim_ip: {type: string}
+        victim_lset: {type: string}
+      type: object
+    tmp5:
+      properties:
+        success: {type: string}
+      type: object
+    tmp6:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Alert Logic Alert Logic
+  title: Alert Logic Alert Logic
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Close an incident
+      parameters:
+      - description: Incident ID to close
+        example: e911b2455abefda6
+        in: query
+        name: Incident ID
+        required: true
+        schema: {type: string}
+      - description: Close incident notes
+        example: No further action required.
+        in: query
+        name: Notes
+        required: false
+        schema: {type: string}
+      - description: Reason code for closing.
+        example: further_action
+        in: query
+        name: Reason Code
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Alert Logic Close Incident
+  tmp1:
+    post:
+      description: Fetch all incidents
+      parameters:
+      - description: Limit the number of incidents returned, default is 100.
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Alert Logic Fetch All Incidents
+  tmp2:
+    post:
+      description: Fetch a specific incident by ID
+      parameters:
+      - description: Alert Logic Incident ID to fetch
+        example: e911b2455abefda6
+        in: query
+        name: Incident ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Alert Logic Fetch Incident
+  tmp3:
+    post:
+      description: Fetch the associated logs and or events of an incident
+      parameters:
+      - description: Alert Logic Incident ID to fetch logs
+        example: e911b2455abefda6
+        in: query
+        name: Incident ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Alert Logic Fetch Incident Logs
+  tmp4:
+    post:
+      description: Fetch Incidents State Tracking
+      parameters:
+      - description: Limit the number of incidents returned, default is 100.
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: From how many minutes ago you would like to retrieve incidents
+        example: '60'
+        in: body
+        name: Minutes Ago
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Alert Logic Fetch Incidents State Tracking
+  tmp5:
+    post:
+      description: Snooze an incident
+      parameters:
+      - description: Comma-separated list of Incident IDs to snooze
+        example: e911b2455abefda6,e9117631f03e4918
+        in: query
+        name: Incident IDs
+        required: true
+        schema: {type: string}
+      - description: Snooze incident notes
+        example: Snoozing this until tomorrow
+        in: query
+        name: Notes
+        required: false
+        schema: {type: string}
+      - description: 'Reason code for snoozing must be one of: tomorrow, next_week,
+          or two_weeks'
+        example: tomorrow
+        in: query
+        name: Reason Code
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Alert Logic Snooze Incident
+  tmp6:
+    post:
+      description: Unsnooze an incident
+      parameters:
+      - description: Comma-separated list of Incident IDs to unsnooze
+        example: e911b2455abefda6,e9117631f03e4918
+        in: query
+        name: Incident IDs
+        required: true
+        schema: {type: string}
+      - description: Unsnooze incident notes
+        example: By the power of Swimlane, awaken o' forgotten incident!
+        in: query
+        name: Notes
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Alert Logic Unsnooze Incident
+tags:
+- {name: Network Security & Management}

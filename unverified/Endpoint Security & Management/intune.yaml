@@ -1,0 +1,120 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        deviceCount: {type: string}
+        displayName: {type: string}
+        id: {type: string}
+        sizeInByte: {type: string}
+        version: {type: string}
+      type: object
+    tmp1:
+      properties:
+        activationLockBypassCode: {type: string}
+        androidSecurityPatchLevel: {type: string}
+        azureADDeviceId: {type: string}
+        azureADRegistered: {type: string}
+        complianceGracePeriodExpirationDateTime: {type: string}
+        complianceState: {type: string}
+        deviceCategoryDisplayName: {type: string}
+        deviceEnrollmentType: {type: string}
+        deviceName: {type: string}
+        deviceRegistrationState: {type: string}
+        easActivated: {type: string}
+        easActivationDateTime: {type: string}
+        easDeviceId: {type: string}
+        emailAddress: {type: string}
+        enrolledDateTime: {type: string}
+        exchangeAccessState: {type: string}
+        exchangeAccessStateReason: {type: string}
+        exchangeLastSuccessfulSyncDateTime: {type: string}
+        freeStorageSpaceInBytes: {type: string}
+        id: {type: string}
+        imei: {type: string}
+        isEncrypted: {type: string}
+        isSupervised: {type: string}
+        jailBroken: {type: string}
+        lastSyncDateTime: {type: string}
+        managedDeviceName: {type: string}
+        managedDeviceOwnerType: {type: string}
+        managementAgent: {type: string}
+        manufacturer: {type: string}
+        meid: {type: string}
+        model: {type: string}
+        operatingSystem: {type: string}
+        osVersion: {type: string}
+        partnerReportedThreatState: {type: string}
+        phoneNumber: {type: string}
+        remoteAssistanceSessionErrorDetails: {type: string}
+        remoteAssistanceSessionUrl: {type: string}
+        serialNumber: {type: string}
+        subscriberCarrier: {type: string}
+        totalStorageSpaceInBytes: {type: string}
+        userDisplayName: {type: string}
+        userId: {type: string}
+        userPrincipalName: {type: string}
+        wiFiMacAddress: {type: string}
+      type: object
+    tmp2:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Microsoft Intune
+  title: Microsoft Intune
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAABVklEQVR4nO3dsW0CQRBA0TliJ+6BXshcgXux3AsVkNELPZAQ+8gh9Uc68V64yWhWP59lXuD2tV9fMafycbosj2+/59nsTj+Hedrnv+3qAbwnYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWCWGREBYJYZEQFglhkRAWAADAO8uPTs/MLMfrZg9zz8ys359P/7Sed5vdaTn8OTbONgmLhLBICIuEsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIuEsEgIi4SwSAiLhLBICIvEHbIbD704gR02AAAAAElFTkSuQmCC
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: List properties and relationships of detected apps.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Microsoft Intune List Detected Apps
+  tmp1:
+    post:
+      description: List properties and relationships of a managed device.
+      parameters:
+      - description: The User ID associated with the device, of which you would like
+          to obtain details on
+        example: someuser@microsoft.com
+        in: query
+        name: User ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Microsoft Intune List Device Properties
+  tmp2:
+    post:
+      description: Lock action result with a pin to unlock.
+      parameters:
+      - description: The ID associated with the device, of which you would like to
+          lock.
+        example: d5b61fe4-d0f8-401f-9cb9-1521a0242177
+        in: query
+        name: Managed Device ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Microsoft Intune Remote Lock
+tags:
+- {name: Endpoint Security & Management}

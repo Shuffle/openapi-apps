@@ -1,0 +1,269 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        alert: {type: string}
+      type: object
+    tmp1:
+      properties:
+        built_query: {type: string}
+        fields: {type: string}
+        from: {type: string}
+        json: {type: string}
+        query: {type: string}
+        time: {type: string}
+        to: {type: string}
+        total_results: {type: string}
+      type: object
+    tmp2:
+      properties:
+        message: {type: string}
+      type: object
+    tmp3:
+      properties:
+        built_query: {type: string}
+        fields: {type: string}
+        from: {type: string}
+        json: {type: string}
+        query: {type: string}
+        time: {type: string}
+        to: {type: string}
+        total_results: {type: string}
+      type: object
+    tmp4:
+      properties:
+        built_query: {type: string}
+        fields: {type: string}
+        from: {type: string}
+        json: {type: string}
+        query: {type: string}
+        time: {type: string}
+        to: {type: string}
+        total_results: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Graylog Graylog
+  title: Graylog Graylog
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Integrations with Graylog
+      parameters:
+      - description: Max number of messages to return
+        example: '300'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: This indicates how far in the past Swimlane should look for an
+          alert.  The task should be scheduled at corresponding interval.
+        example: 'One of the following: minute, hour, or day.'
+        in: query
+        name: Since
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Graylog Get Alerts
+  tmp1:
+    post:
+      description: Use this integration to get all logs in the past X minutes, defaults
+        to 5. Run on a schedule in swimlane to stream in logs.
+      parameters:
+      - description: Query values for relative search. This should follow Lucene Query
+          Syntax http://lucene.apache.org/core/3_5_0/queryparsersyntax.html
+        example: '*'
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: Relative time range for search. 300 means search the last 5 minutes.
+        example: '300'
+        in: body
+        name: Range
+        required: false
+        schema: {type: string}
+      - description: Max number of messages to return
+        example: '300'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Value to sort by. (field:asc / field:desc)
+        example: timestamp
+        in: query
+        name: Sort
+        required: false
+        schema: {type: string}
+      - description: Offset number for query results
+        example: '12'
+        in: body
+        name: Offset
+        required: false
+        schema: {type: string}
+      - description: Run decorators on search result.
+        example: 'True'
+        in: query
+        name: Decorate
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Graylog Get Logs From last X Minutes.
+  tmp2:
+    post:
+      description: Graylog search for a specific message ID
+      parameters:
+      - description: Message ID
+        example: c74e2361-3e0b-11e9-a6df-000c29777138
+        in: query
+        name: Message ID
+        required: true
+        schema: {type: string}
+      - description: If your review the URI for a permalink to any message, it will
+          be in the URI.
+        example: graylog_0
+        in: query
+        name: Index
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Graylog Get Message by ID
+  tmp3:
+    post:
+      description: Search Graylog logs by absolute time window. Useful for log investigation
+        during a target time window.
+      parameters:
+      - description: Query values for relative search. This should follow Lucene Query
+          Syntax http://lucene.apache.org/core/3_5_0/queryparsersyntax.html
+        example: '*'
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: CSV of fields to return
+        example: field1,field2
+        in: query
+        name: Fields
+        required: true
+        schema: {type: string}
+      - description: Timerange end. in format yyyy-MM-ddTHH:mm:ss.SSSZ (e.g. 2014-01-23T15:34:49.000Z)
+          or yyyy-MM-dd HH:mm:ss.
+        example: '2014-01-23T15:34:49.000Z'
+        in: query
+        name: To Datetime
+        required: true
+        schema: {type: string}
+      - description: Timerange end. in format yyyy-MM-ddTHH:mm:ss.SSSZ (e.g. 2014-01-23T15:34:49.000Z)
+          or yyyy-MM-dd HH:mm:ss.
+        example: '2014-01-23T15:34:49.000Z'
+        in: query
+        name: From Datetime
+        required: true
+        schema: {type: string}
+      - description: Max number of messages to return
+        example: '300'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Value to sort by. (field:asc / field:desc)
+        example: timestamp
+        in: query
+        name: Sort
+        required: false
+        schema: {type: string}
+      - description: Offset number for query results
+        example: '12'
+        in: body
+        name: Offset
+        required: false
+        schema: {type: string}
+      - description: Run decorators on search result.
+        example: 'True'
+        in: query
+        name: Decorate
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Graylog Absolute Search
+  tmp4:
+    post:
+      description: Graylog search for logs by a relative time window (last x minutes)
+      parameters:
+      - description: Query values for relative search. This should follow Lucene Query
+          Syntax http://lucene.apache.org/core/3_5_0/queryparsersyntax.html
+        example: '*'
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: Relative time range for search. 300 means search the last 5 minutes.
+        example: '300'
+        in: body
+        name: Range
+        required: true
+        schema: {type: string}
+      - description: Max number of messages to return
+        example: '300'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Value to sort by. (field:asc / field:desc)
+        example: timestamp
+        in: query
+        name: Sort
+        required: false
+        schema: {type: string}
+      - description: Offset number for query results
+        example: '12'
+        in: body
+        name: Offset
+        required: false
+        schema: {type: string}
+      - description: CSV of fields to return
+        example: field1,field2
+        in: query
+        name: Fields
+        required: false
+        schema: {type: string}
+      - description: Run decorators on search result.
+        example: 'True'
+        in: query
+        name: Decorate
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Graylog Relative Search
+tags:
+- {name: SIEM & Log Management}

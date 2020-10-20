@@ -1,0 +1,139 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        hashes: {type: string}
+        permalink: {type: string}
+        references: {type: string}
+      type: object
+    tmp1:
+      properties:
+        emails: {type: string}
+        hashes: {type: string}
+        permalink: {type: string}
+        references: {type: string}
+        resolutions: {type: string}
+        subdomains: {type: string}
+        votes: {type: string}
+      type: object
+    tmp2:
+      properties:
+        domains: {type: string}
+        permalink: {type: string}
+        references: {type: string}
+      type: object
+    tmp3:
+      properties:
+        domains: {type: string}
+        ips: {type: string}
+        md5: {type: string}
+        permalink: {type: string}
+        references: {type: string}
+        scans: {type: string}
+        sha1: {type: string}
+      type: object
+    tmp4:
+      properties:
+        hashes: {type: string}
+        permalink: {type: string}
+        references: {type: string}
+        resolutions_domain_list: {type: string}
+        resolutions_last_resolved_list: {type: string}
+        votes: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of AlienVault ThreatCrowd
+  title: AlienVault ThreatCrowd
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Gets threat hashes for a term known to antivirus programs
+      parameters:
+      - description: The term you send to the antivirus
+        example: plugx
+        in: query
+        name: Antivirus
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: ThreatCrowd AntiVirus Report
+  tmp1:
+    post:
+      description: Gets threat hashes for a domain
+      parameters:
+      - description: The domain of a website to check
+        example: google.com
+        in: query
+        name: Domain
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: ThreatCrowd Domain Report
+  tmp2:
+    post:
+      description: Gets threat hashes for an email address
+      parameters:
+      - description: The value you send to the antivirus report
+        example: william19770319@yahoo.com
+        in: query
+        name: Email
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: ThreatCrowd Email Report
+  tmp3:
+    post:
+      description: Gets threat hashes for a file hash
+      parameters:
+      - description: The file hash to check
+        example: 000269bab6833d37ca78b7445c9a3373
+        in: query
+        name: File Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: ThreatCrowd File Hash Report
+  tmp4:
+    post:
+      description: Gets threat hashes for an IP Address
+      parameters:
+      - description: The IP in to check out on ThreatCrowd
+        example: 127.0.0.1
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: ThreatCrowd IP Report
+tags:
+- {name: Investigation}

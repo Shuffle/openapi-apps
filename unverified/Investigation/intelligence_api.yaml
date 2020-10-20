@@ -1,0 +1,420 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        adPageHtml: {type: string}
+        adPageJpg: {type: string}
+        advert_domain: {type: string}
+        advert_domain_registered: {type: string}
+        advert_domain_registrar: {type: string}
+        advert_icon_md5: {type: string}
+        advert_ip: {type: string}
+        advert_ip_asn: {type: string}
+        advert_ip_city: {type: string}
+        advert_ip_country_code: {type: string}
+        advert_ip_country_name: {type: string}
+        advert_ip_provider: {type: string}
+        advert_ip_region: {type: string}
+        advert_title: {type: string}
+        advert_url: {type: string}
+        browser: {type: string}
+        category: {type: string}
+        client_ip: {type: string}
+        client_ip_city: {type: string}
+        client_ip_country: {type: string}
+        client_ip_data: {type: string}
+        client_ip_timezone: {type: string}
+        date_detected: {type: string}
+        favicon: {type: string}
+        id: {type: string}
+        jpg: {type: string}
+        miniAdPageJpg: {type: string}
+        pageHtml: {type: string}
+        pageJpg: {type: string}
+        search_str: {type: string}
+        source: {type: string}
+        source_advert_description: {type: string}
+        source_advert_title: {type: string}
+        source_advert_url_puny: {type: string}
+        status: {type: string}
+        status_history_history_date: {type: string}
+        status_history_history_field: {type: string}
+        status_history_history_reason: {type: string}
+        status_history_history_reporter: {type: string}
+        status_history_history_value: {type: string}
+        ts_create: {type: string}
+        ts_update: {type: string}
+        type: {type: string}
+        user_agent: {type: string}
+        vt_all: {type: string}
+        vt_detected: {type: string}
+      type: object
+    tmp1:
+      properties:
+        address: {type: string}
+        date_expired: {type: string}
+        date_registered: {type: string}
+        detection_rate_positives: {type: string}
+        detection_rate_total: {type: string}
+        domain: {type: string}
+        email: {type: string}
+        favicon: {type: string}
+        favicon_md5: {type: string}
+        history_history_date: {type: string}
+        history_history_field: {type: string}
+        history_history_reason: {type: string}
+        history_history_reporter: {type: string}
+        history_history_value: {type: string}
+        html: {type: string}
+        id: {type: string}
+        ip_history_first_seen: {type: string}
+        ip_history_ip: {type: string}
+        ip_history_last_seen: {type: string}
+        ip_history_provider: {type: string}
+        keywords: {type: string}
+        name_server: {type: string}
+        organization: {type: string}
+        page_title: {type: string}
+        person: {type: string}
+        phone: {type: string}
+        registrar: {type: string}
+        screenshot: {type: string}
+        server_ip: {type: string}
+        server_ip_asn: {type: string}
+        server_ip_city: {type: string}
+        server_ip_country_code: {type: string}
+        server_ip_country_name: {type: string}
+        server_ip_provider: {type: string}
+        server_ip_region: {type: string}
+        status: {type: string}
+        tld: {type: string}
+        ts_create: {type: string}
+        ts_update: {type: string}
+        type: {type: string}
+      type: object
+    tmp2:
+      properties:
+        author: {type: string}
+        category: {type: string}
+        date_published: {type: string}
+        date_updated: {type: string}
+        description: {type: string}
+        download_count: {type: string}
+        ext_id: {type: string}
+        history_history_date: {type: string}
+        history_history_field: {type: string}
+        history_history_reason: {type: string}
+        history_history_reporter: {type: string}
+        history_history_value: {type: string}
+        id: {type: string}
+        keywords: {type: string}
+        logo: {type: string}
+        logo_swift: {type: string}
+        md5: {type: string}
+        name: {type: string}
+        package_swift: {type: string}
+        package_version: {type: string}
+        rating_count: {type: string}
+        rating_value: {type: string}
+        screenshots: {type: string}
+        screenshots_swift: {type: string}
+        sha1: {type: string}
+        sha256: {type: string}
+        size: {type: string}
+        source: {type: string}
+        status: {type: string}
+        ts_create: {type: string}
+        ts_update: {type: string}
+        type: {type: string}
+        url: {type: string}
+        version: {type: string}
+        vt_all: {type: string}
+        vt_detected: {type: string}
+      type: object
+    tmp3:
+      properties:
+        company_stix_guid: {type: string}
+        date_blocked: {type: string}
+        date_detected: {type: string}
+        files_filename: {type: string}
+        files_filename_swift: {type: string}
+        files_group: {type: string}
+        files_mime: {type: string}
+        files_sign: {type: string}
+        files_sign_id: {type: string}
+        have_phishing_kit: {type: string}
+        have_screen_signature: {type: string}
+        have_source_signature: {type: string}
+        id: {type: string}
+        manual_signature_id: {type: string}
+        manual_signature_name: {type: string}
+        path_url_sha256: {type: string}
+        path_url_text: {type: string}
+        phishing_domain: {type: string}
+        phishing_domain_local: {type: string}
+        phishing_domain_registered: {type: string}
+        phishing_domain_registrar: {type: string}
+        phishing_domain_title: {type: string}
+        phishing_have_files: {type: string}
+        phishing_icon_md5: {type: string}
+        phishing_inactivity_cnt: {type: string}
+        phishing_ip: {type: string}
+        phishing_ip_asn: {type: string}
+        phishing_ip_city: {type: string}
+        phishing_ip_country_code: {type: string}
+        phishing_ip_country_name: {type: string}
+        phishing_ip_provider: {type: string}
+        phishing_ip_region: {type: string}
+        phishing_kit: {type: string}
+        phishing_kit_email: {type: string}
+        phishing_kit_id: {type: string}
+        phishing_kit_signature: {type: string}
+        phishing_kit_signature_id: {type: string}
+        phishing_kit_signature_objective: {type: string}
+        phishing_last_activity: {type: string}
+        phishing_tld: {type: string}
+        phishing_url: {type: string}
+        phishing_url_hash: {type: string}
+        phishing_url_puny: {type: string}
+        phishing_url_puny_hash: {type: string}
+        phishing_url_puny_text: {type: string}
+        phishing_url_text: {type: string}
+        phishing_url_title: {type: string}
+        rendered_url: {type: string}
+        rendered_url_sha256: {type: string}
+        requested_url: {type: string}
+        requested_url_sha256: {type: string}
+        screen_sign_screen_id: {type: string}
+        source: {type: string}
+        source_description: {type: string}
+        source_signature_id: {type: string}
+        source_signature_name: {type: string}
+        status: {type: string}
+        status_history_history_date: {type: string}
+        status_history_history_field: {type: string}
+        status_history_history_reason: {type: string}
+        status_history_history_reporter: {type: string}
+        status_history_history_value: {type: string}
+        target_brand: {type: string}
+        target_category: {type: string}
+        target_country_name: {type: string}
+        target_domain: {type: string}
+        ts_create: {type: string}
+        ts_update: {type: string}
+        type: {type: string}
+        vt_all: {type: string}
+        vt_detected: {type: string}
+      type: object
+    tmp4:
+      properties:
+        has_connection_vars: {type: string}
+        id: {type: string}
+        phishing_kit: {type: string}
+        phishing_kit_domain: {type: string}
+        phishing_kit_email: {type: string}
+        phishing_kit_file: {type: string}
+        phishing_kit_file_hash: {type: string}
+        phishing_kit_file_hash_crc32: {type: string}
+        phishing_kit_file_hash_md5: {type: string}
+        phishing_kit_file_hash_sha1: {type: string}
+        phishing_kit_file_hash_sha256: {type: string}
+        phishing_kit_file_mime: {type: string}
+        phishing_kit_file_size: {type: string}
+        phishing_kit_url: {type: string}
+        target_brand: {type: string}
+        ts_create: {type: string}
+        ts_update: {type: string}
+      type: object
+    tmp5:
+      properties:
+        actual_cert_hash: {type: string}
+        date_not_after: {type: string}
+        date_not_before: {type: string}
+        domain_expired: {type: string}
+        domain_name: {type: string}
+        domain_page_title: {type: string}
+        domain_registered: {type: string}
+        domain_registrar: {type: string}
+        favicon: {type: string}
+        favicon_md5: {type: string}
+        hash: {type: string}
+        history_history_date: {type: string}
+        history_history_field: {type: string}
+        history_history_reason: {type: string}
+        history_history_reporter: {type: string}
+        history_history_value: {type: string}
+        hosts_count: {type: string}
+        html: {type: string}
+        id: {type: string}
+        ip_history: {type: string}
+        issuer_country_code: {type: string}
+        issuer_name: {type: string}
+        issuer_org: {type: string}
+        keywords: {type: string}
+        screenshot: {type: string}
+        server_ip: {type: string}
+        server_ip_asn: {type: string}
+        server_ip_city: {type: string}
+        server_ip_country_code: {type: string}
+        server_ip_country_name: {type: string}
+        server_ip_provider: {type: string}
+        server_ip_region: {type: string}
+        status: {type: string}
+        subject_common: {type: string}
+        subject_country_code: {type: string}
+        subject_locality: {type: string}
+        subject_org: {type: string}
+        subject_region: {type: string}
+        ts_create: {type: string}
+        ts_update: {type: string}
+        type: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Group-IB Intelligence API
+  title: Group-IB Intelligence API
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get Advertisement Information from Group-IB Intelligence API
+      parameters:
+      - description: Limit of results to return
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: How many records to start grabbing from
+        example: '20'
+        in: body
+        name: Start Index
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Group-IB Get Advertisement Info
+  tmp1:
+    post:
+      description: Group-IB Get domain information
+      parameters:
+      - description: Limit of results to return
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: How many records to start grabbing from
+        example: '20'
+        in: body
+        name: Start Index
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Group-IB Get Domains
+  tmp2:
+    post:
+      description: Get Mobile App Information from Group-IB Intelligence API
+      parameters:
+      - description: Limit of results to return
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: How many records to start grabbing from
+        example: '20'
+        in: body
+        name: Start Index
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Group-IB Get Mobile Apps Info
+  tmp3:
+    post:
+      description: Get phishing attacks from Group-IB Intelligence API
+      parameters:
+      - description: Limit of results to return
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: How many records to start grabbing from
+        example: '20'
+        in: body
+        name: Start Index
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Group-IB Get Phishing Attacks
+  tmp4:
+    post:
+      description: Get Phishing Kit information from Group-IB
+      parameters:
+      - description: Limit of results to return
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: How many records to start grabbing from
+        example: '20'
+        in: body
+        name: Start Index
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Group-IB Get Phishing Kits
+  tmp5:
+    post:
+      description: Get SLL information from the Group-IB Intelligence API
+      parameters:
+      - description: Limit of results to return
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: How many records to start grabbing from
+        example: '20'
+        in: body
+        name: Start Index
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Group-IB Get SSL Information
+tags:
+- {name: Investigation}

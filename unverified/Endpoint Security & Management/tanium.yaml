@@ -1,0 +1,128 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        json: {type: string}
+      type: object
+    tmp1:
+      properties:
+        computer_name: {type: string}
+        domain_name: {type: string}
+        ipv4_address: {type: string}
+        ipv6_address: {type: string}
+        mac_address: {type: string}
+        name: {type: string}
+        nat_ip_address: {type: string}
+        open_ports: {type: string}
+        process: {type: string}
+        target_ip: {type: string}
+      type: object
+    tmp2:
+      properties:
+        computer_name: {type: string}
+        installed_pkgs: {type: string}
+        installed_rpms: {type: string}
+        login_hooks: {type: string}
+        logout_hooks: {type: string}
+        name: {type: string}
+        process_name: {type: string}
+        service: {type: string}
+        stopped_service: {type: string}
+        version: {type: string}
+      type: object
+    tmp3:
+      properties:
+        arch: {type: string}
+        bios_name: {type: string}
+        bios_vendor: {type: string}
+        bios_version: {type: string}
+        computer_name: {type: string}
+        cpu: {type: string}
+        free_memory: {type: string}
+        model: {type: string}
+        operating_system: {type: string}
+        operating_system_install_date: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Tanium Tanium
+  title: Tanium Tanium
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Asks a question from Tanium
+      parameters:
+      - description: Question to ask Tanium. See https://docs.tanium.com/interact/interact/questions.html
+        example: Get Computer Name from all machines
+        in: query
+        name: Question
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Tanium Generic Question
+  tmp1:
+    post:
+      description: Gets networking information about the machines on Tanium
+      parameters:
+      - description: Filter which machines are included in results, defaults to all
+          machines. See https://kb.tanium.com/Asking_Questions
+        example: all machines | all machines with IP Address containing "10.8.65"
+        in: query
+        name: Filter
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Tanium Network Information
+  tmp2:
+    post:
+      description: Gets software information about the machines on Tanium
+      parameters:
+      - description: Filter which machines are included in results, defaults to all
+          machines. See https://kb.tanium.com/Asking_Questions
+        example: all machines | all machines with IP Address containing "10.8.65"
+        in: query
+        name: Filter
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Tanium Software Information
+  tmp3:
+    post:
+      description: Gets system information about the machines on Tanium
+      parameters:
+      - description: Filter which machines are included in results, defaults to all
+          machines. See https://kb.tanium.com/Asking_Questions
+        example: all machines | all machines with IP Address containing "10.8.65"
+        in: query
+        name: Filter
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Tanium System Information
+tags:
+- {name: Endpoint Security & Management}

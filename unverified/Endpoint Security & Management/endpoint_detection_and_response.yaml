@@ -1,0 +1,850 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        command_id: {type: string}
+        error_code: {type: string}
+        message: {type: string}
+      type: object
+    tmp1:
+      properties:
+        command_id: {type: string}
+        error_code: {type: string}
+        message: {type: string}
+      type: object
+    tmp10:
+      properties:
+        command_id: {type: string}
+        error_code: {type: string}
+        message: {type: string}
+      type: object
+    tmp11:
+      properties:
+        action_id: {type: string}
+        actual_action: {type: string}
+        actual_action_idx: {type: string}
+        agent_version: {type: string}
+        app_name: {type: string}
+        atp_node_role: {type: string}
+        attacks: {type: string}
+        av: {type: string}
+        bash: {type: string}
+        categories: {type: string}
+        count: {type: string}
+        country: {type: string}
+        data: {type: string}
+        data_direction: {type: string}
+        data_source_ip: {type: string}
+        data_source_url: {type: string}
+        data_source_url_domain: {type: string}
+        data_source_url_referer: {type: string}
+        deepsight_domain: {type: string}
+        detection_method: {type: string}
+        device_cap: {type: string}
+        device_domain: {type: string}
+        device_end_time: {type: string}
+        device_ip: {type: string}
+        device_name: {type: string}
+        device_os_name: {type: string}
+        device_os_ver: {type: string}
+        device_time: {type: string}
+        device_type: {type: string}
+        device_uid: {type: string}
+        direction: {type: string}
+        directory: {type: string}
+        domain_name: {type: string}
+        dynacat: {type: string}
+        email_action: {type: string}
+        email_received_date: {type: string}
+        email_subject: {type: string}
+        enriched_data: {type: string}
+        error_code: {type: string}
+        event_actor: {type: string}
+        event_desc: {type: string}
+        event_id: {type: string}
+        event_uuid: {type: string}
+        external_ip: {type: string}
+        external_port: {type: string}
+        feature_name: {type: string}
+        file: {type: string}
+        hid_level: {type: string}
+        host_name: {type: string}
+        id: {type: string}
+        incident: {type: string}
+        infected: {type: string}
+        internal_hostname: {type: string}
+        internal_ip: {type: string}
+        internal_port: {type: string}
+        intrusion: {type: string}
+        intrusion_url: {type: string}
+        is_targeted: {type: string}
+        kernel: {type: string}
+        link_following: {type: string}
+        local_host_mac: {type: string}
+        log_name: {type: string}
+        log_time: {type: string}
+        message: {type: string}
+        message_id: {type: string}
+        mitre: {type: string}
+        network_protocol: {type: string}
+        network_scanner_type: {type: string}
+        no_of_viruses: {type: string}
+        operation: {type: string}
+        orig_message_header_id: {type: string}
+        parent_file_sha2: {type: string}
+        process: {type: string}
+        product_name: {type: string}
+        product_ver: {type: string}
+        reason: {type: string}
+        receivers: {type: string}
+        reg_key: {type: string}
+        reg_value: {type: string}
+        remediation: {type: string}
+        remote_host_mac: {type: string}
+        request_source: {type: string}
+        sandbox: {type: string}
+        sandbox_service: {type: string}
+        scan: {type: string}
+        scan_type: {type: string}
+        scanner_name: {type: string}
+        sender: {type: string}
+        sep_installed: {type: string}
+        service: {type: string}
+        session: {type: string}
+        severity: {type: string}
+        severity_id: {type: string}
+        signature_id: {type: string}
+        signature_name: {type: string}
+        source: {type: string}
+        source_ip: {type: string}
+        source_port: {type: string}
+        state: {type: string}
+        status_detail: {type: string}
+        status_exception: {type: string}
+        status_id: {type: string}
+        status_stack_trace: {type: string}
+        target: {type: string}
+        target_ip: {type: string}
+        target_port: {type: string}
+        targeted_attack_type: {type: string}
+        threat: {type: string}
+        timezone: {type: string}
+        traffic_direction: {type: string}
+        type_id: {type: string}
+        user_name: {type: string}
+        user_uid: {type: string}
+        uuid: {type: string}
+        virus_def: {type: string}
+        virus_name: {type: string}
+        vlan_id: {type: string}
+      type: object
+    tmp2:
+      properties:
+        command_id: {type: string}
+        error_code: {type: string}
+        message: {type: string}
+      type: object
+    tmp3:
+      properties:
+        command_id: {type: string}
+        error_code: {type: string}
+        message: {type: string}
+      type: object
+    tmp4:
+      properties:
+        command_id: {type: string}
+        error_code: {type: string}
+        message: {type: string}
+      type: object
+    tmp5:
+      properties:
+        appliance_id: {type: string}
+        appliance_name: {type: string}
+        appliance_time: {type: string}
+        role: {type: string}
+        software_version: {type: string}
+      type: object
+    tmp6:
+      properties:
+        action: {type: string}
+        api_name: {type: string}
+        attacks_tactic_ids: {type: string}
+        attacks_tactic_uids: {type: string}
+        attacks_technique_name: {type: string}
+        attacks_technique_uid: {type: string}
+        count: {type: string}
+        device_domain: {type: string}
+        device_ip: {type: string}
+        device_name: {type: string}
+        device_os_name: {type: string}
+        device_time: {type: string}
+        device_uid: {type: string}
+        domain_name: {type: string}
+        email_alert: {type: string}
+        enriched_data_category_id: {type: string}
+        enriched_data_category_name: {type: string}
+        enriched_data_rule_name: {type: string}
+        enriched_data_suspicion_score: {type: string}
+        event_actor_cmd_line: {type: string}
+        event_actor_file_md5: {type: string}
+        event_actor_file_modified: {type: string}
+        event_actor_file_name: {type: string}
+        event_actor_file_normalized_path: {type: string}
+        event_actor_file_original_name: {type: string}
+        event_actor_file_path: {type: string}
+        event_actor_file_sha2: {type: string}
+        event_actor_file_signature_company_name: {type: string}
+        event_actor_file_signature_value_ids: {type: string}
+        event_actor_integrity_id: {type: string}
+        event_actor_pid: {type: string}
+        event_actor_signature_level_id: {type: string}
+        event_actor_start_time: {type: string}
+        event_actor_uid: {type: string}
+        event_actor_user_name: {type: string}
+        event_actor_user_sid: {type: string}
+        event_desc: {type: string}
+        event_id: {type: string}
+        file_path: {type: string}
+        file_size: {type: string}
+        host_name: {type: string}
+        log_name: {type: string}
+        log_time: {type: string}
+        message: {type: string}
+        operation: {type: string}
+        process_cmd_line: {type: string}
+        process_file_md5: {type: string}
+        process_file_modified: {type: string}
+        process_file_name: {type: string}
+        process_file_normalized_path: {type: string}
+        process_file_original_name: {type: string}
+        process_file_path: {type: string}
+        process_file_sha2: {type: string}
+        process_file_signature_company_name: {type: string}
+        process_file_signature_value_ids: {type: string}
+        process_integrity_id: {type: string}
+        process_pid: {type: string}
+        process_signature_level_id: {type: string}
+        process_uid: {type: string}
+        process_user_name: {type: string}
+        process_user_sid: {type: string}
+        rule_name: {type: string}
+        sep_installed: {type: string}
+        severity: {type: string}
+        severity_id: {type: string}
+        type_id: {type: string}
+        user_domain: {type: string}
+        user_name: {type: string}
+        user_sid: {type: string}
+        uuid: {type: string}
+      type: object
+    tmp7:
+      properties:
+        cynic_verdict: {type: string}
+        file_age: {type: string}
+        file_health: {type: string}
+        file_instances: {type: string}
+        md5: {type: string}
+        mime_type: {type: string}
+        prevalence_band: {type: string}
+        reputation_band: {type: string}
+        sha2: {type: string}
+        signature_company_name: {type: string}
+        signature_issuer: {type: string}
+        size: {type: string}
+        targeted_attack: {type: string}
+        threat_name: {type: string}
+        total: {type: string}
+      type: object
+    tmp8:
+      properties:
+        actual_action: {type: string}
+        actual_action_idx: {type: string}
+        agent_version: {type: string}
+        data_direction: {type: string}
+        data_source_url: {type: string}
+        data_source_url_domain: {type: string}
+        data_source_url_referer: {type: string}
+        deepsight_domain: {type: string}
+        device_ip: {type: string}
+        device_name: {type: string}
+        device_time: {type: string}
+        device_uid: {type: string}
+        domain_name: {type: string}
+        dynacat: {type: string}
+        event_source: {type: string}
+        event_uuid: {type: string}
+        file_company_name: {type: string}
+        file_desc: {type: string}
+        file_folder: {type: string}
+        file_md5: {type: string}
+        file_name: {type: string}
+        file_prevalence_band: {type: string}
+        file_reputation_band: {type: string}
+        file_sha2: {type: string}
+        file_signature_company_name: {type: string}
+        file_signature_issuer: {type: string}
+        file_signature_serial_number: {type: string}
+        file_size: {type: string}
+        hid_level: {type: string}
+        host_name: {type: string}
+        incident: {type: string}
+        internal_ip: {type: string}
+        local_host_mac: {type: string}
+        log_name: {type: string}
+        log_time: {type: string}
+        message: {type: string}
+        no_of_viruses: {type: string}
+        parent_file_sha2: {type: string}
+        scan_type: {type: string}
+        sep_installed: {type: string}
+        threat_id: {type: string}
+        threat_name: {type: string}
+        type_id: {type: string}
+        user_name: {type: string}
+        uuid: {type: string}
+        virus_def: {type: string}
+        virus_name: {type: string}
+      type: object
+    tmp9:
+      properties:
+        atp_incident_id: {type: string}
+        atp_rule_id: {type: string}
+        device_time: {type: string}
+        first_event_seen: {type: string}
+        last_event_seen: {type: string}
+        log_name: {type: string}
+        message: {type: string}
+        priority_level: {type: string}
+        recommended_action: {type: string}
+        resolution: {type: string}
+        rule_name: {type: string}
+        state: {type: string}
+        summary: {type: string}
+        time: {type: string}
+        updated: {type: string}
+        uuid: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Symantec Endpoint Detection And Response
+  title: Symantec Endpoint Detection And Response
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Cancel an isolate, rejoin, or delete file command that is in progress
+      parameters:
+      - description: ID of Symantec Endpoint Detection and Response Command
+        example: d242dd6d-d4ab-4207-9581-d923e56fd121
+        in: query
+        name: Command ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Symantec Endpoint Detection And Response Cancel A Command
+  tmp1:
+    post:
+      description: Delete all instances of that file on the specified endpoint.
+      parameters:
+      - description: Device ID of the target computer
+        example: cb46d251-151d-4583-a8fb-ebff7c42cfd8
+        in: query
+        name: Device UID
+        required: true
+        schema: {type: string}
+      - description: SHA256 hash of file to delete
+        example: 8692251329fef60490be1c26281710b7e88250fd82b3f679f87d6785db854ed5
+        in: query
+        name: File Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Symantec Endpoint Detection And Response Command Delete File
+  tmp10:
+    post:
+      description: Issue a Data Recorder Search Action
+      parameters:
+      - description: The query condition. Refer to Readme under Tasks Setup for additional
+          information.
+        example: 'file.sha2: 142e1d688ef0568370c37187fd9f2351d7ddeda574f8bfa9b0fa4ef42db85aa2'
+        in: query
+        name: Query Condition(s)
+        required: true
+        schema: {type: string}
+      - description: List of a Device ID or ID(s) of a endpoint or endpoints(s) to
+          trigger a Data Recorder Search on.
+        example: cb46d251-151d-4583-a8fb-ebff7c42cfd8
+        in: query
+        name: Device UID(s)
+        required: false
+        schema: {type: string}
+      - description: List of a SEPM Group or Groups(s) to trigger a Data Recorder
+          Search on
+        example: My Group
+        in: query
+        name: SEPM_Group(s)
+        required: false
+        schema: {type: string}
+      - description: List of a ipv4 address or ipv4 addresses to trigger a Data Recorder
+          Search on
+        example: 192.168.1.1
+        in: query
+        name: IPV4 Addresses
+        required: false
+        schema: {type: string}
+      - description: List of a Hostname or Hostname(s) of to trigger a Data Recorder
+          Search on.
+        example: 170915-000042
+        in: query
+        name: Host Name(s)
+        required: false
+        schema: {type: string}
+      - description: Specifies the beginning of the search time frame. Refer to Readme
+          under Tasks Setup for additional information..
+        example: '2017-01-01T00:00:00.000Z'
+        in: query
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: Specifies the end of the search time frame. Refer to Readme under
+          Tasks Setup for additional information..
+        example: '2017-01-08T00:00:00.000Z'
+        in: query
+        name: End Time
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Symantec Endpoint Detection And Response Initiate A Data Recorder Search
+  tmp11:
+    post:
+      description: Query Command State, if command is finished retrieve results.
+      parameters:
+      - description: ID of Symantec Endpoint Detection and Response Command
+        example: d242dd6d-d4ab-4207-9581-d923e56fd121
+        in: query
+        name: Command ID
+        required: true
+        schema: {type: string}
+      - description: Limit the number of results returned per request. (Default is
+          10)
+        example: '9'
+        in: body
+        name: Limit Results
+        required: false
+        schema: {type: string}
+      - description: Specifies the maximum number of statuses to return. Maximum is
+          1000. (Default is 50)
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Specifies the end of the search time frame. Refer to Readme under
+          Tasks Setup for additional information.
+        example: '2017-01-08T00:00:00.000Z'
+        in: query
+        name: End Time
+        required: false
+        schema: {type: string}
+      - description: This value determines the length of time in seconds that the
+          query results will be cached on the server. Each API HTTP request resets
+          the cache countdown to the specified value.
+        example: '60'
+        in: query
+        name: Keep Alive Seconds
+        required: false
+        schema: {type: boolean}
+      - description: Specifies the beginning of the search time frame. Refer to Readme
+          under Tasks Setup for additional information.
+        example: '2017-01-01T00:00:00.000Z'
+        in: query
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: 'Specifies fields to be returned by the query. There is a performance
+          benefit to reducing the returned fields. This is recommended if it works
+          for your application. Maximum supported fields: 10'
+        example: Text List From a Record.
+        in: query
+        name: Fields
+        required: false
+        schema: {type: string}
+      - description: Specifies the total number of slices being fetched. To enable
+          sliced query request, set 2 <= max_slice < 20.
+        example: '10'
+        in: body
+        name: Max Slice
+        required: false
+        schema: {type: string}
+      - description: Specifies the total number of slices being fetched. To enable
+          sliced query request, set 2 <= max_slice < 20.
+        example: log_time
+        in: query
+        name: Slice Field
+        required: false
+        schema: {type: string}
+      - description: The ID of the slice being requested. 0 <= slice_id < max_slice.
+        example: '9'
+        in: body
+        name: Slice ID
+        required: false
+        schema: {type: string}
+      - description: The amount of seconds to wait before checking on the status of
+          the command again. (Default is 10 seconds)
+        example: '9'
+        in: body
+        name: Seconds to Wait
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: Symantec Endpoint Detection And Response Query A Command Status
+  tmp2:
+    post:
+      description: Issue a command to search your endpoints hard drive for EOCs (such
+        as files, processes, registry keys, and services)
+      parameters:
+      - description: The query condition. Refer to Readme under Tasks Setup for additional
+          information.
+        example: file.md5:d41d8cd98f00b204e9800998ecf8427e
+        in: query
+        name: Query Condition(s)
+        required: true
+        schema: {type: string}
+      - description: List of a Device ID or ID(s) of a endpoint or endpoints(s) to
+          trigger an evidence of compromise search (EOC) on.
+        example: cb46d251-151d-4583-a8fb-ebff7c42cfd8
+        in: query
+        name: Device UID(s)
+        required: false
+        schema: {type: string}
+      - description: List of a SEPM Group or Groups(s) to trigger an evidence of compromise
+          search (EOC) on
+        example: My Group
+        in: query
+        name: SEPM_Group(s)
+        required: false
+        schema: {type: string}
+      - description: List of a ipv4 address or ipv4 addresses of to trigger an evidence
+          of compromise search (EOC) on.
+        example: 192.168.1.1
+        in: query
+        name: IPV4 Addresses
+        required: false
+        schema: {type: string}
+      - description: List of a Hostname or Hostname(s) of to trigger an evidence of
+          compromise search (EOC) on.
+        example: 170915-000042
+        in: query
+        name: Host Name(s)
+        required: false
+        schema: {type: string}
+      - description: Specifies the beginning of the search time frame. Refer to Readme
+          under Tasks Setup for additional information.
+        example: '2017-01-01T00:00:00.000Z'
+        in: query
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: Specifies the end of the search time frame. Refer to Readme under
+          Tasks Setup for additional information.
+        example: '2017-01-08T00:00:00.000Z'
+        in: query
+        name: End Time
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Symantec Endpoint Detection And Response Command Evidence of Compromise
+        (EOC) Action
+  tmp3:
+    post:
+      description: Cut off the connections that the endpoint has to internal networks
+        and external networks.
+      parameters:
+      - description: A list of Device ID(s) of a endpoint to isolate.
+        example: cb46d251-151d-4583-a8fb-ebff7c42cfd8
+        in: query
+        name: Target(s)
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Symantec Endpoint Detection And Response Command Isolate Endpoint
+  tmp4:
+    post:
+      description: "Re-establish that endpoint\u2019s connections to internal networks\
+        \ and external networks. You can only rejoin endpoints that are isolated"
+      parameters:
+      - description: A list of Device ID(s) of a endpoint to rejoin.
+        example: cb46d251-151d-4583-a8fb-ebff7c42cfd8
+        in: query
+        name: Target(s)
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Symantec Endpoint Detection And Response Command Rejoin Endpoint
+  tmp5:
+    post:
+      description: Get EDR Appliance(s) Information
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Symantec Endpoint Detection And Response Get Appliance(s)
+  tmp6:
+    post:
+      description: Get event(s) from EDR
+      parameters:
+      - description: The query condition is expressed in the form of a predicate,
+          which consists of terms and other components (for example, logical operators
+          and special characters that specify exactly which events to retrieve). Refer
+          to Readme under Tasks Setup for additional information.
+        example: log_time:[2020-06-28T15:39:55.616Z TO *] AND (type_id:(4096 OR 4098
+          OR 4123 OR [8000 TO 8009]))
+        in: query
+        name: Query Condition(s)
+        required: false
+        schema: {type: string}
+      - description: Specifies the beginning of the search time frame. Refer to Readme
+          under Tasks Setup for additional information.
+        example: '2017-01-01T00:00:00.000Z'
+        in: query
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: Specifies the maximum number of events to return. Maximum is
+          1000.
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Specifies the end of the search time frame. Refer to Readme under
+          Tasks Setup for additional information.
+        example: '2017-01-08T00:00:00.000Z'
+        in: query
+        name: End Time
+        required: false
+        schema: {type: string}
+      - description: 'Specifies fields to be returned by the query. There is a performance
+          benefit to reducing the returned fields. This is recommended if it works
+          for your application. Maximum supported fields: 10'
+        example: Text List From a Record.
+        in: query
+        name: Fields
+        required: false
+        schema: {type: string}
+      - description: Specifies the total number of slices being fetched. To enable
+          sliced query request, set 2 <= max_slice < 20.
+        example: '10'
+        in: body
+        name: Max Slice
+        required: false
+        schema: {type: string}
+      - description: Specifies the total number of slices being fetched. To enable
+          sliced query request, set 2 <= max_slice < 20.
+        example: log_time
+        in: query
+        name: Slice Field
+        required: false
+        schema: {type: string}
+      - description: The ID of the slice being requested. 0 <= slice_id < max_slice.
+        example: '9'
+        in: body
+        name: Slice ID
+        required: false
+        schema: {type: string}
+      - description: Limit the number of events returned. (Default is 10)
+        example: '9'
+        in: body
+        name: Limit Results
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Symantec Endpoint Detection And Response Get Event(s)
+  tmp7:
+    post:
+      description: Get file details from EDR
+      parameters:
+      - description: SHA2 Hash
+        example: 2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6
+        in: query
+        name: SHA2
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Symantec Endpoint Detection And Response Get File Details
+  tmp8:
+    post:
+      description: Get from EDR events that are related to incidents
+      parameters:
+      - description: Specifies the end of the search time frame. Refer to Readme under
+          Tasks Setup for additional information.
+        example: '2017-01-08T00:00:00.000Z'
+        in: query
+        name: End Time
+        required: false
+        schema: {type: string}
+      - description: Specifies the maximum number of events related to incidents to
+          return. Maximum is 1000. (Default is 50)
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: The query condition is expressed in the form of a predicate,
+          which consists of terms and other components (for example, logical operators
+          and special characters that specify exactly which events to retrieve). Refer
+          to Readme under Tasks Setup for additional information.
+        example: updated:[2016-06-08T15:39:55.616Z TO *]
+        in: query
+        name: Query Condition(s)
+        required: false
+        schema: {type: string}
+      - description: Specifies the beginning of the search time frame. Refer to Readme
+          under Tasks Setup for additional information.
+        example: '2017-01-01T00:00:00.000Z'
+        in: query
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: 'Specifies fields to be returned by the query. There is a performance
+          benefit to reducing the returned fields. This is recommended if it works
+          for your application. Maximum supported fields: 10'
+        example: Text List From a Record.
+        in: query
+        name: Fields
+        required: false
+        schema: {type: string}
+      - description: Specifies the total number of slices being fetched. To enable
+          sliced query request, set 2 <= max_slice < 20.
+        example: '10'
+        in: body
+        name: Max Slice
+        required: false
+        schema: {type: string}
+      - description: Specifies the total number of slices being fetched. To enable
+          sliced query request, set 2 <= max_slice < 20.
+        example: log_time
+        in: query
+        name: Slice Field
+        required: false
+        schema: {type: string}
+      - description: The ID of the slice being requested. 0 <= slice_id < max_slice.
+        example: '9'
+        in: body
+        name: Slice ID
+        required: false
+        schema: {type: string}
+      - description: Limit the number of incident related events returned. (Default
+          is 10)
+        example: '9'
+        in: body
+        name: Limit Results
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Symantec Endpoint Detection And Response Get Incident(s) Related Even(s)
+  tmp9:
+    post:
+      description: Get incident(s) from EDR
+      parameters:
+      - description: Specifies the end of the search time frame. Refer to Readme under
+          Tasks Setup for additional information.
+        example: '2017-01-08T00:00:00.000Z'
+        in: query
+        name: End Time
+        required: false
+        schema: {type: string}
+      - description: Specifies the maximum number of incidents to return per request.
+          Maximum is 1000. (Default is 50)
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: The query condition is expressed in the form of a predicate,
+          which consists of terms and other components (for example, logical operators
+          and special characters that specify exactly which events to retrieve). Refer
+          to Readme under Tasks Setup for additional information.
+        example: updated:[2016-06-08T15:39:55.616Z TO *]
+        in: query
+        name: Query Condition(s)
+        required: false
+        schema: {type: string}
+      - description: Specifies the beginning of the search time frame. Refer to Readme
+          under Tasks Setup for additional information.
+        example: '2017-01-01T00:00:00.000Z'
+        in: query
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: Limit the number of incidents returned. (Default is 10)
+        example: '9'
+        in: body
+        name: Limit Results
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Symantec Endpoint Detection And Response Get Incident(s)
+tags:
+- {name: Endpoint Security & Management}

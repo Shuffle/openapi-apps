@@ -1,0 +1,145 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp1:
+      properties:
+        attach_info: {type: string}
+        attachments: {type: string}
+        attachments_md5: {type: string}
+        attachments_sha1: {type: string}
+        attachments_sha256: {type: string}
+        cc: {type: string}
+        date: {type: string}
+        error: {type: string}
+        headers: {type: string}
+        html_body: {type: string}
+        id: {type: string}
+        o365_id: {type: string}
+        raw_content: {type: string}
+        raw_headers: {type: string}
+        recipients: {type: string}
+        reply_to: {type: string}
+        result: {type: string}
+        rtf_body: {type: string}
+        sender: {type: string}
+        subject: {type: string}
+        text_body: {type: string}
+        type: {type: string}
+        valid_recipients_email: {type: string}
+        valid_reply_to_email: {type: string}
+        valid_sender_email: {type: string}
+      type: object
+    tmp2:
+      properties:
+        response: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Microsoft Office 365
+  title: Microsoft Office 365
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Deletes an email message
+      parameters:
+      - description: O365 ID of message to delete.
+        example: ''
+        in: query
+        name: O365 ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Office 365 Delete Mail
+  tmp1:
+    post:
+      description: Get email messages
+      parameters:
+      - description: Count of emails to get, max 250
+        example: ''
+        in: body
+        name: Count
+        required: false
+        schema: {type: string}
+      - description: A csv of extensions you would like to ignore. Useful if image
+          files are being parsed out of email footer as attachments. Default is .jp(e)g,
+          .png, .gif. Filling this value will OVERWRITE existing default
+        example: .jpeg,.png,.exe,.gif
+        in: query
+        name: exclude extensions
+        required: false
+        schema: {type: string}
+      - description: Ignore errors parsing an email. Defaults to False
+        example: ''
+        in: query
+        name: Ignore Errors
+        required: false
+        schema: {type: boolean}
+      - description: Marks the emails as read
+        example: ''
+        in: query
+        name: Mark Read
+        required: true
+        schema: {type: boolean}
+      - description: Offset value from the most recent messages to start getting messages
+          from
+        example: ''
+        in: body
+        name: Count offset
+        required: false
+        schema: {type: string}
+      - description: Optional search query to filter with
+        example: ''
+        in: query
+        name: Search Query
+        required: false
+        schema: {type: string}
+      - description: Retrieve only unread emails
+        example: ''
+        in: query
+        name: Unread
+        required: true
+        schema: {type: boolean}
+      - description: Retrieve attachments from emails
+        example: ''
+        in: query
+        name: With attachments
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Office 365 Get and Search Mail
+  tmp2:
+    post:
+      description: Set an email message as read
+      parameters:
+      - description: ID of message to mark read
+        example: 45sgs654%srfhsv
+        in: query
+        name: Message ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Office 365 Mark Message as Read
+tags:
+- {name: Communication}

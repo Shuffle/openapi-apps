@@ -1,0 +1,41 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        error: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Sophos XG Firewall
+  title: Sophos XG Firewall
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Blocks a given IP address on the Sophos XG firewall
+      parameters:
+      - description: Name to register block as
+        example: 'Malicious Host #1'
+        in: query
+        name: Name of Host
+        required: true
+        schema: {type: string}
+      - description: The IP address to block
+        example: 192.168.0.1
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Sophos XG Block IP
+tags:
+- {name: Network Security & Management}

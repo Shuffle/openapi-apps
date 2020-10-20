@@ -1,0 +1,84 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        created_at: {type: string}
+        extra: {type: string}
+        id: {type: string}
+        image: {type: string}
+        name: {type: string}
+        private_ips: {type: string}
+        public_ips: {type: string}
+        size: {type: string}
+        state: {type: string}
+      type: object
+    tmp1:
+      properties:
+        previous_state: {type: string}
+      type: object
+    tmp2:
+      properties:
+        previous_state: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Google Compute Engine
+  title: Google Compute Engine
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get details on all instances in zone on Compute Engine
+      parameters:
+      - description: GCE Zone
+        example: us-central1-c
+        in: query
+        name: Zone
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Google Compute Engine List Instances
+  tmp1:
+    post:
+      description: Start a stopped Compute Engine instance
+      parameters:
+      - description: GCE Instance ID
+        example: '3394801941788154984'
+        in: query
+        name: Instance ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Google Compute Engine Start Instance
+  tmp2:
+    post:
+      description: Stop a running Compute Engine instance
+      parameters:
+      - description: GCE Instance ID
+        example: '3394801941788154984'
+        in: query
+        name: Instance ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Google Compute Engine Stop Instance
+tags:
+- {name: Infrastructure}

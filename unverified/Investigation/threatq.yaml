@@ -1,0 +1,471 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        event_id: {type: string}
+      type: object
+    tmp1:
+      properties:
+        id: {type: string}
+      type: object
+    tmp2:
+      properties:
+        created_at: {type: string}
+        description: {type: string}
+        happened_at: {type: string}
+        hash: {type: string}
+        id: {type: string}
+        title: {type: string}
+        touched_at: {type: string}
+        type_id: {type: string}
+        updated_at: {type: string}
+      type: object
+    tmp3:
+      properties:
+        class: {type: string}
+        created_at: {type: string}
+        description: {type: string}
+        expired_at: {type: string}
+        expires_at: {type: string}
+        expires_calculated_at: {type: string}
+        hash: {type: string}
+        id: {type: string}
+        last_detected_at: {type: string}
+        status_id: {type: string}
+        touched_at: {type: string}
+        type_id: {type: string}
+        updated_at: {type: string}
+        value: {type: string}
+      type: object
+    tmp4:
+      properties:
+        adversaries: {type: string}
+        attachments: {type: string}
+        attributes_attribute_created_at: {type: string}
+        attributes_attribute_id: {type: string}
+        attributes_attribute_name: {type: string}
+        attributes_attribute_updated_at: {type: string}
+        attributes_created_at: {type: string}
+        attributes_id: {type: string}
+        attributes_indicator_id: {type: string}
+        attributes_name: {type: string}
+        attributes_touched_at: {type: string}
+        attributes_updated_at: {type: string}
+        attributes_value: {type: string}
+        class: {type: string}
+        comments: {type: string}
+        created_at: {type: string}
+        description: {type: string}
+        events: {type: string}
+        expired_at: {type: string}
+        expires_at: {type: string}
+        expires_calculated_at: {type: string}
+        expires_needs_calc: {type: string}
+        hash: {type: string}
+        id: {type: string}
+        indicators: {type: string}
+        last_detected_at: {type: string}
+        score_created_at: {type: string}
+        score_generated_score: {type: string}
+        score_indicator_id: {type: string}
+        score_manual_score: {type: string}
+        score_score_config_hash: {type: string}
+        score_updated_at: {type: string}
+        signatures: {type: string}
+        sources_created_at: {type: string}
+        sources_id: {type: string}
+        sources_name: {type: string}
+        sources_pivot_creator_source_id: {type: string}
+        sources_pivot_id: {type: string}
+        sources_pivot_indicator_id: {type: string}
+        sources_pivot_source_id: {type: string}
+        sources_published_at: {type: string}
+        sources_tlp_id: {type: string}
+        sources_type: {type: string}
+        sources_updated_at: {type: string}
+        status_created_at: {type: string}
+        status_description: {type: string}
+        status_id: {type: string}
+        status_include_in_export: {type: string}
+        status_name: {type: string}
+        status_protected: {type: string}
+        status_updated_at: {type: string}
+        status_user_editable: {type: string}
+        status_visible: {type: string}
+        tags: {type: string}
+        touched_at: {type: string}
+        type_class: {type: string}
+        type_created_at: {type: string}
+        type_id: {type: string}
+        type_name: {type: string}
+        type_score: {type: string}
+        type_updated_at: {type: string}
+        type_wildcard_matching: {type: string}
+        updated_at: {type: string}
+        value: {type: string}
+        watchlist: {type: string}
+      type: object
+    tmp5:
+      properties:
+        adversaries_created_at: {type: string}
+        adversaries_id: {type: string}
+        adversaries_name: {type: string}
+        adversaries_pivot_created_at: {type: string}
+        adversaries_pivot_id: {type: string}
+        adversaries_pivot_updated_at: {type: string}
+        adversaries_touched_at: {type: string}
+        adversaries_updated_at: {type: string}
+        attributes_attribute_created_at: {type: string}
+        attributes_attribute_id: {type: string}
+        attributes_attribute_name: {type: string}
+        attributes_attribute_updated_at: {type: string}
+        attributes_created_at: {type: string}
+        attributes_id: {type: string}
+        attributes_indicator_id: {type: string}
+        attributes_name: {type: string}
+        attributes_touched_at: {type: string}
+        attributes_updated_at: {type: string}
+        attributes_value: {type: string}
+        class: {type: string}
+        comments_created_at: {type: string}
+        comments_creator_source_id: {type: string}
+        comments_id: {type: string}
+        comments_indicator_id: {type: string}
+        comments_updated_at: {type: string}
+        comments_value: {type: string}
+        created_at: {type: string}
+        description: {type: string}
+        events_created_at: {type: string}
+        events_description: {type: string}
+        events_happened_at: {type: string}
+        events_hash: {type: string}
+        events_id: {type: string}
+        events_pivot_created_at: {type: string}
+        events_pivot_id: {type: string}
+        events_pivot_updated_at: {type: string}
+        events_title: {type: string}
+        events_touched_at: {type: string}
+        events_type_created_at: {type: string}
+        events_type_id: {type: string}
+        events_type_name: {type: string}
+        events_type_updated_at: {type: string}
+        events_type_user_editable: {type: string}
+        events_updated_at: {type: string}
+        expired_at: {type: string}
+        expires_at: {type: string}
+        expires_calculated_at: {type: string}
+        expires_needs_calc: {type: string}
+        hash: {type: string}
+        id: {type: string}
+        indicators_class: {type: string}
+        indicators_created_at: {type: string}
+        indicators_description: {type: string}
+        indicators_expired_at: {type: string}
+        indicators_expires_at: {type: string}
+        indicators_expires_calculated_at: {type: string}
+        indicators_expires_needs_calc: {type: string}
+        indicators_hash: {type: string}
+        indicators_id: {type: string}
+        indicators_last_detected_at: {type: string}
+        indicators_pivot_created_at: {type: string}
+        indicators_pivot_id: {type: string}
+        indicators_pivot_updated_at: {type: string}
+        indicators_status_id: {type: string}
+        indicators_touched_at: {type: string}
+        indicators_type_class: {type: string}
+        indicators_type_created_at: {type: string}
+        indicators_type_id: {type: string}
+        indicators_type_name: {type: string}
+        indicators_type_plugins: {type: string}
+        indicators_type_plugins_author: {type: string}
+        indicators_type_plugins_config_created_at: {type: string}
+        indicators_type_plugins_config_id: {type: string}
+        indicators_type_plugins_config_key: {type: string}
+        indicators_type_plugins_config_mask: {type: string}
+        indicators_type_plugins_config_options: {type: string}
+        indicators_type_plugins_config_plugin_id: {type: string}
+        indicators_type_plugins_config_type: {type: string}
+        indicators_type_plugins_config_updated_at: {type: string}
+        indicators_type_plugins_config_user_editable: {type: string}
+        indicators_type_plugins_config_value: {type: string}
+        indicators_type_plugins_created_at: {type: string}
+        indicators_type_plugins_deleted_at: {type: string}
+        indicators_type_plugins_description: {type: string}
+        indicators_type_plugins_disable_proxy: {type: string}
+        indicators_type_plugins_enabled: {type: string}
+        indicators_type_plugins_friendly_name: {type: string}
+        indicators_type_plugins_id: {type: string}
+        indicators_type_plugins_logo_path: {type: string}
+        indicators_type_plugins_name: {type: string}
+        indicators_type_plugins_object_type_id: {type: string}
+        indicators_type_plugins_package_name: {type: string}
+        indicators_type_plugins_required_threatq_version: {type: string}
+        indicators_type_plugins_updated_at: {type: string}
+        indicators_type_plugins_version: {type: string}
+        indicators_type_score: {type: string}
+        indicators_type_updated_at: {type: string}
+        indicators_type_wildcard_matching: {type: string}
+        indicators_updated_at: {type: string}
+        indicators_value: {type: string}
+        last_detected_at: {type: string}
+        score_created_at: {type: string}
+        score_generated_score: {type: string}
+        score_indicator_id: {type: string}
+        score_manual_score: {type: string}
+        score_score_config_hash: {type: string}
+        score_updated_at: {type: string}
+        sources_created_at: {type: string}
+        sources_id: {type: string}
+        sources_name: {type: string}
+        sources_pivot_creator_source_id: {type: string}
+        sources_pivot_id: {type: string}
+        sources_pivot_indicator_id: {type: string}
+        sources_pivot_source_id: {type: string}
+        sources_published_at: {type: string}
+        sources_reference_id: {type: string}
+        sources_tlp_id: {type: string}
+        sources_type: {type: string}
+        sources_updated_at: {type: string}
+        status_created_at: {type: string}
+        status_description: {type: string}
+        status_id: {type: string}
+        status_include_in_export: {type: string}
+        status_name: {type: string}
+        status_protected: {type: string}
+        status_updated_at: {type: string}
+        status_user_editable: {type: string}
+        status_visible: {type: string}
+        touched_at: {type: string}
+        type_class: {type: string}
+        type_created_at: {type: string}
+        type_id: {type: string}
+        type_name: {type: string}
+        type_plugins_author: {type: string}
+        type_plugins_config_created_at: {type: string}
+        type_plugins_config_id: {type: string}
+        type_plugins_config_key: {type: string}
+        type_plugins_config_mask: {type: string}
+        type_plugins_config_options: {type: string}
+        type_plugins_config_plugin_id: {type: string}
+        type_plugins_config_type: {type: string}
+        type_plugins_config_updated_at: {type: string}
+        type_plugins_config_user_editable: {type: string}
+        type_plugins_config_value: {type: string}
+        type_plugins_created_at: {type: string}
+        type_plugins_deleted_at: {type: string}
+        type_plugins_description: {type: string}
+        type_plugins_disable_proxy: {type: string}
+        type_plugins_enabled: {type: string}
+        type_plugins_friendly_name: {type: string}
+        type_plugins_id: {type: string}
+        type_plugins_logo_path: {type: string}
+        type_plugins_name: {type: string}
+        type_plugins_object_type_id: {type: string}
+        type_plugins_package_name: {type: string}
+        type_plugins_required_threatq_version: {type: string}
+        type_plugins_updated_at: {type: string}
+        type_plugins_version: {type: string}
+        type_score: {type: string}
+        type_updated_at: {type: string}
+        type_wildcard_matching: {type: string}
+        updated_at: {type: string}
+        value: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of ThreatQuotient ThreatQ
+  title: ThreatQuotient ThreatQ
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Create Event
+      parameters:
+      - description: Title of your new event.
+        example: ''
+        in: query
+        name: Title of Event
+        required: true
+        schema: {type: string}
+      - description: Date of the Event
+        example: '2017-04-13 15:43:01'
+        in: query
+        name: Event Date
+        required: true
+        schema: {type: string}
+      - description: Description of the Event
+        example: ''
+        in: query
+        name: Event Description
+        required: true
+        schema: {type: string}
+      - description: Type of the Event
+        example: Incident
+        in: query
+        name: Event Type
+        required: true
+        schema: {type: string}
+      - description: Status of the Event
+        example: ''
+        in: query
+        name: Event Status
+        required: false
+        schema: {type: string}
+      - description: Text of the Event
+        example: ''
+        in: query
+        name: Event Text
+        required: false
+        schema: {type: string}
+      - description: Source of the Event
+        example: ''
+        in: query
+        name: Event Source
+        required: false
+        schema: {type: string}
+      - description: Key for additional attribute
+        example: ''
+        in: query
+        name: Attribute Key
+        required: false
+        schema: {type: string}
+      - description: Value for additional attribute
+        example: ''
+        in: query
+        name: Attribute Value
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: ThreatQ Create Event
+  tmp1:
+    post:
+      description: Create Indicator
+      parameters:
+      - description: Indicator Value
+        example: example.com
+        in: query
+        name: Indicator Value
+        required: true
+        schema: {type: string}
+      - description: Type of Indicator
+        example: FQDN
+        in: query
+        name: Type
+        required: true
+        schema: {type: string}
+      - description: Indicator Status
+        example: Review
+        in: query
+        name: Status
+        required: true
+        schema: {type: string}
+      - description: Indicator Source
+        example: mysource
+        in: query
+        name: Source
+        required: true
+        schema: {type: string}
+      - description: 'Key to add to indicator paired with Attribute Value (Key: Value)'
+        example: Details
+        in: query
+        name: Attribute Key
+        required: true
+        schema: {type: string}
+      - description: 'Value to add to indicator paired with Attribute Key (Key: Value)'
+        example: ''
+        in: query
+        name: Attribute Value
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: ThreatQ Create Indicator
+  tmp2:
+    post:
+      description: Import Recent Events
+      parameters:
+      - description: Number of Records to import at a time.
+        example: '15'
+        in: body
+        name: Number of Records
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: ThreatQ Events Import
+  tmp3:
+    post:
+      description: Import Indicators
+      parameters:
+      - description: Number of Records to import at a time.
+        example: '15'
+        in: body
+        name: Number of Records
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: ThreatQ Import Indicators
+  tmp4:
+    post:
+      description: Search Indicators
+      parameters:
+      - description: Value to search on
+        example: ea89a4351f32a2e2r32cca159a7d9f12
+        in: query
+        name: Search Value
+        required: true
+        schema: {type: string}
+      - description: 'Comma separated list of fields to be returned. Defaults to all
+          values : `adversaries,attachments,attributes,comments,events,indicators,score,signatures,sources,status,tags,type,watchlist`'
+        example: '''adversaries,indicators,score,type,watchlist'''
+        in: query
+        name: Search With
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: ThreatQ Search Indicators
+  tmp5:
+    post:
+      description: Get more detail about a given indicator
+      parameters:
+      - description: Incident ID to get details about
+        example: ''
+        in: body
+        name: Indicator ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: ThreatQ Get Indicator Details
+tags:
+- {name: Investigation}

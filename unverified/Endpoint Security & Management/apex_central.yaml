@@ -1,0 +1,214 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        result_code: {type: string}
+        result_content: {type: string}
+        result_description: {type: string}
+      type: object
+    tmp2:
+      properties:
+        json: {type: string}
+      type: object
+    tmp3:
+      properties:
+        ErrorCode: {type: string}
+        ErrorMsg: {type: string}
+        ExtractingStatus: {type: string}
+        FileAddedDatetime: {type: string}
+        FileHashID: {type: string}
+        FileName: {type: string}
+        Result: {type: string}
+        ShortDesc: {type: string}
+        Title: {type: string}
+        UploadedBy: {type: string}
+        UploadedFrom: {type: string}
+        message: {type: string}
+      type: object
+    tmp4:
+      properties:
+        json: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Trend Micro Apex Central
+  title: Trend Micro Apex Central
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Apex Central API Add content to a UDSO List
+      parameters:
+      - description: 'The suspicious object content for the specified type
+
+          ip:provide the IPv4 address
+
+          url:provide the URL starting with http:// or https:// (maximum length: 2047
+          characters)
+
+          file_sha1:provide the file SHA-1 hash (maximum length: 40 characters)
+
+          domain:provide the domain'
+        example: ''
+        in: query
+        name: Content
+        required: true
+        schema: {type: string}
+      - description: 'The scan action to perform on the suspicious object (maximum
+          length: 64 characters) log block
+
+
+          '
+        example: ''
+        in: query
+        name: Scan Action
+        required: true
+        schema: {type: string}
+      - description: 'The suspicious object type ip url file_sha1 domain
+
+
+          '
+        example: ''
+        in: query
+        name: Type
+        required: true
+        schema: {type: string}
+      - description: Expiration UTC Date
+        example: ''
+        in: query
+        name: Expiration UTC Date
+        required: false
+        schema: {type: string}
+      - description: Notes
+        example: ''
+        in: query
+        name: Notes
+        required: false
+        schema: {type: string}
+      - description: Some Trend Micro Apex endpoints may begin with `/WebApp`
+        example: ''
+        in: query
+        name: Use WebApp Endpoint
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Trend Micro Apex Central Add to UDSO List
+  tmp1:
+    post:
+      description: Apex Central API File USDO add.
+      parameters:
+      - description: USDO files to add to Trend Micro Apex
+        example: ''
+        in: query
+        name: USDO File
+        required: true
+        schema: {type: string}
+      - description: "The scan action to perform: \u25CF Log \u25CF Block \u25CF Quarantine"
+        example: ''
+        in: query
+        name: File Scan Action
+        required: false
+        schema: {type: string}
+      - description: Additional Info
+        example: ''
+        in: query
+        name: Note
+        required: false
+        schema: {type: string}
+      - description: Some Trend Micro Apex endpoints may begin with `/WebApp`
+        example: ''
+        in: query
+        name: Use WebApp Endpoint
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Trend Micro Apex Central File USDO Add
+  tmp2:
+    post:
+      description: Apex Central API Get Host
+      parameters:
+      - description: Host name to look up
+        example: ''
+        in: query
+        name: Host Name
+        required: true
+        schema: {type: string}
+      - description: Some Trend Micro Apex endpoints may begin with `/WebApp`
+        example: ''
+        in: query
+        name: Use WebApp Endpoint
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Trend Micro Apex Central Get Host
+  tmp3:
+    post:
+      description: Apex Central API List available YARA rules
+      parameters:
+      - description: Fuzzy Match String
+        example: ''
+        in: query
+        name: Fuzzy Match String
+        required: true
+        schema: {type: string}
+      - description: Some Trend Micro Apex endpoints may begin with `/WebApp`
+        example: ''
+        in: query
+        name: Use WebApp Endpoint
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Trend Micro Apex Central List YARA Rules
+  tmp4:
+    post:
+      description: Apex Central API list all UDSO entries.
+      parameters:
+      - description: Query String
+        example: ''
+        in: query
+        name: Query String
+        required: false
+        schema: {type: string}
+      - description: Some Trend Micro Apex endpoints may begin with `/WebApp` overrides
+          asset config
+        example: ''
+        in: query
+        name: Use WebApp Endpoint
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Trend Micro Apex Central List UDSO entries
+tags:
+- {name: Endpoint Security & Management}

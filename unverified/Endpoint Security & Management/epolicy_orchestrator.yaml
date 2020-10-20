@@ -1,0 +1,133 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        message: {type: string}
+      type: object
+    tmp1:
+      properties:
+        message: {type: string}
+      type: object
+    tmp2:
+      properties:
+        EPOBranchNodeAutoID: {type: string}
+        EPOComputerPropertiesCPUSerialNum: {type: string}
+        EPOComputerPropertiesCPUSpeed: {type: string}
+        EPOComputerPropertiesCPUType: {type: string}
+        EPOComputerPropertiesComputerName: {type: string}
+        EPOComputerPropertiesDefaultLangID: {type: string}
+        EPOComputerPropertiesDescription: {type: string}
+        EPOComputerPropertiesDomainName: {type: string}
+        EPOComputerPropertiesFreeDiskSpace: {type: string}
+        EPOComputerPropertiesFreeMemory: {type: string}
+        EPOComputerPropertiesIPAddress: {type: string}
+        EPOComputerPropertiesIPHostName: {type: string}
+        EPOComputerPropertiesIPSubnet: {type: string}
+        EPOComputerPropertiesIPSubnetMask: {type: string}
+        EPOComputerPropertiesIPV4x: {type: string}
+        EPOComputerPropertiesIPV6: {type: string}
+        EPOComputerPropertiesIPXAddress: {type: string}
+        EPOComputerPropertiesIsPortable: {type: string}
+        EPOComputerPropertiesLastAgentHandler: {type: string}
+        EPOComputerPropertiesNetAddress: {type: string}
+        EPOComputerPropertiesNumOfCPU: {type: string}
+        EPOComputerPropertiesOSBitMode: {type: string}
+        EPOComputerPropertiesOSBuildNum: {type: string}
+        EPOComputerPropertiesOSOEMID: {type: string}
+        EPOComputerPropertiesOSPlatform: {type: string}
+        EPOComputerPropertiesOSServicePackVer: {type: string}
+        EPOComputerPropertiesOSType: {type: string}
+        EPOComputerPropertiesOSVersion: {type: string}
+        EPOComputerPropertiesParentID: {type: string}
+        EPOComputerPropertiesSubnetAddress: {type: string}
+        EPOComputerPropertiesSubnetMask: {type: string}
+        EPOComputerPropertiesSystemDescription: {type: string}
+        EPOComputerPropertiesSysvolFreeSpace: {type: string}
+        EPOComputerPropertiesSysvolTotalSpace: {type: string}
+        EPOComputerPropertiesTimeZone: {type: string}
+        EPOComputerPropertiesTotalDiskSpace: {type: string}
+        EPOComputerPropertiesTotalPhysicalMemory: {type: string}
+        EPOComputerPropertiesUserName: {type: string}
+        EPOComputerPropertiesVdi: {type: string}
+        EPOLeafNodeAgentGUID: {type: string}
+        EPOLeafNodeAgentVersion: {type: string}
+        EPOLeafNodeExcludedTags: {type: string}
+        EPOLeafNodeLastUpdate: {type: string}
+        EPOLeafNodeManagedState: {type: string}
+        EPOLeafNodeTags: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of McAfee ePolicy Orchestrator
+  title: McAfee ePolicy Orchestrator
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Add Tag to system in McAfee ePO
+      parameters:
+      - description: TargetSystemName
+        example: test-computer
+        in: query
+        name: TargetSystemName
+        required: true
+        schema: {type: string}
+      - description: TagName
+        example: quarantine
+        in: query
+        name: TagName
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: McAfee ePO AddTag
+  tmp1:
+    post:
+      description: Clear Tag on system in ePO
+      parameters:
+      - description: TargetSystemName
+        example: test-computer
+        in: query
+        name: TargetSystemName
+        required: true
+        schema: {type: string}
+      - description: TagName
+        example: quarantine
+        in: query
+        name: TagName
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: McAfee ePO ClearTag
+  tmp2:
+    post:
+      description: Pull host information from McAfee ePO
+      parameters:
+      - description: TargetSystem to search. Search using name, IP address, MAC address,
+          user name, agent GUID or tag
+        example: 192.168.1.1
+        in: query
+        name: TargetSystem
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: McAfee Host Info
+tags:
+- {name: Endpoint Security & Management}

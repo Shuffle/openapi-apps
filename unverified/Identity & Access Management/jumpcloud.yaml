@@ -1,0 +1,657 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        success: {type: string}
+      type: object
+    tmp10:
+      properties:
+        id: {type: string}
+        name: {type: string}
+        type: {type: string}
+      type: object
+    tmp11:
+      properties:
+        active: {type: string}
+        agent_version: {type: string}
+        allow_multi_factor_authentication: {type: string}
+        allow_public_key_authentication: {type: string}
+        allow_ssh_password_authentication: {type: string}
+        allow_ssh_root_login: {type: string}
+        amazon_instance_id: {type: string}
+        arch: {type: string}
+        connection_history: {type: string}
+        created: {type: string}
+        display_name: {type: string}
+        fde: {type: string}
+        hostname: {type: string}
+        id: {type: string}
+        last_contact: {type: string}
+        modify_sshd_config: {type: string}
+        network_interfaces_address: {type: string}
+        network_interfaces_family: {type: string}
+        network_interfaces_internal: {type: string}
+        network_interfaces_name: {type: string}
+        organization: {type: string}
+        os: {type: string}
+        remote_ip: {type: string}
+        ssh_root_enabled: {type: string}
+        sshd_params_name: {type: string}
+        sshd_params_value: {type: string}
+        system_insights_state: {type: string}
+        system_timezone: {type: string}
+        tags: {type: string}
+        template_name: {type: string}
+        version: {type: string}
+      type: object
+    tmp12:
+      properties:
+        id: {type: string}
+        name: {type: string}
+        type: {type: string}
+      type: object
+    tmp13:
+      properties:
+        account_locked: {type: string}
+        activated: {type: string}
+        addresses: {type: string}
+        allow_public_key: {type: string}
+        attributes: {type: string}
+        bad_login_attempts: {type: string}
+        company: {type: string}
+        cost_center: {type: string}
+        created: {type: string}
+        department: {type: string}
+        description: {type: string}
+        displayname: {type: string}
+        email: {type: string}
+        employee_identifier: {type: string}
+        employee_type: {type: string}
+        enable_managed_uid: {type: string}
+        enable_user_portal_multifactor: {type: string}
+        external_dn: {type: string}
+        external_source_type: {type: string}
+        externally_managed: {type: string}
+        firstname: {type: string}
+        id: {type: string}
+        job_title: {type: string}
+        lastname: {type: string}
+        ldap_binding_user: {type: string}
+        location: {type: string}
+        mfa_configured: {type: string}
+        mfa_exclusion: {type: string}
+        mfa_exclusion_until: {type: string}
+        middlename: {type: string}
+        organization: {type: string}
+        password_expiration_date: {type: string}
+        password_expired: {type: string}
+        password_never_expires: {type: string}
+        passwordless_sudo: {type: string}
+        phone_numbers: {type: string}
+        public_key: {type: string}
+        relationships: {type: string}
+        samba_service_user: {type: string}
+        ssh_keys: {type: string}
+        sudo: {type: string}
+        suspended: {type: string}
+        tags: {type: string}
+        totp_enabled: {type: string}
+        unix_guid: {type: string}
+        unix_uid: {type: string}
+        username: {type: string}
+      type: object
+    tmp14:
+      properties:
+        success: {type: string}
+      type: object
+    tmp2:
+      properties:
+        success: {type: string}
+      type: object
+    tmp3:
+      properties:
+        success: {type: string}
+      type: object
+    tmp4:
+      properties:
+        success: {type: string}
+      type: object
+    tmp5:
+      properties:
+        user_id: {type: string}
+      type: object
+    tmp6:
+      properties:
+        success: {type: string}
+      type: object
+    tmp7:
+      properties:
+        success: {type: string}
+      type: object
+    tmp8:
+      properties:
+        id: {type: string}
+        name: {type: string}
+        user_lockout_action: {type: string}
+        user_password_expiration_action: {type: string}
+      type: object
+    tmp9:
+      properties:
+        bitlocker_info_collection_time: {type: string}
+        bitlocker_info_conversion_status: {type: string}
+        bitlocker_info_device_id: {type: string}
+        bitlocker_info_drive_letter: {type: string}
+        bitlocker_info_encryption_method: {type: string}
+        bitlocker_info_persistent_volume_id: {type: string}
+        bitlocker_info_protection_status: {type: string}
+        bitlocker_info_system_id: {type: string}
+        disk_info_collection_time: {type: string}
+        disk_info_description: {type: string}
+        disk_info_disk_index: {type: string}
+        disk_info_disk_size: {type: string}
+        disk_info_hardware_model: {type: string}
+        disk_info_id: {type: string}
+        disk_info_manufacturer: {type: string}
+        disk_info_name: {type: string}
+        disk_info_partitions: {type: string}
+        disk_info_pnp_device_id: {type: string}
+        disk_info_serial: {type: string}
+        disk_info_system_id: {type: string}
+        disk_info_type: {type: string}
+        groups_collection_time: {type: string}
+        groups_comment: {type: string}
+        groups_gid: {type: string}
+        groups_gid_signed: {type: string}
+        groups_group_sid: {type: string}
+        groups_groupname: {type: string}
+        groups_system_id: {type: string}
+        ie_extensions_collection_time: {type: string}
+        ie_extensions_name: {type: string}
+        ie_extensions_path: {type: string}
+        ie_extensions_registry_path: {type: string}
+        ie_extensions_system_id: {type: string}
+        ie_extensions_version: {type: string}
+        interface_addresses_address: {type: string}
+        interface_addresses_broadcast: {type: string}
+        interface_addresses_collection_time: {type: string}
+        interface_addresses_friendly_name: {type: string}
+        interface_addresses_interface: {type: string}
+        interface_addresses_mask: {type: string}
+        interface_addresses_point_to_point: {type: string}
+        interface_addresses_system_id: {type: string}
+        interface_addresses_type: {type: string}
+        kernel_info_arguments: {type: string}
+        kernel_info_collection_time: {type: string}
+        kernel_info_device: {type: string}
+        kernel_info_path: {type: string}
+        kernel_info_system_id: {type: string}
+        kernel_info_version: {type: string}
+        logged_in_users_collection_time: {type: string}
+        logged_in_users_host: {type: string}
+        logged_in_users_pid: {type: string}
+        logged_in_users_system_id: {type: string}
+        logged_in_users_time: {type: string}
+        logged_in_users_tty: {type: string}
+        logged_in_users_type: {type: string}
+        logged_in_users_user: {type: string}
+        logical_drives_boot_partition: {type: string}
+        logical_drives_collection_time: {type: string}
+        logical_drives_device_id: {type: string}
+        logical_drives_file_system: {type: string}
+        logical_drives_free_space: {type: string}
+        logical_drives_size: {type: string}
+        logical_drives_system_id: {type: string}
+        logical_drives_type: {type: string}
+        os_version_build: {type: string}
+        os_version_codename: {type: string}
+        os_version_collection_time: {type: string}
+        os_version_install_date: {type: string}
+        os_version_major: {type: string}
+        os_version_minor: {type: string}
+        os_version_name: {type: string}
+        os_version_patch: {type: string}
+        os_version_platform: {type: string}
+        os_version_platform_like: {type: string}
+        os_version_system_id: {type: string}
+        os_version_version: {type: string}
+        patches_caption: {type: string}
+        patches_collection_time: {type: string}
+        patches_csname: {type: string}
+        patches_description: {type: string}
+        patches_fix_comments: {type: string}
+        patches_hotfix_id: {type: string}
+        patches_install_date: {type: string}
+        patches_installed_by: {type: string}
+        patches_installed_on: {type: string}
+        patches_system_id: {type: string}
+        programs_collection_time: {type: string}
+        programs_identifying_number: {type: string}
+        programs_install_date: {type: string}
+        programs_install_location: {type: string}
+        programs_install_source: {type: string}
+        programs_language: {type: string}
+        programs_name: {type: string}
+        programs_publisher: {type: string}
+        programs_system_id: {type: string}
+        programs_uninstall_string: {type: string}
+        programs_version: {type: string}
+        system_uptime_collection_time: {type: string}
+        system_uptime_days: {type: string}
+        system_uptime_hours: {type: string}
+        system_uptime_minutes: {type: string}
+        system_uptime_seconds: {type: string}
+        system_uptime_system_id: {type: string}
+        system_uptime_total_seconds: {type: string}
+        user_groups_collection_time: {type: string}
+        user_groups_gid: {type: string}
+        user_groups_system_id: {type: string}
+        user_groups_uid: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Jumpcloud Jumpcloud
+  title: Jumpcloud Jumpcloud
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Add or remove a system to a system group
+      parameters:
+      - description: ID to edit in the group
+        example: 5e4322c4d2017f10e126c9fe
+        in: query
+        name: System ID
+        required: true
+        schema: {type: string}
+      - description: System Group ID to add to
+        example: 5e4323cc45886d66192de9d1
+        in: query
+        name: System Group ID
+        required: true
+        schema: {type: string}
+      - description: True will add to group, False will remove from group
+        example: ''
+        in: query
+        name: Should Add
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: JumpCloud Add/Remove System to System Group
+  tmp1:
+    post:
+      description: Add or remove a user to system
+      parameters:
+      - description: ID to edit in the group
+        example: 5e4322c4d2017f10e126c9fe
+        in: query
+        name: System ID
+        required: true
+        schema: {type: string}
+      - description: User ID to add to
+        example: 5e4323cc45886d66192de9d1
+        in: query
+        name: User ID
+        required: true
+        schema: {type: string}
+      - description: True will add, False will remove from user
+        example: ''
+        in: query
+        name: Should Add
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: JumpCloud Add/Remove System to User
+  tmp10:
+    post:
+      description: List all System Groups
+      parameters:
+      - description: Limit the results
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: JumpCloud Get System Groups
+  tmp11:
+    post:
+      description: Get the Systems of a JumpCloud Instance
+      parameters:
+      - description: Limit the results
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: JumpCloud Get Systems
+  tmp12:
+    post:
+      description: Get the Groups for a JumpCloud Instance
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: JumpCloud Get Groups
+  tmp13:
+    post:
+      description: Get the Users of a JumpCloud Instance
+      parameters:
+      - description: Limit the results
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: JumpCloud Get Users
+  tmp14:
+    post:
+      description: Lock or Unlock a Users Account in JumpCloud
+      parameters:
+      - description: ID of the user to delete
+        example: ''
+        in: query
+        name: User ID
+        required: true
+        schema: {type: string}
+      - description: If True will lock account, False will Unlock
+        example: ''
+        in: query
+        name: Lock
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp14'}
+          description: Successful request
+      summary: JumpCloud Lock/Unlock User
+  tmp2:
+    post:
+      description: Add or remove a user to an LDAP server
+      parameters:
+      - description: ID to edit in the group
+        example: 5e4322c4d2017f10e126c9fe
+        in: query
+        name: User ID
+        required: true
+        schema: {type: string}
+      - description: System Group ID to add to
+        example: 5e4323cc45886d66192de9d1
+        in: query
+        name: LDAP ID
+        required: true
+        schema: {type: string}
+      - description: True will add to group, False will remove from group
+        example: ''
+        in: query
+        name: Should Add
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: JumpCloud Add/Remove User to LDAP Server
+  tmp3:
+    post:
+      description: Add or Remove a user to a usergroup
+      parameters:
+      - description: User ID to edit in the group
+        example: 5e4322c4d2017f10e126c9fe
+        in: query
+        name: User ID
+        required: true
+        schema: {type: string}
+      - description: User Group ID to add user to
+        example: 5e4323cc45886d66192de9d1
+        in: query
+        name: Group ID
+        required: true
+        schema: {type: string}
+      - description: True will add user to group, False will remove user from group
+        example: ''
+        in: query
+        name: User Add?
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: JumpCloud Add/Remove User in User Group
+  tmp4:
+    post:
+      description: Add or Remove a User Group to a System Group
+      parameters:
+      - description: ID to edit in the group
+        example: 5e4322c4d2017f10e126c9fe
+        in: query
+        name: User Group ID
+        required: true
+        schema: {type: string}
+      - description: System Group ID to add to
+        example: 5e4323cc45886d66192de9d1
+        in: query
+        name: System Group ID
+        required: true
+        schema: {type: string}
+      - description: True will add to group, False will remove from group
+        example: ''
+        in: query
+        name: Should Add
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: JumpCloud Add/Remove User Group to System Group
+  tmp5:
+    post:
+      description: 'Create a new User in JumpCloud '
+      parameters:
+      - description: Email address of the new user
+        example: ''
+        in: query
+        name: Email Address
+        required: true
+        schema: {type: string}
+      - description: First Name of the new user
+        example: ''
+        in: query
+        name: First Name
+        required: true
+        schema: {type: string}
+      - description: Last name of the new user
+        example: ''
+        in: query
+        name: Last Name
+        required: true
+        schema: {type: string}
+      - description: Username for the new user
+        example: ''
+        in: query
+        name: Username
+        required: true
+        schema: {type: string}
+      - description: Password for the new user
+        example: ''
+        in: query
+        name: Password
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Require Multifactor Authentication (MFA)
+        required: false
+        schema: {type: boolean}
+      - description: Optional SSH Key to add to the newly created account
+        example: ''
+        in: query
+        name: SSH Public Key
+        required: false
+        schema: {type: string}
+      - description: Public SSH Key Name
+        example: ''
+        in: query
+        name: SSH Public Key Name
+        required: false
+        schema: {type: string}
+      - description: String used to identify the employee
+        example: ''
+        in: query
+        name: Employee Identifier
+        required: false
+        schema: {type: string}
+      - description: Job Title
+        example: ''
+        in: query
+        name: Job Title
+        required: false
+        schema: {type: string}
+      - description: String to describe employee type
+        example: ''
+        in: query
+        name: Employee Type
+        required: false
+        schema: {type: string}
+      - description: Company
+        example: ''
+        in: query
+        name: Company
+        required: false
+        schema: {type: string}
+      - description: Department
+        example: ''
+        in: query
+        name: Department
+        required: false
+        schema: {type: string}
+      - description: Cost Center String
+        example: ''
+        in: query
+        name: Cost Center
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: JumpCloud Create User
+  tmp6:
+    post:
+      description: Delete a User from JumpCloud
+      parameters:
+      - description: ID of the user to delete
+        example: ''
+        in: query
+        name: User ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: JumpCloud Delete User
+  tmp7:
+    post:
+      description: Expire a users password
+      parameters:
+      - description: Username ID to expire
+        example: 5e4322c4d2017f10e126c9fe
+        in: query
+        name: Username ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: JumpCloud Expire User Password
+  tmp8:
+    post:
+      description: Get information about all LDAP servers
+      parameters:
+      - description: Limit the results
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: JumpCloud Get LDAP Servers
+  tmp9:
+    post:
+      description: Get system insights on a given system
+      parameters:
+      - description: ID of the System to get information from
+        example: ''
+        in: query
+        name: System ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: JumpCloud Get System Insights
+tags:
+- {name: Identity & Access Management}

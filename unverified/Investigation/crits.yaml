@@ -1,0 +1,379 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        failure: {type: string}
+        failure_message: {type: string}
+        success: {type: string}
+        success_ids: {type: string}
+      type: object
+    tmp1:
+      properties:
+        failure: {type: string}
+        failure_message: {type: string}
+        success: {type: string}
+        success_ids: {type: string}
+      type: object
+    tmp10:
+      properties:
+        failure: {type: string}
+        failure_message: {type: string}
+        success: {type: string}
+        success_ids: {type: string}
+      type: object
+    tmp11:
+      properties:
+        failure: {type: string}
+        failure_message: {type: string}
+        success: {type: string}
+        success_ids: {type: string}
+      type: object
+    tmp2:
+      properties:
+        failure: {type: string}
+        failure_message: {type: string}
+        success: {type: string}
+        success_ids: {type: string}
+      type: object
+    tmp3:
+      properties:
+        failure: {type: string}
+        failure_message: {type: string}
+        success: {type: string}
+        success_ids: {type: string}
+      type: object
+    tmp4:
+      properties:
+        failure: {type: string}
+        failure_message: {type: string}
+        success: {type: string}
+        success_ids: {type: string}
+      type: object
+    tmp5:
+      properties:
+        failure: {type: string}
+        failure_message: {type: string}
+        success: {type: string}
+        success_ids: {type: string}
+      type: object
+    tmp6:
+      properties:
+        failure: {type: string}
+        failure_message: {type: string}
+        success: {type: string}
+        success_ids: {type: string}
+      type: object
+    tmp7:
+      properties:
+        failure: {type: string}
+        failure_message: {type: string}
+        success: {type: string}
+        success_ids: {type: string}
+      type: object
+    tmp8:
+      properties:
+        failure: {type: string}
+        failure_message: {type: string}
+        success: {type: string}
+        success_ids: {type: string}
+      type: object
+    tmp9:
+      properties:
+        failure: {type: string}
+        failure_message: {type: string}
+        success: {type: string}
+        success_ids: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of MITRE CRITs
+  title: MITRE CRITs
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAE60lEQVR4nO3cS4gcRRgH8H/1rmMiisZLTh70pIJ6MAhBxQcKQpA97JYRowchiunZRCEQUdG4CBJFVHCm9+JFIWq2ZsFgfKCIoKCCHlRMLsGDBx+IEoiCsmamPEjY10w9uqurZnb+v9t0V3/1zezX1V1dzQJERERERERERERERERERERERERERERERERERERERERERFSWsLaYKaRxfydXoZIJTrbuGLhPzX6w6rPte4Zy9veShQ4U8Qygj0A17/U6Klz/fU0a984Ud0PgTWObgwcnMDfXC5aRyxdWuf2EAABk7xt2ijWfFtxiVuaYu7NJQOyCLHat3qxfhWo+ELgvZ5lxr62oAODE1m6oZDBd3Bgs1tgTuyELjen21Sl6NxeWq6mXLgoSJ8OnQeLQskx8m6TbIFEa554KEofqUfP9VD+DC0vOz0bMgzYYw4ilX/GKtLN9RaVMfM4q2fqjUl/jSBb3xOzOPCv00RMnUHbG4z1UZxeX6sfEZaZpylNgOxbyL6Pms5JsfwKImw0tDgN4wzHa81D5o179rxHmHovSU81bUqewEgtrI9Fd84gp2zsjZRK4sGTxddB45Kezd7ulxZ1R8kD4Eeta7yMSTIXHlu5dE6ur/oUliwdLR/Sa3VUoKln8UPrYcSW61WbuHvoXVheHYiVQwWWpExg92a/Reuq7dQJbYiVAEfWyZqyu1heWLD6rHNXlEud2GTxjjtGaccxoPNh+08XZo5Ey6Tti3WA9Sogd4VPpQ+XnGPf3shej5EHeyj15X9jzHmRhbiMLPfDpcah3rjJcYm0z6kLNmn2f5FcUbkmHNpIDkMWB8ofr3VWeY/3l0EHUs4SGh39hab0PAKDyC6xt5fz6V5Zdhnato81exkLkyyBQprA6zeXXaTS+CpnMij4sN3DkTidZZlt9jyVb53sd3cmvC74kI3DVqs9L6KHBxfJSEoxUZ635g2V/GlsvLf3j3cPKwnMpwoX8+1Wfj+YTzvEJ0HgHKhcpiwrwnRU2Nt26bpvWz0CIJ0MlRL56J4HsNFS+LWDQH6FxsvTRQv/kV1jqoS/Wbes0n4IszIXlOqqUPctkewdU891Sx4687FLrg2R/R9AZhjdIe/He8xnghcT918d+sg3ls8gwhbWYHwsSpzRxedr+ExvC+8whmm3pUXhVJw2Xm/EhK67lwppuTVWK1Pj3wkrHq+Zjg3cu/VYpNkW3XFhZ9ralrXkJ5/DDp0tnYTsb1SNbS8feSFxGLdk6HikbI/dLocsSDtXPejOfXRknEbPQ91gfB45HZch2PUttHv4vLNuNn8ZdTtFUfpt3Budt3uzUrqevN+4fspvXWllHLbEt9e/hNmL5/Nc+rZ/1yuC1+92WiRabn3vFpaTCP1zrNJ+ALB53apt4PWukqVxAzt8O6A8HtjG9xWuW9EU/Sk3t+cjaJtElsZ7CEr2baolL/Rie/6VTT2EtzNr/5SMvg2Go/NAwPpWv71KYonBmiv3R+xwVUy//HbO7DLK4z9hC4+ngvdZVdGIDv+VgY/tNG41NMUeuSQCvr9vaxSlk+AYCv6OTz5WOHrqAVC4wU7gvVofuX+O5wTsnfi4XtPsLdKYgxHFMdI/hrb0l48Dv+xq/S0UZvqstNhERERERERERERERERERERERERERERERERERERERERERERENkf8At5M2hLfZ70cAAAAASUVORK5CYII=
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Push new or updated actor info
+      parameters:
+      - description: Text of comma separated values in CRIT's format
+        example: Domain,modified,source,campaign,status
+        in: query
+        name: CSV Text
+        required: false
+        schema: {type: string}
+      - description: File of comma separated values in CRIT's format
+        example: Domain,modified,source,campaign,status
+        in: query
+        name: CSV File
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: CRITs Push Actors
+  tmp1:
+    post:
+      description: Push new or updated Backdoors
+      parameters:
+      - description: Text of comma separated values in CRIT's given format
+        example: name,version,description,modified,source,campaign,status
+        in: query
+        name: CSV Text
+        required: false
+        schema: {type: string}
+      - description: Csv file in CRIT's given format
+        example: name,version,description,modified,source,campaign,status
+        in: query
+        name: CSV File
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: CRITs Push Backdoors
+  tmp10:
+    post:
+      description: Push new or updated Signatures
+      parameters:
+      - description: Text of comma separated values in CRIT's given format
+        example: title,data,data_type,data_type_min_version,data_type_max_version,data_type_dependency,version,modified,source,campaign,status
+        in: query
+        name: CSV Text
+        required: false
+        schema: {type: string}
+      - description: Csv file in CRIT's given format
+        example: title,data,data_type,data_type_min_version,data_type_max_version,data_type_dependency,version,modified,source,campaign,status
+        in: query
+        name: CSV File
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: CRITs Push Signatures
+  tmp11:
+    post:
+      description: Push new or updated Targets
+      parameters:
+      - description: Text of comma separated values in CRIT's given format
+        example: email_address,firstname,lastname,email_count,department,division,status
+        in: query
+        name: CSV Text
+        required: false
+        schema: {type: string}
+      - description: Csv file in CRIT's given format
+        example: email_address,firstname,lastname,email_count,department,division,status
+        in: query
+        name: CSV File
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: CRITs Push Targets
+  tmp2:
+    post:
+      description: Push new or updated campaign
+      parameters:
+      - description: Text of comma seperated values in CRIT's format
+        example: name,aliases,status,modified
+        in: query
+        name: CSV Text
+        required: false
+        schema: {type: string}
+      - description: File of comma separated values in CRIT's format
+        example: name,aliases,status,modified
+        in: query
+        name: CSV File
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: CRITs Push Campaign
+  tmp3:
+    post:
+      description: Push new or updated domain info
+      parameters:
+      - description: Text of comma separated values in CRIT's format
+        example: Domain,modified,source,campaign,status
+        in: query
+        name: CSV Text
+        required: false
+        schema: {type: string}
+      - description: File of comma separated values in CRIT's format
+        example: Domain,modified,source,campaign,status
+        in: query
+        name: CSV File
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: CRITs Push Domains
+  tmp4:
+    post:
+      description: Push new events
+      parameters:
+      - description: Text of comma seperated values in CRIT's format
+        example: title,event_type,created,source,campaign,status
+        in: query
+        name: CSV Text
+        required: false
+        schema: {type: string}
+      - description: File of comma separated values in CRIT's format
+        example: title,event_type,created,source,campaign,status,description
+        in: query
+        name: CSV File
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: CRITs Push Events
+  tmp5:
+    post:
+      description: Push new or updated Exploits
+      parameters:
+      - description: Text of comma separated values in CRIT's given format
+        example: name,cve,description,modified,source,campaign,status
+        in: query
+        name: CSV Text
+        required: false
+        schema: {type: string}
+      - description: Csv file in CRIT's given format
+        example: name,cve,description,modified,source,campaign,status
+        in: query
+        name: CSV File
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: CRITs Push Exploits
+  tmp6:
+    post:
+      description: Push new or updated Indicators
+      parameters:
+      - description: Text of comma separated values in CRIT's given format
+        example: value,type,threat_types,attack_types,created,modified,source,campaign,status,actions
+        in: query
+        name: CSV Text
+        required: false
+        schema: {type: string}
+      - description: Csv file in CRIT's given format
+        example: value,type,threat_types,attack_types,created,modified,source,campaign,status,actions
+        in: query
+        name: CSV File
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: CRITs Push Indicators
+  tmp7:
+    post:
+      description: Push new or updated IPs
+      parameters:
+      - description: Text of comma separated values in CRIT's given format
+        example: ip,ip_type,created,modified,source,campaign,status
+        in: query
+        name: CSV Text
+        required: false
+        schema: {type: string}
+      - description: Csv file in CRIT's given format
+        example: ip,ip_type,created,modified,source,campaign,status
+        in: query
+        name: CSV File
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: CRITs Push IPs
+  tmp8:
+    post:
+      description: Push new or updated Pcap files
+      parameters:
+      - description: Text of csv file with additional info on pcap
+        example: source,related_id,related_md5,related_type,relationship
+        in: query
+        name: Csv Text
+        required: false
+        schema: {type: string}
+      - description: Csv file with additional info on pcap
+        example: source,related_id,related_md5,related_type,relationship
+        in: query
+        name: Csv File
+        required: false
+        schema: {type: string}
+      - description: file of pcap data
+        example: ''
+        in: query
+        name: Pcap
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: CRITs Push PCAPs
+  tmp9:
+    post:
+      description: Push new or updated Raw Data
+      parameters:
+      - description: Text of comma separated values in CRIT's given format
+        example: title,data_type,upload_type,data,version,modified,source,campaign,status
+        in: query
+        name: CSV Text
+        required: false
+        schema: {type: string}
+      - description: Csv file in CRIT's given format
+        example: title,data_type,upload_type,data,version,modified,source,campaign,status
+        in: query
+        name: CSV File
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: CRITs Push Raw Data
+tags:
+- {name: Investigation}

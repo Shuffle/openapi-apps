@@ -1,0 +1,520 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        appDate: {type: string}
+        attachments_dateAdded: {type: string}
+        attachments_description: {type: string}
+        attachments_fileName: {type: string}
+        attachments_fileURL: {type: string}
+        attachments_id: {type: string}
+        attachments_type: {type: string}
+        brand: {type: string}
+        brandAbuseFlag: {type: string}
+        caseId: {type: string}
+        caseNumber: {type: string}
+        caseStatus: {type: string}
+        caseType: {type: string}
+        createdBy_id: {type: string}
+        createdBy_name: {type: string}
+        customer: {type: string}
+        dateClosed: {type: string}
+        dateCreated: {type: string}
+        dateModified: {type: string}
+        description: {type: string}
+        formReceiver: {type: string}
+        notes_author: {type: string}
+        notes_dateCreated: {type: string}
+        notes_dateModified: {type: string}
+        notes_note: {type: string}
+        primaryMarketplace: {type: string}
+        resolutionStatus: {type: string}
+        title: {type: string}
+      type: object
+    tmp1:
+      properties:
+        response: {type: string}
+      type: object
+    tmp10:
+      properties:
+        appDate: {type: string}
+        attachments_dateAdded: {type: string}
+        attachments_description: {type: string}
+        attachments_fileName: {type: string}
+        attachments_fileURL: {type: string}
+        attachments_id: {type: string}
+        attachments_type: {type: string}
+        brand: {type: string}
+        brandAbuseFlag: {type: string}
+        caseId: {type: string}
+        caseNumber: {type: string}
+        caseStatus: {type: string}
+        caseType: {type: string}
+        createdBy_id: {type: string}
+        createdBy_name: {type: string}
+        customer: {type: string}
+        dateClosed: {type: string}
+        dateCreated: {type: string}
+        dateModified: {type: string}
+        description: {type: string}
+        formReceiver: {type: string}
+        notes_author: {type: string}
+        notes_dateCreated: {type: string}
+        notes_dateModified: {type: string}
+        notes_note: {type: string}
+        primaryMarketplace: {type: string}
+        resolutionStatus: {type: string}
+        title: {type: string}
+      type: object
+    tmp11:
+      properties:
+        confirmedDate: {type: string}
+        domain: {type: string}
+        falsePositive: {type: string}
+        ipAddresses: {type: string}
+        normalizedUrl: {type: string}
+        type: {type: string}
+      type: object
+    tmp12:
+      properties:
+        confirmedDate: {type: string}
+        domain: {type: string}
+        falsePositive: {type: string}
+        ipAddresses: {type: string}
+        normalizedUrl: {type: string}
+        type: {type: string}
+      type: object
+    tmp2:
+      properties:
+        appDate: {type: string}
+        attachments_dateAdded: {type: string}
+        attachments_description: {type: string}
+        attachments_fileName: {type: string}
+        attachments_fileURL: {type: string}
+        attachments_id: {type: string}
+        attachments_type: {type: string}
+        brand: {type: string}
+        brandAbuseFlag: {type: string}
+        caseId: {type: string}
+        caseNumber: {type: string}
+        caseStatus: {type: string}
+        caseType: {type: string}
+        createdBy_id: {type: string}
+        createdBy_name: {type: string}
+        customer: {type: string}
+        dateClosed: {type: string}
+        dateCreated: {type: string}
+        dateModified: {type: string}
+        description: {type: string}
+        formReceiver: {type: string}
+        notes_author: {type: string}
+        notes_dateCreated: {type: string}
+        notes_dateModified: {type: string}
+        notes_note: {type: string}
+        primaryMarketplace: {type: string}
+        resolutionStatus: {type: string}
+        title: {type: string}
+      type: object
+    tmp3:
+      properties:
+        data_appDate: {type: string}
+        data_attachments_dateAdded: {type: string}
+        data_attachments_description: {type: string}
+        data_attachments_fileName: {type: string}
+        data_attachments_fileURL: {type: string}
+        data_attachments_id: {type: string}
+        data_attachments_type: {type: string}
+        data_brand: {type: string}
+        data_brandAbuseFlag: {type: string}
+        data_caseId: {type: string}
+        data_caseNumber: {type: string}
+        data_caseStatus: {type: string}
+        data_caseType: {type: string}
+        data_createdBy_id: {type: string}
+        data_createdBy_name: {type: string}
+        data_customer: {type: string}
+        data_dateClosed: {type: string}
+        data_dateCreated: {type: string}
+        data_dateModified: {type: string}
+        data_description: {type: string}
+        data_formReceiver: {type: string}
+        data_notes_author: {type: string}
+        data_notes_dateCreated: {type: string}
+        data_notes_dateModified: {type: string}
+        data_notes_note: {type: string}
+        data_primaryMarketplace: {type: string}
+        data_resolutionStatus: {type: string}
+        data_title: {type: string}
+        header_id: {type: string}
+        header_queryParams_format: {type: string}
+        header_requestDate: {type: string}
+        header_returnResult: {type: string}
+        header_totalResult: {type: string}
+        header_user: {type: string}
+      type: object
+    tmp4:
+      properties:
+        createdCase_caseId: {type: string}
+        createdCase_caseNumber: {type: string}
+        createdCase_status: {type: string}
+      type: object
+    tmp5:
+      properties:
+        createdAt: {type: string}
+        description: {type: string}
+        id: {type: string}
+        indicators_attributes_createdAt: {type: string}
+        indicators_attributes_id: {type: string}
+        indicators_attributes_name: {type: string}
+        indicators_attributes_value: {type: string}
+        indicators_createdAt: {type: string}
+        indicators_id: {type: string}
+        indicators_type: {type: string}
+        indicators_value: {type: string}
+        referenceId: {type: string}
+        shortDescription: {type: string}
+      type: object
+    tmp6:
+      properties:
+        brands: {type: string}
+      type: object
+    tmp7:
+      properties:
+        caseType: {type: string}
+      type: object
+    tmp8:
+      properties:
+        attributes_createdAt: {type: string}
+        attributes_id: {type: string}
+        attributes_name: {type: string}
+        attributes_value: {type: string}
+        createdAt: {type: string}
+        falsePositive: {type: string}
+        id: {type: string}
+        type: {type: string}
+        value: {type: string}
+      type: object
+    tmp9:
+      properties:
+        response: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Phishlabs Phishlabs
+  title: Phishlabs Phishlabs
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Return collection cases filtered by inputs.
+      parameters:
+      - description: CSV string of case status (no spaces)
+        example: New,Closed,Rejected
+        in: query
+        name: Case Status
+        required: false
+        schema: {type: string}
+      - description: CSV string of case types (no spaces)
+        example: Job Scam,Phishing,419 Scam
+        in: query
+        name: Case Type
+        required: false
+        schema: {type: string}
+      - description: Max number of records to return
+        example: '13'
+        in: body
+        name: Max Records
+        required: false
+        schema: {type: string}
+      - description: Paginate results used in conjunction with maxRecords
+        example: '13'
+        in: body
+        name: Offset
+        required: false
+        schema: {type: string}
+      - description: Generic Number
+        example: caseOpen
+        in: query
+        name: Date Field
+        required: false
+        schema: {type: string}
+      - description: Date query beginning date
+        example: '2019-07-09T10:00:00Z'
+        in: query
+        name: Begin Date
+        required: false
+        schema: {type: string}
+      - description: Date query beginning date
+        example: '2019-07-09T10:00:00Z'
+        in: query
+        name: End Date
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Phishlabs All Cases
+  tmp1:
+    post:
+      description: Attach file to case
+      parameters:
+      - description: ID of the case being modified
+        example: 068abef8-a32f-11e9-af13-0a8e0de89b4e
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Type of file being attached
+        example: image
+        in: query
+        name: Mime  Type
+        required: true
+        schema: {type: string}
+      - description: Base 64 encoded file data
+        example: iVBORw0K...8PDw9PT0
+        in: query
+        name: File Data
+        required: true
+        schema: {type: string}
+      - description: Name of the file being attached
+        example: testImage
+        in: query
+        name: File Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Phishlabs Attach File
+  tmp10:
+    post:
+      description: Return collection of open cases.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Phishlabs Open Cases
+  tmp11:
+    post:
+      description: Provides visibility to URL threats impacting your organization.
+      parameters:
+      - description: Beginning date range of threatfeed
+        example: '2019-07-09T10:00:00Z'
+        in: query
+        name: Start Date
+        required: true
+        schema: {type: string}
+      - description: Ending date range of threatfeed
+        example: '2019-07-09T11:00:00Z'
+        in: query
+        name: Start Date
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: Phishlabs Threatfeed All
+  tmp12:
+    post:
+      description: Provides visibility to URL threats impacting our entire client
+        base.
+      parameters:
+      - description: Beginning date range of threatfeed
+        example: '2019-07-09T10:00:00Z'
+        in: query
+        name: Start Date
+        required: true
+        schema: {type: string}
+      - description: Ending date range of threatfeed
+        example: '2019-07-09T11:00:00Z'
+        in: query
+        name: Start Date
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: Phishlabs Threatfeed Lite
+  tmp2:
+    post:
+      description: Return collection of closed cases.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Phishlabs Closed Cases
+  tmp3:
+    post:
+      description: Return collection cases.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Phishlabs Collection Cases
+  tmp4:
+    post:
+      description: Create a new case
+      parameters:
+      - description: Brand of the case being created
+        example: Generic Vendor
+        in: query
+        name: Brand
+        required: true
+        schema: {type: string}
+      - description: Type of case being created
+        example: Phishing
+        in: query
+        name: Case Type
+        required: true
+        schema: {type: string}
+      - description: Description of the case being created
+        example: This is an example case description
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: Title of the case being created
+        example: New Case
+        in: query
+        name: Title
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Phishlabs Create Case
+  tmp5:
+    post:
+      description: Returns list of incidents and indicators within the feed.
+      parameters:
+      - description: Pull the data updated within this duration of time from now (default
+          is 1h).
+        example: 1h
+        in: query
+        name: Since
+        required: false
+        schema: {type: string}
+      - description: Limit to number of incidents to return (default is 5).
+        example: '5'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Filter data by indicator type.
+        example: URL
+        in: query
+        name: Indicator
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Phishlabs Feed
+  tmp6:
+    post:
+      description: Return collection of configured brands.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Phishlabs Get Brands
+  tmp7:
+    post:
+      description: Return collection available case types.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Phishlabs Get Case Types
+  tmp8:
+    post:
+      description: Returns global list of indicators, filtering client specific data.
+      parameters:
+      - description: Pull the data updated within this duration of time from now (default
+          is 1h).
+        example: 1h
+        in: query
+        name: Since
+        required: false
+        schema: {type: string}
+      - description: Limit to number of incidents to return (default is 5).
+        example: '5'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Filter data by indicator type (URL, E-mail, etc).
+        example: URL
+        in: query
+        name: Indicator
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Phishlabs Global Feed
+  tmp9:
+    post:
+      description: Add a note to the case from the client.
+      parameters:
+      - description: ID of the case being modified
+        example: 068abef8-a32f-11e9-af13-0a8e0de89b4e
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: Comment being added to the case
+        example: This is a sample comment
+        in: query
+        name: Note
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Phishlabs Make Inquiry
+tags:
+- {name: Investigation}

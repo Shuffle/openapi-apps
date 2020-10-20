@@ -1,0 +1,78 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        created_at: {type: string}
+        extra: {type: string}
+        id: {type: string}
+        image: {type: string}
+        name: {type: string}
+        private_ips: {type: string}
+        public_ips: {type: string}
+        size: {type: string}
+        state: {type: string}
+      type: object
+    tmp1:
+      properties:
+        previous_state: {type: string}
+      type: object
+    tmp2:
+      properties:
+        previous_state: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Vultr Vultr
+  title: Vultr Vultr
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: List all Vultr instances
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Vultr List Instances
+  tmp1:
+    post:
+      description: Start Vultr instance
+      parameters:
+      - description: Vultr Instance ID
+        example: ''
+        in: query
+        name: Instance ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Vultr Start Instance
+  tmp2:
+    post:
+      description: Stop Vultr instance
+      parameters:
+      - description: Vultr Instance ID
+        example: ''
+        in: query
+        name: Instance ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Vultr Stop Instance
+tags:
+- {name: Infrastructure}

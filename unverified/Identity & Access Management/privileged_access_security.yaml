@@ -1,0 +1,1415 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        address: {type: string}
+        categoryModificationTime: {type: string}
+        createdTime: {type: string}
+        id: {type: string}
+        name: {type: string}
+        platformId: {type: string}
+        safeName: {type: string}
+        secretManagement_automaticManagementEnabled: {type: string}
+        secretManagement_lastModifiedTime: {type: string}
+        secretType: {type: string}
+        userName: {type: string}
+      type: object
+    tmp1:
+      properties:
+        message: {type: string}
+      type: object
+    tmp10:
+      properties:
+        Description: {type: string}
+        ManagingCPM: {type: string}
+        NumberOfDaysRetention: {type: string}
+        NumberOfVersionsRetention: {type: string}
+        OLACEnabled: {type: string}
+        SafeName: {type: string}
+      type: object
+    tmp11:
+      properties:
+        additionalData: {type: string}
+        audits: {type: string}
+        createTime: {type: string}
+        id: {type: string}
+        lastUpdateTime: {type: string}
+        mStatus: {type: string}
+        score: {type: string}
+        type: {type: string}
+      type: object
+    tmp12:
+      properties:
+        authenticationMethod: {type: string}
+        businessAddress_workCity: {type: string}
+        businessAddress_workCountry: {type: string}
+        businessAddress_workState: {type: string}
+        businessAddress_workStreet: {type: string}
+        businessAddress_workZip: {type: string}
+        changePassOnNextLogon: {type: string}
+        componentUser: {type: string}
+        description: {type: string}
+        distinguishedName: {type: string}
+        enableUser: {type: string}
+        expiryDate: {type: string}
+        id: {type: string}
+        internet_businessEmail: {type: string}
+        internet_homeEmail: {type: string}
+        internet_homePage: {type: string}
+        internet_otherEmail: {type: string}
+        lastSuccessfulLoginDate: {type: string}
+        location: {type: string}
+        passwordNeverExpires: {type: string}
+        personalDetails_city: {type: string}
+        personalDetails_country: {type: string}
+        personalDetails_department: {type: string}
+        personalDetails_firstName: {type: string}
+        personalDetails_lastName: {type: string}
+        personalDetails_middleName: {type: string}
+        personalDetails_organization: {type: string}
+        personalDetails_profession: {type: string}
+        personalDetails_state: {type: string}
+        personalDetails_street: {type: string}
+        personalDetails_title: {type: string}
+        personalDetails_zip: {type: string}
+        phones_businessNumber: {type: string}
+        phones_cellularNumber: {type: string}
+        phones_faxNumber: {type: string}
+        phones_homeNumber: {type: string}
+        phones_pagerNumber: {type: string}
+        source: {type: string}
+        suspended: {type: string}
+        unAuthorizedInterfaces: {type: string}
+        userType: {type: string}
+        username: {type: string}
+        vaultAuthorization: {type: string}
+      type: object
+    tmp13:
+      properties:
+        description: {type: string}
+        directory: {type: string}
+        dn: {type: string}
+        groupName: {type: string}
+        groupType: {type: string}
+        id: {type: string}
+        location: {type: string}
+      type: object
+    tmp14:
+      properties:
+        componentUser: {type: string}
+        firstName: {type: string}
+        id: {type: string}
+        lastName: {type: string}
+        location: {type: string}
+        middleName: {type: string}
+        source: {type: string}
+        userType: {type: string}
+        username: {type: string}
+        vaultAuthorization: {type: string}
+      type: object
+    tmp15:
+      properties:
+        message: {type: string}
+      type: object
+    tmp16:
+      properties:
+        message: {type: string}
+      type: object
+    tmp17:
+      properties:
+        message: {type: string}
+      type: object
+    tmp18:
+      properties:
+        address: {type: string}
+        categoryModificationTime: {type: string}
+        createdTime: {type: string}
+        id: {type: string}
+        name: {type: string}
+        platformAccountProperties_LogonDomain: {type: string}
+        platformAccountProperties_Tags: {type: string}
+        platformId: {type: string}
+        safeName: {type: string}
+        secretManagement_automaticManagementEnabled: {type: string}
+        secretManagement_lastModifiedTime: {type: string}
+        secretManagement_lastReconciledTime: {type: string}
+        secretManagement_status: {type: string}
+        secretType: {type: string}
+        userName: {type: string}
+      type: object
+    tmp19:
+      properties:
+        additionalData: {type: string}
+        audits: {type: string}
+        createTime: {type: string}
+        id: {type: string}
+        lastUpdateTime: {type: string}
+        mStatus: {type: string}
+        score: {type: string}
+        type: {type: string}
+      type: object
+    tmp2:
+      properties:
+        authenticationMethod: {type: string}
+        businessAddress_workCity: {type: string}
+        businessAddress_workCountry: {type: string}
+        businessAddress_workState: {type: string}
+        businessAddress_workStreet: {type: string}
+        businessAddress_workZip: {type: string}
+        changePassOnNextLogon: {type: string}
+        componentUser: {type: string}
+        description: {type: string}
+        distinguishedName: {type: string}
+        enableUser: {type: string}
+        expiryDate: {type: string}
+        id: {type: string}
+        internet_businessEmail: {type: string}
+        internet_homeEmail: {type: string}
+        internet_homePage: {type: string}
+        internet_otherEmail: {type: string}
+        lastSuccessfulLoginDate: {type: string}
+        location: {type: string}
+        passwordNeverExpires: {type: string}
+        personalDetails_city: {type: string}
+        personalDetails_country: {type: string}
+        personalDetails_department: {type: string}
+        personalDetails_firstName: {type: string}
+        personalDetails_lastName: {type: string}
+        personalDetails_middleName: {type: string}
+        personalDetails_organization: {type: string}
+        personalDetails_profession: {type: string}
+        personalDetails_state: {type: string}
+        personalDetails_street: {type: string}
+        personalDetails_title: {type: string}
+        personalDetails_zip: {type: string}
+        phones_businessNumber: {type: string}
+        phones_cellularNumber: {type: string}
+        phones_faxNumber: {type: string}
+        phones_homeNumber: {type: string}
+        phones_pagerNumber: {type: string}
+        source: {type: string}
+        suspended: {type: string}
+        unAuthorizedInterfaces: {type: string}
+        userType: {type: string}
+        username: {type: string}
+        vaultAuthorization: {type: string}
+      type: object
+    tmp20:
+      properties:
+        authenticationMethod: {type: string}
+        businessAddress_workCity: {type: string}
+        businessAddress_workCountry: {type: string}
+        businessAddress_workState: {type: string}
+        businessAddress_workStreet: {type: string}
+        businessAddress_workZip: {type: string}
+        changePassOnNextLogon: {type: string}
+        componentUser: {type: string}
+        description: {type: string}
+        distinguishedName: {type: string}
+        enableUser: {type: string}
+        expiryDate: {type: string}
+        id: {type: string}
+        internet_businessEmail: {type: string}
+        internet_homeEmail: {type: string}
+        internet_homePage: {type: string}
+        internet_otherEmail: {type: string}
+        lastSuccessfulLoginDate: {type: string}
+        location: {type: string}
+        passwordNeverExpires: {type: string}
+        personalDetails_city: {type: string}
+        personalDetails_country: {type: string}
+        personalDetails_department: {type: string}
+        personalDetails_firstName: {type: string}
+        personalDetails_lastName: {type: string}
+        personalDetails_middleName: {type: string}
+        personalDetails_organization: {type: string}
+        personalDetails_profession: {type: string}
+        personalDetails_state: {type: string}
+        personalDetails_street: {type: string}
+        personalDetails_title: {type: string}
+        personalDetails_zip: {type: string}
+        phones_businessNumber: {type: string}
+        phones_cellularNumber: {type: string}
+        phones_faxNumber: {type: string}
+        phones_homeNumber: {type: string}
+        phones_pagerNumber: {type: string}
+        source: {type: string}
+        suspended: {type: string}
+        unAuthorizedInterfaces: {type: string}
+        userType: {type: string}
+        username: {type: string}
+        vaultAuthorization: {type: string}
+      type: object
+    tmp21:
+      properties:
+        message: {type: string}
+      type: object
+    tmp3:
+      properties:
+        message: {type: string}
+      type: object
+    tmp4:
+      properties:
+        message: {type: string}
+      type: object
+    tmp5:
+      properties:
+        message: {type: string}
+      type: object
+    tmp6:
+      properties:
+        message: {type: string}
+      type: object
+    tmp7:
+      properties:
+        GroupID: {type: string}
+        GroupName: {type: string}
+        GroupPlatformID: {type: string}
+        Safe: {type: string}
+      type: object
+    tmp8:
+      properties:
+        address: {type: string}
+        categoryModificationTime: {type: string}
+        createdTime: {type: string}
+        id: {type: string}
+        name: {type: string}
+        platformAccountProperties_AWSARNRole: {type: string}
+        platformAccountProperties_AWSAccessKeyID: {type: string}
+        platformAccountProperties_AWSAccountID: {type: string}
+        platformAccountProperties_ApplianceURL: {type: string}
+        platformAccountProperties_ConjurAccount: {type: string}
+        platformAccountProperties_Database: {type: string}
+        platformAccountProperties_DualAccountStatus: {type: string}
+        platformAccountProperties_HostName: {type: string}
+        platformAccountProperties_Index: {type: string}
+        platformAccountProperties_ItemName: {type: string}
+        platformAccountProperties_LogonDomain: {type: string}
+        platformAccountProperties_Notes: {type: string}
+        platformAccountProperties_Port: {type: string}
+        platformAccountProperties_SSHCertificate: {type: string}
+        platformAccountProperties_Tags: {type: string}
+        platformAccountProperties_Type: {type: string}
+        platformAccountProperties_URL: {type: string}
+        platformAccountProperties_UseSudoOnReconcile: {type: string}
+        platformAccountProperties_UserDN: {type: string}
+        platformAccountProperties_VirtualUsername: {type: string}
+        platformAccountProperties_WebApplicationID: {type: string}
+        platformId: {type: string}
+        remoteMachinesAccess_accessRestrictedToRemoteMachines: {type: string}
+        remoteMachinesAccess_remoteMachines: {type: string}
+        safeName: {type: string}
+        secretManagement_automaticManagementEnabled: {type: string}
+        secretManagement_lastModifiedTime: {type: string}
+        secretManagement_lastReconciledTime: {type: string}
+        secretManagement_manualManagementReason: {type: string}
+        secretManagement_status: {type: string}
+        secretType: {type: string}
+        userName: {type: string}
+      type: object
+    tmp9:
+      properties:
+        AccessPermittedFrom: {type: string}
+        AccessPermittedTo: {type: string}
+        AllowExtendedAuthenticationRestrictions: {type: string}
+        AppID: {type: string}
+        BusinessOwnerEmail: {type: string}
+        BusinessOwnerFName: {type: string}
+        BusinessOwnerLName: {type: string}
+        BusinessOwnerPhone: {type: string}
+        Description: {type: string}
+        Disabled: {type: string}
+        ExpirationDate: {type: string}
+        Location: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Cyberark Privileged Access Security
+  title: Cyberark Privileged Access Security
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Add a new privileged account or SSH key to the Vault.
+      parameters:
+      - description: The name of the account.
+        example: string5
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: Account username.
+        example: string
+        in: query
+        name: User Name
+        required: false
+        schema: {type: string}
+      - description: Whether or not to restrict access only to specified remote machines
+        example: 'True'
+        in: query
+        name: Remote Machines Access Restricted To Remote Machines
+        required: false
+        schema: {type: boolean}
+      - description: List of remote machines, separated by semicolons.
+        example: server1.cyberark.com;server2.cyberark.com
+        in: query
+        name: Remote Machines Access Remote Machines
+        required: false
+        schema: {type: string}
+      - description: Whether the account secret is automatically managed by the CPM.
+        example: 'True'
+        in: query
+        name: Secret Management Automatic Management Enabled
+        required: false
+        schema: {type: boolean}
+      - description: Reason for disabling automatic secret management.
+        example: A reason goes here.
+        in: query
+        name: Secret Management Manual Management Reason
+        required: false
+        schema: {type: string}
+      - description: The platform assigned to this account.
+        example: WindowsJustInTime
+        in: query
+        name: Platform ID
+        required: true
+        schema: {type: string}
+      - description: The password value. This will not be returned in the API output.
+        example: string2
+        in: query
+        name: Secret
+        required: false
+        schema: {type: string}
+      - description: JSON containing key-value pairs to associate with the account,
+          as defined by the account platform. These properties are validated against
+          the mandatory and optional properties of the specified platform's definition.
+          Optional properties that do not exist on the account will not be returned
+          here. Internal properties are not returned.
+        example: '{"Location": "IT", "OwnerName": "MSSPAdmin"}'
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: The Safe where the account will be created.
+        example: cicd_database
+        in: query
+        name: Safe Name
+        required: true
+        schema: {type: string}
+      - description: The type of password. Either "password" or "key"
+        example: key
+        in: query
+        name: Secret Type
+        required: false
+        schema: {type: string}
+      - description: The name or address of the machine where the account will be
+          used. vDNS/IP/URL where the account is managed
+        example: 8.8.8.8
+        in: query
+        name: Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Add Account
+  tmp1:
+    post:
+      description: Add an account as a member to an existing account group.
+      parameters:
+      - description: The unique ID of account group.
+        example: '57_6'
+        in: query
+        name: Group ID
+        required: true
+        schema: {type: string}
+      - description: The ID of the account that will be added as a member to the group.
+        example: '57_10'
+        in: query
+        name: Account ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Add Account to Group
+  tmp10:
+    post:
+      description: "Returns information about all of the user\u2019s Safes in the\
+        \ Vault."
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Get Safes
+  tmp11:
+    post:
+      description: Returns PTA Security Events.
+      parameters:
+      - description: The status of the security event (open or closed).
+        example: open
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: The time to get the security events from
+        example: '{time.now():-1days}'
+        in: body
+        name: Last Updated Event Date
+        required: false
+        schema: {type: string}
+      - description: The unique account identifier of the account that is referred
+          to in the Security Event.
+        example: '57_10'
+        in: query
+        name: Account ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Get Security Events
+  tmp12:
+    post:
+      description: Returns information about a specific user in the Vault.
+      parameters:
+      - description: The ID of the user for which information is returned.
+        example: '117'
+        in: body
+        name: User ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Get User Details
+  tmp13:
+    post:
+      description: Returns all existing user groups.
+      parameters:
+      - description: Filter according to REST standard.
+        example: groupType eq Directory
+        in: query
+        name: Filter
+        required: false
+        schema: {type: string}
+      - description: Search groups. Search will match when ALL search terms appear
+          in the group name.
+        example: vault admins
+        in: query
+        name: Search
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Get User Groups
+  tmp14:
+    post:
+      description: Returns all existing users in the Vault except for the Master and
+        the Batch built-in users.
+      parameters:
+      - description: A custom filter, see plugin documentation for more details.
+        example: userType eq Built-InAdmins
+        in: query
+        name: Filter
+        required: false
+        schema: {type: string}
+      - description: 'A seach string that will match in the following fields: username,
+          first name, last name.'
+        example: search string
+        in: query
+        name: Search
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp14'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Get Users
+  tmp15:
+    post:
+      description: Remove an account member from an account group.
+      parameters:
+      - description: The unique ID of the group
+        example: '57_6'
+        in: query
+        name: Group ID
+        required: true
+        schema: {type: string}
+      - description: The unique ID of the account
+        example: '57_10'
+        in: query
+        name: Account ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp15'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Remove Account from Group
+  tmp16:
+    post:
+      description: Remove a specific user from a user group in the Vault.
+      parameters:
+      - description: The unique ID of the group.
+        example: '51'
+        in: body
+        name: Group ID
+        required: true
+        schema: {type: string}
+      - description: The name of the user to be removed.
+        example: newUser
+        in: query
+        name: Member ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp16'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Remove User from Group
+  tmp17:
+    post:
+      description: Reset an existing Vault user's password.
+      parameters:
+      - description: The user's ID
+        example: '118'
+        in: body
+        name: ID
+        required: true
+        schema: {type: string}
+      - description: The new password
+        example: Thisisnew123#@!
+        in: query
+        name: New Password
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp17'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Reset User Password
+  tmp18:
+    post:
+      description: Update an existing account's details.
+      parameters:
+      - description: The ID of the account to update
+        example: '42_4'
+        in: query
+        name: Account ID
+        required: true
+        schema: {type: string}
+      - description: The name of the account.
+        example: string5
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: Account username.
+        example: string
+        in: query
+        name: User Name
+        required: false
+        schema: {type: string}
+      - description: Whether or not to restrict access only to specified remote machines
+        example: 'True'
+        in: query
+        name: Remote Machines Access Restricted To Remote Machines
+        required: false
+        schema: {type: boolean}
+      - description: List of remote machines, separated by semicolons.
+        example: server1.cyberark.com;server2.cyberark.com
+        in: query
+        name: Remote Machines Access Remote Machines
+        required: false
+        schema: {type: string}
+      - description: Whether the account secret is automatically managed by the CPM.
+        example: 'True'
+        in: query
+        name: Secret Management Automatic Management Enabled
+        required: false
+        schema: {type: boolean}
+      - description: Reason for disabling automatic secret management.
+        example: A reason goes here.
+        in: query
+        name: Secret Management Manual Management Reason
+        required: false
+        schema: {type: string}
+      - description: The platform assigned to this account.
+        example: WindowsJustInTime
+        in: query
+        name: Platform ID
+        required: false
+        schema: {type: string}
+      - description: JSON containing key-value pairs to associate with the account,
+          as defined by the account platform. These properties are validated against
+          the mandatory and optional properties of the specified platform's definition.
+          Optional properties that do not exist on the account will not be returned
+          here. Internal properties are not returned.
+        example: '{"Location": "IT", "OwnerName": "MSSPAdmin"}'
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: The name or address of the machine where the account will be
+          used. vDNS/IP/URL where the account is managed
+        example: 8.8.8.8
+        in: query
+        name: Address
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp18'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Update Account
+  tmp19:
+    post:
+      description: Update the status of a security event to open or closed.
+      parameters:
+      - description: The ID of the security event.
+        example: 5e6024fee4b004e867f0d31f
+        in: query
+        name: Event ID
+        required: true
+        schema: {type: string}
+      - description: The value to set status to, either "open" or "closed"
+        example: closed
+        in: query
+        name: Status
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp19'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Update Security Event Status
+  tmp2:
+    post:
+      description: Add a new user to the Vault.
+      parameters:
+      - description: Username
+        example: ''
+        in: query
+        name: Username
+        required: true
+        schema: {type: string}
+      - description: The user's distinguished name
+        example: newUser6@cyberark
+        in: query
+        name: Distinguished Name
+        required: true
+        schema: {type: string}
+      - description: The user type according to the license.
+        example: EPVUser
+        in: query
+        name: User Type
+        required: false
+        schema: {type: string}
+      - description: The CyberArk interfaces that this user is not authorized to use.
+        example: '[''PSM'', ''PSMP'']'
+        in: query
+        name: Unauthorized Interfaces
+        required: false
+        schema: {type: string}
+      - description: Whether the user is enabled.
+        example: 'True'
+        in: query
+        name: Enable User
+        required: false
+        schema: {type: boolean}
+      - description: 'The authentication method that the user uses to log on. Valid
+          values: CyberArk, LDAP, RADIUS'
+        example: CyberArk
+        in: query
+        name: Authentication Method
+        required: false
+        schema: {type: string}
+      - description: The user's password
+        example: MyPassword123
+        in: query
+        name: Password
+        required: false
+        schema: {type: string}
+      - description: "Whether the user\u2019s password will not expire unless they\
+          \ decide to change it."
+        example: 'True'
+        in: query
+        name: Password Never Expires
+        required: false
+        schema: {type: boolean}
+      - description: Whether or not the user must change their password from the second
+          log on onward
+        example: 'True'
+        in: query
+        name: Change Pass On Next Logon
+        required: false
+        schema: {type: boolean}
+      - description: The user permissions
+        example: '[''AddSafes'', ''AuditUsers'']'
+        in: query
+        name: Vault Authorization
+        required: false
+        schema: {type: string}
+      - description: The date when the user expires.
+        example: '2020-09-01T00:00:00Z'
+        in: query
+        name: Expiry Date
+        required: false
+        schema: {type: string}
+      - description: The location in the Vault where the user was created
+        example: \
+        in: query
+        name: Location
+        required: false
+        schema: {type: string}
+      - description: Notes and comments
+        example: This user is privileged
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: The user's first name
+        example: Johnny
+        in: query
+        name: First Name
+        required: false
+        schema: {type: string}
+      - description: Middle name
+        example: Doe
+        in: query
+        name: Middle Name
+        required: false
+        schema: {type: string}
+      - description: The user's last name
+        example: Smith
+        in: query
+        name: Last Name
+        required: false
+        schema: {type: string}
+      - description: The user's title
+        example: Mr. VIP
+        in: query
+        name: Title
+        required: false
+        schema: {type: string}
+      - description: The user's department
+        example: R&D
+        in: query
+        name: Department
+        required: false
+        schema: {type: string}
+      - description: The user's organization
+        example: Cyber ark
+        in: query
+        name: Organization
+        required: false
+        schema: {type: string}
+      - description: The user's profession
+        example: software development
+        in: query
+        name: Profession
+        required: false
+        schema: {type: string}
+      - description: The number/street of the user's personal address
+        example: Dizzengof 56
+        in: query
+        name: 'Personal Address: Street'
+        required: false
+        schema: {type: string}
+      - description: The city of the user's personal address
+        example: Tel Aviv
+        in: query
+        name: 'Personal Address: City'
+        required: false
+        schema: {type: string}
+      - description: The ZIP of the user's personal address
+        example: '123456'
+        in: body
+        name: 'Personal Address: ZIP'
+        required: false
+        schema: {type: string}
+      - description: The state of the user's personal address
+        example: Israel
+        in: query
+        name: 'Personal Address: State'
+        required: false
+        schema: {type: string}
+      - description: The country of the user's personal address
+        example: Israel
+        in: query
+        name: 'Personal Address: Country'
+        required: false
+        schema: {type: string}
+      - description: The user's business Email
+        example: user@cyberark.com
+        in: query
+        name: Business Email
+        required: false
+        schema: {type: string}
+      - description: The user's personal Email
+        example: user@gmail.com
+        in: query
+        name: Personal Email
+        required: false
+        schema: {type: string}
+      - description: Other Email
+        example: user3@gmail.com
+        in: query
+        name: Other Email
+        required: false
+        schema: {type: string}
+      - description: The user's business phone number
+        example: '555456789'
+        in: body
+        name: Business Phone Number
+        required: false
+        schema: {type: string}
+      - description: The user's home phone number
+        example: '555123456'
+        in: body
+        name: Home Number
+        required: false
+        schema: {type: string}
+      - description: The user's fax number
+        example: '999999'
+        in: body
+        name: Fax Number
+        required: false
+        schema: {type: string}
+      - description: The user's pager number
+        example: '111111'
+        in: body
+        name: Pager Number
+        required: false
+        schema: {type: string}
+      - description: The number/street of the user's work address
+        example: Hapssagot 9
+        in: query
+        name: 'Business Address: Street'
+        required: false
+        schema: {type: string}
+      - description: The city of the user's work address
+        example: Petah Tikva
+        in: query
+        name: 'Business Address: City'
+        required: false
+        schema: {type: string}
+      - description: The ZIP of the user's work address
+        example: '9999999'
+        in: body
+        name: 'Business Address: ZIP'
+        required: false
+        schema: {type: string}
+      - description: The state of the user's work address
+        example: Israel
+        in: query
+        name: 'Business Address: State'
+        required: false
+        schema: {type: string}
+      - description: The country of the user's work address
+        example: Israel
+        in: query
+        name: 'Business Address: Country'
+        required: false
+        schema: {type: string}
+      - description: The user's cell number
+        example: '555789789'
+        in: body
+        name: Cellular Number
+        required: false
+        schema: {type: string}
+      - description: Personal Webpage
+        example: Cyberark.com
+        in: query
+        name: Webpage
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Add User
+  tmp20:
+    post:
+      description: Update an existing Vault user.
+      parameters:
+      - description: User ID
+        example: '122'
+        in: body
+        name: User ID
+        required: true
+        schema: {type: string}
+      - description: Username
+        example: ''
+        in: query
+        name: Username
+        required: true
+        schema: {type: string}
+      - description: The user's distinguished name
+        example: newUser6@cyberark
+        in: query
+        name: Distinguished Name
+        required: false
+        schema: {type: string}
+      - description: The user type according to the license.
+        example: EPVUser
+        in: query
+        name: User Type
+        required: false
+        schema: {type: string}
+      - description: The CyberArk interfaces that this user is not authorized to use.
+        example: '[''PSM'', ''PSMP'']'
+        in: query
+        name: Unauthorized Interfaces
+        required: false
+        schema: {type: string}
+      - description: Whether the user is enabled.
+        example: 'True'
+        in: query
+        name: Enable User
+        required: false
+        schema: {type: boolean}
+      - description: 'The authentication method that the user uses to log on. Valid
+          values: CyberArk, LDAP, RADIUS'
+        example: CyberArk
+        in: query
+        name: Authentication Method
+        required: false
+        schema: {type: string}
+      - description: The user's password
+        example: MyPassword123
+        in: query
+        name: Password
+        required: false
+        schema: {type: string}
+      - description: "Whether the user\u2019s password will not expire unless they\
+          \ decide to change it."
+        example: 'True'
+        in: query
+        name: Password Never Expires
+        required: false
+        schema: {type: boolean}
+      - description: Whether or not the user must change their password from the second
+          log on onward
+        example: 'True'
+        in: query
+        name: Change Pass On Next Logon
+        required: false
+        schema: {type: boolean}
+      - description: The user permissions
+        example: '[''AddSafes'', ''AuditUsers'']'
+        in: query
+        name: Vault Authorization
+        required: false
+        schema: {type: string}
+      - description: The date when the user expires.
+        example: '2020-09-01T00:00:00Z'
+        in: query
+        name: Expiry Date
+        required: false
+        schema: {type: string}
+      - description: The location in the Vault where the user was created
+        example: \
+        in: query
+        name: Location
+        required: false
+        schema: {type: string}
+      - description: Notes and comments
+        example: This user is privileged
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: The user's first name
+        example: Johnny
+        in: query
+        name: First Name
+        required: false
+        schema: {type: string}
+      - description: Middle name
+        example: Doe
+        in: query
+        name: Middle Name
+        required: false
+        schema: {type: string}
+      - description: The user's last name
+        example: Smith
+        in: query
+        name: Last Name
+        required: false
+        schema: {type: string}
+      - description: The user's title
+        example: Mr. VIP
+        in: query
+        name: Title
+        required: false
+        schema: {type: string}
+      - description: The user's department
+        example: R&D
+        in: query
+        name: Department
+        required: false
+        schema: {type: string}
+      - description: The user's organization
+        example: Cyber ark
+        in: query
+        name: Organization
+        required: false
+        schema: {type: string}
+      - description: The user's profession
+        example: software development
+        in: query
+        name: Profession
+        required: false
+        schema: {type: string}
+      - description: The number/street of the user's personal address
+        example: Dizzengof 56
+        in: query
+        name: 'Personal Address: Street'
+        required: false
+        schema: {type: string}
+      - description: The city of the user's personal address
+        example: Tel Aviv
+        in: query
+        name: 'Personal Address: City'
+        required: false
+        schema: {type: string}
+      - description: The ZIP of the user's personal address
+        example: '123456'
+        in: body
+        name: 'Personal Address: ZIP'
+        required: false
+        schema: {type: string}
+      - description: The state of the user's personal address
+        example: Israel
+        in: query
+        name: 'Personal Address: State'
+        required: false
+        schema: {type: string}
+      - description: The country of the user's personal address
+        example: Israel
+        in: query
+        name: 'Personal Address: Country'
+        required: false
+        schema: {type: string}
+      - description: The user's business Email
+        example: user@cyberark.com
+        in: query
+        name: Business Email
+        required: false
+        schema: {type: string}
+      - description: The user's personal Email
+        example: user@gmail.com
+        in: query
+        name: Personal Email
+        required: false
+        schema: {type: string}
+      - description: Other Email
+        example: user3@gmail.com
+        in: query
+        name: Other Email
+        required: false
+        schema: {type: string}
+      - description: The user's business phone number
+        example: '555456789'
+        in: body
+        name: Business Phone Number
+        required: false
+        schema: {type: string}
+      - description: The user's home phone number
+        example: '555123456'
+        in: body
+        name: Home Number
+        required: false
+        schema: {type: string}
+      - description: The user's fax number
+        example: '999999'
+        in: body
+        name: Fax Number
+        required: false
+        schema: {type: string}
+      - description: The user's pager number
+        example: '111111'
+        in: body
+        name: Pager Number
+        required: false
+        schema: {type: string}
+      - description: The number/street of the user's work address
+        example: Hapssagot 9
+        in: query
+        name: 'Business Address: Street'
+        required: false
+        schema: {type: string}
+      - description: The city of the user's work address
+        example: Petah Tikva
+        in: query
+        name: 'Business Address: City'
+        required: false
+        schema: {type: string}
+      - description: The ZIP of the user's work address
+        example: '9999999'
+        in: body
+        name: 'Business Address: ZIP'
+        required: false
+        schema: {type: string}
+      - description: The state of the user's work address
+        example: Israel
+        in: query
+        name: 'Business Address: State'
+        required: false
+        schema: {type: string}
+      - description: The country of the user's work address
+        example: Israel
+        in: query
+        name: 'Business Address: Country'
+        required: false
+        schema: {type: string}
+      - description: The user's cell number
+        example: '555789789'
+        in: body
+        name: Cellular Number
+        required: false
+        schema: {type: string}
+      - description: Personal Webpage
+        example: Cyberark.com
+        in: query
+        name: Webpage
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp20'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Update User
+  tmp21:
+    post:
+      description: Marks an account for verification by the CPM.
+      parameters:
+      - description: The unique ID of the account.
+        example: '41_6'
+        in: query
+        name: Account ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp21'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Verify Account Credentials
+  tmp3:
+    post:
+      description: 'Add a user as a member to an existing Vault group. '
+      parameters:
+      - description: The unique ID of the Vault group.
+        example: '51'
+        in: body
+        name: Group ID
+        required: true
+        schema: {type: string}
+      - description: The type of user being added to the Vault group. This differentiates
+          members who are domain users from members who are Vault users. Either "Vault"
+          or "Domain"
+        example: Vault
+        in: query
+        name: Member Type
+        required: true
+        schema: {type: string}
+      - description: The name of the Vault user or LDAP group to add to the Vault
+          group.
+        example: newUser
+        in: query
+        name: Member ID
+        required: true
+        schema: {type: string}
+      - description: The dns address of the domain.
+        example: ''
+        in: query
+        name: Domain Name
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Add User to Group
+  tmp4:
+    post:
+      description: Marks an account for an immediate credentials change by the CPM
+        to a new random value.
+      parameters:
+      - description: The unique ID of the account.
+        example: '41_6'
+        in: query
+        name: Account ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Change Account Credentials
+  tmp5:
+    post:
+      description: Delete a specific account in the Vault.
+      parameters:
+      - description: The unique ID of the account.
+        example: '41_7'
+        in: query
+        name: Account ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Delete Account
+  tmp6:
+    post:
+      description: Delete a specific user in the Vault.
+      parameters:
+      - description: The user's unique ID.
+        example: '115'
+        in: body
+        name: User ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Delete User
+  tmp7:
+    post:
+      description: Returns all the account groups in a specific Safe.
+      parameters:
+      - description: The name of the Safe where the account groups are.
+        example: cicd_database
+        in: query
+        name: Safe
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Get Account Groups
+  tmp8:
+    post:
+      description: Returns all the accounts in the Vault.
+      parameters:
+      - description: A custom filter. See plugin documentation for more info.
+        example: safeName eq cicd_database
+        in: query
+        name: Filter
+        required: false
+        schema: {type: string}
+      - description: List of keywords to search for in accounts, separated by a space.
+        example: Windows admin
+        in: query
+        name: Search
+        required: false
+        schema: {type: string}
+      - description: 'How to search the value specified in the Search parameter. Valid
+          values: contains, startswith'
+        example: contains
+        in: query
+        name: Search Type
+        required: false
+        schema: {type: string}
+      - description: The maximum number of results to return.
+        example: '12'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Get Accounts
+  tmp9:
+    post:
+      description: Returns a list of all the applications in the Vault.
+      parameters:
+      - description: Application name.
+        example: AIMWebService
+        in: query
+        name: App ID
+        required: false
+        schema: {type: string}
+      - description: Location of the application in the Vault hierarchy.
+        example: \
+        in: query
+        name: Location
+        required: false
+        schema: {type: string}
+      - description: Whether or not the search will be performed in sublocations of
+          the specified location.
+        example: 'True'
+        in: query
+        name: Include Sublocations
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Cyberark Privileged Access Security Get Applications
+tags:
+- {name: Identity & Access Management}

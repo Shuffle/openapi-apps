@@ -1,0 +1,48 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        score: {type: string}
+        success: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Postmark Spam Assassin
+  title: Postmark Spam Assassin
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Analyze Email for Threat rating
+      parameters:
+      - description: Entire email context. Found by using 'show original' option in
+          GMail
+        example: ''
+        in: query
+        name: EMAIL
+        required: true
+        schema: {type: string}
+      - description: Optional HTTP/HTTPS proxy
+        example: http://user:password@10.10.1.10:3128
+        in: query
+        name: HTTP Proxy
+        required: false
+        schema: {type: string}
+      - description: Enable SSL certificate verification. Ignored for non-SSL connection
+        example: ''
+        in: query
+        name: Verify SSL
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Spam Assassin Analyze Email
+tags:
+- {name: Investigation}

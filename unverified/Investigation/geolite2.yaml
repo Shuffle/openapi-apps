@@ -1,0 +1,77 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        autonomousSystemNumber: {type: string}
+        autonomousSystemOrganization: {type: string}
+        ipAddress: {type: string}
+      type: object
+    tmp1:
+      properties:
+        cityName: {type: string}
+        continentCode: {type: string}
+        continentName: {type: string}
+        countryISOCode: {type: string}
+        countryIsInEU: {type: string}
+        countryName: {type: string}
+        ipAddress: {type: string}
+        locationAccuracyRadius: {type: string}
+        locationLatitude: {type: string}
+        locationLongitude: {type: string}
+        locationMetroCode: {type: string}
+        locationTimeZone: {type: string}
+        registeredCountryISOCode: {type: string}
+        registeredCountryIsInEU: {type: string}
+        registeredCountryName: {type: string}
+        representedCountryISOCode: {type: string}
+        representedCountryIsInEU: {type: string}
+        representedCountryName: {type: string}
+        representedCountryType: {type: string}
+        subdivisionISOCode: {type: string}
+        subdivisionName: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of MaxMind GeoLite2
+  title: MaxMind GeoLite2
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get ASN for an IP using GeoLite2
+      parameters:
+      - description: IP address to pass to GeoLite2
+        example: ''
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: GeoLite2 ASN Lookup
+  tmp1:
+    post:
+      description: Get geographical data for an IP using GeoLite2
+      parameters:
+      - description: IP address to pass to GeoLite2
+        example: ''
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: GeoLite2 Geo Lookup
+tags:
+- {name: Investigation}

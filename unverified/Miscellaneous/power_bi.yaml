@@ -1,0 +1,251 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        message: {type: string}
+      type: object
+    tmp1:
+      properties:
+        defaultRetentionPolicy: {type: string}
+        id: {type: string}
+        name: {type: string}
+        targetStorageMode: {type: string}
+      type: object
+    tmp2:
+      properties:
+        description: {type: string}
+        id: {type: string}
+        lastUpdate: {type: string}
+        name: {type: string}
+        publishedBy: {type: string}
+      type: object
+    tmp3:
+      properties:
+        description: {type: string}
+        id: {type: string}
+        lastUpdate: {type: string}
+        name: {type: string}
+        publishedBy: {type: string}
+      type: object
+    tmp4:
+      properties:
+        addRowsAPIEnabled: {type: string}
+        configuredBy: {type: string}
+        id: {type: string}
+        isEffectiveIdentityRequired: {type: string}
+        isEffectiveIdentityRolesRequired: {type: string}
+        isOnPremGatewayRequired: {type: string}
+        isRefreshable: {type: string}
+        name: {type: string}
+        targetStorageMode: {type: string}
+      type: object
+    tmp5:
+      properties:
+        datasetId: {type: string}
+        embedUrl: {type: string}
+        id: {type: string}
+        isOwnedByMe: {type: string}
+        name: {type: string}
+        reportType: {type: string}
+      type: object
+    tmp6:
+      properties:
+        datasetId: {type: string}
+        embedUrl: {type: string}
+        id: {type: string}
+        isOwnedByMe: {type: string}
+        name: {type: string}
+        reportType: {type: string}
+      type: object
+    tmp7:
+      properties:
+        name: {type: string}
+      type: object
+    tmp8:
+      properties:
+        message: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Microsoft Power BI
+  title: Microsoft Power BI
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAIAAADrOV6nAAAD9UlEQVR4nO3cSWgTURzH8Tfpkm6JYw/Wi8tNPYVCqQtoUfBYxINgFEqtWBAPIoLLwSJVUE9VsIgbSkXqUvBgvVhKKR7soSDxItqTPVUPIUvTLW3iIe1jMmmSSXydeb83/8+pjWH66LfvH5IZR2PixCY2Czya0jT/vrCoY3lEHYiUwFMt8mACj0UcQQnhUUJ4lBAeJYRHCeFRQniUEB4lhEcJ4VFCeJQQHiWERwnhUUJ4lBAeJYRHCeFRQniUEB4lhFfp9AKKCAR10yPD92PbmlJOrEVSmsBjCb+ONLefke5Ljz+Jiv2JNvF4/a0zog4m7y409gsNRhYWtb2dm4xPiMQ1/pzQYMS+lUlG0oTfp1YXdrA5+fBKgjFW403zTrm7kz8y0h/b0uiuMSvpILW4vTp6GkJT6/8VNjWmPvfHRK1HMJcMUisGemczXywmtdaOrDH7J+xxyZjFTsh5qyyN2fGnUb0hbd+ybKFIQiPe8sRV36/pCuM/tZ1b3anbt6Y+9sk6ZkukYELu/b145ovEvHagK2vMTs+oM2ZVTsjV11oas19fROtq8MasKxIa8Zbtl/zTM1mfL+4/s7pTd+1YeXc3bvPCyua6hBx/LYzEtbburDH783cF0Jh1b0JO9xUfs7fPz7UfWrJ1WZZhv7XfOEcv+P+GzadxhC2G3trbYGTtk53JH5VnexucXUxhdL6wiJY9ywXGrAwoITxKCM91r4WZYVhVySZfRRxeiiDu2oX8xSy5LOkLWxlclDC3WfMp8yOIXJQwVwrvA9F1KPhayHfbxZMLXccWHF2LHVTbhcZp+eBNTb7LMlQiacLMu+lab2mTLvfVrqNH6g9WhJD3j1T+UwSSkDdhPqkUaz6t82+ptKSDtABjPybr55Z2Aks48Mnr9BKkI+kgNV2Nz78e/iLylshqkHEXmmYjjcrCZExISkIJ4VFCeJQQHiWERwnhUUJ4lBAeJYRHCeFRQngyJjSdAvz2OrL+8whjTNozFflO5PrqlbjoTCgZd2EBz2/MOr0E6YAlzDXxUtht2AJBPRDUbz2rE3VAe0g6SAsIDUb4HSw24sKZodHqodFqxlijPz32OJrv5LM88BKy7DtYbJxwTDP2e3Rd0hkOmTCf44eXPoyVf2VGgf8KKuf+y1Aq4c3uOVPC8n71MgfLpVRCtvbbDwT1vsuJIy1Jp5djB9USZmBto/8E/6bCurd3zDd0UqO0ixLu3rlyrXOef6tGPybtrYMUJ/TWQS7ahaqihPAoITxKCI8SwqOE8CghPEoIjxLCo4TwKCE8SgiPEsKjhPAoITxKCI8SwqOE8CghPEoIjxLCE3opsFbFNPqbKE5jFcWfZNk/AP0BgVjpAoYAAAAASUVORK5CYII=
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Adds new data rows to the specified table within the specified
+        dataset from My Workspace
+      parameters:
+      - description: ID of dataset
+        example: f1694cbe-2221-4070-b1a9-24148ea1f5a5
+        in: query
+        name: Dataset ID
+        required: true
+        schema: {type: string}
+      - description: Inputs values into columns using row name and value..
+        example: ProductID:1,Name:Adjustable Race,Category:Components,IsCompete:true,ManufacturedOn:07/30/2014
+        in: query
+        name: Rows
+        required: true
+        schema: {type: string}
+      - description: Table name associated with dataset
+        example: My example table name
+        in: query
+        name: Table Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Microsoft Power BI Add Data To Specific Table
+  tmp1:
+    post:
+      description: Create a dataset
+      parameters:
+      - description: Name of dataset
+        example: This is a name for my dataset.
+        in: query
+        name: Dataset Name
+        required: true
+        schema: {type: string}
+      - description: Table name associated with dataset
+        example: My example table name
+        in: query
+        name: Table Name
+        required: true
+        schema: {type: string}
+      - description: Table schema, column names and dataType.
+        example: New_ProductID:Int64,ColumnName:string
+        in: query
+        name: Columms
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Microsoft Power BI Create Dataset
+  tmp2:
+    post:
+      description: Retrieve a application by ID.
+      parameters:
+      - description: The app ID
+        example: b40830f-7c05-4ae9-87fb-a5f58087bd7e
+        in: query
+        name: App ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Microsoft Power BI Get App By ID
+  tmp3:
+    post:
+      description: Get installed applications and associated information
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Microsoft Power BI Get Apps
+  tmp4:
+    post:
+      description: Get Datasets
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Microsoft Power BI Get Datasets
+  tmp5:
+    post:
+      description: Get a report by Id
+      parameters:
+      - description: The ID of a report
+        example: 0dec8ea9-3a93-4a21-af56-c8b2421d49a2
+        in: query
+        name: Report ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Microsoft Power BI Get Report By ID
+  tmp6:
+    post:
+      description: Get reports and associated information
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Microsoft Power BI Get Reports
+  tmp7:
+    post:
+      description: Get tables from associated dataset
+      parameters:
+      - description: ID associated with a dataset
+        example: 8871abe5-7670-4f0d-92f3-235aaf8a1ed6
+        in: query
+        name: Dataset ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Microsoft Power BI Get Tables
+  tmp8:
+    post:
+      description: Update Schemea for a Table
+      parameters:
+      - description: Table schema, column names and dataType.
+        example: New_ProductID:Int64','ColumnName:string
+        in: query
+        name: Columms
+        required: true
+        schema: {type: string}
+      - description: ID of dataset
+        example: f1694cbe-2221-4070-b1a9-24148ea1f5a5
+        in: query
+        name: Dataset ID
+        required: true
+        schema: {type: string}
+      - description: Table name returned after updating table schema.
+        example: My example table name
+        in: query
+        name: Table Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Microsoft Power BI Update Table Schema
+tags:
+- {name: Miscellaneous}

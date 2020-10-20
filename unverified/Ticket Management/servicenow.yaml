@@ -1,0 +1,1500 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        impact: {type: string}
+        number: {type: string}
+        parent_incident: {type: string}
+        sys_id: {type: string}
+        urgency: {type: string}
+      type: object
+    tmp1:
+      properties:
+        custom_data: {type: string}
+        impact: {type: string}
+        number: {type: string}
+        parent_incident: {type: string}
+        sys_id: {type: string}
+        urgency: {type: string}
+      type: object
+    tmp10:
+      properties:
+        close_notes: {type: string}
+        impact: {type: string}
+        number: {type: string}
+        parent_incident: {type: string}
+        sys_id: {type: string}
+        urgency: {type: string}
+      type: object
+    tmp11:
+      properties:
+        success: {type: string}
+      type: object
+    tmp12:
+      properties:
+        custom_data: {type: string}
+        impact: {type: string}
+        number: {type: string}
+        parent_incident: {type: string}
+        sys_id: {type: string}
+        urgency: {type: string}
+      type: object
+    tmp2:
+      properties:
+        active: {type: string}
+        activity_due: {type: string}
+        additional_assignee_list: {type: string}
+        approval: {type: string}
+        approval_history: {type: string}
+        approval_set: {type: string}
+        assigned_to_link: {type: string}
+        assigned_to_value: {type: string}
+        assignment_group_link: {type: string}
+        assignment_group_value: {type: string}
+        business_duration: {type: string}
+        business_service_link: {type: string}
+        business_service_value: {type: string}
+        business_stc: {type: string}
+        calendar_duration: {type: string}
+        calendar_stc: {type: string}
+        caller_id_link: {type: string}
+        caller_id_value: {type: string}
+        category: {type: string}
+        caused_by_link: {type: string}
+        caused_by_value: {type: string}
+        child_incidents: {type: string}
+        close_code: {type: string}
+        close_notes: {type: string}
+        closed_at: {type: string}
+        closed_by: {type: string}
+        cmdb_ci_link: {type: string}
+        cmdb_ci_value: {type: string}
+        comments: {type: string}
+        comments_and_work_notes: {type: string}
+        company_link: {type: string}
+        company_value: {type: string}
+        contact_type: {type: string}
+        correlation_display: {type: string}
+        correlation_id: {type: string}
+        delivery_plan: {type: string}
+        delivery_task: {type: string}
+        description: {type: string}
+        due_date: {type: string}
+        escalation: {type: string}
+        expected_start: {type: string}
+        follow_up: {type: string}
+        group_list: {type: string}
+        hold_reason: {type: string}
+        impact: {type: string}
+        incident_state: {type: string}
+        knowledge: {type: string}
+        location: {type: string}
+        made_sla: {type: string}
+        notify: {type: string}
+        number: {type: string}
+        opened_at: {type: string}
+        opened_by_link: {type: string}
+        opened_by_value: {type: string}
+        order: {type: string}
+        parent: {type: string}
+        parent_incident: {type: string}
+        parent_incident_link: {type: string}
+        parent_incident_value: {type: string}
+        priority: {type: string}
+        problem_id_link: {type: string}
+        problem_id_value: {type: string}
+        reassignment_count: {type: string}
+        reopen_count: {type: string}
+        resolved_at: {type: string}
+        resolved_by_link: {type: string}
+        resolved_by_value: {type: string}
+        rfc_link: {type: string}
+        rfc_value: {type: string}
+        severity: {type: string}
+        short_description: {type: string}
+        sla_due: {type: string}
+        state: {type: string}
+        subcategory: {type: string}
+        sys_class_name: {type: string}
+        sys_created_by: {type: string}
+        sys_created_on: {type: string}
+        sys_domain_link: {type: string}
+        sys_domain_path: {type: string}
+        sys_domain_value: {type: string}
+        sys_id: {type: string}
+        sys_mod_count: {type: string}
+        sys_tags: {type: string}
+        sys_updated_by: {type: string}
+        sys_updated_on: {type: string}
+        time_worked: {type: string}
+        upon_approval: {type: string}
+        upon_reject: {type: string}
+        urgency: {type: string}
+        user_input: {type: string}
+        watch_list: {type: string}
+        work_end: {type: string}
+        work_notes: {type: string}
+        work_notes_list: {type: string}
+        work_start: {type: string}
+      type: object
+    tmp3:
+      properties:
+        active: {type: string}
+        activity_due: {type: string}
+        additional_assignee_list: {type: string}
+        affected_user: {type: string}
+        alert_sensor: {type: string}
+        approval: {type: string}
+        approval_history: {type: string}
+        approval_set: {type: string}
+        asset: {type: string}
+        assigned_to_link: {type: string}
+        assigned_to_value: {type: string}
+        assigned_vendor: {type: string}
+        assignment_group_link: {type: string}
+        assignment_group_value: {type: string}
+        attack_vector: {type: string}
+        automation_activity: {type: string}
+        billable: {type: string}
+        business_criticality: {type: string}
+        business_duration: {type: string}
+        business_service: {type: string}
+        calendar_duration: {type: string}
+        caller: {type: string}
+        category: {type: string}
+        change_request: {type: string}
+        close_code: {type: string}
+        close_notes: {type: string}
+        closed_at: {type: string}
+        closed_by_link: {type: string}
+        closed_by_value: {type: string}
+        cmdb_ci_link: {type: string}
+        cmdb_ci_value: {type: string}
+        comments: {type: string}
+        comments_and_work_notes: {type: string}
+        company: {type: string}
+        contact_type: {type: string}
+        correlation_display: {type: string}
+        correlation_id: {type: string}
+        delivery_plan: {type: string}
+        delivery_task: {type: string}
+        department: {type: string}
+        description: {type: string}
+        dest_ip: {type: string}
+        due_date: {type: string}
+        escalation: {type: string}
+        estimated_end: {type: string}
+        expected_end: {type: string}
+        expected_start: {type: string}
+        external_url: {type: string}
+        follow_up: {type: string}
+        group_list: {type: string}
+        impact: {type: string}
+        incident: {type: string}
+        initiated_from: {type: string}
+        is_catalog: {type: string}
+        knowledge: {type: string}
+        location_link: {type: string}
+        location_value: {type: string}
+        made_sla: {type: string}
+        malware_hash: {type: string}
+        malware_url: {type: string}
+        new_pir_respondents: {type: string}
+        number: {type: string}
+        opened_at: {type: string}
+        opened_by_link: {type: string}
+        opened_by_value: {type: string}
+        opened_for_link: {type: string}
+        opened_for_value: {type: string}
+        order: {type: string}
+        other_ioc: {type: string}
+        parent: {type: string}
+        parent_incident: {type: string}
+        parent_security_incident: {type: string}
+        pir: {type: string}
+        pir_respondents: {type: string}
+        previous_agent: {type: string}
+        priority: {type: string}
+        problem: {type: string}
+        qualification_group: {type: string}
+        reassignment_count: {type: string}
+        referrer_url: {type: string}
+        request_category: {type: string}
+        request_type: {type: string}
+        requested_due_by: {type: string}
+        risk: {type: string}
+        risk_change: {type: string}
+        risk_score: {type: string}
+        risk_score_override: {type: string}
+        secure_notes: {type: string}
+        security_incident_self: {type: string}
+        security_tags: {type: string}
+        severity: {type: string}
+        short_description: {type: string}
+        skills: {type: string}
+        sla_due: {type: string}
+        sla_suspended: {type: string}
+        sla_suspended_for: {type: string}
+        sla_suspended_on: {type: string}
+        sla_suspended_reason: {type: string}
+        source_ip: {type: string}
+        spam: {type: string}
+        special_access_read: {type: string}
+        special_access_write: {type: string}
+        state: {type: string}
+        subcategory: {type: string}
+        substate: {type: string}
+        sys_class_name: {type: string}
+        sys_created_by: {type: string}
+        sys_created_on: {type: string}
+        sys_domain_link: {type: string}
+        sys_domain_path: {type: string}
+        sys_domain_value: {type: string}
+        sys_id: {type: string}
+        sys_mod_count: {type: string}
+        sys_tags: {type: string}
+        sys_updated_by: {type: string}
+        sys_updated_on: {type: string}
+        task_created: {type: string}
+        template: {type: string}
+        template_workflow_invoked: {type: string}
+        time_worked: {type: string}
+        u_custom_field: {type: string}
+        upon_approval: {type: string}
+        upon_reject: {type: string}
+        urgency: {type: string}
+        user_input: {type: string}
+        vendor_reference: {type: string}
+        watch_list: {type: string}
+        work_end: {type: string}
+        work_notes: {type: string}
+        work_notes_list: {type: string}
+        work_start: {type: string}
+      type: object
+    tmp4:
+      properties:
+        active: {type: string}
+        activity_due: {type: string}
+        additional_assignee_list: {type: string}
+        approval: {type: string}
+        approval_history: {type: string}
+        approval_set: {type: string}
+        assigned_to: {type: string}
+        assignment_group: {type: string}
+        business_duration: {type: string}
+        business_service: {type: string}
+        calendar_duration: {type: string}
+        close_notes: {type: string}
+        closed_at: {type: string}
+        closed_by: {type: string}
+        cmdb_ci: {type: string}
+        comments: {type: string}
+        comments_and_work_notes: {type: string}
+        company: {type: string}
+        contact_type: {type: string}
+        correlation_display: {type: string}
+        correlation_id: {type: string}
+        custom_data: {type: string}
+        delivery_plan: {type: string}
+        delivery_task: {type: string}
+        description: {type: string}
+        due_date: {type: string}
+        escalation: {type: string}
+        expected_start: {type: string}
+        follow_up: {type: string}
+        group_list: {type: string}
+        impact: {type: string}
+        knowledge: {type: string}
+        location: {type: string}
+        made_sla: {type: string}
+        number: {type: string}
+        opened_at: {type: string}
+        opened_by_link: {type: string}
+        opened_by_value: {type: string}
+        order: {type: string}
+        parent: {type: string}
+        parent_incident: {type: string}
+        priority: {type: string}
+        reassignment_count: {type: string}
+        short_description: {type: string}
+        sla_due: {type: string}
+        state: {type: string}
+        sys_class_name: {type: string}
+        sys_created_by: {type: string}
+        sys_created_on: {type: string}
+        sys_domain_link: {type: string}
+        sys_domain_path: {type: string}
+        sys_domain_value: {type: string}
+        sys_id: {type: string}
+        sys_mod_count: {type: string}
+        sys_tags: {type: string}
+        sys_updated_by: {type: string}
+        sys_updated_on: {type: string}
+        time_worked: {type: string}
+        upon_approval: {type: string}
+        upon_reject: {type: string}
+        urgency: {type: string}
+        user_input: {type: string}
+        watch_list: {type: string}
+        work_end: {type: string}
+        work_notes: {type: string}
+        work_notes_list: {type: string}
+        work_start: {type: string}
+      type: object
+    tmp5:
+      properties:
+        active: {type: string}
+        activity_due: {type: string}
+        additional_assignee_list: {type: string}
+        approval: {type: string}
+        approval_history: {type: string}
+        approval_set: {type: string}
+        assigned_to_link: {type: string}
+        assigned_to_value: {type: string}
+        assignment_group_link: {type: string}
+        assignment_group_value: {type: string}
+        business_duration: {type: string}
+        business_service_link: {type: string}
+        business_service_value: {type: string}
+        business_stc: {type: string}
+        calendar_duration: {type: string}
+        calendar_stc: {type: string}
+        caller_id_link: {type: string}
+        caller_id_value: {type: string}
+        category: {type: string}
+        caused_by_link: {type: string}
+        caused_by_value: {type: string}
+        child_incidents: {type: string}
+        close_code: {type: string}
+        close_notes: {type: string}
+        closed_at: {type: string}
+        closed_by: {type: string}
+        cmdb_ci_link: {type: string}
+        cmdb_ci_value: {type: string}
+        comments: {type: string}
+        comments_and_work_notes: {type: string}
+        company_link: {type: string}
+        company_value: {type: string}
+        contact_type: {type: string}
+        correlation_display: {type: string}
+        correlation_id: {type: string}
+        delivery_plan: {type: string}
+        delivery_task: {type: string}
+        description: {type: string}
+        due_date: {type: string}
+        escalation: {type: string}
+        expected_start: {type: string}
+        follow_up: {type: string}
+        group_list: {type: string}
+        hold_reason: {type: string}
+        impact: {type: string}
+        incident_state: {type: string}
+        knowledge: {type: string}
+        location: {type: string}
+        made_sla: {type: string}
+        notify: {type: string}
+        number: {type: string}
+        opened_at: {type: string}
+        opened_by_link: {type: string}
+        opened_by_value: {type: string}
+        order: {type: string}
+        parent: {type: string}
+        parent_incident: {type: string}
+        parent_incident_link: {type: string}
+        parent_incident_value: {type: string}
+        priority: {type: string}
+        problem_id_link: {type: string}
+        problem_id_value: {type: string}
+        reassignment_count: {type: string}
+        reopen_count: {type: string}
+        resolved_at: {type: string}
+        resolved_by_link: {type: string}
+        resolved_by_value: {type: string}
+        rfc_link: {type: string}
+        rfc_value: {type: string}
+        severity: {type: string}
+        short_description: {type: string}
+        sla_due: {type: string}
+        state: {type: string}
+        subcategory: {type: string}
+        sys_class_name: {type: string}
+        sys_created_by: {type: string}
+        sys_created_on: {type: string}
+        sys_domain_link: {type: string}
+        sys_domain_path: {type: string}
+        sys_domain_value: {type: string}
+        sys_id: {type: string}
+        sys_mod_count: {type: string}
+        sys_tags: {type: string}
+        sys_updated_by: {type: string}
+        sys_updated_on: {type: string}
+        time_worked: {type: string}
+        upon_approval: {type: string}
+        upon_reject: {type: string}
+        urgency: {type: string}
+        user_input: {type: string}
+        watch_list: {type: string}
+        work_end: {type: string}
+        work_notes: {type: string}
+        work_notes_list: {type: string}
+        work_start: {type: string}
+      type: object
+    tmp6:
+      properties:
+        Name: {type: string}
+        element: {type: string}
+        element_id: {type: string}
+        sys_created_by: {type: string}
+        sys_created_on: {type: string}
+        sys_id: {type: string}
+        sys_tags: {type: string}
+        value: {type: string}
+      type: object
+    tmp7:
+      properties:
+        raw_json: {type: string}
+      type: object
+    tmp8:
+      properties:
+        active: {type: string}
+        activity_due: {type: string}
+        additional_assignee_list: {type: string}
+        affected_user: {type: string}
+        alert_sensor: {type: string}
+        approval: {type: string}
+        approval_history: {type: string}
+        approval_set: {type: string}
+        asset: {type: string}
+        assigned_to_link: {type: string}
+        assigned_to_value: {type: string}
+        assigned_vendor: {type: string}
+        assignment_group_link: {type: string}
+        assignment_group_value: {type: string}
+        attack_vector: {type: string}
+        automation_activity: {type: string}
+        billable: {type: string}
+        business_criticality: {type: string}
+        business_duration: {type: string}
+        business_service: {type: string}
+        calendar_duration: {type: string}
+        caller: {type: string}
+        category: {type: string}
+        change_request: {type: string}
+        close_code: {type: string}
+        close_notes: {type: string}
+        closed_at: {type: string}
+        closed_by_link: {type: string}
+        closed_by_value: {type: string}
+        cmdb_ci_link: {type: string}
+        cmdb_ci_value: {type: string}
+        comments: {type: string}
+        comments_and_work_notes: {type: string}
+        company: {type: string}
+        contact_type: {type: string}
+        correlation_display: {type: string}
+        correlation_id: {type: string}
+        delivery_plan: {type: string}
+        delivery_task: {type: string}
+        department: {type: string}
+        description: {type: string}
+        dest_ip: {type: string}
+        due_date: {type: string}
+        escalation: {type: string}
+        estimated_end: {type: string}
+        expected_end: {type: string}
+        expected_start: {type: string}
+        external_url: {type: string}
+        follow_up: {type: string}
+        group_list: {type: string}
+        impact: {type: string}
+        incident: {type: string}
+        initiated_from: {type: string}
+        is_catalog: {type: string}
+        knowledge: {type: string}
+        location: {type: string}
+        made_sla: {type: string}
+        malware_hash: {type: string}
+        malware_url: {type: string}
+        new_pir_respondents: {type: string}
+        number: {type: string}
+        opened_at: {type: string}
+        opened_by_link: {type: string}
+        opened_by_value: {type: string}
+        opened_for_link: {type: string}
+        opened_for_value: {type: string}
+        order: {type: string}
+        other_ioc: {type: string}
+        parent: {type: string}
+        parent_incident: {type: string}
+        parent_security_incident: {type: string}
+        pir: {type: string}
+        pir_respondents: {type: string}
+        previous_agent: {type: string}
+        priority: {type: string}
+        problem_link: {type: string}
+        problem_value: {type: string}
+        qualification_group: {type: string}
+        reassignment_count: {type: string}
+        referrer_url: {type: string}
+        request_category: {type: string}
+        request_type: {type: string}
+        requested_due_by: {type: string}
+        risk: {type: string}
+        risk_change: {type: string}
+        risk_score: {type: string}
+        risk_score_override: {type: string}
+        secure_notes: {type: string}
+        security_incident_self: {type: string}
+        security_tags: {type: string}
+        severity: {type: string}
+        short_description: {type: string}
+        skills: {type: string}
+        sla_due: {type: string}
+        sla_suspended: {type: string}
+        sla_suspended_for: {type: string}
+        sla_suspended_on: {type: string}
+        sla_suspended_reason: {type: string}
+        source_ip: {type: string}
+        spam: {type: string}
+        special_access_read: {type: string}
+        special_access_write: {type: string}
+        state: {type: string}
+        subcategory: {type: string}
+        substate: {type: string}
+        sys_class_name: {type: string}
+        sys_created_by: {type: string}
+        sys_created_on: {type: string}
+        sys_domain_link: {type: string}
+        sys_domain_path: {type: string}
+        sys_domain_value: {type: string}
+        sys_id: {type: string}
+        sys_mod_count: {type: string}
+        sys_tags: {type: string}
+        sys_updated_by: {type: string}
+        sys_updated_on: {type: string}
+        task_created: {type: string}
+        template: {type: string}
+        template_workflow_invoked: {type: string}
+        time_worked: {type: string}
+        u_custom_field: {type: string}
+        upon_approval: {type: string}
+        upon_reject: {type: string}
+        urgency: {type: string}
+        user_input: {type: string}
+        vendor_reference: {type: string}
+        watch_list: {type: string}
+        work_end: {type: string}
+        work_notes: {type: string}
+        work_notes_list: {type: string}
+        work_start: {type: string}
+      type: object
+    tmp9:
+      properties:
+        active: {type: string}
+        activity_due: {type: string}
+        additional_assignee_list: {type: string}
+        approval: {type: string}
+        approval_history: {type: string}
+        approval_set: {type: string}
+        assigned_to_link: {type: string}
+        assigned_to_value: {type: string}
+        assignment_group_link: {type: string}
+        assignment_group_value: {type: string}
+        business_duration: {type: string}
+        business_service: {type: string}
+        calendar_duration: {type: string}
+        close_notes: {type: string}
+        closed_at: {type: string}
+        closed_by: {type: string}
+        cmdb_ci: {type: string}
+        comments: {type: string}
+        comments_and_work_notes: {type: string}
+        company: {type: string}
+        contact_type: {type: string}
+        correlation_display: {type: string}
+        correlation_id: {type: string}
+        delivery_plan: {type: string}
+        delivery_task: {type: string}
+        description: {type: string}
+        due_date: {type: string}
+        escalation: {type: string}
+        expected_start: {type: string}
+        follow_up: {type: string}
+        group_list: {type: string}
+        impact: {type: string}
+        knowledge: {type: string}
+        location: {type: string}
+        made_sla: {type: string}
+        number: {type: string}
+        opened_at: {type: string}
+        opened_by_link: {type: string}
+        opened_by_value: {type: string}
+        order: {type: string}
+        parent: {type: string}
+        parent_incident: {type: string}
+        priority: {type: string}
+        reassignment_count: {type: string}
+        short_description: {type: string}
+        sla_due: {type: string}
+        state: {type: string}
+        sys_class_name: {type: string}
+        sys_created_by: {type: string}
+        sys_created_on: {type: string}
+        sys_domain_link: {type: string}
+        sys_domain_path: {type: string}
+        sys_domain_value: {type: string}
+        sys_id: {type: string}
+        sys_mod_count: {type: string}
+        sys_tags: {type: string}
+        sys_updated_by: {type: string}
+        sys_updated_on: {type: string}
+        time_worked: {type: string}
+        upon_approval: {type: string}
+        upon_reject: {type: string}
+        urgency: {type: string}
+        user_input: {type: string}
+        watch_list: {type: string}
+        work_end: {type: string}
+        work_notes: {type: string}
+        work_notes_list: {type: string}
+        work_start: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of ServiceNow ServiceNow
+  title: ServiceNow ServiceNow
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Create an incident in ServiceNow
+      parameters:
+      - description: ServiceNow user ID to assign incident to
+        example: ''
+        in: query
+        name: Assigned To
+        required: false
+        schema: {type: string}
+      - description: ServiceNow assignment group ID for the incident
+        example: ''
+        in: query
+        name: Assignment Group
+        required: false
+        schema: {type: string}
+      - description: Name of category to index the incident under
+        example: ''
+        in: query
+        name: Category Name
+        required: false
+        schema: {type: string}
+      - description: Name of subcategory to index the incident under
+        example: ''
+        in: query
+        name: Subcategory Name
+        required: false
+        schema: {type: string}
+      - description: Adds a comment to the incident
+        example: ''
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      - description: User ID of the caller of this incident
+        example: ''
+        in: query
+        name: Caller ID Value
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: Date in form, yyyy-mm-dd hh:mm:ss
+        example: ''
+        in: query
+        name: Due Date
+        required: false
+        schema: {type: string}
+      - description: State of the incident, 1 = new, 2 = active, 3 = awaiting problem,
+          4 = awaiting user info, 5 = awaiting evidence, 6 = resolved, 7 = closed
+        example: ''
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Work Notes
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Short Description
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Tags
+        required: false
+        schema: {type: string}
+      - description: Parent incident number
+        example: ''
+        in: query
+        name: Parent Incident
+        required: false
+        schema: {type: string}
+      - description: Urgency level, see README
+        example: ''
+        in: body
+        name: Urgency Level
+        required: false
+        schema: {type: string}
+      - description: Impact level, see README
+        example: ''
+        in: body
+        name: Impact
+        required: false
+        schema: {type: string}
+      - description: Optional system parameter to be appended to the request params
+        example: ''
+        in: query
+        name: System Parameter Query
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: ServiceNow Create Incident
+  tmp1:
+    post:
+      description: Create an entry in a table in ServiceNow
+      parameters:
+      - description: Name of the table in ServiceNow
+        example: ''
+        in: query
+        name: Table Name
+        required: true
+        schema: {type: string}
+      - description: ServiceNow user ID to assign ticket to
+        example: ''
+        in: query
+        name: Assigned To
+        required: false
+        schema: {type: string}
+      - description: ServiceNow assignment group ID for the ticket
+        example: ''
+        in: query
+        name: Assignment Group
+        required: false
+        schema: {type: string}
+      - description: Adds a comment to the ticket
+        example: ''
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: Date in form, yyyy-mm-dd hh:mm:ss
+        example: ''
+        in: query
+        name: Due Date
+        required: false
+        schema: {type: string}
+      - description: State of the ticket, 1 = Open, 2 = Work in Progress, 3 = Closed
+          Complete, 4 = Closed Incomplete, 5 = Closed Skipped.
+        example: ''
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Work Notes
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Short Description
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Tags
+        required: false
+        schema: {type: string}
+      - description: Parent
+        example: ''
+        in: query
+        name: Parent
+        required: false
+        schema: {type: string}
+      - description: Priority of the ticket, 1 = Critical, 2 = High, 3 = Moderate,
+          4 = Low, 5 = Planning.
+        example: ''
+        in: query
+        name: Priority
+        required: false
+        schema: {type: string}
+      - description: Parent incident number
+        example: ''
+        in: query
+        name: Parent Incident
+        required: false
+        schema: {type: string}
+      - description: Urgency level, see README
+        example: ''
+        in: body
+        name: Urgency Level
+        required: false
+        schema: {type: string}
+      - description: Impact level, see README
+        example: ''
+        in: body
+        name: Impact
+        required: false
+        schema: {type: string}
+      - description: 'Custom items CSV formatted: name=value.'
+        example: key=value,key2=value2,key3=value3
+        in: query
+        name: Custom Items
+        required: false
+        schema: {type: string}
+      - description: Optional system parameter to be appended to the request params
+        example: ''
+        in: query
+        name: System Parameter Query
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: ServiceNow Create Table Entry
+  tmp10:
+    post:
+      description: Update an incident in ServiceNow
+      parameters:
+      - description: ServiceNow user ID to assign incident to
+        example: ''
+        in: query
+        name: Assigned To
+        required: false
+        schema: {type: string}
+      - description: ServiceNow assignment group ID for the incident
+        example: ''
+        in: query
+        name: Assignment Group
+        required: false
+        schema: {type: string}
+      - description: Name of category to index the incident under
+        example: ''
+        in: query
+        name: Category Name
+        required: false
+        schema: {type: string}
+      - description: Name of subcategory to index the incident under
+        example: ''
+        in: query
+        name: Subcategory Name
+        required: false
+        schema: {type: string}
+      - description: Adds a comment to the incident
+        example: ''
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: Describes how an incident is closed, see docs for options
+        example: ''
+        in: query
+        name: Close Code
+        required: false
+        schema: {type: string}
+      - description: Explanation of why the incident closed
+        example: ''
+        in: query
+        name: Close Notes
+        required: false
+        schema: {type: string}
+      - description: Date in form, yyyy-mm-dd hh:mm:ss
+        example: ''
+        in: query
+        name: Due Date
+        required: false
+        schema: {type: string}
+      - description: State of the incident, 1 = new, 2 = active, 3 = awaiting problem,
+          4 = awaiting user info, 5 = awaiting evidence, 6 = resolved, 7 = closed
+        example: ''
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Work Notes
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Short Description
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Tags
+        required: false
+        schema: {type: string}
+      - description: User ID of the caller of this incident
+        example: ''
+        in: query
+        name: Caller ID Value
+        required: false
+        schema: {type: string}
+      - description: ID of incident to update
+        example: ''
+        in: query
+        name: System ID
+        required: true
+        schema: {type: string}
+      - description: Parent incident number
+        example: ''
+        in: query
+        name: Parent Incident
+        required: false
+        schema: {type: string}
+      - description: Urgency level, see README
+        example: ''
+        in: body
+        name: Urgency Level
+        required: false
+        schema: {type: string}
+      - description: Impact level, see README
+        example: ''
+        in: body
+        name: Impact
+        required: false
+        schema: {type: string}
+      - description: Optional system parameter to be appended to the request params
+        example: ''
+        in: query
+        name: System Parameter Query
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: ServiceNow Update Incident
+  tmp11:
+    post:
+      description: ServiceNow Update Security Incident
+      parameters:
+      - description: ServiceNow user ID to assign incident to
+        example: ''
+        in: query
+        name: Assigned To
+        required: false
+        schema: {type: string}
+      - description: ServiceNow assignment group ID for the incident
+        example: ''
+        in: query
+        name: Assignment Group
+        required: false
+        schema: {type: string}
+      - description: Adds a comment to the incident
+        example: ''
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: Date in form, yyyy-mm-dd hh:mm:ss
+        example: ''
+        in: query
+        name: Due Date
+        required: false
+        schema: {type: string}
+      - description: Name of category to index the incident under
+        example: ''
+        in: query
+        name: Category Name
+        required: false
+        schema: {type: string}
+      - description: State of the incident, 1 = new, 2 = active, 3 = awaiting problem,
+          4 = awaiting user info, 5 = awaiting evidence, 6 = resolved, 7 = closed
+        example: ''
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Work Notes
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Short Description
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Tags
+        required: false
+        schema: {type: string}
+      - description: User ID of the caller of this incident
+        example: ''
+        in: query
+        name: Caller ID Value
+        required: false
+        schema: {type: string}
+      - description: ID of incident to update
+        example: ''
+        in: query
+        name: System ID
+        required: true
+        schema: {type: string}
+      - description: Parent incident number
+        example: ''
+        in: query
+        name: Parent Incident
+        required: false
+        schema: {type: string}
+      - description: Urgency level, see README
+        example: ''
+        in: body
+        name: Urgency Level
+        required: false
+        schema: {type: string}
+      - description: Impact level, see README
+        example: ''
+        in: body
+        name: Impact
+        required: false
+        schema: {type: string}
+      - description: Optional system parameter to be appended to the request params
+        example: ''
+        in: query
+        name: System Parameter Query
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: ServiceNow Update Security Incident
+  tmp12:
+    post:
+      description: Update a table entry in ServiceNow
+      parameters:
+      - description: Name of the table in ServiceNow
+        example: ''
+        in: query
+        name: Table Name
+        required: true
+        schema: {type: string}
+      - description: Unique identifier of the ticket to update.
+        example: ''
+        in: query
+        name: System ID
+        required: true
+        schema: {type: string}
+      - description: ServiceNow user ID to assign ticket to
+        example: ''
+        in: query
+        name: Assigned To
+        required: false
+        schema: {type: string}
+      - description: ServiceNow assignment group ID for the ticket
+        example: ''
+        in: query
+        name: Assignment Group
+        required: false
+        schema: {type: string}
+      - description: Adds a comment to the ticket
+        example: ''
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: Describes how an incident is closed, see docs for options
+        example: ''
+        in: query
+        name: Close Code
+        required: false
+        schema: {type: string}
+      - description: Explanation of why the incident closed
+        example: ''
+        in: query
+        name: Close Notes
+        required: false
+        schema: {type: string}
+      - description: Date in form, yyyy-mm-dd hh:mm:ss
+        example: ''
+        in: query
+        name: Due Date
+        required: false
+        schema: {type: string}
+      - description: State of the ticket, 1 = Open, 2 = Work in Progress, 3 = Closed
+          Complete, 4 = Closed Incomplete, 5 = Closed Skipped.
+        example: ''
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Work Notes
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Short Description
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: System Tags
+        required: false
+        schema: {type: string}
+      - description: Parent
+        example: ''
+        in: query
+        name: Parent
+        required: false
+        schema: {type: string}
+      - description: Priority of the ticket, 1 = Critical, 2 = High, 3 = Moderate,
+          4 = Low, 5 = Planning.
+        example: ''
+        in: query
+        name: Priority
+        required: false
+        schema: {type: string}
+      - description: Parent incident number
+        example: ''
+        in: query
+        name: Parent Incident
+        required: false
+        schema: {type: string}
+      - description: Urgency level, see README
+        example: ''
+        in: body
+        name: Urgency Level
+        required: false
+        schema: {type: string}
+      - description: Impact level, see README
+        example: ''
+        in: body
+        name: Impact
+        required: false
+        schema: {type: string}
+      - description: Custom field names in CSV format
+        example: ''
+        in: query
+        name: Custom Fields
+        required: false
+        schema: {type: string}
+      - description: Delimiter to use to separate output and input data, defaults
+          to ','
+        example: ''
+        in: query
+        name: Custom Field Output Delimiter
+        required: false
+        schema: {type: string}
+      - description: Delimited data for the custom fields to update to
+        example: ''
+        in: query
+        name: Custom Input
+        required: true
+        schema: {type: string}
+      - description: Optional system parameter to be appended to the request params
+        example: ''
+        in: query
+        name: System Parameter Query
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: ServiceNow Update Table Entry
+  tmp2:
+    post:
+      description: Gets all incidents from ServiceNow
+      parameters:
+      - description: Limit of total number of incidents to ingest, default is 100.
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Optional system parameter to be appended to the request params
+        example: assignment_group.name=<group name>
+        in: query
+        name: System Parameter Query
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: ServiceNow Get All Incidents
+  tmp3:
+    post:
+      description: Service Now Get All Security Incidents
+      parameters:
+      - description: Limit of total number of security incidents to ingest, default
+          is 100.
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Optional system parameter to be appended to the request params
+        example: ''
+        in: query
+        name: System Parameter Query
+        required: false
+        schema: {type: string}
+      - description: Based on this value, retrieves the display value and/or the actual
+          value from the database, defaults to true
+        example: ''
+        in: query
+        name: Display Value
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: ServiceNow Get All Security Incidents
+  tmp4:
+    post:
+      description: Gets all entries from a table in ServiceNow
+      parameters:
+      - description: Name of the table in ServiceNow
+        example: ''
+        in: query
+        name: Table Name
+        required: true
+        schema: {type: string}
+      - description: Limit of total number of security incidents to ingest, default
+          is 100.
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Custom field names in CSV format
+        example: ''
+        in: query
+        name: Custom Fields
+        required: false
+        schema: {type: string}
+      - description: Delimiter to use to separate output data, defaults to ','
+        example: ''
+        in: query
+        name: Custom Field Output Delimiter
+        required: false
+        schema: {type: string}
+      - description: Optional system parameter to be appended to the request params
+        example: ''
+        in: query
+        name: System Parameter Query
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: ServiceNow Get All Entries In Table
+  tmp5:
+    post:
+      description: Get a specific incident from ServiceNow
+      parameters:
+      - description: Incident number to get information about
+        example: INC0210013
+        in: query
+        name: Incident Number
+        required: true
+        schema: {type: string}
+      - description: Optional system parameter to be appended to the request params
+        example: assignment_group.name=<group name>
+        in: query
+        name: System Parameter Query
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: ServiceNow Get Incident
+  tmp6:
+    post:
+      description: Get journal field information.
+      parameters:
+      - description: Incident ID to get information about
+        example: 471eb058a9fe198100f89592e1ea93d3
+        in: query
+        name: Incident ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: ServiceNow Get Journal Field Information
+  tmp7:
+    post:
+      description: 'Get raw JSON from a returned Service Now URL. '
+      parameters:
+      - description: The URL returned from an integration.
+        example: https://dev62482.service-now.com/api/now/v2/table/sys_user_group/406987abdbda10103bd7e37a48961956
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: ServiceNow Get Raw JSON from URL
+  tmp8:
+    post:
+      description: ServiceNow Get Security Incident
+      parameters:
+      - description: Security Incident number to get information about
+        example: SIR0210013
+        in: query
+        name: Security Incident Number
+        required: true
+        schema: {type: string}
+      - description: Optional system parameter to be appended to the request params
+        example: ''
+        in: query
+        name: System Parameter Query
+        required: false
+        schema: {type: string}
+      - description: Based on this value, retrieves the display value and/or the actual
+          value from the database, defaults to true
+        example: ''
+        in: query
+        name: Display Value
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: ServiceNow Get Security Incident
+  tmp9:
+    post:
+      description: Get a specific table entry from ServiceNow
+      parameters:
+      - description: Name of the table in ServiceNow
+        example: ''
+        in: query
+        name: Table Name
+        required: true
+        schema: {type: string}
+      - description: Entry number to get information about
+        example: TKT0010008
+        in: query
+        name: Entry Number
+        required: true
+        schema: {type: string}
+      - description: Custom field names in CSV format
+        example: ''
+        in: query
+        name: Custom Fields
+        required: false
+        schema: {type: string}
+      - description: Delimiter to use to separate output data, defaults to ','
+        example: ''
+        in: query
+        name: Custom Field Output Delimiter
+        required: false
+        schema: {type: string}
+      - description: Optional system parameter to be appended to the request params
+        example: ''
+        in: query
+        name: System Parameter Query
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: ServiceNow Get Table Entry
+tags:
+- {name: Ticket Management}

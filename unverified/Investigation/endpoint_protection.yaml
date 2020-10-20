@@ -1,0 +1,266 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        message: {type: string}
+      type: object
+    tmp1:
+      properties:
+        id: {type: string}
+      type: object
+    tmp2:
+      properties:
+        message: {type: string}
+      type: object
+    tmp3:
+      properties:
+        Name: {type: string}
+        adminstratorCount: {type: string}
+        companyName: {type: string}
+        contactInfo: {type: string}
+        createdTime: {type: string}
+        description: {type: string}
+        enable: {type: string}
+        id: {type: string}
+      type: object
+    tmp4:
+      properties:
+        data: {type: string}
+        description: {type: string}
+        groupIds: {type: string}
+        hashType: {type: string}
+        id: {type: string}
+        name: {type: string}
+        source: {type: string}
+      type: object
+    tmp5:
+      properties:
+        data: {type: string}
+        description: {type: string}
+        groupIds: {type: string}
+        hashType: {type: string}
+        id: {type: string}
+        name: {type: string}
+        source: {type: string}
+      type: object
+    tmp6:
+      properties:
+        content_created: {type: string}
+        content_createdBy: {type: string}
+        content_customIpsNumber: {type: string}
+        content_description: {type: string}
+        content_domain: {type: string}
+        content_fullPathName: {type: string}
+        content_id: {type: string}
+        content_lastModified: {type: string}
+        content_name: {type: string}
+        content_numberOfPhysicalComputers: {type: string}
+        content_numberOfRegisteredUsers: {type: string}
+        content_policyDate: {type: string}
+        content_policyInheritanceEnabled: {type: string}
+        content_policySerialNumber: {type: string}
+        firstPage: {type: string}
+        lastPage: {type: string}
+        number: {type: string}
+        numberOfElements: {type: string}
+        size: {type: string}
+        sort_ascending: {type: string}
+        sort_direction: {type: string}
+        sort_property: {type: string}
+        totalElements: {type: string}
+        totalPages: {type: string}
+      type: object
+    tmp7:
+      properties:
+        message: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Symantec Endpoint Protection
+  title: Symantec Endpoint Protection
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Add Fingerprint to Symantec Endpoint Protection Group for System
+        Lockdown
+      parameters:
+      - description: ID of Symantec Endpoint Protection Group
+        example: 76c0783596f8dc77528ff692a9dc82d1
+        in: query
+        name: Group ID
+        required: true
+        schema: {type: string}
+      - description: ID of Fingerprint list in Symantec Endpoint Protection
+        example: 25c0783596f8dc77528ff692a9dc82d1
+        in: query
+        name: Fingerprint ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: System-Lockdown Add Fingerprint Blacklist to Group
+  tmp1:
+    post:
+      description: Adds a blacklist as a file fingerprint list to Symantec Endpoint
+        Protection Manager.
+      parameters:
+      - description: Blacklist file to upload to Symantec Endpoint Protection as created
+          using checksum.exe provided by Symantec Endpoint Protection Manager
+        example: ac20a4ed0c586b32e80f2156188cd1a2 C:/Boot/bg-BG/bootmgr.exe.mui
+        in: query
+        name: File
+        required: true
+        schema: {type: string}
+      - description: The MD5 domain ID to which the blacklist file is applied.
+        example: ''
+        in: query
+        name: Domain ID
+        required: true
+        schema: {type: string}
+      - description: The blacklist file's description.
+        example: ''
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: The blacklist file's hash type. Possible values are MD5 or SHA256.
+          Defaults to MD5
+        example: ''
+        in: query
+        name: Hash Type
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Create new Blacklist
+  tmp2:
+    post:
+      description: Deletes a Blacklist on Symantec Endpoint Protection Manager.
+      parameters:
+      - description: The blacklist file's ID.
+        example: 25c0783596f8dc77528ff692a9dc82d1
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Delete Blacklist by ID
+  tmp3:
+    post:
+      description: Gets Domains from Symantec Endpoint Protection Manager.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Get Domains
+  tmp4:
+    post:
+      description: Gets the file fingerprint list for a specified ID as a set of hash
+        values
+      parameters:
+      - description: ID of File
+        example: 25c0783596f8dc77528ff692a9dc82d1
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Get Blacklist Fingerprint File by ID
+  tmp5:
+    post:
+      description: Gets the file fingerprint list for a specified Name as a set of
+        hash values
+      parameters:
+      - description: Name of File
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Get Blacklist Fingerprint File by Name
+  tmp6:
+    post:
+      description: Get Groups from Symantec Endpoint Protection
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Get Groups
+  tmp7:
+    post:
+      description: Updates a Blacklist on Symantec Endpoint Protection Manager.
+      parameters:
+      - description: The blacklist file's ID.
+        example: 25c0783596f8dc77528ff692a9dc82d1
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      - description: The domain ID to which the blacklist file is applied.
+        example: ''
+        in: query
+        name: Domain ID
+        required: true
+        schema: {type: string}
+      - description: The blacklist file's hash type. Possible values are MD5 or SHA256.
+        example: ''
+        in: query
+        name: Hash Type
+        required: false
+        schema: {type: string}
+      - description: The blacklist file's description.
+        example: ''
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: The blacklist file
+        example: ac20a4ed0c586b32e80f2156188cd1a2 C:/Boot/bg-BG/bootmgr.exe.mui
+        in: query
+        name: File
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Update Blacklist by ID
+tags:
+- {name: Investigation}

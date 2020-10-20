@@ -1,0 +1,209 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        abuse_ch_domain_blacklists_spamhaus_dbl: {type: string}
+        abuse_ch_domain_blacklists_surbl: {type: string}
+        abuse_ch_domain_firstseen: {type: string}
+        abuse_ch_domain_host: {type: string}
+        abuse_ch_domain_query_status: {type: string}
+        abuse_ch_domain_url_count: {type: string}
+        abuse_ch_domain_urlhaus_reference: {type: string}
+        abuse_ch_domain_urls_date_added: {type: string}
+        abuse_ch_domain_urls_id: {type: string}
+        abuse_ch_domain_urls_larted: {type: string}
+        abuse_ch_domain_urls_reporter: {type: string}
+        abuse_ch_domain_urls_tags: {type: string}
+        abuse_ch_domain_urls_takedown_time_seconds: {type: string}
+        abuse_ch_domain_urls_threat: {type: string}
+        abuse_ch_domain_urls_url: {type: string}
+        abuse_ch_domain_urls_url_status: {type: string}
+        abuse_ch_domain_urls_urlhaus_reference: {type: string}
+      type: object
+    tmp1:
+      properties:
+        abuse_ch_ip_blacklists_spamhaus_dbl: {type: string}
+        abuse_ch_ip_blacklists_surbl: {type: string}
+        abuse_ch_ip_firstseen: {type: string}
+        abuse_ch_ip_host: {type: string}
+        abuse_ch_ip_query_status: {type: string}
+        abuse_ch_ip_url_count: {type: string}
+        abuse_ch_ip_urlhaus_reference: {type: string}
+        abuse_ch_ip_urls_date_added: {type: string}
+        abuse_ch_ip_urls_id: {type: string}
+        abuse_ch_ip_urls_larted: {type: string}
+        abuse_ch_ip_urls_reporter: {type: string}
+        abuse_ch_ip_urls_tags: {type: string}
+        abuse_ch_ip_urls_takedown_time_seconds: {type: string}
+        abuse_ch_ip_urls_threat: {type: string}
+        abuse_ch_ip_urls_url: {type: string}
+        abuse_ch_ip_urls_url_status: {type: string}
+        abuse_ch_ip_urls_urlhaus_reference: {type: string}
+      type: object
+    tmp2:
+      properties:
+        abuse_ch_hash_file_size: {type: string}
+        abuse_ch_hash_file_type: {type: string}
+        abuse_ch_hash_firstseen: {type: string}
+        abuse_ch_hash_lastseen: {type: string}
+        abuse_ch_hash_md5_hash: {type: string}
+        abuse_ch_hash_query_status: {type: string}
+        abuse_ch_hash_sha256_hash: {type: string}
+        abuse_ch_hash_signature: {type: string}
+        abuse_ch_hash_url_count: {type: string}
+        abuse_ch_hash_urlhaus_download: {type: string}
+        abuse_ch_hash_urls_filename: {type: string}
+        abuse_ch_hash_urls_firstseen: {type: string}
+        abuse_ch_hash_urls_lastseen: {type: string}
+        abuse_ch_hash_urls_url: {type: string}
+        abuse_ch_hash_urls_url_id: {type: string}
+        abuse_ch_hash_urls_url_status: {type: string}
+        abuse_ch_hash_urls_urlhaus_reference: {type: string}
+        abuse_ch_hash_virustotal: {type: string}
+      type: object
+    tmp3:
+      properties:
+        abuse_ch_hash_file_size: {type: string}
+        abuse_ch_hash_file_type: {type: string}
+        abuse_ch_hash_firstseen: {type: string}
+        abuse_ch_hash_lastseen: {type: string}
+        abuse_ch_hash_md5_hash: {type: string}
+        abuse_ch_hash_query_status: {type: string}
+        abuse_ch_hash_sha256_hash: {type: string}
+        abuse_ch_hash_signature: {type: string}
+        abuse_ch_hash_url_count: {type: string}
+        abuse_ch_hash_urlhaus_download: {type: string}
+        abuse_ch_hash_urls_filename: {type: string}
+        abuse_ch_hash_urls_firstseen: {type: string}
+        abuse_ch_hash_urls_lastseen: {type: string}
+        abuse_ch_hash_urls_url: {type: string}
+        abuse_ch_hash_urls_url_id: {type: string}
+        abuse_ch_hash_urls_url_status: {type: string}
+        abuse_ch_hash_urls_urlhaus_reference: {type: string}
+        abuse_ch_hash_virustotal: {type: string}
+      type: object
+    tmp4:
+      properties:
+        abuse_ch_url_blacklists_gsb: {type: string}
+        abuse_ch_url_blacklists_spamhaus_dbl: {type: string}
+        abuse_ch_url_blacklists_surbl: {type: string}
+        abuse_ch_url_date_added: {type: string}
+        abuse_ch_url_host: {type: string}
+        abuse_ch_url_id: {type: string}
+        abuse_ch_url_larted: {type: string}
+        abuse_ch_url_payloads_file_type: {type: string}
+        abuse_ch_url_payloads_filename: {type: string}
+        abuse_ch_url_payloads_firstseen: {type: string}
+        abuse_ch_url_payloads_response_md5: {type: string}
+        abuse_ch_url_payloads_response_sha256: {type: string}
+        abuse_ch_url_payloads_response_size: {type: string}
+        abuse_ch_url_payloads_signature: {type: string}
+        abuse_ch_url_payloads_urlhaus_download: {type: string}
+        abuse_ch_url_payloads_virustotal_link: {type: string}
+        abuse_ch_url_payloads_virustotal_percent: {type: string}
+        abuse_ch_url_payloads_virustotal_result: {type: string}
+        abuse_ch_url_query_status: {type: string}
+        abuse_ch_url_reporter: {type: string}
+        abuse_ch_url_tags: {type: string}
+        abuse_ch_url_takedown_time_seconds: {type: string}
+        abuse_ch_url_threat: {type: string}
+        abuse_ch_url_url: {type: string}
+        abuse_ch_url_url_status: {type: string}
+        abuse_ch_url_urlhaus_reference: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of abuse.ch URLhaus
+  title: abuse.ch URLhaus
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: URLhaus - Retrieve information about a domain or hostname
+      parameters:
+      - description: Domain
+        example: voicelsp.com
+        in: query
+        name: Domain
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: URLhaus - Lookup Domain or Hostname
+  tmp1:
+    post:
+      description: URLhaus - Retrieve information about an IP
+      parameters:
+      - description: IP Address
+        example: 185.141.25.242
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: URLhaus - Lookup IP
+  tmp2:
+    post:
+      description: URLhaus - Retrieve information about a MD5
+      parameters:
+      - description: MD5 Hash
+        example: 12c8aec5766ac3e6f26f2505e2f4a8f2
+        in: query
+        name: MD5 Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: URLhaus - Lookup MD5
+  tmp3:
+    post:
+      description: URLhaus - Retrieve information about a SHA256
+      parameters:
+      - description: SHA256 Hash
+        example: 01fa56184fcaa42b6ee1882787a34098c79898c182814774fd81dc18a6af0b00
+        in: query
+        name: SHA256 Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: URLhaus - Lookup SHA256
+  tmp4:
+    post:
+      description: URLhaus - Retrieve information about a URL
+      parameters:
+      - description: URL to lookup
+        example: http://sskymedia.com/VMYB-ht_JAQo-gi/INV/99401FORPO/20673114777/US/Outstanding-Invoices/
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: URLhaus - Lookup URL
+tags:
+- {name: Investigation}

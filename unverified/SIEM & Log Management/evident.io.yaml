@@ -1,0 +1,173 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        attributes_created_at: {type: string}
+        attributes_ended_at: {type: string}
+        attributes_ended_reason: {type: string}
+        attributes_replaced_by_id: {type: string}
+        attributes_replaced_by_status: {type: string}
+        attributes_resource: {type: string}
+        attributes_risk_level: {type: string}
+        attributes_started_at: {type: string}
+        attributes_status: {type: string}
+        attributes_updated_at: {type: string}
+        id: {type: string}
+        relationships_attribution_links_related: {type: string}
+        relationships_cloud_trail_events_links_related: {type: string}
+        relationships_compliance_controls_links_related: {type: string}
+        relationships_custom_compliance_controls_links_related: {type: string}
+        relationships_custom_signature_links_related: {type: string}
+        relationships_external_account_links_related: {type: string}
+        relationships_metadata_links_related: {type: string}
+        relationships_region_links_related: {type: string}
+        relationships_signature_links_related: {type: string}
+        relationships_suppression_links_related: {type: string}
+        relationships_tags_links_related: {type: string}
+      type: object
+    tmp1:
+      properties:
+        attributes_created_at: {type: string}
+        attributes_description: {type: string}
+        attributes_identifier: {type: string}
+        attributes_name: {type: string}
+        attributes_resolution: {type: string}
+        attributes_risk_level: {type: string}
+        attributes_updated_at: {type: string}
+        id: {type: string}
+        relationships_disabled_external_accounts_links_related: {type: string}
+        relationships_service_links_related: {type: string}
+        relationships_suppressions_links_related: {type: string}
+      type: object
+    tmp2:
+      properties:
+        attributes_created_at: {type: string}
+        attributes_name: {type: string}
+        attributes_provider: {type: string}
+        attributes_updated_at: {type: string}
+        azure_group: {type: string}
+        credentials: {type: string}
+        disabled_signatures: {type: string}
+        id: {type: string}
+        organization: {type: string}
+        scan_intervals: {type: string}
+        sub_organization: {type: string}
+        suppressions: {type: string}
+        team: {type: string}
+        type: {type: string}
+      type: object
+    tmp3:
+      properties:
+        attributes_created_at: {type: string}
+        attributes_ended_at: {type: string}
+        attributes_ended_reason: {type: string}
+        attributes_replaced_by_id: {type: string}
+        attributes_replaced_by_status: {type: string}
+        attributes_resource: {type: string}
+        attributes_risk_level: {type: string}
+        attributes_started_at: {type: string}
+        attributes_status: {type: string}
+        attributes_updated_at: {type: string}
+        id: {type: string}
+        relationships_attribution_links_related: {type: string}
+        relationships_cloud_trail_events_links_related: {type: string}
+        relationships_compliance_controls_links_related: {type: string}
+        relationships_custom_compliance_controls_links_related: {type: string}
+        relationships_custom_signature_links_related: {type: string}
+        relationships_external_account_links_related: {type: string}
+        relationships_metadata_links_related: {type: string}
+        relationships_region_links_related: {type: string}
+        relationships_signature_links_related: {type: string}
+        relationships_suppression_links_related: {type: string}
+        relationships_tags_links_related: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Palo Alto Evident.io
+  title: Palo Alto Evident.io
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Gets alerts given a report ID
+      parameters:
+      - description: Report ID to get alerts from. If -1 it will get all alerts
+        example: ''
+        in: body
+        name: Report ID
+        required: true
+        schema: {type: string}
+      - description: Limit on the number of alerts to return. If -1 it will be unlimited
+        example: ''
+        in: body
+        name: Result Limit
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Evident.io Get Alerts from Report
+  tmp1:
+    post:
+      description: Gets Evident Signatures
+      parameters:
+      - description: Number of signatures to get, maximum. If -1 then all will be
+          returned
+        example: ''
+        in: body
+        name: Result Limit
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Evident.io Get Signatures
+  tmp2:
+    post:
+      description: Lists information about all external accounts
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Evident.io list all external accounts
+  tmp3:
+    post:
+      description: Searches for alerts with given criteria
+      parameters:
+      - description: Query to search for. Valid keys 'signature_name_cont, region_id_eq,
+          external_account_team_id_in, external_account_id_eq, region_id_in, external_account_team_id_eq,
+          signature_identifier_cont, status_in, external_account_id_in, resource_or_tag_cont,
+          not_suppressed, cloud_trail_events_present, signature_service_id_in, suppressed,
+          risk_level_eq, status_eq'
+        example: risk_level_eq:high, not_suppresed:true
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: Limit on the number of alerts to return. If -1 it will be unlimited
+        example: ''
+        in: body
+        name: Result Limit
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Evident.io Search Alerts from Report
+tags:
+- {name: SIEM & Log Management}

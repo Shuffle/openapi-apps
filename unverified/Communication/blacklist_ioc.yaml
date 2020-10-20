@@ -1,0 +1,542 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        failureReason: {type: string}
+        iocBlackListId: {type: string}
+        iocType: {type: string}
+        iocValue: {type: string}
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        failureReason: {type: string}
+        iocBlackListId: {type: string}
+        iocType: {type: string}
+        iocValue: {type: string}
+        success: {type: string}
+      type: object
+    tmp2:
+      properties:
+        description: {type: string}
+        emailDirection: {type: string}
+        expiryDate: {type: string}
+        iocBlackListId: {type: string}
+        iocType: {type: string}
+        iocValue: {type: string}
+        remediationAction: {type: string}
+        status: {type: string}
+      type: object
+    tmp3:
+      properties:
+        failureReason: {type: string}
+        iocBlackListId: {type: string}
+        iocType: {type: string}
+        iocValue: {type: string}
+        success: {type: string}
+      type: object
+    tmp4:
+      properties:
+        failureReason: {type: string}
+        iocBlackListId: {type: string}
+        iocType: {type: string}
+        iocValue: {type: string}
+        success: {type: string}
+      type: object
+    tmp5:
+      properties:
+        failureReason: {type: string}
+        iocBlackListId: {type: string}
+        iocType: {type: string}
+        iocValue: {type: string}
+        success: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Symantec Blacklist Ioc
+  title: Symantec Blacklist Ioc
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Adds a new IOC via the Upload API
+      parameters:
+      - description: Add IOCs to which domain; defaults to all domains if left blank
+          (global).
+        example: swimlane.com
+        in: query
+        name: Domain
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: Bad subject text
+        in: query
+        name: Description for IOCs; this description will apply to all being added
+          and defaults to 'Swimlane Automation.'
+        required: false
+        schema: {type: string}
+      - description: 'Options: I, O or B. I=Inbound, O=Outbound, B=Both. Defaults
+          to B. will apply to all being added.'
+        example: I
+        in: query
+        name: Email Direction
+        required: false
+        schema: {type: string}
+      - description: 'Options: B, Q, M, T or H. B=Block and Delete, Q=Quarantine,
+          M=Redirect, T=Tag Subject, H=Append header. Defaults to setting found in
+          portal. Will apply to all being added.'
+        example: B
+        in: query
+        name: Remediation Action
+        required: false
+        schema: {type: string}
+      - description: IOC Type; Wildcards * and ? are permitted, use backslash to escape.
+        example: spam.pdf
+        in: query
+        name: Attachment Names
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: swimlane.com
+        in: query
+        name: Body Sender Domains
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: test.user@swimlane.com
+        in: query
+        name: Body Sender Emails
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: swimlane.com
+        in: query
+        name: Body Sender Top Level Domains
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: swimlane.com
+        in: query
+        name: Envelope Sender Domains
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: test.user@swimlane.com
+        in: query
+        name: Envelope Sender Emails
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: swimlane.com
+        in: query
+        name: Envelope Sender Top Level Domains
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: 5a6bdf58-237b-41b6-8ab9-b3a7f190c964
+        in: query
+        name: MD5 Attachments
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: Swimlane.com
+        in: query
+        name: Recipient Domains
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: test.user@swimlane.com
+        in: query
+        name: Recipient Emails
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: 127.60.4.1
+        in: query
+        name: Sender IP Addresses
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: 192.168.100.0/22
+        in: query
+        name: Sender IP Ranges
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: 59ce60caf35916de2e456d0f77d5c9a2b5c5c338928b2dcd5883b7f031602768
+        in: query
+        name: Sha2 AttachmentS
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: String of text
+        in: query
+        name: Subjects
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: foo.com
+        in: query
+        name: URLs
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Symantec Blacklist IOC Add
+  tmp1:
+    post:
+      description: Delete IOC
+      parameters:
+      - description: IDs which correspond to the list of IOC values given for one
+          IOC type.
+        example: ''
+        in: query
+        name: Blacklist IDs
+        required: true
+        schema: {type: string}
+      - description: IOCs under which domain; defaults to all domains if left blank
+          (global).
+        example: swimlane.com
+        in: query
+        name: Domain
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: Bad subject text
+        in: query
+        name: Description for IOCs; this description will apply to all being added
+          and defaults to 'Swimlane Automation.'
+        required: false
+        schema: {type: string}
+      - description: 'Options: I, O or B. I=Inbound, O=Outbound, B=Both. Defaults
+          to B. will apply to all being added.'
+        example: I
+        in: query
+        name: Email Direction
+        required: false
+        schema: {type: string}
+      - description: 'Options: B, Q, M, T or H. B=Block and Delete, Q=Quarantine,
+          M=Redirect, T=Tag Subject, H=Append header. Defaults to setting found in
+          portal. Will apply to all being added.'
+        example: B
+        in: query
+        name: Remediation Action
+        required: false
+        schema: {type: string}
+      - description: 'The IOC type of the ID(s). The API wants the ID and the correct
+          type/value to update. Options: attachmentname, bodysenderdomain, bodysenderemail,
+          bodysendertopleveldomain, envelopesenderdomain, envelopesenderemail, envelopesendertopleveldomain,
+          md5attachment, recipientdomain, recipientemail, senderipaddress, senderiprange,
+          sha2attachment, subject, url'
+        example: ''
+        in: query
+        name: IOC Type
+        required: true
+        schema: {type: string}
+      - description: The values which correspond to the ID(s) provided. Must have
+          a value for each ID.
+        example: ''
+        in: query
+        name: IOC Values
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Symantec Blacklist IOC Delete
+  tmp2:
+    post:
+      description: 'Return list of IOCs '
+      parameters:
+      - description: Which domain to get list of IOCs; defaults to all domains (global).
+        example: swimlane.com
+        in: query
+        name: Domain
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: 'Symantec Blacklist IOC Get List '
+  tmp3:
+    post:
+      description: Upload API to merge or replace IOC
+      parameters:
+      - description: IOCs under which domain; defaults to all domains if left blank
+          (global).
+        example: swimlane.com
+        in: query
+        name: Domain
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: Bad subject text
+        in: query
+        name: Description for IOCs; this description will apply to all being added
+          and defaults to 'Swimlane Automation.'
+        required: false
+        schema: {type: string}
+      - description: 'Options: I, O or B. I=Inbound, O=Outbound, B=Both. Defaults
+          to B. will apply to all being added.'
+        example: I
+        in: query
+        name: Email Direction
+        required: false
+        schema: {type: string}
+      - description: 'Options: B, Q, M, T or H. B=Block and Delete, Q=Quarantine,
+          M=Redirect, T=Tag Subject, H=Append header. Defaults to setting found in
+          portal. Will apply to all being added.'
+        example: B
+        in: query
+        name: Remediation Action
+        required: false
+        schema: {type: string}
+      - description: IOC Type; Wildcards * and ? are permitted, use backslash to escape.
+        example: spam.pdf
+        in: query
+        name: Attachment Names
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: swimlane.com
+        in: query
+        name: Body Sender Domains
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: test.user@swimlane.com
+        in: query
+        name: Body Sender Emails
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: swimlane.com
+        in: query
+        name: Body Sender Top Level Domains
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: swimlane.com
+        in: query
+        name: Envelope Sender Domains
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: test.user@swimlane.com
+        in: query
+        name: Envelope Sender Emails
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: swimlane.com
+        in: query
+        name: Envelope Sender Top Level Domains
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: 5a6bdf58-237b-41b6-8ab9-b3a7f190c964
+        in: query
+        name: MD5 Attachments
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: Swimlane.com
+        in: query
+        name: Recipient Domains
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: test.user@swimlane.com
+        in: query
+        name: Recipient Emails
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: 127.60.4.1
+        in: query
+        name: Sender IP Addresses
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: 192.168.100.0/22
+        in: query
+        name: Sender IP Ranges
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: 59ce60caf35916de2e456d0f77d5c9a2b5c5c338928b2dcd5883b7f031602768
+        in: query
+        name: Sha2 AttachmentS
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: String of text
+        in: query
+        name: Subjects
+        required: false
+        schema: {type: string}
+      - description: IOC Type
+        example: foo.com
+        in: query
+        name: URLs
+        required: false
+        schema: {type: string}
+      - description: 'If True, the task merges. If False, the task replaces. Merge:
+          compares IOC Type/Value to database and updates/creates new. Replace: Deletes
+          the entire database and replaces with this list.'
+        example: ''
+        in: query
+        name: Merge
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Symantec Blacklist IOC Merge or Replace
+  tmp4:
+    post:
+      description: Renew IOC which essentially extends the expiration date
+      parameters:
+      - description: IDs to renew, renews all if blank. If IDs are provided then IOC
+          Type and IOC Values for each ID are required.
+        example: ''
+        in: query
+        name: Blacklist IDs
+        required: false
+        schema: {type: string}
+      - description: 'The IOC type of the ID(s). The API wants the ID and the correct
+          type/value to update. Options: attachmentname, bodysenderdomain, bodysenderemail,
+          bodysendertopleveldomain, envelopesenderdomain, envelopesenderemail, envelopesendertopleveldomain,
+          md5attachment, recipientdomain, recipientemail, senderipaddress, senderiprange,
+          sha2attachment, subject, url'
+        example: ''
+        in: query
+        name: IOC Type
+        required: false
+        schema: {type: string}
+      - description: The values which correspond to the ID(s) provided. Must have
+          a value for each ID.
+        example: ''
+        in: query
+        name: IOC Values
+        required: false
+        schema: {type: string}
+      - description: IOCs under which domain; defaults to all domains if left blank
+          (global).
+        example: swimlane.com
+        in: query
+        name: Domain
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: Bad subject text
+        in: query
+        name: Description for IOCs; this description will apply to all being added
+          and defaults to 'Swimlane Automation.'
+        required: false
+        schema: {type: string}
+      - description: 'Options: I, O or B. I=Inbound, O=Outbound, B=Both. Defaults
+          to B. will apply to all being added.'
+        example: I
+        in: query
+        name: Email Direction
+        required: false
+        schema: {type: string}
+      - description: 'Options: B, Q, M, T or H. B=Block and Delete, Q=Quarantine,
+          M=Redirect, T=Tag Subject, H=Append header. Defaults to setting found in
+          portal. Will apply to all being added.'
+        example: B
+        in: query
+        name: Remediation Action
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Symantec Blacklist IOC Renew
+  tmp5:
+    post:
+      description: Update an IOC
+      parameters:
+      - description: IDs which correspond to the list of IOC values given for one
+          IOC type.
+        example: ''
+        in: query
+        name: Blacklist IDs
+        required: true
+        schema: {type: string}
+      - description: 'The IOC type of the ID(s). The API wants the ID and the correct
+          type/value to update. Options: attachmentname, bodysenderdomain, bodysenderemail,
+          bodysendertopleveldomain, envelopesenderdomain, envelopesenderemail, envelopesendertopleveldomain,
+          md5attachment, recipientdomain, recipientemail, senderipaddress, senderiprange,
+          sha2attachment, subject, url'
+        example: ''
+        in: query
+        name: IOC Type
+        required: true
+        schema: {type: string}
+      - description: The values which correspond to the ID(s) provided. Must have
+          a value for each ID.
+        example: ''
+        in: query
+        name: IOC Values
+        required: true
+        schema: {type: string}
+      - description: IOCs under which domain; defaults to all domains if left blank
+          (global).
+        example: swimlane.com
+        in: query
+        name: Domain
+        required: false
+        schema: {type: string}
+      - description: Description for IOCs; this description will apply to all being
+          added and defaults to 'Swimlane Automation.'
+        example: Bad subject text
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: 'Options: I, O or B. I=Inbound, O=Outbound, B=Both. Defaults
+          to B. will apply to all being added.'
+        example: I
+        in: query
+        name: Email Direction
+        required: false
+        schema: {type: string}
+      - description: 'Options: B, Q, M, T or H. B=Block and Delete, Q=Quarantine,
+          M=Redirect, T=Tag Subject, H=Append header. Defaults to setting found in
+          portal. Will apply to all being added.'
+        example: B
+        in: query
+        name: Remediation Action
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Symantec Blacklist IOC Update
+tags:
+- {name: Communication}

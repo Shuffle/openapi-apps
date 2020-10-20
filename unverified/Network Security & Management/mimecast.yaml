@@ -1,0 +1,437 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        domain: {type: string}
+        emailAddress: {type: string}
+        folderId: {type: string}
+        id: {type: string}
+        internal: {type: string}
+        message: {type: string}
+      type: object
+    tmp1:
+      properties:
+        action: {type: string}
+        comment: {type: string}
+        disableLogClick: {type: string}
+        disableRewrite: {type: string}
+        disableUserAwareness: {type: string}
+        domain: {type: string}
+        id: {type: string}
+        matchType: {type: string}
+        scheme: {type: string}
+      type: object
+    tmp2:
+      properties:
+        parsed_domains: {type: string}
+        parsed_urls: {type: string}
+      type: object
+    tmp3:
+      properties:
+        base64: {type: string}
+        id: {type: string}
+      type: object
+    tmp4:
+      properties:
+        domain: {type: string}
+        emailAddress: {type: string}
+        internal: {type: string}
+        name: {type: string}
+        type: {type: string}
+      type: object
+    tmp5:
+      properties:
+        description: {type: string}
+        folderCount: {type: string}
+        id: {type: string}
+        parentId: {type: string}
+        source: {type: string}
+        userCount: {type: string}
+      type: object
+    tmp6:
+      properties:
+        attachmentCount: {type: string}
+        ccm: {type: string}
+        expired: {type: string}
+        from_displayableName: {type: string}
+        from_emailAddress: {type: string}
+        id: {type: string}
+        read: {type: string}
+        recalled: {type: string}
+        received: {type: string}
+        size: {type: string}
+        smash: {type: string}
+        status: {type: string}
+        subject: {type: string}
+        to_displayableName: {type: string}
+        to_emailAddress: {type: string}
+      type: object
+    tmp7:
+      properties:
+        base64: {type: string}
+        id: {type: string}
+      type: object
+    tmp8:
+      properties:
+        id: {type: string}
+        sender: {type: string}
+        to: {type: string}
+        type: {type: string}
+      type: object
+    tmp9:
+      properties:
+        attachmentcount: {type: string}
+        displayfrom: {type: string}
+        displayto: {type: string}
+        id: {type: string}
+        receiveddate: {type: string}
+        size: {type: string}
+        smash: {type: string}
+        status: {type: string}
+        subject: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Mimecast Mimecast
+  title: Mimecast Mimecast
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Adds or removes group members
+      parameters:
+      - description: List of domains/email addresses
+        example: test.user@swimlane.com
+        in: query
+        name: Members
+        required: true
+        schema: {type: string}
+      - description: The Mimecast ID for which group to add/remove the members.
+        example: ''
+        in: query
+        name: Group ID
+        required: true
+        schema: {type: string}
+      - description: If False, removes the members from the group
+        example: ''
+        in: query
+        name: Add Member to Group
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Mimecast Add or Remove Group Members
+  tmp1:
+    post:
+      description: Add a URL to the Targeted Threat Protection
+      parameters:
+      - description: Set to 'block' to blacklist the URL, 'permit' to whitelist it.
+        example: block
+        in: query
+        name: Action
+        required: true
+        schema: {type: string}
+      - description: The URL to block or permit.
+        example: https://example.com
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      - description: Set to 'explicit' to block or permit only instances of the full
+          URL. Set to 'domain' to block or permit any URL with the same domain.
+        example: explicit
+        in: query
+        name: Match Type
+        required: false
+        schema: {type: string}
+      - description: Disable rewriting of this URL in emails. Only applies if action
+          is 'permit'.
+        example: ''
+        in: query
+        name: Disable Rewrite
+        required: false
+        schema: {type: boolean}
+      - description: Disable User Awareness challenges for this URL. Only applies
+          if action is 'permit'.
+        example: ''
+        in: query
+        name: Disable User Awareness
+        required: false
+        schema: {type: boolean}
+      - description: Disable logging if user clicks on the URL.
+        example: ''
+        in: query
+        name: Disable Log Click
+        required: false
+        schema: {type: boolean}
+      - description: A comment about the why the URL is managed for tracking purposes.
+        example: ''
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Mimecast Create Managed URL
+  tmp2:
+    post:
+      description: Mimecast Decode Protect URLs
+      parameters:
+      - description: The URLs that need to be decoded
+        example: ''
+        in: query
+        name: URLs to Decode
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Mimecast Decode URL
+  tmp3:
+    post:
+      description: Returns a file attachment from an archived message.
+      parameters:
+      - description: The Mimecast ID of the message attachment to return.
+        example: ''
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Mimecast Get File
+  tmp4:
+    post:
+      description: Returns the members for a group
+      parameters:
+      - description: Mimecast Group ID
+        example: ''
+        in: query
+        name: ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Mimecast Get Group Members
+  tmp5:
+    post:
+      description: Return all groups matching query
+      parameters:
+      - description: A string to query the groups; Ex. The group description.
+        example: Blocked Senders
+        in: query
+        name: Query String
+        required: false
+        schema: {type: string}
+      - description: Source to query. Can be either idap or cloud.
+        example: cloud
+        in: query
+        name: Group Source
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Mimecast Get Groups
+  tmp6:
+    post:
+      description: Returns a list of messages for a given user.
+      parameters:
+      - description: 'The message list type, must be one of: INBOX or SENT, default
+          is INBOX.'
+        example: INBOX
+        in: query
+        name: View
+        required: false
+        schema: {type: string}
+      - description: The email address to return the message list for. If excluded,
+          then messages for the logged in user are returned.
+        example: ''
+        in: query
+        name: Mailbox
+        required: false
+        schema: {type: string}
+      - description: The start date of messages to return. Default is the last calendar
+          month.
+        example: 2015-11-16T14:49:18+0000
+        in: query
+        name: Start
+        required: false
+        schema: {type: string}
+      - description: The end date of messages to return. Default is the end of the
+          current day.
+        example: 2015-12-25T11:45:23+0000
+        in: query
+        name: End
+        required: false
+        schema: {type: string}
+      - description: Include messages for addresses that the mailbox has delegate
+          permissions to. Default false.
+        example: ''
+        in: query
+        name: Include Delegates
+        required: false
+        schema: {type: boolean}
+      - description: Include messages for alias addresses of the mailbox. Default
+          true.
+        example: ''
+        in: query
+        name: Include Aliases
+        required: false
+        schema: {type: boolean}
+      - description: Limit the number of messages returned, defaults to all
+        example: ''
+        in: body
+        name: Message Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Mimecast Get Message List
+  tmp7:
+    post:
+      description: Mimecast Get Message Part
+      parameters:
+      - description: The Mimecast ID of the message attachment to return.
+        example: ''
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      - description: The email address to return the message for.
+        example: test.user@swimlane.com
+        in: query
+        name: Mailbox
+        required: false
+        schema: {type: string}
+      - description: Defines which copy of the message part to return, must be DELIVERED
+          or RECEIVED. Defaults to RECEIVED
+        example: RECEIVED
+        in: query
+        name: Context
+        required: false
+        schema: {type: string}
+      - description: The message part to return, must be one of HTML, PLAIN, RFC822,
+          or TRANSMISSION_MESSAGE_BODY. Defaults to HTML.
+        example: HTML
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Mimecast Get Message Part
+  tmp8:
+    post:
+      description: Mimecast Permit Or Block Sender
+      parameters:
+      - description: The email address of sender to permit or block.
+        example: ''
+        in: query
+        name: Sender
+        required: true
+        schema: {type: string}
+      - description: The email address of recipient to permit or block.
+        example: ''
+        in: query
+        name: To
+        required: true
+        schema: {type: string}
+      - description: Choose to either 'permit' (to bypass spam checks) or 'block'
+          (to reject the email).
+        example: permit
+        in: query
+        name: Action
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Mimecast Permit Or Block Sender
+  tmp9:
+    post:
+      description: Mimecast Search
+      parameters:
+      - description: The query param for the search. Leave blank to return all
+        example: Subject
+        in: query
+        name: Query Key
+        required: false
+        schema: {type: string}
+      - description: The query Value for the search. Leave blank to return all
+        example: subject string
+        in: query
+        name: Query Value
+        required: false
+        schema: {type: string}
+      - description: The XML query string. This overrides query key/value
+        example: ''
+        in: query
+        name: Query XML String
+        required: false
+        schema: {type: string}
+      - description: Defines if the search is an administrative search or an end user
+          user search.
+        example: ''
+        in: query
+        name: Admin
+        required: true
+        schema: {type: boolean}
+      - description: Limit the number of records returned, defaults to all.
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: The email address to search, defaults to all.
+        example: test.user@swimlane.com
+        in: query
+        name: Mailbox
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Mimecast Search
+tags:
+- {name: Network Security & Management}

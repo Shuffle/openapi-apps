@@ -1,0 +1,256 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        hostname: {type: string}
+        tags: {type: string}
+      type: object
+    tmp1:
+      properties:
+        alert_type: {type: string}
+        date_happened: {type: string}
+        device_name: {type: string}
+        host: {type: string}
+        id: {type: string}
+        payload: {type: string}
+        priority: {type: string}
+        resource: {type: string}
+        tags: {type: string}
+        text: {type: string}
+        title: {type: string}
+        url: {type: string}
+      type: object
+    tmp2:
+      properties:
+        action: {type: string}
+        hostname: {type: string}
+        message: {type: string}
+      type: object
+    tmp3:
+      properties:
+        handle: {type: string}
+        id: {type: string}
+        message: {type: string}
+        resource: {type: string}
+        url: {type: string}
+      type: object
+    tmp4:
+      properties:
+        alert_type: {type: string}
+        comment: {type: string}
+        date_happened: {type: string}
+        device_name: {type: string}
+        host: {type: string}
+        id: {type: string}
+        is_aggregate: {type: string}
+        priority: {type: string}
+        resource: {type: string}
+        tags: {type: string}
+        text: {type: string}
+        title: {type: string}
+        url: {type: string}
+      type: object
+    tmp5:
+      properties:
+        success: {type: string}
+      type: object
+    tmp6:
+      properties:
+        apps: {type: string}
+        is_muted: {type: string}
+        last_reported_time: {type: string}
+        metrics: {type: string}
+        mute_timeout: {type: string}
+        name: {type: string}
+        tags_by_source: {type: string}
+        up: {type: string}
+      type: object
+    tmp7:
+      properties:
+        action: {type: string}
+        hostname: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Datadog Datadog
+  title: Datadog Datadog
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Add tag to host
+      parameters:
+      - description: A list of tags
+        example: ''
+        in: query
+        name: Tags
+        required: true
+        schema: {type: string}
+      - description: Name of target host
+        example: ''
+        in: query
+        name: Hostname
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Datadog Add Tag
+  tmp1:
+    post:
+      description: Get events
+      parameters:
+      - description: Event Identification
+        example: '5364622753615309564'
+        in: query
+        name: Event ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Datadog Get Events
+  tmp2:
+    post:
+      description: Mute host
+      parameters:
+      - description: Write a comment on why you are muting the host
+        example: ''
+        in: query
+        name: Comment
+        required: true
+        schema: {type: string}
+      - description: Name of target host
+        example: ''
+        in: query
+        name: Hostname
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Datadog Mute Host
+  tmp3:
+    post:
+      description: Post comment
+      parameters:
+      - description: Write a comment
+        example: ''
+        in: query
+        name: Comment
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Datadog Post Comment
+  tmp4:
+    post:
+      description: Query events
+      parameters:
+      - description: The start time for events pulled
+        example: '2020-03-12T00:00:00Z'
+        in: query
+        name: Start Time
+        required: true
+        schema: {type: string}
+      - description: The end time for events pulled
+        example: '2020-03-20T00:00:00Z'
+        in: query
+        name: End Time
+        required: true
+        schema: {type: string}
+      - description: Priority of your events (low or normal)
+        example: low
+        in: query
+        name: Priority
+        required: false
+        schema: {type: string}
+      - description: Comma separated string of sources
+        example: alert
+        in: query
+        name: Sources
+        required: false
+        schema: {type: string}
+      - description: Comma separated string of tags
+        example: check_type:api
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      - description: Set true to return all events within [start,end] time, else return
+          outside the time set
+        example: 'true'
+        in: query
+        name: Unaggregated
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Datadog Query Events
+  tmp5:
+    post:
+      description: Remove all tags from host
+      parameters:
+      - description: Name of target host
+        example: ''
+        in: query
+        name: Hostname
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Datadog Remove All Tags
+  tmp6:
+    post:
+      description: Get all host
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Datadog Search Host
+  tmp7:
+    post:
+      description: Unmute host
+      parameters:
+      - description: Name of target host
+        example: ''
+        in: query
+        name: Hostname
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Datadog Unmute Host
+tags:
+- {name: SIEM & Log Management}

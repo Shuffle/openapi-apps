@@ -1,0 +1,133 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        _explanation: {type: string}
+        _id: {type: string}
+        _index: {type: string}
+        _parent: {type: string}
+        _routing: {type: string}
+        _score: {type: string}
+        _source_category: {type: string}
+        _source_createdOn: {type: string}
+        _source_eventSource: {type: string}
+        _source_info_body: {type: string}
+        _source_info_slackMessage: {type: string}
+        _source_info_source_couples_agents: {type: string}
+        _source_info_source_couples_alerts_classification: {type: string}
+        _source_info_source_couples_alerts_msg: {type: string}
+        _source_info_source_couples_alerts_sid: {type: string}
+        _source_info_source_couples_d_country: {type: string}
+        _source_info_source_couples_dip: {type: string}
+        _source_info_source_couples_files_file_type: {type: string}
+        _source_info_source_couples_files_md5: {type: string}
+        _source_info_source_couples_files_positives: {type: string}
+        _source_info_source_couples_files_size: {type: string}
+        _source_info_source_couples_flowCount: {type: string}
+        _source_info_source_couples_hosts: {type: string}
+        _source_info_source_couples_incidents: {type: string}
+        _source_info_source_couples_referers: {type: string}
+        _source_info_source_couples_riskScore: {type: string}
+        _source_info_source_couples_risks: {type: string}
+        _source_info_source_couples_rxB: {type: string}
+        _source_info_source_couples_start_ms: {type: string}
+        _source_info_source_couples_totalB: {type: string}
+        _source_info_source_couples_txB: {type: string}
+        _source_info_source_couples_urls: {type: string}
+        _source_info_source_ip: {type: string}
+        _source_info_source_notified: {type: string}
+        _source_info_source_riskScore: {type: string}
+        _source_info_source_risks: {type: string}
+        _source_info_source_updatedOn: {type: string}
+        _source_info_subject: {type: string}
+        _source_severity: {type: string}
+        _source_subCategory: {type: string}
+        _source_updatedOn: {type: string}
+        _timestamp: {type: string}
+        _ttl: {type: string}
+        _type: {type: string}
+        _uid: {type: string}
+        _version: {type: string}
+        fields: {type: string}
+        highlight: {type: string}
+        inner_hits: {type: string}
+        matched_queries: {type: string}
+        sort: {type: string}
+      type: object
+    tmp1:
+      properties:
+        _explanation: {type: string}
+        _id: {type: string}
+        _index: {type: string}
+        _parent: {type: string}
+        _routing: {type: string}
+        _score: {type: string}
+        _source_couples_agents: {type: string}
+        _source_couples_d_country: {type: string}
+        _source_couples_dip: {type: string}
+        _source_couples_flowCount: {type: string}
+        _source_couples_hosts: {type: string}
+        _source_couples_riskScore: {type: string}
+        _source_couples_risks: {type: string}
+        _source_couples_rxB: {type: string}
+        _source_couples_start_ms: {type: string}
+        _source_couples_totalB: {type: string}
+        _source_couples_txB: {type: string}
+        _source_couples_urls: {type: string}
+        _source_ip: {type: string}
+        _source_notified: {type: string}
+        _source_riskScore: {type: string}
+        _source_risks: {type: string}
+        _source_status: {type: string}
+        _source_updatedOn: {type: string}
+        _timestamp: {type: string}
+        _ttl: {type: string}
+        _type: {type: string}
+        _uid: {type: string}
+        _version: {type: string}
+        fields: {type: string}
+        highlight: {type: string}
+        inner_hits: {type: string}
+        matched_queries: {type: string}
+        sort: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Fluency Fluency
+  title: Fluency Fluency
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get Daily Alerts from Fluency
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Fluency Get Daily Alerts
+  tmp1:
+    post:
+      description: Fluency API Get Risk Score IP Events
+      parameters:
+      - description: Search test for risk scores. Can use the same search string from
+          the UI.
+        example: ip:123.123.123.123
+        in: query
+        name: Search Text
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Fluency Get Risk Score IP Events
+tags:
+- {name: SIEM & Log Management}

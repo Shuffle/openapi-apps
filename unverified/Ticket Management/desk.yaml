@@ -1,0 +1,283 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        ticket_closed: {type: string}
+      type: object
+    tmp1:
+      properties:
+        approvalCount: {type: string}
+        assigneeId: {type: string}
+        attachmentCount: {type: string}
+        category: {type: string}
+        channel: {type: string}
+        channelRelatedInfo: {type: string}
+        classification: {type: string}
+        closedTime: {type: string}
+        commentCount: {type: string}
+        contactId: {type: string}
+        createdTime: {type: string}
+        customerResponseTime: {type: string}
+        departmentId: {type: string}
+        description: {type: string}
+        dueDate: {type: string}
+        email: {type: string}
+        id: {type: string}
+        isDeleted: {type: string}
+        isTrashed: {type: string}
+        modifiedTime: {type: string}
+        onholdTime: {type: string}
+        phone: {type: string}
+        priority: {type: string}
+        productId: {type: string}
+        resolution: {type: string}
+        sharedCount: {type: string}
+        sharedDepartments: {type: string}
+        status: {type: string}
+        statusType: {type: string}
+        subCategory: {type: string}
+        subject: {type: string}
+        taskCount: {type: string}
+        threadCount: {type: string}
+        ticketNumber: {type: string}
+        timeEntryCount: {type: string}
+        webUrl: {type: string}
+      type: object
+    tmp2:
+      properties:
+        assigneeId: {type: string}
+        category: {type: string}
+        channel: {type: string}
+        classification: {type: string}
+        contactId: {type: string}
+        departmentId: {type: string}
+        description: {type: string}
+        dueDate: {type: string}
+        email: {type: string}
+        phone: {type: string}
+        priority: {type: string}
+        productId: {type: string}
+        status: {type: string}
+        subCategory: {type: string}
+        subject: {type: string}
+      type: object
+    tmp3:
+      properties:
+        assigneeId: {type: string}
+        category: {type: string}
+        channel: {type: string}
+        classification: {type: string}
+        contactId: {type: string}
+        departmentId: {type: string}
+        description: {type: string}
+        dueDate: {type: string}
+        email: {type: string}
+        phone: {type: string}
+        priority: {type: string}
+        productId: {type: string}
+        status: {type: string}
+        subCategory: {type: string}
+        subject: {type: string}
+      type: object
+    tmp4:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Zoho Desk
+  title: Zoho Desk
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Zoho Desk Close Ticket
+      parameters:
+      - description: ID of the ticket
+        example: '385135000000132073'
+        in: query
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Zoho Desk Close Ticket
+  tmp1:
+    post:
+      description: Zoho Desk Create Ticket
+      parameters:
+      - description: Contact ID
+        example: ''
+        in: query
+        name: Contact ID
+        required: true
+        schema: {type: string}
+      - description: Department ID
+        example: ''
+        in: query
+        name: Department ID
+        required: true
+        schema: {type: string}
+      - description: Subject heading for the new ticket
+        example: ''
+        in: query
+        name: Subject
+        required: true
+        schema: {type: string}
+      - description: Sub Category
+        example: ''
+        in: query
+        name: Sub Category
+        required: false
+        schema: {type: string}
+      - description: Product ID
+        example: ''
+        in: query
+        name: Product ID
+        required: false
+        schema: {type: string}
+      - description: Ticket Due Date
+        example: ''
+        in: query
+        name: Due Date
+        required: false
+        schema: {type: string}
+      - description: Channel
+        example: ''
+        in: query
+        name: Channel
+        required: false
+        schema: {type: string}
+      - description: Description
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: Priority
+        example: ''
+        in: query
+        name: Priority
+        required: false
+        schema: {type: string}
+      - description: Classification
+        example: ''
+        in: query
+        name: Classification
+        required: false
+        schema: {type: string}
+      - description: Assignee ID
+        example: ''
+        in: query
+        name: Assignee ID
+        required: false
+        schema: {type: string}
+      - description: Phone
+        example: ''
+        in: query
+        name: Phone
+        required: false
+        schema: {type: string}
+      - description: Category
+        example: ''
+        in: query
+        name: Category
+        required: false
+        schema: {type: string}
+      - description: Email
+        example: ''
+        in: query
+        name: Email
+        required: false
+        schema: {type: string}
+      - description: Status
+        example: ''
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: Secondary Contacts
+        example: '[ "4000000009076", "4000000009062" ]'
+        in: query
+        name: Secondary Contacts
+        required: false
+        schema: {type: string}
+      - description: Team ID
+        example: '8920000000069071'
+        in: query
+        name: Team ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Zoho Desk Create Ticket
+  tmp2:
+    post:
+      description: Zoho Desk Get All Tickets
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Zoho Desk Get All Tickets
+  tmp3:
+    post:
+      description: Zoho Desk Get Ticket
+      parameters:
+      - description: ID of the ticket
+        example: '1892000000143237'
+        in: query
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Zoho Desk Get Ticket
+  tmp4:
+    post:
+      description: Zoho Desk Resolve Ticket
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Resolution
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Is Notify Contact
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Zoho Desk Resolve Ticket
+tags:
+- {name: Ticket Management}

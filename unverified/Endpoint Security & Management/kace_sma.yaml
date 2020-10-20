@@ -1,0 +1,276 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        IDs: {type: string}
+        Result: {type: string}
+      type: object
+    tmp1:
+      properties:
+        Result: {type: string}
+      type: object
+    tmp2:
+      properties:
+        category_id: {type: string}
+        category_name: {type: string}
+        created: {type: string}
+        hd_queue_id: {type: string}
+        id: {type: string}
+        modified: {type: string}
+        priority_color: {type: string}
+        priority_id: {type: string}
+        priority_is_sla_enabled: {type: string}
+        priority_name: {type: string}
+        priority_ordinal: {type: string}
+        queue_id: {type: string}
+        queue_name: {type: string}
+        referring_tickets: {type: string}
+        related_tickets: {type: string}
+        sla_dates: {type: string}
+        status_id: {type: string}
+        status_name: {type: string}
+        status_ordinal: {type: string}
+        status_state: {type: string}
+        title: {type: string}
+      type: object
+    tmp3:
+      properties:
+        files: {type: string}
+      type: object
+    tmp4:
+      properties:
+        attachments_checksum: {type: string}
+        attachments_file_name: {type: string}
+        attachments_file_size: {type: string}
+        attachments_id: {type: string}
+        comment: {type: string}
+        description: {type: string}
+        hd_ticket_id: {type: string}
+        id: {type: string}
+        owners_only: {type: string}
+        owners_only_description: {type: string}
+        timestamp: {type: string}
+        user_email: {type: string}
+        user_full_name: {type: string}
+        user_id: {type: string}
+        user_user_name: {type: string}
+      type: object
+    tmp5:
+      properties:
+        category_id: {type: string}
+        category_name: {type: string}
+        created: {type: string}
+        hd_queue_id: {type: string}
+        id: {type: string}
+        modified: {type: string}
+        priority_color: {type: string}
+        priority_id: {type: string}
+        priority_is_sla_enabled: {type: string}
+        priority_name: {type: string}
+        priority_ordinal: {type: string}
+        queue_id: {type: string}
+        queue_name: {type: string}
+        referring_tickets: {type: string}
+        related_tickets: {type: string}
+        sla_dates: {type: string}
+        status_id: {type: string}
+        status_name: {type: string}
+        status_ordinal: {type: string}
+        status_state: {type: string}
+        title: {type: string}
+      type: object
+    tmp6:
+      properties:
+        Result: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Quest KACE SMA
+  title: Quest KACE SMA
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Quest Kace Sma Create Ticket
+      parameters:
+      - description: Title of the ticket
+        example: ''
+        in: query
+        name: Title
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: body
+        name: Hd Queue Id
+        required: true
+        schema: {type: string}
+      - description: Summary for ticket
+        example: ''
+        in: query
+        name: Summary
+        required: false
+        schema: {type: string}
+      - description: 'Ticket Priority, (1: Low, 2: Medium, 3: High)'
+        example: ''
+        in: body
+        name: Priority
+        required: false
+        schema: {type: string}
+      - description: Ticket Status.
+        example: ''
+        in: body
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: Ticket Impact
+        example: ''
+        in: body
+        name: Impact
+        required: false
+        schema: {type: string}
+      - description: Numeric User ID of the submitter account.
+        example: ''
+        in: body
+        name: Submitter ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Quest Kace Sma Create Ticket
+  tmp1:
+    post:
+      description: Quest Kace Sma Delete Ticket
+      parameters:
+      - description: Ticket ID
+        example: '1'
+        in: query
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Quest Kace Sma Delete Ticket
+  tmp2:
+    post:
+      description: Quest Kace Sma Get Ticket
+      parameters:
+      - description: Ticket ID
+        example: '1'
+        in: query
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Quest Kace Sma Get Ticket
+  tmp3:
+    post:
+      description: Quest Kace Sma Get Ticket Attachments
+      parameters:
+      - description: Ticket ID
+        example: '1'
+        in: query
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Quest Kace Sma Get Ticket Attachments
+  tmp4:
+    post:
+      description: Quest Kace Sma Get Ticket Changes
+      parameters:
+      - description: Ticket ID
+        example: '1'
+        in: query
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Quest Kace Sma Get Ticket Changes
+  tmp5:
+    post:
+      description: Quest Kace Sma Get Tickets
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Quest Kace Sma Get Tickets
+  tmp6:
+    post:
+      description: Quest Kace Sma Update Ticket
+      parameters:
+      - description: Ticket ID
+        example: '1'
+        in: query
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      - description: Title of the ticket
+        example: ''
+        in: query
+        name: Title
+        required: true
+        schema: {type: string}
+      - description: Summary for ticket
+        example: ''
+        in: query
+        name: Summary
+        required: false
+        schema: {type: string}
+      - description: 'Ticket Priority, (1: Low, 2: Medium, 3: High)'
+        example: ''
+        in: body
+        name: Priority
+        required: false
+        schema: {type: string}
+      - description: Ticket Status.
+        example: ''
+        in: body
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: Ticket Impact
+        example: ''
+        in: body
+        name: Impact
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Quest Kace Sma Update Ticket
+tags:
+- {name: Endpoint Security & Management}

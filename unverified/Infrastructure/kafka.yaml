@@ -1,0 +1,41 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Kafka Kafka
+  title: Kafka Kafka
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Send Data over Kafka
+      parameters:
+      - description: Kafka Topic
+        example: ''
+        in: query
+        name: Topic
+        required: true
+        schema: {type: string}
+      - description: Data to send over Kafka
+        example: ''
+        in: query
+        name: Data
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Kafka Send Data
+tags:
+- {name: Infrastructure}

@@ -1,0 +1,271 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        json: {type: string}
+      type: object
+    tmp1:
+      properties:
+        Success: {type: string}
+      type: object
+    tmp2:
+      properties:
+        cn: {type: string}
+        description: {type: string}
+        l: {type: string}
+        non_encoded: {type: string}
+        o: {type: string}
+        ou: {type: string}
+        owner: {type: string}
+        raw_json: {type: string}
+        seeAlso: {type: string}
+        serialNumber: {type: string}
+      type: object
+    tmp3:
+      properties:
+        accountExpires: {type: string}
+        badPasswordTime: {type: string}
+        badPwdCount: {type: string}
+        cn: {type: string}
+        codePage: {type: string}
+        company: {type: string}
+        countryCode: {type: string}
+        createTimestamp: {type: string}
+        creatorsName: {type: string}
+        dSCorePropagationData: {type: string}
+        department: {type: string}
+        displayName: {type: string}
+        distinguishedName: {type: string}
+        dn: {type: string}
+        gid: {type: string}
+        givenName: {type: string}
+        instanceType: {type: string}
+        json: {type: string}
+        lastLogon: {type: string}
+        lastLogonTimestamp: {type: string}
+        logonCount: {type: string}
+        mail: {type: string}
+        manager: {type: string}
+        mobile: {type: string}
+        modifiersName: {type: string}
+        modifyTimestamp: {type: string}
+        name: {type: string}
+        objectCategory: {type: string}
+        objectClass: {type: string}
+        objectGUID: {type: string}
+        objectSid: {type: string}
+        primaryGroupID: {type: string}
+        pwdLastSet: {type: string}
+        sAMAccountName: {type: string}
+        sAMAccountType: {type: string}
+        sn: {type: string}
+        title: {type: string}
+        userAccountControl: {type: string}
+        userPrincipalName: {type: string}
+        uuid: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Swimlane LDAP
+  title: Swimlane LDAP
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Execute a custom LDAP query.  You can use the available inputs
+        to generate the query or create the query yourself.
+      parameters:
+      - description: An LDAP search filter.
+        example: (sn=an_sn_value)
+        in: query
+        name: Search Filter
+        required: false
+        schema: {type: string}
+      - description: Attribute to search on
+        example: sn
+        in: query
+        name: Search Attribute
+        required: false
+        schema: {type: string}
+      - description: Desired value of the search attribute
+        example: surfadmin
+        in: query
+        name: Search Value
+        required: false
+        schema: {type: string}
+      - description: A comma separated list of attributes to return
+        example: sn,creatorsName
+        in: query
+        name: Return Attributes
+        required: false
+        schema: {type: string}
+      - description: Object Class to search in.
+        example: user
+        in: query
+        name: Object Class
+        required: false
+        schema: {type: string}
+      - description: Object Categoty to search in.
+        example: person
+        in: query
+        name: Object Category
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: LDAP Custom Query
+  tmp1:
+    post:
+      description: Execute a custom LDAP update. You can update a single attribute
+        using the inputs provided, or pass in a json mapping of attributes to values
+        to update
+      parameters:
+      - description: JSON with a mapping of attributes to values to update.
+        example: '{"attribute1": "value1", "attribute2": "value2"}'
+        in: query
+        name: Update JSON
+        required: false
+        schema: {type: string}
+      - description: The DN of the object to update
+        example: cn=Tom Riddle,ou=Groups,dc=swimlane,dc=us
+        in: query
+        name: DN
+        required: true
+        schema: {type: string}
+      - description: The attribute to update
+        example: sn
+        in: query
+        name: Update Attribute
+        required: false
+        schema: {type: string}
+      - description: The value to update the attribute to.
+        example: swimlane
+        in: query
+        name: Update Value
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: LDAP Custom Update
+  tmp2:
+    post:
+      description: Search for a system over LDAP
+      parameters:
+      - description: The name of the attribute to search on
+        example: cn
+        in: query
+        name: Search Attribute
+        required: true
+        schema: {type: string}
+      - description: The value to match against
+        example: DC01
+        in: query
+        name: Search Value
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: LDAP Query System
+  tmp3:
+    post:
+      description: Search for a user over LDAP
+      parameters:
+      - description: The name of the attribute to search on
+        example: givenName
+        in: query
+        name: Search Attribute
+        required: true
+        schema: {type: string}
+      - description: The value to match against
+        example: Evan
+        in: query
+        name: Search Value
+        required: true
+        schema: {type: string}
+      - description: Attempt to match fields in your schema to the appropriate output
+          field if they don't match exactly
+        example: ''
+        in: query
+        name: Attempt Field Matching
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: LDAP Query User
+  tmp4:
+    post:
+      description: Update a system's OU over LDAP
+      parameters:
+      - description: The name of the attribute to search on
+        example: CN
+        in: query
+        name: Search Attribute
+        required: true
+        schema: {type: string}
+      - description: The value to match against
+        example: DC01
+        in: query
+        name: Search Value
+        required: true
+        schema: {type: string}
+      - description: The organization unit that the system will be moved to
+        example: lockdown
+        in: query
+        name: OU
+        required: true
+        schema: {type: string}
+      responses:
+        '200': {description: Successful request}
+      summary: LDAP Update OU
+  tmp5:
+    post:
+      description: Update a system attribute over LDAP
+      parameters:
+      - description: The name of the attribute to search on
+        example: cn
+        in: query
+        name: Search Attribute
+        required: true
+        schema: {type: string}
+      - description: The value to match against
+        example: DC01
+        in: query
+        name: Search Value
+        required: true
+        schema: {type: string}
+      - description: The name of the attribute to update
+        example: operatingSystem
+        in: query
+        name: Update Attribute
+        required: true
+        schema: {type: string}
+      - description: The value to match against
+        example: Windows Server 2012
+        in: query
+        name: Update Value
+        required: true
+        schema: {type: string}
+      responses:
+        '200': {description: Successful request}
+      summary: LDAP Update System
+tags:
+- {name: Miscellaneous}

@@ -1,0 +1,882 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        report_attachment: {type: string}
+      type: object
+    tmp1:
+      properties:
+        case_id: {type: string}
+      type: object
+    tmp2:
+      properties:
+        URI: {type: string}
+        action: {type: string}
+        associatedImpact: {type: string}
+        attackAgent: {type: string}
+        attackMechanism: {type: string}
+        attributeInitializationInProgress: {type: string}
+        case_id: {type: string}
+        consequenceSeverity: {type: string}
+        createdTimestamp: {type: string}
+        creatorName: {type: string}
+        deprecated: {type: string}
+        detectionTimestamp: {type: string}
+        disabled: {type: string}
+        displayID: {type: string}
+        estimatedTimestamp: {type: string}
+        frequency: {type: string}
+        history: {type: string}
+        inCache: {type: string}
+        inactive: {type: string}
+        initialized: {type: string}
+        isAdditionalLoaded: {type: string}
+        localID: {type: string}
+        modificationCount: {type: string}
+        modifiedTime: {type: string}
+        modifiedTimestamp: {type: string}
+        modifierName: {type: string}
+        name: {type: string}
+        numberOfOccurences: {type: string}
+        operationalImpact: {type: string}
+        reference_id: {type: string}
+        reference_isModifiable: {type: string}
+        reference_managerID: {type: string}
+        reference_referenceName: {type: string}
+        reference_referenceString: {type: string}
+        reference_referenceType: {type: string}
+        reference_uri: {type: string}
+        reportingLevel: {type: string}
+        resistance: {type: string}
+        resourceid: {type: string}
+        securityClassification: {type: string}
+        securityClassificationCode: {type: string}
+        sensitivity: {type: string}
+        stage: {type: string}
+        state: {type: string}
+        ticketType: {type: string}
+        type: {type: string}
+        typeName: {type: string}
+        vulnerability: {type: string}
+        vulnerabilityType1: {type: string}
+        vulnerabilityType2: {type: string}
+      type: object
+    tmp3:
+      properties:
+        agentReceiptTime: {type: string}
+        agentSeverity: {type: string}
+        agent_address: {type: string}
+        agent_addressAsBytes: {type: string}
+        agent_assetId: {type: string}
+        agent_assetLocalId: {type: string}
+        agent_assetName: {type: string}
+        agent_dnsDomain: {type: string}
+        agent_hostName: {type: string}
+        agent_id: {type: string}
+        agent_macAddress: {type: string}
+        agent_mutable: {type: string}
+        agent_name: {type: string}
+        agent_timeZone: {type: string}
+        agent_translatedAddress: {type: string}
+        agent_type: {type: string}
+        agent_version: {type: string}
+        agent_zone_id: {type: string}
+        agent_zone_isModifiable: {type: string}
+        agent_zone_managerID: {type: string}
+        agent_zone_referenceID: {type: string}
+        agent_zone_referenceName: {type: string}
+        agent_zone_referenceString: {type: string}
+        agent_zone_referenceType: {type: string}
+        agent_zone_uri: {type: string}
+        aggregatedEventCount: {type: string}
+        assetCriticality: {type: string}
+        baseEventCount: {type: string}
+        bytesIn: {type: string}
+        bytesOut: {type: string}
+        category_behavior: {type: string}
+        category_deviceGroup: {type: string}
+        category_mutable: {type: string}
+        category_object: {type: string}
+        category_outcome: {type: string}
+        category_significance: {type: string}
+        concentratorAgents_address: {type: string}
+        concentratorAgents_addressAsBytes: {type: string}
+        concentratorAgents_assetId: {type: string}
+        concentratorAgents_assetLocalId: {type: string}
+        concentratorAgents_assetName: {type: string}
+        concentratorAgents_dnsDomain: {type: string}
+        concentratorAgents_hostName: {type: string}
+        concentratorAgents_id: {type: string}
+        concentratorAgents_macAddress: {type: string}
+        concentratorAgents_mutable: {type: string}
+        concentratorAgents_name: {type: string}
+        concentratorAgents_timeZone: {type: string}
+        concentratorAgents_translatedAddress: {type: string}
+        concentratorAgents_type: {type: string}
+        concentratorAgents_version: {type: string}
+        concentratorAgents_zone_id: {type: string}
+        concentratorAgents_zone_isModifiable: {type: string}
+        concentratorAgents_zone_managerID: {type: string}
+        concentratorAgents_zone_referenceID: {type: string}
+        concentratorAgents_zone_referenceName: {type: string}
+        concentratorAgents_zone_referenceString: {type: string}
+        concentratorAgents_zone_referenceType: {type: string}
+        concentratorAgents_zone_uri: {type: string}
+        concentratorDevices_address: {type: string}
+        concentratorDevices_addressAsBytes: {type: string}
+        concentratorDevices_assetId: {type: string}
+        concentratorDevices_assetLocalId: {type: string}
+        concentratorDevices_assetName: {type: string}
+        concentratorDevices_hostName: {type: string}
+        concentratorDevices_macAddress: {type: string}
+        concentratorDevices_mutable: {type: string}
+        concentratorDevices_product: {type: string}
+        concentratorDevices_timeZone: {type: string}
+        concentratorDevices_translatedAddress: {type: string}
+        concentratorDevices_vendor: {type: string}
+        concentratorDevices_version: {type: string}
+        concentratorDevices_zone_id: {type: string}
+        concentratorDevices_zone_isModifiable: {type: string}
+        concentratorDevices_zone_managerID: {type: string}
+        concentratorDevices_zone_referenceID: {type: string}
+        concentratorDevices_zone_referenceName: {type: string}
+        concentratorDevices_zone_referenceString: {type: string}
+        concentratorDevices_zone_referenceType: {type: string}
+        concentratorDevices_zone_uri: {type: string}
+        correlatedEventCount: {type: string}
+        customer_id: {type: string}
+        customer_isModifiable: {type: string}
+        customer_managerID: {type: string}
+        customer_referenceID: {type: string}
+        customer_referenceName: {type: string}
+        customer_referenceString: {type: string}
+        customer_referenceType: {type: string}
+        customer_uri: {type: string}
+        destination_address: {type: string}
+        destination_addressAsBytes: {type: string}
+        destination_assetId: {type: string}
+        destination_assetLocalId: {type: string}
+        destination_assetName: {type: string}
+        destination_geo_latitude: {type: string}
+        destination_geo_latitudeLong: {type: string}
+        destination_geo_longitude: {type: string}
+        destination_geo_longitudeLong: {type: string}
+        destination_geo_mutable: {type: string}
+        destination_hostName: {type: string}
+        destination_macAddress: {type: string}
+        destination_mutable: {type: string}
+        destination_port: {type: string}
+        destination_processId: {type: string}
+        destination_translatedAddress: {type: string}
+        destination_translatedPort: {type: string}
+        destination_zone_id: {type: string}
+        destination_zone_isModifiable: {type: string}
+        destination_zone_managerID: {type: string}
+        destination_zone_referenceID: {type: string}
+        destination_zone_referenceName: {type: string}
+        destination_zone_referenceString: {type: string}
+        destination_zone_referenceType: {type: string}
+        destination_zone_uri: {type: string}
+        deviceCustomDate1: {type: string}
+        deviceCustomDate2: {type: string}
+        deviceCustomFloatingPoint1: {type: string}
+        deviceCustomFloatingPoint2: {type: string}
+        deviceCustomFloatingPoint3: {type: string}
+        deviceCustomFloatingPoint4: {type: string}
+        deviceCustomNumber1: {type: string}
+        deviceCustomNumber2: {type: string}
+        deviceCustomNumber3: {type: string}
+        deviceCustomString1: {type: string}
+        deviceCustomString2: {type: string}
+        deviceCustomString3: {type: string}
+        deviceCustomString4: {type: string}
+        deviceCustom_date1Label: {type: string}
+        deviceCustom_mutable: {type: string}
+        deviceCustom_number1Label: {type: string}
+        deviceCustom_string1Label: {type: string}
+        deviceCustom_string2Label: {type: string}
+        deviceCustom_string3Label: {type: string}
+        deviceCustom_string4Label: {type: string}
+        deviceDirection: {type: string}
+        deviceEventCategory: {type: string}
+        deviceEventClassId: {type: string}
+        deviceProcessId: {type: string}
+        deviceReceiptTime: {type: string}
+        deviceSeverity: {type: string}
+        device_address: {type: string}
+        device_addressAsBytes: {type: string}
+        device_assetId: {type: string}
+        device_assetLocalId: {type: string}
+        device_assetName: {type: string}
+        device_hostName: {type: string}
+        device_macAddress: {type: string}
+        device_mutable: {type: string}
+        device_product: {type: string}
+        device_timeZone: {type: string}
+        device_translatedAddress: {type: string}
+        device_vendor: {type: string}
+        device_version: {type: string}
+        device_zone_id: {type: string}
+        device_zone_isModifiable: {type: string}
+        device_zone_managerID: {type: string}
+        device_zone_referenceID: {type: string}
+        device_zone_referenceName: {type: string}
+        device_zone_referenceString: {type: string}
+        device_zone_referenceType: {type: string}
+        device_zone_uri: {type: string}
+        domainDate1: {type: string}
+        domainDate2: {type: string}
+        domainDate3: {type: string}
+        domainDate4: {type: string}
+        domainDate5: {type: string}
+        domainDate6: {type: string}
+        domainFp1: {type: string}
+        domainFp2: {type: string}
+        domainFp3: {type: string}
+        domainFp4: {type: string}
+        domainFp5: {type: string}
+        domainFp6: {type: string}
+        domainFp7: {type: string}
+        domainFp8: {type: string}
+        domainIpv4addr1: {type: string}
+        domainIpv4addr2: {type: string}
+        domainIpv4addr3: {type: string}
+        domainIpv4addr4: {type: string}
+        domainNumber1: {type: string}
+        domainNumber10: {type: string}
+        domainNumber11: {type: string}
+        domainNumber12: {type: string}
+        domainNumber13: {type: string}
+        domainNumber2: {type: string}
+        domainNumber3: {type: string}
+        domainNumber4: {type: string}
+        domainNumber5: {type: string}
+        domainNumber6: {type: string}
+        domainNumber7: {type: string}
+        domainNumber8: {type: string}
+        domainNumber9: {type: string}
+        endTime: {type: string}
+        error_message: {type: string}
+        eventAnnotation_auditTrail: {type: string}
+        eventAnnotation_comment: {type: string}
+        eventAnnotation_endTime: {type: string}
+        eventAnnotation_eventId: {type: string}
+        eventAnnotation_flags: {type: string}
+        eventAnnotation_managerReceiptTime: {type: string}
+        eventAnnotation_modificationTime: {type: string}
+        eventAnnotation_modifiedBy_id: {type: string}
+        eventAnnotation_modifiedBy_isModifiable: {type: string}
+        eventAnnotation_modifiedBy_referenceID: {type: string}
+        eventAnnotation_modifiedBy_referenceName: {type: string}
+        eventAnnotation_modifiedBy_referenceString: {type: string}
+        eventAnnotation_modifiedBy_referenceType: {type: string}
+        eventAnnotation_modifiedBy_uri: {type: string}
+        eventAnnotation_stageUpdateTime: {type: string}
+        eventAnnotation_stageUser_id: {type: string}
+        eventAnnotation_stageUser_isModifiable: {type: string}
+        eventAnnotation_stageUser_referenceID: {type: string}
+        eventAnnotation_stageUser_referenceName: {type: string}
+        eventAnnotation_stageUser_referenceString: {type: string}
+        eventAnnotation_stageUser_referenceType: {type: string}
+        eventAnnotation_stageUser_uri: {type: string}
+        eventAnnotation_stage_id: {type: string}
+        eventAnnotation_stage_isModifiable: {type: string}
+        eventAnnotation_stage_managerID: {type: string}
+        eventAnnotation_stage_referenceID: {type: string}
+        eventAnnotation_stage_referenceName: {type: string}
+        eventAnnotation_stage_referenceString: {type: string}
+        eventAnnotation_stage_referenceType: {type: string}
+        eventAnnotation_stage_uri: {type: string}
+        eventAnnotation_version: {type: string}
+        eventId: {type: string}
+        file_createTime: {type: string}
+        file_modificationTime: {type: string}
+        file_name: {type: string}
+        file_path: {type: string}
+        file_size: {type: string}
+        file_type: {type: string}
+        finalDevice_address: {type: string}
+        finalDevice_addressAsBytes: {type: string}
+        finalDevice_assetId: {type: string}
+        finalDevice_assetLocalId: {type: string}
+        finalDevice_assetName: {type: string}
+        finalDevice_hostName: {type: string}
+        finalDevice_macAddress: {type: string}
+        finalDevice_mutable: {type: string}
+        finalDevice_product: {type: string}
+        finalDevice_timeZone: {type: string}
+        finalDevice_translatedAddress: {type: string}
+        finalDevice_vendor: {type: string}
+        finalDevice_version: {type: string}
+        finalDevice_zone_id: {type: string}
+        finalDevice_zone_isModifiable: {type: string}
+        finalDevice_zone_managerID: {type: string}
+        finalDevice_zone_referenceID: {type: string}
+        finalDevice_zone_referenceName: {type: string}
+        finalDevice_zone_referenceString: {type: string}
+        finalDevice_zone_referenceType: {type: string}
+        finalDevice_zone_uri: {type: string}
+        flexDate1: {type: string}
+        flexNumber1: {type: string}
+        flexNumber2: {type: string}
+        flexString1: {type: string}
+        flexString1Label: {type: string}
+        flexString2Label: {type: string}
+        locality: {type: string}
+        managerId: {type: string}
+        managerReceiptTime: {type: string}
+        modelConfidence: {type: string}
+        name: {type: string}
+        originalAgent_address: {type: string}
+        originalAgent_addressAsBytes: {type: string}
+        originalAgent_assetId: {type: string}
+        originalAgent_assetLocalId: {type: string}
+        originalAgent_assetName: {type: string}
+        originalAgent_dnsDomain: {type: string}
+        originalAgent_hostName: {type: string}
+        originalAgent_id: {type: string}
+        originalAgent_macAddress: {type: string}
+        originalAgent_mutable: {type: string}
+        originalAgent_name: {type: string}
+        originalAgent_timeZone: {type: string}
+        originalAgent_translatedAddress: {type: string}
+        originalAgent_type: {type: string}
+        originalAgent_version: {type: string}
+        originalAgent_zone_id: {type: string}
+        originalAgent_zone_isModifiable: {type: string}
+        originalAgent_zone_managerID: {type: string}
+        originalAgent_zone_referenceID: {type: string}
+        originalAgent_zone_referenceName: {type: string}
+        originalAgent_zone_referenceString: {type: string}
+        originalAgent_zone_referenceType: {type: string}
+        originalAgent_zone_uri: {type: string}
+        originator: {type: string}
+        persistence: {type: string}
+        priority: {type: string}
+        relevance: {type: string}
+        sessionId: {type: string}
+        severity: {type: string}
+        source_address: {type: string}
+        source_assetLocalId: {type: string}
+        source_macAddress: {type: string}
+        source_mutable: {type: string}
+        source_port: {type: string}
+        source_processId: {type: string}
+        source_translatedAddress: {type: string}
+        source_translatedPort: {type: string}
+        source_userName: {type: string}
+        startTime: {type: string}
+        ttl: {type: string}
+        type: {type: string}
+      type: object
+    tmp4:
+      properties:
+        message: {type: string}
+        success: {type: string}
+      type: object
+    tmp5:
+      properties:
+        error_message: {type: string}
+        message: {type: string}
+        success: {type: string}
+      type: object
+    tmp6:
+      properties:
+        data: {type: string}
+      type: object
+    tmp7:
+      properties:
+        CASE_ACTION: {type: string}
+        CASE_ATTACK-AGENT: {type: string}
+        CASE_ATTACK-MECHANISM: {type: string}
+        CASE_CREATION-TIME: {type: string}
+        CASE_ID: {type: string}
+        CASE_IMPACT: {type: string}
+        CASE_OWNED-BY: {type: string}
+        DESTINATION_ADDRESS: {type: string}
+        DESTINATION_COUNTRY: {type: string}
+        DESTINATION_HOSTNAME: {type: string}
+        DESTINATION_LAT: {type: string}
+        DESTINATION_LON: {type: string}
+        DESTINATION_USER: {type: string}
+        DEVICE_ACTION: {type: string}
+        DEVICE_ADDRESS: {type: string}
+        DEVICE_CLASSID: {type: string}
+        DEVICE_CUST1: {type: string}
+        DEVICE_CUST1-LABEL: {type: string}
+        DEVICE_CUST2: {type: string}
+        DEVICE_CUST2-LABEL: {type: string}
+        DEVICE_HOSTNAME: {type: string}
+        DEVICE_PRODUCT: {type: string}
+        DEVICE_SEVERITY: {type: string}
+        EVENT_BASE-EVENT-IDS: {type: string}
+        EVENT_END-TIME: {type: string}
+        EVENT_FILE-NAME: {type: string}
+        EVENT_FILE-PATH: {type: string}
+        EVENT_MESSAGE: {type: string}
+        MITRE_1: {type: string}
+        MITRE_1-LABEL: {type: string}
+        MITRE_2: {type: string}
+        MITRE_2-LABEL: {type: string}
+        SOURCE_ADDRESS: {type: string}
+        SOURCE_COUNTRY: {type: string}
+        SOURCE_HOSTNAME: {type: string}
+        SOURCE_LAT: {type: string}
+        SOURCE_LON: {type: string}
+        SOURCE_USER: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Micro Focus ArcSight ESM
+  title: Micro Focus ArcSight ESM
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Download a report from Arcsight
+      parameters:
+      - description: ID of the report to download
+        example: 9Zh0OAW8BABCWnCdbCouvaw==
+        in: query
+        name: Report ID
+        required: true
+        schema: {type: string}
+      - description: Must be one of pdf, csv, html, xls, or rtf. Must be the same
+          as the report type in Arcsight, otherwise it will mistype the data
+        example: pdf
+        in: query
+        name: Extension Type
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: ArcSightESM Download Report
+  tmp1:
+    post:
+      description: Get all cases from ArcSight ESM
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: ArcSightESM Get All Case IDs
+  tmp2:
+    post:
+      description: Get case details from ArcSight ESM
+      parameters:
+      - description: Identifier for the case you want info from
+        example: 7mPKk1FwBABDEJieUmD7nGQ==
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: ArcSightESM Get Case Details
+  tmp3:
+    post:
+      description: Get security events from ArcSight ESM
+      parameters:
+      - description: Identifier for the event.
+        example: '229593'
+        in: query
+        name: Event ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: ArcSightESM Get Security Events
+  tmp4:
+    post:
+      description: Set annotation stage for ArcSight ESM
+      parameters:
+      - description: Identifier for the event.
+        example: '229593'
+        in: query
+        name: Event ID
+        required: true
+        schema: {type: string}
+      - description: Identifier for the user.
+        example: 1eh+LHGcBABCADpqTK1Xp2Q==
+        in: query
+        name: User ID
+        required: true
+        schema: {type: string}
+      - description: Identifier for the stage.
+        example: RN0kiNvoAABCAAQXv8J8ORQ==
+        in: query
+        name: Stage ID
+        required: true
+        schema: {type: string}
+      - description: A comment describing the change.
+        example: ''
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: ArcSightESM Set Annotation Stage
+  tmp5:
+    post:
+      description: Update a case in ArcSight ESM
+      parameters:
+      - description: ID of the case
+        example: 77kXfDmcBABCADmU8Go28RA==
+        in: query
+        name: Case ID
+        required: true
+        schema: {type: string}
+      - description: ArcSight ESM URI of the case
+        example: ''
+        in: query
+        name: URI of Case
+        required: false
+        schema: {type: string}
+      - description: Name of Case
+        example: ''
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: Action for the case
+        example: ''
+        in: query
+        name: Action
+        required: false
+        schema: {type: string}
+      - description: Type of agent the attack was
+        example: ''
+        in: query
+        name: Attack Agent
+        required: false
+        schema: {type: string}
+      - description: Type of mechanism the attack was
+        example: ''
+        in: query
+        name: Attack Mechanism
+        required: false
+        schema: {type: string}
+      - description: What infrastructure could be impacted
+        example: ''
+        in: query
+        name: Associated Impact
+        required: false
+        schema: {type: string}
+      - description: If attribute initialization is in progress
+        example: ''
+        in: query
+        name: Attribute Initialization In Progress
+        required: false
+        schema: {type: string}
+      - description: Consequence severity of this case
+        example: ''
+        in: query
+        name: Severity
+        required: false
+        schema: {type: string}
+      - description: Timestamp for when the case was created
+        example: ''
+        in: query
+        name: Created Timestamp
+        required: false
+        schema: {type: string}
+      - description: Timestamp for case detection
+        example: ''
+        in: query
+        name: Detection Timestamp
+        required: false
+        schema: {type: string}
+      - description: If the case is deprecated
+        example: ''
+        in: query
+        name: Deprecated
+        required: false
+        schema: {type: string}
+      - description: If the case is disabled
+        example: ''
+        in: query
+        name: Disabled
+        required: false
+        schema: {type: string}
+      - description: Display ID
+        example: ''
+        in: query
+        name: Display ID
+        required: false
+        schema: {type: string}
+      - description: Comma separated event IDs
+        example: ''
+        in: query
+        name: Event IDs
+        required: false
+        schema: {type: string}
+      - description: The estimated start time as a timestamp
+        example: ''
+        in: query
+        name: Estimated Start Time
+        required: false
+        schema: {type: string}
+      - description: Frequency of this case
+        example: ''
+        in: query
+        name: Frequency
+        required: false
+        schema: {type: string}
+      - description: Whether this was a known occurance
+        example: ''
+        in: query
+        name: History
+        required: false
+        schema: {type: string}
+      - description: If the case is in the cache
+        example: ''
+        in: query
+        name: In Cache
+        required: false
+        schema: {type: string}
+      - description: If the case is inactive
+        example: ''
+        in: query
+        name: Inactive
+        required: false
+        schema: {type: string}
+      - description: If the case is initialized
+        example: ''
+        in: query
+        name: Initialized
+        required: false
+        schema: {type: string}
+      - description: If an Additional has been loaded
+        example: ''
+        in: query
+        name: Is Additional Loaded
+        required: false
+        schema: {type: string}
+      - description: Local ID
+        example: ''
+        in: query
+        name: Local ID
+        required: false
+        schema: {type: string}
+      - description: Modification Count
+        example: ''
+        in: query
+        name: Modification Count
+        required: false
+        schema: {type: string}
+      - description: Time this case was last modified
+        example: ''
+        in: query
+        name: Modified Time
+        required: false
+        schema: {type: string}
+      - description: Name of user who last modified the case
+        example: ''
+        in: query
+        name: Modifier Name
+        required: false
+        schema: {type: string}
+      - description: Number of occurrences of this case
+        example: ''
+        in: query
+        name: Number of Occurrences
+        required: false
+        schema: {type: string}
+      - description: What operations could be impacted
+        example: ''
+        in: query
+        name: Operationial Impact
+        required: false
+        schema: {type: string}
+      - description: References's ID
+        example: ''
+        in: query
+        name: Reference ID
+        required: false
+        schema: {type: string}
+      - description: If the reference is modifiable
+        example: ''
+        in: query
+        name: Reference is modifiable
+        required: false
+        schema: {type: string}
+      - description: Reference case manager ID
+        example: ''
+        in: query
+        name: Reference Manager ID
+        required: false
+        schema: {type: string}
+      - description: Name of reference
+        example: ''
+        in: query
+        name: Reference Name
+        required: false
+        schema: {type: string}
+      - description: Reference information string
+        example: ''
+        in: query
+        name: Reference String
+        required: false
+        schema: {type: string}
+      - description: URI of the reference
+        example: ''
+        in: query
+        name: Reference URI
+        required: false
+        schema: {type: string}
+      - description: Reporting level of this case
+        example: ''
+        in: query
+        name: Reporting Level
+        required: false
+        schema: {type: string}
+      - description: Level of resistance of this case
+        example: ''
+        in: query
+        name: Resistance
+        required: false
+        schema: {type: string}
+      - description: Resource ID to reference this case
+        example: ''
+        in: query
+        name: Resource ID
+        required: false
+        schema: {type: string}
+      - description: Security Classification
+        example: ''
+        in: query
+        name: Security Classification
+        required: false
+        schema: {type: string}
+      - description: Code for classifying the cases's security
+        example: ''
+        in: query
+        name: Security Classification Code
+        required: false
+        schema: {type: string}
+      - description: Level of sensitivity of the case
+        example: ''
+        in: query
+        name: Sensitivity Level
+        required: false
+        schema: {type: string}
+      - description: What stage the case is in
+        example: ''
+        in: query
+        name: Stage
+        required: false
+        schema: {type: string}
+      - description: Case State
+        example: ''
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      - description: Type of ticket
+        example: ''
+        in: query
+        name: Ticket Type
+        required: false
+        schema: {type: string}
+      - description: Numerical code for the ticket type
+        example: ''
+        in: query
+        name: Type code
+        required: false
+        schema: {type: string}
+      - description: Type of object this is (will be case)
+        example: ''
+        in: query
+        name: Type name
+        required: false
+        schema: {type: string}
+      - description: Classification of the case vulnerability
+        example: ''
+        in: query
+        name: Vulnerability Class
+        required: false
+        schema: {type: string}
+      - description: First type of classification of a vulnerability
+        example: ''
+        in: query
+        name: 'Vulnerablility Type #1'
+        required: false
+        schema: {type: string}
+      - description: Second type of classification of a vulnerability
+        example: ''
+        in: query
+        name: 'Vulnerablility Type #2'
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: ArcSightESM Update Case
+  tmp6:
+    post:
+      description: Get a custom Query data's output from a given QueryViewerID
+      parameters:
+      - description: ID of the QueryView
+        example: c1-Uz124BABCIwu8809AL5A==
+        in: query
+        name: QueryViewer ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: ArcSightESM Get Event Data by QueryViewer ID
+  tmp7:
+    post:
+      description: Take Raw XML and process it to Swimlane fields
+      parameters:
+      - description: XML Data to be processed
+        example: ''
+        in: query
+        name: Arcsight XML
+        required: true
+        schema: {type: string}
+      - description: Is the data provided base64 format? Defaults to False
+        example: ''
+        in: query
+        name: Is Base64?
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: ArcSightESM Process Raw XML
+tags:
+- {name: SIEM & Log Management}

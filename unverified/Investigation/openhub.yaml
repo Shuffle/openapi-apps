@@ -1,0 +1,142 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        factoid_analysis_id: {type: string}
+        factoid_description: {type: string}
+        factoid_id: {type: string}
+        factoid_severity: {type: string}
+        factoid_type: {type: string}
+        first_item_position: {type: string}
+        items_available: {type: string}
+        items_returned: {type: string}
+        status: {type: string}
+      type: object
+    tmp1:
+      properties:
+        items_available: {type: string}
+        items_returned: {type: string}
+        size_fact_blanks: {type: string}
+        size_fact_code: {type: string}
+        size_fact_comment_ratio: {type: string}
+        size_fact_comments: {type: string}
+        size_fact_commits: {type: string}
+        size_fact_man_months: {type: string}
+        size_fact_month: {type: string}
+        status: {type: string}
+      type: object
+    tmp2:
+      properties:
+        analysis_factoids_factoid_text: {type: string}
+        analysis_factoids_factoid_type: {type: string}
+        analysis_id: {type: string}
+        analysis_languages_graph_url: {type: string}
+        analysis_languages_language_color: {type: string}
+        analysis_languages_language_id: {type: string}
+        analysis_languages_language_percentage: {type: string}
+        analysis_languages_language_text: {type: string}
+        analysis_main_language_id: {type: string}
+        analysis_main_language_name: {type: string}
+        analysis_max_month: {type: string}
+        analysis_min_month: {type: string}
+        analysis_oldest_code_set_time: {type: string}
+        analysis_project_id: {type: string}
+        analysis_total_code_lines: {type: string}
+        analysis_total_commit_count: {type: string}
+        analysis_total_contributor_count: {type: string}
+        analysis_twelve_month_commit_count: {type: string}
+        analysis_twelve_month_contributor_count: {type: string}
+        analysis_updated_at: {type: string}
+        analysis_url: {type: string}
+        average_rating: {type: string}
+        created_at: {type: string}
+        description: {type: string}
+        download_url: {type: string}
+        homepage_url: {type: string}
+        html_url: {type: string}
+        id: {type: string}
+        licenses_license_name: {type: string}
+        licenses_license_vanity_url: {type: string}
+        links_link_category: {type: string}
+        links_link_title: {type: string}
+        links_link_url: {type: string}
+        medium_logo_url: {type: string}
+        name: {type: string}
+        project_activity_index_description: {type: string}
+        project_activity_index_value: {type: string}
+        rating_count: {type: string}
+        response_status: {type: string}
+        review_count: {type: string}
+        similar_projects_project_id: {type: string}
+        similar_projects_project_name: {type: string}
+        similar_projects_project_vanity_url: {type: string}
+        small_logo_url: {type: string}
+        tags_tag: {type: string}
+        updated_at: {type: string}
+        url: {type: string}
+        url_name: {type: string}
+        user_count: {type: string}
+        vanity_url: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of BlackDuck OpenHub
+  title: BlackDuck OpenHub
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAEAElEQVR4nO3cPWgTYRzH8X8k0EChxIIUQWkFoYNQW6FIHHxZHEUXR9GlW1GHjvEto4OCm4svo4vi6GJ1MIhgteAgCK1UECnYKigKQhxKRWOey+XufrnnSb6fsTHPk3rf3D13Sa9g3XDlWaMr8yCeCwcK6im2qCdAfyIsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFCcKCRDHvF5CVcqloS7NTVi65f6XLTz/YpScrXXxV/Ut+nyQzk90fq1wq2trcdKLnLq//tF03Xiaeu1GtOB878/Cd3X69mnjsZmtz05FvmEKt3tmA3B/LrVGtJI7KzGysPJB6DJdbx3ZnOl5UVL4KLqxGtRK5t+hUuVS0RrUS5MbzWVBhZRlUs7W5aVuYmZCN32+CeZvGierEvbf24O1n5+NLs/tsrDzgfHxyZNDW5qZt69UXbef6e12jDD7O/D4KIqx2Gy7uf/LmYv303m3OdVC5VLSFmQmburnY2YvEP7w/FEZFdeTum0Tv3NuvVyOfNzkyGLlnQ3teh3X/5LjzsUKtbvPvv6YaPyqupdl9qcbud16HdXx8uOXPs1xfRI2Vx9qpV3gblmujXn/+MfO5fF8Ih8jbsFzOP1qWjOuKS3EBtR94GVY3DoFxceE0GS/Dilq0K8W5foV4vAyrleX1n/I51n/8avnzvEIPWTBhpfkmQlquQzPcggmrW7qxZ+wHrEyb3FlctYsHd6Qep9+vgXm3xzo8OpTr/PPLX3Kdv1d4F9arT99znZ/LC9nwLizXmVm3nN2/Pdf5ewVvzyZZHYqzvJgb4nrNuz2Wyzn2JEEJJqxrR8dym5sr8p3zMqxXn77lMq/rA+e8130h8jIs19eC1d804IwwO16G5aLc8K5oOQwm421Yrg2qOkNyRcthMBlvw4raoFnH5RqPvVVy3oZlFn0tKKv1VlSk7K2S8zoss407xLSy+afxSR0fH458Pt+DT8f7sNrddqhRrdjjU3s6GrNRrbT90zKkE8T5daFWj9y7HB4d+vN4q3tgjZUHYv+dIFFlI4iwzDY2+MLMhE2ODEb+u4sHdyT+PhVRZcf7Q+Hfpm4uys7UiCpbQYVltnGmVqjVM/vYp1CrE5VAMIfCZpsf+5zbvz3RB9TEpBX0PUhbuXRo539rrPn3X+3yk5XUNxHpGV24B2nPhYUYuLktQkVYkCAsSBAWJAgLEoQFCcKCBGFBgrAgQViQICxIEBYkCAsShAUJwoIEYUGCsCBBWJAgLEgQFiQICxKEBQnCggRhQYKwIEFYkCAsSBAWJAgLEoQFid8u/fLPgnLIuwAAAABJRU5ErkJggg==
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: OpenHub get factoids from software
+      parameters:
+      - description: Name of the project to look up
+        example: ''
+        in: query
+        name: Project Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: OpenHub Get Factoids From Software
+  tmp1:
+    post:
+      description: OpenHub get size fact from software
+      parameters:
+      - description: Name of the project to look up
+        example: ''
+        in: query
+        name: Project Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: OpenHub Get Size Facts From Software
+  tmp2:
+    post:
+      description: OpenHub get statistics from software
+      parameters:
+      - description: Name of the project to look up
+        example: ''
+        in: query
+        name: Project Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: OpenHub Get Stats From Software
+tags:
+- {name: Investigation}

@@ -1,0 +1,1193 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        aia_key_identifier: {type: string}
+        aiaca_issuer_url: {type: string}
+        approver: {type: string}
+        cdpuri: {type: string}
+        certificate_authority_dn: {type: string}
+        cn: {type: string}
+        contact: {type: string}
+        created_by: {type: string}
+        created_on: {type: string}
+        dn: {type: string}
+        enhanced_key_usage: {type: string}
+        guid: {type: string}
+        issuer: {type: string}
+        key_algorithm: {type: string}
+        key_size: {type: string}
+        key_usage: {type: string}
+        last_validation_state_update: {type: string}
+        management_type: {type: string}
+        name: {type: string}
+        parent_dn: {type: string}
+        public_key_hash: {type: string}
+        schema_class: {type: string}
+        serial: {type: string}
+        signature_algorithm: {type: string}
+        signature_algorithm_oid: {type: string}
+        ski_key_identifier: {type: string}
+        store_added: {type: string}
+        subject: {type: string}
+        subject_alt_name_dns: {type: string}
+        template_name: {type: string}
+        thumbprint: {type: string}
+        valid_from: {type: string}
+        valid_to: {type: string}
+        validation_state: {type: string}
+      type: object
+    tmp10:
+      properties:
+        success: {type: string}
+      type: object
+    tmp11:
+      properties:
+        error: {type: string}
+        success: {type: string}
+      type: object
+    tmp12:
+      properties:
+        certificate_dn: {type: string}
+        guid: {type: string}
+      type: object
+    tmp13:
+      properties:
+        success: {type: string}
+      type: object
+    tmp14:
+      properties:
+        _links__details: {type: string}
+        created_on: {type: string}
+        dn: {type: string}
+        guid: {type: string}
+        name: {type: string}
+        parent_dn: {type: string}
+        schema_class: {type: string}
+        x509__serial: {type: string}
+        x509__thumbprint: {type: string}
+        x509__valid_from: {type: string}
+        x509__valid_to: {type: string}
+        x509_cn: {type: string}
+        x509_sans_dns: {type: string}
+      type: object
+    tmp15:
+      properties:
+        access: {type: string}
+        algorithm: {type: string}
+        fingerprint_md5: {type: string}
+        fingerprint_sha256: {type: string}
+        keyset_id: {type: string}
+        last_rotation_date: {type: string}
+        last_used: {type: string}
+        length: {type: string}
+        process_status: {type: string}
+        rotation_stage: {type: string}
+        type: {type: string}
+        violation_status: {type: string}
+      type: object
+    tmp16:
+      properties:
+        success: {type: string}
+      type: object
+    tmp17:
+      properties:
+        success: {type: string}
+        validated_certificate_dns: {type: string}
+        validated_certificate_guids: {type: string}
+        warnings: {type: string}
+      type: object
+    tmp2:
+      properties:
+        result: {type: string}
+        values: {type: string}
+      type: object
+    tmp3:
+      properties:
+        full_name: {type: string}
+        given_name: {type: string}
+        internet_email_address: {type: string}
+        name: {type: string}
+        prefix: {type: string}
+        prefixed_name: {type: string}
+        surname: {type: string}
+        type: {type: string}
+        universal: {type: string}
+      type: object
+    tmp4:
+      properties:
+        full_name: {type: string}
+        given_name: {type: string}
+        internet_email_address: {type: string}
+        name: {type: string}
+        prefix: {type: string}
+        prefixed_name: {type: string}
+        prefixed_universal: {type: string}
+        surname: {type: string}
+        type: {type: string}
+        universal: {type: string}
+      type: object
+    tmp5:
+      properties:
+        full_name: {type: string}
+        name: {type: string}
+        prefix: {type: string}
+        prefixed_name: {type: string}
+        prefixed_universal: {type: string}
+        type: {type: string}
+        universal: {type: string}
+      type: object
+    tmp6:
+      properties:
+        full_name: {type: string}
+        is_group: {type: string}
+        name: {type: string}
+        prefix: {type: string}
+        prefixed_name: {type: string}
+        prefixed_universal: {type: string}
+        type: {type: string}
+        universal: {type: string}
+      type: object
+    tmp7:
+      properties:
+        accessible_root_accounts: {type: string}
+        non_compliant_duplicate_private_keys: {type: string}
+        non_root_orphans: {type: string}
+        root_orphans: {type: string}
+        shared_private_keys: {type: string}
+        very_small_key: {type: string}
+      type: object
+    tmp8:
+      properties:
+        access: {type: string}
+        active_from: {type: string}
+        algorithm: {type: string}
+        allowed_source_restriction: {type: string}
+        approver: {type: string}
+        denied_source_restriction: {type: string}
+        device_guid: {type: string}
+        file_path: {type: string}
+        fingerprint_md5: {type: string}
+        fingerprint_sha256: {type: string}
+        force_command: {type: string}
+        format: {type: string}
+        is_encrypted: {type: string}
+        key_id: {type: string}
+        keyset_id: {type: string}
+        last_rotation_date: {type: string}
+        last_used: {type: string}
+        length: {type: string}
+        notes: {type: string}
+        options: {type: string}
+        process_error: {type: string}
+        process_status: {type: string}
+        reason: {type: string}
+        rotation_stage: {type: string}
+        type: {type: string}
+        username: {type: string}
+        violation_status: {type: string}
+      type: object
+    tmp9:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Venafi Trust Protection Platform
+  title: Venafi Trust Protection Platform
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAD8UlEQVR4nO3by2HTSBjA8W+cLHK4BG5YHLJUsFABoYJtAMVxB1ABoYPdCvLQFkAHJBWQEpIDMpwIl2CF2MMBvMiybL1m9Mr/d7JlaWY0+jT6NJJFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHtC39V1t2EdfbjzoO422BD6g4P5ZxU/CNOZ/np/OH6QraD1B9DxAlV026LlRstOWy+reFvLlhv6rpapXDr7wZ+lGiZ2+zGp/KRtQt/V0eWTk8FRb3Y7fRJdaaOntk00bDrTX7OWY0ujR64N2am7CcZoGc37OvRdrZQa9rZGny9KFarkWdLirKOebU0Lronvns4/d+WS6OwFRyK/Ry4tctb7+ZN+G10xz8FwXgbn5ppoR5OCS4k8n3++2fz+pc62mBL6rtYiZ44XqInvniqR55siIo43Pgh9942piorkIKbyoVXieUAdwhN3334t+q3jjQ/s1/Ob4wXq2n90Hvqunt1On/RHny96q1Zu0lluSu37pOQwvqj2Nhly3/v01PECNU+t/g+somdzvGO01selWmhZVw5k060csUSKHYT+3ni/cGsqEvqurjpxXteX0fmfrlgIrLyjVlvO/qT9utn8/iX8z31aQ3MSKGP5bVOsHbFE8t0S150crzMT9WJpoZYPVSTUpidY22AzbYVft8QJs61mh+9cUxwFDsyW9/F0cjI4VkoNF35Qcjg5GexWfQl3vGDhqYe5u1b1Jusdvs0AXxqxsle2OHy34Szs7433k9qplBpe+4/ObdTZlnTBtNRLocjPZz+W21GppODakN5f18eDqyrrvnf7x8Pob10KwsTAind8/PKxNMUgcma+aZYlPIra6KntKg+uGl1eVVVX1VJzrCz6XrBbtoyqL6XOy+BcH+48THqsYirfWQpSLaO0ba6PB1flnrNWP/OeZOWlMN6x80765j/etdymyqjR5dWqALIxcs0f1i4si9Wf5+2SJsuUYy1uoN9Hv7chaU+zah/K5FxdypeKWBtY8Xe1upbERyUm9D21bWoSde0JOJN/o1+7EJRrAyv+rlY8ie/CaBWVuD9aPuQtJ/Tdd7nqHQav8tbRdOkz7w1/qGyaoZPl77Jltn3USg2sVTPSXRutosrsW9Gbm671Z+7k/a4oeqDjNzda9OuibQiP3Iui29Yt0zxW/LmWTOXSdENsPyssYmm/C+h7438K19fiP1wUGrFM/G2pLfIEcdkgTNq+re9qZQ6sxNdO7oiiI6SZoGznu1qZA2vL+3gq0r0kM6u0/S4zx9f2O8DS7nwHCH0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA1PwDf7Z5tHsXMjgAAAABJRU5ErkJggg==
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Detaches one or more Application objects and corresponding Device
+        objects from an existing certificate.
+      parameters:
+      - description: An array of one or more Application objects, specified by their
+          distinguished names, that uniquely identify them in the Venafi platform
+        example: bundles.swimlane.io
+        in: query
+        name: Application DN
+        required: true
+        schema: {type: string}
+      - description: The Distinguished Name (DN) of the certificate
+        example: swimlane certificate
+        in: query
+        name: Certificate DN
+        required: true
+        schema: {type: string}
+      - description: The action to take after dissociating the Application DN and
+          device from the Certificate DN
+        example: false or true
+        in: query
+        name: Delete Orphans
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Venafi Dissociate Object from Certificate
+  tmp1:
+    post:
+      description: Get details about a certificate
+      parameters:
+      - description: The Config GUID for the Certificate object
+        example: '{2b6b673f-2c55-46fc-935a-5836eae9b9db}'
+        in: query
+        name: GUID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Venafi Get Certificate
+  tmp10:
+    post:
+      description: Marks a key for deletion
+      parameters:
+      - description: An array of keyset Ids. The numeric keyset identifier of a set
+          of valid public and private key pairs. You can get the KeysetId, from POST
+          SSH/KeyUsage or the Aperture inventory for SSH keys
+        example: '{2649452D57E72135742359561B9E3BD670F28084}'
+        in: query
+        name: Key ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Venafi Remove SSH Key
+  tmp11:
+    post:
+      description: Requests immediate renewal for an existing certificate
+      parameters:
+      - description: The Distinguished Name (DN) of the certificate to renew
+        example: \VED\Policy\Marketing\Zoey
+        in: query
+        name: Certificate DN
+        required: true
+        schema: {type: string}
+      - description: The PKCS#10 Certificate Signing Request (CSR) to use for the
+          renewal. Input should be the CSR as a string
+        example: '-----BEGIN CERTIFICATE REQUEST-----MIIFPjC...  -----END CERTIFICATE
+          REQUEST-----'
+        in: query
+        name: PKCS10 As String
+        required: false
+        schema: {type: string}
+      - description: The PKCS#10 Certificate Signing Request (CSR) to use for the
+          renewal. Input should be the CSR as a attachment
+        example: cert.pkcs
+        in: query
+        name: PKCS10 As Attachment
+        required: false
+        schema: {type: string}
+      - description: The action to control a previously disabled certificate.  Default
+          is false - do not renew previously disabled certificate
+        example: 'true'
+        in: query
+        name: Reenable
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: Venafi Renew Certificate
+  tmp12:
+    post:
+      description: Venafi Request Certificate
+      parameters:
+      - description: Additional information, such as the name and version of the calling
+          application, that describes the source of this enrollment, renewal, or provisioning
+          request. The default is Web SDK
+        example: Swimlane {version}
+        in: query
+        name: Origin
+        required: false
+        schema: {type: string}
+      - description: The City field for the certificate Subject DN. Specify a value
+          when requesting a centrally generated CSR
+        example: Kansas City
+        in: query
+        name: City
+        required: false
+        schema: {type: string}
+      - description: The encryption algorithm for the public key
+        example: RSA or ECC
+        in: query
+        name: Key Algorithm
+        required: false
+        schema: {type: string}
+      - description: The level of management that Trust Protection Platform applies
+          to the certificate
+        example: Enrollment or Monitoring or Provisioning or Unassigned
+        in: query
+        name: Management Type
+        required: false
+        schema: {type: string}
+      - description: The Venafi Policy DN
+        example: \VED\Policy\TLS/SSL\Administration\CA Templates\MSCA - 1 Year SSL
+        in: query
+        name: Policy DN
+        required: false
+        schema: {type: string}
+      - description: The setting to control whether manual intervention is required
+          for certificate renewal
+        example: 'True'
+        in: query
+        name: Disable Automatic Renewal
+        required: false
+        schema: {type: boolean}
+      - description: The Country field for the certificate Subject DN. Specify a value
+          when requesting a centrally generated CSR
+        example: United States
+        in: query
+        name: Country
+        required: false
+        schema: {type: string}
+      - description: Use this parameter when KeyAlgorithm is RSA. The number of bits
+          to allow for key generation. The default is 2048
+        example: '2048'
+        in: body
+        name: Key Bit Size
+        required: false
+        schema: {type: string}
+      - description: "The PKCS#10 Certificate Signing Request (CSR). Omit escape characters\
+          \ such as \n or \r\n. If this value is provided, any Subject DN fields and\
+          \ the KeyBitSize in the request are ignored"
+        example: CSR Request Goes here
+        in: query
+        name: PKCS10
+        required: false
+        schema: {type: string}
+      - description: Either the ObjectName or Subject parameter is required. Both
+          parameters can appear in the same request when Subject is the friendly name
+          for the Certificate object
+        example: swimlane.com
+        in: query
+        name: Object Name
+        required: false
+        schema: {type: string}
+      - description: The person, entity, or caller of this request. The default is
+          Web SDK. Avoid overriding the default unless the caller is a significant
+          enterprise application that is tightly integrated with Trust Protection
+          Platform, such as a custom web portal
+        example: Swimlane
+        in: query
+        name: Created By
+        required: false
+        schema: {type: string}
+      - description: The certificate type you are requesting
+        example: Default X.509 or Code Signing or Device or Server or User
+        in: query
+        name: Certificate Type
+        required: false
+        schema: {type: string}
+      - description: The State field for the certificate Subject DN. Specify a value
+          when requesting a centrally generated CSR
+        example: Missouri
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      - description: The department or division within the organization that is responsible
+          for maintaining the certificate
+        example: Swimlane Integrations
+        in: query
+        name: Organizational Unit
+        required: false
+        schema: {type: string}
+      - description: The action to control a previously disabled certificate
+        example: 'false'
+        in: query
+        name: Reenable
+        required: false
+        schema: {type: boolean}
+      - description: The Organization field for the certificate Subject DN. Specify
+          a value when the CSR centrally generates
+        example: Swimlane
+        in: query
+        name: Organization
+        required: false
+        schema: {type: string}
+      - description: For Elliptic Curve Cryptography (ECC), use this parameter in
+          conjunction with KeyAlgorithm
+        example: P256 or P384 or P521 - defaults to P256
+        in: query
+        name: Elliptic Curve
+        required: false
+        schema: {type: string}
+      - description: Certificate Authority Domain Name
+        example: \VED\Policy\TLS/SSL\Administration\CA Templates\MSCA - 1 Year SSL
+        in: query
+        name: CADN
+        required: true
+        schema: {type: string}
+      - description: Subject or name of the certificate
+        example: swimlane.com
+        in: query
+        name: Subject
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: Venafi Request Certificate
+  tmp13:
+    post:
+      description: Starts rotation of a specified keyset
+      parameters:
+      - description: The numeric keyset identifier of a set of valid public and private
+          key pairs. You can get the KeysetId, from POST SSH/KeyUsage or the Aperture
+          inventory for SSH keys
+        example: 310E64EF92231B55A34E02A2779E14236CC7A326
+        in: query
+        name: Keyset ID
+        required: true
+        schema: {type: string}
+      - description: The setting to manage keyset rotation of devices based on connectivity
+          to Trust Protection Platform
+        example: 'true'
+        in: query
+        name: Allow Skip On Rotation
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: Venafi Rotate SSH Key
+  tmp14:
+    post:
+      description: Returns certificate details of all identified certificates matching
+        search filters
+      parameters:
+      - description: 'Include only certificates by error state: No error 0 or in an
+          error state 1'
+        example: '1'
+        in: body
+        name: In Error
+        required: false
+        schema: {type: string}
+      - description: Find certificates with a validation state of Blank, Success,
+          or Failure
+        example: Blank, Success, or Failure
+        in: query
+        name: Validation State
+        required: false
+        schema: {type: string}
+      - description: Find certificates by Common name attribute of Subject DN
+        example: swimlane.com
+        in: query
+        name: Common Name
+        required: false
+        schema: {type: string}
+      - description: Find one or more folders for searching for certificates. If you
+          want the parent and its subfolders, use ParentDnRecursive instead
+        example: \VED\Policy\TLS/SSL\Administration
+        in: query
+        name: Parent DN
+        required: false
+        schema: {type: string}
+      - description: The number of results to skip
+        example: '5'
+        in: body
+        name: Offset
+        required: false
+        schema: {type: string}
+      - description: Find certificates with a key size that is less than the one you
+          specified
+        example: '1025'
+        in: body
+        name: Key Size Less
+        required: false
+        schema: {type: string}
+      - description: Include only certificates that are enabled 0 or disabled 1
+        example: '1'
+        in: body
+        name: Disabled
+        required: false
+        schema: {type: string}
+      - description: Find certificates with a stage less than the specified stage
+          (does not include specified stage)
+        example: '500'
+        in: body
+        name: Stage Less
+        required: false
+        schema: {type: string}
+      - description: Find certificates that expire after a certain date. Specify YYYY-MM-DD
+          or the ISO 8601 format
+        example: '2020-04-01'
+        in: query
+        name: Valid To Greater
+        required: false
+        schema: {type: string}
+      - description: Find certificates by Serial number
+        example: 13279B74000000000053
+        in: query
+        name: Serial
+        required: false
+        schema: {type: string}
+      - description: Find certificates by Subject Alternate Name (SAN) Distinguished
+          Name Server (DNS)
+        example: sso.venafi.example
+        in: query
+        name: SAN-DNS
+        required: false
+        schema: {type: string}
+      - description: Find certificates with a key size that is larger than the one
+          you specified
+        example: '1024'
+        in: body
+        name: Key Size Greater
+        required: false
+        schema: {type: string}
+      - description: Find certificates by issuer. Use the CN ,O, L, S, and C values
+          from the certificate request
+        example: Swimlane
+        in: query
+        name: Issuer
+        required: false
+        schema: {type: string}
+      - description: Find certificates with a stage greater than the specified stage
+          (does not include specified stage)
+        example: '799'
+        in: body
+        name: Stage Greater
+        required: false
+        schema: {type: string}
+      - description: Find certificates that expire before a certain date. Specify
+          YYYY-MM-DD or the ISO 8601 format
+        example: '2021-01-01'
+        in: query
+        name: Valid To Less
+        required: false
+        schema: {type: string}
+      - description: Find certificates within a specific folder and its subfolders.
+          Accepts a single value
+        example: \VED\Policy\TLS/SSL
+        in: query
+        name: Parent DN Recursive
+        required: false
+        schema: {type: string}
+      - description: Find certificates by SAN Email RFC822
+        example: first.last@swimlane.com
+        in: query
+        name: SAN-Email
+        required: false
+        schema: {type: string}
+      - description: The State field for the certificate Subject DN. Specify a value
+          when requesting a centrally generated CSR
+        example: Missouri
+        in: query
+        name: State
+        required: false
+        schema: {type: string}
+      - description: Include only certificates that have a pending workflow resolution,
+          for example, an outstanding workflow ticket
+        example: None
+        in: query
+        name: Pending Workflow
+        required: false
+        schema: {type: string}
+      - description: Find certificates using one or more stages in the certificate
+          lifecycle.
+        example: '499'
+        in: body
+        name: Stage
+        required: false
+        schema: {type: string}
+      - description: Find certificates that were created at an exact date and time.
+          Specify YYYY-MM-DD or the ISO 8601 format
+        example: YYYY-MM-DDTHH:MM:SS.mmmmmmmZ
+        in: query
+        name: Created On
+        required: false
+        schema: {type: string}
+      - description: Include only certificates with network validation enabled 0 or
+          disabled 1
+        example: '1'
+        in: body
+        name: Network Validation Disabled
+        required: false
+        schema: {type: string}
+      - description: Find certificates that did not successfully validate using SSL/TLS.
+          Specify one or more Certificates SSL and TLS validation states
+        example: MismatchWithKnown
+        in: query
+        name: TLS Validation Failure
+        required: false
+        schema: {type: string}
+      - description: Find certificates by SAN IP Address
+        example: 10.20.30.40
+        in: query
+        name: SAN-IP
+        required: false
+        schema: {type: string}
+      - description: Find certificates by approver
+        example: First Last
+        in: query
+        name: Approver
+        required: false
+        schema: {type: string}
+      - description: Find certificates with a Management type of Unassigned, Monitoring,
+          Enrollment, or Provisioning
+        example: Unassigned, Monitoring, Enrollment, or Provisioning
+        in: query
+        name: Management Type
+        required: false
+        schema: {type: string}
+      - description: Find certificates by SAN Uniform Resource Identifier (URI)
+        example: swimlane.com
+        in: query
+        name: SAN-URI
+        required: false
+        schema: {type: string}
+      - description: Find certificates by SAN User Principal Name (UPN) or OtherName
+        example: first.last@swimlane.com
+        in: query
+        name: SAN-UPN
+        required: false
+        schema: {type: string}
+      - description: Include only certificates with validation enabled 0 or disabled
+          1
+        example: '1'
+        in: body
+        name: Validation Disabled
+        required: false
+        schema: {type: string}
+      - description: Find certificates by one or more SHA-1 thumbprints
+        example: 71E8672798C03842735293EF49425EF06C7FA8AB
+        in: query
+        name: Thumbprint
+        required: false
+        schema: {type: string}
+      - description: Find certificates by algorithm for the public key
+        example: RSA
+        in: query
+        name: Key Algorithm
+        required: false
+        schema: {type: string}
+      - description: Find certificates by category of usage. Use CodeSigning, Device,
+          Server, and/or User
+        example: CodeSigning, Device, Server, and/or User
+        in: query
+        name: Certificate Type
+        required: false
+        schema: {type: string}
+      - description: Find certificates by the date of issue. Specify YYYY-MM-DD or
+          the ISO 8601 format
+        example: '2020-05-01'
+        in: query
+        name: Valid From
+        required: false
+        schema: {type: string}
+      - description: Find certificates by the algorithm used to sign the certificate
+        example: SHA256RSA
+        in: query
+        name: Signature Algorithm
+        required: false
+        schema: {type: string}
+      - description: The Organization field for the certificate Subject DN. Specify
+          a value when the CSR centrally generates
+        example: Swimlane
+        in: query
+        name: Organization
+        required: false
+        schema: {type: string}
+      - description: Find certificates by date of issue that expire from a certain
+          date. Specify YYYY-MM-DD or the ISO 8601 format
+        example: '2020-04-01'
+        in: query
+        name: Valid From Greater
+        required: false
+        schema: {type: string}
+      - description: Find a certificate object
+        example: my certificate
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: Find certificates created after this date and time. Specify YYYY-MM-DD
+          or the ISO 8601 format
+        example: '2020-04-13'
+        in: query
+        name: Created On Greater
+        required: false
+        schema: {type: string}
+      - description: Find certificates by date of issue that expire less than a certain
+          date. Specify YYYY-MM-DD or the ISO 8601 format
+        example: '2021-01-01'
+        in: query
+        name: Valid From Less
+        required: false
+        schema: {type: string}
+      - description: The Country field for the certificate Subject DN. Specify a value
+          when requesting a centrally generated CSR
+        example: United States
+        in: query
+        name: Country
+        required: false
+        schema: {type: string}
+      - description: Find certificates that contain at least one invalid Chain of
+          Trust. Specify one or more Certificates Chain Codes
+        example: MismatchedChain
+        in: query
+        name: Chain Validation Failure
+        required: false
+        schema: {type: string}
+      - description: Find certificates by Locality/City attribute of Subject Distinguished
+          Name (SDN)
+        example: London
+        in: query
+        name: Locality
+        required: false
+        schema: {type: string}
+      - description: Find certificates based on the Certificate CN or DNS SAN.  Default
+          0. 1 Only return certificates that have a CN or DNS SAN that begin with
+          *. wild card notation
+        example: '1'
+        in: body
+        name: Is Wild Card
+        required: false
+        schema: {type: string}
+      - description: Include one or more of the following certificate attributes in
+          the return value; Issuer, KeyAlgorithm, KeySize, Subject
+        example: KeySize
+        in: query
+        name: Optional Fields
+        required: false
+        schema: {type: string}
+      - description: Find certificates by contact
+        example: First Last
+        in: query
+        name: Contact
+        required: false
+        schema: {type: string}
+      - description: The maximum number of certificates to return. Specify any positive
+          integer
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Find certificates by public key size
+        example: '2048'
+        in: body
+        name: Key Size
+        required: false
+        schema: {type: string}
+      - description: Find certificates based on the signer. Default 0. 1 returns self-signed
+          certificates
+        example: '1'
+        in: body
+        name: Is Self Signed
+        required: false
+        schema: {type: string}
+      - description: Find certificates created before this date and time. Specify
+          YYYY-MM-DD or the ISO 8601 format
+        example: '2020-04-12'
+        in: query
+        name: Created On Less
+        required: false
+        schema: {type: string}
+      - description: The department or division within the organization that is responsible
+          for maintaining the certificate
+        example: Swimlane Integrations
+        in: query
+        name: Organizational Unit
+        required: false
+        schema: {type: string}
+      - description: Find certificates by expiration date. Specify YYYY-MM-DD or the
+          ISO 8601 format
+        example: '2020-05-01'
+        in: query
+        name: Valid To
+        required: false
+        schema: {type: string}
+      - description: 'Find certificates that contain at least one protocol that failed
+          to communicate with the target host. Specify one or more of the following:
+          Ssl2, Ssl3, Tls, Tls11, Tls12'
+        example: Ssl2, Ssl3, Tls, Tls11, Tls12
+        in: query
+        name: SSL TLS Protocol
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp14'}
+          description: Successful request
+      summary: Venafi Search Certificates
+  tmp15:
+    post:
+      description: Returns private and public key pairs that identify details about
+        a device
+      parameters:
+      - description: An array of GUIDs that identify devices
+        example: '{6955f049-19c5-412a-ad99-974fa4a4183e}'
+        in: query
+        name: Device GUID
+        required: false
+        schema: {type: string}
+      - description: An array of names of users that own the keys
+        example: root
+        in: query
+        name: Username
+        required: false
+        schema: {type: string}
+      - description: An array of key lengths
+        example: '1024'
+        in: query
+        name: Length
+        required: false
+        schema: {type: string}
+      - description: The maximum allowed key length
+        example: '2048'
+        in: body
+        name: Max Key Length
+        required: false
+        schema: {type: string}
+      - description: 'An array of key types: DSA, ECDSA, ED25519, RSA, or RSA1'
+        example: ED25519, ECDSA
+        in: query
+        name: Algorithm
+        required: false
+        schema: {type: string}
+      - description: The result that occurred while processing keys
+        example: '5'
+        in: query
+        name: Process Status
+        required: false
+        schema: {type: string}
+      - description: An array of various key violation status codes for a keyset.
+          For more information, see SSH Policy violation result and key usage alert
+          codes
+        example: '2'
+        in: query
+        name: Violation Status
+        required: false
+        schema: {type: string}
+      - description: 'The type of keyset: Host or User'
+        example: User
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      - description: 'The type of usage filter: NeverUsed, UnusedSince, or UsedSince.
+          Use in conjunction with LastUsed to specify a date'
+        example: UsedSince
+        in: query
+        name: Usage Filter Type
+        required: false
+        schema: {type: string}
+      - description: The date to use in conjunction with UsageFilterType. Specify
+          the date in the Epoch format
+        example: 1443449923000+0000
+        in: query
+        name: Last Used
+        required: false
+        schema: {type: string}
+      - description: The maximum number of records to return.  Default is 10
+        example: '100'
+        in: body
+        name: Page Size
+        required: false
+        schema: {type: string}
+      - description: The offset for query results. The number of records to skip
+        example: '499'
+        in: body
+        name: Stage
+        required: false
+        schema: {type: string}
+      - description: he amount of keyset data to return
+        example: 'true'
+        in: query
+        name: Load Key Data
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp15'}
+          description: Successful request
+      summary: Venafi Search SSH Key Details
+  tmp16:
+    post:
+      description: Skip key rotation
+      parameters:
+      - description: A public key identifier. To get the KeyId, use GET SSH/KeysetDetails
+        example: '3347'
+        in: query
+        name: Key ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp16'}
+          description: Successful request
+      summary: Venafi Skip SSH Key Rotation
+  tmp17:
+    post:
+      description: Initiates SSL/TLS network validation for one or more certificates
+        and any associated applications
+      parameters:
+      - description: An array of Certificate DNs
+        example: '''\VED\Policy\Certificates\demo.venafi.example'',''\VED\Policy\MoreCertificates\WIN-OAQVSHMARJ3'''
+        in: query
+        name: Certificate DNs
+        required: true
+        schema: {type: string}
+      - description: An array of GUIDs that uniquely identifies a Certificate object
+        example: '''{NotinTPP000-0000-0000-0000-000000000000}'',''{NoRights000-0000-0000-0000-000000000000}'''
+        in: query
+        name: Certificate GUIDs
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp17'}
+          description: Successful request
+      summary: Venafi Validate Certificate
+  tmp2:
+    post:
+      description: Retrieve information about a certificates associated device and
+        application
+      parameters:
+      - description: The Distinguished Name (DN) of the object.
+        example: \VED\Policy\swimlane.com
+        in: query
+        name: Object DN
+        required: true
+        schema: {type: string}
+      - description: The name of the attribute to read.
+        example: Consumers
+        in: query
+        name: Attribute Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Venafi Get Certificate Associated Device
+  tmp3:
+    post:
+      description: Get attributes about a single user or group
+      parameters:
+      - description: The GUID of the identity you want to retrieve attributes for
+        example: '{20711980-df6e-4813-a6fa-d5930fa37ac8}'
+        in: query
+        name: Identity
+        required: true
+        schema: {type: string}
+      - description: When set to 1 (default), the members of nested groups will included
+          in the result.
+        example: '1'
+        in: body
+        name: Resolve Nested
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Venafi Get Identity Attributes
+  tmp4:
+    post:
+      description: Get identity details about a user or group
+      parameters:
+      - description: The identity type of the account or group. Options are Prefix,PrefixedName,
+          & PrefixedUniversal
+        example: Prefix
+        in: query
+        name: Identity Type
+        required: true
+        schema: {type: string}
+      - description: The authentication provider of the account or group. Options
+          are AD, LDAP, & local
+        example: local
+        in: query
+        name: Authentication Provider
+        required: true
+        schema: {type: string}
+      - description: The name of the identity group
+        example: Everyone
+        in: query
+        name: Identity Group Name
+        required: true
+        schema: {type: string}
+      - description: The friendly name of the LDAP or AD account or group.  This is
+          required if using AD or LDAP authentication provider
+        example: Bob Smith
+        in: query
+        name: Authentication Friendly Name
+        required: false
+        schema: {type: string}
+      - description: The Universally Unique Identifier (UUID) of the user or group
+          identity. Universal can only be used in conjunction with a Prefix identity_type
+          and AD or LDAP friendly_name
+        example: '{20711980-df6e-4813-a6fa-d5930fa37ac8}'
+        in: query
+        name: Universal UUID
+        required: false
+        schema: {type: string}
+      - description: The friendly name of the user or group identity
+        example: Bill.Dickey
+        in: query
+        name: Friendly Name of User or Group
+        required: false
+        schema: {type: string}
+      - description: When set to 1 (default), the members of nested groups will included
+          in the result.
+        example: '1'
+        in: body
+        name: Resolve Nested
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Venafi Get Identity Details
+  tmp5:
+    post:
+      description: Get members of identity groups
+      parameters:
+      - description: The friendly name, account, or group name
+        example: tppadmin
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: 'The concatenated Prefix: and Universal'
+        example: local:{444444e0-303c-d555-afff-8c8cd0cccccc}
+        in: query
+        name: Prefixed Universal
+        required: true
+        schema: {type: string}
+      - description: When set to 1 (default), the members of nested groups will included
+          in the result.
+        example: '1'
+        in: body
+        name: Resolve Nested
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Venafi Get Members
+  tmp6:
+    post:
+      description: Returns informatioon about a user's memberships in an identity
+        provider
+      parameters:
+      - description: The friendly name, account, or group name
+        example: tppadmin
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: The identity provider prefix that manages the account or group
+          Name
+        example: local
+        in: query
+        name: Prefix
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Venafi Get Memberships
+  tmp7:
+    post:
+      description: Get critical alerts related to SSH Keys
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Venafi Get SSH Critical Alerts
+  tmp8:
+    post:
+      description: Identifies policy violations for SSH keys and returns a list of
+        key details
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Venafi Get SSH Key Policy Violations
+  tmp9:
+    post:
+      description: Moves a list of keysets to a policy folder
+      parameters:
+      - description: An array of keyset Ids. The numeric keyset identifier of a set
+          of valid public and private key pairs. You can get the KeysetId, from POST
+          SSH/KeyUsage or the Aperture inventory for SSH keys
+        example: '{2649452D57E72135742359561B9E3BD670F28084}'
+        in: query
+        name: Key ID
+        required: true
+        schema: {type: string}
+      - description: The policy folder to manage the keyset
+        example: \VED\Policy\SvrRoom297
+        in: query
+        name: Policy Path
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Venafi Move SSH Keys to Policy
+tags:
+- {name: Infrastructure}

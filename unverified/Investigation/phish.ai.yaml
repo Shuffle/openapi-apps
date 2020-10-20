@@ -1,0 +1,69 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        asn: {type: string}
+        domain: {type: string}
+        ip_address: {type: string}
+        iso_code: {type: string}
+        issuer: {type: string}
+        plan: {type: string}
+        status: {type: string}
+        subject: {type: string}
+        target: {type: string}
+        time: {type: string}
+        tld: {type: string}
+        url: {type: string}
+        user: {type: string}
+        user_agent: {type: string}
+        verdict: {type: string}
+      type: object
+    tmp1:
+      properties:
+        scan_id: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Phish.AI Phish.AI
+  title: Phish.AI Phish.AI
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Phish.AI Get a report for a given scan ID
+      parameters:
+      - description: The ID of the website to be scanned
+        example: ftlCjoyKM8LdfXkwDEcz
+        in: query
+        name: Scan ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Phish.AI Retrieve Report
+  tmp1:
+    post:
+      description: Phish.AI Scan a URL for phishing with the Phish.AI engine
+      parameters:
+      - description: URL to be scanned
+        example: https://google.com
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Phish.AI Scan URL
+tags:
+- {name: Investigation}

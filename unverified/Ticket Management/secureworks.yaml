@@ -1,0 +1,241 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        code: {type: string}
+        ticketId: {type: string}
+      type: object
+    tmp1:
+      properties:
+        success: {type: string}
+      type: object
+    tmp2:
+      properties:
+        assignedGroup: {type: string}
+        attachmentInfo: {type: string}
+        availableActions_addAttachment_available: {type: string}
+        availableActions_addNote_available: {type: string}
+        availableActions_assignToPoc_available: {type: string}
+        availableActions_assignToSoc_available: {type: string}
+        availableActions_close_available: {type: string}
+        availableActions_close_closeCode: {type: string}
+        category: {type: string}
+        categoryClass: {type: string}
+        categoryItem: {type: string}
+        categoryType: {type: string}
+        clientLocation_id: {type: string}
+        clientLocation_name: {type: string}
+        client_id: {type: string}
+        client_name: {type: string}
+        contact_id: {type: string}
+        contact_name: {type: string}
+        dateCreated: {type: string}
+        dateModified: {type: string}
+        detailedDescription: {type: string}
+        devices_deviceIp: {type: string}
+        devices_id: {type: string}
+        devices_name: {type: string}
+        eventSource: {type: string}
+        externalTicketNum: {type: string}
+        groupingType: {type: string}
+        incidentSummary: {type: string}
+        isGlobalChild: {type: string}
+        isGlobalParent: {type: string}
+        priority: {type: string}
+        reason: {type: string}
+        relatedTickets: {type: string}
+        requestType: {type: string}
+        responsibleParty: {type: string}
+        service: {type: string}
+        status: {type: string}
+        suggestedRemediation: {type: string}
+        symptomDescription: {type: string}
+        technicalDetails: {type: string}
+        ticketId: {type: string}
+        ticketType: {type: string}
+        version: {type: string}
+        watchers: {type: string}
+        worklogs: {type: string}
+      type: object
+    tmp3:
+      properties:
+        assignedGroup: {type: string}
+        attachmentInfo: {type: string}
+        attachmentInfo_id: {type: string}
+        attachmentInfo_name: {type: string}
+        availableActions_addAttachment_available: {type: string}
+        availableActions_addNote_available: {type: string}
+        availableActions_assignToPoc_available: {type: string}
+        availableActions_assignToSoc_available: {type: string}
+        availableActions_close_available: {type: string}
+        availableActions_close_closeCode: {type: string}
+        category: {type: string}
+        categoryClass: {type: string}
+        categoryItem: {type: string}
+        categoryType: {type: string}
+        changeSlo: {type: string}
+        changeWindowEnd: {type: string}
+        changeWindowStart: {type: string}
+        clientLocation_id: {type: string}
+        clientLocation_name: {type: string}
+        client_id: {type: string}
+        client_name: {type: string}
+        contact_id: {type: string}
+        contact_name: {type: string}
+        dateClosed: {type: string}
+        dateCreated: {type: string}
+        dateModified: {type: string}
+        detailedDescription: {type: string}
+        devices_deviceIp: {type: string}
+        devices_id: {type: string}
+        devices_name: {type: string}
+        eventSource: {type: string}
+        externalTicketNum: {type: string}
+        groupingType: {type: string}
+        impact: {type: string}
+        incidentSummary: {type: string}
+        isGlobalChild: {type: string}
+        isGlobalParent: {type: string}
+        priority: {type: string}
+        reason: {type: string}
+        relatedTickets: {type: string}
+        requestType: {type: string}
+        responsibleParty: {type: string}
+        service: {type: string}
+        status: {type: string}
+        suggestedRemediation: {type: string}
+        symptomDescription: {type: string}
+        technicalDetails: {type: string}
+        ticketId: {type: string}
+        ticketType: {type: string}
+        urgency: {type: string}
+        version: {type: string}
+        watchers: {type: string}
+        worklogs: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Dell Secureworks
+  title: Dell Secureworks
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Acknowledge that you have received the latest ticket revisions.
+      parameters:
+      - description: The ticket ID to acknowledge.
+        example: IN37342899
+        in: query
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      - description: The ticket version to acknowledge.
+        example: 6839625d0cac6ffa264f713efa10fc4098f77ed88148333691ac3ec5c5e13823fa110c9f436d21115eab6d7223af46d337569a
+        in: query
+        name: Version
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Dell Secureworks Acknowledge Ticket
+  tmp1:
+    post:
+      description: Close a ticket by ID
+      parameters:
+      - description: Security Incident ID
+        example: ''
+        in: query
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      - description: The close code to use when closing the ticket
+        example: ''
+        in: query
+        name: Close Code
+        required: true
+        schema: {type: string}
+      - description: The work log message describing why you are closing the ticket
+        example: ''
+        in: query
+        name: Worklog Content
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Dell Secureworks Close Ticket
+  tmp2:
+    post:
+      description: Bundle to query Dell SecureWorks API to get all tickets
+      parameters:
+      - description: Security Incident ID
+        example: ''
+        in: query
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Dell Secureworks Get Ticket
+  tmp3:
+    post:
+      description: Retrieve a list of updated tickets that you have not yet acknowledged.
+      parameters:
+      - description: If "ALL," all worklogs are returned for each ticket. If "UPDATED",
+          all worklogs added since last acknowledgement are returned. If "NONE," the
+          path returns no worklogs. Default is "ALL."
+        example: UPDATED
+        in: query
+        name: Worklogs
+        required: false
+        schema: {type: string}
+      - description: 'If provided, limit response to tickets matching the grouping
+          type identified. Options: REQUEST, CHANGE, HEALTH, SECURITY'
+        example: HEALTH
+        in: query
+        name: Grouping Type
+        required: false
+        schema: {type: string}
+      - description: A maximum number of tickets to be returned (default 100).
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: If True, returns only tickets assigned to the client. If false
+          or not included, returns all tickets.
+        example: ''
+        in: query
+        name: Assigned To Customer
+        required: false
+        schema: {type: boolean}
+      - description: 'Filters tickets matching the Ticket Type supplied. If not specified,
+          the path returns all ticket types. Options: SERVICE_REQUEST, INCIDENT, CHANGE.'
+        example: INCIDENT
+        in: query
+        name: Ticket Type
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Dell Secureworks Get Updated Tickets
+tags:
+- {name: Ticket Management}

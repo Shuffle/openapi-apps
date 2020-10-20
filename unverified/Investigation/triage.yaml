@@ -1,0 +1,420 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        average_reporter_credibility_score: {type: string}
+        cached_attachment_count: {type: string}
+        cached_url_count: {type: string}
+        created_at: {type: string}
+        first_report_reported_at: {type: string}
+        first_report_subject: {type: string}
+        first_report_suspect_from_address: {type: string}
+        first_report_suspect_received_at: {type: string}
+        host_source: {type: string}
+        id: {type: string}
+        inbox_tags: {type: string}
+        last_report_reported_at: {type: string}
+        last_report_suspect_from_address: {type: string}
+        last_suspect_received_at: {type: string}
+        match_priority: {type: string}
+        report_count: {type: string}
+        reports_id: {type: string}
+        rule_count: {type: string}
+        updated_at: {type: string}
+        vip_reporter_report_count: {type: string}
+      type: object
+    tmp1:
+      properties:
+        email_preview: {type: string}
+      type: object
+    tmp2:
+      properties:
+        email: {type: string}
+        first_name: {type: string}
+        id: {type: string}
+        is_privileged: {type: string}
+        last_name: {type: string}
+        nickname: {type: string}
+      type: object
+    tmp3:
+      properties:
+        category_id: {type: string}
+        cluster_id: {type: string}
+        created_at: {type: string}
+        email_attachments_content_type: {type: string}
+        email_attachments_decoded_filename: {type: string}
+        email_attachments_email_attachment_payload_md5: {type: string}
+        email_attachments_email_attachment_payload_mime_type: {type: string}
+        email_attachments_email_attachment_payload_sha256: {type: string}
+        email_attachments_id: {type: string}
+        email_attachments_size_in_bytes: {type: string}
+        email_urls_url: {type: string}
+        id: {type: string}
+        location: {type: string}
+        match_priority: {type: string}
+        primary_recipe_id: {type: string}
+        processed_at: {type: string}
+        processing_operator_id: {type: string}
+        recipe_name: {type: string}
+        report_body: {type: string}
+        report_headers: {type: string}
+        report_subject: {type: string}
+        reported_at: {type: string}
+        reporter_id: {type: string}
+        reporter_phishme_reports_count: {type: string}
+        rules_id: {type: string}
+        rules_name: {type: string}
+        suspect_from_address: {type: string}
+        suspect_received_at: {type: string}
+        tags: {type: string}
+        updated_at: {type: string}
+      type: object
+    tmp4:
+      properties:
+        category_id: {type: string}
+        cluster_id: {type: string}
+        created_at: {type: string}
+        email_attachments_content_type: {type: string}
+        email_attachments_decoded_filename: {type: string}
+        email_attachments_email_attachment_payload_md5: {type: string}
+        email_attachments_email_attachment_payload_mime_type: {type: string}
+        email_attachments_email_attachment_payload_sha256: {type: string}
+        email_attachments_id: {type: string}
+        email_attachments_size_in_bytes: {type: string}
+        email_urls_url: {type: string}
+        id: {type: string}
+        location: {type: string}
+        match_priority: {type: string}
+        primary_recipe_id: {type: string}
+        processed_at: {type: string}
+        processing_operator_id: {type: string}
+        recipe_name: {type: string}
+        report_body: {type: string}
+        report_headers: {type: string}
+        report_subject: {type: string}
+        reported_at: {type: string}
+        reporter_id: {type: string}
+        reporter_phishme_reports_count: {type: string}
+        rules_id: {type: string}
+        rules_name: {type: string}
+        suspect_from_address: {type: string}
+        suspect_received_at: {type: string}
+        tags: {type: string}
+        updated_at: {type: string}
+      type: object
+    tmp5:
+      properties:
+        created_at: {type: string}
+        credibility_score: {type: string}
+        email: {type: string}
+        id: {type: string}
+        last_reported_at: {type: string}
+        reports_count: {type: string}
+        updated_at: {type: string}
+        vip: {type: string}
+      type: object
+    tmp6:
+      properties:
+        category_id: {type: string}
+        cluster_id: {type: string}
+        created_at: {type: string}
+        email_attachments_content_type: {type: string}
+        email_attachments_decoded_filename: {type: string}
+        email_attachments_email_attachment_payload_md5: {type: string}
+        email_attachments_email_attachment_payload_mime_type: {type: string}
+        email_attachments_email_attachment_payload_sha256: {type: string}
+        email_attachments_id: {type: string}
+        email_attachments_size_in_bytes: {type: string}
+        email_urls_url: {type: string}
+        id: {type: string}
+        location: {type: string}
+        match_priority: {type: string}
+        primary_recipe_id: {type: string}
+        processed_at: {type: string}
+        processing_operator_id: {type: string}
+        recipe_name: {type: string}
+        report_body: {type: string}
+        report_headers: {type: string}
+        report_subject: {type: string}
+        reported_at: {type: string}
+        reporter_id: {type: string}
+        reporter_phishme_reports_count: {type: string}
+        rules_id: {type: string}
+        rules_name: {type: string}
+        suspect_from_address: {type: string}
+        suspect_received_at: {type: string}
+        tags: {type: string}
+        updated_at: {type: string}
+      type: object
+    tmp7:
+      properties:
+        active: {type: string}
+        condition: {type: string}
+        description: {type: string}
+        id: {type: string}
+        meta: {type: string}
+        name: {type: string}
+        priority: {type: string}
+        rule_tag_list: {type: string}
+        strings: {type: string}
+      type: object
+    tmp8:
+      properties:
+        created_at: {type: string}
+        id: {type: string}
+        operator_id: {type: string}
+        report_id: {type: string}
+        threat_key: {type: string}
+        threat_level: {type: string}
+        threat_value: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Cofense Triage
+  title: Cofense Triage
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get a single cluster using the ID of that cluster
+      parameters:
+      - description: The ID of the cluster to fetch.
+        example: '12345'
+        in: body
+        name: Cluster ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Cofense Triage Get Cluster
+  tmp1:
+    post:
+      description: Download an email preview PNG.
+      parameters:
+      - description: The ID of the report containing the email to generate the preview
+          from.
+        example: '13226'
+        in: query
+        name: Report ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Cofense Triage Get Email Preview
+  tmp2:
+    post:
+      description: Get a single operator using the ID of that operator
+      parameters:
+      - description: The ID of the operator to fetch.
+        example: '12345'
+        in: body
+        name: Operator ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Cofense Triage Get Operator
+  tmp3:
+    post:
+      description: Get processed reports (namely crimeware or advanced threats). When
+        an analysts processes one or more reports (aka a cluster) they are tagged
+        and in this case they can be noted as a security risk.
+      parameters:
+      - description: The category ID (1-5) for processed reports.
+        example: '5'
+        in: body
+        name: Category ID
+        required: false
+        schema: {type: string}
+      - description: The end date and time of the query. The default is the current
+          time. To determine whether to include a report in the results, Cofense Triage
+          evaluates when the report was reported.
+        example: '2019-05-25'
+        in: query
+        name: End Date
+        required: false
+        schema: {type: string}
+      - description: The highest match priority based on rule hits for the report.
+        example: '5'
+        in: body
+        name: Match Priority
+        required: false
+        schema: {type: string}
+      - description: The start date and time of the query. The default is six days
+          ago. To determine whether to include a report in the results, Cofense Triage
+          evaluates when there port was reported.
+        example: '2019-05-25'
+        in: query
+        name: Start Date
+        required: false
+        schema: {type: string}
+      - description: One or more tags of processed reports to filter on. Use commas
+          to separate multiple tags.
+        example: tag
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Cofense Triage Get Processed Reports
+  tmp4:
+    post:
+      description: Get the info of an individual report.
+      parameters:
+      - description: The ID of the report to fetch.
+        example: '12345'
+        in: body
+        name: Report ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Cofense Triage Get Report
+  tmp5:
+    post:
+      description: Get a single reported using the ID of that reporter.
+      parameters:
+      - description: The ID of the reporter to fetch.
+        example: '12345'
+        in: body
+        name: Reporter ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Cofense Triage Get Reporter
+  tmp6:
+    post:
+      description: This fetches reports in the Inbox, Recon, and Processed folders.
+      parameters:
+      - description: The category ID (1-5) for processed reports.
+        example: '5'
+        in: body
+        name: Category ID
+        required: false
+        schema: {type: string}
+      - description: The end date and time of the query. The default is the current
+          time. To determine whether to include a report in the results, Cofense Triage
+          evaluates when the report was reported.
+        example: '2019-05-25'
+        in: query
+        name: End Date
+        required: false
+        schema: {type: string}
+      - description: The highest match priority based on rule hits for the report.
+        example: '5'
+        in: body
+        name: Match Priority
+        required: false
+        schema: {type: string}
+      - description: The start date and time of the query. The default is six days
+          ago. To determine whether to include a report in the results, Cofense Triage
+          evaluates when there port was reported.
+        example: '2019-05-25'
+        in: query
+        name: Start Date
+        required: false
+        schema: {type: string}
+      - description: One or more tags of processed reports to filter on. Use commas
+          to separate multiple tags.
+        example: tag
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Cofense Triage Get Reports
+  tmp7:
+    post:
+      description: Get a single Rule using the ID of that Rule.
+      parameters:
+      - description: The ID of the rule to fetch.
+        example: '12345'
+        in: body
+        name: Rule ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Cofense Triage Get Rule
+  tmp8:
+    post:
+      description: Get  IOCs (URLs, domains, senders, subjects, hashes) tagged by
+        analysts that are malicious, suspicious, or benign
+      parameters:
+      - description: The end date and time of the query. The default is the current
+          time. To determine whether to include a report in the results, Cofense Triage
+          evaluates when the report was reported.
+        example: '2019-05-25'
+        in: query
+        name: End Date
+        required: false
+        schema: {type: string}
+      - description: 'The threat level to filter on. Options: Malicious, Suspicious,
+          Benign'
+        example: Malicious
+        in: query
+        name: Level
+        required: false
+        schema: {type: string}
+      - description: The start date and time of the query. The default is six days
+          ago. To determine whether to include a report in the results, Cofense Triage
+          evaluates when there port was reported.
+        example: '2019-05-25'
+        in: query
+        name: Start Date
+        required: false
+        schema: {type: string}
+      - description: 'The type of threat indicator to filter on. Options: Subject,
+          Sender, Domain, URL, MD5, SHA256'
+        example: URL
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Cofense Triage Get Threat Indicators
+tags:
+- {name: Investigation}

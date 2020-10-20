@@ -1,0 +1,56 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        id: {type: string}
+        successful: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Fireeye Cm
+  title: Fireeye Cm
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAGjUlEQVR4nO3bX2xTVRwH8O+5txvjn2yJYax3mTGj3USBMQqON0mMJhojT8RkDxhwG39Fgw/GF5zRKBGVAOPPhhoSCYm+QCA+INHMB1DWDrYBbt1Y+LO7aEQy/jnYeu/xgXW23W17b7uyFb6fpMnuuae//tb+enruOS1ARERERERERERERERERERERERERERERERERERERERERERERERERERERESPMpHqHf2a54qAKJEjx7lCYEFfV8rx6NHiqBA6NO8794GvEvXx6UEWF9krrIBW+reE+qSdvrkQxgK9ywUAPSXl38+92rkynQQpOynJOvg1r7RbVAAwBKmG//7l1u2P24rKBlNNjrJX3MIKaJ4rfs0r4523o2ZAbx9WZF46MSg7WRZWq+aVEqLEToAZigJpoM+UMgDIa7li7KdrugVK2ccV29CulYWGYF0HAoCEucyn9/yW6cQA4EJxuTTi5BIr9or084LC516ent+xoK8rF8Bw5LmO4jJpJ6oCgTvSWFuld++PPddeXOb4zXJ28O57q/7p+yJ8vHb9ZiltZRJt/96dAoBat+7tUMSxbWtqN3znUtVqRVGwt2GHSDMPrKlZP+hy5eR1XrxcoM1zi2EhhqNGLL/bsy1yjgQ8KCafHhQ+PSgW60GRalGd18p67fb1a17p17xyUJoYktLWLZYBSKt2ALZj3pMmXBD7rEZcuzGichTCiMrRMFK6he8u5FChYRh4q3aD7apYXbvuDwFUSymxt2GHGIc88HXTnqlmyDja3Hx0IO8+KmYYRmlUpcc+gdv0oOsHIOrJcCoypp2liIDm/UsCswWAxWksXXxWUPjsi9NmnffpwTEjlhMt7rktQig+FwQq9Mm3TvfKaytedxdpRwDgQGNDwvyqq6ufmDo9/6advk7V1Gw80tS0e0X4eHTEiiyAgD4z16cHRbpFlQoJzAbSK6rxtKS/ZwkAhGx+JD9sPx47cvRy75WnACQcuVaurK7KVFEBQGRRASOF9bvbEwgf+PSgqEMg5Xd4Ij+7S8fMVcaQ5lZTmh9m4vFTlXRNZoKdPHn8qoDSDwB16zZbFtcT+fmngcwUlRUFAFQhKn16UFRmeJSYrbhqk/Xx9fd8tLS/pz6TeThlTnQCNjQ17tIgzZ8MI4SatZuiiis8kj2sogIA5bzmGc7UNsyhWSUFkceDKVx5TLTW8BTBDCXcypoMDjTtfUlRFEjTRN36zYeAiSkqwGJLx6955W0ZWr28v/fbdIN3FntP3ZFYFtlmp4h/LfJsmqaInU4eKzZuosl7QPM6KnFDht58vr/3YGRbKmtzF+4Pvrvq+rUd4eOauo0pXeYnK5LatZukaf4/zibrn4k8Rtexzrg9nypCvA8AM4XrGwBpF9bdmKKyo9Xt2WIKsR0AevWga2UGLyDiFXm4aOy8CcZjtB/v0aRx3y6Rykg1nnmMzkvDRRXWXFjydLrBU/ngCxeVTw+KTBZVIuFiyeYdg5zc3Al9fAUA/EWeL2NPTHfl2V7QtOLXPK/Gttl9lSbDOsMxPagCQMDteWOic8lGCgCElOGDVifTe8eK47EtOTbvORmGifqRi0EpxOGJziUbKQBQpV9ui9ehTXO+JxaPhNFpp99kGLGAiFFL827PRPycnLyBTMR1zDTPjnfI0TlWDsyQVYdhSLQWlepOggaLyz+xah+YWzzfWXoTqx4wVQAS2BJ7zhTmC8CDK8xU4+/Zvb0ASLxi/jA0Ne2pHO88Rq8KF+o9OWc1r7SaLZuK6m6ZU3puyZ+XKuwEvSXND6zalzc3WxbvZLZIDwq/5pUdxeVyfl/n6GC6tK+nuVXzwoT9KUPscgMAdHd1ezxlnm4nL2om1qSEUBulNGrHK4+o3YpFCS6dhaouDLiTP4HtRWX/WrVPl3Io2X2BBz/KsPpOl1MqIOLFcfoYUyAgLWZ+lSPf+sgTymjMRDfI6G+OAEBz84mekRfIUFUVdm62/n8HfQGgaf/OugONDcLlctnKIVlsy2f3nOaViYaWeGs3EluVgHbYcomAP7J4vFjur1boQQFTxt3X82te2aJ5TsW2C9RbbqudGLxZlXqKlI2SjiLJ5g/xRqIzc+a2Kaqc59Mv2V1loEeI7Y+n88Xl8p6Mv89/TA+q9dnxRQB6CBzPe07P8TwzRRUX41VQaPD6rKobN26lmRcRERERERERERERERERERERERERERERERERERERERERERERERERERERERERPW7+A3W1E/SajkAvAAAAAElFTkSuQmCC
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Submit a URL to FireEye CM
+      parameters:
+      - description: URL to submit
+        example: http://asdfasdf.net/bad.php
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      - description: Profile to use for analysis
+        example: win7-sp1
+        in: query
+        name: Profile
+        required: true
+        schema: {type: string}
+      - description: ID of an analysis application to use, defaults to -1 to let the
+          system decide
+        example: '2'
+        in: body
+        name: Analysis Application ID
+        required: false
+        schema: {type: string}
+      - description: How long to wait in seconds before giving up on the analysis,
+          defaults to 200
+        example: '250'
+        in: body
+        name: Timeout
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: FireEye CM Submit URL
+tags:
+- {name: Network Security & Management}

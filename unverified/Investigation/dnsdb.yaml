@@ -1,0 +1,170 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        limit: {type: string}
+        remaining: {type: string}
+        reset: {type: string}
+      type: object
+    tmp1:
+      properties:
+        bailiwick: {type: string}
+        count: {type: string}
+        rdata: {type: string}
+        rrname: {type: string}
+        rrtype: {type: string}
+        time_first: {type: string}
+        time_last: {type: string}
+      type: object
+    tmp2:
+      properties:
+        count: {type: string}
+        rdata: {type: string}
+        rrname: {type: string}
+        rrtype: {type: string}
+        time_first: {type: string}
+        time_last: {type: string}
+      type: object
+    tmp3:
+      properties:
+        count: {type: string}
+        rdata: {type: string}
+        rrname: {type: string}
+        rrtype: {type: string}
+        time_first: {type: string}
+        time_last: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Farsight DNSDB
+  title: Farsight DNSDB
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Gets details about how many queries are allowed, how many left,
+        and when the rate is reset
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Farsight Get Ratelimit
+  tmp1:
+    post:
+      description: Get a RRdata for a given domain name
+      parameters:
+      - description: Name of domain to look up
+        example: www.farsightsecurity.com
+        in: query
+        name: Lookup Name
+        required: true
+        schema: {type: string}
+      - description: Limit response to number of entries
+        example: ''
+        in: body
+        name: Limit
+        required: true
+        schema: {type: string}
+      - description: Time value the 'first seen' value of an entry, entries must be
+          after this value
+        example: ''
+        in: body
+        name: Time first seen (after)
+        required: false
+        schema: {type: string}
+      - description: Time value for the 'last seen' value of an entry, entries must
+          be before this value
+        example: ''
+        in: body
+        name: Time last seen (before)
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Farsight Get RRdata by Domain
+  tmp2:
+    post:
+      description: Get a RRdata for a given IP
+      parameters:
+      - description: IP to look up
+        example: 104.244.13.104
+        in: query
+        name: Lookup IP
+        required: true
+        schema: {type: string}
+      - description: Limit response to number of entries
+        example: ''
+        in: body
+        name: Limit
+        required: true
+        schema: {type: string}
+      - description: Time value the 'first seen' value of an entry, entries must be
+          after this value
+        example: ''
+        in: body
+        name: Time first seen (after)
+        required: false
+        schema: {type: string}
+      - description: Time value for the 'last seen' value of an entry, entries must
+          be before this value
+        example: ''
+        in: body
+        name: Time last seen (before)
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Farsight Get RRdata by IP
+  tmp3:
+    post:
+      description: Get RRdata for all domain names delegated to a nameserver
+      parameters:
+      - description: Nameserver to use to look up records
+        example: ns5.dnsmadeeasy.com
+        in: query
+        name: Lookup Nameserver
+        required: true
+        schema: {type: string}
+      - description: Limit response to number of entries
+        example: ''
+        in: body
+        name: Limit
+        required: true
+        schema: {type: string}
+      - description: Time value the 'first seen' value of an entry, entries must be
+          after this value
+        example: ''
+        in: body
+        name: Time first seen (after)
+        required: false
+        schema: {type: string}
+      - description: Time value for the 'last seen' value of an entry, entries must
+          be before this value
+        example: ''
+        in: body
+        name: Time last seen (before)
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Farsight Get RRdata by Nameserver
+tags:
+- {name: Investigation}

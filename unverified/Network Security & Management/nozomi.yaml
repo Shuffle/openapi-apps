@@ -1,0 +1,207 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        ack: {type: string}
+        appliance_host: {type: string}
+        appliance_id: {type: string}
+        appliance_ip: {type: string}
+        appliance_site: {type: string}
+        bpf_filter: {type: string}
+        capture_device: {type: string}
+        closed_time: {type: string}
+        created_time: {type: string}
+        description: {type: string}
+        dst_roles: {type: string}
+        id: {type: string}
+        id_dst: {type: string}
+        id_src: {type: string}
+        incident_keys: {type: string}
+        ip_dst: {type: string}
+        ip_src: {type: string}
+        is_incident: {type: string}
+        is_security: {type: string}
+        label_dst: {type: string}
+        label_src: {type: string}
+        mac_dst: {type: string}
+        mac_src: {type: string}
+        name: {type: string}
+        note: {type: string}
+        parents: {type: string}
+        port_dst: {type: string}
+        port_src: {type: string}
+        properties_base_risk: {type: string}
+        properties_delete_rules: {type: string}
+        properties_from_id: {type: string}
+        properties_is_dst_node_learned: {type: string}
+        properties_is_dst_reputation_bad: {type: string}
+        properties_is_src_node_learned: {type: string}
+        properties_is_src_reputation_bad: {type: string}
+        properties_learn_rules: {type: string}
+        properties_to_id: {type: string}
+        protocol: {type: string}
+        replicated: {type: string}
+        risk: {type: string}
+        sec_profile_visible: {type: string}
+        session_id: {type: string}
+        severity: {type: string}
+        src_roles: {type: string}
+        status: {type: string}
+        synchronized: {type: string}
+        threat_name: {type: string}
+        time: {type: string}
+        transport_protocol: {type: string}
+        trigger_id: {type: string}
+        trigger_type: {type: string}
+        type_id: {type: string}
+        type_name: {type: string}
+        zone_dst: {type: string}
+        zone_src: {type: string}
+      type: object
+    tmp1:
+      properties:
+        appliance_hosts: {type: string}
+        capture_device: {type: string}
+        firmware_version: {type: string}
+        firmware_version_info_source: {type: string}
+        ip: {type: string}
+        level: {type: string}
+        mac_address: {type: string}
+        mac_vendor: {type: string}
+        name: {type: string}
+        nodes: {type: string}
+        os: {type: string}
+        os_or_firmware: {type: string}
+        product_name: {type: string}
+        product_name_info_source: {type: string}
+        protocols: {type: string}
+        roles: {type: string}
+        serial_number: {type: string}
+        serial_number_info_source: {type: string}
+        type: {type: string}
+        type_info_source: {type: string}
+        vendor: {type: string}
+        vendor_info_source: {type: string}
+        vlan_id: {type: string}
+      type: object
+    tmp2:
+      properties:
+        counts: {type: string}
+        total_count: {type: string}
+      type: object
+    tmp3:
+      properties:
+        pcap: {type: string}
+      type: object
+    tmp4:
+      properties:
+        raw_data: {type: string}
+        successful: {type: string}
+      type: object
+    tmp5:
+      properties:
+        raw_json: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Nozomi Networks Nozomi
+  title: Nozomi Networks Nozomi
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get All Alerts from Nozomi
+      parameters:
+      - description: Limit the results
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Nozomi Get All Alerts
+  tmp1:
+    post:
+      description: Get Asset details from Nozomi
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Nozomi Get Assets
+  tmp2:
+    post:
+      description: Nozomi Swimlane Integration
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Nozomi Get Node Count
+  tmp3:
+    post:
+      description: Get PCAP data from an Alert ID
+      parameters:
+      - description: Alert ID of the PCAP to retrieve
+        example: edc90141-0b7f-4e1f-9601-30e9e8501228
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Nozomi Get PCAP by Alert ID
+  tmp4:
+    post:
+      description: Nozomi Run CLI Command
+      parameters:
+      - description: CLI Command to run on the Nozomi Instance, for help see the Nozomi
+          User's Manual
+        example: ''
+        in: query
+        name: CLI Command
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Nozomi Run CLI Command
+  tmp5:
+    post:
+      description: Nozomi Swimlane Integration
+      parameters:
+      - description: Nozomi Query
+        example: nodes
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Nozomi Run Query
+tags:
+- {name: Network Security & Management}

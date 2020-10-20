@@ -1,0 +1,73 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        json: {type: string}
+      type: object
+    tmp1:
+      properties:
+        domain: {type: string}
+        message: {type: string}
+        source: {type: string}
+        subSystem: {type: string}
+        time: {type: string}
+        username: {type: string}
+      type: object
+    tmp2:
+      properties:
+        id: {type: string}
+        links_self: {type: string}
+        name: {type: string}
+        type: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Cisco Firepower Management Center
+  title: Cisco Firepower Management Center
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get Web UI SNMP Alerts
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Cisco Firepower Get SNMP Alerts
+  tmp1:
+    post:
+      description: Get FMC Web UI Audit Records
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Cisco Firepower Get Syslog Records
+  tmp2:
+    post:
+      description: Query FMC Web UI SysLogs
+      parameters:
+      - description: Limit of records to retrieve, defaults to 100
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Cisco Firepower Query Logs
+tags:
+- {name: Network Security & Management}

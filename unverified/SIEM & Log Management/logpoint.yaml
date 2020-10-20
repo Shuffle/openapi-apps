@@ -1,0 +1,514 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        message: {type: string}
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        ids: {type: string}
+        message: {type: string}
+        success: {type: string}
+      type: object
+    tmp10:
+      properties:
+        hour_format: {type: string}
+        success: {type: string}
+        timezone: {type: string}
+      type: object
+    tmp11:
+      properties:
+        users_id: {type: string}
+        users_name: {type: string}
+        users_usergroups_name: {type: string}
+      type: object
+    tmp12:
+      properties:
+        message: {type: string}
+        success: {type: string}
+      type: object
+    tmp13:
+      properties:
+        message: {type: string}
+        success: {type: string}
+      type: object
+    tmp14:
+      properties:
+        fields: {type: string}
+        query_filter: {type: string}
+        query_type: {type: string}
+        search_id: {type: string}
+        success: {type: string}
+        time_range: {type: string}
+      type: object
+    tmp2:
+      properties:
+        message: {type: string}
+        success: {type: string}
+      type: object
+    tmp3:
+      properties:
+        ip: {type: string}
+        name: {type: string}
+      type: object
+    tmp4:
+      properties:
+        alert_obj_id: {type: string}
+        assigned_to: {type: string}
+        comments: {type: string}
+        commentscount: {type: string}
+        description: {type: string}
+        detection_timestamp: {type: string}
+        id: {type: string}
+        incident_id: {type: string}
+        lastaction: {type: string}
+        loginspect_ip_dns: {type: string}
+        logpoint_name: {type: string}
+        name: {type: string}
+        query: {type: string}
+        repos: {type: string}
+        risk_level: {type: string}
+        rows_count: {type: string}
+        status: {type: string}
+        throttle_enabled: {type: string}
+        tid: {type: string}
+        time_range: {type: string}
+        type: {type: string}
+        user_id: {type: string}
+        username: {type: string}
+        visible_to: {type: string}
+      type: object
+    tmp5:
+      properties:
+        _fromV550: {type: string}
+        _identifier: {type: string}
+        _labels: {type: string}
+        _offset: {type: string}
+        _type_ip: {type: string}
+        _type_num: {type: string}
+        _type_str: {type: string}
+        _tz: {type: string}
+        col_ts: {type: string}
+        col_type: {type: string}
+        collected_at: {type: string}
+        device: {type: string}
+        device_ip: {type: string}
+        device_name: {type: string}
+        free: {type: string}
+        log_ts: {type: string}
+        logpoint_name: {type: string}
+        message: {type: string}
+        mount_point: {type: string}
+        msg: {type: string}
+        norm_id: {type: string}
+        repo_name: {type: string}
+        sig_id: {type: string}
+        source_name: {type: string}
+        success: {type: string}
+        total: {type: string}
+        type: {type: string}
+        use: {type: string}
+        used: {type: string}
+      type: object
+    tmp6:
+      properties:
+        aliases: {type: string}
+        columns: {type: string}
+        description: {type: string}
+        every_time_unit: {type: string}
+        generated_by: {type: string}
+        grouping: {type: string}
+        life_id: {type: string}
+        limit: {type: string}
+        lucene_query: {type: string}
+        query: {type: string}
+        query_filter: {type: string}
+        query_type: {type: string}
+        searchname: {type: string}
+        tid: {type: string}
+        timerange_day: {type: string}
+        timerange_hour: {type: string}
+        timerange_minute: {type: string}
+        timerange_second: {type: string}
+        vid: {type: string}
+      type: object
+    tmp7:
+      properties:
+        ip: {type: string}
+        name: {type: string}
+        success: {type: string}
+      type: object
+    tmp8:
+      properties:
+        _tz: {type: string}
+        col_ts: {type: string}
+        col_type: {type: string}
+        collected_at: {type: string}
+        device_ip: {type: string}
+        device_name: {type: string}
+        logpoint_name: {type: string}
+        message: {type: string}
+        msg: {type: string}
+        repo_name: {type: string}
+        source_name: {type: string}
+        success: {type: string}
+      type: object
+    tmp9:
+      properties:
+        address: {type: string}
+        repo: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Logpoint Logpoint
+  title: Logpoint Logpoint
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: 'Add a comments to incidents. '
+      parameters:
+      - description: The version
+        example: '0.1'
+        in: query
+        name: Version
+        required: true
+        schema: {type: string}
+      - description: Comma separated list of the Incident Object IDs.
+        example: 5a62bd8cce983de89085429c
+        in: query
+        name: Incident Object IDs
+        required: true
+        schema: {type: string}
+      - description: Comma separated list of the comments to add to each incident.
+        example: Comment1
+        in: query
+        name: Comments
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: LogPoint Add Incident Comment
+  tmp1:
+    post:
+      description: Assign or Reassign incident.
+      parameters:
+      - description: The version
+        example: '0.1'
+        in: query
+        name: Version
+        required: true
+        schema: {type: string}
+      - description: Comma separated list of the Incident Object IDs
+        example: 5a62bd8cce983de89085429c,5b62bd7cce983de89085429e
+        in: query
+        name: Incident Object IDs
+        required: true
+        schema: {type: string}
+      - description: The ID of the new assignee
+        example: 59b0eecfd8aaa4334ee41707
+        in: query
+        name: New Assignee
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: LogPoint Assign or Reassign Incident
+  tmp10:
+    post:
+      description: Retrieve a user's timezone
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Logpoint Get User Timezone
+  tmp11:
+    post:
+      description: Get users and user groups involved in any LogPoint recorded incidents.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: LogPoint Get Users
+  tmp12:
+    post:
+      description: Reopen incident by Incident ID
+      parameters:
+      - description: The version
+        example: '0.1'
+        in: query
+        name: Version
+        required: true
+        schema: {type: string}
+      - description: Comma separated list of the Incident IDs
+        example: 5a62bd8cce983de89085429c,5b62bd7cce983de89085429e
+        in: query
+        name: Incident Object IDs
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: LogPoint Reopen Incident
+  tmp13:
+    post:
+      description: Resolve an incident
+      parameters:
+      - description: The version
+        example: '0.1'
+        in: query
+        name: Version
+        required: true
+        schema: {type: string}
+      - description: Comma separated list of the Incident IDs
+        example: 5a62bd8cce983de89085429c,5b62bd7cce983de89085429e
+        in: query
+        name: Incident Object IDs
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: LogPoint Resolve Incident
+  tmp14:
+    post:
+      description: Run Ad Hoc Query/Get Search Results
+      parameters:
+      - description: Repositories
+        example: _logpoint or '[]'/empty list for all repos
+        in: query
+        name: Repos
+        required: true
+        schema: {type: string}
+      - description: Limit
+        example: '10'
+        in: body
+        name: Limit
+        required: true
+        schema: {type: string}
+      - description: Time Range
+        example: '''Last 24 hours'''
+        in: query
+        name: Time Range
+        required: true
+        schema: {type: string}
+      - description: Query
+        example: user=*
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp14'}
+          description: Successful request
+      summary: Logpoint Run Adhoc Query
+  tmp2:
+    post:
+      description: Close an incident
+      parameters:
+      - description: The version
+        example: '0.1'
+        in: query
+        name: Version
+        required: true
+        schema: {type: string}
+      - description: Comma separated list of the Incident IDs
+        example: 5a62bd8cce983de89085429c,5b62bd7cce983de89085429e
+        in: query
+        name: Incident Object  IDs
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: LogPoint Close Incident
+  tmp3:
+    post:
+      description: Retrieve Devices
+      parameters:
+      - description: The maximum number of results to return. Do not enter a limit
+          to return all
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: LogPoint Get Devices
+  tmp4:
+    post:
+      description: Retrieve incidents from a specific time range.
+      parameters:
+      - description: The version
+        example: '0.1'
+        in: query
+        name: Version
+        required: true
+        schema: {type: string}
+      - description: Start of the datetime range to gather incidents. If you want
+          to use a relative time, see the README for details.
+        example: '2020-01-10T00:00:00Z'
+        in: query
+        name: Time Start
+        required: true
+        schema: {type: string}
+      - description: End of the datetime range to gather incidents. If you want to
+          use a relative time, see the README for details.
+        example: '2020-04-21T00:00:00Z'
+        in: query
+        name: Time End
+        required: true
+        schema: {type: string}
+      - description: The maximum number of results to return. Do not enter a limit
+          to return all
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: LogPoint Get Full Incidents
+  tmp5:
+    post:
+      description: Retrieve information associated with a particular incident
+      parameters:
+      - description: Object ID of particular incident.
+        example: 5e8ffe4621a2303599905b6d
+        in: query
+        name: Incident Object ID
+        required: true
+        schema: {type: string}
+      - description: The Incident ID of the value field 'incident_id' of the particular
+          incident.
+        example: a7250944dae828ceadbec826d1a20d6f
+        in: query
+        name: Incident ID
+        required: true
+        schema: {type: string}
+      - description: Value of field 'detection_timestamp' of the particular incident.
+          If you want to use a relative time, see the README for details.
+        example: '2020-04-21T00:00:00Z'
+        in: query
+        name: Date
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: LogPoint Get Incident
+  tmp6:
+    post:
+      description: Get LiveSearches
+      parameters:
+      - description: The maximum number of results to return. Do not enter a limit
+          to return all
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: LogPoint Get LiveSearches
+  tmp7:
+    post:
+      description: Retrieve Logpoint(s)
+      parameters:
+      - description: The maximum number of results to return. Do not enter a limit
+          to return all
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: LogPoint Get LogPoints
+  tmp8:
+    post:
+      description: Retrieve a query by Search ID
+      parameters:
+      - description: Search Identifier
+        example: c970d599-c107-41c1-a54c-a2129eef4062
+        in: query
+        name: Search ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: LogPoint Get Query by Search ID
+  tmp9:
+    post:
+      description: Retrieve Repos
+      parameters:
+      - description: The maximum number of results to return. Do not enter a limit
+          to return all
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Logpoint Get Repos
+tags:
+- {name: SIEM & Log Management}

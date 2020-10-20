@@ -1,0 +1,248 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        attachment: {type: string}
+        logs: {type: string}
+      type: object
+    tmp1:
+      properties:
+        attachment: {type: string}
+        logs: {type: string}
+      type: object
+    tmp2:
+      properties:
+        attachment: {type: string}
+        logs: {type: string}
+      type: object
+    tmp3:
+      properties:
+        meta: {type: string}
+      type: object
+    tmp4:
+      properties:
+        meta: {type: string}
+      type: object
+    tmp5:
+      properties:
+        meta: {type: string}
+      type: object
+    tmp6:
+      properties:
+        attachment: {type: string}
+        pcap: {type: string}
+      type: object
+    tmp7:
+      properties:
+        attachment: {type: string}
+        pcap: {type: string}
+      type: object
+    tmp8:
+      properties:
+        attachment: {type: string}
+        pcap: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of RSA NetWitness Suite
+  title: RSA NetWitness Suite
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Retrieve logs involving provided IP address(es)
+      parameters:
+      - description: Comma or newline separated list of IP addresses to search for
+          in sessions
+        example: 8.8.8.8, 8.8.4.4
+        in: query
+        name: IP Address(es)
+        required: true
+        schema: {type: string}
+      - description: Minutes into the past you want to search
+        example: ''
+        in: body
+        name: Timeframe
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Get Logs by IP
+  tmp1:
+    post:
+      description: Retrieve logs using advanced query
+      parameters:
+      - description: Query filter using SA advanced query syntax
+        example: ip.dst = 8.8.8.8 || ip.dst = 8.8.4.4
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: Minutes into the past you want to search
+        example: ''
+        in: body
+        name: Timeframe
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Get Logs by Query
+  tmp2:
+    post:
+      description: Retrieve logs for provided session ID(s)
+      parameters:
+      - description: Comma or newline separated list of session ID(s)
+        example: '12345'
+        in: query
+        name: Session ID(s)
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Get Logs by Session ID
+  tmp3:
+    post:
+      description: Retrieve session metadata for sessions involving provided IP address(es)
+      parameters:
+      - description: Comma or newline separated list of IP addresses to search for
+          in sessions
+        example: 8.8.8.8, 8.8.4.4
+        in: query
+        name: IP Address(es)
+        required: true
+        schema: {type: string}
+      - description: Minutes into the past you want to search
+        example: ''
+        in: body
+        name: Timeframe
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Get Session Meta by IP
+  tmp4:
+    post:
+      description: Retrieve session metadata using advanced query
+      parameters:
+      - description: Query filter using SA advanced query syntax
+        example: ip.dst = 8.8.8.8 || ip.dst = 8.8.4.4
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: Minutes into the past you want to search
+        example: '60'
+        in: body
+        name: Timeframe
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Get Session Meta by Query
+  tmp5:
+    post:
+      description: Search for and retrieve session metadata for provided session ID(s)
+      parameters:
+      - description: Comma or newline separated list of session ID(s)
+        example: '12345'
+        in: query
+        name: Session ID(s)
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Get Session Meta by Session ID
+  tmp6:
+    post:
+      description: Retrieve PCAP for sessions involving provided IP address(es)
+      parameters:
+      - description: Comma or newline separated list of IP addresses to search for
+          in sessions
+        example: 8.8.8.8, 8.8.4.4
+        in: query
+        name: IP Address(es)
+        required: true
+        schema: {type: string}
+      - description: Minutes into the past you want to search
+        example: ''
+        in: body
+        name: Timeframe
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Get PCAP by IP
+  tmp7:
+    post:
+      description: Retrieve PCAP for sessions involving provided IP address(es)
+      parameters:
+      - description: Query filter using SA advanced query syntax
+        example: ip.dst = 8.8.8.8 || ip.dst = 8.8.4.4
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: Minutes into the past you want to search
+        example: ''
+        in: body
+        name: Timeframe
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Get PCAP by Query
+  tmp8:
+    post:
+      description: Retrieve PCAP for provided session ID(s)
+      parameters:
+      - description: Comma or newline separated list of session ID(s)
+        example: '12345'
+        in: query
+        name: Session ID(s)
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Get PCAP by Session ID
+tags:
+- {name: SIEM & Log Management}

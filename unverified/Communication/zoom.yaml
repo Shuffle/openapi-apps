@@ -1,0 +1,184 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        error: {type: string}
+        id: {type: string}
+        join_url: {type: string}
+        registrant_id: {type: string}
+        start_time: {type: string}
+        topic: {type: string}
+      type: object
+    tmp1:
+      properties:
+        download_url: {type: string}
+        file_size: {type: string}
+        file_type: {type: string}
+        id: {type: string}
+        meeting_id: {type: string}
+        message: {type: string}
+        play_url: {type: string}
+        recording_end: {type: string}
+        recording_start: {type: string}
+        recording_type: {type: string}
+        status: {type: string}
+      type: object
+    tmp2:
+      properties:
+        agenda: {type: string}
+        created_at: {type: string}
+        duration: {type: string}
+        host_id: {type: string}
+        id: {type: string}
+        join_url: {type: string}
+        password: {type: string}
+        start_time: {type: string}
+        start_url: {type: string}
+        timezone: {type: string}
+        topic: {type: string}
+        type: {type: string}
+        uuid: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Zoom Zoom
+  title: Zoom Zoom
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Add someone to a meeting
+      parameters:
+      - description: Email address to invite
+        example: ''
+        in: query
+        name: Email
+        required: true
+        schema: {type: string}
+      - description: First name of the registrant
+        example: ''
+        in: query
+        name: First Name
+        required: true
+        schema: {type: string}
+      - description: Last name of the registrant
+        example: ''
+        in: query
+        name: Last Name
+        required: true
+        schema: {type: string}
+      - description: Comments
+        example: ''
+        in: query
+        name: Comments
+        required: false
+        schema: {type: string}
+      - description: Meeting ID to add someone to
+        example: ''
+        in: body
+        name: Meeting ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Zoom Add Meeting Registrant
+  tmp1:
+    post:
+      description: Get the recordings and or chats of a meeting in Zoom
+      parameters:
+      - description: Meeting ID to get the recording data from
+        example: ''
+        in: body
+        name: Meeting ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Zoom Get Recording & Chats
+  tmp2:
+    post:
+      description: Start a Meeting Zoom
+      parameters:
+      - description: Email address of the host of the meeting, must be a pro user
+        example: ''
+        in: query
+        name: Email
+        required: true
+        schema: {type: string}
+      - description: Topic for the meeting
+        example: ''
+        in: query
+        name: Topic
+        required: false
+        schema: {type: string}
+      - description: "Start time in format yyyy-MM-dd\u2019T'HH:mm:ss'Z\u2019"
+        example: ''
+        in: query
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: Agenda for the meeting
+        example: ''
+        in: query
+        name: Agenda
+        required: false
+        schema: {type: string}
+      - description: Optional password for the meeting
+        example: ''
+        in: query
+        name: Password
+        required: false
+        schema: {type: string}
+      - description: Start video once host joins the meeting
+        example: ''
+        in: query
+        name: Host Starts Video
+        required: false
+        schema: {type: boolean}
+      - description: Start video once a participant joins the meeting
+        example: ''
+        in: query
+        name: Participants Start Video
+        required: false
+        schema: {type: boolean}
+      - description: Are participants able to join the meeting before the host, only
+          used for scheduled or recurring meetings
+        example: ''
+        in: query
+        name: Participants Able to Join Before Host
+        required: false
+        schema: {type: boolean}
+      - description: How large the page size for user search should be, used for lookups,
+          default 300
+        example: ''
+        in: body
+        name: Page search size
+        required: false
+        schema: {type: string}
+      - description: Type of approval for joining the meeting, 0 - Automatically Approve,
+          1 - Manually Approve, 2 - No Registration Required, default is 2
+        example: ''
+        in: body
+        name: Approval Type
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Zoom Start Meeting
+tags:
+- {name: Communication}

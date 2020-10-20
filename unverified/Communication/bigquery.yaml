@@ -1,0 +1,52 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        data: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Google BigQuery
+  title: Google BigQuery
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Query Google BigQuery
+      parameters:
+      - description: Query string to run on Google BigQuery
+        example: ''
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: Clear the state of state tracker after this runs
+        example: ''
+        in: query
+        name: Clear State
+        required: false
+        schema: {type: boolean}
+      - description: Optional column of data to store as the state.
+        example: ''
+        in: query
+        name: State Column
+        required: false
+        schema: {type: string}
+      - description: Format of the query for state tracking. See README for more information
+        example: ''
+        in: query
+        name: State Query Format
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Google BigQuery Do Query
+tags:
+- {name: Communication}

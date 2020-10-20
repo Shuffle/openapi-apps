@@ -1,0 +1,42 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        codes: {type: string}
+        query: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Spamhaus Spamhaus
+  title: Spamhaus Spamhaus
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Spamhaus Return spamhaus code for domain or IP.
+      parameters:
+      - description: List of IPs or Domains
+        example: google.com
+        in: query
+        name: IPs or Domains
+        required: true
+        schema: {type: string}
+      - description: 'For IPs: SBL, XBL, PBL, SBL-XBL, ZEN, MSR, AUTHBL  For Domains:
+          ZRD, DBL'
+        example: DBL
+        in: query
+        name: Resource List Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Spamhaus Query Domains and IPs
+tags:
+- {name: Investigation}

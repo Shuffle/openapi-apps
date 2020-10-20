@@ -1,0 +1,256 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        actionable_caps_actionable_id: {type: string}
+        actionable_caps_cap_deleted: {type: string}
+        actionable_caps_cap_file_name: {type: string}
+        actionable_caps_cap_id: {type: string}
+        actionable_caps_cap_resource_id: {type: string}
+        actionable_caps_cap_site_id: {type: string}
+        actionable_caps_id: {type: string}
+        actionable_caps_resource_id: {type: string}
+        actionable_caps_role: {type: string}
+        actionable_caps_role__: {type: string}
+        actionable_caps_site_id: {type: string}
+        actionable_diffs: {type: string}
+        actionable_information: {type: string}
+        actionable_policies: {type: string}
+        actionable_suspicious_files: {type: string}
+        actionable_virtual_zones_names: {type: string}
+        alert_indicators_alert_id: {type: string}
+        alert_indicators_id: {type: string}
+        alert_indicators_indicator_id: {type: string}
+        alert_indicators_indicator_info_description: {type: string}
+        alert_indicators_indicator_info_id: {type: string}
+        alert_indicators_indicator_info_points: {type: string}
+        alert_indicators_indicator_info_site_id: {type: string}
+        alert_indicators_indicator_info_type: {type: string}
+        alert_indicators_indicator_result: {type: string}
+        alert_indicators_parent_indicator_id: {type: string}
+        alert_indicators_site_id: {type: string}
+        assets_id: {type: string}
+        assets_site_id: {type: string}
+        category: {type: string}
+        description: {type: string}
+        id: {type: string}
+        is_qualified: {type: string}
+        network_id: {type: string}
+        network_name: {type: string}
+        network_resource_id: {type: string}
+        network_site_id: {type: string}
+        protocol: {type: string}
+        relevant: {type: string}
+        resolution: {type: string}
+        resolution__: {type: string}
+        resolved: {type: string}
+        resource_id: {type: string}
+        score: {type: string}
+        severity: {type: string}
+        significant_indicators_alert_id: {type: string}
+        significant_indicators_icon: {type: string}
+        significant_indicators_id: {type: string}
+        significant_indicators_indicator_id: {type: string}
+        significant_indicators_indicator_info_description: {type: string}
+        significant_indicators_indicator_info_id: {type: string}
+        significant_indicators_indicator_info_points: {type: string}
+        significant_indicators_indicator_info_site_id: {type: string}
+        significant_indicators_indicator_info_type: {type: string}
+        significant_indicators_indicator_result: {type: string}
+        significant_indicators_parent_indicator_id: {type: string}
+        significant_indicators_site_id: {type: string}
+        site_id: {type: string}
+        story: {type: string}
+        story_group_name: {type: string}
+        story_id: {type: string}
+        threat_type: {type: string}
+        timestamp: {type: string}
+        type: {type: string}
+      type: object
+    tmp1:
+      properties:
+        details_description: {type: string}
+        details_title: {type: string}
+        name: {type: string}
+        scale: {type: string}
+        score: {type: string}
+      type: object
+    tmp2:
+      properties:
+        active_queries_names: {type: string}
+        active_scans_names: {type: string}
+        approved: {type: string}
+        asset_type: {type: string}
+        asset_type__: {type: string}
+        children: {type: string}
+        class_type: {type: string}
+        code_sections: {type: string}
+        criticality: {type: string}
+        criticality__: {type: string}
+        custom_attributes: {type: string}
+        custom_informations: {type: string}
+        display_name: {type: string}
+        firmware: {type: string}
+        first_seen: {type: string}
+        ghost: {type: string}
+        id: {type: string}
+        insight_names: {type: string}
+        installed_programs_count: {type: string}
+        ipv4: {type: string}
+        last_seen: {type: string}
+        mac: {type: string}
+        model: {type: string}
+        name: {type: string}
+        network_id: {type: string}
+        network_name: {type: string}
+        network_resource_id: {type: string}
+        network_site_id: {type: string}
+        num_alerts: {type: string}
+        os_architecture: {type: string}
+        os_build: {type: string}
+        os_service_pack: {type: string}
+        parsed: {type: string}
+        patch_count: {type: string}
+        plc_slots_PLCSlotInformation_description: {type: string}
+        plc_slots_PLCSlotInformation_information_type: {type: string}
+        plc_slots_PLCSlotInformation_priority: {type: string}
+        plc_slots_PLCSlotInformation_slot: {type: string}
+        plc_slots_PLCSlotInformation_value_PLCInformation_address: {type: string}
+        plc_slots_PLCSlotInformation_value_PLCInformation_description: {type: string}
+        plc_slots_PLCSlotInformation_value_PLCInformation_firmware_version: {type: string}
+        plc_slots_PLCSlotInformation_value_PLCInformation_information_type: {type: string}
+        plc_slots_PLCSlotInformation_value_PLCInformation_name: {type: string}
+        plc_slots_PLCSlotInformation_value_PLCInformation_priority: {type: string}
+        plc_slots_PLCSlotInformation_value_PLCInformation_product: {type: string}
+        plc_slots_PLCSlotInformation_value_PLCInformation_serial_number: {type: string}
+        plc_slots_PLCSlotInformation_value_PLCInformation_vendor: {type: string}
+        project_parsed: {type: string}
+        protocol: {type: string}
+        purdue_level: {type: string}
+        resource_id: {type: string}
+        risk_level: {type: string}
+        serial_number: {type: string}
+        site_id: {type: string}
+        site_name: {type: string}
+        special_hint: {type: string}
+        special_hint__: {type: string}
+        state: {type: string}
+        subnet_id: {type: string}
+        subnet_name: {type: string}
+        subnet_type: {type: string}
+        timestamp: {type: string}
+        usb_devices_count: {type: string}
+        valid: {type: string}
+        vendor: {type: string}
+        virtual_zone_id: {type: string}
+        virtual_zone_name: {type: string}
+        vlan: {type: string}
+      type: object
+    tmp3:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Claroty Claroty
+  title: Claroty Claroty
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get alerts from Claroty
+      parameters:
+      - description: Limit the number of results returned
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Filter alerts by severity score, numerical value 1+
+        example: ''
+        in: body
+        name: Severity Filter
+        required: false
+        schema: {type: string}
+      - description: Filter alerts by associated timestamp, format looks like 2020-07-21T17:45:37+00:00
+        example: '2020-07-21T17:45:37+00:00'
+        in: query
+        name: Timestamp Filter
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Claroty Get Alerts
+  tmp1:
+    post:
+      description: Get CVSS by asset and site ID
+      parameters:
+      - description: ''
+        example: '2'
+        in: body
+        name: Asset ID
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: '1'
+        in: body
+        name: Site ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Claroty Get CVSS
+  tmp2:
+    post:
+      description: Get Assets from Claroty
+      parameters:
+      - description: Limit the number of results returned
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Claroty Get Assets
+  tmp3:
+    post:
+      description: Resolve alerts as the assed defined user
+      parameters:
+      - description: Alert Resource IDs like '31-1,29-1'
+        example: 30-1
+        in: query
+        name: Alert Resource IDs (CSV)
+        required: true
+        schema: {type: string}
+      - description: Optional comment to add when resolving alerts.
+        example: ''
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Claroty Resolve Alerts
+tags:
+- {name: Endpoint Security & Management}

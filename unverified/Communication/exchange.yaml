@@ -1,0 +1,332 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        failed: {type: string}
+        not_found: {type: string}
+        recipients_affected: {type: string}
+        success: {type: string}
+        wont_process: {type: string}
+      type: object
+    tmp1:
+      properties:
+        attach_info: {type: string}
+        attachments: {type: string}
+        attachments_md5: {type: string}
+        attachments_sha1: {type: string}
+        attachments_sha256: {type: string}
+        cc: {type: string}
+        date: {type: string}
+        error: {type: string}
+        exchange_message_id: {type: string}
+        headers: {type: string}
+        html_body: {type: string}
+        id: {type: string}
+        raw_content: {type: string}
+        raw_headers: {type: string}
+        recipients: {type: string}
+        reply_to: {type: string}
+        result: {type: string}
+        rtf_body: {type: string}
+        sender: {type: string}
+        subject: {type: string}
+        text_body: {type: string}
+        type: {type: string}
+        valid_recipients_email: {type: string}
+        valid_reply_to_email: {type: string}
+        valid_sender_email: {type: string}
+      type: object
+    tmp2:
+      properties:
+        date_moved: {type: string}
+        new_email_id: {type: string}
+        success: {type: string}
+      type: object
+    tmp3:
+      properties:
+        sent_response: {type: string}
+        time_sent: {type: string}
+      type: object
+    tmp4:
+      properties:
+        date_added: {type: string}
+        success: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Microsoft Exchange
+  title: Microsoft Exchange
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Delete emails from all inboxes that match a given query
+      parameters:
+      - description: Delete Type, one of 'trash', 'soft', or 'hard'
+        example: trash
+        in: query
+        name: Delete Type
+        required: true
+        schema: {type: string}
+      - description: Run the delete task without actually deleting to see what would
+          happen
+        example: ''
+        in: query
+        name: Dry Run
+        required: true
+        schema: {type: boolean}
+      - description: Max limit of messages to match from the query, set to -1 to be
+          unlimited
+        example: ''
+        in: body
+        name: Delete Limit
+        required: true
+        schema: {type: string}
+      - description: Ignore exceptions when deleting if set to True, defaults to False
+        example: ''
+        in: query
+        name: Ignore Exceptions
+        required: true
+        schema: {type: boolean}
+      - description: Query string to filter emails in the inbox for. Comma separated.
+        example: subject=asdf,is_read=False
+        in: query
+        name: Search Query String
+        required: true
+        schema: {type: string}
+      - description: String delimiter to split input data on the query string. Defaults
+          to ','
+        example: ','
+        in: query
+        name: Pair Delimiter
+        required: false
+        schema: {type: string}
+      - description: Assignment delimiter to split the query string. Defaults to '='
+        example: '='
+        in: query
+        name: Value Delimiter
+        required: false
+        schema: {type: string}
+      - description: To increase performance on large Exchange instances, increase
+          this number by multiples of 2. Capped at 32
+        example: '4'
+        in: body
+        name: Thread Worker Count
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Exchange Delete From All Mailboxes
+  tmp1:
+    post:
+      description: Gets metadata about unread emails on a Microsoft Exchange email
+        account
+      parameters:
+      - description: Filter mail by subjects containing value, case insensitive.
+        example: invoice
+        in: query
+        name: Subject Filter
+        required: false
+        schema: {type: string}
+      - description: Filter mail by sender.
+        example: mike@school.edu
+        in: query
+        name: Sender
+        required: false
+        schema: {type: string}
+      - description: Retrieves all messages (could take a long time) if False, only
+          unread messages if True (Default).
+        example: ''
+        in: query
+        name: Return Unread Only
+        required: false
+        schema: {type: boolean}
+      - description: If True saves emails as read (default), if false saves emails
+          as unread.
+        example: ''
+        in: query
+        name: Save Mail as Read/Unread
+        required: false
+        schema: {type: boolean}
+      - description: Allows a user to limit the number of results to be returned.
+          Defaults to all, returns most recent first.
+        example: ''
+        in: body
+        name: Number of Emails to Return
+        required: false
+        schema: {type: string}
+      - description: CSV list of extensions that will be ignored, defaults to .png,.jpg,.jpeg,.gif
+        example: ''
+        in: query
+        name: Exclude extensions
+        required: false
+        schema: {type: string}
+      - description: Ignore exceptions parsing an email. Defaults to False
+        example: ''
+        in: query
+        name: Ignore Exceptions
+        required: false
+        schema: {type: boolean}
+      - description: Optional folder name to grab emails from. If left blank will
+          grab emails from inbox. See README for details on subfolders
+        example: ''
+        in: query
+        name: Folder Name
+        required: false
+        schema: {type: string}
+      - description: Query string to filter emails in the inbox for. Comma separated.
+        example: subject=asdf,is_read=False
+        in: query
+        name: Search Query String
+        required: false
+        schema: {type: string}
+      - description: String delimiter to split input data on the query string.
+        example: ','
+        in: query
+        name: Pair Delimiter
+        required: false
+        schema: {type: string}
+      - description: Assignment delimiter to split the query string.
+        example: '='
+        in: query
+        name: Value Delimiter
+        required: false
+        schema: {type: string}
+      - description: Use Impersonation rights to retrieve mail. If False will use
+          Delegate permissions
+        example: 'True'
+        in: query
+        name: Use Impersonate
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Exchange Get Email Metadata
+  tmp2:
+    post:
+      description: Move an Email to another Folder in Exchange.
+      parameters:
+      - description: Message ID of the email to modify
+        example: AAMkADMxZmU3ZWQ4LTMzNGItNGY3ZC1iM2UxLWM3MDQzOGVjMzlkNwBGAAAAAAAGYPwuVwMWSrFeyLv6XHMzBwCBJRT7/oiDTLpLg45RvPkCAAAAAAEMAACBJRT9/oiDTLpLg45RvPkCAAAf+jMxAAA=
+        in: query
+        name: Exchange Message ID
+        required: true
+        schema: {type: string}
+      - description: Folder to Move to
+        example: MyFolder
+        in: query
+        name: Folder
+        required: true
+        schema: {type: string}
+      - description: Use Impersonation rights to retrieve mail. If False will use
+          Delegate permissions
+        example: 'True'
+        in: query
+        name: Use Impersonate
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Exchange Move Email to Folder
+  tmp3:
+    post:
+      description: Reply to an email in Exchange with a template
+      parameters:
+      - description: Message ID of the email to reply to
+        example: AAMkADMxZmU3ZWQ4LTMzNGItNGY3ZC1iM2UxLWM3MDQzOGVjMzlkNwBGAAAAAAAGYPwuVwMWSrFeyLv6XHMzBwCBJRT7/oiDTLpLg45RvPkCAAAAAAEMAACBJRT9/oiDTLpLg45RvPkCAAAf+jMxAAA=
+        in: query
+        name: Exchange Message ID
+        required: true
+        schema: {type: string}
+      - description: Body of the reply email
+        example: Do not respond to this email.
+        in: query
+        name: Template for Body of Email
+        required: true
+        schema: {type: string}
+      - description: Include the Sender's Name at the top of the message
+        example: 'True'
+        in: query
+        name: Include Senders Name in Body
+        required: false
+        schema: {type: boolean}
+      - description: Use Impersonation rights to retrieve mail. If False will use
+          Delegate permissions
+        example: 'True'
+        in: query
+        name: Use Impersonate
+        required: false
+        schema: {type: boolean}
+      - description: Use HTML for the body, defaults to true
+        example: ''
+        in: query
+        name: Use HTML
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Exchange Reply to Email with Template
+  tmp4:
+    post:
+      description: Add a category to an email in Exchange.
+      parameters:
+      - description: Message ID of the email to modify
+        example: AAMkADMxZmU3ZWQ4LTMzNGItNGY3ZC1iM2UxLWM3MDQzOGVjMzlkNwBGAAAAAAAGYPwuVwMWSrFeyLv6XHMzBwCBJRT7/oiDTLpLg45RvPkCAAAAAAEMAACBJRT9/oiDTLpLg45RvPkCAAAf+jMxAAA=
+        in: query
+        name: Exchange Message ID
+        required: true
+        schema: {type: string}
+      - description: Categories to apply to the Email
+        example: '[MyCategory]'
+        in: query
+        name: Category List
+        required: true
+        schema: {type: string}
+      - description: Set the Email's category to only the given inputs, removing any
+          other categories
+        example: ''
+        in: query
+        name: Override Previous Categories
+        required: false
+        schema: {type: boolean}
+      - description: Ignore the input category, and clear all categories on this email
+        example: ''
+        in: query
+        name: Clear All Categories
+        required: false
+        schema: {type: boolean}
+      - description: Use Impersonation rights to retrieve mail. If False will use
+          Delegate permissions
+        example: 'True'
+        in: query
+        name: Use Impersonate
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Exchange Set Email Category
+tags:
+- {name: Communication}

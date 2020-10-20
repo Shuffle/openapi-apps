@@ -1,0 +1,254 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        ipAddress: {type: string}
+        numberOfIPsToAcquire: {type: string}
+        sourceID: {type: string}
+        success: {type: string}
+        vlanID: {type: string}
+      type: object
+    tmp1:
+      properties:
+        Attack Phase: {type: string}
+        Server: {type: string}
+        Service: {type: string}
+        Severity: {type: string}
+        Target OS: {type: string}
+        VLAN: {type: string}
+        alertLevel: {type: string}
+        allARPScanIPs: {type: string}
+        allDJDomainNames: {type: string}
+        arpScanIPStr: {type: string}
+        attackDesc: {type: string}
+        attackID: {type: string}
+        attackName: {type: string}
+        attackerHostname: {type: string}
+        attackerMac: {type: string}
+        attackerUsernames: {type: string}
+        destIP: {type: string}
+        destIpDomain: {type: string}
+        destVMName: {type: string}
+        djNames: {type: string}
+        esID: {type: string}
+        geoIPDestCityName: {type: string}
+        geoIPDestCountry2: {type: string}
+        geoIPDestCountry3: {type: string}
+        geoIPDestCountryName: {type: string}
+        geoIPDestLatititude: {type: string}
+        geoIPDestLongitude: {type: string}
+        geoIPSrcCountry2: {type: string}
+        geoIPSrcCountry3: {type: string}
+        geoIPSrcCountryName: {type: string}
+        geoIPSrcLatititude: {type: string}
+        geoIPSrcLongitude: {type: string}
+        sessionId: {type: string}
+        sid: {type: string}
+        sourceIP: {type: string}
+        sourceIPDomain: {type: string}
+        timeStamp: {type: string}
+      type: object
+    tmp2:
+      properties:
+        dhcp: {type: string}
+        host_name: {type: string}
+        ip_address: {type: string}
+        mac_address: {type: string}
+        vlan: {type: string}
+      type: object
+    tmp3:
+      properties:
+        acmId: {type: string}
+        description: {type: string}
+        id: {type: string}
+        investigate: {type: string}
+        investigeBackWardTSHrs: {type: string}
+        investigeFowardWardTSHrs: {type: string}
+        isolate: {type: string}
+        iterationTSHrs: {type: string}
+        manage: {type: string}
+        name: {type: string}
+        reportFormat: {type: string}
+        subscriberId: {type: string}
+      type: object
+    tmp4:
+      properties:
+        address: {type: string}
+        address_country: {type: string}
+        address_zip: {type: string}
+        description: {type: string}
+        domain_name: {type: string}
+        email: {type: string}
+        first_name: {type: string}
+        last_name: {type: string}
+        netbios_name: {type: string}
+        office: {type: string}
+        password: {type: string}
+        phone_number: {type: string}
+        username: {type: string}
+        web_page: {type: string}
+      type: object
+    tmp5:
+      properties:
+        status: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Attivo Networks Botsink
+  title: Attivo Networks Botsink
+  version: 1.0.0
+  x-logo: data:image/png;base64,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NQiXXHLp2rVrz/j80g8cfbjV/NgPf/S4jx576udOku4428HeeeddV175nWKhu7unSESbN2++9967J13trcUnP/6pZhDm80Wloi+d/cUjjjgMHIBNBr0xhnP+waOOyeezq26/LY7USZ86JZ1zrr/++nE2S6PRPP30013X7e/v7+3tPffccxcu3G/ixuatoGUWab1eLxaLK1euvOGH3w8aUTork3EKYFyqQTIFL7/88r33fjuAIAwwxlpjjC1fvtwoe+qpp1YqlVtv/0USWx+Lyy+//PTTTweglH744Yd7e3svuOCCew5ZFUfIZDKnf37JxL38Y4/9+dZbb/U873///KdSikqltmjRopNP/swtt9w8sS+cw3Gcvffe+5vfvPQTnzjx+9///mGHHcKAcZIXQgghwma0dOmZtVrl57+8k4jGrc+ZTEop5XneXXfdeeCB737HO97xtxvydV3XGFOpVA5/75FJH0bDC3b7RGlrbaVSmTp1KhjAkE6nHcfRenizzjkvFos9Pd3JspNEA8a9K5NNK6VW3XY7gK6uLs55Op3O5nLXXHNNMmiMHn+G4V/+5SurV//lnnvuklIopTKZ1L333k1ERx551KTdIaItW7YAOO6449LpdLPZnDh14jgmYmeffY4x5s5f3ZEcxhu3PhPB9/1KpQLgiScef53CfENo5YweHBycN2/ezJkzOUcURaPdHhenli5njH3kIx9Z9MHFiz64ePny5Yyx8Qm4bNjGY4xNeuaIc/6Tn/xEuo4x5rOf/WxPT49W6qGHHjLGkMVEcc+ZM+e6665Lrh2HM0aFQqFer0+ftsekfWGMaa2XLVv24IMPlkqlxFAaV0Yp1Ww2QezQQw8lMo7jTNSvjOHggw/u7e195zvfBWBHCvitoGUUSik9z1uxYsXg4OBxxx2/k9Qga8AYO/zww/fff//9999/4cKFb/Rd1tCmTZtqtdoPb7ixVqu9733vSybN9OnT+/v7GZ8kOF6t1OfPnw/AWmusSjiulGta7zAZiXOulCoWiz//xU+5YBOHhe+7Pd1TNm168eabb3a9yaOAYRifdtpp3/3ud+fNm3fCCR9fu3btG+3sa6J1eaRWGdKuL+/59a8cl33qk6dkMhmlQyKM07jEyHHF2ed86aprrrzqmiuXLFky8awQGJjgagdHVYjZPee+bfqMmffce9+s2bOlxwdK/ed9+SuOKz78T/9oyXIxXqDW2pUrhw821GtBo9HknOcL2VqtOqF6C6ARBMWe/OatG5965i9BMxwx+/jYCgFeq1f/7eKvz5w587JLL0++H2N22iRwUS6XwzC86qqrcrnceeedNzRUfm1pvhG0ciFNhm2iEZONWvL9xDnBOfd9X2urJ7H+hzG6IZs4m4UQZ555JhH5vn/Fld8C8JnPnCyEiKJo2bJlk9p7pfLgmjVrNmzYEIZhsdidzWYfeOABKeUJJx4/sXCSsOQ4zi233FIoFFavXj2xQOI9MMYccuhBYRiuWbOmVqth5Gj4KLLZ7IUXXphOp2fMmJbP5wuFQnd3cUddfnNoXaSCsWaz6XnS9/37779/qDTQCGrWapowkzhnjUbj5BGsWLEilUqF4XYuYGsx+vskEy1SAEcccUQUNxtBzXVdrfUpp5wipSyXy5lMamJhAPfdd9+mTZtWrLhgyZLTDjjgwA996Ngf//jmBQsWnHLKKeNKxnGcOAeSPf7g4OC3v/3tON7OPkpGSTrtC8GiMP7VXbfncpkzzjijVCqNU5kbNmyw1p500kkHH3zI5s2bX3755TCcpDtvBS2jsK+vrzImqfL+++8Pw8BaC1i2/c90DQ4OlcvlOI63bNmyZcuWOI4TF+jYMsmvLWzbti3JvRz3Lq11o9FYu3ZttVr1POk4DmDXr19fr9d3lDsjpXj44Yfe/e53V6vVnu5eY8zRRx994YVfc93xlXPOoyiqVCpRFOXz+csuu2zbtm3HH398HMdKqbHNe/Hllyq1KjgLmuEJHz/xpZdeuummm8a1dubMmeeff35fX19XV9fmzZsfeeQPvj+5p+lNo5WH08IwHts+a20QBK6b+Cf5mJIgQhRFqdSr2e/jVkutreNw0HAS0bi7Iymm3BglpaxUEi+B4+3ApgBQq1U4d9LpDFlwDmsxslm148bx8BF/w12Pa60dx4lj7brO2EaOXsdx7DgOESWbGa11s9nM5XIjNWNs5ZVKrVDITezOW8SuOl/YwU7wN+oj7eCvhQ6FbY8OhW2PDoVtjw6FbY8OhW2PDoVtjw6FbY8OhW2PDoVtjw6FbY8OhW2PDoVtjw6FbY8OhW2PDoVtjw6FbY8OhW2PDoVtjw6FbY8OhW2PDoVtjw6FbY8OhW2PDoVtjw6FbY8OhW2P/wc4ysWZqXbn5QAAAABJRU5ErkJggg==
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Based on the given IP address, create the specified number of deception
+        IP addresses in the respective VLAN if not already present.
+      parameters:
+      - description: IP address to base the deception off of
+        example: 1.1.1.1
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      - description: Number of deception IPs to acquire
+        example: '2'
+        in: body
+        name: Number of deception IPs to acquire
+        required: false
+        schema: {type: string}
+      - description: VLAN ID to deploy deceptions in
+        example: '1'
+        in: body
+        name: VLAN ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Attivo Networks Botsink Deploy Decoy
+  tmp1:
+    post:
+      description: Retrieve Attivo events.
+      parameters:
+      - description: 'The maximum severity to retrieve. Acceptable severity values
+          are: very high, high, medium, low, very low, system activity'
+        example: very high
+        in: query
+        name: Severity End
+        required: false
+        schema: {type: string}
+      - description: 'The minimum severity to retrieve. Acceptable severity values
+          are: very high, high, medium, low, very low, system activity'
+        example: low
+        in: query
+        name: Severity Start
+        required: true
+        schema: {type: string}
+      - description: Only retrieve events that occurred before this time.  Pass in
+          a datetime field or you can use a relative time period.  For example, now-5h
+          indicates the previous five hours. Valid units are; years(y), months(M),
+          weeks(w), days(d), hours(h), minutes(m), seconds(s).
+        example: '2019-12-24T20:37:34+00:00'
+        in: query
+        name: Before
+        required: false
+        schema: {type: string}
+      - description: Only retrieve events that occurred after this time.  Pass in
+          a datetime field or you can use a relative time period.  For example, now-5h
+          indicates the previous five hours. Valid units are; years(y), months(M),
+          weeks(w), days(d), hours(h), minutes(m), seconds(s).
+        example: now-1M
+        in: query
+        name: After
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Attivo Networks Botsink Get Events
+  tmp2:
+    post:
+      description: Get the host info for an Attivo deception host given the hostname
+        or IP.
+      parameters:
+      - description: The hostname to search for.
+        example: my-host
+        in: query
+        name: Hostname
+        required: false
+        schema: {type: string}
+      - description: The IP address to search for.
+        example: 192.168.1.1
+        in: query
+        name: IP Address
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Attivo Networks Botsink Get Host
+  tmp3:
+    post:
+      description: Retrieve all the configured playbooks in Attivo.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Attivo Networks Botsink Get Playbooks
+  tmp4:
+    post:
+      description: Get the user info for an Attivo deception user given the username.
+      parameters:
+      - description: Username to search for.
+        example: ''
+        in: query
+        name: Username
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Attivo Networks Botsink Get User
+  tmp5:
+    post:
+      description: Run a playbook with the given attacker IP
+      parameters:
+      - description: Attacker IP to pass into the playbook
+        example: 2.2.2.2
+        in: query
+        name: Attacker IP
+        required: true
+        schema: {type: string}
+      - description: The ID of the playbook to run
+        example: '1'
+        in: query
+        name: Playbook ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Attivo Networks Botsink Run Playbook
+tags:
+- {name: Network Security & Management}

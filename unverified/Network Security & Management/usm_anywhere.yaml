@@ -1,0 +1,613 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        alarm_destination_assset_ids: {type: string}
+        alarm_destination_cities: {type: string}
+        alarm_destination_countries: {type: string}
+        alarm_destination_latitudes: {type: string}
+        alarm_destination_longitudes: {type: string}
+        alarm_destination_names: {type: string}
+        alarm_destination_organisations: {type: string}
+        alarm_destinations: {type: string}
+        alarm_events_count: {type: string}
+        alarm_labels: {type: string}
+        alarm_sensor_sources: {type: string}
+        alarm_source_asset_ids: {type: string}
+        alarm_source_cities: {type: string}
+        alarm_source_countries: {type: string}
+        alarm_source_latitudes: {type: string}
+        alarm_source_longitudes: {type: string}
+        alarm_source_names: {type: string}
+        alarm_source_organisations: {type: string}
+        alarm_sources: {type: string}
+        app_id: {type: string}
+        app_type: {type: string}
+        destination_address: {type: string}
+        destination_asset_id: {type: string}
+        destination_canonical: {type: string}
+        destination_name: {type: string}
+        destination_organisation: {type: string}
+        destination_username: {type: string}
+        destinations__links_asset_href: {type: string}
+        destinations_address: {type: string}
+        destinations_asset_id: {type: string}
+        destinations_canonical: {type: string}
+        destinations_country: {type: string}
+        destinations_event_count: {type: string}
+        destinations_fqdn: {type: string}
+        destinations_hostname: {type: string}
+        destinations_name: {type: string}
+        destinations_organisation: {type: string}
+        event_category: {type: string}
+        event_description: {type: string}
+        event_message_uuid: {type: string}
+        event_outcome: {type: string}
+        event_severity: {type: string}
+        event_subcategory: {type: string}
+        event_type: {type: string}
+        events: {type: string}
+        has_alarm: {type: string}
+        log: {type: string}
+        needs_enrichment: {type: string}
+        packet_data: {type: string}
+        packet_type: {type: string}
+        plugin_device: {type: string}
+        priority: {type: string}
+        priority_label: {type: string}
+        registry_path: {type: string}
+        registry_value: {type: string}
+        request_url: {type: string}
+        rule_attack_id: {type: string}
+        rule_attack_tactic: {type: string}
+        rule_attack_technique: {type: string}
+        rule_dictionary: {type: string}
+        rule_id: {type: string}
+        rule_intent: {type: string}
+        rule_method: {type: string}
+        rule_name: {type: string}
+        rule_strategy: {type: string}
+        sensor_uuid: {type: string}
+        source_asset_id: {type: string}
+        source_canonical: {type: string}
+        source_name: {type: string}
+        source_ntdomain: {type: string}
+        source_organisation: {type: string}
+        source_process: {type: string}
+        source_process_commandline: {type: string}
+        source_process_parent: {type: string}
+        source_process_parent_commandline: {type: string}
+        source_username: {type: string}
+        sources_address: {type: string}
+        sources_asset_id: {type: string}
+        sources_canonical: {type: string}
+        sources_country: {type: string}
+        sources_event_count: {type: string}
+        sources_fqdn: {type: string}
+        sources_hostname: {type: string}
+        sources_name: {type: string}
+        sources_organisation: {type: string}
+        suppress_rule_id: {type: string}
+        suppress_rule_name: {type: string}
+        suppressed: {type: string}
+        timestamp_occured: {type: string}
+        timestamp_occured_iso8601: {type: string}
+        timestamp_received: {type: string}
+        timestamp_received_iso8601: {type: string}
+        transient: {type: string}
+        uuid: {type: string}
+      type: object
+    tmp2:
+      properties:
+        alarm_destination_assset_ids: {type: string}
+        alarm_destination_cities: {type: string}
+        alarm_destination_countries: {type: string}
+        alarm_destination_latitudes: {type: string}
+        alarm_destination_longitudes: {type: string}
+        alarm_destination_names: {type: string}
+        alarm_destination_organisations: {type: string}
+        alarm_destinations: {type: string}
+        alarm_events_count: {type: string}
+        alarm_labels: {type: string}
+        alarm_sensor_sources: {type: string}
+        alarm_source_asset_ids: {type: string}
+        alarm_source_cities: {type: string}
+        alarm_source_countries: {type: string}
+        alarm_source_latitudes: {type: string}
+        alarm_source_longitudes: {type: string}
+        alarm_source_names: {type: string}
+        alarm_source_organisations: {type: string}
+        alarm_sources: {type: string}
+        app_id: {type: string}
+        app_type: {type: string}
+        destination_address: {type: string}
+        destination_asset_id: {type: string}
+        destination_canonical: {type: string}
+        destination_name: {type: string}
+        destination_organisation: {type: string}
+        destination_username: {type: string}
+        event_category: {type: string}
+        event_description: {type: string}
+        event_message_uuid: {type: string}
+        event_outcome: {type: string}
+        event_severity: {type: string}
+        event_subcategory: {type: string}
+        event_type: {type: string}
+        events: {type: string}
+        has_alarm: {type: string}
+        log: {type: string}
+        needs_enrichment: {type: string}
+        packet_data: {type: string}
+        packet_type: {type: string}
+        plugin_device: {type: string}
+        priority: {type: string}
+        priority_label: {type: string}
+        registry_path: {type: string}
+        registry_value: {type: string}
+        request_url: {type: string}
+        rule_attack_id: {type: string}
+        rule_attack_tactic: {type: string}
+        rule_attack_technique: {type: string}
+        rule_dictionary: {type: string}
+        rule_id: {type: string}
+        rule_intent: {type: string}
+        rule_method: {type: string}
+        rule_name: {type: string}
+        rule_strategy: {type: string}
+        sensor_uuid: {type: string}
+        source_asset_id: {type: string}
+        source_canonical: {type: string}
+        source_name: {type: string}
+        source_ntdomain: {type: string}
+        source_organisation: {type: string}
+        source_process: {type: string}
+        source_process_commandline: {type: string}
+        source_process_parent: {type: string}
+        source_process_parent_commandline: {type: string}
+        source_username: {type: string}
+        suppress_rule_id: {type: string}
+        suppress_rule_name: {type: string}
+        suppressed: {type: string}
+        timestamp_occured: {type: string}
+        timestamp_occured_iso8601: {type: string}
+        timestamp_received: {type: string}
+        timestamp_received_iso8601: {type: string}
+        transient: {type: string}
+        uuid: {type: string}
+      type: object
+    tmp3:
+      properties:
+        access_control_outcome: {type: string}
+        application_protocol: {type: string}
+        audit_reason: {type: string}
+        authentication_type: {type: string}
+        bytes_in: {type: string}
+        bytes_out: {type: string}
+        customfield_0: {type: string}
+        customfield_9: {type: string}
+        customheader_9: {type: string}
+        destination_address: {type: string}
+        destination_asset_id: {type: string}
+        destination_canonical: {type: string}
+        destination_city: {type: string}
+        destination_country: {type: string}
+        destination_fqdn: {type: string}
+        destination_hostname: {type: string}
+        destination_latitude: {type: string}
+        destination_longitude: {type: string}
+        destination_name: {type: string}
+        destination_organisation: {type: string}
+        destination_port: {type: string}
+        destination_port_label: {type: string}
+        destination_region: {type: string}
+        destination_registered_country: {type: string}
+        device_direction: {type: string}
+        device_event_category: {type: string}
+        device_external_id: {type: string}
+        duration: {type: string}
+        event_action: {type: string}
+        event_activity: {type: string}
+        event_category: {type: string}
+        event_description: {type: string}
+        event_outcome: {type: string}
+        event_receipt_time: {type: string}
+        event_severity: {type: string}
+        event_subcategory: {type: string}
+        event_type: {type: string}
+        event_violation: {type: string}
+        group_policy: {type: string}
+        has_alarm: {type: string}
+        log: {type: string}
+        needs_enrichment: {type: string}
+        packet_payload: {type: string}
+        packet_type: {type: string}
+        packets_received: {type: string}
+        packets_sent: {type: string}
+        plugin: {type: string}
+        plugin_device: {type: string}
+        plugin_device_type: {type: string}
+        plugin_enrichment_script: {type: string}
+        plugin_rule: {type: string}
+        plugin_version: {type: string}
+        received_from: {type: string}
+        rep_dev_canonical: {type: string}
+        rep_device_address: {type: string}
+        rep_device_asset_id: {type: string}
+        rep_device_fqdn: {type: string}
+        rep_device_hostname: {type: string}
+        rep_device_inbound_interface: {type: string}
+        rep_device_outbound_interface: {type: string}
+        rep_device_rule_id: {type: string}
+        security_group_name: {type: string}
+        source_address: {type: string}
+        source_asset_id: {type: string}
+        source_canonical: {type: string}
+        source_city: {type: string}
+        source_country: {type: string}
+        source_fqdn: {type: string}
+        source_hostname: {type: string}
+        source_latitude: {type: string}
+        source_longitude: {type: string}
+        source_name: {type: string}
+        source_ntdomain: {type: string}
+        source_organisation: {type: string}
+        source_port: {type: string}
+        source_port_label: {type: string}
+        source_process: {type: string}
+        source_process_id: {type: string}
+        source_region: {type: string}
+        source_registered_country: {type: string}
+        source_username: {type: string}
+        source_zone: {type: string}
+        suppressed: {type: string}
+        tag: {type: string}
+        time_zone: {type: string}
+        timestamp_occured_iso8601: {type: string}
+        timestamp_received: {type: string}
+        timestamp_received_iso8601: {type: string}
+        transient: {type: string}
+        transport_protocol: {type: string}
+        used_hint: {type: string}
+        uuid: {type: string}
+        was_fuzzied: {type: string}
+        was_guessed: {type: string}
+      type: object
+    tmp4:
+      properties:
+        access_control_outcome: {type: string}
+        application_protocol: {type: string}
+        audit_reason: {type: string}
+        authentication_mode: {type: string}
+        authentication_package_name: {type: string}
+        authentication_type: {type: string}
+        bytes_in: {type: string}
+        bytes_out: {type: string}
+        customfield_0: {type: string}
+        customfield_19: {type: string}
+        customheader_19: {type: string}
+        destination_address: {type: string}
+        destination_asset_id: {type: string}
+        destination_canonical: {type: string}
+        destination_city: {type: string}
+        destination_country: {type: string}
+        destination_fqdn: {type: string}
+        destination_hostname: {type: string}
+        destination_latitude: {type: string}
+        destination_longitude: {type: string}
+        destination_name: {type: string}
+        destination_organisation: {type: string}
+        destination_port: {type: string}
+        destination_port_label: {type: string}
+        destination_region: {type: string}
+        destination_registered_country: {type: string}
+        destination_username: {type: string}
+        device_direction: {type: string}
+        device_event_category: {type: string}
+        device_external_id: {type: string}
+        dns_rrname: {type: string}
+        error_code: {type: string}
+        event_category: {type: string}
+        event_description: {type: string}
+        event_outcome: {type: string}
+        event_receipt_time: {type: string}
+        event_severity: {type: string}
+        event_subcategory: {type: string}
+        event_type: {type: string}
+        external_id: {type: string}
+        has_alarm: {type: string}
+        log: {type: string}
+        needs_enrichment: {type: string}
+        packet_payload: {type: string}
+        packet_type: {type: string}
+        packets_received: {type: string}
+        packets_sent: {type: string}
+        plugin: {type: string}
+        plugin_device: {type: string}
+        plugin_device_type: {type: string}
+        plugin_enrichment_script: {type: string}
+        plugin_rule: {type: string}
+        plugin_version: {type: string}
+        pre_authentication_type: {type: string}
+        received_from: {type: string}
+        rep_dev_canonical: {type: string}
+        rep_device_address: {type: string}
+        rep_device_asset_id: {type: string}
+        rep_device_fqdn: {type: string}
+        rep_device_hostname: {type: string}
+        rep_device_inbound_interface: {type: string}
+        rep_device_outbound_interface: {type: string}
+        rep_device_rule_id: {type: string}
+        security_group_id: {type: string}
+        security_group_name: {type: string}
+        source_address: {type: string}
+        source_address_6: {type: string}
+        source_asset_id: {type: string}
+        source_canonical: {type: string}
+        source_city: {type: string}
+        source_country: {type: string}
+        source_fqdn: {type: string}
+        source_hostname: {type: string}
+        source_latitude: {type: string}
+        source_longitude: {type: string}
+        source_name: {type: string}
+        source_ntdomain: {type: string}
+        source_organisation: {type: string}
+        source_port: {type: string}
+        source_port_label: {type: string}
+        source_process: {type: string}
+        source_process_id: {type: string}
+        source_region: {type: string}
+        source_registered_country: {type: string}
+        source_username: {type: string}
+        suppressed: {type: string}
+        tag: {type: string}
+        ticket_encryption_type: {type: string}
+        time_zone: {type: string}
+        timestamp_occured_iso8601: {type: string}
+        timestamp_received: {type: string}
+        timestamp_received_iso8601: {type: string}
+        transient: {type: string}
+        transport_protocol: {type: string}
+        used_hint: {type: string}
+        user_resource: {type: string}
+        uuid: {type: string}
+        was_fuzzied: {type: string}
+        was_guessed: {type: string}
+      type: object
+    tmp5:
+      properties:
+        alarm_labels: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Alienvault USM Anywhere
+  title: Alienvault USM Anywhere
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Adds or removes a label id to an alarm
+      parameters:
+      - description: The alarm ID.
+        example: ''
+        in: query
+        name: Alarm ID
+        required: true
+        schema: {type: string}
+      - description: The label ID to add to the alarm.
+        example: ''
+        in: query
+        name: Label ID
+        required: true
+        schema: {type: string}
+      - description: 'True: Adds the label ID; False: Removes the label ID'
+        example: ''
+        in: query
+        name: Add Label
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Alienvault USM Anywhere Add or Remove Label ID
+  tmp1:
+    post:
+      description: Get a single alarm
+      parameters:
+      - description: The alarm ID.
+        example: ''
+        in: query
+        name: Alarm ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Alienvault USM Anywhere Get Alarm
+  tmp2:
+    post:
+      description: Get alarms
+      parameters:
+      - description: 'The sort parameter specifies parameter and direction that the
+          results should be sorted by. Options: timestamp_occured,asc or timestamp_occured,desc'
+        example: timestamp_occured,asc
+        in: query
+        name: Sort
+        required: false
+        schema: {type: string}
+      - description: The status of the alarm. Excepts CSV for multiple statuses.
+        example: open
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: The priority of the alarm. Excepts CSV for multiple priorities.
+        example: medium
+        in: query
+        name: Priority Label
+        required: false
+        schema: {type: string}
+      - description: Filtered results will include alarms that occurred after this
+          timestamp. Unix milliseconds. Minutes ago will override this parameter
+        example: '1517933139670'
+        in: body
+        name: Timestamp Occurred GTE
+        required: false
+        schema: {type: string}
+      - description: The intent of the rule that triggered the alarm.
+        example: Environmental Awareness
+        in: query
+        name: Rule Intent
+        required: false
+        schema: {type: string}
+      - description: Limits the number of alarms returned, defaulted to 1000.
+        example: '100'
+        in: body
+        name: Alarm Limit
+        required: false
+        schema: {type: string}
+      - description: Filter results to only include alarms that occurred X number
+          of minutes ago. This will override Timestamp Occurred GTE.
+        example: '60'
+        in: body
+        name: Minutes Ago
+        required: false
+        schema: {type: string}
+      - description: Filtered results will include alarms that occurred before this
+          timestamp. Unix milliseconds.
+        example: '1517933139670'
+        in: body
+        name: Timestamp Occurred LTE
+        required: false
+        schema: {type: string}
+      - description: A boolean to filter alarms by the suppressed flag.
+        example: ''
+        in: query
+        name: Suppressed
+        required: false
+        schema: {type: boolean}
+      - description: The method of the rule that triggered the alarm. Excepts CSV
+          for multiple rule methods.
+        example: AWS EC2 Security Group Modified
+        in: query
+        name: List of Rule Methods
+        required: false
+        schema: {type: string}
+      - description: The strategy of the rule that triggered the alarm.
+        example: Network Access Control Modification
+        in: query
+        name: Rule Strategy
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Alienvault USM Anywhere Get Alarms
+  tmp3:
+    post:
+      description: Get a single USM event
+      parameters:
+      - description: The UUID of the event to gather data on.
+        example: ''
+        in: query
+        name: Event ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Alienvault USM Anywhere Get Event
+  tmp4:
+    post:
+      description: Get a page of events
+      parameters:
+      - description: 'The sort parameter specifies parameter and direction that the
+          results should be sorted by. Options: timestamp_occured,asc or timestamp_occured,desc'
+        example: timestamp_occured,asc
+        in: query
+        name: Sort
+        required: false
+        schema: {type: string}
+      - description: The username of the person who triggered the event
+        example: user@email.com
+        in: query
+        name: Source Username
+        required: false
+        schema: {type: string}
+      - description: Filtered results will include events that occurred after this
+          timestamp. This is a UNIX timestamp
+        example: '1517933139670'
+        in: query
+        name: Timestamp Occurred Greater than or Equal to
+        required: false
+        schema: {type: string}
+      - description: Filtered results will include events that occurred before this
+          timestamp.  This is a UNIX timestamp
+        example: '1517933139670'
+        in: query
+        name: Timestamp Occurred Less than or Equal to
+        required: false
+        schema: {type: string}
+      - description: Limits the number of events returned, defaulted to 1000.
+        example: '100'
+        in: body
+        name: Event Limit
+        required: false
+        schema: {type: string}
+      - description: The uuid of the sensor.
+        example: 308ba880-2518-44bb-9ada-07b158d11713
+        in: query
+        name: Sensor UUID
+        required: false
+        schema: {type: string}
+      - description: The account name.
+        example: account
+        in: query
+        name: Account Name
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Alienvault USM Anywhere Get Events
+  tmp5:
+    post:
+      description: Gets all alarm labels
+      parameters:
+      - description: The alarm ID.
+        example: ''
+        in: query
+        name: Alarm ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Alienvault USM Anywhere Get Labels
+tags:
+- {name: Network Security & Management}

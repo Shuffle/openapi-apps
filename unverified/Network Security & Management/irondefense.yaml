@@ -1,0 +1,670 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        cognitive_system_score: {type: string}
+        community_comments: {type: string}
+        correlation_participation: {type: string}
+        correlations: {type: string}
+        dome_notifications: {type: string}
+      type: object
+    tmp10:
+      properties:
+        success: {type: string}
+      type: object
+    tmp2:
+      properties:
+        aggregation_criteria: {type: string}
+        alert_action: {type: string}
+        analyst_expectation: {type: string}
+        analyst_severity: {type: string}
+        category: {type: string}
+        created: {type: string}
+        event_count: {type: string}
+        first_event_created: {type: string}
+        id: {type: string}
+        last_event_created: {type: string}
+        raw_data_formats: {type: string}
+        severity: {type: string}
+        status: {type: string}
+        sub_category: {type: string}
+        updated: {type: string}
+        vue_url: {type: string}
+      type: object
+    tmp3:
+      properties:
+        aggregation_criteria: {type: string}
+        analyst_expectation: {type: string}
+        analyst_severity: {type: string}
+        category: {type: string}
+        created: {type: string}
+        event_count: {type: string}
+        first_event_created: {type: string}
+        id: {type: string}
+        last_event_created: {type: string}
+        raw_data_formats: {type: string}
+        severity: {type: string}
+        status: {type: string}
+        sub_category: {type: string}
+        updated: {type: string}
+        vue_url: {type: string}
+      type: object
+    tmp4:
+      properties:
+        alert_id: {type: string}
+        app_domains: {type: string}
+        bytes_in: {type: string}
+        bytes_out: {type: string}
+        category: {type: string}
+        confidence: {type: string}
+        context: {type: string}
+        created: {type: string}
+        dst_entity_attribute: {type: string}
+        dst_entity_attribute_type: {type: string}
+        dst_ip: {type: string}
+        dst_port: {type: string}
+        end_time: {type: string}
+        id: {type: string}
+        iron_dome_shared_time: {type: string}
+        is_blacklisted: {type: string}
+        is_whitelisted: {type: string}
+        primary_app_protocol: {type: string}
+        raw_data_formats: {type: string}
+        secondary_app_protocol: {type: string}
+        severity: {type: string}
+        src_entity_attribute: {type: string}
+        src_entity_attribute_type: {type: string}
+        src_ip: {type: string}
+        start_time: {type: string}
+        sub_category: {type: string}
+        total_bytes: {type: string}
+        updated: {type: string}
+        url: {type: string}
+        vue_url: {type: string}
+      type: object
+    tmp5:
+      properties:
+        alert_id: {type: string}
+        app_domains: {type: string}
+        bytes_in: {type: string}
+        bytes_out: {type: string}
+        category: {type: string}
+        confidence: {type: string}
+        created: {type: string}
+        dst_entity_attribute: {type: string}
+        dst_entity_attribute_type: {type: string}
+        dst_ip: {type: string}
+        dst_port: {type: string}
+        end_time: {type: string}
+        event_action: {type: string}
+        id: {type: string}
+        iron_dome_shared_time: {type: string}
+        is_blacklisted: {type: string}
+        is_whitelisted: {type: string}
+        primary_app_protocol: {type: string}
+        raw_data_formats: {type: string}
+        secondary_app_protocol: {type: string}
+        severity: {type: string}
+        src_entity_attribute: {type: string}
+        src_entity_attribute_type: {type: string}
+        src_ip: {type: string}
+        start_time: {type: string}
+        sub_category: {type: string}
+        total_bytes: {type: string}
+        updated: {type: string}
+        url: {type: string}
+        vue_url: {type: string}
+      type: object
+    tmp6:
+      properties:
+        alert_id: {type: string}
+        app_domains: {type: string}
+        bytes_in: {type: string}
+        bytes_out: {type: string}
+        category: {type: string}
+        confidence: {type: string}
+        created: {type: string}
+        dst_entity_attribute: {type: string}
+        dst_entity_attribute_type: {type: string}
+        dst_ip: {type: string}
+        dst_port: {type: string}
+        end_time: {type: string}
+        id: {type: string}
+        iron_dome_shared_time: {type: string}
+        is_blacklisted: {type: string}
+        is_whitelisted: {type: string}
+        primary_app_protocol: {type: string}
+        raw_data_formats: {type: string}
+        secondary_app_protocol: {type: string}
+        severity: {type: string}
+        src_entity_attribute: {type: string}
+        src_entity_attribute_type: {type: string}
+        src_ip: {type: string}
+        start_time: {type: string}
+        sub_category: {type: string}
+        total_bytes: {type: string}
+        updated: {type: string}
+        url: {type: string}
+        vue_url: {type: string}
+      type: object
+    tmp7:
+      properties:
+        alert_ids: {type: string}
+        category: {type: string}
+        created: {type: string}
+        details: {type: string}
+        dome_tags: {type: string}
+        id: {type: string}
+      type: object
+    tmp8:
+      properties:
+        success: {type: string}
+      type: object
+    tmp9:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Ironnet Irondefense
+  title: Ironnet Irondefense
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Adds a comment to an Alert within IronDefense
+      parameters:
+      - description: The ID of the Alert
+        example: 1111aaaa-1a1a-1a1a-11aa-1a1a1a1a1a1a
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      - description: Text of comment
+        example: Any String
+        in: query
+        name: Comment
+        required: true
+        schema: {type: string}
+      - description: Shares the provided comment with IronDome, defaults to True
+        example: ''
+        in: query
+        name: Share Comment With IronDome
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: IronNet IronDefense Comment On Alert
+  tmp1:
+    post:
+      description: ' Pull IronDome information for an Alert'
+      parameters:
+      - description: ID of an Alert to retrieve IronDome information about
+        example: 1111aaaa-1a1a-1a1a-11aa-1a1a1a1a1a1a, 2222aaaa-1a1a-1a1a-11aa-1a1a1a1a1a1a
+        in: query
+        name: Alert ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Get Alert IronDome Information
+  tmp10:
+    post:
+      description: Provides a rating for an Alert within IronDefense
+      parameters:
+      - description: Alert ID
+        example: 451fd5638a3f4efaa64523dd1e7475ec
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      - description: 'Alert Severity. Options: SEVERITY_NONE, SEVERITY_UNDECIDED,
+          SEVERITY_BENIGN, SEVERITY_SUSPICIOUS, SEVERITY_MALICIOUS'
+        example: SEVERITY_SUSPICIOUS
+        in: query
+        name: Analyst Severity
+        required: true
+        schema: {type: string}
+      - description: 'Analyst Expectation. Options: EXP_NONE, EXP_UNKNOWN, EXP_EXPECTED,
+          EXP_UNEXPECTED'
+        example: EXP_UNEXPECTED
+        in: query
+        name: Analyst Expectation
+        required: true
+        schema: {type: string}
+      - description: Comments for any additional details when rating the alert
+        example: ''
+        in: query
+        name: Comment
+        required: true
+        schema: {type: string}
+      - description: Should this comment be shared with IronDome, defaults to True
+        example: ''
+        in: query
+        name: Share Comment With IronDome
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: IronNet IronDefense Set Analyst Rating
+  tmp2:
+    post:
+      description: Pulls Alert Notifications from IronDefense. By default, only "ANA_ALERT_CREATED"
+        actions are retrieved.
+      parameters:
+      - description: Alert Notification limit per request.
+        example: '20'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Alert Notification categories to exclude.
+        example: C2, RECON
+        in: query
+        name: Exclude categories
+        required: false
+        schema: {type: string}
+      - description: Alert Notification subcategories to exclude.
+        example: DNS_TUNNELING, PERIODIC_BEACONING
+        in: query
+        name: Exclude subcategories
+        required: false
+        schema: {type: string}
+      - description: Alert Notification with severity under the threshold will be
+          exclude.
+        example: '500'
+        in: body
+        name: Severity threshold
+        required: false
+        schema: {type: string}
+      - description: A custom list of Alert Notifications Actions to include. If empty,
+          ANA_ALERT_CREATED will be included by default.
+        example: ANA_ALERT_CREATED, ANA_ALERT_UPDATED, ANA_WORKFLOW_CREATED, ANA_WORKFLOW_UPDATED,
+          ANA_ALERT_DELETED, ANA_NOTE_CREATED, ANA_NOTE_UPDATED, ANA_ALERT_EVENT_ADDED
+        in: query
+        name: Custom actions
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Get Alert Notifications
+  tmp3:
+    post:
+      description: Pulls Alerts from IronDefense
+      parameters:
+      - description: List of Alert ID to filter by
+        example: 1111aaaa-1a1a-1a1a-11aa-1a1a1a1a1a1a, 2222aaaa-1a1a-1a1a-11aa-1a1a1a1a1a1a
+        in: query
+        name: Alert ID
+        required: false
+        schema: {type: string}
+      - description: List of Alert categories to filter by
+        example: C2, RECON
+        in: query
+        name: Category
+        required: false
+        schema: {type: string}
+      - description: List of Alert subcategories to filter by
+        example: DNS_TUNNELING, PERIODIC_BEACONING
+        in: query
+        name: Subcategory
+        required: false
+        schema: {type: string}
+      - description: List of Alert status to filter by
+        example: awaiting review, under review
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: List of Alert Analyst Severities to filter by
+        example: benign, suspicious
+        in: query
+        name: Analyst Severity
+        required: false
+        schema: {type: string}
+      - description: List of Alert Analyst Expectations to filter by
+        example: unknown, expected
+        in: query
+        name: Analyst Expectation
+        required: false
+        schema: {type: string}
+      - description: Minimum Alert Severity to filter by
+        example: '900'
+        in: body
+        name: Min Severity
+        required: false
+        schema: {type: string}
+      - description: Maximum Alert Severity to filter by
+        example: '900'
+        in: body
+        name: Max Severity
+        required: false
+        schema: {type: string}
+      - description: Minimum Alert created date to filter by in RFC 3339 format
+        example: '2019-10-29T08:53:00Z'
+        in: query
+        name: Min Created Date
+        required: false
+        schema: {type: string}
+      - description: Maximum Alert created date to filter by in RFC 3339 format
+        example: '2019-10-29T08:53:00Z'
+        in: query
+        name: Max Created Date
+        required: false
+        schema: {type: string}
+      - description: Minimum Alert updated date to filter by in RFC 3339 format
+        example: '2019-10-29T08:53:00Z'
+        in: query
+        name: Min Updated Date
+        required: false
+        schema: {type: string}
+      - description: Maximum Alert updated date to filter by in RFC 3339 format
+        example: '2019-10-29T08:53:00Z'
+        in: query
+        name: Max Updated Date
+        required: false
+        schema: {type: string}
+      - description: Minimum date for first Event associated with an Alert to filter
+          by in RFC 3339 format
+        example: '2019-10-29T08:53:00Z'
+        in: query
+        name: Min First Event Created Date
+        required: false
+        schema: {type: string}
+      - description: Maximum created date for first Event associated with an Alert
+          to filter by in RFC 3339 format
+        example: '2019-10-29T08:53:00Z'
+        in: query
+        name: Max First Event Created Date
+        required: false
+        schema: {type: string}
+      - description: Minimum created date for last Event associated with an Alert
+          to filter by in RFC 3339 format
+        example: '2019-10-29T08:53:00Z'
+        in: query
+        name: Min Last Event Created Date
+        required: false
+        schema: {type: string}
+      - description: Maximum created date for last Event associated with an Alert
+          to filter by in RFC 3339 format
+        example: '2019-10-29T08:53:00Z'
+        in: query
+        name: Max Last Event Created Date
+        required: false
+        schema: {type: string}
+      - description: Minimum start time for first Event associated with an Alert to
+          filter by in RFC 3339 format
+        example: '2019-10-29T08:53:00Z'
+        in: query
+        name: Min First Event Start Time
+        required: false
+        schema: {type: string}
+      - description: Maximum start time for first Event associated with an Alert to
+          filter by in RFC 3339 format
+        example: '2019-10-29T08:53:00Z'
+        in: query
+        name: Max First Event Start Time
+        required: false
+        schema: {type: string}
+      - description: Minimum end time for last Event associated with an Alert to filter
+          by in RFC 3339 format
+        example: '2019-10-29T08:53:00Z'
+        in: query
+        name: Min Last Event End Time
+        required: false
+        schema: {type: string}
+      - description: Maximum end time for last Event associated with an Alert to filter
+          by in RFC 3339 format
+        example: '2019-10-29T08:53:00Z'
+        in: query
+        name: Max Last Event End Time
+        required: false
+        schema: {type: string}
+      - description: List of analytic versions to filter by
+        example: 1, 2
+        in: body
+        name: Analytic Version
+        required: false
+        schema: {type: string}
+      - description: Maximum number of Alerts to return
+        example: '20'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: The number of Alerts to skip - used for paging the results
+        example: '20'
+        in: body
+        name: Offset
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Get Alerts
+  tmp4:
+    post:
+      description: ' Pull Event from IronAPI by Event ID'
+      parameters:
+      - description: ID of an Event to retrieve
+        example: 1111aaaa-1a1a-1a1a-11aa-1a1a1a1a1a1a, 2222aaaa-1a1a-1a1a-11aa-1a1a1a1a1a1a
+        in: query
+        name: Event ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Get Event
+  tmp5:
+    post:
+      description: Pulls Event Notifications from IronDefense. By default, only "ENA_EVENT_CREATED"
+        actions are retrieved.
+      parameters:
+      - description: Event Notification limit per request.
+        example: '20'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Event Notification categories to exclude.
+        example: C2, RECON
+        in: query
+        name: Exclude categories
+        required: false
+        schema: {type: string}
+      - description: Event Notification subcategories to exclude.
+        example: DNS_TUNNELING, PERIODIC_BEACONING
+        in: query
+        name: Exclude subcategories
+        required: false
+        schema: {type: string}
+      - description: A custom list of Event Notifications Actions to include. If empty,
+          ENA_EVENT_CREATED will be included by default.
+        example: ENA_EVENT_CREATED, ENA_EVENT_RETRO_WHITELISTED, ENA_EVENT_ADDED_TO_ALERT,
+          ENA_EVENT_DELETED, ENA_EVENT_ALERT_UNDER_REVIEW, ENA_EVENT_ALERT_CLOSED
+        in: query
+        name: Custom actions
+        required: false
+        schema: {type: string}
+      - description: Event Notification with severity under the threshold will be
+          exclude.
+        example: '500'
+        in: body
+        name: Severity threshold
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Get Event Notifications
+  tmp6:
+    post:
+      description: Pulls Events from IronDefense
+      parameters:
+      - description: Alert ID to filter by
+        example: 1111aaaa-1a1a-1a1a-11aa-1a1a1a1a1a1a
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      - description: Maximum number of Events to return
+        example: '20'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: The number of Events to skip - used for paging the results
+        example: '20'
+        in: body
+        name: Offset
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Get Events
+  tmp7:
+    post:
+      description: Pulls IronDome Notifications from IronDefense
+      parameters:
+      - description: Dome Notification limit per request.
+        example: '20'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Get IronDome Notifications
+  tmp8:
+    post:
+      description: Submits an observed bad endpoint to IronDefense. This will create
+        a threat intel rule (TIR) in IronDefense.
+      parameters:
+      - description: IP Address of the observed bad endpoint. (Must provide domain
+          OR IP address).
+        example: 192.168.1.1
+        in: query
+        name: IP Address
+        required: false
+        schema: {type: string}
+      - description: Domain associated with the observed bad activity. (Must provide
+          domain OR IP address).
+        example: example.com
+        in: query
+        name: Domain
+        required: false
+        schema: {type: string}
+      - description: Identifying name of the observed bad activity, will be used for
+          the Threat Intelligence Rule name.
+        example: My name
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: Description
+        example: Description of the observed bad activity, will be used for the Threat
+          Intelligence Rule description.
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: The start time of the observed bad activity in RFC 3339 format.
+        example: '2019-10-29T08:53:00Z'
+        in: query
+        name: Activity Start Time
+        required: true
+        schema: {type: string}
+      - description: The end time of the observed bad activity in RFC 3339 format.
+        example: '2019-10-29T08:57:00Z'
+        in: query
+        name: Activity End Time
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: IronNet IronDefense Report Observed Bad Activity
+  tmp9:
+    post:
+      description: Sets the status of an Alert within IronDefense
+      parameters:
+      - description: The ID of the IronDefense alert
+        example: 1111aaaa-1a1a-1a1a-11aa-1a1a1a1a1a1a
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      - description: 'The status of the alert. Options: STATUS_AWAITING_REVIEW, STATUS_UNDER_REVIEW,
+          STATUS_CLOSED'
+        example: STATUS_AWAITING_REVIEW
+        in: query
+        name: Alert Status
+        required: true
+        schema: {type: string}
+      - description: Comments for any additional details when processing the alert.
+          (REQUIRED - Except when transitioning from 'Awaiting Review' to 'Under Review').
+        example: Any String
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      - description: Shares the provided comment with IronDome, defaults to True
+        example: ''
+        in: query
+        name: Share Comment With IronDome
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: IronNet IronDefense Set Alert Status
+tags:
+- {name: Network Security & Management}

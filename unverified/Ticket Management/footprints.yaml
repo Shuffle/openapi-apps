@@ -1,0 +1,161 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        return: {type: string}
+      type: object
+    tmp1:
+      properties:
+        return: {type: string}
+      type: object
+    tmp2:
+      properties:
+        _searchDescription: {type: string}
+        _searchId: {type: string}
+        _searchName: {type: string}
+        _searchType: {type: string}
+      type: object
+    tmp3:
+      properties:
+        JSON: {type: string}
+        container_id: {type: string}
+        item_def_id: {type: string}
+        item_id: {type: string}
+      type: object
+    tmp4:
+      properties:
+        JSON: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of BMC Footprints
+  title: BMC Footprints
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Create Item in Footprints
+      parameters:
+      - description: Definition ID for an Item in Footprints
+        example: ''
+        in: query
+        name: Item Definition ID
+        required: true
+        schema: {type: string}
+      - description: 'JSON Object of {"Field Name": "NEW VALUE"}'
+        example: '{"Short Description": "THIS IS A TEST"}'
+        in: query
+        name: Fields and Values
+        required: true
+        schema: {type: string}
+      - description: List of users assigned to the ticket. Must be existing usernames
+        example: admin,user
+        in: query
+        name: Assignees
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Footprints Create Ticket
+  tmp1:
+    post:
+      description: Edit Item in Footprints
+      parameters:
+      - description: Definition ID for an Item in Footprints
+        example: ''
+        in: query
+        name: Item Definition ID
+        required: true
+        schema: {type: string}
+      - description: Item ID from Footprints
+        example: '101'
+        in: query
+        name: Item ID
+        required: true
+        schema: {type: string}
+      - description: 'JSON Object of {"Field Name": "NEW VALUE"}'
+        example: '{"Short Description": "THIS IS A TEST"}'
+        in: query
+        name: Fields and Values
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Footprints Edit Ticket
+  tmp2:
+    post:
+      description: Get Searches from Footprints
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Footprints Get Searches
+  tmp3:
+    post:
+      description: Get item Details from Footprints
+      parameters:
+      - description: Container Name in Footprints
+        example: Workspace
+        in: query
+        name: Container Name
+        required: true
+        schema: {type: string}
+      - description: Item Number from Footprints
+        example: INC-1
+        in: query
+        name: Item Number
+        required: true
+        schema: {type: string}
+      - description: Item Type from Footprints
+        example: Incident
+        in: query
+        name: Item Type
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Footprints Get Item Details
+  tmp4:
+    post:
+      description: Run Search from Footprints
+      parameters:
+      - description: Search ID from Footprints
+        example: '101'
+        in: query
+        name: Search ID
+        required: false
+        schema: {type: string}
+      - description: Search Name from Footprints
+        example: My Search
+        in: query
+        name: Search Name
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Footprints Run Search
+tags:
+- {name: Ticket Management}

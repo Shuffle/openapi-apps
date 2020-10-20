@@ -1,0 +1,276 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        Modified: {type: string}
+        Published: {type: string}
+        access_authentication: {type: string}
+        access_complexity: {type: string}
+        access_vector: {type: string}
+        cve_id: {type: string}
+        cvss: {type: string}
+        cvss-time: {type: string}
+        cwe: {type: string}
+        impact_availability: {type: string}
+        impact_confidentiality: {type: string}
+        impact_integrity: {type: string}
+        last-modified: {type: string}
+        references: {type: string}
+        summary: {type: string}
+        vulnerable_configuration: {type: string}
+        vulnerable_configuration_cpe_2_2: {type: string}
+      type: object
+    tmp1:
+      properties:
+        Modified: {type: string}
+        Published: {type: string}
+        access_authentication: {type: string}
+        access_complexity: {type: string}
+        access_vector: {type: string}
+        capec_id: {type: string}
+        capec_name: {type: string}
+        capec_prerequisites: {type: string}
+        capec_related_weakness: {type: string}
+        capec_solutions: {type: string}
+        capec_summary: {type: string}
+        cvss: {type: string}
+        cvss-time: {type: string}
+        cwe: {type: string}
+        exploit-db_description: {type: string}
+        exploit-db_id: {type: string}
+        exploit-db_last_seen: {type: string}
+        exploit-db_modified: {type: string}
+        exploit-db_published: {type: string}
+        exploit-db_reporter: {type: string}
+        exploit-db_source: {type: string}
+        exploit-db_title: {type: string}
+        id: {type: string}
+        impact_availability: {type: string}
+        impact_confidentiality: {type: string}
+        impact_integrity: {type: string}
+        last-modified: {type: string}
+        metasploit_description: {type: string}
+        metasploit_id: {type: string}
+        metasploit_last_seen: {type: string}
+        metasploit_modified: {type: string}
+        metasploit_published: {type: string}
+        metasploit_reliability: {type: string}
+        metasploit_reporter: {type: string}
+        metasploit_source: {type: string}
+        metasploit_title: {type: string}
+        msbulletin_bulletin_id: {type: string}
+        msbulletin_bulletin_url: {type: string}
+        msbulletin_date: {type: string}
+        msbulletin_impact: {type: string}
+        msbulletin_knowledgebase_id: {type: string}
+        msbulletin_knowledgebase_url: {type: string}
+        msbulletin_severity: {type: string}
+        msbulletin_title: {type: string}
+        nessus_NASL_family: {type: string}
+        nessus_NASL_id: {type: string}
+        nessus_description: {type: string}
+        nessus_last_seen: {type: string}
+        nessus_modified: {type: string}
+        nessus_plugin_id: {type: string}
+        nessus_published: {type: string}
+        nessus_reporter: {type: string}
+        nessus_source: {type: string}
+        nessus_title: {type: string}
+        oval_accepted: {type: string}
+        oval_class: {type: string}
+        oval_contributors_name: {type: string}
+        oval_contributors_organization: {type: string}
+        oval_definition_extensions_comment: {type: string}
+        oval_definition_extensions_oval: {type: string}
+        oval_description: {type: string}
+        oval_family: {type: string}
+        oval_id: {type: string}
+        oval_status: {type: string}
+        oval_submitted: {type: string}
+        oval_title: {type: string}
+        oval_version: {type: string}
+        packetstorm_data_source: {type: string}
+        packetstorm_id: {type: string}
+        packetstorm_last_seen: {type: string}
+        packetstorm_published: {type: string}
+        packetstorm_reporter: {type: string}
+        packetstorm_source: {type: string}
+        packetstorm_title: {type: string}
+        ranking_circl: {type: string}
+        references: {type: string}
+        refmap_bid: {type: string}
+        refmap_cert: {type: string}
+        refmap_idefense: {type: string}
+        refmap_ms: {type: string}
+        refmap_sectrack: {type: string}
+        refmap_secunia: {type: string}
+        refmap_sreason: {type: string}
+        refmap_vupen: {type: string}
+        saint_bid: {type: string}
+        saint_description: {type: string}
+        saint_id: {type: string}
+        saint_osvdb: {type: string}
+        saint_title: {type: string}
+        saint_type: {type: string}
+        summary: {type: string}
+        the_hacker_news_id: {type: string}
+        the_hacker_news_last_seen: {type: string}
+        the_hacker_news_modified: {type: string}
+        the_hacker_news_published: {type: string}
+        the_hacker_news_reporter: {type: string}
+        the_hacker_news_source: {type: string}
+        the_hacker_news_title: {type: string}
+        vulnerable_configuration_cpe_2_2: {type: string}
+        vulnerable_configuration_id: {type: string}
+        vulnerable_configuration_title: {type: string}
+      type: object
+    tmp2:
+      properties:
+        product: {type: string}
+        vendor: {type: string}
+      type: object
+    tmp3:
+      properties:
+        product: {type: string}
+        vendor: {type: string}
+      type: object
+    tmp4:
+      properties:
+        capec_last_update: {type: string}
+        capec_size: {type: string}
+        cpeOther_last_update: {type: string}
+        cpeOther_size: {type: string}
+        cpe_last_update: {type: string}
+        cpe_size: {type: string}
+        cves_last_update: {type: string}
+        cves_size: {type: string}
+        cwe_last_update: {type: string}
+        cwe_size: {type: string}
+        via4_last_update: {type: string}
+        via4_size: {type: string}
+      type: object
+    tmp5:
+      properties:
+        Modified: {type: string}
+        Published: {type: string}
+        capec: {type: string}
+        capec_id: {type: string}
+        capec_name: {type: string}
+        capec_prerequisites: {type: string}
+        capec_related_weakness: {type: string}
+        capec_solutions: {type: string}
+        capec_summary: {type: string}
+        cvss: {type: string}
+        cwe: {type: string}
+        id: {type: string}
+        last-modified: {type: string}
+        ranking_circl: {type: string}
+        references: {type: string}
+        summary: {type: string}
+        vulnerable_configuration: {type: string}
+        vulnerable_configuration_cpe_2_2: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of CVE Search CVE Search
+  title: CVE Search CVE Search
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get a JSON with all the vulnerabilities per vendor and a specific
+        product
+      parameters:
+      - description: Vendor Name
+        example: microsoft
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: Product Name
+        example: office
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: CVE Search Browse CVE
+  tmp1:
+    post:
+      description: Get a JSON of a specific CVE ID
+      parameters:
+      - description: CVE ID
+        example: CVE-2010-3333
+        in: query
+        name: CVE ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: CVE Search Browse CVE ID
+  tmp2:
+    post:
+      description: Get a JSON with all the products associated to a vendor
+      parameters:
+      - description: Vendor name
+        example: microsoft
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: CVE Search Browse Products
+  tmp3:
+    post:
+      description: Get a JSON with all the vendors
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: CVE Search Browse Vendor
+  tmp4:
+    post:
+      description: Get more information about the current databases in use and when
+        it was updated
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: CVE Search Get Information
+  tmp5:
+    post:
+      description: Get get a JSON of the last 30 CVEs including CAPEC, CWE and CPE
+        expansions
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: CVE Search Get Last Updated
+tags:
+- {name: Investigation}

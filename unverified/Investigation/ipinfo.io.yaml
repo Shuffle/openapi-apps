@@ -1,0 +1,43 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        city: {type: string}
+        country: {type: string}
+        country_name: {type: string}
+        hostname: {type: string}
+        ip: {type: string}
+        latitude: {type: string}
+        loc: {type: string}
+        longitude: {type: string}
+        org: {type: string}
+        region: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of IPinfo ipinfo.io
+  title: IPinfo ipinfo.io
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAGcUlEQVR4nO2dz2skRRTHvz2ZdAi7/sCLsoInWRAPioL/gRe9KGLAdBKIhs1u57AseBBB96AIIqKs2iMSGJdkImwOetGT/4EgKCKIJw8iGkTUjbozmSkPy2SHZCZTr7pe96sfn9vudr33ZurTr7tre7oTRG6Rd5Tx2CJLLFbiPGF/GRfbd6KX/mE9bpQsULHKdCYqgUoWzoeuUqZJBCSZ/x90rd1DmjbrLuOQbvc6Nldvq7sMbvwVS0KHmobHHaxRdwEsuCAV4E6dBvgnlmuT5Vq9mvjTin2YII8OjX50LB+kAvz5HHC9Y+XtG0CaWo1p0jXsC9FDkdn9XBUj5zLcCEtSlT0EjY63I9mshRi14m7HsjGBnOc00utjxs3CXfvPYtfqtYB7J+8uTlKZvI6e0Lu1N5h+yZL2eh8+gwbudCxfJsS0Hsc6lztimSBNqiFS67KIG2KZ7K3SJ0/Gehkb8sXKO2+Qx0iXaohJnec7bYZKrCN/Aqh7qU2p8k4X4xcr/0aR3W4xT32fkQnZBV7YfhFJ8pb29mW+8HNX70Oz+ZPx+IPrp/DR+j/G4ylyKfUaWkuvGueqANmHQopUSj1jnCfvqFJSAUDz9H6pcyA1eEx72yR5xThPRcjtWJRJ2u/O4+rqf6w5qBh1T5Ug3xnw5qgG2R1LF2lSGcdPnLnqm4YfYlGp6rLdoeUB28gUizIh1MNB1ZPNecUnWFyZYmmjaGs6dU0EPe+bLHVUiNtiFUvPa2+btw8YK9HIT+rCLzFWUgnyxFpr93gCpzM8cWtG6OFQ3q3JHL9aLvPl7802sbvQP/zzpWvzuNEzWwjNO0ryEoFN5ImlC+cEnRT7nYV/Mbr+x9UxiiyR2o10kHcotM1am9ZdqMJKvyqtCVli6X7pCle0Y6bpvPa2pl2QrXsqvf+6ESirLLF0aWUXrce0+RMwWxRLr1uPWRFuiqXLha3P6y5hLPn293WXwI3fYiWNJ7S2G/TvtpJvvn9ab8PkASv5BOO3WLp8uPKblThvr+xbieMBUawIC1GsCAtRrAgLUawIC1GsCAtRLMDeyrXAFfC68Fusvdm5uksYSwB3OPgt1u5Ct+4SQkWWWAobWttxHHLyjioVl6smHSi/SawIWWK1ssJ6TPJtLdvvknNw/vhDh9byV9ZjlkSWWCJI7N85ESDuisV5BSbh6k5CDSWQJ1YyeNR6TO5nUSncxVbHNGYGd1iPaQF5Yn2w/DVLXE65Wtn0t7RyLTG8t/wXS9ySyBOLQhWHC90cJ4nTTO5hySkYt8Wiwr0wOS5+kSW4svgra16ByF0Blvb8hqpWy+teurBEWB1riOcPlpWAXLG4n7oiUS5PuhUgWSwqrsvlWUeULRZ14s93rhtk+YU8wrYEN5/OrI/wbgVIF4tKA6fIY4rsjIDO5fz7CY8iXyzJz0bIt7fKx/DvGe+AC2LdhPbMrMqWE5Il+pgRyHUe/FkqX4U4YT8A2Sfn1Dwbn5yFGvzAnqdGXOlYQDK4RB4jUcaNrUeMpFLqZfKYGnFmDzhEoiy6eXx556IG7nSsWzxJHnH5Mv1zmkzmuc6PE//NVCqFBaNxNeOeWEX2BXnM3tn+9I0s0MT92Ng5c+zv17e+M47ZynbLlFQX7okFVHtoU2qTNEapn4/lnWk8SM49zO8ozhYOQP75Vpk1NYelAlwXC5AtlwmN/sN4f+WbSnIx4r5YgF9yOd6phrh5jmWDF67p/QBilDruQHUUP8QymZC53u9GHUjhafKYaRRZ4pNUgC9iAdXt7a3sM6Br8ZkQatVeLDl4tZcAMDsPUslDaC1+y57nKJ51qVH86VhDTCYrUfSrMIkvHBCEf2IBZpO2tkV/r7S4V6TIwU+xAPrkpY25CpYtvgxBKsBnsQAAg2fJQ7jk2u/Oo8geJ8d2lCD2HrIs3e4BNlfp96FPyhNIlxrF845lSJo2ke88ZyVWgFIBoYhlNLlqp3SeQKUCQhELqP4u0oClAkI5xxpF8gNBPCKcjjWkP6DfdLf+8b0MlXhNmHtiQD9qqIvwOhZgLki+/anlSrwlTLGAoVzEdzMnT3GU4iOxtceTeRbC7VhDpN6i7DhRLCDKxUAU6xCDu0KjXBOJ5wpH8fR5VVUTO9ZRikXadxK71liiWMdIoigWiGKNIx7eShPFmkSUqxRRrJPQkSsKOJYo1jROEidKNZEolg6T3uoVmcj/wgwl5KkMF44AAAAASUVORK5CYII=
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: ipinfo.io Get IP Address Information
+      parameters:
+      - description: IP Address to lookup.
+        example: 1.1.1.1
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: ipinfo.io Get Details
+tags:
+- {name: Investigation}

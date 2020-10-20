@@ -1,0 +1,947 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp1:
+      properties:
+        successful: {type: string}
+      type: object
+    tmp10:
+      properties:
+        acquisition_date: {type: string}
+        assets_account_last_activity_time: {type: string}
+        assets_account_login_time: {type: string}
+        assets_account_modification_time: {type: string}
+        assets_account_signup_time: {type: string}
+        assets_account_title: {type: string}
+        assets_address_1: {type: string}
+        assets_address_2: {type: string}
+        assets_city: {type: string}
+        assets_country: {type: string}
+        assets_dob: {type: string}
+        assets_email: {type: string}
+        assets_full_name: {type: string}
+        assets_gender: {type: string}
+        assets_homepage: {type: string}
+        assets_ip_addresses: {type: string}
+        assets_language: {type: string}
+        assets_password: {type: string}
+        assets_phone: {type: string}
+        assets_postal_code: {type: string}
+        assets_salt: {type: string}
+        assets_social_aim: {type: string}
+        assets_social_icq: {type: string}
+        assets_social_skype: {type: string}
+        assets_state: {type: string}
+        assets_target_url: {type: string}
+        assets_timezone: {type: string}
+        assets_user_browser: {type: string}
+        assets_user_sys_domain: {type: string}
+        assets_username: {type: string}
+        breach_date: {type: string}
+        description: {type: string}
+        id: {type: string}
+        num_records: {type: string}
+        public_date: {type: string}
+        site: {type: string}
+        site_description: {type: string}
+        spycloud_publish_date: {type: string}
+        title: {type: string}
+        type: {type: string}
+        uuid: {type: string}
+      type: object
+    tmp11:
+      properties:
+        corporate_record_count: {type: string}
+        hits: {type: string}
+        identifier_name: {type: string}
+        identifier_type: {type: string}
+        infected_user_record_count: {type: string}
+        last_discovered: {type: string}
+        status: {type: string}
+        verified: {type: string}
+      type: object
+    tmp2:
+      properties:
+        acquisition_date: {type: string}
+        assets_account_last_activity_time: {type: string}
+        assets_account_login_time: {type: string}
+        assets_account_modification_time: {type: string}
+        assets_account_signup_time: {type: string}
+        assets_account_title: {type: string}
+        assets_address_1: {type: string}
+        assets_address_2: {type: string}
+        assets_city: {type: string}
+        assets_country: {type: string}
+        assets_dob: {type: string}
+        assets_email: {type: string}
+        assets_full_name: {type: string}
+        assets_gender: {type: string}
+        assets_homepage: {type: string}
+        assets_ip_addresses: {type: string}
+        assets_language: {type: string}
+        assets_password: {type: string}
+        assets_phone: {type: string}
+        assets_postal_code: {type: string}
+        assets_salt: {type: string}
+        assets_social_aim: {type: string}
+        assets_social_icq: {type: string}
+        assets_social_skype: {type: string}
+        assets_state: {type: string}
+        assets_target_url: {type: string}
+        assets_timezone: {type: string}
+        assets_user_browser: {type: string}
+        assets_user_sys_domain: {type: string}
+        assets_username: {type: string}
+        breach_date: {type: string}
+        description: {type: string}
+        id: {type: string}
+        num_records: {type: string}
+        public_date: {type: string}
+        site: {type: string}
+        site_description: {type: string}
+        spycloud_publish_date: {type: string}
+        title: {type: string}
+        type: {type: string}
+        uuid: {type: string}
+      type: object
+    tmp3:
+      properties:
+        account_caption: {type: string}
+        account_last_activity_time: {type: string}
+        account_login_time: {type: string}
+        account_modification_time: {type: string}
+        account_nickname: {type: string}
+        account_notes: {type: string}
+        account_password_date: {type: string}
+        account_secret: {type: string}
+        account_secret_question: {type: string}
+        account_signup_time: {type: string}
+        account_title: {type: string}
+        address_1: {type: string}
+        address_2: {type: string}
+        age: {type: string}
+        cc_code: {type: string}
+        cc_expiration: {type: string}
+        city: {type: string}
+        country: {type: string}
+        cursor: {type: string}
+        dob: {type: string}
+        document_id: {type: string}
+        domain: {type: string}
+        email: {type: string}
+        email_domain: {type: string}
+        email_username: {type: string}
+        full_name: {type: string}
+        gender: {type: string}
+        geolocation: {type: string}
+        hits: {type: string}
+        homepage: {type: string}
+        ip_addresses: {type: string}
+        language: {type: string}
+        password: {type: string}
+        password_plaintext: {type: string}
+        phone: {type: string}
+        postal_code: {type: string}
+        salt: {type: string}
+        severity: {type: string}
+        sighting: {type: string}
+        social_aim: {type: string}
+        social_icq: {type: string}
+        social_msn: {type: string}
+        social_skype: {type: string}
+        social_yahoo: {type: string}
+        source_id: {type: string}
+        spycloud_publish_date: {type: string}
+        state: {type: string}
+        target_domain: {type: string}
+        target_url: {type: string}
+        timezone: {type: string}
+        user_agent: {type: string}
+        user_browser: {type: string}
+        user_hostname: {type: string}
+        user_os: {type: string}
+        user_sys_domain: {type: string}
+        user_sys_registered_organization: {type: string}
+        user_sys_registered_owner: {type: string}
+        username: {type: string}
+      type: object
+    tmp4:
+      properties:
+        account_caption: {type: string}
+        account_last_activity_time: {type: string}
+        account_login_time: {type: string}
+        account_modification_time: {type: string}
+        account_nickname: {type: string}
+        account_notes: {type: string}
+        account_password_date: {type: string}
+        account_secret: {type: string}
+        account_secret_question: {type: string}
+        account_signup_time: {type: string}
+        account_title: {type: string}
+        address_1: {type: string}
+        address_2: {type: string}
+        age: {type: string}
+        cc_code: {type: string}
+        cc_expiration: {type: string}
+        city: {type: string}
+        country: {type: string}
+        cursor: {type: string}
+        dob: {type: string}
+        document_id: {type: string}
+        domain: {type: string}
+        email: {type: string}
+        email_domain: {type: string}
+        email_username: {type: string}
+        full_name: {type: string}
+        gender: {type: string}
+        geolocation: {type: string}
+        hits: {type: string}
+        homepage: {type: string}
+        ip_addresses: {type: string}
+        language: {type: string}
+        password: {type: string}
+        password_plaintext: {type: string}
+        phone: {type: string}
+        postal_code: {type: string}
+        salt: {type: string}
+        severity: {type: string}
+        sighting: {type: string}
+        social_aim: {type: string}
+        social_icq: {type: string}
+        social_msn: {type: string}
+        social_skype: {type: string}
+        social_yahoo: {type: string}
+        source_id: {type: string}
+        spycloud_publish_date: {type: string}
+        state: {type: string}
+        target_domain: {type: string}
+        target_url: {type: string}
+        timezone: {type: string}
+        user_agent: {type: string}
+        user_browser: {type: string}
+        user_hostname: {type: string}
+        user_os: {type: string}
+        user_sys_domain: {type: string}
+        user_sys_registered_organization: {type: string}
+        user_sys_registered_owner: {type: string}
+        username: {type: string}
+      type: object
+    tmp5:
+      properties:
+        account_caption: {type: string}
+        account_last_activity_time: {type: string}
+        account_login_time: {type: string}
+        account_modification_time: {type: string}
+        account_nickname: {type: string}
+        account_notes: {type: string}
+        account_password_date: {type: string}
+        account_secret: {type: string}
+        account_secret_question: {type: string}
+        account_signup_time: {type: string}
+        account_title: {type: string}
+        address_1: {type: string}
+        address_2: {type: string}
+        age: {type: string}
+        cc_code: {type: string}
+        cc_expiration: {type: string}
+        city: {type: string}
+        country: {type: string}
+        cursor: {type: string}
+        dob: {type: string}
+        document_id: {type: string}
+        domain: {type: string}
+        email: {type: string}
+        email_domain: {type: string}
+        email_username: {type: string}
+        full_name: {type: string}
+        gender: {type: string}
+        geolocation: {type: string}
+        homepage: {type: string}
+        ip_addresses: {type: string}
+        language: {type: string}
+        password: {type: string}
+        password_plaintext: {type: string}
+        phone: {type: string}
+        postal_code: {type: string}
+        salt: {type: string}
+        severity: {type: string}
+        sighting: {type: string}
+        social_aim: {type: string}
+        social_icq: {type: string}
+        social_msn: {type: string}
+        social_skype: {type: string}
+        social_yahoo: {type: string}
+        source_id: {type: string}
+        spycloud_publish_date: {type: string}
+        state: {type: string}
+        target_domain: {type: string}
+        target_url: {type: string}
+        timezone: {type: string}
+        user_agent: {type: string}
+        user_browser: {type: string}
+        user_hostname: {type: string}
+        user_os: {type: string}
+        user_sys_domain: {type: string}
+        user_sys_registered_organization: {type: string}
+        user_sys_registered_owner: {type: string}
+        username: {type: string}
+      type: object
+    tmp6:
+      properties:
+        account_caption: {type: string}
+        account_last_activity_time: {type: string}
+        account_login_time: {type: string}
+        account_modification_time: {type: string}
+        account_nickname: {type: string}
+        account_notes: {type: string}
+        account_password_date: {type: string}
+        account_secret: {type: string}
+        account_secret_question: {type: string}
+        account_signup_time: {type: string}
+        account_title: {type: string}
+        address_1: {type: string}
+        address_2: {type: string}
+        age: {type: string}
+        cc_code: {type: string}
+        cc_expiration: {type: string}
+        city: {type: string}
+        country: {type: string}
+        cursor: {type: string}
+        dob: {type: string}
+        document_id: {type: string}
+        domain: {type: string}
+        email: {type: string}
+        email_domain: {type: string}
+        email_username: {type: string}
+        full_name: {type: string}
+        gender: {type: string}
+        geolocation: {type: string}
+        hits: {type: string}
+        homepage: {type: string}
+        ip_addresses: {type: string}
+        language: {type: string}
+        password: {type: string}
+        password_plaintext: {type: string}
+        phone: {type: string}
+        postal_code: {type: string}
+        salt: {type: string}
+        severity: {type: string}
+        sighting: {type: string}
+        social_aim: {type: string}
+        social_icq: {type: string}
+        social_msn: {type: string}
+        social_skype: {type: string}
+        social_yahoo: {type: string}
+        source_id: {type: string}
+        spycloud_publish_date: {type: string}
+        state: {type: string}
+        target_domain: {type: string}
+        target_url: {type: string}
+        timezone: {type: string}
+        user_agent: {type: string}
+        user_browser: {type: string}
+        user_hostname: {type: string}
+        user_os: {type: string}
+        user_sys_domain: {type: string}
+        user_sys_registered_organization: {type: string}
+        user_sys_registered_owner: {type: string}
+        username: {type: string}
+      type: object
+    tmp7:
+      properties:
+        account_caption: {type: string}
+        account_last_activity_time: {type: string}
+        account_login_time: {type: string}
+        account_modification_time: {type: string}
+        account_nickname: {type: string}
+        account_notes: {type: string}
+        account_password_date: {type: string}
+        account_secret: {type: string}
+        account_secret_question: {type: string}
+        account_signup_time: {type: string}
+        account_title: {type: string}
+        address_1: {type: string}
+        address_2: {type: string}
+        age: {type: string}
+        cc_code: {type: string}
+        cc_expiration: {type: string}
+        city: {type: string}
+        country: {type: string}
+        cursor: {type: string}
+        dob: {type: string}
+        document_id: {type: string}
+        domain: {type: string}
+        email: {type: string}
+        email_domain: {type: string}
+        email_username: {type: string}
+        full_name: {type: string}
+        gender: {type: string}
+        geolocation: {type: string}
+        hits: {type: string}
+        homepage: {type: string}
+        ip_addresses: {type: string}
+        language: {type: string}
+        password: {type: string}
+        password_plaintext: {type: string}
+        phone: {type: string}
+        postal_code: {type: string}
+        salt: {type: string}
+        severity: {type: string}
+        sighting: {type: string}
+        social_aim: {type: string}
+        social_icq: {type: string}
+        social_msn: {type: string}
+        social_skype: {type: string}
+        social_yahoo: {type: string}
+        source_id: {type: string}
+        spycloud_publish_date: {type: string}
+        state: {type: string}
+        target_domain: {type: string}
+        target_url: {type: string}
+        timezone: {type: string}
+        user_agent: {type: string}
+        user_browser: {type: string}
+        user_hostname: {type: string}
+        user_os: {type: string}
+        user_sys_domain: {type: string}
+        user_sys_registered_organization: {type: string}
+        user_sys_registered_owner: {type: string}
+        username: {type: string}
+      type: object
+    tmp8:
+      properties:
+        account_caption: {type: string}
+        account_last_activity_time: {type: string}
+        account_login_time: {type: string}
+        account_modification_time: {type: string}
+        account_nickname: {type: string}
+        account_notes: {type: string}
+        account_password_date: {type: string}
+        account_secret: {type: string}
+        account_secret_question: {type: string}
+        account_signup_time: {type: string}
+        account_title: {type: string}
+        address_1: {type: string}
+        address_2: {type: string}
+        age: {type: string}
+        cc_code: {type: string}
+        cc_expiration: {type: string}
+        city: {type: string}
+        country: {type: string}
+        cursor: {type: string}
+        dob: {type: string}
+        document_id: {type: string}
+        domain: {type: string}
+        email: {type: string}
+        email_domain: {type: string}
+        email_username: {type: string}
+        full_name: {type: string}
+        gender: {type: string}
+        geolocation: {type: string}
+        hits: {type: string}
+        homepage: {type: string}
+        ip_addresses: {type: string}
+        language: {type: string}
+        password: {type: string}
+        password_plaintext: {type: string}
+        phone: {type: string}
+        postal_code: {type: string}
+        salt: {type: string}
+        severity: {type: string}
+        sighting: {type: string}
+        social_aim: {type: string}
+        social_icq: {type: string}
+        social_msn: {type: string}
+        social_skype: {type: string}
+        social_yahoo: {type: string}
+        source_id: {type: string}
+        spycloud_publish_date: {type: string}
+        state: {type: string}
+        target_domain: {type: string}
+        target_url: {type: string}
+        timezone: {type: string}
+        user_agent: {type: string}
+        user_browser: {type: string}
+        user_hostname: {type: string}
+        user_os: {type: string}
+        user_sys_domain: {type: string}
+        user_sys_registered_organization: {type: string}
+        user_sys_registered_owner: {type: string}
+        username: {type: string}
+      type: object
+    tmp9:
+      properties:
+        corporate_record_count: {type: string}
+        hits: {type: string}
+        identifier_name: {type: string}
+        identifier_type: {type: string}
+        infected_user_record_count: {type: string}
+        last_discovered: {type: string}
+        status: {type: string}
+        verification_secret: {type: string}
+        verified: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of SpyCloud SpyCloud
+  title: SpyCloud SpyCloud
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Creates a watchlist identifier.
+      parameters:
+      - description: The Watchlist Type can be domain, email, or ip.
+        example: domain
+        in: query
+        name: Watchlist Type
+        required: true
+        schema: {type: string}
+      - description: The identifier to create.
+        example: example.org
+        in: query
+        name: Identifier
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: SpyCloud Create Watchlist Identifier
+  tmp1:
+    post:
+      description: Deletes a watchlist identifier.
+      parameters:
+      - description: The identifier to delete. The input can be a domain, email, or
+          IP Address
+        example: 139.130.4.5
+        in: query
+        name: Identifier
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: SpyCloud Delete Watchlist Identifier
+  tmp10:
+    post:
+      description: Query/List breaches in the catalog.
+      parameters:
+      - description: Token used for iterating through multiple pages of results. By
+          default if >1000 results returned, cursor is returned.
+        example: ''
+        in: query
+        name: Cursor
+        required: false
+        schema: {type: string}
+      - description: Query value to search the breach catalog for.
+        example: Name of malicious actor, domain name, etc.
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: Allows you defined the starting point for a date range query
+          on the spycloud_publish_date field.
+        example: YYYY-MM-DD - 2018-02-15
+        in: query
+        name: Since
+        required: false
+        schema: {type: string}
+      - description: Allows you defined the endpoint for a date range query on the
+          spycloud_publish_date field.
+        example: YYYY-MM-DD - 2018-02-15
+        in: query
+        name: Until
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: SpyCloud Query Breach Catalog
+  tmp11:
+    post:
+      description: Allows one to query information about specific watchlist identifiers.
+      parameters:
+      - description: 'Watchlist to search for: email, domain, or ip'
+        example: email
+        in: query
+        name: Watchlist
+        required: false
+        schema: {type: string}
+      - description: 'Filter by verified status: yes or no. Default is both.'
+        example: 'yes'
+        in: query
+        name: Verified
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: SpyCloud Query Watchlist Identifiers
+  tmp2:
+    post:
+      description: Search for a specific breach by ID.
+      parameters:
+      - description: Numerical ID of the Breach
+        example: '1'
+        in: query
+        name: ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: SpyCloud Get Breach Catalog by ID
+  tmp3:
+    post:
+      description: Retrieve breach data about a specified domain.
+      parameters:
+      - description: Domain name to search for.
+        example: example.org
+        in: query
+        name: Domain
+        required: true
+        schema: {type: string}
+      - description: This parameter lets you filter results by type. By default returns
+          all types. Enter 'corporate' for corporate records and 'infected' for infected
+          user records.
+        example: corporate
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      - description: Token used for iterating through multiple pages of results. By
+          default if >1000 results returned, cursor is returned.
+        example: ''
+        in: query
+        name: Cursor
+        required: false
+        schema: {type: string}
+      - description: Allows you defined the starting point for a date range query
+          on the spycloud_publish_date field.
+        example: YYYY-MM-DD - 2018-02-15
+        in: query
+        name: Since
+        required: false
+        schema: {type: string}
+      - description: Allows you defined the endpoint for a date range query on the
+          spycloud_publish_date field.
+        example: YYYY-MM-DD - 2018-02-15
+        in: query
+        name: Until
+        required: false
+        schema: {type: string}
+      - description: Allows you to filter based on numeric severity code.
+        example: '20'
+        in: body
+        name: Severity
+        required: false
+        schema: {type: string}
+      - description: Allows you to filter based on a particular breach source.
+        example: '123'
+        in: body
+        name: Source ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: SpyCloud Get Breach Data by Domain
+  tmp4:
+    post:
+      description: Retrieve breach data about a specified email.
+      parameters:
+      - description: Email address to search for.
+        example: test@example.org
+        in: query
+        name: Email
+        required: true
+        schema: {type: string}
+      - description: Token used for iterating through multiple pages of results. By
+          default if >1000 results returned, cursor is returned.
+        example: ''
+        in: query
+        name: Cursor
+        required: false
+        schema: {type: string}
+      - description: Allows you defined the starting point for a date range query
+          on the spycloud_publish_date field.
+        example: YYYY-MM-DD - 2018-02-15
+        in: query
+        name: Since
+        required: false
+        schema: {type: string}
+      - description: Allows you defined the endpoint for a date range query on the
+          spycloud_publish_date field.
+        example: YYYY-MM-DD - 2018-02-15
+        in: query
+        name: Until
+        required: false
+        schema: {type: string}
+      - description: Allows you to filter based on numeric severity code.
+        example: '20'
+        in: body
+        name: Severity
+        required: false
+        schema: {type: string}
+      - description: Allows you to filter based on a particular breach source.
+        example: '123'
+        in: body
+        name: Source ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: SpyCloud Get Breach Data by Email
+  tmp5:
+    post:
+      description: Retrieve breach data about a specified IP Address.
+      parameters:
+      - description: IP address to search for.
+        example: 1.2.3.4
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      - description: Token used for iterating through multiple pages of results. By
+          default if >1000 results returned, cursor is returned.
+        example: ''
+        in: query
+        name: Cursor
+        required: false
+        schema: {type: string}
+      - description: Allows you defined the starting point for a date range query
+          on the spycloud_publish_date field.
+        example: YYYY-MM-DD - 2018-02-15
+        in: query
+        name: Since
+        required: false
+        schema: {type: string}
+      - description: Allows you defined the endpoint for a date range query on the
+          spycloud_publish_date field.
+        example: YYYY-MM-DD - 2018-02-15
+        in: query
+        name: Until
+        required: false
+        schema: {type: string}
+      - description: Allows you to filter based on numeric severity code.
+        example: '20'
+        in: body
+        name: Severity
+        required: false
+        schema: {type: string}
+      - description: Allows you to filter based on a particular breach source.
+        example: '123'
+        in: body
+        name: Source ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: SpyCloud Get Breach Data by IP Address
+  tmp6:
+    post:
+      description: Retrieve breach data about a specified password.
+      parameters:
+      - description: Password to search for.
+        example: password
+        in: query
+        name: Password
+        required: true
+        schema: {type: string}
+      - description: Token used for iterating through multiple pages of results. By
+          default if >1000 results returned, cursor is returned.
+        example: ''
+        in: query
+        name: Cursor
+        required: false
+        schema: {type: string}
+      - description: Allows you defined the starting point for a date range query
+          on the spycloud_publish_date field.
+        example: YYYY-MM-DD - 2018-02-15
+        in: query
+        name: Since
+        required: false
+        schema: {type: string}
+      - description: Allows you defined the endpoint for a date range query on the
+          spycloud_publish_date field.
+        example: YYYY-MM-DD - 2018-02-15
+        in: query
+        name: Until
+        required: false
+        schema: {type: string}
+      - description: Allows you to filter based on numeric severity code.
+        example: '20'
+        in: body
+        name: Severity
+        required: false
+        schema: {type: string}
+      - description: Allows you to filter based on a particular breach source.
+        example: '123'
+        in: body
+        name: Source ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: SpyCloud Get Breach Data by Password
+  tmp7:
+    post:
+      description: Retrieve breach data about a specified username.
+      parameters:
+      - description: Username to search for.
+        example: johndoe
+        in: query
+        name: Username
+        required: true
+        schema: {type: string}
+      - description: Token used for iterating through multiple pages of results. By
+          default if >1000 results returned, cursor is returned.
+        example: ''
+        in: query
+        name: Cursor
+        required: false
+        schema: {type: string}
+      - description: Allows you defined the starting point for a date range query
+          on the spycloud_publish_date field.
+        example: YYYY-MM-DD - 2018-02-15
+        in: query
+        name: Since
+        required: false
+        schema: {type: string}
+      - description: Allows you defined the endpoint for a date range query on the
+          spycloud_publish_date field.
+        example: YYYY-MM-DD - 2018-02-15
+        in: query
+        name: Until
+        required: false
+        schema: {type: string}
+      - description: Allows you to filter based on numeric severity code.
+        example: '20'
+        in: body
+        name: Severity
+        required: false
+        schema: {type: string}
+      - description: Allows you to filter based on a particular breach source.
+        example: '123'
+        in: body
+        name: Source ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: SpyCloud Get Breach Data by Username
+  tmp8:
+    post:
+      description: Retrieve breach data about a specified watchlist.
+      parameters:
+      - description: 'Watchlist to search for: email, domain, or ip'
+        example: domain
+        in: query
+        name: Watchlist
+        required: true
+        schema: {type: string}
+      - description: 'Allows you to filter results by type.: corporate or infected.'
+        example: corporate
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      - description: Token used for iterating through multiple pages of results. By
+          default if >1000 results returned, cursor is returned.
+        example: ''
+        in: query
+        name: Cursor
+        required: false
+        schema: {type: string}
+      - description: 'Allows you defined the starting point for a date range query
+          on the spycloud_publish_date field. Format: YYYY-MM-DD'
+        example: '2018-02-15'
+        in: query
+        name: Since
+        required: false
+        schema: {type: string}
+      - description: 'Allows you defined the endpoint for a date range query on the
+          spycloud_publish_date field. Format: YYYY-MM-DD'
+        example: '2018-02-15'
+        in: query
+        name: Until
+        required: false
+        schema: {type: string}
+      - description: Allows you to filter based on numeric severity code.
+        example: '20'
+        in: body
+        name: Severity
+        required: false
+        schema: {type: string}
+      - description: Allows you to filter based on a particular breach source.
+        example: '123'
+        in: body
+        name: Source ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: SpyCloud Get Breach Data by Watchlist
+  tmp9:
+    post:
+      description: Gets watchlist identifier by name.
+      parameters:
+      - description: The identifier to retrieve from your watchlist.
+        example: example.org
+        in: query
+        name: Identifier
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: SpyCloud Get Watchlist Identifier by Name
+tags:
+- {name: Investigation}

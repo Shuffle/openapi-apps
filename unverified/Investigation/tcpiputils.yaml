@@ -1,0 +1,65 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        dns_servers: {type: string}
+        geo_country: {type: string}
+        whois: {type: string}
+        whois_Address: {type: string}
+        whois_CIDR: {type: string}
+        whois_City: {type: string}
+        whois_Country: {type: string}
+        whois_NetHandle: {type: string}
+        whois_NetName: {type: string}
+        whois_NetRange: {type: string}
+        whois_NetType: {type: string}
+        whois_OrgAbuseEmail: {type: string}
+        whois_OrgAbuseHandle: {type: string}
+        whois_OrgAbuseName: {type: string}
+        whois_OrgAbusePhone: {type: string}
+        whois_OrgAbuseRef: {type: string}
+        whois_OrgId: {type: string}
+        whois_OrgName: {type: string}
+        whois_OrgTechEmail: {type: string}
+        whois_OrgTechHandle: {type: string}
+        whois_OrgTechName: {type: string}
+        whois_OrgTechPhone: {type: string}
+        whois_OrgTechRef: {type: string}
+        whois_Organization: {type: string}
+        whois_OriginAS: {type: string}
+        whois_Parent: {type: string}
+        whois_PostalCode: {type: string}
+        whois_Ref: {type: string}
+        whois_RegDate: {type: string}
+        whois_StateProv: {type: string}
+        whois_Updated: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of TCPIPUtils TCPIPUtils
+  title: TCPIPUtils TCPIPUtils
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Gather WhoIs, GeoIP, DNS, and related IP information about a given
+        IP address.
+      parameters:
+      - description: IP address used in search
+        example: 8.8.8.8
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: TCPIPUtils IPv4Info
+tags:
+- {name: Investigation}

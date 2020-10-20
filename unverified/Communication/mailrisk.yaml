@@ -1,0 +1,735 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        category: {type: string}
+        description: {type: string}
+        id: {type: string}
+        patterns: {type: string}
+        priority: {type: string}
+        risk: {type: string}
+        title: {type: string}
+        tlp: {type: string}
+      type: object
+    tmp1:
+      properties:
+        category: {type: string}
+        description: {type: string}
+        id: {type: string}
+        patterns: {type: string}
+        priority: {type: string}
+        risk: {type: string}
+        title: {type: string}
+        tlp: {type: string}
+      type: object
+    tmp10:
+      properties:
+        id: {type: string}
+      type: object
+    tmp11:
+      properties:
+        html: {type: string}
+      type: object
+    tmp12:
+      properties:
+        id: {type: string}
+      type: object
+    tmp13:
+      properties:
+        email: {type: string}
+        mailbox_id: {type: string}
+        name: {type: string}
+      type: object
+    tmp14:
+      properties:
+        id: {type: string}
+      type: object
+    tmp2:
+      properties:
+        assessed_at: {type: string}
+        assessments_assessed_at: {type: string}
+        assessments_category: {type: string}
+        assessments_confidence: {type: string}
+        assessments_risk: {type: string}
+        assessments_source: {type: string}
+        assessments_source_id: {type: string}
+        attachment_file: {type: string}
+        attachment_screenshots: {type: string}
+        category: {type: string}
+        company_id: {type: string}
+        content_status: {type: string}
+        email_screenshot: {type: string}
+        feedback_provided: {type: string}
+        feedback_requested: {type: string}
+        from_email: {type: string}
+        from_name: {type: string}
+        headers: {type: string}
+        id: {type: string}
+        links: {type: string}
+        message_id: {type: string}
+        original_file: {type: string}
+        originating_ip: {type: string}
+        redacted_file: {type: string}
+        reply_to: {type: string}
+        reported_at: {type: string}
+        reported_risk: {type: string}
+        reporter_domain: {type: string}
+        risk: {type: string}
+        risk_source: {type: string}
+        sent_at: {type: string}
+        size_bytes: {type: string}
+        spam_score: {type: string}
+        spf: {type: string}
+        subject: {type: string}
+      type: object
+    tmp3:
+      properties:
+        assessed_at: {type: string}
+        attachments_count: {type: string}
+        category: {type: string}
+        company_id: {type: string}
+        content_status: {type: string}
+        download_original: {type: string}
+        download_redacted: {type: string}
+        download_screenshot: {type: string}
+        feedback_provided: {type: string}
+        feedback_requested: {type: string}
+        from_email: {type: string}
+        from_name: {type: string}
+        id: {type: string}
+        links_count: {type: string}
+        message_id: {type: string}
+        originating_ip: {type: string}
+        reply_to: {type: string}
+        reported_at: {type: string}
+        reported_risk: {type: string}
+        reporter_domain: {type: string}
+        risk: {type: string}
+        risk_source: {type: string}
+        sent_at: {type: string}
+        size_bytes: {type: string}
+        spam_score: {type: string}
+        spf: {type: string}
+        subject: {type: string}
+      type: object
+    tmp4:
+      properties:
+        company_id: {type: string}
+        created_at: {type: string}
+        email_id: {type: string}
+        event: {type: string}
+      type: object
+    tmp5:
+      properties:
+        locale: {type: string}
+        requested_at: {type: string}
+        responded_at: {type: string}
+        text: {type: string}
+      type: object
+    tmp6:
+      properties:
+        domain: {type: string}
+        hostname: {type: string}
+        ip_city: {type: string}
+        ip_country: {type: string}
+        ip_country_code: {type: string}
+        ip_ip: {type: string}
+        ip_latitude: {type: string}
+        ip_longitude: {type: string}
+        ip_postal_code: {type: string}
+        ip_region: {type: string}
+        ip_region_code: {type: string}
+        ip_retrieved_at: {type: string}
+        ip_timezone: {type: string}
+        tld: {type: string}
+        whois_changed_at: {type: string}
+        whois_expires_at: {type: string}
+        whois_is_registered: {type: string}
+        whois_registered_at: {type: string}
+        whois_retrieved_at: {type: string}
+      type: object
+    tmp7:
+      properties:
+        id: {type: string}
+        patterns: {type: string}
+        risk: {type: string}
+        title: {type: string}
+      type: object
+    tmp8:
+      properties:
+        category: {type: string}
+        description: {type: string}
+        id: {type: string}
+        patterns: {type: string}
+        priority: {type: string}
+        risk: {type: string}
+        title: {type: string}
+        tlp: {type: string}
+      type: object
+    tmp9:
+      properties:
+        category: {type: string}
+        description: {type: string}
+        id: {type: string}
+        patterns: {type: string}
+        priority: {type: string}
+        risk: {type: string}
+        title: {type: string}
+        tlp: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Secure Practice Mailrisk
+  title: Secure Practice Mailrisk
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Add signature
+      parameters:
+      - description: The title of the signature
+        example: Spam surge from Example Inc
+        in: query
+        name: Title
+        required: true
+        schema: {type: string}
+      - description: An optional description explaining what the signature catches.
+        example: Lately we have seen a surge in spam being sent from employees at
+          Example Inc.
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: 'Allowed values: safe, spam, suspicious, scam, phishing, malware,
+          malicious, targeted'
+        example: spam
+        in: query
+        name: Category
+        required: true
+        schema: {type: string}
+      - description: 'Allowed values: 1 (low risk), 5 (medium risk), 9 (high risk)'
+        example: '9'
+        in: body
+        name: Risk
+        required: true
+        schema: {type: string}
+      - description: 'Allowed values: white, green, amber, red'
+        example: red
+        in: query
+        name: TLP
+        required: true
+        schema: {type: string}
+      - description: 'Allowed values: 1 (low), 5 (medium), 9(high)'
+        example: '9'
+        in: body
+        name: Priority
+        required: true
+        schema: {type: string}
+      - description: 'Property for single pattern object. Options:'
+        example: subject
+        in: query
+        name: Pattern Property
+        required: true
+        schema: {type: string}
+      - description: The value associated with the pattern's property
+        example: Welcome to Swimlane!
+        in: query
+        name: Pattern Value
+        required: true
+        schema: {type: string}
+      - description: Mark True if the Pattern Value should be converted to an integer.
+        example: ''
+        in: query
+        name: Pattern Value is Integer
+        required: true
+        schema: {type: boolean}
+      - description: 'Options: equals, contains, above, below, begins, ends.'
+        example: equals
+        in: query
+        name: Pattern Condition
+        required: true
+        schema: {type: string}
+      - description: is the pattern mandatory.
+        example: ''
+        in: query
+        name: Pattern is Mandatory
+        required: true
+        schema: {type: boolean}
+      - description: If provided, this will override all patterns variables. This
+          option is for creating complex patterns objects that have more than one
+          pattern and/or children. Example can be found at https://developer.mailrisk.com/#add-signature.
+        example: ''
+        in: query
+        name: Patterns
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Secure Practice Mailrisk Add Signature
+  tmp1:
+    post:
+      description: Edit Signature by signature ID
+      parameters:
+      - description: the ID of the signature.
+        example: '48'
+        in: body
+        name: Signature ID
+        required: true
+        schema: {type: string}
+      - description: Index for which pattern object to update.
+        example: '1'
+        in: body
+        name: Pattern Index
+        required: true
+        schema: {type: string}
+      - description: The title of the signature
+        example: Spam surge from Example Inc
+        in: query
+        name: Title
+        required: true
+        schema: {type: string}
+      - description: An optional description explaining what the signature catches.
+        example: Lately we have seen a surge in spam being sent from employees at
+          Example Inc.
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: 'Allowed values: safe, spam, suspicious, scam, phishing, malware,
+          malicious, targeted'
+        example: spam
+        in: query
+        name: Category
+        required: true
+        schema: {type: string}
+      - description: 'Allowed values: 1 (low risk), 5 (medium risk), 9 (high risk)'
+        example: '9'
+        in: body
+        name: Risk
+        required: true
+        schema: {type: string}
+      - description: 'Allowed values: white, green, amber, red'
+        example: red
+        in: query
+        name: TLP
+        required: true
+        schema: {type: string}
+      - description: 'Allowed values: 1 (low), 5 (medium), 9(high)'
+        example: '9'
+        in: body
+        name: Priority
+        required: true
+        schema: {type: string}
+      - description: 'Property for single pattern object. Options:'
+        example: subject
+        in: query
+        name: Pattern Property
+        required: true
+        schema: {type: string}
+      - description: The value associated with the pattern's property
+        example: Welcome to Swimlane!
+        in: query
+        name: Pattern Value
+        required: true
+        schema: {type: string}
+      - description: Mark True if the Pattern Value should be converted to an integer.
+        example: ''
+        in: query
+        name: Pattern Value is Integer
+        required: true
+        schema: {type: boolean}
+      - description: 'Options: equals, contains, above, below, begins, ends.'
+        example: equals
+        in: query
+        name: Pattern Condition
+        required: true
+        schema: {type: string}
+      - description: is the pattern mandatory.
+        example: ''
+        in: query
+        name: Pattern is Mandatory
+        required: true
+        schema: {type: boolean}
+      - description: If provided, this will override all patterns variables. This
+          option is for creating complex patterns objects that have more than one
+          pattern and/or children. Example can be found at https://developer.mailrisk.com/#add-signature.
+        example: ''
+        in: query
+        name: Patterns
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Secure Practice Mailrisk Edit Signature
+  tmp10:
+    post:
+      description: Post risk, category, source and data for an email.
+      parameters:
+      - description: Which email to provide the risk assessment.
+        example: '1'
+        in: body
+        name: Email ID
+        required: true
+        schema: {type: string}
+      - description: 'Options are: 1, 2, or 3 which correlate to low, medium, or high.'
+        example: '3'
+        in: body
+        name: Risk
+        required: true
+        schema: {type: string}
+      - description: 'Possible values are: manual (verdict performed by analyst),
+          or any other value agreed with Secure Practice (contact Secure Practice
+          for more info). Defaults to manual.'
+        example: ''
+        in: query
+        name: Source
+        required: false
+        schema: {type: string}
+      - description: 'Options are: unknown, safe, spam, suspicious, scam, phishing,
+          malware, targeted.'
+        example: phishing
+        in: query
+        name: Category
+        required: false
+        schema: {type: string}
+      - description: JSON formatted data object for additional information about the
+          assessment
+        example: ''
+        in: query
+        name: Data
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Secure Practice Mailrisk Provide Risk Assessment for Email
+  tmp11:
+    post:
+      description: Process a simulation token to track a visit on the email's landing
+        or debrief page.
+      parameters:
+      - description: User token from simulation ({{ID}} variable in email template),
+          32 characters alphanumeric value
+        example: L5yI4keo7q9WbgjVLhcQZhKVyD1J1eK5
+        in: query
+        name: Token
+        required: true
+        schema: {type: string}
+      - description: 'Possible values to sort by: landing or brief. Defaults to None'
+        example: landing
+        in: query
+        name: Page
+        required: false
+        schema: {type: string}
+      - description: The visitor's client IP address.
+        example: 127.0.0.1
+        in: query
+        name: Source IP
+        required: false
+        schema: {type: string}
+      - description: The visitor's user agent string
+        example: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18362
+        in: query
+        name: User Agent
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: Secure Practice Mailrisk Request Simulation Page
+  tmp12:
+    post:
+      description: Provide a feedback message for a specific email.
+      parameters:
+      - description: Which Email ID to POST feedback.
+        example: '1'
+        in: body
+        name: Email ID
+        required: true
+        schema: {type: string}
+      - description: The feedback to POST.
+        example: ''
+        in: query
+        name: Text
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: Secure Practice Mailrisk Send Feedback Message
+  tmp13:
+    post:
+      description: Return the identity of the user who reported an email
+      parameters:
+      - description: Email ID.
+        example: '1'
+        in: body
+        name: Email ID
+        required: true
+        schema: {type: string}
+      - description: Describe the reason why you are accessing these personal data.
+        example: Swimlane Automation
+        in: query
+        name: Purpose
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: Secure Practice Mailrisk Show User Profile
+  tmp14:
+    post:
+      description: Submit an RFC/822 email files
+      parameters:
+      - description: ' RFC/822-compliant .eml-files to submit.'
+        example: ''
+        in: query
+        name: Email Files
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp14'}
+          description: Successful request
+      summary: Secure Practice Mailrisk Submit EML Files
+  tmp2:
+    post:
+      description: Retrive metadata, original, screenshots, and attachments by email
+        ID.
+      parameters:
+      - description: If True, the attachment file and screenshot will also be returned.
+          Defaults to True
+        example: ''
+        in: query
+        name: Get Attachment Files
+        required: false
+        schema: {type: boolean}
+      - description: If True, the original file, redacted file and screenshot will
+          also be returned. Defaults to True.
+        example: ''
+        in: query
+        name: Get Email Files
+        required: false
+        schema: {type: boolean}
+      - description: ID of the email to retrieve.
+        example: '1'
+        in: body
+        name: Email ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Secure Practice Mailrisk Get Email by ID
+  tmp3:
+    post:
+      description: List all emails
+      parameters:
+      - description: A cohort id. Note that you may not query by signature and cohort
+          at the same time.
+        example: ''
+        in: query
+        name: Cohort ID
+        required: false
+        schema: {type: string}
+      - description: 'Possible values to order by: asc, desc. Defaults to asc.'
+        example: desc
+        in: query
+        name: Direction
+        required: false
+        schema: {type: string}
+      - description: Timestamp value to retrieve after, see README for relative time
+          formatting.
+        example: -2 hours
+        in: query
+        name: After Timestamp
+        required: false
+        schema: {type: string}
+      - description: A signature id. Note that you may not query by signature and
+          cohort at the same time.
+        example: ''
+        in: body
+        name: Siganture ID
+        required: false
+        schema: {type: string}
+      - description: Partners can provide True to access cross-tenant data. Defaults
+          to False.
+        example: ''
+        in: query
+        name: Partner
+        required: false
+        schema: {type: boolean}
+      - description: 'Possible values to order by: id, risk. Defaults to id'
+        example: risk
+        in: query
+        name: Order
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Secure Practice Mailrisk Get Emails
+  tmp4:
+    post:
+      description: Get list of events
+      parameters:
+      - description: 'Relative time input in the format: (+/-)(integer) (milliseconds|seconds|minutes|days|weeks|months|years).
+          Defaults to 30 days'
+        example: -30days
+        in: query
+        name: After - Relative Time
+        required: false
+        schema: {type: string}
+      - description: 'Possible values to order by: asc, desc. Defaults to asc.'
+        example: asc
+        in: query
+        name: Direction
+        required: false
+        schema: {type: string}
+      - description: Limit the number of results retrieved. Defaults to 100
+        example: '500'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Partners can provide True to access cross-tenant data. Defaults
+          to False.
+        example: ''
+        in: query
+        name: Partner
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Secure Practice Mailrisk Get Events
+  tmp5:
+    post:
+      description: Returns feedback text
+      parameters:
+      - description: ID of the email for which feedback to retrieve.
+        example: '1'
+        in: body
+        name: Email ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Secure Practice Mailrisk Get Feedback for Email
+  tmp6:
+    post:
+      description: Returns info about given hostname including WHOIS data.
+      parameters:
+      - description: The hostname for which information to retrieve.
+        example: click.email.microsoftonline.com
+        in: query
+        name: Hostname
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Secure Practice Mailrisk Hostname Info
+  tmp7:
+    post:
+      description: List cohorts, which are machine learning based proposals for new
+        signatures.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Secure Practice Mailrisk List Cohorts
+  tmp8:
+    post:
+      description: Retrieves signatures
+      parameters:
+      - description: 'Possible values to filter by: internal, customers, partner,
+          global. Defaults to internal.'
+        example: customers
+        in: query
+        name: Source
+        required: false
+        schema: {type: string}
+      - description: 'Possible values are: id, risk or category. Defaults to id.'
+        example: id
+        in: query
+        name: Order
+        required: false
+        schema: {type: string}
+      - description: Partners can provide true to access cross-tenant data
+        example: ''
+        in: query
+        name: Partner
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Secure Practice Mailrisk List Signatures
+  tmp9:
+    post:
+      description: Turns correlations found in the cohort and turns them into a signature.
+      parameters:
+      - description: ID of cohort to turn into signature.
+        example: '1'
+        in: body
+        name: Cohort ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Secure Practice Mailrisk Promote Cohort to Signature
+tags:
+- {name: Communication}

@@ -1,0 +1,236 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        date: {type: string}
+        domain: {type: string}
+        limit: {type: string}
+        new: {type: string}
+        on-hold: {type: string}
+        query: {type: string}
+        status: {type: string}
+        total: {type: string}
+        utf8: {type: string}
+      type: object
+    tmp1:
+      properties:
+        history_ip_address_events: {type: string}
+        history_ip_address_product_url: {type: string}
+        history_ip_address_timespan_in_years: {type: string}
+        history_name_server_events: {type: string}
+        history_name_server_product_url: {type: string}
+        history_name_server_timespan_in_years: {type: string}
+        history_registrar_earliest_event: {type: string}
+        history_registrar_events: {type: string}
+        history_registrar_product_url: {type: string}
+        history_whois_earliest_event: {type: string}
+        history_whois_product_url: {type: string}
+        history_whois_records: {type: string}
+        name_servers_product_url_list: {type: string}
+        name_servers_server_list: {type: string}
+        registrant_domains: {type: string}
+        registrant_name: {type: string}
+        registrant_product_url: {type: string}
+        registration_created: {type: string}
+        registration_expires: {type: string}
+        registration_registrar: {type: string}
+        registration_statuses: {type: string}
+        registration_updated: {type: string}
+        seo_product_url: {type: string}
+        seo_score: {type: string}
+        server_ip_address: {type: string}
+        server_other_domains: {type: string}
+        server_product_url: {type: string}
+        website_data_meta_description: {type: string}
+        website_data_product_url: {type: string}
+        website_data_response_code: {type: string}
+        website_data_server: {type: string}
+        website_data_title: {type: string}
+      type: object
+    tmp2:
+      properties:
+        json: {type: string}
+      type: object
+    tmp3:
+      properties:
+        domain: {type: string}
+        risk_score: {type: string}
+      type: object
+    tmp4:
+      properties:
+        json: {type: string}
+      type: object
+    tmp5:
+      properties:
+        domain_count: {type: string}
+        domains: {type: string}
+        historic_domain_count: {type: string}
+        historic_report_cost: {type: string}
+        historic_report_price: {type: string}
+        report_cost: {type: string}
+        report_price: {type: string}
+      type: object
+    tmp6:
+      properties:
+        record_source: {type: string}
+        registrant: {type: string}
+        registration-update: {type: string}
+        whois-date: {type: string}
+      type: object
+    tmp7:
+      properties:
+        json: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of DomainTools DomainTools
+  title: DomainTools DomainTools
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get Brand Monitor from DomainTools
+      parameters:
+      - description: Domain to run Brand Monitor on
+        example: google.com
+        in: query
+        name: Domain
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: DomainTools Brand Monitor
+  tmp1:
+    post:
+      description: Get Domain Profile from DomainTools
+      parameters:
+      - description: Domain to run Domain Profile on
+        example: google.com
+        in: query
+        name: Domain
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: DomainTools Domain Profile
+  tmp2:
+    post:
+      description: Get Hosting History from DomainTools
+      parameters:
+      - description: Domain to run hosting history on
+        example: google.com
+        in: query
+        name: Domain
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: DomainTools Hosting History
+  tmp3:
+    post:
+      description: Get Reputation from DomainTools
+      parameters:
+      - description: Domain to run reputation lookup pn
+        example: example.com
+        in: query
+        name: Domain
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: DomainTools Reputation
+  tmp4:
+    post:
+      description: Get Reverse IP from DomainTools
+      parameters:
+      - description: Domain to run Reverse IP on
+        example: google.com
+        in: query
+        name: Domain
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: DomainTools Reverse IP
+  tmp5:
+    post:
+      description: Get Reverse Whois from DomainTools
+      parameters:
+      - description: Query to run Reverse WhoIs on, separated with commas
+        example: apple,google,amazon
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: True for Purchase Mode, False for Quote mode
+        example: ''
+        in: query
+        name: Purchase Mode
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: DomainTools Reverse Whois
+  tmp6:
+    post:
+      description: Get WhoIs from DomainTools
+      parameters:
+      - description: IP to run WhoIs on
+        example: 192.168.1.1
+        in: query
+        name: IP
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: DomainTools WhoIs
+  tmp7:
+    post:
+      description: Get WhoIs History from DomainTools
+      parameters:
+      - description: Domain to run whois history on
+        example: google.com
+        in: query
+        name: Domain
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: DomainTools WhoIs History
+tags:
+- {name: Investigation}

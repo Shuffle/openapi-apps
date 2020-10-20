@@ -1,0 +1,527 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        _meta_level: {type: string}
+        _meta_message: {type: string}
+        id: {type: string}
+      type: object
+    tmp1:
+      properties:
+        assigned_date: {type: string}
+        assigned_to: {type: string}
+        c_score: {type: string}
+        category: {type: string}
+        certainty: {type: string}
+        custom_detection: {type: string}
+        description: {type: string}
+        detection: {type: string}
+        detection_category: {type: string}
+        detection_type: {type: string}
+        detection_url: {type: string}
+        first_timestamp: {type: string}
+        grouped_details_account_detection: {type: string}
+        grouped_details_account_uid: {type: string}
+        grouped_details_accounts: {type: string}
+        grouped_details_app_protocol: {type: string}
+        grouped_details_bytes_received: {type: string}
+        grouped_details_bytes_sent: {type: string}
+        grouped_details_count: {type: string}
+        grouped_details_dns_response: {type: string}
+        grouped_details_dst_geo: {type: string}
+        grouped_details_dst_geo_lat: {type: string}
+        grouped_details_dst_geo_lon: {type: string}
+        grouped_details_dst_hosts: {type: string}
+        grouped_details_dst_ips: {type: string}
+        grouped_details_dst_ports: {type: string}
+        grouped_details_events: {type: string}
+        grouped_details_first_timestamp: {type: string}
+        grouped_details_grouping_field: {type: string}
+        grouped_details_host_detection: {type: string}
+        grouped_details_id: {type: string}
+        grouped_details_is_account_detail: {type: string}
+        grouped_details_is_host_detail: {type: string}
+        grouped_details_last_timestamp: {type: string}
+        grouped_details_normal_bytes_sent: {type: string}
+        grouped_details_num_attempts: {type: string}
+        grouped_details_num_requests: {type: string}
+        grouped_details_num_response_objects: {type: string}
+        grouped_details_num_sessions: {type: string}
+        grouped_details_protocol: {type: string}
+        grouped_details_response_code: {type: string}
+        grouped_details_sessions: {type: string}
+        grouped_details_src_host: {type: string}
+        grouped_details_src_ip: {type: string}
+        grouped_details_subnet: {type: string}
+        grouped_details_target_domains: {type: string}
+        grouped_details_targets: {type: string}
+        grouped_details_uri: {type: string}
+        grouped_details_x_forwarded_for: {type: string}
+        groups: {type: string}
+        id: {type: string}
+        is_custom_model: {type: string}
+        is_marked_custom: {type: string}
+        is_targeting_key_asset: {type: string}
+        last_timestamp: {type: string}
+        normal_domains: {type: string}
+        note: {type: string}
+        note_modified_by: {type: string}
+        note_modified_timestamp: {type: string}
+        sensor: {type: string}
+        sensor_name: {type: string}
+        src_account: {type: string}
+        src_host_certainty: {type: string}
+        src_host_groups: {type: string}
+        src_host_id: {type: string}
+        src_host_ip: {type: string}
+        src_host_is_key_asset: {type: string}
+        src_host_name: {type: string}
+        src_host_threat: {type: string}
+        src_host_url: {type: string}
+        src_ip: {type: string}
+        state: {type: string}
+        summary_app_protocols: {type: string}
+        summary_bytes_received: {type: string}
+        summary_bytes_sent: {type: string}
+        summary_dst_hosts: {type: string}
+        summary_dst_ips: {type: string}
+        summary_num_attempts: {type: string}
+        summary_num_failures: {type: string}
+        summary_num_requests: {type: string}
+        summary_num_response_objects: {type: string}
+        summary_num_sessions: {type: string}
+        summary_num_successes: {type: string}
+        summary_subnet: {type: string}
+        summary_xff_hosts: {type: string}
+        t_score: {type: string}
+        tags: {type: string}
+        targets_key_asset: {type: string}
+        threat: {type: string}
+        triage_rule_id: {type: string}
+        url: {type: string}
+      type: object
+    tmp2:
+      properties:
+        active_traffic: {type: string}
+        assigned_date: {type: string}
+        assigned_to: {type: string}
+        c_score: {type: string}
+        certainty: {type: string}
+        detection_set: {type: string}
+        groups: {type: string}
+        has_active_traffic: {type: string}
+        has_custom_model: {type: string}
+        host_artifact_set: {type: string}
+        host_luid: {type: string}
+        host_session_luids: {type: string}
+        host_url: {type: string}
+        id: {type: string}
+        ip: {type: string}
+        is_key_asset: {type: string}
+        is_targeting_key_asset: {type: string}
+        key_asset: {type: string}
+        last_detection_timestamp: {type: string}
+        last_modified: {type: string}
+        last_source: {type: string}
+        name: {type: string}
+        note: {type: string}
+        note_modified_by: {type: string}
+        note_modified_timestamp: {type: string}
+        owner_name: {type: string}
+        previous_ips: {type: string}
+        privilege_category: {type: string}
+        privilege_level: {type: string}
+        sensor: {type: string}
+        sensor_name: {type: string}
+        severity: {type: string}
+        state: {type: string}
+        t_score: {type: string}
+        tags: {type: string}
+        targets_key_asset: {type: string}
+        threat: {type: string}
+        url: {type: string}
+      type: object
+    tmp3:
+      properties:
+        pcap: {type: string}
+      type: object
+    tmp4:
+      properties:
+        active_detections: {type: string}
+        any_of_account: {type: string}
+        any_of_extensions: {type: string}
+        any_of_host: {type: string}
+        any_of_identity: {type: string}
+        any_of_ip: {type: string}
+        any_of_keyboard_name: {type: string}
+        any_of_named_pipe: {type: string}
+        any_of_rdp_client_name: {type: string}
+        any_of_rdp_client_token: {type: string}
+        any_of_remote1_dns: {type: string}
+        any_of_remote1_ip: {type: string}
+        any_of_remote1_port: {type: string}
+        any_of_remote1_proto: {type: string}
+        any_of_remote2_dns: {type: string}
+        any_of_remote2_ip: {type: string}
+        any_of_remote2_port: {type: string}
+        any_of_remote2_proto: {type: string}
+        any_of_sensor: {type: string}
+        any_of_share: {type: string}
+        any_of_uuid: {type: string}
+        created_timestamp: {type: string}
+        description: {type: string}
+        detection: {type: string}
+        detection_category: {type: string}
+        enabled: {type: string}
+        id: {type: string}
+        is_whitelist: {type: string}
+        last_timestamp: {type: string}
+        none_of_account: {type: string}
+        none_of_extensions: {type: string}
+        none_of_host: {type: string}
+        none_of_identity: {type: string}
+        none_of_ip: {type: string}
+        none_of_keyboard_name: {type: string}
+        none_of_named_pipe: {type: string}
+        none_of_rdp_client_name: {type: string}
+        none_of_rdp_client_token: {type: string}
+        none_of_remote1_dns: {type: string}
+        none_of_remote1_ip: {type: string}
+        none_of_remote1_port: {type: string}
+        none_of_remote1_proto: {type: string}
+        none_of_remote2_dns: {type: string}
+        none_of_remote2_ip: {type: string}
+        none_of_remote2_port: {type: string}
+        none_of_remote2_proto: {type: string}
+        none_of_sensor: {type: string}
+        none_of_share: {type: string}
+        none_of_uuid: {type: string}
+        priority: {type: string}
+        template: {type: string}
+        total_detections: {type: string}
+        triage_category: {type: string}
+        url: {type: string}
+      type: object
+    tmp5:
+      properties:
+        successful: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Vectra Cognito
+  title: Vectra Cognito
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Vectra Cognito Create a new triage rule for Vectra
+      parameters:
+      - description: User defined description for the rule
+        example: ''
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: The detection that must be triaged. Use the detection name as
+          seen in the UI or the 'Understanding Vectra Detections' guide
+        example: ''
+        in: query
+        name: Detection
+        required: true
+        schema: {type: string}
+      - description: ' Must be set to the category of the detection LATERAL MOVEMENT,
+          RECONNAISSANCE, COMMAND & CONTROL, EXFILTRATION, BOTNET, INFO'
+        example: ''
+        in: query
+        name: Detection Category
+        required: true
+        schema: {type: string}
+      - description: The name that will be used for the triaged detection. Only applies
+          if is_whitelist is set to false
+        example: ''
+        in: query
+        name: Triage Category
+        required: true
+        schema: {type: string}
+      - description: A Boolean flag indicating whether to create a 'whitelist' or
+          a 'track without scores' rule
+        example: ''
+        in: query
+        name: Whitelist
+        required: false
+        schema: {type: boolean}
+      - description: JSON String; will overwrite conditions
+        example: '{''OR'': [{''AND'': [{''ANY_OF'': {''field'': ''ip'', ''values'':
+          [{''value'': ''1.1.1.1''}, {''value'': ''1.2.1.3''}], ''groups'': [{''value'':
+          13}]}}]}]}'
+        in: query
+        name: Custom Source Conditions
+        required: false
+        schema: {type: string}
+      - description: 'Must be one of the following: ip, host, sensor, account.'
+        example: ip
+        in: query
+        name: Source Field
+        required: false
+        schema: {type: string}
+      - description: Value or CSV of multiple values
+        example: 1.1.1.1, 2.2.2.2
+        in: query
+        name: Source Values
+        required: false
+        schema: {type: string}
+      - description: Field group ID, or CSV of IDs, for applying triage rule to entire
+          group. Only fields ip and host support triaging on groups.
+        example: 13, 25
+        in: query
+        name: Source Group ID
+        required: false
+        schema: {type: string}
+      - description: If True, the operator 'ANY_OF' will be applied. If False, 'None_OF'
+          will be applied
+        example: ''
+        in: query
+        name: Source Include
+        required: false
+        schema: {type: boolean}
+      - description: JSON String; will overwrite conditions
+        example: '{''OR'': [{''AND'': [{''ANY_OF'': {''field'': ''remote1_ip'', ''values'':
+          [{''value'': ''1.1.1.1''}, {''value'': ''1.2.1.3''}], ''groups'': [{''value'':
+          13}]}}]}]}'
+        in: query
+        name: Custom Additional Conditions
+        required: false
+        schema: {type: string}
+      - description: 'Must be one of the following: remote1_ip, remote1_proto, remote1_port,
+          remote1_dns, remote2_ip, remote2_proto, remote2_port, remote2_dns, account,
+          named_pipe, uuid, identity, share, extensions, rdp client name, rdp client
+          token, keyboard name.'
+        example: remote1_ip
+        in: query
+        name: Additional Field
+        required: false
+        schema: {type: string}
+      - description: Value or CSV of multiple values
+        example: 1.1.1.1, 2.2.2.2
+        in: query
+        name: Source Values
+        required: false
+        schema: {type: string}
+      - description: Field group ID, or CSV of names, for applying triage rule to
+          entire group. Only fields remote1_ip, remote2_ip, remote1_dns and remote2_dns
+          support triaging on groups.
+        example: ''
+        in: query
+        name: Additional Group ID
+        required: false
+        schema: {type: string}
+      - description: If True, the operator 'ANY_OF' will be applied. If False, 'None_OF'
+          will be applied
+        example: ''
+        in: query
+        name: Additional Include
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Vectra Cognito Create Triage Rule
+  tmp1:
+    post:
+      description: Ingest detections from Vectra Cognito
+      parameters:
+      - description: Optional detection ID to grab only a specific detection
+        example: '1'
+        in: body
+        name: Detection ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Vectra Cognito Get Detections
+  tmp2:
+    post:
+      description: Vectra Cognito Get all hosts
+      parameters:
+      - description: Optional Host ID to grab only a specific host
+        example: '1'
+        in: body
+        name: Host ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Vectra Cognito Get Hosts
+  tmp3:
+    post:
+      description: Vectra Cognito Get PCAP from detection ID
+      parameters:
+      - description: The detection ID for which PCAP data to retrieve
+        example: ''
+        in: body
+        name: Detection ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Vectra Cognito Get PCAP
+  tmp4:
+    post:
+      description: Get all Triage Rules from Vectra Cognito
+      parameters:
+      - description: Optional triage rule ID to grab only a specific triage rule
+        example: '1'
+        in: body
+        name: Triage Rule ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Vectra Cognito Get Triage Rules
+  tmp5:
+    post:
+      description: Update a Triage Rule in Vectra Cognito
+      parameters:
+      - description: ID of the rule to update.
+        example: ''
+        in: body
+        name: Triage Rule ID
+        required: true
+        schema: {type: string}
+      - description: User defined description for the rule
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: The detection that must be triaged. Use the detection name as
+          seen in the UI or the 'Understanding Vectra Detections' guide
+        example: ''
+        in: query
+        name: Detection
+        required: false
+        schema: {type: string}
+      - description: ' Must be set to the category of the detection: LATERAL MOVEMENT,
+          RECONNAISSANCE, COMMAND & CONTROL, EXFILTRATION, BOTNET, INFO'
+        example: ''
+        in: query
+        name: Detection Category
+        required: false
+        schema: {type: string}
+      - description: The name that will be used for the triaged detection. Only applies
+          if 'is_whitelist' is set to false
+        example: ''
+        in: query
+        name: Triage Category
+        required: false
+        schema: {type: string}
+      - description: Boolean indicating whether to create a 'whitelist' or a 'track
+          without scores' rule
+        example: ''
+        in: query
+        name: Whitelist
+        required: false
+        schema: {type: boolean}
+      - description: JSON String; will overwrite conditions
+        example: '{''OR'': [{''AND'': [{''ANY_OF'': {''field'': ''ip'', ''values'':
+          [{''value'': ''1.1.1.1''}, {''value'': ''1.2.1.3''}], ''groups'': [{''value'':
+          13}]}}]}]}'
+        in: query
+        name: Custom Source Conditions
+        required: false
+        schema: {type: string}
+      - description: 'Must be one of the following: ip, host, sensor, account.'
+        example: ip
+        in: query
+        name: Source Field
+        required: false
+        schema: {type: string}
+      - description: Value or CSV of multiple values
+        example: 1.1.1.1, 2.2.2.2
+        in: query
+        name: Source Values
+        required: false
+        schema: {type: string}
+      - description: Field group ID, or CSV of IDs, for applying triage rule to entire
+          group. Only fields ip and host support triaging on groups.
+        example: 13, 25
+        in: query
+        name: Source Group ID
+        required: false
+        schema: {type: string}
+      - description: If True, the operator 'ANY_OF' will be applied. If False, 'None_OF'
+          will be applied
+        example: ''
+        in: query
+        name: Source Include
+        required: false
+        schema: {type: boolean}
+      - description: JSON String; will overwrite conditions
+        example: '{''OR'': [{''AND'': [{''ANY_OF'': {''field'': ''remote1_ip'', ''values'':
+          [{''value'': ''1.1.1.1''}, {''value'': ''1.2.1.3''}], ''groups'': [{''value'':
+          13}]}}]}]}'
+        in: query
+        name: Custom Additional Conditions
+        required: false
+        schema: {type: string}
+      - description: 'Must be one of the following: remote1_ip, remote1_proto, remote1_port,
+          remote1_dns, remote2_ip, remote2_proto, remote2_port, remote2_dns, account,
+          named_pipe, uuid, identity, share, extensions, rdp client name, rdp client
+          token, keyboard name.'
+        example: remote1_ip
+        in: query
+        name: Additional Field
+        required: false
+        schema: {type: string}
+      - description: Value or CSV of multiple values
+        example: 1.1.1.1, 2.2.2.2
+        in: query
+        name: Source Values
+        required: false
+        schema: {type: string}
+      - description: Field group ID, or CSV of names, for applying triage rule to
+          entire group. Only fields remote1_ip, remote2_ip, remote1_dns and remote2_dns
+          support triaging on groups.
+        example: ''
+        in: query
+        name: Additional Group ID
+        required: false
+        schema: {type: string}
+      - description: If True, the operator 'ANY_OF' will be applied. If False, 'None_OF'
+          will be applied
+        example: ''
+        in: query
+        name: Additional Include
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Vectra Cognito Update Triage Rule
+tags:
+- {name: Network Security & Management}

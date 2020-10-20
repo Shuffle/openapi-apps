@@ -1,0 +1,2165 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        EventId: {type: string}
+        EventName: {type: string}
+        EventSource: {type: string}
+        EventTime: {type: string}
+        ReadOnly: {type: string}
+        Resources: {type: string}
+        Username: {type: string}
+        additionalEventData_LoginTo: {type: string}
+        additionalEventData_MFAUsed: {type: string}
+        additionalEventData_MobileVersion: {type: string}
+        awsRegion: {type: string}
+        errorMessage: {type: string}
+        eventType: {type: string}
+        eventVersion: {type: string}
+        recipientAccountId: {type: string}
+        requestParameters: {type: string}
+        responseElements_ConsoleLogin: {type: string}
+        sourceIPAddress: {type: string}
+        userAgent: {type: string}
+        userIdentity_accessKeyId: {type: string}
+        userIdentity_accountId: {type: string}
+        userIdentity_arn: {type: string}
+        userIdentity_principalId: {type: string}
+        userIdentity_type: {type: string}
+      type: object
+    tmp1:
+      properties:
+        ingestionTime: {type: string}
+        message: {type: string}
+        timestamp: {type: string}
+      type: object
+    tmp10:
+      properties:
+        ComplianceSummary_ComplianceSummaryTimestamp: {type: string}
+        ComplianceSummary_CompliantResourceCount_CapExceeded: {type: string}
+        ComplianceSummary_CompliantResourceCount_CappedCount: {type: string}
+        ComplianceSummary_NonCompliantResourceCount_CapExceeded: {type: string}
+        ComplianceSummary_NonCompliantResourceCount_CappedCount: {type: string}
+        ResourceType: {type: string}
+      type: object
+    tmp11:
+      properties:
+        ComplianceType: {type: string}
+        ConfigRuleInvokedTime: {type: string}
+        EvaluationResultIdentifier_EvaluationResultQualifier_ConfigRuleName: {type: string}
+        EvaluationResultIdentifier_EvaluationResultQualifier_ResourceId: {type: string}
+        EvaluationResultIdentifier_EvaluationResultQualifier_ResourceType: {type: string}
+        EvaluationResultIdentifier_OrderingTimestamp: {type: string}
+        ResultRecordedTime: {type: string}
+      type: object
+    tmp12:
+      properties:
+        ConfigRuleArn: {type: string}
+        ConfigRuleId: {type: string}
+        ConfigRuleName: {type: string}
+        ConfigRuleState: {type: string}
+        Description: {type: string}
+        InputParameters: {type: string}
+        MaximumExecutionFrequency: {type: string}
+        Scope_ComplianceResourceTypes: {type: string}
+        Source_Owner: {type: string}
+        Source_SourceIdentifier: {type: string}
+      type: object
+    tmp13:
+      properties:
+        resourceId: {type: string}
+        resourceName: {type: string}
+        resourceType: {type: string}
+      type: object
+    tmp14:
+      properties:
+        Estimated: {type: string}
+        Groups: {type: string}
+        TimePeriod_End: {type: string}
+        TimePeriod_Start: {type: string}
+        Total_AmortizedCost_Amount: {type: string}
+        Total_AmortizedCost_Unit: {type: string}
+        Total_UsageQuantity_Amount: {type: string}
+        Total_UsageQuantity_Unit: {type: string}
+      type: object
+    tmp15:
+      properties:
+        success: {type: string}
+      type: object
+    tmp16:
+      properties:
+        group_id: {type: string}
+      type: object
+    tmp17:
+      properties:
+        Description: {type: string}
+        EgressFilterRules: {type: string}
+        IngressFilterRules: {type: string}
+        NetworkServices: {type: string}
+        Tags: {type: string}
+        TrafficMirrorFilterId: {type: string}
+      type: object
+    tmp18:
+      properties:
+        Description: {type: string}
+        DestinationCidrBlock: {type: string}
+        DestinationPortRange_FromPort: {type: string}
+        DestinationPortRange_ToPort: {type: string}
+        Protocol: {type: string}
+        RuleAction: {type: string}
+        RuleNumber: {type: string}
+        SourceCidrBlock: {type: string}
+        SourcePortRange_FromPort: {type: string}
+        SourcePortRange_ToPort: {type: string}
+        TrafficDirection: {type: string}
+        TrafficMirrorFilterId: {type: string}
+        TrafficMirrorFilterRuleId: {type: string}
+      type: object
+    tmp19:
+      properties:
+        ClientToken: {type: string}
+        NetworkInterfaceId: {type: string}
+        OwnerId: {type: string}
+        PacketLength: {type: string}
+        Protocol: {type: string}
+        SessionNumber: {type: string}
+        Tags_Key: {type: string}
+        Tags_Value: {type: string}
+        TrafficMirrorFilterId: {type: string}
+        TrafficMirrorSessionId: {type: string}
+        TrafficMirrorTargetId: {type: string}
+        VirtualNetworkId: {type: string}
+      type: object
+    tmp2:
+      properties:
+        message: {type: string}
+        ptr: {type: string}
+        timestamp: {type: string}
+      type: object
+    tmp20:
+      properties:
+        ClientToken: {type: string}
+        Description: {type: string}
+        NetworkInterfaceId: {type: string}
+        NetworkLoadBalancerArn: {type: string}
+        OwnerId: {type: string}
+        Tags_Key: {type: string}
+        Tags_Value: {type: string}
+        TrafficMirrorTargetId: {type: string}
+        Type: {type: string}
+      type: object
+    tmp21:
+      properties:
+        success: {type: string}
+      type: object
+    tmp22:
+      properties:
+        traffic_mirror_filter_id: {type: string}
+      type: object
+    tmp23:
+      properties:
+        traffic_mirror_filter_rule_id: {type: string}
+      type: object
+    tmp24:
+      properties:
+        traffic_mirror_session_id: {type: string}
+      type: object
+    tmp25:
+      properties:
+        traffic_mirror_target_id: {type: string}
+      type: object
+    tmp26:
+      properties:
+        InstanceId: {type: string}
+        KeyName: {type: string}
+        PrivateDnsName: {type: string}
+        PrivateIpAddress: {type: string}
+        PublicIpAddress: {type: string}
+      type: object
+    tmp27:
+      properties:
+        Description: {type: string}
+        GroupId: {type: string}
+        GroupName: {type: string}
+        IpPermissions: {type: string}
+        IpPermissionsEgress_IpProtocol: {type: string}
+        IpPermissionsEgress_IpRanges_CidrIp: {type: string}
+        IpPermissionsEgress_Ipv6Ranges: {type: string}
+        IpPermissionsEgress_PrefixListIds: {type: string}
+        IpPermissionsEgress_UserIdGroupPairs: {type: string}
+        IpPermissions_FromPort: {type: string}
+        IpPermissions_IpProtocol: {type: string}
+        IpPermissions_IpRanges: {type: string}
+        IpPermissions_IpRanges_CidrIp: {type: string}
+        IpPermissions_Ipv6Ranges: {type: string}
+        IpPermissions_PrefixListIds: {type: string}
+        IpPermissions_ToPort: {type: string}
+        IpPermissions_UserIdGroupPairs: {type: string}
+        IpPermissions_UserIdGroupPairs_GroupId: {type: string}
+        IpPermissions_UserIdGroupPairs_UserId: {type: string}
+        OwnerId: {type: string}
+        Tags_Key: {type: string}
+        Tags_Value: {type: string}
+        VpcId: {type: string}
+      type: object
+    tmp28:
+      properties:
+        group_name: {type: string}
+        success: {type: string}
+      type: object
+    tmp29:
+      properties:
+        Description: {type: string}
+        Encrypted: {type: string}
+        OwnerId: {type: string}
+        Progress: {type: string}
+        SnapshotId: {type: string}
+        StartTime: {type: string}
+        State: {type: string}
+        Tags: {type: string}
+        VolumeId: {type: string}
+        VolumeSize: {type: string}
+      type: object
+    tmp3:
+      properties:
+        arn: {type: string}
+        creationTime: {type: string}
+        logGroupName: {type: string}
+        metricFilterCount: {type: string}
+        storedBytes: {type: string}
+      type: object
+    tmp30:
+      properties:
+        current_state: {type: string}
+        previous_state: {type: string}
+      type: object
+    tmp31:
+      properties:
+        current_state: {type: string}
+        previous_state: {type: string}
+      type: object
+    tmp32:
+      properties:
+        HTTPHeaders_content-length: {type: string}
+        HTTPHeaders_content-type: {type: string}
+        HTTPHeaders_date: {type: string}
+        HTTPHeaders_server: {type: string}
+        HTTPStatusCode: {type: string}
+        RequestId: {type: string}
+        RetryAttempts: {type: string}
+      type: object
+    tmp33:
+      properties:
+        success: {type: string}
+      type: object
+    tmp34:
+      properties:
+        detector_id: {type: string}
+      type: object
+    tmp35:
+      properties:
+        ip_set_id: {type: string}
+      type: object
+    tmp36:
+      properties:
+        threat_intel_set_id: {type: string}
+      type: object
+    tmp37:
+      properties:
+        success: {type: string}
+      type: object
+    tmp38:
+      properties:
+        success: {type: string}
+      type: object
+    tmp39:
+      properties:
+        success: {type: string}
+      type: object
+    tmp4:
+      properties:
+        arn: {type: string}
+        creationTime: {type: string}
+        firstEventTimestamp: {type: string}
+        lastEventTimestamp: {type: string}
+        lastIngestionTime: {type: string}
+        logStreamName: {type: string}
+        storedBytes: {type: string}
+        uploadSequenceToken: {type: string}
+      type: object
+    tmp40:
+      properties:
+        AccountId: {type: string}
+        Action_ActionType: {type: string}
+        Action_Blocked: {type: string}
+        Action_LocalPort: {type: string}
+        Action_LocalPortName: {type: string}
+        Action_RemoteIpAsn: {type: string}
+        Action_RemoteIpAsnOrg: {type: string}
+        Action_RemoteIpCityName: {type: string}
+        Action_RemoteIpCountryName: {type: string}
+        Action_RemoteIpIsp: {type: string}
+        Action_RemoteIpLatitude: {type: string}
+        Action_RemoteIpLongitude: {type: string}
+        Action_RemoteIpOrg: {type: string}
+        Action_RemoteIpv4Address: {type: string}
+        Arn: {type: string}
+        AvailabilityZone: {type: string}
+        CreatedAt: {type: string}
+        Description: {type: string}
+        Id: {type: string}
+        ImageDescription: {type: string}
+        ImageId: {type: string}
+        InstanceId: {type: string}
+        InstanceState: {type: string}
+        InstanceType: {type: string}
+        LaunchTime: {type: string}
+        NetworkInterfaces_Ipv6Addresses: {type: string}
+        NetworkInterfaces_NetworkInterfaceId: {type: string}
+        NetworkInterfaces_PrivateDnsName: {type: string}
+        NetworkInterfaces_PrivateIpAddress: {type: string}
+        NetworkInterfaces_PublicDnsName: {type: string}
+        NetworkInterfaces_PublicIp: {type: string}
+        NetworkInterfaces_SubnetId: {type: string}
+        NetworkInterfaces_VpcId: {type: string}
+        Partition: {type: string}
+        ProductCodes: {type: string}
+        Region: {type: string}
+        ResourceType: {type: string}
+        SchemaVersion: {type: string}
+        Severity: {type: string}
+        Tags: {type: string}
+        Title: {type: string}
+        Type: {type: string}
+        UpdatedAt: {type: string}
+      type: object
+    tmp41:
+      properties:
+        CreatedAt: {type: string}
+        FindingPublishingFrequency: {type: string}
+        ServiceRole: {type: string}
+        Status: {type: string}
+        Tags: {type: string}
+        UpdatedAt: {type: string}
+      type: object
+    tmp42:
+      properties:
+        AccountId: {type: string}
+        Action_ActionType: {type: string}
+        Action_Blocked: {type: string}
+        Action_LocalPort: {type: string}
+        Action_LocalPortName: {type: string}
+        Action_RemoteIpAsn: {type: string}
+        Action_RemoteIpAsnOrg: {type: string}
+        Action_RemoteIpCityName: {type: string}
+        Action_RemoteIpCountryName: {type: string}
+        Action_RemoteIpIsp: {type: string}
+        Action_RemoteIpLatitude: {type: string}
+        Action_RemoteIpLongitude: {type: string}
+        Action_RemoteIpOrg: {type: string}
+        Action_RemoteIpv4Address: {type: string}
+        Arn: {type: string}
+        AvailabilityZone: {type: string}
+        CreatedAt: {type: string}
+        Description: {type: string}
+        Id: {type: string}
+        ImageDescription: {type: string}
+        ImageId: {type: string}
+        InstanceId: {type: string}
+        InstanceState: {type: string}
+        InstanceType: {type: string}
+        LaunchTime: {type: string}
+        NetworkInterfaces_Ipv6Addresses: {type: string}
+        NetworkInterfaces_NetworkInterfaceId: {type: string}
+        NetworkInterfaces_PrivateDnsName: {type: string}
+        NetworkInterfaces_PrivateIpAddress: {type: string}
+        NetworkInterfaces_PublicDnsName: {type: string}
+        NetworkInterfaces_PublicIp: {type: string}
+        NetworkInterfaces_SubnetId: {type: string}
+        NetworkInterfaces_VpcId: {type: string}
+        Partition: {type: string}
+        ProductCodes: {type: string}
+        Region: {type: string}
+        ResourceType: {type: string}
+        SchemaVersion: {type: string}
+        Severity: {type: string}
+        Tags: {type: string}
+        Title: {type: string}
+        Type: {type: string}
+        UpdatedAt: {type: string}
+      type: object
+    tmp43:
+      properties:
+        Format: {type: string}
+        Location: {type: string}
+        Name: {type: string}
+        Status: {type: string}
+        Tags: {type: string}
+      type: object
+    tmp44:
+      properties:
+        Format: {type: string}
+        Location: {type: string}
+        Name: {type: string}
+        Status: {type: string}
+        Tags: {type: string}
+      type: object
+    tmp45:
+      properties:
+        detector_ids: {type: string}
+      type: object
+    tmp46:
+      properties:
+        ids: {type: string}
+      type: object
+    tmp47:
+      properties:
+        ip_set_ids: {type: string}
+      type: object
+    tmp48:
+      properties:
+        threat_intel_set_ids: {type: string}
+      type: object
+    tmp49:
+      properties:
+        success: {type: string}
+      type: object
+    tmp5:
+      properties:
+        createTime: {type: string}
+        logGroupName: {type: string}
+        queryId: {type: string}
+        queryString: {type: string}
+        status: {type: string}
+      type: object
+    tmp50:
+      properties:
+        success: {type: string}
+      type: object
+    tmp51:
+      properties:
+        success: {type: string}
+      type: object
+    tmp52:
+      properties:
+        CreateDate: {type: string}
+        IsDefaultVersion: {type: string}
+        VersionId: {type: string}
+      type: object
+    tmp53:
+      properties:
+        s3_buckets: {type: string}
+      type: object
+    tmp54:
+      properties:
+        AwsAccountId: {type: string}
+        CreatedAt: {type: string}
+        Description: {type: string}
+        FirstObservedAt: {type: string}
+        GeneratorId: {type: string}
+        Id: {type: string}
+        LastObservedAt: {type: string}
+        ProductArn: {type: string}
+        RecordState: {type: string}
+        Resources_Details_AwsEc2Instance_ImageId: {type: string}
+        Resources_Details_AwsEc2Instance_IpV4Addresses: {type: string}
+        Resources_Details_AwsEc2Instance_LaunchedAt: {type: string}
+        Resources_Details_AwsEc2Instance_SubnetId: {type: string}
+        Resources_Details_AwsEc2Instance_Type: {type: string}
+        Resources_Details_AwsEc2Instance_VpcId: {type: string}
+        Resources_Id: {type: string}
+        Resources_Partition: {type: string}
+        Resources_Region: {type: string}
+        Resources_Tags_Name: {type: string}
+        Resources_Type: {type: string}
+        SchemaVersion: {type: string}
+        Severity_Normalized: {type: string}
+        Severity_Product: {type: string}
+        Title: {type: string}
+        Types: {type: string}
+        UpdatedAt: {type: string}
+        WorkflowState: {type: string}
+      type: object
+    tmp55:
+      properties:
+        Filters_RecordState_Comparison: {type: string}
+        Filters_RecordState_Value: {type: string}
+        Filters_ResourceType_Comparison: {type: string}
+        Filters_ResourceType_Value: {type: string}
+        GroupByAttribute: {type: string}
+        InsightArn: {type: string}
+        Name: {type: string}
+      type: object
+    tmp6:
+      properties:
+        query_id: {type: string}
+      type: object
+    tmp7:
+      properties:
+        success: {type: string}
+      type: object
+    tmp8:
+      properties:
+        ComplianceCount: {type: string}
+        ComplianceType: {type: string}
+        ConfigRuleName: {type: string}
+      type: object
+    tmp9:
+      properties:
+        Compliance_ComplianceContributorCount_CapExceeded: {type: string}
+        Compliance_ComplianceContributorCount_CappedCount: {type: string}
+        Compliance_ComplianceType: {type: string}
+        ResourceId: {type: string}
+        ResourceType: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Amazon Web Services
+  title: Amazon Web Services
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Lookup events in AWS CloudTrail
+      parameters:
+      - description: The attribute key to search for
+        example: UserName
+        in: query
+        name: Attribute Key
+        required: true
+        schema: {type: string}
+      - description: The value of the attribute key to search for
+        example: root
+        in: query
+        name: Attribute Value
+        required: true
+        schema: {type: string}
+      - description: The start time of your search
+        example: '2019-07-01T17:28:39Z'
+        in: query
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: The end time of your search
+        example: 2019-07-020T17:28:39Z
+        in: query
+        name: End Time
+        required: false
+        schema: {type: string}
+      - description: Maximum number of results to return
+        example: '13'
+        in: body
+        name: max_results
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: AWS CloudTrail Lookup Events
+  tmp1:
+    post:
+      description: Retrieve AWS CloudWatch Logs Events
+      parameters:
+      - description: The Log Group to get loge events from
+        example: /aws/lambda/apphub-bundles
+        in: query
+        name: Log Group
+        required: true
+        schema: {type: string}
+      - description: The log stream to get log events from
+        example: 2018/12/04/[$LATEST]d53f6d4b5fe14daa80dcdaab92c5c2a5
+        in: query
+        name: Log Stream
+        required: true
+        schema: {type: string}
+      - description: Milliseconds in epoch/unix time
+        example: '1562078646'
+        in: body
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: Milliseconds in epoch/unix time
+        example: '1562078646'
+        in: body
+        name: End Time
+        required: false
+        schema: {type: string}
+      - description: The maximum number of log events returned
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: If true, earliest log events are returned first
+        example: 'True'
+        in: query
+        name: Start From Head
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: AWS CloudWatch Logs Get Log Events
+  tmp10:
+    post:
+      description: Retrieve AWS Config compliance summary by resource type
+      parameters:
+      - description: The type of AWS resource
+        example: AWS::EC2::Instance
+        in: query
+        name: Resource Type
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: AWS Config Get Compliance Summary By Resource Type
+  tmp11:
+    post:
+      description: Retrieve AWS Config compliance details for resources by resource
+        type
+      parameters:
+      - description: The type of AWS resource
+        example: AWS::EC2::Instance
+        in: query
+        name: Resource Type
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: AWS Config Get Resources Compliance Details By Resource Type
+  tmp12:
+    post:
+      description: Retrieve a list of AWS Config rules
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: AWS Config Get Config Rules
+  tmp13:
+    post:
+      description: Retrieve AWS Config discovered resources
+      parameters:
+      - description: The type of AWS resource
+        example: AWS::EC2::Instance
+        in: query
+        name: Resource Type
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: AWS Config List Resources
+  tmp14:
+    post:
+      description: Retrieve AWS Cost cost and usage for a specified time period
+      parameters:
+      - description: The beginning of the time period you want usage and costs for
+        example: '2019-01-01'
+        in: query
+        name: Start Day
+        required: true
+        schema: {type: string}
+      - description: The end of the time period you want usage and costs for
+        example: '2019-06-01'
+        in: query
+        name: End Day
+        required: true
+        schema: {type: string}
+      - description: Sets the AWS cost granularity to MONTHLY or DAILY
+        example: DAILY
+        in: query
+        name: Granularity
+        required: false
+        schema: {type: string}
+      - description: Which metrics are returned in the query. Valid values are AmortizedCost,BlendedCost,NetAmortizedCost,NetUnblendedCost,NormalizedUsageAmount,UnblendedCost,UsageQuantity
+        example: NetAmortizedCost
+        in: query
+        name: Metrics
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp14'}
+          description: Successful request
+      summary: AWS Cost Get Cost and Usage
+  tmp15:
+    post:
+      description: Blacklist an IP using EC2 Network ACLs
+      parameters:
+      - description: IP Address
+        example: 192.168.1.1
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp15'}
+          description: Successful request
+      summary: AWS EC2 Blacklist IP in Network ACLs
+  tmp16:
+    post:
+      description: Create a AWS EC2 Security Group
+      parameters:
+      - description: The EC2 Security Group Description
+        example: My Quarantine Security Group
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: The name of your new security group
+        example: Quarantine-12345
+        in: query
+        name: Group Name
+        required: true
+        schema: {type: string}
+      - description: The ID of a VPC
+        example: 0849b08153765e382
+        in: query
+        name: VPC ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp16'}
+          description: Successful request
+      summary: AWS EC2 Create Security Group
+  tmp17:
+    post:
+      description: Create a AWS EC2 Traffic Mirror Filter
+      parameters:
+      - description: The description of the Traffic Mirror rule.
+        example: 443-444
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: The type of resource to tag. Currently, the resource types that
+          support tagging on creation are fleet,dedicated-host,instance,snapshot,volume
+        example: instance
+        in: query
+        name: Resource Type
+        required: false
+        schema: {type: string}
+      - description: The key of the tag
+        example: Example Key
+        in: query
+        name: Tag Key
+        required: false
+        schema: {type: string}
+      - description: The value of the tag
+        example: Example Value
+        in: query
+        name: Tag Value
+        required: false
+        schema: {type: string}
+      - description: Checks whether you have the required permissions for the action
+        example: 'True'
+        in: query
+        name: Dry Run
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp17'}
+          description: Successful request
+      summary: AWS EC2 Create Traffic Mirror Filter
+  tmp18:
+    post:
+      description: Create a AWS EC2 Traffic Mirror Filter Rule
+      parameters:
+      - description: The ID of the filter that this rule is associated with.
+        example: d53f6d4b5fe14daa80dcdaab92c5c2a5
+        in: query
+        name: Traffic Mirror Filter ID
+        required: true
+        schema: {type: string}
+      - description: The type of traffic (ingress | egress ).
+        example: ingress
+        in: query
+        name: Traffic Direction
+        required: true
+        schema: {type: string}
+      - description: The number of the Traffic Mirror rule
+        example: '123'
+        in: body
+        name: Rule Number
+        required: true
+        schema: {type: string}
+      - description: The action to take (accept | reject ) on the filtered traffic
+        example: accept
+        in: body
+        name: Rule Action
+        required: true
+        schema: {type: string}
+      - description: The destination CIDR block to assign to the Traffic Mirror rule
+        example: 10.0.0.0/24
+        in: query
+        name: Destination CIDR Block
+        required: true
+        schema: {type: string}
+      - description: The source CIDR block to assign to the Traffic Mirror rule.
+        example: 10.0.0.0/24
+        in: query
+        name: Source CIDR Block
+        required: true
+        schema: {type: string}
+      - description: The destination port range.
+        example: 80-443
+        in: query
+        name: Destination Port Range
+        required: false
+        schema: {type: string}
+      - description: The source port range
+        example: 443-444
+        in: query
+        name: Source Port Range
+        required: false
+        schema: {type: string}
+      - description: The protocol, for example UDP, to assign to the Traffic Mirror
+          Rule
+        example: TCP
+        in: query
+        name: Protocol
+        required: false
+        schema: {type: string}
+      - description: The description of the Traffic Mirror rule.
+        example: 443-444
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: Checks whether you have the required permissions for the action
+        example: 'True'
+        in: query
+        name: Dry Run
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp18'}
+          description: Successful request
+      summary: AWS EC2 Create Traffic Mirror Filter Rule
+  tmp19:
+    post:
+      description: Create a AWS EC2 Traffic Mirror Session
+      parameters:
+      - description: The ID of the filter that this rule is associated with.
+        example: d53f6d4b5fe14daa80dcdaab92c5c2a5
+        in: query
+        name: Traffic Mirror Filter ID
+        required: true
+        schema: {type: string}
+      - description: The ID of the source network interface.
+        example: d53f6d4b5fe14daa80dcdaab92c5c2a5
+        in: query
+        name: Network Interface ID
+        required: true
+        schema: {type: string}
+      - description: The ID of the Traffic Mirror Target
+        example: d53f6d4b5fe14daa80dcdaab92c5c2a5
+        in: query
+        name: Traffic Target ID
+        required: true
+        schema: {type: string}
+      - description: The session number determines the order in which sessions are
+          evaluated when an interface is used by multiple sessions
+        example: '1'
+        in: body
+        name: Session Number
+        required: true
+        schema: {type: string}
+      - description: The number of bytes in each packet to mirror
+        example: '100'
+        in: body
+        name: Packet Length
+        required: false
+        schema: {type: string}
+      - description: The VXLAN ID for the Traffic Mirror session
+        example: '123'
+        in: body
+        name: Virtual Network ID
+        required: false
+        schema: {type: string}
+      - description: The description of the Traffic Mirror rule.
+        example: 443-444
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: The type of resource to tag. Currently, the resource types that
+          support tagging on creation are fleet,dedicated-host,instance,snapshot,volume
+        example: instance
+        in: query
+        name: Resource Type
+        required: false
+        schema: {type: string}
+      - description: The key of the tag
+        example: Example Key
+        in: query
+        name: Tag Key
+        required: false
+        schema: {type: string}
+      - description: The value of the tag
+        example: Example Value
+        in: query
+        name: Tag Value
+        required: false
+        schema: {type: string}
+      - description: Checks whether you have the required permissions for the action
+        example: 'True'
+        in: query
+        name: Dry Run
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp19'}
+          description: Successful request
+      summary: AWS EC2 Create Traffic Mirror Session
+  tmp2:
+    post:
+      description: Retrieve AWS CloudWatch Logs Query Results
+      parameters:
+      - description: Returns results from specified query
+        example: 82be43d4-c53f-4b02-9812-37bf08c5c15f
+        in: query
+        name: Query ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: AWS CloudWatch Logs Get Query Results
+  tmp20:
+    post:
+      description: Create a AWS EC2 Traffic Mirror Target
+      parameters:
+      - description: The Amazon Resource Name (ARN) of the Network Load Balancer that
+          is associated with the target.
+        example: d53f6d4b5fe14daa80dcdaab92c5c2a5
+        in: query
+        name: Network Load Balancer ARN
+        required: false
+        schema: {type: string}
+      - description: The ID of the source network interface.
+        example: d53f6d4b5fe14daa80dcdaab92c5c2a5
+        in: query
+        name: Network Interface ID
+        required: true
+        schema: {type: string}
+      - description: The description of the Traffic Mirror rule.
+        example: 443-444
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: The type of resource to tag. Currently, the resource types that
+          support tagging on creation are fleet,dedicated-host,instance,snapshot,volume
+        example: instance
+        in: query
+        name: Resource Type
+        required: false
+        schema: {type: string}
+      - description: The key of the tag
+        example: Example Key
+        in: query
+        name: Tag Key
+        required: false
+        schema: {type: string}
+      - description: The value of the tag
+        example: Example Value
+        in: query
+        name: Tag Value
+        required: false
+        schema: {type: string}
+      - description: Checks whether you have the required permissions for the action
+        example: 'True'
+        in: query
+        name: Dry Run
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp20'}
+          description: Successful request
+      summary: AWS EC2 Create Traffic Mirror Target
+  tmp21:
+    post:
+      description: Delete a AWS EC2 Security Group
+      parameters:
+      - description: The EC2 Security Group Id
+        example: sg-dc25209c
+        in: query
+        name: Group Id
+        required: false
+        schema: {type: string}
+      - description: The name of your new security group
+        example: Quarantine-12345
+        in: query
+        name: Group Name
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp21'}
+          description: Successful request
+      summary: AWS EC2 Delete Security Group
+  tmp22:
+    post:
+      description: Delete a AWS EC2 Traffic Mirror Filter
+      parameters:
+      - description: The traffic mirror filter ID
+        example: d53f6d4b5fe14daa80dcdaab92c5c2a5
+        in: query
+        name: Traffic Mirror Filter ID
+        required: false
+        schema: {type: string}
+      - description: Checks whether you have the required permissions for the action
+        example: 'True'
+        in: query
+        name: Dry Run
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp22'}
+          description: Successful request
+      summary: AWS EC2 Delete Traffic Mirror Filter
+  tmp23:
+    post:
+      description: Delete a AWS EC2 Traffic Mirror Filter Rule
+      parameters:
+      - description: 'The traffic mirror filter rule id you '
+        example: d53f6d4b5fe14daa80dcdaab92c5c2a5
+        in: query
+        name: Traffic Mirror Filter Rule ID
+        required: true
+        schema: {type: string}
+      - description: Checks whether you have the required permissions for the action
+        example: 'True'
+        in: query
+        name: Dry Run
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp23'}
+          description: Successful request
+      summary: AWS EC2 Delete Traffic Mirror Filter Rule
+  tmp24:
+    post:
+      description: Delete a AWS EC2 Traffic Mirror Session
+      parameters:
+      - description: The traffic mirror session ID
+        example: d53f6d4b5fe14daa80dcdaab92c5c2a5
+        in: query
+        name: Traffic Mirror Session ID
+        required: false
+        schema: {type: string}
+      - description: Checks whether you have the required permissions for the action
+        example: 'True'
+        in: query
+        name: Dry Run
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp24'}
+          description: Successful request
+      summary: AWS EC2 Delete Traffic Mirror Session
+  tmp25:
+    post:
+      description: Delete a AWS EC2 Traffic Mirror Target
+      parameters:
+      - description: The traffic mirror target ID
+        example: d53f6d4b5fe14daa80dcdaab92c5c2a5
+        in: query
+        name: Traffic Mirror Target Id
+        required: true
+        schema: {type: string}
+      - description: Checks whether you have the required permissions for the action
+        example: 'True'
+        in: query
+        name: Dry Run
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp25'}
+          description: Successful request
+      summary: AWS EC2 Delete Traffic Mirror Target
+  tmp26:
+    post:
+      description: Get All Instances on AWS EC2
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp26'}
+          description: Successful request
+      summary: AWS EC2 Get Instances
+  tmp27:
+    post:
+      description: List Security Groups on AWS EC2
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp27'}
+          description: Successful request
+      summary: AWS EC2 List Security Groups
+  tmp28:
+    post:
+      description: Quarantine a AWS EC2 Instance using Security Groups
+      parameters:
+      - description: ID of AWS EC2 instance
+        example: ''
+        in: query
+        name: Instance ID
+        required: true
+        schema: {type: string}
+      - description: ID of AWS EC2 VPC
+        example: ''
+        in: query
+        name: VPC ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp28'}
+          description: Successful request
+      summary: AWS EC2 Quarantine EC2 Instance
+  tmp29:
+    post:
+      description: Snapshot a AWS EC2 Instance
+      parameters:
+      - description: ID of AWS EC2 instance
+        example: ''
+        in: query
+        name: Instance ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp29'}
+          description: Successful request
+      summary: AWS EC2 Snapshot Instance
+  tmp3:
+    post:
+      description: Get a list of AWS CloudWatch log groups
+      parameters:
+      - description: Log Group Prefix
+        example: /aws/lambda
+        in: query
+        name: Group Prefix
+        required: false
+        schema: {type: string}
+      - description: Limit
+        example: '10'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: AWS CloudWatch Logs List Log Groups
+  tmp30:
+    post:
+      description: Start AWS EC2 instance by ID
+      parameters:
+      - description: ID of AWS EC2 instance
+        example: ''
+        in: query
+        name: Instance ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp30'}
+          description: Successful request
+      summary: AWS EC2 Start Instance
+  tmp31:
+    post:
+      description: Stop AWS EC2 instance by ID
+      parameters:
+      - description: ID of AWS EC2 instance
+        example: ''
+        in: query
+        name: Instance ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp31'}
+          description: Successful request
+      summary: AWS EC2 Stop Instance
+  tmp32:
+    post:
+      description: Add or Remove a Security Rule from a Security Group on AWS EC2
+      parameters:
+      - description: Group ID of the security group to update, can be obtained from
+          AWS EC2 List Security Groups
+        example: ''
+        in: query
+        name: Group ID
+        required: true
+        schema: {type: string}
+      - description: Apply rule to ingress or egress
+        example: ''
+        in: query
+        name: Ingress or Egress
+        required: true
+        schema: {type: string}
+      - description: Add or delete a security rule, if deleting all fields must be
+          identical to the rule you wish to delete.
+        example: ''
+        in: query
+        name: Add or Delete
+        required: true
+        schema: {type: string}
+      - description: From Port (port range)
+        example: ''
+        in: body
+        name: From Port
+        required: true
+        schema: {type: string}
+      - description: To Port (port range)
+        example: ''
+        in: body
+        name: To Port
+        required: true
+        schema: {type: string}
+      - description: TCP or UDP
+        example: ''
+        in: query
+        name: IP Protocol
+        required: true
+        schema: {type: string}
+      - description: IPv4 or IPv6 range CIDR
+        example: 192.168.1.0/24
+        in: query
+        name: IP Range CIDR
+        required: true
+        schema: {type: string}
+      - description: Optional description
+        example: ''
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp32'}
+          description: Successful request
+      summary: AWS EC2 Update Security Group
+  tmp33:
+    post:
+      description: Whitelist an IP in EC2 Network ACLs
+      parameters:
+      - description: IP Address
+        example: 192.168.1.1
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp33'}
+          description: Successful request
+      summary: AWS EC2 Whitelist IP in Network ACLs
+  tmp34:
+    post:
+      description: Create a AWS GuardDuty Detector
+      parameters:
+      - description: A boolean value that specifies whether the detector is to be
+          enabled
+        example: 'True'
+        in: body
+        name: Enabled
+        required: true
+        schema: {type: string}
+      - description: A enum value that specifies how frequently customer got Finding
+          updates published. Valid values are FIFTEEN_MINUTES|ONE_HOUR|SIX_HOURS
+        example: FIFTEEN_MINUTES
+        in: query
+        name: Publish Frequency
+        required: false
+        schema: {type: string}
+      - description: The tags to be added to a new detector resource.
+        example: Test Tag
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp34'}
+          description: Successful request
+      summary: AWS GuardDuty Create Detector
+  tmp35:
+    post:
+      description: Create a IP Set of trusted IPs for AWS GuardDuty
+      parameters:
+      - description: The unique ID of the detector of the GuardDuty account for which
+          you want to create an IPSet.
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Detector ID
+        required: true
+        schema: {type: string}
+      - description: The IP Set Name
+        example: My IP Set Name
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: The IP Set Format. Valid values are TXT|STIX|OTX_CSV|ALIEN_VAULT|PROOF_POINT|FIRE_EYE
+        example: STIX
+        in: query
+        name: Format
+        required: true
+        schema: {type: string}
+      - description: The URI of the file that contains the IPSet.
+        example: https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key
+        in: query
+        name: Location
+        required: true
+        schema: {type: string}
+      - description: A boolean value that indicates whether GuardDuty is to start
+          using the uploaded IPSet.
+        example: 'True'
+        in: query
+        name: Activate Rule
+        required: true
+        schema: {type: boolean}
+      - description: The tags to be added to a new detector resource.
+        example: Test Tag
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp35'}
+          description: Successful request
+      summary: AWS GuardDuty Create IP Set
+  tmp36:
+    post:
+      description: Create a AWS GuardDuty Threat Intel Set
+      parameters:
+      - description: The unique ID of the detector that this threat intel set belongs
+          to.
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Detector ID
+        required: true
+        schema: {type: string}
+      - description: The IP Set Name
+        example: My IP Set Name
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: The IP Set Format. Valid values are TXT|STIX|OTX_CSV|ALIEN_VAULT|PROOF_POINT|FIRE_EYE
+        example: STIX
+        in: query
+        name: Format
+        required: true
+        schema: {type: string}
+      - description: The URI of the file that contains the IPSet.
+        example: https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key
+        in: query
+        name: Location
+        required: true
+        schema: {type: string}
+      - description: A boolean value that indicates whether GuardDuty is to start
+          using the uploaded IPSet.
+        example: 'True'
+        in: query
+        name: Activate Rule
+        required: true
+        schema: {type: boolean}
+      - description: The tags to be added to a new detector resource.
+        example: Test Tag
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp36'}
+          description: Successful request
+      summary: AWS GuardDuty Create Threat Intel Set
+  tmp37:
+    post:
+      description: Delete a AWS GuardDuty Detector
+      parameters:
+      - description: The unique ID of the detector that you want to get.
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Detector ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp37'}
+          description: Successful request
+      summary: AWS GuardDuty Delete Detector
+  tmp38:
+    post:
+      description: Delete a AWS GuardDuty IP Set
+      parameters:
+      - description: The unique ID of the detector that the ip set belong to.
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Detector ID
+        required: true
+        schema: {type: string}
+      - description: The IP Set ID
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: IP Set ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp38'}
+          description: Successful request
+      summary: AWS GuardDuty Delete IP Set
+  tmp39:
+    post:
+      description: Delete a AWS GuardDuty Threat Intel Set
+      parameters:
+      - description: The unique ID of the detector that the threat intel set belongs
+          to.
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Detector ID
+        required: true
+        schema: {type: string}
+      - description: The Threat Intel Set ID
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Threat Intel Set ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp39'}
+          description: Successful request
+      summary: AWS GuardDuty Delete Threat Intel Set
+  tmp4:
+    post:
+      description: Retrieve list of CloudWatch Log streams
+      parameters:
+      - description: The Log Group to get loge events from
+        example: /aws/lambda/apphub-bundles
+        in: query
+        name: Log Group
+        required: true
+        schema: {type: string}
+      - description: Log Stream Name Prefix
+        example: 2018/12/04
+        in: query
+        name: Log Stream Name Prefix
+        required: false
+        schema: {type: string}
+      - description: Limit
+        example: '10'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Results ordered by ether LogStreamName or LastEventTime
+        example: LogStreamName
+        in: query
+        name: Order By
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: AWS CloudWatch Logs List Log Streams
+  tmp40:
+    post:
+      description: Retrieve all AWS GuardDuty findings from all detectors
+      parameters:
+      - description: The attribute name you want to sort by
+        example: accountId
+        in: query
+        name: Attribute Name
+        required: false
+        schema: {type: string}
+      - description: The order by which the attribute name within findings are to
+          be returned
+        example: ASC|DESC
+        in: query
+        name: Order By
+        required: false
+        schema: {type: string}
+      - description: The maximum number of results to return
+        example: '1'
+        in: body
+        name: Max Results
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp40'}
+          description: Successful request
+      summary: AWS GuardDuty Get All Findings
+  tmp41:
+    post:
+      description: Retrieve details about a AWS GuardDuty Detector
+      parameters:
+      - description: The unique ID of the detector that you want to get.
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Detector ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp41'}
+          description: Successful request
+      summary: AWS GuardDuty Get Detector
+  tmp42:
+    post:
+      description: Retrieve AWS GuardDuty Findings based on finding IDs
+      parameters:
+      - description: The unique ID of the detector that you want to get.
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Detector ID
+        required: true
+        schema: {type: string}
+      - description: A single or list of finding IDs that you want to get.
+        example: '''ecb5dcd5c4288a8cb4c6f7c403a47508'',''f0b5dcc4ce09529eae55d774558c0e92'''
+        in: query
+        name: Finding IDs
+        required: true
+        schema: {type: string}
+      - description: The attribute name you want to sort by
+        example: AccountId
+        in: query
+        name: Attribute Name
+        required: false
+        schema: {type: string}
+      - description: The order byt which the sorted findings are to be returned
+        example: ASC|DESC
+        in: query
+        name: Order By
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp42'}
+          description: Successful request
+      summary: AWS GuardDuty Get Findings
+  tmp43:
+    post:
+      description: Retrieve a AWS GuardDuty IP Set
+      parameters:
+      - description: The unique ID of the detector that the ip set belong to.
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Detector ID
+        required: true
+        schema: {type: string}
+      - description: The IP Set ID
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: IP Set ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp43'}
+          description: Successful request
+      summary: AWS GuardDuty Get IP Set
+  tmp44:
+    post:
+      description: Retrieve a AWS GuardDuty Threat Intel Set
+      parameters:
+      - description: The unique ID of the detector that the threat intel set belongs
+          to.
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Detector ID
+        required: true
+        schema: {type: string}
+      - description: The Threat Intel Set ID
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Threat Intel Set ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp44'}
+          description: Successful request
+      summary: AWS GuardDuty Get Threat Intel Set
+  tmp45:
+    post:
+      description: List AWS GuardDuty Detectors
+      parameters:
+      - description: The maximum number of results to return
+        example: '1'
+        in: body
+        name: Max Results
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp45'}
+          description: Successful request
+      summary: AWS GuardDuty List Detectors
+  tmp46:
+    post:
+      description: Retrieve a list of AWS GuardDuty Findings
+      parameters:
+      - description: The unique ID of the detector that the ip set belong to.
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Detector ID
+        required: true
+        schema: {type: string}
+      - description: A tuple that contains the finding criteria
+        example: ('sample', 'Eq', 'value')
+        in: query
+        name: Finding Criteria
+        required: false
+        schema: {type: string}
+      - description: Represents the finding attribute (for example, accountId) by
+          which to sort findings
+        example: AccountId
+        in: query
+        name: Attribute Name
+        required: false
+        schema: {type: string}
+      - description: Order by which the sorted findings are to be displayed.
+        example: ASC|DESC
+        in: query
+        name: Order By
+        required: false
+        schema: {type: string}
+      - description: The maximum number of results to return
+        example: '1'
+        in: body
+        name: Max Results
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp46'}
+          description: Successful request
+      summary: AWS GuardDuty List Findings
+  tmp47:
+    post:
+      description: List AWS GuardDuty IP Sets
+      parameters:
+      - description: The unique ID of the detector that the threat intel set belongs
+          to.
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Detector ID
+        required: true
+        schema: {type: string}
+      - description: The maximum number of results to return
+        example: '1'
+        in: body
+        name: Max Results
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp47'}
+          description: Successful request
+      summary: AWS GuardDuty List IP Sets
+  tmp48:
+    post:
+      description: List AWS GuardDuty Threat Intel Sets
+      parameters:
+      - description: The unique ID of the detector that the threat intel set belongs
+          to.
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Detector ID
+        required: true
+        schema: {type: string}
+      - description: The maximum number of results to return
+        example: '1'
+        in: body
+        name: Max Results
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp48'}
+          description: Successful request
+      summary: AWS GuardDuty List Threat Intel Sets
+  tmp49:
+    post:
+      description: Update a AWS GuardDuty Detector
+      parameters:
+      - description: The unique ID of the detector to update.
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Detector ID
+        required: true
+        schema: {type: string}
+      - description: A boolean value that specifies whether the detector is to be
+          enabled
+        example: 'True'
+        in: query
+        name: Enabled
+        required: false
+        schema: {type: string}
+      - description: A enum value that specifies how frequently customer got Finding
+          updates published. Valid values are FIFTEEN_MINUTES|ONE_HOUR|SIX_HOURS
+        example: FIFTEEN_MINUTES
+        in: query
+        name: Publish Frequency
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp49'}
+          description: Successful request
+      summary: AWS GuardDuty Update Detector
+  tmp5:
+    post:
+      description: Retrieve a list of AWS CloudWatch Log Insight Queries
+      parameters:
+      - description: The Log Group to get loge events from
+        example: /aws/lambda/apphub-bundles
+        in: query
+        name: Log Group
+        required: false
+        schema: {type: string}
+      - description: Limits returned queries to either Cancelled, Complete, Failed,
+          Running, or Scheduled
+        example: Complete
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: Limits the number of returned queries to the specified number
+        example: '10'
+        in: body
+        name: Max Results
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: AWS CloudWatch Logs List Queries
+  tmp50:
+    post:
+      description: Update a AWS GuardDuty IP Set
+      parameters:
+      - description: The unique ID of the detector of the GuardDuty account for which
+          you want to create an IPSet.
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Detector ID
+        required: true
+        schema: {type: string}
+      - description: The IP Set ID
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: IP Set ID
+        required: true
+        schema: {type: string}
+      - description: The IP Set Name
+        example: My IP Set Name
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: The URI of the file that contains the IPSet.
+        example: https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key
+        in: query
+        name: Location
+        required: false
+        schema: {type: string}
+      - description: A boolean value that indicates whether GuardDuty is to start
+          using the uploaded IPSet.
+        example: 'True'
+        in: query
+        name: Activate Rule
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp50'}
+          description: Successful request
+      summary: AWS GuardDuty Update IP Set
+  tmp51:
+    post:
+      description: Update a AWS GuardDuty Threat Intel Set
+      parameters:
+      - description: The unique ID of the detector of the GuardDuty account for which
+          you want to create an IPSet.
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Detector ID
+        required: true
+        schema: {type: string}
+      - description: The Threat Intel Set ID
+        example: a0b5cac42991390a56f6850116d554e9
+        in: query
+        name: Threat Intel Set ID
+        required: true
+        schema: {type: string}
+      - description: The IP Set Name
+        example: My IP Set Name
+        in: query
+        name: Name
+        required: false
+        schema: {type: string}
+      - description: The URI of the file that contains the IPSet.
+        example: https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key
+        in: query
+        name: Location
+        required: false
+        schema: {type: string}
+      - description: A boolean value that indicates whether GuardDuty is to start
+          using the uploaded IPSet.
+        example: 'True'
+        in: query
+        name: Activate Rule
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp51'}
+          description: Successful request
+      summary: AWS GuardDuty Update Threat Intel Set
+  tmp52:
+    post:
+      description: Add New Version of AWS IAM Policy. (Policies can have a maximum
+        of 5 versions)
+      parameters:
+      - description: The Amazon Resource Name (ARN) of the IAM policy to which you
+          want to add a new version
+        example: ''
+        in: query
+        name: Policy ARN
+        required: true
+        schema: {type: string}
+      - description: The JSON policy document that you want to use as the content
+          for this new version of the policy
+        example: ''
+        in: query
+        name: Policy Document
+        required: true
+        schema: {type: string}
+      - description: Specifies whether to set this version as the policy's default
+          version. When this parameter is true, the new policy version becomes the
+          operative version. That is, it becomes the version that is in effect for
+          the IAM users, groups, and roles that the policy is attached to.
+        example: ''
+        in: query
+        name: Set As Default Version
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp52'}
+          description: Successful request
+      summary: AWS IAM Update Policy
+  tmp53:
+    post:
+      description: Find S3 Buckets based on ACLs and or permissions
+      parameters:
+      - description: Find buckets based on a provided ACL or list of ACLs
+        example: ''
+        in: query
+        name: Bucket ACL
+        required: false
+        schema: {type: string}
+      - description: Find buckets based on a provided permissions or list of permissions
+        example: ''
+        in: query
+        name: Bucket Permissions
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp53'}
+          description: Successful request
+      summary: AWS S3 Find Buckets
+  tmp54:
+    post:
+      description: Get findings from AWS SecurityHub
+      parameters:
+      - description: The Key name of the filter you want to use
+        example: Title
+        in: query
+        name: Filter Key
+        required: false
+        schema: {type: string}
+      - description: The comparison operator based on the filter key name.
+        example: EQUALS|PREFIX or Gte|Lte|Eq or Cidr
+        in: query
+        name: Filter Comparison
+        required: false
+        schema: {type: string}
+      - description: The value to filter against
+        example: '4.2'
+        in: query
+        name: Filter Value
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp54'}
+          description: Successful request
+      summary: AWS SecurityHub Get Findings
+  tmp55:
+    post:
+      description: Get insights from AWS SecurityHub
+      parameters:
+      - description: The Arn of specific AWS Insights
+        example: arn:aws:securityhub:us-east-1:883289105955:insight/8832891/custom/351a4e4a-c813-4afe-8fc2-96207bf07dd4'
+        in: query
+        name: Insight ARNs
+        required: false
+        schema: {type: string}
+      - description: Max results to return
+        example: '50'
+        in: query
+        name: Max Results
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp55'}
+          description: Successful request
+      summary: AWS SecurityHub Get Insights
+  tmp6:
+    post:
+      description: Start a AWS CloudWatch Logs Query
+      parameters:
+      - description: The Log Group to get loge events from
+        example: /aws/lambda/apphub-bundles
+        in: query
+        name: Log Group
+        required: true
+        schema: {type: string}
+      - description: A query string
+        example: fields @timestamp, @message | sort @timestamp desc | limit 25
+        in: query
+        name: Query string
+        required: true
+        schema: {type: string}
+      - description: Milliseconds in epoch/unix time
+        example: '1562078646'
+        in: body
+        name: Start Time
+        required: true
+        schema: {type: string}
+      - description: Milliseconds in epoch/unix time
+        example: '1562078646'
+        in: body
+        name: End Time
+        required: true
+        schema: {type: string}
+      - description: The maximum number of log events returned
+        example: '100'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: AWS CloudWatch Logs Start Query
+  tmp7:
+    post:
+      description: Stop a AWS CloudWatch Logs Query
+      parameters:
+      - description: Returns results from specified query
+        example: 82be43d4-c53f-4b02-9812-37bf08c5c15f
+        in: query
+        name: Query ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: AWS CloudWatch Logs Stop Query
+  tmp8:
+    post:
+      description: Get AWS Config compliance by config rule
+      parameters:
+      - description: A AWS Config Rule Name
+        example: cloud-trail-cloud-watch-logs-enabled
+        in: query
+        name: Config Rule Name
+        required: true
+        schema: {type: string}
+      - description: Compliance Type
+        example: COMPLIANT
+        in: query
+        name: Compliance Type
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: AWS Config Get Compliance by Config Rule
+  tmp9:
+    post:
+      description: Describe AWS Config compliance by resource
+      parameters:
+      - description: The type of AWS resource
+        example: AWS::EC2::Instance
+        in: query
+        name: Resource Type
+        required: true
+        schema: {type: string}
+      - description: The ID of the AWS resource for which you want compliance information
+        example: apphub-bundles-artifacts
+        in: query
+        name: Resource ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: AWS Config Get Compliance by Resource
+tags:
+- {name: Infrastructure}

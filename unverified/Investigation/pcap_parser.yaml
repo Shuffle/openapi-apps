@@ -1,0 +1,76 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        packets: {type: string}
+      type: object
+    tmp1:
+      properties:
+        ips: {type: string}
+      type: object
+    tmp2:
+      properties:
+        ips: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Swimlane PCAP Parser
+  title: Swimlane PCAP Parser
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWCAYAAABVVmH3AAAEHUlEQVR4nO2bPWgVQRDH/08t1PjxrBQRBRVtFEGM4CcxiGBlwE4EkWDhB9imUCSNELARRcQmjR+FnYIoolgkVmJpCiEqaAq/iIZIjMZnkYTcu+zezczu3u2R+cFC8m52ZnZubnZv3z5AURRFURRFURRFURRFUQLRSDQKvwC0hnOn+jQM7QKzXzfFUE3oYFWxZWhWHEx9cuM2j+TO3GVt2Q5UhQcwlwNbJnNkm5hrpQCgT1hjABZarpVeCkR3OzDUx1sc1CKQBra3QH+4LQokjt2ckmvz7Mtqiz9RBZZqwOTYAaY8ZzC2fjszdEcR3OsJ5ScI8ianBi2y3yzyixn++QweN7i7MDnhsQNvUj4/Q/4kwbkrOfpdsrXM1smZ4WyDrBFkpEwAWECUHQawXGinAWAJJvcEAOA7gBVCXQD4S4cg9SUDydKG4+MggA2edDXBXcdSNix8IsnAGoCjBLk6soM6reujwId1gj6F16uBDF++ZFx7k6OXg3RCC2LEd0tynzCgLF27PY/ZmbKC2gBwCDPLmXS7yvSVS49nfWRHY2hnGf5yucTVl568fk4J3hEYL5uOgLoPuyow3Y1Xls9japRxJNtrD3EhPwHjgQadbCMBdCbpF/bLg60r5FsTdXEvtduCmTclqY48HzcCeCvRN8/0oSM1pq4agPUCO6OJv/sE/YHs7B0BL6hN+tKT1zamIl+8c+x/z7H/jdT/3ZjcO5CyKusit9adcXBEarOe6PvPcP2uQKePtsbnIH1xzcHueYvOogObSRlBDWk7VOBaU9f2+3KkhTE4Kq4Df27Q2eVBb96N3JQ3sGOeDEk5x7BP9etgAJ1sBoo0ZsF3EEJnq5F2AB8Ehj5LjBEpKrArGbKFDeA911hBfl0k6ttssW0rhe1FDUD0eHj2y7QXm+aRpS/X/kSIARQZ2K0M+3Wizr3g+y0eb6znYzsYssNEuT4AT9meNHOEI+yasZmvb0LKfmKm+QNgn6Qj94i4jTqAHxIHPNiO4lhlGl+lYNiTnk7wgvrEk13v+MpYij4KEpsjAJY52vVOVsZmHbe00SN1BPJ6udShbzAoGVZE5voKzBiARZ50OZFXYx8L9VJn7FGiHBXb7wYKx3eNjYEoVgm2jI05qJdhf4GIogyYSO+Gx9ZuWfzuBfDVRwB8YXpsYs3W34iohuZhq0fp4IY82EElitpJxVZjtwP4C+A0Zg+oUgMsC5cgFZ25lbqhLnsF4968oJF1LD46qpSxQIWyNqaN7uOYOVD30CJD/c1XpTGtM58Z5HYAeGmRNx2smCb9VUqsy0CvDIG/m2+Sv53T5wVRd3RIS8EWga5Ths8+5fRpA/+8beXZA/dvPbvCuFY+LpNBP9wzKS9jK0vZq4Khku0riqIoiqIoiqIoiqIoijKL/z+CkF0UOMorAAAAAElFTkSuQmCC
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Extract packet metadata from PCAP file
+      parameters:
+      - description: Base64-encoded PCAP file contents
+        example: 1MOyoQIABAAAAAAAAAAAAP//AAABAAAAYmXiWObRDgBEAAAARAAAAAEAXgAA/ABQVqQvsggARQAANjqJAAABEZKrCgABh+AAAPzCWRTrACJTmkOjAAAAAQAAAAAAAAhzc2VfZGdkYgAAAQAB
+        in: query
+        name: PCAP
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Analyze PCAP
+  tmp1:
+    post:
+      description: Find and return all source and dest IPs found in PCAP
+      parameters:
+      - description: Base64-encoded PCAP file contents
+        example: 1MOyoQIABAAAAAAAAAAAAP//AAABAAAAYmXiWObRDgBEAAAARAAAAAEAXgAA/ABQVqQvsggARQAANjqJAAABEZKrCgABh+AAAPzCWRTrACJTmkOjAAAAAQAAAAAAAAhzc2VfZGdkYgAAAQAB
+        in: query
+        name: PCAP
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Extract IPs from PCAP
+  tmp2:
+    post:
+      description: Parse input text for all IP addresses
+      parameters:
+      - description: Input text to scan for IP addresses
+        example: Some text containing IP addresses like 192.168.1.1
+        in: query
+        name: Input Text
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Carve IPs
+tags:
+- {name: Investigation}

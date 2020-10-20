@@ -1,0 +1,2267 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        ApprovalBlockID: {type: string}
+        BreachNotes: {type: string}
+        CIDownEndDateTime: {type: string}
+        CIDownStartDateTime: {type: string}
+        CIDowntimeInMinutes: {type: string}
+        CallSource: {type: string}
+        Category: {type: string}
+        Cause: {type: string}
+        ChangeID: {type: string}
+        ClonedIncident: {type: string}
+        ClonedIncidentID: {type: string}
+        CloseDescription: {type: string}
+        ClosedBy: {type: string}
+        ClosedByID: {type: string}
+        ClosedDateTime: {type: string}
+        ClosedOn1stCall: {type: string}
+        Comments: {type: string}
+        ConfigItemDisplayName: {type: string}
+        ConfigItemRecID: {type: string}
+        ConfigItemTypeID: {type: string}
+        Cost: {type: string}
+        CreatedBy: {type: string}
+        CreatedByEmail: {type: string}
+        CreatedByID: {type: string}
+        CreatedDateTime: {type: string}
+        CreatedDuring: {type: string}
+        CustomerDisplayName: {type: string}
+        CustomerRecID: {type: string}
+        CustomerSubscriptionLevel: {type: string}
+        CustomerTypeID: {type: string}
+        DefaultTeam: {type: string}
+        Description: {type: string}
+        Impact: {type: string}
+        IncidentDurationInDays: {type: string}
+        IncidentDurationInHours: {type: string}
+        IncidentID: {type: string}
+        IncidentType: {type: string}
+        IncidentchildID: {type: string}
+        IncidentchildRecID: {type: string}
+        LastModBy: {type: string}
+        LastModByID: {type: string}
+        LastModTimeStamp: {type: string}
+        LastModifiedDateTime: {type: string}
+        Level2EscalationComplete: {type: string}
+        Level2EscalationTeam: {type: string}
+        Level3EscalationComplete: {type: string}
+        Level3EscalationTeam: {type: string}
+        LinkedProblem: {type: string}
+        LinkedSLAs: {type: string}
+        Location: {type: string}
+        MajorIncident: {type: string}
+        MajorIncidentID: {type: string}
+        MajorIncidentRecID: {type: string}
+        NextStatus: {type: string}
+        NextStatusOneStep: {type: string}
+        NextStatusText: {type: string}
+        OwnedBy: {type: string}
+        OwnedByID: {type: string}
+        OwnedByManager: {type: string}
+        OwnedByTeam: {type: string}
+        OwnedByTeamID: {type: string}
+        PendingEndDateTime: {type: string}
+        PendingPreviousStatus: {type: string}
+        PendingReason: {type: string}
+        PendingStartDateTime: {type: string}
+        PortalAffectsMultipleUsers: {type: string}
+        Priority: {type: string}
+        RecID: {type: string}
+        RecurringIncident: {type: string}
+        RequesterDepartment: {type: string}
+        ReviewByDeadline: {type: string}
+        SCTFired: {type: string}
+        SCTRecID: {type: string}
+        SLAID: {type: string}
+        SLAIDForCI: {type: string}
+        SLAIDForCustomer: {type: string}
+        SLAName: {type: string}
+        SLANameForCustomer: {type: string}
+        SLANameForService: {type: string}
+        SLAResolutionWarning: {type: string}
+        SLAResolveByDeadline: {type: string}
+        SLARespondByDeadline: {type: string}
+        SLAResponseWarning: {type: string}
+        SLA_Key: {type: string}
+        STCTimeInMinutes: {type: string}
+        Service: {type: string}
+        ServiceCartID: {type: string}
+        ServiceCatalogTemplateName: {type: string}
+        ServiceEntitlements: {type: string}
+        ServiceID: {type: string}
+        ShowContactInformation: {type: string}
+        SmartClassifySearchString: {type: string}
+        Source: {type: string}
+        SpecificsTypeId: {type: string}
+        Stat_DateTimeAssigned: {type: string}
+        Stat_DateTimeClosed: {type: string}
+        Stat_DateTimeInProgress: {type: string}
+        Stat_DateTimeReOpened: {type: string}
+        Stat_DateTimeResolved: {type: string}
+        Stat_DateTimeResponded: {type: string}
+        Stat_FirstCallResolution: {type: string}
+        Stat_IncidentEscalated: {type: string}
+        Stat_IncidentReopened: {type: string}
+        Stat_NumberOfEscalations: {type: string}
+        Stat_NumberOfTouches: {type: string}
+        Stat_SLAResolutionGood: {type: string}
+        Status: {type: string}
+        StatusDesc: {type: string}
+        StatusID: {type: string}
+        Subcategory: {type: string}
+        SubcategoryID: {type: string}
+        TaskClosedCount: {type: string}
+        TasksClosed: {type: string}
+        TasksInProgress: {type: string}
+        TasksOnHold: {type: string}
+        TotalSTCTimeInMinutes: {type: string}
+        TotalTaskTime: {type: string}
+        TotalTasks: {type: string}
+        Urgency: {type: string}
+        WasCIDown: {type: string}
+        Withdraw: {type: string}
+        busObId: {type: string}
+        busObPublicId: {type: string}
+        busObRecId: {type: string}
+        error_Message: {type: string}
+        persist: {type: string}
+        type_name: {type: string}
+      type: object
+    tmp1:
+      properties:
+        ApprovalBlockID: {type: string}
+        BreachNotes: {type: string}
+        CIDownEndDateTime: {type: string}
+        CIDownStartDateTime: {type: string}
+        CIDowntimeInMinutes: {type: string}
+        CallSource: {type: string}
+        Category: {type: string}
+        Cause: {type: string}
+        ChangeID: {type: string}
+        ClonedIncident: {type: string}
+        ClonedIncidentID: {type: string}
+        CloseDescription: {type: string}
+        ClosedBy: {type: string}
+        ClosedByID: {type: string}
+        ClosedDateTime: {type: string}
+        ClosedOn1stCall: {type: string}
+        Comments: {type: string}
+        ConfigItemDisplayName: {type: string}
+        ConfigItemRecID: {type: string}
+        ConfigItemTypeID: {type: string}
+        Cost: {type: string}
+        CreatedBy: {type: string}
+        CreatedByEmail: {type: string}
+        CreatedByID: {type: string}
+        CreatedDateTime: {type: string}
+        CreatedDuring: {type: string}
+        CustomerDisplayName: {type: string}
+        CustomerRecID: {type: string}
+        CustomerSubscriptionLevel: {type: string}
+        CustomerTypeID: {type: string}
+        DefaultTeam: {type: string}
+        Description: {type: string}
+        Impact: {type: string}
+        IncidentDurationInDays: {type: string}
+        IncidentDurationInHours: {type: string}
+        IncidentID: {type: string}
+        IncidentType: {type: string}
+        IncidentchildID: {type: string}
+        IncidentchildRecID: {type: string}
+        LastModBy: {type: string}
+        LastModByID: {type: string}
+        LastModTimeStamp: {type: string}
+        LastModifiedDateTime: {type: string}
+        Level2EscalationComplete: {type: string}
+        Level2EscalationTeam: {type: string}
+        Level3EscalationComplete: {type: string}
+        Level3EscalationTeam: {type: string}
+        LinkedProblem: {type: string}
+        LinkedSLAs: {type: string}
+        Location: {type: string}
+        MajorIncident: {type: string}
+        MajorIncidentID: {type: string}
+        MajorIncidentRecID: {type: string}
+        NextStatus: {type: string}
+        NextStatusOneStep: {type: string}
+        NextStatusText: {type: string}
+        OwnedBy: {type: string}
+        OwnedByID: {type: string}
+        OwnedByManager: {type: string}
+        OwnedByTeam: {type: string}
+        OwnedByTeamID: {type: string}
+        PendingEndDateTime: {type: string}
+        PendingPreviousStatus: {type: string}
+        PendingReason: {type: string}
+        PendingStartDateTime: {type: string}
+        PortalAffectsMultipleUsers: {type: string}
+        Priority: {type: string}
+        RecID: {type: string}
+        RecurringIncident: {type: string}
+        RequesterDepartment: {type: string}
+        ReviewByDeadline: {type: string}
+        SCTFired: {type: string}
+        SCTRecID: {type: string}
+        SLAID: {type: string}
+        SLAIDForCI: {type: string}
+        SLAIDForCustomer: {type: string}
+        SLAName: {type: string}
+        SLANameForCustomer: {type: string}
+        SLANameForService: {type: string}
+        SLAResolutionWarning: {type: string}
+        SLAResolveByDeadline: {type: string}
+        SLARespondByDeadline: {type: string}
+        SLAResponseWarning: {type: string}
+        SLA_Key: {type: string}
+        STCTimeInMinutes: {type: string}
+        Service: {type: string}
+        ServiceCartID: {type: string}
+        ServiceCatalogTemplateName: {type: string}
+        ServiceEntitlements: {type: string}
+        ServiceID: {type: string}
+        ShowContactInformation: {type: string}
+        SmartClassifySearchString: {type: string}
+        Source: {type: string}
+        SpecificsTypeId: {type: string}
+        Stat_DateTimeAssigned: {type: string}
+        Stat_DateTimeClosed: {type: string}
+        Stat_DateTimeInProgress: {type: string}
+        Stat_DateTimeReOpened: {type: string}
+        Stat_DateTimeResolved: {type: string}
+        Stat_DateTimeResponded: {type: string}
+        Stat_FirstCallResolution: {type: string}
+        Stat_IncidentEscalated: {type: string}
+        Stat_IncidentReopened: {type: string}
+        Stat_NumberOfEscalations: {type: string}
+        Stat_NumberOfTouches: {type: string}
+        Stat_SLAResolutionGood: {type: string}
+        Status: {type: string}
+        StatusDesc: {type: string}
+        StatusID: {type: string}
+        Subcategory: {type: string}
+        SubcategoryID: {type: string}
+        TaskClosedCount: {type: string}
+        TasksClosed: {type: string}
+        TasksInProgress: {type: string}
+        TasksOnHold: {type: string}
+        TotalSTCTimeInMinutes: {type: string}
+        TotalTaskTime: {type: string}
+        TotalTasks: {type: string}
+        Urgency: {type: string}
+        WasCIDown: {type: string}
+        Withdraw: {type: string}
+        busObId: {type: string}
+        busObPublicId: {type: string}
+        busObRecId: {type: string}
+        error_Message: {type: string}
+        persist: {type: string}
+        type_name: {type: string}
+      type: object
+    tmp2:
+      properties:
+        ApprovalBlockID: {type: string}
+        BreachNotes: {type: string}
+        CIDownEndDateTime: {type: string}
+        CIDownStartDateTime: {type: string}
+        CIDowntimeInMinutes: {type: string}
+        CallSource: {type: string}
+        Category: {type: string}
+        Cause: {type: string}
+        ChangeID: {type: string}
+        ClonedIncident: {type: string}
+        ClonedIncidentID: {type: string}
+        CloseDescription: {type: string}
+        ClosedBy: {type: string}
+        ClosedByID: {type: string}
+        ClosedDateTime: {type: string}
+        ClosedOn1stCall: {type: string}
+        Comments: {type: string}
+        ConfigItemDisplayName: {type: string}
+        ConfigItemRecID: {type: string}
+        ConfigItemTypeID: {type: string}
+        Cost: {type: string}
+        CreatedBy: {type: string}
+        CreatedByEmail: {type: string}
+        CreatedByID: {type: string}
+        CreatedDateTime: {type: string}
+        CreatedDuring: {type: string}
+        CustomerDisplayName: {type: string}
+        CustomerRecID: {type: string}
+        CustomerSubscriptionLevel: {type: string}
+        CustomerTypeID: {type: string}
+        DefaultTeam: {type: string}
+        Description: {type: string}
+        Impact: {type: string}
+        IncidentDurationInDays: {type: string}
+        IncidentDurationInHours: {type: string}
+        IncidentID: {type: string}
+        IncidentType: {type: string}
+        IncidentchildID: {type: string}
+        IncidentchildRecID: {type: string}
+        LastModBy: {type: string}
+        LastModByID: {type: string}
+        LastModTimeStamp: {type: string}
+        LastModifiedDateTime: {type: string}
+        Level2EscalationComplete: {type: string}
+        Level2EscalationTeam: {type: string}
+        Level3EscalationComplete: {type: string}
+        Level3EscalationTeam: {type: string}
+        LinkedProblem: {type: string}
+        LinkedSLAs: {type: string}
+        Location: {type: string}
+        MajorIncident: {type: string}
+        MajorIncidentID: {type: string}
+        MajorIncidentRecID: {type: string}
+        NextStatus: {type: string}
+        NextStatusOneStep: {type: string}
+        NextStatusText: {type: string}
+        OwnedBy: {type: string}
+        OwnedByID: {type: string}
+        OwnedByManager: {type: string}
+        OwnedByTeam: {type: string}
+        OwnedByTeamID: {type: string}
+        PendingEndDateTime: {type: string}
+        PendingPreviousStatus: {type: string}
+        PendingReason: {type: string}
+        PendingStartDateTime: {type: string}
+        PortalAffectsMultipleUsers: {type: string}
+        Priority: {type: string}
+        RecID: {type: string}
+        RecurringIncident: {type: string}
+        RequesterDepartment: {type: string}
+        ReviewByDeadline: {type: string}
+        SCTFired: {type: string}
+        SCTRecID: {type: string}
+        SLAID: {type: string}
+        SLAIDForCI: {type: string}
+        SLAIDForCustomer: {type: string}
+        SLAName: {type: string}
+        SLANameForCustomer: {type: string}
+        SLANameForService: {type: string}
+        SLAResolutionWarning: {type: string}
+        SLAResolveByDeadline: {type: string}
+        SLARespondByDeadline: {type: string}
+        SLAResponseWarning: {type: string}
+        SLA_Key: {type: string}
+        STCTimeInMinutes: {type: string}
+        Service: {type: string}
+        ServiceCartID: {type: string}
+        ServiceCatalogTemplateName: {type: string}
+        ServiceEntitlements: {type: string}
+        ServiceID: {type: string}
+        ShowContactInformation: {type: string}
+        SmartClassifySearchString: {type: string}
+        Source: {type: string}
+        SpecificsTypeId: {type: string}
+        Stat_DateTimeAssigned: {type: string}
+        Stat_DateTimeClosed: {type: string}
+        Stat_DateTimeInProgress: {type: string}
+        Stat_DateTimeReOpened: {type: string}
+        Stat_DateTimeResolved: {type: string}
+        Stat_DateTimeResponded: {type: string}
+        Stat_FirstCallResolution: {type: string}
+        Stat_IncidentEscalated: {type: string}
+        Stat_IncidentReopened: {type: string}
+        Stat_NumberOfEscalations: {type: string}
+        Stat_NumberOfTouches: {type: string}
+        Stat_SLAResolutionGood: {type: string}
+        Status: {type: string}
+        StatusDesc: {type: string}
+        StatusID: {type: string}
+        Subcategory: {type: string}
+        SubcategoryID: {type: string}
+        TaskClosedCount: {type: string}
+        TasksClosed: {type: string}
+        TasksInProgress: {type: string}
+        TasksOnHold: {type: string}
+        TotalSTCTimeInMinutes: {type: string}
+        TotalTaskTime: {type: string}
+        TotalTasks: {type: string}
+        Urgency: {type: string}
+        WasCIDown: {type: string}
+        Withdraw: {type: string}
+        busObId: {type: string}
+        busObPublicId: {type: string}
+        busObRecId: {type: string}
+        error_Message: {type: string}
+        persist: {type: string}
+        type_name: {type: string}
+      type: object
+    tmp3:
+      properties:
+        ApprovalBlockID: {type: string}
+        BreachNotes: {type: string}
+        CIDownEndDateTime: {type: string}
+        CIDownStartDateTime: {type: string}
+        CIDowntimeInMinutes: {type: string}
+        CallSource: {type: string}
+        Category: {type: string}
+        Cause: {type: string}
+        ChangeID: {type: string}
+        ClonedIncident: {type: string}
+        ClonedIncidentID: {type: string}
+        CloseDescription: {type: string}
+        ClosedBy: {type: string}
+        ClosedByID: {type: string}
+        ClosedDateTime: {type: string}
+        ClosedOn1stCall: {type: string}
+        Comments: {type: string}
+        ConfigItemDisplayName: {type: string}
+        ConfigItemRecID: {type: string}
+        ConfigItemTypeID: {type: string}
+        Cost: {type: string}
+        CreatedBy: {type: string}
+        CreatedByEmail: {type: string}
+        CreatedByID: {type: string}
+        CreatedDateTime: {type: string}
+        CreatedDuring: {type: string}
+        CustomerDisplayName: {type: string}
+        CustomerRecID: {type: string}
+        CustomerSubscriptionLevel: {type: string}
+        CustomerTypeID: {type: string}
+        DefaultTeam: {type: string}
+        Description: {type: string}
+        Impact: {type: string}
+        IncidentDurationInDays: {type: string}
+        IncidentDurationInHours: {type: string}
+        IncidentID: {type: string}
+        IncidentType: {type: string}
+        IncidentchildID: {type: string}
+        IncidentchildRecID: {type: string}
+        LastModBy: {type: string}
+        LastModByID: {type: string}
+        LastModTimeStamp: {type: string}
+        LastModifiedDateTime: {type: string}
+        Level2EscalationComplete: {type: string}
+        Level2EscalationTeam: {type: string}
+        Level3EscalationComplete: {type: string}
+        Level3EscalationTeam: {type: string}
+        LinkedProblem: {type: string}
+        LinkedSLAs: {type: string}
+        Location: {type: string}
+        MajorIncident: {type: string}
+        MajorIncidentID: {type: string}
+        MajorIncidentRecID: {type: string}
+        NextStatus: {type: string}
+        NextStatusOneStep: {type: string}
+        NextStatusText: {type: string}
+        OwnedBy: {type: string}
+        OwnedByID: {type: string}
+        OwnedByManager: {type: string}
+        OwnedByTeam: {type: string}
+        OwnedByTeamID: {type: string}
+        PendingEndDateTime: {type: string}
+        PendingPreviousStatus: {type: string}
+        PendingReason: {type: string}
+        PendingStartDateTime: {type: string}
+        PortalAffectsMultipleUsers: {type: string}
+        Priority: {type: string}
+        RecID: {type: string}
+        RecurringIncident: {type: string}
+        RequesterDepartment: {type: string}
+        ReviewByDeadline: {type: string}
+        SCTFired: {type: string}
+        SCTRecID: {type: string}
+        SLAID: {type: string}
+        SLAIDForCI: {type: string}
+        SLAIDForCustomer: {type: string}
+        SLAName: {type: string}
+        SLANameForCustomer: {type: string}
+        SLANameForService: {type: string}
+        SLAResolutionWarning: {type: string}
+        SLAResolveByDeadline: {type: string}
+        SLARespondByDeadline: {type: string}
+        SLAResponseWarning: {type: string}
+        SLA_Key: {type: string}
+        STCTimeInMinutes: {type: string}
+        Service: {type: string}
+        ServiceCartID: {type: string}
+        ServiceCatalogTemplateName: {type: string}
+        ServiceEntitlements: {type: string}
+        ServiceID: {type: string}
+        ShowContactInformation: {type: string}
+        SmartClassifySearchString: {type: string}
+        Source: {type: string}
+        SpecificsTypeId: {type: string}
+        Stat_DateTimeAssigned: {type: string}
+        Stat_DateTimeClosed: {type: string}
+        Stat_DateTimeInProgress: {type: string}
+        Stat_DateTimeReOpened: {type: string}
+        Stat_DateTimeResolved: {type: string}
+        Stat_DateTimeResponded: {type: string}
+        Stat_FirstCallResolution: {type: string}
+        Stat_IncidentEscalated: {type: string}
+        Stat_IncidentReopened: {type: string}
+        Stat_NumberOfEscalations: {type: string}
+        Stat_NumberOfTouches: {type: string}
+        Stat_SLAResolutionGood: {type: string}
+        Status: {type: string}
+        StatusDesc: {type: string}
+        StatusID: {type: string}
+        Subcategory: {type: string}
+        SubcategoryID: {type: string}
+        TaskClosedCount: {type: string}
+        TasksClosed: {type: string}
+        TasksInProgress: {type: string}
+        TasksOnHold: {type: string}
+        TotalSTCTimeInMinutes: {type: string}
+        TotalTaskTime: {type: string}
+        TotalTasks: {type: string}
+        Urgency: {type: string}
+        WasCIDown: {type: string}
+        Withdraw: {type: string}
+        busObId: {type: string}
+        busObPublicId: {type: string}
+        busObRecId: {type: string}
+        error_Message: {type: string}
+        persist: {type: string}
+        type_name: {type: string}
+      type: object
+    tmp4:
+      properties:
+        ApprovalBlockID: {type: string}
+        BreachNotes: {type: string}
+        CIDownEndDateTime: {type: string}
+        CIDownStartDateTime: {type: string}
+        CIDowntimeInMinutes: {type: string}
+        CallSource: {type: string}
+        Category: {type: string}
+        Cause: {type: string}
+        ChangeID: {type: string}
+        ClonedIncident: {type: string}
+        ClonedIncidentID: {type: string}
+        CloseDescription: {type: string}
+        ClosedBy: {type: string}
+        ClosedByID: {type: string}
+        ClosedDateTime: {type: string}
+        ClosedOn1stCall: {type: string}
+        Comments: {type: string}
+        ConfigItemDisplayName: {type: string}
+        ConfigItemRecID: {type: string}
+        ConfigItemTypeID: {type: string}
+        Cost: {type: string}
+        CreatedBy: {type: string}
+        CreatedByEmail: {type: string}
+        CreatedByID: {type: string}
+        CreatedDateTime: {type: string}
+        CreatedDuring: {type: string}
+        CustomerDisplayName: {type: string}
+        CustomerRecID: {type: string}
+        CustomerSubscriptionLevel: {type: string}
+        CustomerTypeID: {type: string}
+        DefaultTeam: {type: string}
+        Description: {type: string}
+        Impact: {type: string}
+        IncidentDurationInDays: {type: string}
+        IncidentDurationInHours: {type: string}
+        IncidentID: {type: string}
+        IncidentType: {type: string}
+        IncidentchildID: {type: string}
+        IncidentchildRecID: {type: string}
+        LastModBy: {type: string}
+        LastModByID: {type: string}
+        LastModTimeStamp: {type: string}
+        LastModifiedDateTime: {type: string}
+        Level2EscalationComplete: {type: string}
+        Level2EscalationTeam: {type: string}
+        Level3EscalationComplete: {type: string}
+        Level3EscalationTeam: {type: string}
+        LinkedProblem: {type: string}
+        LinkedSLAs: {type: string}
+        Location: {type: string}
+        MajorIncident: {type: string}
+        MajorIncidentID: {type: string}
+        MajorIncidentRecID: {type: string}
+        NextStatus: {type: string}
+        NextStatusOneStep: {type: string}
+        NextStatusText: {type: string}
+        OwnedBy: {type: string}
+        OwnedByID: {type: string}
+        OwnedByManager: {type: string}
+        OwnedByTeam: {type: string}
+        OwnedByTeamID: {type: string}
+        PendingEndDateTime: {type: string}
+        PendingPreviousStatus: {type: string}
+        PendingReason: {type: string}
+        PendingStartDateTime: {type: string}
+        PortalAffectsMultipleUsers: {type: string}
+        Priority: {type: string}
+        RecID: {type: string}
+        RecurringIncident: {type: string}
+        RequesterDepartment: {type: string}
+        ReviewByDeadline: {type: string}
+        SCTFired: {type: string}
+        SCTRecID: {type: string}
+        SLAID: {type: string}
+        SLAIDForCI: {type: string}
+        SLAIDForCustomer: {type: string}
+        SLAName: {type: string}
+        SLANameForCustomer: {type: string}
+        SLANameForService: {type: string}
+        SLAResolutionWarning: {type: string}
+        SLAResolveByDeadline: {type: string}
+        SLARespondByDeadline: {type: string}
+        SLAResponseWarning: {type: string}
+        SLA_Key: {type: string}
+        STCTimeInMinutes: {type: string}
+        Service: {type: string}
+        ServiceCartID: {type: string}
+        ServiceCatalogTemplateName: {type: string}
+        ServiceEntitlements: {type: string}
+        ServiceID: {type: string}
+        ShowContactInformation: {type: string}
+        SmartClassifySearchString: {type: string}
+        Source: {type: string}
+        SpecificsTypeId: {type: string}
+        Stat_DateTimeAssigned: {type: string}
+        Stat_DateTimeClosed: {type: string}
+        Stat_DateTimeInProgress: {type: string}
+        Stat_DateTimeReOpened: {type: string}
+        Stat_DateTimeResolved: {type: string}
+        Stat_DateTimeResponded: {type: string}
+        Stat_FirstCallResolution: {type: string}
+        Stat_IncidentEscalated: {type: string}
+        Stat_IncidentReopened: {type: string}
+        Stat_NumberOfEscalations: {type: string}
+        Stat_NumberOfTouches: {type: string}
+        Stat_SLAResolutionGood: {type: string}
+        Status: {type: string}
+        StatusDesc: {type: string}
+        StatusID: {type: string}
+        Subcategory: {type: string}
+        SubcategoryID: {type: string}
+        TaskClosedCount: {type: string}
+        TasksClosed: {type: string}
+        TasksInProgress: {type: string}
+        TasksOnHold: {type: string}
+        TotalSTCTimeInMinutes: {type: string}
+        TotalTaskTime: {type: string}
+        TotalTasks: {type: string}
+        Urgency: {type: string}
+        WasCIDown: {type: string}
+        Withdraw: {type: string}
+        busObId: {type: string}
+        busObPublicId: {type: string}
+        busObRecId: {type: string}
+        error_Message: {type: string}
+        persist: {type: string}
+        type_name: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Cherwell Service Management
+  title: Cherwell Service Management
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAIRklEQVR4nO2de2wURRzHv9vrA1paDlAUAhpE5GUBQeTlk0cARa0oPaMWVKIBYwRUoFoUNSJYiwaJgo9IbI3hsBASQJ4xgICCD0CxNAgiigEUaGmhpdfern9c93p3u8fdltvd+c3O56/dvdnZ3+x+7jdzc3u3Ekxm5PM7FLOPIYifLe/eKllxnCQrDiJwHkIsgSkIsQSmIMQSmIIQS2AKQiyBKQixBKYgxBKYghBLYApCLIEpCLEEppBsdwAsktHChWX5/dEmM1X39Qu1DZhcuBdnqnwWR0YHx4t1Z78rUJDX3dA+GS2TsXzuQM32Jav/wKpvTyQqNNI4Uqx1C4YgNSXxo4CpOddhas51wfVRL+xM+DGo4CixNi8cZsvxnCiYI8SyWqhox3eSYFyLZbdQkThJMC7FYk2oSJwgGHfzWKxLFQqlWI3CTcZaPncg2mXpzzuxzOaFwyDLCkbP3GV3KAmFi4y1eeEwklKpJCVJ3GUv8mLxdEF4agtpsXi6ECq8tImsWLxcAD14aBtJsXg48bGg3kZyYq0vHGJ3CJZBWS5yYiW7yIV8WUiW/CA+8ZC6SpTfwc1lUxHNNpMRy4lSqVBsOxmxnE5GC5fdIRiChFgU37GJZvW8wXaHYAgSYgkCuFul2B1C3DAvlshWTXz1+i12hxA3TIvVNpPOO9Qqxg252u4Q4oJpsbyv0XmHWsW0h7raHUJcMC2WldT6/JDyvOgxaz18fhk1PtnukEjDrFhWjq3eWnMQ6ZNLoZR4UF44FqmuJKSnMntqSIw72T17FiHLCgpW/AKlxGN3KFzheLFck1bYHQKXMCmW9ame3je9rHeH3PyY4vIw9oyDczU+uJ/5GvDXRS3zxO1d8dlTN19uYGQRYkkSoCjYffgMBl3fLmqxA/+cQ3b+hqivp6Qkw+Vyoc7ngyIrWLb9CJZtPwIA+GLKUDw6rHPCQ2cZx4ulFOdCyvNi8OtbkJaWhouf5oS9Lk1aCcgNmv3k4lxIcdwstfdYBfrP2YTHlsJRHxC4F6uqth69X9qII0V3IzVZf0iplHgg5XlRV1cHKc8bta7N+XdhZO/2ho5/07VtgkJ1em4tjr8/ztD+l2LADW78dKgyYfUlEtNHrUYf0rSpaGhcmaA5XEqaqPtIgFzMbqYx+jN9qx7SxFzGMksqILwrunbGWvx1+oJuuavc6Ti5+F7T4nACzIkVC2liKaD4g+sLPH0xe1yPptcbs1LZ22PRs2NW1HqOvZe4LimRqPG7kpLQ8PkEjJi/Dd+UnQRAa4zG5DyWHtLjqwInPUQqAMj37m9WFycwFxJiSY+vBPz1wfXMVuno3C7DxogEsaDRFfoDH/clSYJcnBv3blLeCoROfkZ2JZHdKqQkKMUTQvYPZMKnh3fFx1v/BGR/4yfIpnrVOjf+egJjCrdrjqPWkX9vL8zPzcaqH//Bg4t2hMWxf95o9LnGHXe7KMB8xkp7sjS4bESqXrPXI3JGPSCEuqztVqHIut1qVU09IDeV/eGNkZoyqlQAcPaC9m+65+dm49ElezRSAUDfgo0oP1EdtS0UYV4sX70/dqEoKCWeiCwVEO3OeVs1ZULLVdeGT4gu//4vAMBt3a8EANzcpW3wNVnWzqa0m7IaAHDNjLVh27/cdRQAcEeP9sFjulICd8n2nPW1gZaxD/NiNZfiKYOCy1ktw29x3lZ+CgDQJrOl7r6tn16l2aaUeLB9znBt2amrdWoIyPZ343TGTSEiAsDWgruCyw2fjdeNgTrsj7FcycExlhFCs0p2Zzd2HvpPU6aiula361MiulC3joAv3tMTResO4nyND52nrwEAzBrXA4VryzVlf35jFE6duxhcd8KnWObEKvikDPOe6hVcr1pyH7IaM0i/OVuw703t+EZRlGZNrGZmtEDV0vtjlssd2FGz7Z2H+6Bo3UEAwPEzNQCAtz198dWe4zj673mNPFe1btEUb4LmozbuOZWQesyAua5wT3lF2HpmSDe2/9iZwJfCjRw4Xgkpz4ukicZu1hvaLTBWqr5wMWz7cyV7jYar4Y+F94Stt85I05TpMG1d2HrohwojFHkPN2s/K2AuY+mhfkkMAJAbdLuS09V1uCJTexH12Pnq8GAdkXUt3nQo7oziTk9FZU3gE+DoPh10y1QuzQkuPzOyGz7c8jtOntVmNCnPS2pmPRbMZaxoKCUeLJ44QLM9LTUVSoknbqlC68sZ0El3e7xUfPRAcHnDzNuDy+50/Vg+mNRft/7pY7rrbKd3V2sozN3dALB/2y0rNOcBBFbd3cBkxuL5iQ2JYuwstv8XnkmxBLFp8BvuCCxFiCUwBWbFEt1hdMa/stvuEGLCrFiC6FTXGP8mwmqEWAJTYFos0R1qoXJOmBYLAGousp/2BVqYF+v+AvYHqlZBJVsBBMQCgPoG8Sdo1CAh1t2zv7M7BNuhlK0AImIB9E5sIqHYdjJiAfr3lwvYhJRYvD2QOx4oZiuAmFgA3RPdHCi3lZxYAO0THi/U20hSLID+ib8UPLSNrFgAHxcgEl7aRFosgJ8LAfDVFvJiAXxcEB7aEAoXYgG0Lwzl2KNB4neF8aJeICq/8uFRKBVuMlYoFC4YhRgvB64yViisZi/ehVLhViwVVgRzilAq3Iulol7YaQ91tezxtz+UV+DlT8osORZrOEYslUWlR7CoNPCMm/xHumHEAGNPmojFvsOVmLnkt4TWSREm/7vBLm7skoX3ns02tM+cT8uw+2BF7IKM4NgnU9jJgaNVjhsLmQWX0w0C+xFiCUxBiCUwBSGWwBSEWAJTEGIJTEGIJTAFIZbAFIRYAlMQYglMQYglMIX/AV/lYGTjXchhAAAAAElFTkSuQmCC
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Cherwell Service Management To update and close a ticket
+      parameters:
+      - description: Unique record identifier
+        example: '102999'
+        in: query
+        name: Incident Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Cherwell Service Management Close Ticket
+  tmp1:
+    post:
+      description: Cherwell Ticket Management
+      parameters:
+      - description: Name of the customer reflected in the incident.
+        example: Max Megalos
+        in: query
+        name: Customer Display Name
+        required: true
+        schema: {type: string}
+      - description: Provide a description for the Incident.
+        example: Cannot print to network printer
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: A measure of impact and urgency used to establish timescales
+          and effort to respond to and resolve an issue (Incident or Request).
+        example: '1'
+        in: query
+        name: Priority
+        required: true
+        schema: {type: string}
+      - description: Enter a service classification,that matches the Service, Category,
+          and Subcategory for the Incident.
+        example: Account Management,Conferencing/Presentation,Desktop Management,E-Mail/Calendaring,Employee
+          Support,Enterprise Apps, IT ServiceDesk,Network Services,Printing,Telephone/Fax
+          or Web Services
+        in: query
+        name: Service
+        required: true
+        schema: {type: string}
+      - description: Classification of which category the incident is placed.
+        example: Network Access,Cherwell Self Service,Video/Audio Conferencing,Equipment
+          Request,Computer,OS,Anti-Virus,Misc. Software,Desktop Client,Mobile Client,Browser
+          Client,
+        in: query
+        name: Category
+        required: true
+        schema: {type: string}
+      - description: Holds the Subcategory lists
+        example: Submit Incident
+        in: query
+        name: Subcategory
+        required: true
+        schema: {type: string}
+      - description: Source of the event.
+        example: Event
+        in: query
+        name: Source
+        required: true
+        schema: {type: string}
+      - description: The ID of the user who last modified the record.
+        example: 93546560c6334c3c105d17437c843b9557775b2e0c
+        in: query
+        name: Last Mod By Id
+        required: false
+        schema: {type: string}
+      - description: E-Mail address of user that created the incident.
+        example: user@example.com
+        in: query
+        name: Created By Email
+        required: false
+        schema: {type: string}
+      - description: Comments related to the Incident.
+        example: Withdrawn by Henri Bryce on 3/10/2016 7:44 AM via the Company Portal.
+          Removed from cart by customer.
+        in: query
+        name: Comments
+        required: false
+        schema: {type: string}
+      - description: Marker for Recurring Incident One Step
+        example: 'False'
+        in: query
+        name: Recurring Incident
+        required: false
+        schema: {type: string}
+      - description: 'A date and time that the incident needs to be reviewed by. '
+        example: 2/14/2018 12:00:00 AM
+        in: query
+        name: Review By Deadline
+        required: false
+        schema: {type: string}
+      - description: The ID of the type of business object in the group.
+        example: 93405caa107c376a2bd15c4c8885a900be316f3a72
+        in: query
+        name: Customer Type Id
+        required: false
+        schema: {type: string}
+      - description: Holds the Next Status One-Step from the status table.
+        example: <Trebuchet><ActionInfoDef ID=93d969b712f8
+        in: query
+        name: Next Status One Step
+        required: false
+        schema: {type: string}
+      - description: The name of the manager that owns the record.
+        example: Gina Mehra
+        in: query
+        name: Owned By Manager
+        required: false
+        schema: {type: string}
+      - description: Level 3 Escalation Team
+        example: 3rd Level Support
+        in: query
+        name: Level3Escalation Team
+        required: false
+        schema: {type: string}
+      - description: Boolean value that return True or False if tasks are on hold.
+        example: 'False'
+        in: query
+        name: Tasks On Hold
+        required: false
+        schema: {type: string}
+      - description: Holds the Next Status Text from the status table
+        example: ''
+        in: query
+        name: Next Status Text
+        required: false
+        schema: {type: string}
+      - description: This field calculates a value from the Customer Subscription
+          level and the Incident Type in order to choose which Customer SLA is to
+          be used.
+        example: Platinum_Incident
+        in: query
+        name: Sla Key
+        required: false
+        schema: {type: string}
+      - description: ' Appears in the box at the bottom of the General tab in the
+          Machine Properties dialog box.'
+        example: ''
+        in: query
+        name: Error Message
+        required: false
+        schema: {type: string}
+      - description: Calculates the duration in minutes from Downtime Start to Downtime
+          End
+        example: '300'
+        in: query
+        name: Ci Downtime In Minutes
+        required: false
+        schema: {type: string}
+      - description: This used for the Withdraw one step from the Portal
+        example: 'False'
+        in: query
+        name: Withdraw
+        required: false
+        schema: {type: string}
+      - description: Validated from SLA Subscription Level.Subscription Level.
+        example: Gold
+        in: query
+        name: Customer Subscription Level
+        required: false
+        schema: {type: string}
+      - description: Used to indicate if the SCT has created the Tasks.
+        example: True or False
+        in: query
+        name: Sct Fired
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific SCT record.
+        example: ''
+        in: query
+        name: Sct Rec Id
+        required: false
+        schema: {type: string}
+      - description: Date and time that the Incident was reopened.
+        example: ''
+        in: query
+        name: Stat Date Time Re Opened
+        required: false
+        schema: {type: string}
+      - description: Service License agreement Id for CI
+        example: 93838607346b42be7074af487d9171ea9f948b7204
+        in: query
+        name: Slaid For Ci
+        required: false
+        schema: {type: string}
+      - description: 'Holds the Business Hours of when the Created Date Time falls. '
+        example: 8 to 5 Monday thru Friday
+        in: query
+        name: Created During
+        required: false
+        schema: {type: string}
+      - description: Holds the Approval Block Id when a change Request goes to Approval.
+        example: 93838607346b42be7074af487d9171ea9f948b7204
+        in: query
+        name: Approval Block Id
+        required: false
+        schema: {type: string}
+      - description: A temporary Stop The Clock time calculated in minutes based on
+          the SLA.
+        example: '0'
+        in: query
+        name: Total Stc Time In Minutes
+        required: false
+        schema: {type: string}
+      - description: The name of the user who owns the record
+        example: Josh Wilson
+        in: query
+        name: Owned By
+        required: false
+        schema: {type: string}
+      - description: This field holds any special notes when an issue is resolved.
+        example: Had the user reset their password and they were able to login.
+        in: query
+        name: Close Description
+        required: false
+        schema: {type: string}
+      - description: Service License Agreement for the Customer.
+        example: Platinum
+        in: query
+        name: Sla Name For Customer
+        required: false
+        schema: {type: string}
+      - description: 'The time and date that the incident was assigned. '
+        example: 2/18/2019 2:04:02 PM
+        in: query
+        name: Stat Date Time Assigned
+        required: false
+        schema: {type: string}
+      - description: Default level support, i.e. 1st,2nd, or 3rd level support.
+        example: 1st Level Support
+        in: query
+        name: Default Team
+        required: false
+        schema: {type: string}
+      - description: Validated from Incident Pending Reason.Pending Reason
+        example: Pending Change Request
+        in: query
+        name: Pending Reason
+        required: false
+        schema: {type: string}
+      - description: Holds the value of field SLA Name from the SLA Object.
+        example: Platinum
+        in: query
+        name: Sla Name
+        required: false
+        schema: {type: string}
+      - description: Service License Response respsone warning.
+        example: 2/18/2019 2:17:02 PM
+        in: query
+        name: Sla Response Warning
+        required: false
+        schema: {type: string}
+      - description: Location of the incident.
+        example: Colorado Springs
+        in: query
+        name: Location
+        required: false
+        schema: {type: string}
+      - description: Date and Time that the SLA deadline resovled.
+        example: 2/19/2019 11:03:00 AM
+        in: query
+        name: Sla Resolve By Deadline
+        required: false
+        schema: {type: string}
+      - description: The time and date that the incident was resolved.
+        example: 2/18/2019 2:15:10 PM
+        in: query
+        name: Stat Date Time Resolved
+        required: false
+        schema: {type: string}
+      - description: Record ID of Service Cart
+        example: 94158f8a42539e9020253a4eaeb4001971f311bbcd
+        in: query
+        name: Service Cart Id
+        required: false
+        schema: {type: string}
+      - description: The name of the user who closed the Incident
+        example: Cherwell Admin
+        in: query
+        name: Closed By
+        required: false
+        schema: {type: string}
+      - description: A clone of an existing incident.
+        example: True or False
+        in: query
+        name: Cloned Incident
+        required: false
+        schema: {type: string}
+      - description: Unquie identifier ID for the Change Request
+        example: 93ecd360afc8bf81a79b914d5eba8f20be72a897b1
+        in: query
+        name: Change Id
+        required: false
+        schema: {type: string}
+      - description: The pending contract start date
+        example: 3/18/2019 8:05:00 AM
+        in: query
+        name: Pending Start Date Time
+        required: false
+        schema: {type: string}
+      - description: Holds the Next Status from the status table.
+        example: Begin Work, Set Pending, Resolve, Close, Reopen
+        in: query
+        name: Next Status
+        required: false
+        schema: {type: string}
+      - description: The ID of the linked status entry
+        example: cc7383192e644834b6531d0da56194e5
+        in: query
+        name: Status Id
+        required: false
+        schema: {type: string}
+      - description: The ID of the type of business object in the group.
+        example: cc7383192e644834b6531d0da56194e5
+        in: query
+        name: Config Item Type Id
+        required: false
+        schema: {type: string}
+      - description: A temporary Stop The Clock time calculated in minutes based on
+          the SLA
+        example: '20'
+        in: query
+        name: Stc Time In Minutes
+        required: false
+        schema: {type: string}
+      - description: When the record was last modified.
+        example: 12/10/2019 12:11:29 PM
+        in: query
+        name: Last Modified Date Time
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific record configuration item.
+        example: 93db88a5ec5a67c46945d34b2fa692b603e191c6a2
+        in: query
+        name: Config Item Rec Id
+        required: false
+        schema: {type: string}
+      - description: Date and Time that the Incident was created.
+        example: 2/18/2019 2:02:02 PM
+        in: query
+        name: Created Date Time
+        required: false
+        schema: {type: string}
+      - description: Method by which the Incident was delivered.
+        example: Walk in or Social Media or E-mail or Event or Portal or Chat Session
+          or Mobile
+        in: query
+        name: Call Source
+        required: false
+        schema: {type: string}
+      - description: Validated from Incident.Incident ID
+        example: '100577'
+        in: query
+        name: Major Incident Id
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific service record.
+        example: 93838695cf676f6dccef2c42a9a630ed0b8085613f
+        in: query
+        name: Service Id
+        required: false
+        schema: {type: string}
+      - description: Logical used to track whether the CI was down or not when the
+          Incident is resolved.
+        example: 'False'
+        in: query
+        name: Was Ci Down
+        required: false
+        schema: {type: string}
+      - description: 'Measures how long it will be until the Incident has a significant
+          impact on the business. Urgency: Measures how long it will be until the
+          Incident has a significant impact on the business (ex: If the e-mail server
+          goes down, all Customers are immediately affected).'
+        example: High
+        in: query
+        name: Urgency
+        required: false
+        schema: {type: string}
+      - description: Was the incident resolved on the first call.
+        example: 'False'
+        in: query
+        name: Stat First Call Resolution
+        required: false
+        schema: {type: string}
+      - description: The name of the user who last modified the record
+        example: Cherwell Admin
+        in: query
+        name: Last Mod By
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific for a incident child record.
+        example: 93838695cf676f6dccef2c42a9a630ed0b8085613f
+        in: query
+        name: Incidentchild Rec Id
+        required: false
+        schema: {type: string}
+      - description: Place holder for IncidentID
+        example: '100345'
+        in: query
+        name: Cloned Incident Id
+        required: false
+        schema: {type: string}
+      - description: Service License Agreement deadline to respond to the customer.
+        example: 2/18/2019 2:32:02 PM
+        in: query
+        name: Sla Respond By Deadline
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific service license agreement.
+        example: 93838607346b42be7074af487d9171ea9f948b7204
+        in: query
+        name: Slaid
+        required: false
+        schema: {type: string}
+      - description: Status for if the incident was closed on the first call.
+        example: 'False'
+        in: query
+        name: Closed On1St Call
+        required: false
+        schema: {type: string}
+      - description: Holds the type of impact the Change Request will have
+        example: Individual or Company or Whenever Possible
+        in: query
+        name: Impact
+        required: false
+        schema: {type: string}
+      - description: Boolean value if the incident ended in a good resolution.
+        example: 'True'
+        in: query
+        name: Stat Sla Resolution Good
+        required: false
+        schema: {type: string}
+      - description: This field stores the last string the Cherwell user entered to
+          find the classification for this incident.
+        example: Submit Incident or New Employee Setup
+        in: query
+        name: Smart Classify Search String
+        required: false
+        schema: {type: string}
+      - description: 'The ID for a specific major incident record '
+        example: 93d605eb8ffd63610adfb24cf0ac81f502d967098b
+        in: query
+        name: Major Incident Rec Id
+        required: false
+        schema: {type: string}
+      - description: The problem with which this incident is associated.
+        example: 93db8594ca1d42fd7c59c94302995fbb8d91e69383
+        in: query
+        name: Linked Problem
+        required: false
+        schema: {type: string}
+      - description: Total number of tasks related to the incident.
+        example: '0.0'
+        in: query
+        name: Total Tasks
+        required: false
+        schema: {type: string}
+      - description: Boolean value related to Tasks being closed.
+        example: 'False'
+        in: query
+        name: Tasks Closed
+        required: false
+        schema: {type: string}
+      - description: WIll the portal affect multiple users.
+        example: 'False'
+        in: query
+        name: Portal Affects Multiple Users
+        required: false
+        schema: {type: string}
+      - description: 'Boolean value related to showing contact infomration. '
+        example: True or False
+        in: query
+        name: Show Contact Information
+        required: false
+        schema: {type: string}
+      - description: The standing of the incident.
+        example: New,Assigned,In Progress,Pending,Resolved,Closed or Reopened
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: The end date and time that CI was down.
+        example: 2/19/2019 10:48:00 AM
+        in: query
+        name: Ci Down End Date Time
+        required: false
+        schema: {type: string}
+      - description: The type of business object.
+        example: Incident
+        in: query
+        name: Type Name
+        required: false
+        schema: {type: string}
+      - description: Total time it took to complete task.
+        example: '0.00'
+        in: query
+        name: Total Task Time
+        required: false
+        schema: {type: string}
+      - description: Boolean value of if the Level 2 Escalation was completed.
+        example: 'True'
+        in: query
+        name: Level2Escalation Complete
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: In Progress
+        in: query
+        name: Pending Previous Status
+        required: false
+        schema: {type: string}
+      - description: Service License Agreement ID for the specifc customer.
+        example: 93838607346b42be7074af487d9171ea9f948b7204
+        in: query
+        name: Slaid For Customer
+        required: false
+        schema: {type: string}
+      - description: The time and date that the incident was reopened.
+        example: 2/18/2019 2:08:02 PM
+        in: query
+        name: Stat Date Time Responded
+        required: false
+        schema: {type: string}
+      - description: The department requesting the incident ticket.
+        example: Administration or Sales & Marketing or Accouting.
+        in: query
+        name: Requester Department
+        required: false
+        schema: {type: string}
+      - description: ID of a Incident Child.
+        example: 93546560c6334c3c105d17437c843b9557775b2e0c
+        in: query
+        name: Incidentchild Id
+        required: false
+        schema: {type: string}
+      - description: Typically, the ID shown to users
+        example: '100576'
+        in: query
+        name: Bus Ob Public Id
+        required: false
+        schema: {type: string}
+      - description: The database ID for a specific business object.
+        example: 6dd53665c0c24cab86870a21cf6434ae
+        in: query
+        name: Bus Ob Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: 2/19/2019 8:58:03 AM
+        in: query
+        name: Closed Date Time
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Mod Time Stamp
+        required: false
+        schema: {type: string}
+      - description: The time and date that the incident has been in progress.
+        example: 2/18/2019 2:08:02 PM
+        in: query
+        name: Stat Date Time In Progress
+        required: false
+        schema: {type: string}
+      - description: Field holds the number of days from the Proposed Start Date and
+          the Scheduled End Date
+        example: '0.79'
+        in: query
+        name: Incident Duration In Days
+        required: false
+        schema: {type: string}
+      - description: Boolean value of if the Level 3 Escalation was completed.
+        example: True or False
+        in: query
+        name: Level3Escalation Complete
+        required: false
+        schema: {type: string}
+      - description: Boolean value regarding if the task is in progress.
+        example: 'False'
+        in: query
+        name: Tasks In Progress
+        required: false
+        schema: {type: string}
+      - description: Service License Agreement Name for Service
+        example: ''
+        in: query
+        name: Sla Name For Service
+        required: false
+        schema: {type: string}
+      - description: Validated from Incident Type.Incident Type
+        example: Incident
+        in: query
+        name: Incident Type
+        required: false
+        schema: {type: string}
+      - description: The start date and time that CI was down.
+        example: 2/19/2019 10:48:00 AM
+        in: query
+        name: Ci Down Start Date Time
+        required: false
+        schema: {type: string}
+      - description: Boolean value if the incident is major or not.
+        example: 'True'
+        in: query
+        name: Major Incident
+        required: false
+        schema: {type: string}
+      - description: The ID of the user who created the record
+        example: 9365b5492e73e147d96f0f48cb856c89e3918c5871
+        in: query
+        name: Created By Id
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific record.
+        example: 93d605e29a4a79c71cb4584dc1b5d740a1edeea675
+        in: query
+        name: Rec Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: 9398862125defd58a8deea46fe88acc411a96e2b00
+        in: query
+        name: Specifics Type Id
+        required: false
+        schema: {type: string}
+      - description: Validated from Incident Cause.Cause.
+        example: Untrained User
+        in: query
+        name: Cause
+        required: false
+        schema: {type: string}
+      - description: Boolean value regarding if the incident was reopened.
+        example: 'True'
+        in: query
+        name: Stat Incident Reopened
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific record business object.
+        example: 93d605e29a4a79c71cb4584dc1b5d740a1edeea675
+        in: query
+        name: Bus Ob Rec Id
+        required: false
+        schema: {type: string}
+      - description: Name of the Service Catalog Template.
+        example: HR Process
+        in: query
+        name: Service Catalog Template Name
+        required: false
+        schema: {type: string}
+      - description: The number of touches related to the incident.
+        example: '59'
+        in: query
+        name: Stat Number Of Touches
+        required: false
+        schema: {type: string}
+      - description: The name of the team that owns the record
+        example: 1st Level Support
+        in: query
+        name: Owned By Team
+        required: false
+        schema: {type: string}
+      - description: Notes related to the Service License Agreement.
+        example: 'Please describe the delay here: 2nd level support didn''t check
+          the ODBC until the next morning'
+        in: query
+        name: Breach Notes
+        required: false
+        schema: {type: string}
+      - description: Was the incident escalated
+        example: 'False'
+        in: query
+        name: Stat Incident Escalated
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific customer record
+        example: 9349ef7253eba3a1e516744da5bb4ca82ff8f4157c
+        in: query
+        name: Customer Rec Id
+        required: false
+        schema: {type: string}
+      - description: The configuration item display name.
+        example: max-lap
+        in: query
+        name: Config Item Display Name
+        required: false
+        schema: {type: string}
+      - description: The Service License Agreement resolution warning.
+        example: 2/19/2019 10:48:00 AM
+        in: query
+        name: Sla Resolution Warning
+        required: false
+        schema: {type: string}
+      - description: The time and date that the incident was closed.
+        example: '''2/18/2019 2:30:10 PM'
+        in: query
+        name: Stat Date Time Closed
+        required: false
+        schema: {type: string}
+      - description: ID of the user that closed the incident.
+        example: 93546560c6334c3c105d17437c843b9557775b2e0c
+        in: query
+        name: Closed By Id
+        required: false
+        schema: {type: string}
+      - description: Level 2 Escalation Team
+        example: 2nd Level Support
+        in: query
+        name: Level2Escalation Team
+        required: false
+        schema: {type: string}
+      - description: The name of the user who created the record
+        example: Josh Wilson
+        in: query
+        name: Created By
+        required: false
+        schema: {type: string}
+      - description: The ID of the user who owns this record
+        example: 9365b5492e73e147d96f0f48cb856c89e3918c5871
+        in: query
+        name: Owned By Id
+        required: false
+        schema: {type: string}
+      - description: The different levels of support.
+        example: Platinum, Gold, Silver, Corporate
+        in: query
+        name: Service Entitlements
+        required: false
+        schema: {type: string}
+      - description: The number of escaltions related to the incident.
+        example: '0'
+        in: query
+        name: Stat Number Of Escalations
+        required: false
+        schema: {type: string}
+      - description: A description of the status.
+        example: Incident is closed
+        in: query
+        name: Status Desc
+        required: false
+        schema: {type: string}
+      - description: A list of Service License Agreements linked together.
+        example: 93838607346b42be7074af487d9171ea9f948b7204 ,  , ,
+        in: query
+        name: Linked Sl As
+        required: false
+        schema: {type: string}
+      - description: Pending end date for the incident.
+        example: 2/19/2019 10:48:00 AM
+        in: query
+        name: Pending End Date Time
+        required: false
+        schema: {type: string}
+      - description: A count of closed tasks related to the incident.
+        example: '0'
+        in: query
+        name: Task Closed Count
+        required: false
+        schema: {type: string}
+      - description: The ID of that team that owns the incident.
+        example: 9365b4e90592c81e3b7a024555a6c0094ba77e8773
+        in: query
+        name: Owned By Team Id
+        required: false
+        schema: {type: string}
+      - description: 'Total time of incident in hours. '
+        example: '18.93'
+        in: query
+        name: Incident Duration In Hours
+        required: false
+        schema: {type: string}
+      - description: The total cost related to resolving the incident.
+        example: '709.00'
+        in: query
+        name: Cost
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Cherwell Service Management Create Ticket
+  tmp2:
+    post:
+      description: Cherwell Service Management Retrieve all tickets
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Cherwell Service Management Get Current Tickets
+  tmp3:
+    post:
+      description: Cherwell Service Management Get a Ticket by it's Incident Number
+      parameters:
+      - description: Validated from Incident.Incident ID
+        example: '100577'
+        in: query
+        name: Incident Id
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Cherwell Service Management Get Ticket By ID
+  tmp4:
+    post:
+      description: Cherwell Service Management Update Cherwell Ticket
+      parameters:
+      - description: Validated from Incident.Incident ID
+        example: '100577'
+        in: query
+        name: Incident ID
+        required: true
+        schema: {type: string}
+      - description: Name of the customer reflected in the incident.
+        example: Max Megalos
+        in: query
+        name: Customer Display Name
+        required: false
+        schema: {type: string}
+      - description: Provide a description for the Incident.
+        example: Cannot print to network printer
+        in: query
+        name: Description
+        required: false
+        schema: {type: string}
+      - description: A measure of impact and urgency used to establish timescales
+          and effort to respond to and resolve an issue (Incident or Request).
+        example: '1'
+        in: query
+        name: Priority
+        required: false
+        schema: {type: string}
+      - description: Enter a service classification,that matches the Service, Category,
+          and Subcategory for the Incident.
+        example: Account Management,Conferencing/Presentation,Desktop Management,E-Mail/Calendaring,Employee
+          Support,Enterprise Apps, IT ServiceDesk,Network Services,Printing,Telephone/Fax
+          or Web Services
+        in: query
+        name: Service
+        required: false
+        schema: {type: string}
+      - description: Classification of which category the incident is placed.
+        example: Network Access,Cherwell Self Service,Video/Audio Conferencing,Equipment
+          Request,Computer,OS,Anti-Virus,Misc. Software,Desktop Client,Mobile Client,Browser
+          Client,
+        in: query
+        name: Category
+        required: false
+        schema: {type: string}
+      - description: Holds the Subcategory lists
+        example: Submit Incident
+        in: query
+        name: Subcategory
+        required: false
+        schema: {type: string}
+      - description: Source of the event.
+        example: EVent
+        in: query
+        name: Source
+        required: false
+        schema: {type: string}
+      - description: The ID of the user who last modified the record.
+        example: 93546560c6334c3c105d17437c843b9557775b2e0c
+        in: query
+        name: Last Mod By Id
+        required: false
+        schema: {type: string}
+      - description: E-Mail address of user that created the incident.
+        example: user@example.com
+        in: query
+        name: Created By Email
+        required: false
+        schema: {type: string}
+      - description: Comments related to the Incident.
+        example: Withdrawn by Henri Bryce on 3/10/2016 7:44 AM via the Company Portal.
+          Removed from cart by customer.
+        in: query
+        name: Comments
+        required: false
+        schema: {type: string}
+      - description: Marker for Recurring Incident One Step
+        example: 'False'
+        in: query
+        name: Recurring Incident
+        required: false
+        schema: {type: string}
+      - description: 'A date and time that the incident needs to be reviewed by. '
+        example: 2/14/2018 12:00:00 AM
+        in: query
+        name: Review By Deadline
+        required: false
+        schema: {type: string}
+      - description: The ID of the type of business object in the group.
+        example: 93405caa107c376a2bd15c4c8885a900be316f3a72
+        in: query
+        name: Customer Type Id
+        required: false
+        schema: {type: string}
+      - description: Holds the Next Status One-Step from the status table.
+        example: <Trebuchet><ActionInfoDef ID=93d969b712f8
+        in: query
+        name: Next Status One Step
+        required: false
+        schema: {type: string}
+      - description: The name of the manager that owns the record.
+        example: Gina Mehra
+        in: query
+        name: Owned By Manager
+        required: false
+        schema: {type: string}
+      - description: Level 3 Escalation Team
+        example: 3rd Level Support
+        in: query
+        name: Level3Escalation Team
+        required: false
+        schema: {type: string}
+      - description: Boolean value that return True or False if tasks are on hold.
+        example: 'False'
+        in: query
+        name: Tasks On Hold
+        required: false
+        schema: {type: string}
+      - description: Holds the Next Status Text from the status table
+        example: ''
+        in: query
+        name: Next Status Text
+        required: false
+        schema: {type: string}
+      - description: This field calculates a value from the Customer Subscription
+          level and the Incident Type in order to choose which Customer SLA is to
+          be used.
+        example: Platinum_Incident
+        in: query
+        name: Sla Key
+        required: false
+        schema: {type: string}
+      - description: ' Appears in the box at the bottom of the General tab in the
+          Machine Properties dialog box.'
+        example: ''
+        in: query
+        name: Error Message
+        required: false
+        schema: {type: string}
+      - description: Calculates the duration in minutes from Downtime Start to Downtime
+          End
+        example: '300'
+        in: query
+        name: Ci Downtime In Minutes
+        required: false
+        schema: {type: string}
+      - description: This used for the Withdraw one step from the Portal
+        example: 'False'
+        in: query
+        name: Withdraw
+        required: false
+        schema: {type: string}
+      - description: Validated from SLA Subscription Level.Subscription Level.
+        example: Gold
+        in: query
+        name: Customer Subscription Level
+        required: false
+        schema: {type: string}
+      - description: Used to indicate if the SCT has created the Tasks.
+        example: True or False
+        in: query
+        name: Sct Fired
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific SCT record.
+        example: ''
+        in: query
+        name: Sct Rec Id
+        required: false
+        schema: {type: string}
+      - description: Date and time that the Incident was reopened.
+        example: ''
+        in: query
+        name: Stat Date Time Re Opened
+        required: false
+        schema: {type: string}
+      - description: Service License agreement Id for CI
+        example: 93838607346b42be7074af487d9171ea9f948b7204
+        in: query
+        name: Slaid For Ci
+        required: false
+        schema: {type: string}
+      - description: 'Holds the Business Hours of when the Created Date Time falls. '
+        example: 8 to 5 Monday thru Friday
+        in: query
+        name: Created During
+        required: false
+        schema: {type: string}
+      - description: Holds the Approval Block Id when a change Request goes to Approval.
+        example: 93838607346b42be7074af487d9171ea9f948b7204
+        in: query
+        name: Approval Block Id
+        required: false
+        schema: {type: string}
+      - description: A temporary Stop The Clock time calculated in minutes based on
+          the SLA.
+        example: '0'
+        in: query
+        name: Total Stc Time In Minutes
+        required: false
+        schema: {type: string}
+      - description: The name of the user who owns the record
+        example: Josh Wilson
+        in: query
+        name: Owned By
+        required: false
+        schema: {type: string}
+      - description: This field holds any special notes when an issue is resolved.
+        example: Had the user reset their password and they were able to login.
+        in: query
+        name: Close Description
+        required: false
+        schema: {type: string}
+      - description: Service License Agreement for the Customer.
+        example: Platinum
+        in: query
+        name: Sla Name For Customer
+        required: false
+        schema: {type: string}
+      - description: 'The time and date that the incident was assigned. '
+        example: 2/18/2019 2:04:02 PM
+        in: query
+        name: Stat Date Time Assigned
+        required: false
+        schema: {type: string}
+      - description: Default level support, i.e. 1st,2nd, or 3rd level support.
+        example: 1st Level Support
+        in: query
+        name: Default Team
+        required: false
+        schema: {type: string}
+      - description: Validated from Incident Pending Reason.Pending Reason
+        example: Pending Change Request
+        in: query
+        name: Pending Reason
+        required: false
+        schema: {type: string}
+      - description: Holds the value of field SLA Name from the SLA Object.
+        example: Platinum
+        in: query
+        name: Sla Name
+        required: false
+        schema: {type: string}
+      - description: Service License Response respsone warning.
+        example: 2/18/2019 2:17:02 PM
+        in: query
+        name: Sla Response Warning
+        required: false
+        schema: {type: string}
+      - description: Location of the incident.
+        example: Colorado Springs
+        in: query
+        name: Location
+        required: false
+        schema: {type: string}
+      - description: Date and Time that the SLA deadline resovled.
+        example: 2/19/2019 11:03:00 AM
+        in: query
+        name: Sla Resolve By Deadline
+        required: false
+        schema: {type: string}
+      - description: The time and date that the incident was resolved.
+        example: 2/18/2019 2:15:10 PM
+        in: query
+        name: Stat Date Time Resolved
+        required: false
+        schema: {type: string}
+      - description: Record ID of Service Cart
+        example: 94158f8a42539e9020253a4eaeb4001971f311bbcd
+        in: query
+        name: Service Cart Id
+        required: false
+        schema: {type: string}
+      - description: The name of the user who closed the Incident
+        example: Cherwell Admin
+        in: query
+        name: Closed By
+        required: false
+        schema: {type: string}
+      - description: A clone of an existing incident.
+        example: True or False
+        in: query
+        name: Cloned Incident
+        required: false
+        schema: {type: string}
+      - description: Unquie identifier ID for the Change Request
+        example: 93ecd360afc8bf81a79b914d5eba8f20be72a897b1
+        in: query
+        name: Change Id
+        required: false
+        schema: {type: string}
+      - description: The pending contract start date
+        example: 3/18/2019 8:05:00 AM
+        in: query
+        name: Pending Start Date Time
+        required: false
+        schema: {type: string}
+      - description: Holds the Next Status from the status table.
+        example: Begin Work, Set Pending, Resolve, Close, Reopen
+        in: query
+        name: Next Status
+        required: false
+        schema: {type: string}
+      - description: The ID of the linked status entry
+        example: cc7383192e644834b6531d0da56194e5
+        in: query
+        name: Status Id
+        required: false
+        schema: {type: string}
+      - description: The ID of the type of business object in the group.
+        example: cc7383192e644834b6531d0da56194e5
+        in: query
+        name: Config Item Type Id
+        required: false
+        schema: {type: string}
+      - description: A temporary Stop The Clock time calculated in minutes based on
+          the SLA
+        example: '20'
+        in: query
+        name: Stc Time In Minutes
+        required: false
+        schema: {type: string}
+      - description: When the record was last modified.
+        example: 12/10/2019 12:11:29 PM
+        in: query
+        name: Last Modified Date Time
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific record configuration item.
+        example: 93db88a5ec5a67c46945d34b2fa692b603e191c6a2
+        in: query
+        name: Config Item Rec Id
+        required: false
+        schema: {type: string}
+      - description: Date and Time that the Incident was created.
+        example: 2/18/2019 2:02:02 PM
+        in: query
+        name: Created Date Time
+        required: false
+        schema: {type: string}
+      - description: Method by which the Incident was delivered.
+        example: Walk in or Social Media or E-mail or Event or Portal or Chat Session
+          or Mobile
+        in: query
+        name: Call Source
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific service record.
+        example: 93838695cf676f6dccef2c42a9a630ed0b8085613f
+        in: query
+        name: Service Id
+        required: false
+        schema: {type: string}
+      - description: Logical used to track whether the CI was down or not when the
+          Incident is resolved.
+        example: 'False'
+        in: query
+        name: Was Ci Down
+        required: false
+        schema: {type: string}
+      - description: 'Measures how long it will be until the Incident has a significant
+          impact on the business. Urgency: Measures how long it will be until the
+          Incident has a significant impact on the business (ex: If the e-mail server
+          goes down, all Customers are immediately affected).'
+        example: High
+        in: query
+        name: Urgency
+        required: false
+        schema: {type: string}
+      - description: Was the incident resolved on the first call.
+        example: 'False'
+        in: query
+        name: Stat First Call Resolution
+        required: false
+        schema: {type: string}
+      - description: The name of the user who last modified the record
+        example: Cherwell Admin
+        in: query
+        name: Last Mod By
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific for a incident child record.
+        example: 93838695cf676f6dccef2c42a9a630ed0b8085613f
+        in: query
+        name: Incidentchild Rec Id
+        required: false
+        schema: {type: string}
+      - description: Place holder for IncidentID
+        example: '100345'
+        in: query
+        name: Cloned Incident Id
+        required: false
+        schema: {type: string}
+      - description: Service License Agreement deadline to respond to the customer.
+        example: 2/18/2019 2:32:02 PM
+        in: query
+        name: Sla Respond By Deadline
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific service license agreement.
+        example: 93838607346b42be7074af487d9171ea9f948b7204
+        in: query
+        name: Slaid
+        required: false
+        schema: {type: string}
+      - description: Status for if the incident was closed on the first call.
+        example: 'False'
+        in: query
+        name: Closed On1St Call
+        required: false
+        schema: {type: string}
+      - description: Holds the type of impact the Change Request will have
+        example: Individual or Company or Whenever Possible
+        in: query
+        name: Impact
+        required: false
+        schema: {type: string}
+      - description: Boolean value if the incident ended in a good resolution.
+        example: 'True'
+        in: query
+        name: Stat Sla Resolution Good
+        required: false
+        schema: {type: string}
+      - description: This field stores the last string the Cherwell user entered to
+          find the classification for this incident.
+        example: Submit Incident or New Employee Setup
+        in: query
+        name: Smart Classify Search String
+        required: false
+        schema: {type: string}
+      - description: 'The ID for a specific major incident record '
+        example: 93d605eb8ffd63610adfb24cf0ac81f502d967098b
+        in: query
+        name: Major Incident Rec Id
+        required: false
+        schema: {type: string}
+      - description: The problem with which this incident is associated.
+        example: 93db8594ca1d42fd7c59c94302995fbb8d91e69383
+        in: query
+        name: Linked Problem
+        required: false
+        schema: {type: string}
+      - description: Total number of tasks related to the incident.
+        example: '0.0'
+        in: query
+        name: Total Tasks
+        required: false
+        schema: {type: string}
+      - description: Boolean value related to Tasks being closed.
+        example: 'False'
+        in: query
+        name: Tasks Closed
+        required: false
+        schema: {type: string}
+      - description: WIll the portal affect multiple users.
+        example: 'False'
+        in: query
+        name: Portal Affects Multiple Users
+        required: false
+        schema: {type: string}
+      - description: 'Boolean value related to showing contact infomration. '
+        example: True or False
+        in: query
+        name: Show Contact Information
+        required: false
+        schema: {type: string}
+      - description: The standing of the incident.
+        example: New,Assigned,In Progress,Pending,Resolved,Closed or Reopened
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: The end date and time that CI was down.
+        example: 2/19/2019 10:48:00 AM
+        in: query
+        name: Ci Down End Date Time
+        required: false
+        schema: {type: string}
+      - description: The type of business object.
+        example: Incident
+        in: query
+        name: Type Name
+        required: false
+        schema: {type: string}
+      - description: Total time it took to complete task.
+        example: '0.00'
+        in: query
+        name: Total Task Time
+        required: false
+        schema: {type: string}
+      - description: Boolean value of if the Level 2 Escalation was completed.
+        example: 'True'
+        in: query
+        name: Level2Escalation Complete
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: In Progress
+        in: query
+        name: Pending Previous Status
+        required: false
+        schema: {type: string}
+      - description: Service License Agreement ID for the specifc customer.
+        example: 93838607346b42be7074af487d9171ea9f948b7204
+        in: query
+        name: Slaid For Customer
+        required: false
+        schema: {type: string}
+      - description: The time and date that the incident was reopened.
+        example: 2/18/2019 2:08:02 PM
+        in: query
+        name: Stat Date Time Responded
+        required: false
+        schema: {type: string}
+      - description: The department requesting the incident ticket.
+        example: Administration or Sales & Marketing or Accouting.
+        in: query
+        name: Requester Department
+        required: false
+        schema: {type: string}
+      - description: ID of a Incident Child.
+        example: 93546560c6334c3c105d17437c843b9557775b2e0c
+        in: query
+        name: Incidentchild Id
+        required: false
+        schema: {type: string}
+      - description: Typically, the ID shown to users
+        example: '100576'
+        in: query
+        name: Bus Ob Public Id
+        required: false
+        schema: {type: string}
+      - description: The database ID for a specific business object.
+        example: 6dd53665c0c24cab86870a21cf6434ae
+        in: query
+        name: Bus Ob Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: 2/19/2019 8:58:03 AM
+        in: query
+        name: Closed Date Time
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Last Mod Time Stamp
+        required: false
+        schema: {type: string}
+      - description: The time and date that the incident has been in progress.
+        example: 2/18/2019 2:08:02 PM
+        in: query
+        name: Stat Date Time In Progress
+        required: false
+        schema: {type: string}
+      - description: Field holds the number of days from the Proposed Start Date and
+          the Scheduled End Date
+        example: '0.79'
+        in: query
+        name: Incident Duration In Days
+        required: false
+        schema: {type: string}
+      - description: Boolean value of if the Level 3 Escalation was completed.
+        example: True or False
+        in: query
+        name: Level3Escalation Complete
+        required: false
+        schema: {type: string}
+      - description: Boolean value regarding if the task is in progress.
+        example: 'False'
+        in: query
+        name: Tasks In Progress
+        required: false
+        schema: {type: string}
+      - description: Service License Agreement Name for Service
+        example: ''
+        in: query
+        name: Sla Name For Service
+        required: false
+        schema: {type: string}
+      - description: Validated from Incident Type.Incident Type
+        example: Incident
+        in: query
+        name: Incident Type
+        required: false
+        schema: {type: string}
+      - description: The start date and time that CI was down.
+        example: 2/19/2019 10:48:00 AM
+        in: query
+        name: Ci Down Start Date Time
+        required: false
+        schema: {type: string}
+      - description: Boolean value if the incident is major or not.
+        example: 'True'
+        in: query
+        name: Major Incident
+        required: false
+        schema: {type: string}
+      - description: The ID of the user who created the record
+        example: 9365b5492e73e147d96f0f48cb856c89e3918c5871
+        in: query
+        name: Created By Id
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific record.
+        example: 93d605e29a4a79c71cb4584dc1b5d740a1edeea675
+        in: query
+        name: Rec Id
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: 9398862125defd58a8deea46fe88acc411a96e2b00
+        in: query
+        name: Specifics Type Id
+        required: false
+        schema: {type: string}
+      - description: Validated from Incident Cause.Cause.
+        example: Untrained User
+        in: query
+        name: Cause
+        required: false
+        schema: {type: string}
+      - description: Boolean value regarding if the incident was reopened.
+        example: 'True'
+        in: query
+        name: Stat Incident Reopened
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific record business object.
+        example: 93d605e29a4a79c71cb4584dc1b5d740a1edeea675
+        in: query
+        name: Bus Ob Rec Id
+        required: false
+        schema: {type: string}
+      - description: Name of the Service Catalog Template.
+        example: HR Process
+        in: query
+        name: Service Catalog Template Name
+        required: false
+        schema: {type: string}
+      - description: The number of touches related to the incident.
+        example: '59'
+        in: query
+        name: Stat Number Of Touches
+        required: false
+        schema: {type: string}
+      - description: The name of the team that owns the record
+        example: 1st Level Support
+        in: query
+        name: Owned By Team
+        required: false
+        schema: {type: string}
+      - description: Notes related to the Service License Agreement.
+        example: 'Please describe the delay here: 2nd level support didn''t check
+          the ODBC until the next morning'
+        in: query
+        name: Breach Notes
+        required: false
+        schema: {type: string}
+      - description: Was the incident escalated
+        example: 'False'
+        in: query
+        name: Stat Incident Escalated
+        required: false
+        schema: {type: string}
+      - description: The ID for a specific customer record
+        example: 9349ef7253eba3a1e516744da5bb4ca82ff8f4157c
+        in: query
+        name: Customer Rec Id
+        required: false
+        schema: {type: string}
+      - description: Unique record identifier
+        example: '102999'
+        in: query
+        name: Incident Id
+        required: false
+        schema: {type: string}
+      - description: The configuration item display name.
+        example: max-lap
+        in: query
+        name: Config Item Display Name
+        required: false
+        schema: {type: string}
+      - description: The Service License Agreement resolution warning.
+        example: 2/19/2019 10:48:00 AM
+        in: query
+        name: Sla Resolution Warning
+        required: false
+        schema: {type: string}
+      - description: The time and date that the incident was closed.
+        example: '''2/18/2019 2:30:10 PM'
+        in: query
+        name: Stat Date Time Closed
+        required: false
+        schema: {type: string}
+      - description: ID of the user that closed the incident.
+        example: 93546560c6334c3c105d17437c843b9557775b2e0c
+        in: query
+        name: Closed By Id
+        required: false
+        schema: {type: string}
+      - description: Level 2 Escalation Team
+        example: 2nd Level Support
+        in: query
+        name: Level2Escalation Team
+        required: false
+        schema: {type: string}
+      - description: The name of the user who created the record
+        example: Josh Wilson
+        in: query
+        name: Created By
+        required: false
+        schema: {type: string}
+      - description: The ID of the user who owns this record
+        example: 9365b5492e73e147d96f0f48cb856c89e3918c5871
+        in: query
+        name: Owned By Id
+        required: false
+        schema: {type: string}
+      - description: The different levels of support.
+        example: Platinum, Gold, Silver, Corporate
+        in: query
+        name: Service Entitlements
+        required: false
+        schema: {type: string}
+      - description: The number of escaltions related to the incident.
+        example: '0'
+        in: query
+        name: Stat Number Of Escalations
+        required: false
+        schema: {type: string}
+      - description: A description of the status.
+        example: Incident is closed
+        in: query
+        name: Status Desc
+        required: false
+        schema: {type: string}
+      - description: A list of Service License Agreements linked together.
+        example: 93838607346b42be7074af487d9171ea9f948b7204 ,  , ,
+        in: query
+        name: Linked Sl As
+        required: false
+        schema: {type: string}
+      - description: Pending end date for the incident.
+        example: 2/19/2019 10:48:00 AM
+        in: query
+        name: Pending End Date Time
+        required: false
+        schema: {type: string}
+      - description: A count of closed tasks related to the incident.
+        example: '0'
+        in: query
+        name: Task Closed Count
+        required: false
+        schema: {type: string}
+      - description: The ID of that team that owns the incident.
+        example: 9365b4e90592c81e3b7a024555a6c0094ba77e8773
+        in: query
+        name: Owned By Team Id
+        required: false
+        schema: {type: string}
+      - description: 'Total time of incident in hours. '
+        example: '18.93'
+        in: query
+        name: Incident Duration In Hours
+        required: false
+        schema: {type: string}
+      - description: The total cost related to resolving the incident.
+        example: '709.00'
+        in: query
+        name: Cost
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Cherwell Service Management Update Ticket
+tags:
+- {name: Ticket Management}

@@ -1,0 +1,701 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        success: {type: string}
+      type: object
+    tmp10:
+      properties:
+        activationToken: {type: string}
+        activationUrl: {type: string}
+        success: {type: string}
+      type: object
+    tmp11:
+      properties:
+        success: {type: string}
+      type: object
+    tmp12:
+      properties:
+        _links_self_href: {type: string}
+        activated: {type: string}
+        created: {type: string}
+        credentials_emails_status: {type: string}
+        credentials_emails_type: {type: string}
+        credentials_emails_value: {type: string}
+        credentials_provider_name: {type: string}
+        credentials_provider_type: {type: string}
+        credentials_recovery_question_question: {type: string}
+        id: {type: string}
+        lastLogin: {type: string}
+        lastUpdated: {type: string}
+        passwordChanged: {type: string}
+        profile_email: {type: string}
+        profile_firstName: {type: string}
+        profile_lastName: {type: string}
+        profile_login: {type: string}
+        profile_mobilePhone: {type: string}
+        profile_secondEmail: {type: string}
+        status: {type: string}
+        statusChanged: {type: string}
+        type_id: {type: string}
+      type: object
+    tmp2:
+      properties:
+        success: {type: string}
+      type: object
+    tmp3:
+      properties:
+        success: {type: string}
+      type: object
+    tmp4:
+      properties:
+        actor_alternateId: {type: string}
+        actor_detailEntry: {type: string}
+        actor_displayName: {type: string}
+        actor_id: {type: string}
+        actor_type: {type: string}
+        authenticationContext_authenticationProvider: {type: string}
+        authenticationContext_authenticationStep: {type: string}
+        authenticationContext_credentialProvider: {type: string}
+        authenticationContext_credentialType: {type: string}
+        authenticationContext_externalSessionId: {type: string}
+        authenticationContext_interface: {type: string}
+        authenticationContext_issuer: {type: string}
+        client_device: {type: string}
+        client_geographicalContext: {type: string}
+        client_geographicalContext_city: {type: string}
+        client_geographicalContext_country: {type: string}
+        client_geographicalContext_geolocation_lat: {type: string}
+        client_geographicalContext_geolocation_lon: {type: string}
+        client_geographicalContext_postalCode: {type: string}
+        client_geographicalContext_state: {type: string}
+        client_id: {type: string}
+        client_ipAddress: {type: string}
+        client_userAgent_browser: {type: string}
+        client_userAgent_os: {type: string}
+        client_userAgent_rawUserAgent: {type: string}
+        client_zone: {type: string}
+        debugContext_debugData_requestId: {type: string}
+        debugContext_debugData_requestUri: {type: string}
+        debugContext_debugData_threatSuspected: {type: string}
+        debugContext_debugData_threshold: {type: string}
+        debugContext_debugData_timeSpan: {type: string}
+        debugContext_debugData_timeUnit: {type: string}
+        debugContext_debugData_url: {type: string}
+        debugContext_debugData_userId: {type: string}
+        debugContext_debugData_warningPercent: {type: string}
+        displayMessage: {type: string}
+        eventType: {type: string}
+        legacyEventType: {type: string}
+        outcome_reason: {type: string}
+        outcome_result: {type: string}
+        published: {type: string}
+        request_ipChain_geographicalContext: {type: string}
+        request_ipChain_geographicalContext_city: {type: string}
+        request_ipChain_geographicalContext_country: {type: string}
+        request_ipChain_geographicalContext_geolocation_lat: {type: string}
+        request_ipChain_geographicalContext_geolocation_lon: {type: string}
+        request_ipChain_geographicalContext_postalCode: {type: string}
+        request_ipChain_geographicalContext_state: {type: string}
+        request_ipChain_ip: {type: string}
+        request_ipChain_source: {type: string}
+        request_ipChain_version: {type: string}
+        securityContext_asNumber: {type: string}
+        securityContext_asOrg: {type: string}
+        securityContext_domain: {type: string}
+        securityContext_isProxy: {type: string}
+        securityContext_isp: {type: string}
+        severity: {type: string}
+        target: {type: string}
+        target_alternateId: {type: string}
+        target_detailEntry: {type: string}
+        target_detailEntry_policyType: {type: string}
+        target_displayName: {type: string}
+        target_id: {type: string}
+        target_type: {type: string}
+        transaction_id: {type: string}
+        transaction_type: {type: string}
+        uuid: {type: string}
+        version: {type: string}
+      type: object
+    tmp5:
+      properties:
+        _links_appLinks_href: {type: string}
+        _links_appLinks_name: {type: string}
+        _links_appLinks_type: {type: string}
+        _links_deactivate_href: {type: string}
+        _links_groups_href: {type: string}
+        _links_logo_href: {type: string}
+        _links_logo_name: {type: string}
+        _links_logo_type: {type: string}
+        _links_users_href: {type: string}
+        accessibility_errorRedirectUrl: {type: string}
+        accessibility_loginRedirectUrl: {type: string}
+        accessibility_selfService: {type: string}
+        created: {type: string}
+        credentials_oauthClient_autoKeyRotation: {type: string}
+        credentials_oauthClient_client_id: {type: string}
+        credentials_oauthClient_token_endpoint_auth_method: {type: string}
+        credentials_signing_kid: {type: string}
+        credentials_userNameTemplate_template: {type: string}
+        credentials_userNameTemplate_type: {type: string}
+        features: {type: string}
+        id: {type: string}
+        json: {type: string}
+        label: {type: string}
+        lastUpdated: {type: string}
+        name: {type: string}
+        settings_notifications_vpn_helpUrl: {type: string}
+        settings_notifications_vpn_message: {type: string}
+        settings_notifications_vpn_network_connection: {type: string}
+        settings_oauthClient_application_type: {type: string}
+        settings_oauthClient_client_uri: {type: string}
+        settings_oauthClient_grant_types: {type: string}
+        settings_oauthClient_issuer_mode: {type: string}
+        settings_oauthClient_logo_uri: {type: string}
+        settings_oauthClient_redirect_uris: {type: string}
+        settings_oauthClient_response_types: {type: string}
+        signOnMode: {type: string}
+        status: {type: string}
+        visibility_appLinks_oidc_client_link: {type: string}
+        visibility_autoSubmitToolbar: {type: string}
+        visibility_hide_iOS: {type: string}
+        visibility_hide_web: {type: string}
+      type: object
+    tmp6:
+      properties:
+        _links_appLinks_href: {type: string}
+        _links_appLinks_name: {type: string}
+        _links_appLinks_type: {type: string}
+        _links_deactivate_href: {type: string}
+        _links_groups_href: {type: string}
+        _links_logo_href: {type: string}
+        _links_logo_name: {type: string}
+        _links_logo_type: {type: string}
+        _links_users_href: {type: string}
+        accessibility_errorRedirectUrl: {type: string}
+        accessibility_loginRedirectUrl: {type: string}
+        accessibility_selfService: {type: string}
+        created: {type: string}
+        credentials_oauthClient_autoKeyRotation: {type: string}
+        credentials_oauthClient_client_id: {type: string}
+        credentials_oauthClient_token_endpoint_auth_method: {type: string}
+        credentials_signing_kid: {type: string}
+        credentials_userNameTemplate_template: {type: string}
+        credentials_userNameTemplate_type: {type: string}
+        features: {type: string}
+        id: {type: string}
+        json: {type: string}
+        label: {type: string}
+        lastUpdated: {type: string}
+        name: {type: string}
+        settings_notifications_vpn_helpUrl: {type: string}
+        settings_notifications_vpn_message: {type: string}
+        settings_notifications_vpn_network_connection: {type: string}
+        settings_oauthClient_application_type: {type: string}
+        settings_oauthClient_client_uri: {type: string}
+        settings_oauthClient_grant_types: {type: string}
+        settings_oauthClient_issuer_mode: {type: string}
+        settings_oauthClient_logo_uri: {type: string}
+        settings_oauthClient_post_logout_redirect_uris: {type: string}
+        settings_oauthClient_redirect_uris: {type: string}
+        settings_oauthClient_response_types: {type: string}
+        signOnMode: {type: string}
+        status: {type: string}
+        visibility_appLinks_oidc_client_link: {type: string}
+        visibility_autoSubmitToolbar: {type: string}
+        visibility_hide_iOS: {type: string}
+        visibility_hide_web: {type: string}
+      type: object
+    tmp7:
+      properties:
+        _embedded_user__links_app_href: {type: string}
+        _embedded_user__links_group_href: {type: string}
+        _embedded_user__links_group_name: {type: string}
+        _embedded_user__links_user_href: {type: string}
+        _embedded_user_created: {type: string}
+        _embedded_user_credentials_userName: {type: string}
+        _embedded_user_externalId: {type: string}
+        _embedded_user_id: {type: string}
+        _embedded_user_lastUpdated: {type: string}
+        _embedded_user_passwordChanged: {type: string}
+        _embedded_user_profile_birthdate: {type: string}
+        _embedded_user_profile_country: {type: string}
+        _embedded_user_profile_email: {type: string}
+        _embedded_user_profile_family_name: {type: string}
+        _embedded_user_profile_formatted: {type: string}
+        _embedded_user_profile_gender: {type: string}
+        _embedded_user_profile_given_name: {type: string}
+        _embedded_user_profile_locale: {type: string}
+        _embedded_user_profile_locality: {type: string}
+        _embedded_user_profile_middle_name: {type: string}
+        _embedded_user_profile_name: {type: string}
+        _embedded_user_profile_nickname: {type: string}
+        _embedded_user_profile_phone_number: {type: string}
+        _embedded_user_profile_picture: {type: string}
+        _embedded_user_profile_postal_code: {type: string}
+        _embedded_user_profile_profile: {type: string}
+        _embedded_user_profile_region: {type: string}
+        _embedded_user_profile_street_address: {type: string}
+        _embedded_user_profile_website: {type: string}
+        _embedded_user_profile_zoneinfo: {type: string}
+        _embedded_user_scope: {type: string}
+        _embedded_user_status: {type: string}
+        _embedded_user_statusChanged: {type: string}
+        _embedded_user_syncState: {type: string}
+        _links_appLinks_href: {type: string}
+        _links_appLinks_name: {type: string}
+        _links_appLinks_type: {type: string}
+        _links_deactivate_href: {type: string}
+        _links_groups_href: {type: string}
+        _links_logo_href: {type: string}
+        _links_logo_name: {type: string}
+        _links_logo_type: {type: string}
+        _links_users_href: {type: string}
+        accessibility_errorRedirectUrl: {type: string}
+        accessibility_loginRedirectUrl: {type: string}
+        accessibility_selfService: {type: string}
+        created: {type: string}
+        credentials_oauthClient_autoKeyRotation: {type: string}
+        credentials_oauthClient_client_id: {type: string}
+        credentials_oauthClient_token_endpoint_auth_method: {type: string}
+        credentials_signing_kid: {type: string}
+        credentials_userNameTemplate_template: {type: string}
+        credentials_userNameTemplate_type: {type: string}
+        features: {type: string}
+        id: {type: string}
+        json: {type: string}
+        label: {type: string}
+        lastUpdated: {type: string}
+        name: {type: string}
+        settings_notifications_vpn_helpUrl: {type: string}
+        settings_notifications_vpn_message: {type: string}
+        settings_notifications_vpn_network_connection: {type: string}
+        settings_oauthClient_application_type: {type: string}
+        settings_oauthClient_client_uri: {type: string}
+        settings_oauthClient_grant_types: {type: string}
+        settings_oauthClient_issuer_mode: {type: string}
+        settings_oauthClient_logo_uri: {type: string}
+        settings_oauthClient_post_logout_redirect_uris: {type: string}
+        settings_oauthClient_redirect_uris: {type: string}
+        settings_oauthClient_response_types: {type: string}
+        signOnMode: {type: string}
+        status: {type: string}
+        visibility_appLinks_oidc_client_link: {type: string}
+        visibility_autoSubmitToolbar: {type: string}
+        visibility_hide_iOS: {type: string}
+        visibility_hide_web: {type: string}
+      type: object
+    tmp8:
+      properties:
+        actor_alternateId: {type: string}
+        actor_detailEntry: {type: string}
+        actor_displayName: {type: string}
+        actor_id: {type: string}
+        actor_type: {type: string}
+        authenticationContext_authenticationProvider: {type: string}
+        authenticationContext_authenticationStep: {type: string}
+        authenticationContext_credentialProvider: {type: string}
+        authenticationContext_credentialType: {type: string}
+        authenticationContext_externalSessionId: {type: string}
+        authenticationContext_interface: {type: string}
+        authenticationContext_issuer: {type: string}
+        client_device: {type: string}
+        client_geographicalContext_city: {type: string}
+        client_geographicalContext_country: {type: string}
+        client_geographicalContext_geolocation_lat: {type: string}
+        client_geographicalContext_geolocation_lon: {type: string}
+        client_geographicalContext_postalCode: {type: string}
+        client_geographicalContext_state: {type: string}
+        client_id: {type: string}
+        client_ipAddress: {type: string}
+        client_userAgent_browser: {type: string}
+        client_userAgent_os: {type: string}
+        client_userAgent_rawUserAgent: {type: string}
+        client_zone: {type: string}
+        debugContext_debugData_requestId: {type: string}
+        debugContext_debugData_requestUri: {type: string}
+        debugContext_debugData_threatSuspected: {type: string}
+        debugContext_debugData_url: {type: string}
+        displayMessage: {type: string}
+        eventType: {type: string}
+        legacyEventType: {type: string}
+        outcome_reason: {type: string}
+        outcome_result: {type: string}
+        published: {type: string}
+        request_ipChain_geographicalContext_city: {type: string}
+        request_ipChain_geographicalContext_country: {type: string}
+        request_ipChain_geographicalContext_geolocation_lat: {type: string}
+        request_ipChain_geographicalContext_geolocation_lon: {type: string}
+        request_ipChain_geographicalContext_postalCode: {type: string}
+        request_ipChain_geographicalContext_state: {type: string}
+        request_ipChain_ip: {type: string}
+        request_ipChain_source: {type: string}
+        request_ipChain_version: {type: string}
+        securityContext_asNumber: {type: string}
+        securityContext_asOrg: {type: string}
+        securityContext_domain: {type: string}
+        securityContext_isProxy: {type: string}
+        securityContext_isp: {type: string}
+        severity: {type: string}
+        target_alternateId: {type: string}
+        target_detailEntry: {type: string}
+        target_displayName: {type: string}
+        target_id: {type: string}
+        target_type: {type: string}
+        transaction_id: {type: string}
+        transaction_type: {type: string}
+        uuid: {type: string}
+        version: {type: string}
+      type: object
+    tmp9:
+      properties:
+        _links_apps_href: {type: string}
+        _links_logo_href: {type: string}
+        _links_logo_name: {type: string}
+        _links_logo_type: {type: string}
+        _links_users_href: {type: string}
+        created: {type: string}
+        id: {type: string}
+        lastMembershipUpdated: {type: string}
+        lastUpdated: {type: string}
+        objectClass: {type: string}
+        profile_description: {type: string}
+        profile_name: {type: string}
+        type: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Okta Okta
+  title: Okta Okta
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAEqklEQVR4nO3dwXXbNhjA8Y98eT07Gzgb2BNQ2sDdoN4gPfXg8Ml+cg49pRvEncAjSOwC8QbNBvU5B7IHVbVkiSI+EB8Ayf/fyS8iARD4CEIAqIgAAAAAAAAAAAAAAAAAAAAAAAAAAIC3okhdAJW66Q5+Pq/SXM9Qucr2vdxNn+MUJg9l6gI4G2o812NSaMt/UhchtuMJLBwVAgsmCCyYILBggsCCCQILJggsmCCwYILAggkCK5ZPf12lLkJM70anUDe3IjLb+rdUa3ZjDC8H/Srz6g/v9IvuUerG7djQ9efTRgfro3uQ+eT60Ol+F3CzmEhZLpyODVVJruuA2vxmizPVWt6+9EOvUbbyXT5XH0alMVtcSFt+czr29TXVzUcR+aI+b4N7j6UJpk2blZ5jT5bjAnEp517nbbZRqzjPYPF+OLBCZrpOK5cA015bLuV+LcNdHWkG73XTSb18TJL3Zhk0cg2qTPX3WOZ3QXElddMlabBTCaoMe6q1/T1WvfwauRzxZNwYKpm30W6PFbviY467tNf2Q57l9+q9UWn8HcHNsd1jHUGBvflcG0Hl7SWwbhaTdMUQ2wrzmfVOOq7qHtLlHcbLo9BnjkpkKfNquvcTn0CxGMzXTSeiLIpVUI1N96b5W31OJ09yX132fm50Q7/7L3FdULlU0PqYFGO2MXnnGlSr6Znz4PnNq8KijdaPwonzGdoKmldF9K69bjqvyirbccsopoors6RXbXoXMkndBKnvXTewYLkl1eB0XhVyN/2eJO+Q5lXh1U7z6jZkMeLNvOc6yYgXAduolNniInamWfG9w2OaLc6cjivb8dMjgeqidN5aEUJuDZhbefq47sDI6Pch3B6FWQ9qISIibbt/2icRt8A6hUHtqfs8XaYuwqa3vef9SJZHjtHbDqyYXL8knQi3wDrlO9t3MlXL+ktSZm0Ut8f6rclvfzlMlM5fuUPcET/J2eg0rMTquXzEbKNAu1zi9VixGq2T6/8nPTt5Up/v06v+kGen43IN3LW66Tx3uezQBVbuFSMicl89bPzdv12kj0+vqtkQaF2HmbTRKrA0d7a24NpHTOjZcJ/0Vm8RafeUu+8O8Gv8pVn6vsOAA+esAkt7Z2dyVzjzCtbiF2Uet6rjV28ba9LXzazHaqOedcyXCh9VkO5B2u5PKcuJvP6NAI2yvZS76dPez0K8Yu9zjZ1cbz1eDxlTh5vlvllMemfSx+TRttPRbeRiXhWv39lP1xON+pEKg3Q2HQr4EOn3ifE7EUa2B+/Hsto/hs81xtwBMuRI2mj3W2En7rs9Q4ldWb4Dete0reuwK342TT+AsOMRH6En/zRBY/myxafmmxRyoU5fk1fGj8X+eayy1c8BaaXu1i17rvvq0rznitFGnoYr1uKusH4UWaXtm49vHcZcyjmUt0f6wzPvoXsVn2UWa9bB6LsD13XdLnzPvxybfpy7WyTAC5uGPZY2jzF57fs90D5DbzH352HTRop0x0f6voqy/I8fD93FIbbn1suvIsX54HHamfDe/A4EWrjfb93NI0Ta9fJx50Xa1ONmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOj1L+wxxYOBKs0vAAAAAElFTkSuQmCC
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Active an application
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Application ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Okta Activate Application by ID
+  tmp1:
+    post:
+      description: Adds a user to a group or removes a user from a group by ID
+      parameters:
+      - description: ID of the group
+        example: ''
+        in: query
+        name: Group ID
+        required: true
+        schema: {type: string}
+      - description: ID of the user to remove/add.
+        example: ''
+        in: query
+        name: user ID
+        required: true
+        schema: {type: string}
+      - description: If true, the user will be removed from the group. If False, the
+          user will be added.
+        example: ''
+        in: query
+        name: Remove User
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Okta Add or Remove User from Group
+  tmp10:
+    post:
+      description: Activate User in Okta
+      parameters:
+      - description: ID of User to Activate
+        example: ''
+        in: query
+        name: ID of User
+        required: true
+        schema: {type: string}
+      - description: if true, sends an activation email to the user and returns url/token.
+        example: ''
+        in: query
+        name: Send Activation Email
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Okta Activate User
+  tmp11:
+    post:
+      description: Deactivate User in Okta
+      parameters:
+      - description: ID of User to Activate
+        example: ''
+        in: query
+        name: ID of User
+        required: true
+        schema: {type: string}
+      - description: if true, sends a deactivation email to the admin.
+        example: ''
+        in: query
+        name: Send Deactivation Email
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: Okta Deactivate User
+  tmp12:
+    post:
+      description: List, Get, Filter and Search Users
+      parameters:
+      - description: Finds a user that matches firstName, lastName, and email properties
+        example: swimlane.com
+        in: query
+        name: Find Users
+        required: false
+        schema: {type: string}
+      - description: Filters users with a supported expression for a subset of properties.
+          Please see examples in readme.
+        example: status eq "ACTIVE"
+        in: query
+        name: Filter Expression
+        required: false
+        schema: {type: string}
+      - description: Searches for users with a supported filtering expression for
+          most properties. Please see examples in readme.
+        example: profile.department eq "Engineering"
+        in: query
+        name: Search User
+        required: false
+        schema: {type: string}
+      - description: If supplied, returns the user by id and ignores all other inputs.
+        example: 00u1ero7vZFVEIYLWPBN
+        in: query
+        name: User ID
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: Okta Users
+  tmp2:
+    post:
+      description: Deactivate an application
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Application ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Okta Deactivate Application by ID
+  tmp3:
+    post:
+      description: Delete an application by ID
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Application ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Okta Delete Application by ID
+  tmp4:
+    post:
+      description: List events, filter events, get events for user.
+      parameters:
+      - description: Filters the log events results by one or more exact keywords.
+        example: Jane Doe
+        in: query
+        name: Keyword Filter
+        required: false
+        schema: {type: string}
+      - description: Filter Expression that filters the results. Please see readme
+          for examples.
+        example: eventType eq "user.session.start" and outcome.result eq "FAILURE"
+        in: query
+        name: Filter
+        required: false
+        schema: {type: string}
+      - description: Filters the lower time bound of the log events published property.
+          Formatted in ISO 8601
+        example: '2017-05-03T16:22:18Z'
+        in: query
+        name: Since
+        required: false
+        schema: {type: string}
+      - description: Limit the number of events returned. Defaults to 100
+        example: '50'
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Filters the upper time bound of the log events published property.
+          Formatted in ISO 8601
+        example: '2017-05-03T16:22:18Z'
+        in: query
+        name: Since
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Okta Events
+  tmp5:
+    post:
+      description: Get an application by ID
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Application ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Okta Get Application by ID
+  tmp6:
+    post:
+      description: Returns applications registered in Okta, filters possible.
+      parameters:
+      - description: Filters apps by status, user.id, group.id or credentials.signing.kid
+          expression. See readme for examples.
+        example: status eq "ACTIVE"
+        in: query
+        name: Filter
+        required: false
+        schema: {type: string}
+      - description: Searches the name or displayName property of applications.
+        example: oidc_client
+        in: query
+        name: Query
+        required: false
+        schema: {type: string}
+      - description: Number of applications to return. Defaults to 100.
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Traverses the users link relationship and optionally embeds the
+          Application User resource. Only one expantion and must be used with user.ed
+          eq ":uid" filter.
+        example: user/00ucw2RPGIUNTDQOYPOF
+        in: query
+        name: Expand
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Okta Get Applications
+  tmp7:
+    post:
+      description: Returns all applications by user ID
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: User ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Okta Get Applications for User
+  tmp8:
+    post:
+      description: Returns user events for removed applications
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: User ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Okta Get User Event of Removed Applications
+  tmp9:
+    post:
+      description: List groups
+      parameters:
+      - description: Searches the name property of groups for matching value.
+        example: Swimlane Group
+        in: query
+        name: Name Filter
+        required: false
+        schema: {type: string}
+      - description: Filter expression for groups. Please see examples in readme.
+        example: type eq "OKTA_GROUP"
+        in: query
+        name: Filter Expression
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Okta List Groups
+tags:
+- {name: Identity & Access Management}

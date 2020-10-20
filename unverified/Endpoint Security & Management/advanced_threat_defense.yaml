@@ -1,0 +1,237 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        finished: {type: string}
+      type: object
+    tmp1:
+      properties:
+        artimas: {type: string}
+        asm: {type: string}
+        aviraAV: {type: string}
+        consoleLog: {type: string}
+        createTime: {type: string}
+        customrules: {type: string}
+        default32OSName: {type: string}
+        default64OSName: {type: string}
+        defaultVM: {type: string}
+        dnnEnable: {type: string}
+        dropZip: {type: string}
+        dumpZip: {type: string}
+        family: {type: string}
+        filePassword: {type: string}
+        filePassword1: {type: string}
+        flp: {type: string}
+        gam: {type: string}
+        gml: {type: string}
+        gtiTS: {type: string}
+        gtiURLRep: {type: string}
+        heuristic: {type: string}
+        imageid: {type: string}
+        internet: {type: string}
+        lastChange: {type: string}
+        locBlackList: {type: string}
+        locWhiteList: {type: string}
+        logZip: {type: string}
+        maxExecTime: {type: string}
+        mfeAV: {type: string}
+        minExecTime: {type: string}
+        name: {type: string}
+        netLog: {type: string}
+        netdriveZip: {type: string}
+        noPDF: {type: string}
+        ntvLog: {type: string}
+        openarchive: {type: string}
+        overrideOS: {type: string}
+        pe32: {type: string}
+        reAnalysis: {type: string}
+        recusiveAnalysis: {type: string}
+        runtimeArgument: {type: string}
+        sandbox: {type: string}
+        selectedOSName: {type: string}
+        sophosAV: {type: string}
+        ssAPIid: {type: string}
+        ssKeyid: {type: string}
+        ssLevelid: {type: string}
+        summary: {type: string}
+        userLog: {type: string}
+        userid: {type: string}
+        vmDesc: {type: string}
+        vmProfileid: {type: string}
+        xMode: {type: string}
+        yaraScan: {type: string}
+        yararules: {type: string}
+      type: object
+    tmp2:
+      properties:
+        Summary_Behavior: {type: string}
+        Summary_DETversion: {type: string}
+        Summary_Data_analysis_seconds: {type: string}
+        Summary_Data_compiled_with: {type: string}
+        Summary_Data_sandbox_analysis: {type: string}
+        Summary_JSONversion: {type: string}
+        Summary_MISversion: {type: string}
+        Summary_OSversion: {type: string}
+        Summary_Process_Name: {type: string}
+        Summary_Process_Reason: {type: string}
+        Summary_Process_Severity: {type: string}
+        Summary_SUMversion: {type: string}
+        Summary_Selectors_Engine: {type: string}
+        Summary_Selectors_MalwareName: {type: string}
+        Summary_Selectors_Severity: {type: string}
+        Summary_Subject_FileType: {type: string}
+        Summary_Subject_Name: {type: string}
+        Summary_Subject_Timestamp: {type: string}
+        Summary_Subject_Type: {type: string}
+        Summary_Subject_md5: {type: string}
+        Summary_Subject_parent_archive: {type: string}
+        Summary_Subject_sha-1: {type: string}
+        Summary_Subject_sha-256: {type: string}
+        Summary_Subject_size: {type: string}
+        Summary_Verdict_Description: {type: string}
+        Summary_Verdict_Severity: {type: string}
+        Summary_hasDynamicAnalysis: {type: string}
+        html_data: {type: string}
+        ioc_data: {type: string}
+        pdf_data: {type: string}
+      type: object
+    tmp3:
+      properties:
+        destIp: {type: string}
+        file: {type: string}
+        md5: {type: string}
+        messageId: {type: string}
+        sha1: {type: string}
+        sha256: {type: string}
+        size: {type: string}
+        srcIp: {type: string}
+        submitType: {type: string}
+        taskId: {type: string}
+        url: {type: string}
+      type: object
+    tmp4:
+      properties:
+        destIp: {type: string}
+        file: {type: string}
+        md5: {type: string}
+        messageId: {type: string}
+        sha1: {type: string}
+        sha256: {type: string}
+        size: {type: string}
+        srcIp: {type: string}
+        submitType: {type: string}
+        taskId: {type: string}
+        url: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of McAfee Advanced Threat Defense
+  title: McAfee Advanced Threat Defense
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Check if results are available from McAfee ATD given a task ID
+      parameters:
+      - description: Task ID to get data from
+        example: ''
+        in: body
+        name: Task ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: ATD Check Result Completion
+  tmp1:
+    post:
+      description: Get information about the available analyzer profiles to a given
+        user
+      parameters:
+      - description: Optional limit of profiles to return, defaults to 25
+        example: ''
+        in: body
+        name: Limit
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: ATD Get Analyzer Profiles
+  tmp2:
+    post:
+      description: Get results from McAfee ATD given a task ID
+      parameters:
+      - description: Task ID to get data from
+        example: ''
+        in: body
+        name: Task ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: ATD Get Results by Task ID
+  tmp3:
+    post:
+      description: Upload a file for dynamic analysis in ATD
+      parameters:
+      - description: File to upload
+        example: ''
+        in: query
+        name: Upload File
+        required: true
+        schema: {type: string}
+      - description: Profile to use analyzing URL. The profile ID number can be found
+          in the UI Policy/Analyzer Profile page. Defaults to profile 1
+        example: ''
+        in: body
+        name: Analyzer Profile
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: ATD File Analysis
+  tmp4:
+    post:
+      description: Upload a URL for dynamic analysis in ATD
+      parameters:
+      - description: URL to upload
+        example: ''
+        in: query
+        name: Upload URL
+        required: true
+        schema: {type: string}
+      - description: Profile to use analyzing URL. The profile ID number can be found
+          in the UI Policy/Analyzer Profile page. Defaults to profile 1
+        example: ''
+        in: body
+        name: Analyzer Profile
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: ATD URL Analysis
+tags:
+- {name: Endpoint Security & Management}

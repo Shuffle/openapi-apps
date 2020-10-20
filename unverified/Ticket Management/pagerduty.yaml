@@ -1,0 +1,200 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        error: {type: string}
+        id: {type: string}
+        incident_key: {type: string}
+        successful: {type: string}
+      type: object
+    tmp1:
+      properties:
+        escalation_level: {type: string}
+        escalation_policy_id: {type: string}
+        escalation_policy_summary: {type: string}
+        escalation_policy_type: {type: string}
+        schedule: {type: string}
+        start: {type: string}
+        user_id: {type: string}
+        user_summary: {type: string}
+        user_type: {type: string}
+      type: object
+    tmp2:
+      properties:
+        description: {type: string}
+        escalation_rules_escalation_delay_in_minutes: {type: string}
+        escalation_rules_id: {type: string}
+        escalation_rules_targets_id: {type: string}
+        escalation_rules_targets_summary: {type: string}
+        id: {type: string}
+        name: {type: string}
+        num_loops: {type: string}
+        privilege: {type: string}
+        services_id: {type: string}
+        services_summary: {type: string}
+        summary: {type: string}
+        teams_id: {type: string}
+        teams_summary: {type: string}
+      type: object
+    tmp3:
+      properties:
+        acknowledgement_timeout: {type: string}
+        alert_grouping: {type: string}
+        alert_grouping_timeout: {type: string}
+        auto_resolve_timeout: {type: string}
+        created_at: {type: string}
+        description: {type: string}
+        escalation_policy_id: {type: string}
+        escalation_policy_summary: {type: string}
+        id: {type: string}
+        incident_urgency_rule_urgency: {type: string}
+        integrations_id: {type: string}
+        integrations_summary: {type: string}
+        last_incident_timestamp: {type: string}
+        name: {type: string}
+        response_play: {type: string}
+        scheduled_actions: {type: string}
+        status: {type: string}
+        summary: {type: string}
+        support_hours: {type: string}
+        teams_id: {type: string}
+        teams_summary: {type: string}
+      type: object
+    tmp4:
+      properties:
+        default_role: {type: string}
+        description: {type: string}
+        id: {type: string}
+        name: {type: string}
+        parent: {type: string}
+        summary: {type: string}
+      type: object
+    tmp5:
+      properties:
+        billed: {type: string}
+        color: {type: string}
+        contact_methods_id: {type: string}
+        contact_methods_summary: {type: string}
+        coordinated_incidents: {type: string}
+        description: {type: string}
+        email: {type: string}
+        id: {type: string}
+        job_title: {type: string}
+        name: {type: string}
+        notification_rules_id: {type: string}
+        notification_rules_summary: {type: string}
+        role: {type: string}
+        summary: {type: string}
+        teams_id: {type: string}
+        teams_summary: {type: string}
+        time_zone: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of PagerDuty PagerDuty
+  title: PagerDuty PagerDuty
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAIAAADrOV6nAAAFnklEQVR4nO2cX2wURRjAv292767X9uCUu5LSQmkp2ALxH8GoPPhgYgyY4IOPGkOiMSYmaGJ88kHUmPAGCTHGaCQqMZEnH3g0URJAjUZIxAqVQv9dLaXc9bje9bjdGR+Eq+nNwt11b7bf8f3ebndn5tv93c7OzM4sgn/0DD7hY27NzejQGb+yEn5lxAQFKyQPKyQPKyQPKyQPKyQPKyQPKyQPKyQPKyQPKyQPKyQPKyQPKySPHXQA5Nn+5Rkna1VudzLhi+88KsKy0QGwwuWiSqAc1Gx3DdVwXJGShxWShxWShxWShxWShxWShxWShxWShxWShxWShxWShxWSZ0UMcyuJMm8rVe3xiEpEJIb8ewmAoByUJQFSM2B917TBEphCeVOs2nF93csjaLkgAKr2dwsEkAASFybarhzchvW901GQ2J1a88wUCPnfzzpwsgHfBgEVj7D1szPq5u1qvI5rpwAQwFItPbmtn58ePzKQOx+vKQOr1d188DflYp0BrBhMK1QStx897WTtRX/LRhatrleHRUgNvfFYNTIWY3CDrgT9wGxzRkLniyMNqnlkCQc+/kWW7nJGysWet4YCr/18xKBChPhTV1fvvNa4ElQR+98/d+djOp6fiPbeaFwM5jGn8L5dV9e+MNro9ltozYJyPE/Kzdn3P51qbATGMacw8dyEmVbDhv1DXruSeydMRGAWQwrdeVu0uGbKat+WQUvzZ3FzdnLPpJkYTGLoqd662fvxg+DMhccOD8q8ZiqfllCymNw90Towp90rSyK+ayZ9smPJ9mhfDsOudrYZIDjp8MyJ7sJI+92LR0Cx+Bfp/+ism6s28kZgTGHWa9f0txszp5I15eaOtY5/smXD/r/0DRMF0d4blQrbt2f0/gDGDg0WrrTXV88jBtypNFKRKmhZn9fvQlWrvzJjhwaFxxhbZF2hcmPLhnmv8AqX6/S3EjChUCkUUUe7C+36rxxaCiP65BiqeO4qFBG9b+2DkxCmWqQefQlcXh/DM7V2tNrraOJDNPyyiTyskDyskDyEFdJuhPgHYYXAFgGAukIGWGETwArJwwrJwwrJwwrJwwrJQ1whdwzJK2SoKyT+msgfaCuUHhWpUhq5pmdINPzLXbegrLCEqqi/D2Wx4rwQvCZ6L3NavqYsAABw8xYaubpkFSL0fXDO6ztnxcm2im2qOBn1ysyOl+qplBFa1s9Lj8UhhcsxtE3ciQEvLVAKI923Z0ZVfTdEuvKJZ1OheFG/GyE/HKvcnDsfT+yZ1E5i23Tg92Kq9dqJ7oXxSvd6RFh2v34hlFjwWpJYuFzFfEY/CFphCTe+fd7nPG+K9A9rrfalE67yw6tK6bAdK+nSYKSz0PXKcM2FeS0pRUif7LDa9JO+/IVsRepN7s+4FdNcOxFxs78mzMSAqCr/Qw2iCRWOH3nAq8s/9XWvmRgyP3UYG3ZoNoX5i6vvUH3ZsZKBGzH7c/KfbzY2upQyTaXQLdijhwfufEzq6CYnE25cDMXJttRXfSZH/pplsauCSwcedjIhryn6ZdCWl957aN2+kdiDsz6P7gg189366993mulLlGkGhSIs/373EScTqj5J6ou+0Jqu/g/PenXMawVtdeHNnV7LbhoKWYUI4KICmDvVMX28B0TNNVdpNjL02uOdL43EdszeWlZR14dTlBTTx3vSP64VEUMLKJcQsEIRln/se7LWVCgAbbm4nKV2f+WEU8d6p471Atz+dJD3Iu/KtKLFLccQlD8IXCEAWNHATv7/oK0s2wVYEcHURFO1SO9NWCF5WCF5WCF5WCF5WCF5WCF5WCF5WCF5WCF5WCF5WCF5DA1zIyj9vFj+Cy0bEwpRqIlPtxgo6N6E7wLysELysELysELysELysELysELysELysELysELysELysELysELysELy/At3K57ZPxFhZgAAAABJRU5ErkJggg==
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Create a new incident on pagerduty
+      parameters:
+      - description: Title of the new incident
+        example: ''
+        in: query
+        name: Title
+        required: true
+        schema: {type: string}
+      - description: Details of the incident
+        example: ''
+        in: query
+        name: Incident Body
+        required: true
+        schema: {type: string}
+      - description: ID of the escalation policy to use for the incident, will default
+          to default policy if blank
+        example: ''
+        in: query
+        name: Escalation Policy ID
+        required: false
+        schema: {type: string}
+      - description: Service ID to use for the incident, will default to the default
+          service ID if blank
+        example: ''
+        in: query
+        name: Service ID
+        required: false
+        schema: {type: string}
+      - description: User Email to use for creation
+        example: ''
+        in: query
+        name: From Email
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: PagerDuty Create Incident
+  tmp1:
+    post:
+      description: List all On-Call Users on pagerduty
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: PagerDuty List OnCalls
+  tmp2:
+    post:
+      description: List all Policies on pagerduty
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: PagerDuty List Policies
+  tmp3:
+    post:
+      description: Gets a list of services on pagerduty
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: PagerDuty List Services
+  tmp4:
+    post:
+      description: Gets a list of teams on pagerduty
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: PagerDuty List Teams
+  tmp5:
+    post:
+      description: Gets a list of teams on pagerduty
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: PagerDuty List Users
+tags:
+- {name: Ticket Management}

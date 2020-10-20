@@ -1,0 +1,235 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        asset: {type: string}
+        backstoryLink: {type: string}
+        name: {type: string}
+        rawLog: {type: string}
+        severity: {type: string}
+        sourceProduct: {type: string}
+        timestamp: {type: string}
+        uri: {type: string}
+      type: object
+    tmp1:
+      properties:
+        asset_hostname: {type: string}
+        firstSeenArtifactInfo_seenTime: {type: string}
+        lastSeenArtifactInfo_artifactIndicator_domainName: {type: string}
+        lastSeenArtifactInfo_seenTime: {type: string}
+      type: object
+    tmp2:
+      properties:
+        metadata_collectedTimestamp: {type: string}
+        metadata_eventTimestamp: {type: string}
+        metadata_eventType: {type: string}
+        metadata_productName: {type: string}
+        network_applicationProtocol: {type: string}
+        network_dns_questions_name: {type: string}
+        network_dns_questions_type: {type: string}
+        principal_hostname: {type: string}
+        principal_ip: {type: string}
+        principal_mac: {type: string}
+        target_ip: {type: string}
+      type: object
+    tmp3:
+      properties:
+        artifact_domainName: {type: string}
+        firstSeenTime: {type: string}
+        intRawConfidenceScore: {type: string}
+        iocIngestTime: {type: string}
+        lastSeenTime: {type: string}
+        sources_category: {type: string}
+        sources_confidenceScore_intRawConfidenceScore: {type: string}
+        sources_confidenceScore_normalizedConfidenceScore: {type: string}
+        sources_rawSeverity: {type: string}
+        sources_source: {type: string}
+      type: object
+    tmp4:
+      properties:
+        addresses_domain: {type: string}
+        addresses_port: {type: string}
+        category: {type: string}
+        confidenceScore_strRawConfidenceScore: {type: string}
+        firstActiveTime: {type: string}
+        lastActiveTime: {type: string}
+        rawSeverity: {type: string}
+        sourceUrl: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Chronicle Chronicle
+  title: Chronicle Chronicle
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Query Alerts
+      parameters:
+      - description: Start time for your request
+        example: '2019-10-15T00:00:00Z'
+        in: query
+        name: start_time
+        required: true
+        schema: {type: string}
+      - description: End time for your request
+        example: '2019-10-17T00:00:00Z'
+        in: query
+        name: end_time
+        required: true
+        schema: {type: string}
+      - description: Specify the maximum number of alerts to return (max. 10000)
+        example: '1'
+        in: query
+        name: Page Size
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Chronicle Query Alerts
+  tmp1:
+    post:
+      description: Query Assets
+      parameters:
+      - description: Specify the artifact type ('domain_name', 'destination_ip_address',
+          'hash_md5', 'hash_sha1', hash_sha256).
+        example: domain_name
+        in: query
+        name: Artifact Type
+        required: true
+        schema: {type: string}
+      - description: An artifact based on the Artifact Type.
+        example: www.google.com
+        in: query
+        name: Artifact
+        required: true
+        schema: {type: string}
+      - description: Start time for your request
+        example: '2019-10-15T00:00:00Z'
+        in: query
+        name: Start Time
+        required: true
+        schema: {type: string}
+      - description: End time for your request
+        example: '2019-10-17T00:00:00Z'
+        in: query
+        name: End Time
+        required: true
+        schema: {type: string}
+      - description: Specify the maximum number of assets to return (max. 10000)
+        example: '1'
+        in: query
+        name: Page Size
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Chronicle Query Assets
+  tmp2:
+    post:
+      description: Query Events
+      parameters:
+      - description: An asset indicator can be either, 'hostname', 'asset_ip_address',
+          'mac', or 'product_id'
+        example: hostname
+        in: query
+        name: Asset Indicator
+        required: true
+        schema: {type: string}
+      - description: An asset based on the 'Asset Indicator'
+        example: bobs-pc
+        in: query
+        name: Asset
+        required: true
+        schema: {type: string}
+      - description: Start time for your request
+        example: '2019-11-17T20:37:00Z'
+        in: query
+        name: Start Time
+        required: true
+        schema: {type: string}
+      - description: End time for your request
+        example: '2019-11-18T20:37:00Z'
+        in: query
+        name: End Time
+        required: true
+        schema: {type: string}
+      - description: Reference time for your request
+        example: '2019-11-17T20:37:00Z'
+        in: query
+        name: Reference Time
+        required: true
+        schema: {type: string}
+      - description: Specify the maximum number of Events to return (max. 10000)
+        example: '1'
+        in: query
+        name: Page Size
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Chronicle Query Events
+  tmp3:
+    post:
+      description: List Indicators of Compromise (IOC)
+      parameters:
+      - description: Start time for your request
+        example: '2019-10-15T20:37:00Z'
+        in: query
+        name: Start Time
+        required: true
+        schema: {type: string}
+      - description: Specify the number of IoCs to return (max. 10000)
+        example: '1'
+        in: query
+        name: Page Size
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Chronicle Query IOC
+  tmp4:
+    post:
+      description: Query Indicators of Compromise (IOC) Details
+      parameters:
+      - description: Specify the artifact type ('domain_name', 'destination_ip_address',
+          'hash_md5', 'hash_sha1', hash_sha256).
+        example: domain_name
+        in: query
+        name: Artifact Type
+        required: true
+        schema: {type: string}
+      - description: ' An artifact based on the Artifact Type.'
+        example: www.emjcd.com
+        in: query
+        name: Artifact
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Chronicle Query IOC Details
+tags:
+- {name: SIEM & Log Management}

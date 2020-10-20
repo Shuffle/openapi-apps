@@ -1,0 +1,456 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        categories_category_name: {type: string}
+        computer_type_stats_computer_type: {type: string}
+        computer_type_stats_computer_type_count: {type: string}
+        connection_stats: {type: string}
+        device_identity_stats_device_identity_count: {type: string}
+        device_identity_stats_reported_ts_yyww: {type: string}
+        file_infos_file_name: {type: string}
+        file_infos_file_property_version: {type: string}
+        file_infos_file_property_version_norm: {type: string}
+        file_infos_file_size: {type: string}
+        file_infos_sha1: {type: string}
+        file_path_stats_file_path: {type: string}
+        file_path_stats_file_path_count: {type: string}
+        loaded_component_stats_loaded_component: {type: string}
+        loaded_component_stats_loaded_component_count: {type: string}
+        os_infos_arch: {type: string}
+        os_infos_kernel_version: {type: string}
+        os_infos_language: {type: string}
+        os_infos_os_name: {type: string}
+        os_infos_os_name_norm: {type: string}
+        os_infos_os_type: {type: string}
+        os_infos_service_pack: {type: string}
+        product_info_stats_product_name_norm: {type: string}
+        product_info_stats_product_name_norm_count: {type: string}
+        product_info_stats_product_version_norm: {type: string}
+        product_infos_product_name: {type: string}
+        product_infos_product_version: {type: string}
+        source_ip_stats_reported_ts_yyww: {type: string}
+        source_ip_stats_source_ip_count: {type: string}
+        vendor_infos_vendor_name: {type: string}
+      type: object
+    tmp1:
+      properties:
+        cve: {type: string}
+        cve_device_infection_risk: {type: string}
+        cvss_2_0_access_complexity: {type: string}
+        cvss_2_0_access_vector: {type: string}
+        cvss_2_0_authentication: {type: string}
+        cvss_2_0_availability_impact: {type: string}
+        cvss_2_0_confidentiality_impact: {type: string}
+        cvss_2_0_exploitability_score: {type: string}
+        cvss_2_0_impact_score: {type: string}
+        cvss_2_0_integrity_impact: {type: string}
+        cvss_2_0_score: {type: string}
+        cvss_2_0_source: {type: string}
+        cwe: {type: string}
+        description: {type: string}
+        last_modified_epoch: {type: string}
+        modified: {type: string}
+        opswat_product_info_product: {type: string}
+        opswat_product_info_ranges: {type: string}
+        opswat_product_info_vendor: {type: string}
+        product_info_product_id: {type: string}
+        product_info_product_name: {type: string}
+        product_info_ranges_limit: {type: string}
+        product_info_ranges_start: {type: string}
+        product_info_vendor_id: {type: string}
+        product_info_vendor_name: {type: string}
+        published_epoch: {type: string}
+        references_name: {type: string}
+        references_reference_type: {type: string}
+        references_source: {type: string}
+        references_url: {type: string}
+        resolution_higher_than_version: {type: string}
+        resolution_product_id: {type: string}
+        resolution_product_name: {type: string}
+        score: {type: string}
+        security_protection: {type: string}
+        severity: {type: string}
+        severity_index: {type: string}
+        updated_ts: {type: string}
+        vulnerable_software_list: {type: string}
+      type: object
+    tmp2:
+      properties:
+        data: {type: string}
+      type: object
+    tmp3:
+      properties:
+        av_names: {type: string}
+        av_scan_results: {type: string}
+        av_scan_times: {type: string}
+        av_threat_found: {type: string}
+        data_id: {type: string}
+        file_display_name: {type: string}
+        file_id: {type: string}
+        file_md5: {type: string}
+        file_sha1: {type: string}
+        file_sha256: {type: string}
+        file_size: {type: string}
+        file_type_category: {type: string}
+        file_type_description: {type: string}
+        file_type_extension: {type: string}
+        file_upload_timestamp: {type: string}
+        scan_result: {type: string}
+        scan_start_time: {type: string}
+        scan_total_avs: {type: string}
+        scan_total_detected_avs: {type: string}
+      type: object
+    tmp4:
+      properties:
+        detected_by: {type: string}
+        raw_json: {type: string}
+        sources_assessment: {type: string}
+        sources_detect_time: {type: string}
+        sources_provider: {type: string}
+        sources_status: {type: string}
+        sources_update_time: {type: string}
+        start_time: {type: string}
+      type: object
+    tmp5:
+      properties:
+        av_names: {type: string}
+        av_scan_results: {type: string}
+        av_scan_times: {type: string}
+        av_threat_found: {type: string}
+        data_id: {type: string}
+        file_id: {type: string}
+        file_info_display_name: {type: string}
+        file_info_file_size: {type: string}
+        file_info_file_type_category: {type: string}
+        file_info_file_type_description: {type: string}
+        file_info_file_type_extension: {type: string}
+        file_info_md5: {type: string}
+        file_info_sha1: {type: string}
+        file_info_sha256: {type: string}
+        file_info_upload_timestamp: {type: string}
+        pe_info_exported_functions: {type: string}
+        pe_info_headers_characteristics: {type: string}
+        pe_info_headers_compilation_time: {type: string}
+        pe_info_headers_machine_type: {type: string}
+        pe_info_headers_number_of_sections: {type: string}
+        pe_info_headers_number_of_symbols: {type: string}
+        pe_info_headers_pointer_to_symbol_table: {type: string}
+        pe_info_imphash: {type: string}
+        pe_info_imported_dlls_functions: {type: string}
+        pe_info_imported_dlls_name: {type: string}
+        pe_info_optional_headers_checksum: {type: string}
+        pe_info_optional_headers_code_size: {type: string}
+        pe_info_optional_headers_entry_point: {type: string}
+        pe_info_optional_headers_image_size: {type: string}
+        pe_info_optional_headers_image_version: {type: string}
+        pe_info_optional_headers_initialized_data_size: {type: string}
+        pe_info_optional_headers_linker_version: {type: string}
+        pe_info_optional_headers_os_version: {type: string}
+        pe_info_optional_headers_pe_type: {type: string}
+        pe_info_optional_headers_subsystem: {type: string}
+        pe_info_optional_headers_subsystem_version: {type: string}
+        pe_info_optional_headers_uninitialized_data_size: {type: string}
+        pe_info_pehash: {type: string}
+        pe_info_resource_info_name: {type: string}
+        pe_info_resource_info_resource_ids: {type: string}
+        pe_info_section_headers_characteristics: {type: string}
+        pe_info_section_headers_entropy: {type: string}
+        pe_info_section_headers_md5: {type: string}
+        pe_info_section_headers_name: {type: string}
+        pe_info_section_headers_number_of_linenumbers: {type: string}
+        pe_info_section_headers_number_of_relocations: {type: string}
+        pe_info_section_headers_pointer_to_linenumbers: {type: string}
+        pe_info_section_headers_pointer_to_raw_data: {type: string}
+        pe_info_section_headers_pointer_to_relocations: {type: string}
+        pe_info_section_headers_raw_size: {type: string}
+        pe_info_section_headers_virtual_address: {type: string}
+        pe_info_section_headers_virtual_size: {type: string}
+        pe_info_vs_version_info_comments: {type: string}
+        pe_info_vs_version_info_company_name: {type: string}
+        pe_info_vs_version_info_file_description: {type: string}
+        pe_info_vs_version_info_internal_name: {type: string}
+        pe_info_vs_version_info_legal_copyright: {type: string}
+        pe_info_vs_version_info_original_filename: {type: string}
+        pe_info_vs_version_info_product_name: {type: string}
+        pe_info_vs_version_info_product_version: {type: string}
+        process_info_blocked_reason: {type: string}
+        process_info_file_type_skipped_scan: {type: string}
+        process_info_profile: {type: string}
+        process_info_result: {type: string}
+        scan_result: {type: string}
+        scan_start_time: {type: string}
+        scan_total_avs: {type: string}
+        scan_total_detected_avs: {type: string}
+      type: object
+    tmp6:
+      properties:
+        address: {type: string}
+        detected_by: {type: string}
+        geo_continent_code: {type: string}
+        geo_continent_geoname_id: {type: string}
+        geo_continent_language: {type: string}
+        geo_continent_names: {type: string}
+        geo_country_geoname_id: {type: string}
+        geo_country_iso_code: {type: string}
+        geo_country_language: {type: string}
+        geo_country_names: {type: string}
+        geo_location_latitude: {type: string}
+        geo_location_longitude: {type: string}
+        geo_location_time_zone: {type: string}
+        geo_registered_country_geoname_id: {type: string}
+        geo_registered_country_iso_code: {type: string}
+        geo_registered_country_language: {type: string}
+        geo_registered_country_names: {type: string}
+        scan_alt_ids: {type: string}
+        scan_confidences: {type: string}
+        scan_detecttimes: {type: string}
+        scan_results: {type: string}
+        scan_sources: {type: string}
+        scan_updatedtimes: {type: string}
+        start_time: {type: string}
+      type: object
+    tmp7:
+      properties:
+        av_names: {type: string}
+        av_scan_results: {type: string}
+        av_scan_times: {type: string}
+        av_threat_found: {type: string}
+        data_id: {type: string}
+        file_display_name: {type: string}
+        file_id: {type: string}
+        file_md5: {type: string}
+        file_sha1: {type: string}
+        file_sha256: {type: string}
+        file_size: {type: string}
+        file_type_category: {type: string}
+        file_type_description: {type: string}
+        file_type_extension: {type: string}
+        file_upload_timestamp: {type: string}
+        scan_result: {type: string}
+        scan_start_time: {type: string}
+        scan_total_avs: {type: string}
+        scan_total_detected_avs: {type: string}
+      type: object
+    tmp8:
+      properties:
+        data_id: {type: string}
+        status: {type: string}
+      type: object
+    tmp9:
+      properties:
+        cve: {type: string}
+        cve_device_infection_risk: {type: string}
+        cvss_2_0_access_complexity: {type: string}
+        cvss_2_0_access_vector: {type: string}
+        cvss_2_0_authentication: {type: string}
+        cvss_2_0_availability_impact: {type: string}
+        cvss_2_0_confidentiality_impact: {type: string}
+        cvss_2_0_exploitability_score: {type: string}
+        cvss_2_0_impact_score: {type: string}
+        cvss_2_0_integrity_impact: {type: string}
+        cvss_2_0_score: {type: string}
+        cvss_2_0_source: {type: string}
+        cwe: {type: string}
+        description: {type: string}
+        last_modified_epoch: {type: string}
+        modified: {type: string}
+        opswat_product_info_product: {type: string}
+        opswat_product_info_ranges: {type: string}
+        opswat_product_info_vendor: {type: string}
+        product_info_product_id: {type: string}
+        product_info_product_name: {type: string}
+        product_info_ranges_limit: {type: string}
+        product_info_ranges_start: {type: string}
+        product_info_vendor_id: {type: string}
+        product_info_vendor_name: {type: string}
+        published_epoch: {type: string}
+        references_name: {type: string}
+        references_reference_type: {type: string}
+        references_source: {type: string}
+        references_url: {type: string}
+        resolution_higher_than_version: {type: string}
+        resolution_product_id: {type: string}
+        resolution_product_name: {type: string}
+        score: {type: string}
+        security_protection: {type: string}
+        severity: {type: string}
+        severity_index: {type: string}
+        updated_ts: {type: string}
+        vulnerable_software_list: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of OPSWAT MetaDefender
+  title: OPSWAT MetaDefender
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get info about an application hash in Metadefender
+      parameters:
+      - description: Hash value to search for
+        example: ''
+        in: query
+        name: Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Metadefender Get Application Hash Info
+  tmp1:
+    post:
+      description: Get info about a Common Vulnerability/Exposure (CVE)
+      parameters:
+      - description: CVE String to look up
+        example: cve-2013-2841
+        in: query
+        name: CVE String
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Metadefender Get CVE Information
+  tmp2:
+    post:
+      description: List all Common Vulnerability and Exploits (CVE) strings
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Metadefender List all CVE's
+  tmp3:
+    post:
+      description: Get information about a sanitized file
+      parameters:
+      - description: Data ID of the file to get information about
+        example: ''
+        in: query
+        name: Data ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Metadefender Get Sanitized File Info
+  tmp4:
+    post:
+      description: Retrieve information about given URL from the CIF server.
+      parameters:
+      - description: URL
+        example: http://example.com
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Metadefender Get URL Reputation
+  tmp5:
+    post:
+      description: Get details about a given hash
+      parameters:
+      - description: Hash value to search for
+        example: ''
+        in: query
+        name: Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Metadefender Get Hash Details
+  tmp6:
+    post:
+      description: Get info about an IP address
+      parameters:
+      - description: IP address to look up
+        example: ''
+        in: query
+        name: IP
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Metadefender Get IP Details
+  tmp7:
+    post:
+      description: Upload a file to sanitize to Metadefender, and retrieve results
+      parameters:
+      - description: Attached file to sanitize
+        example: ''
+        in: query
+        name: Sanitized file
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Metadefender Sanitize File
+  tmp8:
+    post:
+      description: Upload a file to sanitize to Metadefender
+      parameters:
+      - description: Attached file to sanitize
+        example: ''
+        in: query
+        name: Sanitized file
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Metadefender Upload Sanitize File
+  tmp9:
+    post:
+      description: Get info about a vulnerability hash from Metadefender
+      parameters:
+      - description: Hash value to search for
+        example: ''
+        in: query
+        name: Hash
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Metadefender Get Vulnerability
+tags:
+- {name: Investigation}

@@ -1,0 +1,984 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        activation_code: {type: string}
+        activation_code_expiry_time: {type: string}
+        ad_group_id: {type: string}
+        av_ave_version: {type: string}
+        av_engine: {type: string}
+        av_last_scan_time: {type: string}
+        av_master: {type: string}
+        av_pack_version: {type: string}
+        av_product_version: {type: string}
+        av_status: {type: string}
+        av_update_servers: {type: string}
+        av_vdf_version: {type: string}
+        current_sensor_policy_name: {type: string}
+        deregistered_time: {type: string}
+        device_meta_data_item_list: {type: string}
+        device_owner_id: {type: string}
+        email: {type: string}
+        encoded_activation_code: {type: string}
+        first_name: {type: string}
+        id: {type: string}
+        last_contact_time: {type: string}
+        last_device_policy_changed_time: {type: string}
+        last_device_policy_requested_time: {type: string}
+        last_external_ip_address: {type: string}
+        last_internal_ip_address: {type: string}
+        last_location: {type: string}
+        last_name: {type: string}
+        last_policy_updated_time: {type: string}
+        last_reported_time: {type: string}
+        last_reset_time: {type: string}
+        last_shutdown_time: {type: string}
+        linux_kernel_version: {type: string}
+        login_user_name: {type: string}
+        mac_address: {type: string}
+        middle_name: {type: string}
+        name: {type: string}
+        organization_id: {type: string}
+        organization_name: {type: string}
+        os: {type: string}
+        os_version: {type: string}
+        passive_mode: {type: string}
+        policy_id: {type: string}
+        policy_name: {type: string}
+        policy_override: {type: string}
+        quarantined: {type: string}
+        registered_time: {type: string}
+        scan_last_action_time: {type: string}
+        scan_last_complete_time: {type: string}
+        scan_status: {type: string}
+        sensor_out_of_date: {type: string}
+        sensor_pending_update: {type: string}
+        sensor_states: {type: string}
+        sensor_version: {type: string}
+        status: {type: string}
+        target_priority: {type: string}
+        uninstall_code: {type: string}
+        vdi_base_device: {type: string}
+        virtual_machine: {type: string}
+        virtualization_provider: {type: string}
+        windows_platform: {type: string}
+      type: object
+    tmp1:
+      properties:
+        success: {type: string}
+      type: object
+    tmp10:
+      properties:
+        blocked_threat_category: {type: string}
+        category: {type: string}
+        create_time: {type: string}
+        created_by_event_id: {type: string}
+        device_id: {type: string}
+        device_location: {type: string}
+        device_name: {type: string}
+        device_os: {type: string}
+        device_os_version: {type: string}
+        device_username: {type: string}
+        first_event_time: {type: string}
+        id: {type: string}
+        kill_chain_status: {type: string}
+        last_event_time: {type: string}
+        last_update_time: {type: string}
+        legacy_alert_id: {type: string}
+        msg: {type: string}
+        not_blocked_threat_category: {type: string}
+        notes_present: {type: string}
+        org_key: {type: string}
+        policy_applied: {type: string}
+        policy_id: {type: string}
+        policy_name: {type: string}
+        process_name: {type: string}
+        reason: {type: string}
+        reason_code: {type: string}
+        run_state: {type: string}
+        sensor_action: {type: string}
+        severity: {type: string}
+        tags: {type: string}
+        target_value: {type: string}
+        threat_activity_c2: {type: string}
+        threat_activity_dlp: {type: string}
+        threat_activity_phish: {type: string}
+        threat_cause_actor_name: {type: string}
+        threat_cause_actor_process_pid: {type: string}
+        threat_cause_actor_sha256: {type: string}
+        threat_cause_cause_event_id: {type: string}
+        threat_cause_reputation: {type: string}
+        threat_cause_threat_category: {type: string}
+        threat_cause_vector: {type: string}
+        threat_id: {type: string}
+        threat_indicators_process_name: {type: string}
+        threat_indicators_sha256: {type: string}
+        threat_indicators_ttps: {type: string}
+        type: {type: string}
+        workflow_changed_by: {type: string}
+        workflow_comment: {type: string}
+        workflow_last_update_time: {type: string}
+        workflow_remediation: {type: string}
+        workflow_state: {type: string}
+      type: object
+    tmp11:
+      properties:
+        activation_code: {type: string}
+        activation_code_expiry_time: {type: string}
+        ad_group_id: {type: string}
+        av_ave_version: {type: string}
+        av_engine: {type: string}
+        av_last_scan_time: {type: string}
+        av_master: {type: string}
+        av_pack_version: {type: string}
+        av_product_version: {type: string}
+        av_status: {type: string}
+        av_update_servers: {type: string}
+        av_vdf_version: {type: string}
+        current_sensor_policy_name: {type: string}
+        deregistered_time: {type: string}
+        device_meta_data_item_list: {type: string}
+        device_owner_id: {type: string}
+        email: {type: string}
+        encoded_activation_code: {type: string}
+        first_name: {type: string}
+        id: {type: string}
+        last_contact_time: {type: string}
+        last_device_policy_changed_time: {type: string}
+        last_device_policy_requested_time: {type: string}
+        last_external_ip_address: {type: string}
+        last_internal_ip_address: {type: string}
+        last_location: {type: string}
+        last_name: {type: string}
+        last_policy_updated_time: {type: string}
+        last_reported_time: {type: string}
+        last_reset_time: {type: string}
+        last_shutdown_time: {type: string}
+        linux_kernel_version: {type: string}
+        login_user_name: {type: string}
+        mac_address: {type: string}
+        middle_name: {type: string}
+        name: {type: string}
+        organization_id: {type: string}
+        organization_name: {type: string}
+        os: {type: string}
+        os_version: {type: string}
+        passive_mode: {type: string}
+        policy_id: {type: string}
+        policy_name: {type: string}
+        policy_override: {type: string}
+        quarantined: {type: string}
+        registered_time: {type: string}
+        scan_last_action_time: {type: string}
+        scan_last_complete_time: {type: string}
+        scan_status: {type: string}
+        sensor_out_of_date: {type: string}
+        sensor_pending_update: {type: string}
+        sensor_states: {type: string}
+        sensor_version: {type: string}
+        status: {type: string}
+        target_priority: {type: string}
+        uninstall_code: {type: string}
+        vdi_base_device: {type: string}
+        virtual_machine: {type: string}
+        virtualization_provider: {type: string}
+        windows_platform: {type: string}
+      type: object
+    tmp2:
+      properties:
+        blocked_threat_category: {type: string}
+        category: {type: string}
+        create_time: {type: string}
+        created_by_event_id: {type: string}
+        device_id: {type: string}
+        device_location: {type: string}
+        device_name: {type: string}
+        device_os: {type: string}
+        device_os_version: {type: string}
+        device_username: {type: string}
+        first_event_time: {type: string}
+        id: {type: string}
+        kill_chain_status: {type: string}
+        last_event_time: {type: string}
+        last_update_time: {type: string}
+        legacy_alert_id: {type: string}
+        msg: {type: string}
+        not_blocked_threat_category: {type: string}
+        notes_present: {type: string}
+        org_key: {type: string}
+        policy_applied: {type: string}
+        policy_id: {type: string}
+        policy_name: {type: string}
+        process_name: {type: string}
+        reason: {type: string}
+        reason_code: {type: string}
+        run_state: {type: string}
+        sensor_action: {type: string}
+        severity: {type: string}
+        tags: {type: string}
+        target_value: {type: string}
+        threat_activity_c2: {type: string}
+        threat_activity_dlp: {type: string}
+        threat_activity_phish: {type: string}
+        threat_cause_actor_name: {type: string}
+        threat_cause_actor_process_pid: {type: string}
+        threat_cause_actor_sha256: {type: string}
+        threat_cause_cause_event_id: {type: string}
+        threat_cause_reputation: {type: string}
+        threat_cause_threat_category: {type: string}
+        threat_cause_vector: {type: string}
+        threat_id: {type: string}
+        threat_indicators_process_name: {type: string}
+        threat_indicators_sha256: {type: string}
+        threat_indicators_ttps: {type: string}
+        type: {type: string}
+        workflow_changed_by: {type: string}
+        workflow_comment: {type: string}
+        workflow_last_update_time: {type: string}
+        workflow_remediation: {type: string}
+        workflow_state: {type: string}
+      type: object
+    tmp3:
+      properties:
+        blocked_threat_category: {type: string}
+        category: {type: string}
+        create_time: {type: string}
+        created_by_event_id: {type: string}
+        device_id: {type: string}
+        device_location: {type: string}
+        device_name: {type: string}
+        device_os: {type: string}
+        device_os_version: {type: string}
+        device_username: {type: string}
+        first_event_time: {type: string}
+        id: {type: string}
+        kill_chain_status: {type: string}
+        last_event_time: {type: string}
+        last_update_time: {type: string}
+        legacy_alert_id: {type: string}
+        msg: {type: string}
+        not_blocked_threat_category: {type: string}
+        notes_present: {type: string}
+        org_key: {type: string}
+        policy_applied: {type: string}
+        policy_id: {type: string}
+        policy_name: {type: string}
+        process_name: {type: string}
+        reason: {type: string}
+        reason_code: {type: string}
+        run_state: {type: string}
+        sensor_action: {type: string}
+        severity: {type: string}
+        tags: {type: string}
+        target_value: {type: string}
+        threat_activity_c2: {type: string}
+        threat_activity_dlp: {type: string}
+        threat_activity_phish: {type: string}
+        threat_cause_actor_name: {type: string}
+        threat_cause_actor_process_pid: {type: string}
+        threat_cause_actor_sha256: {type: string}
+        threat_cause_cause_event_id: {type: string}
+        threat_cause_reputation: {type: string}
+        threat_cause_threat_category: {type: string}
+        threat_cause_vector: {type: string}
+        threat_id: {type: string}
+        threat_indicators_process_name: {type: string}
+        threat_indicators_sha256: {type: string}
+        threat_indicators_ttps: {type: string}
+        type: {type: string}
+        workflow_changed_by: {type: string}
+        workflow_comment: {type: string}
+        workflow_last_update_time: {type: string}
+        workflow_remediation: {type: string}
+        workflow_state: {type: string}
+      type: object
+    tmp4:
+      properties:
+        blocked_threat_category: {type: string}
+        category: {type: string}
+        create_time: {type: string}
+        created_by_event_id: {type: string}
+        device_id: {type: string}
+        device_location: {type: string}
+        device_name: {type: string}
+        device_os: {type: string}
+        device_os_version: {type: string}
+        device_username: {type: string}
+        first_event_time: {type: string}
+        id: {type: string}
+        kill_chain_status: {type: string}
+        last_event_time: {type: string}
+        last_update_time: {type: string}
+        legacy_alert_id: {type: string}
+        msg: {type: string}
+        not_blocked_threat_category: {type: string}
+        notes_present: {type: string}
+        org_key: {type: string}
+        policy_applied: {type: string}
+        policy_id: {type: string}
+        policy_name: {type: string}
+        process_name: {type: string}
+        reason: {type: string}
+        reason_code: {type: string}
+        run_state: {type: string}
+        sensor_action: {type: string}
+        severity: {type: string}
+        tags: {type: string}
+        target_value: {type: string}
+        threat_activity_c2: {type: string}
+        threat_activity_dlp: {type: string}
+        threat_activity_phish: {type: string}
+        threat_cause_actor_name: {type: string}
+        threat_cause_actor_process_pid: {type: string}
+        threat_cause_actor_sha256: {type: string}
+        threat_cause_cause_event_id: {type: string}
+        threat_cause_reputation: {type: string}
+        threat_cause_threat_category: {type: string}
+        threat_cause_vector: {type: string}
+        threat_id: {type: string}
+        threat_indicators_process_name: {type: string}
+        threat_indicators_sha256: {type: string}
+        threat_indicators_ttps: {type: string}
+        type: {type: string}
+        workflow_changed_by: {type: string}
+        workflow_comment: {type: string}
+        workflow_last_update_time: {type: string}
+        workflow_remediation: {type: string}
+        workflow_state: {type: string}
+      type: object
+    tmp5:
+      properties:
+        activation_code: {type: string}
+        activation_code_expiry_time: {type: string}
+        ad_group_id: {type: string}
+        av_ave_version: {type: string}
+        av_engine: {type: string}
+        av_last_scan_time: {type: string}
+        av_master: {type: string}
+        av_pack_version: {type: string}
+        av_product_version: {type: string}
+        av_status: {type: string}
+        av_update_servers: {type: string}
+        av_vdf_version: {type: string}
+        current_sensor_policy_name: {type: string}
+        deregistered_time: {type: string}
+        device_meta_data_item_list: {type: string}
+        device_owner_id: {type: string}
+        email: {type: string}
+        encoded_activation_code: {type: string}
+        first_name: {type: string}
+        id: {type: string}
+        last_contact_time: {type: string}
+        last_device_policy_changed_time: {type: string}
+        last_device_policy_requested_time: {type: string}
+        last_external_ip_address: {type: string}
+        last_internal_ip_address: {type: string}
+        last_location: {type: string}
+        last_name: {type: string}
+        last_policy_updated_time: {type: string}
+        last_reported_time: {type: string}
+        last_reset_time: {type: string}
+        last_shutdown_time: {type: string}
+        linux_kernel_version: {type: string}
+        login_user_name: {type: string}
+        mac_address: {type: string}
+        middle_name: {type: string}
+        name: {type: string}
+        organization_id: {type: string}
+        organization_name: {type: string}
+        os: {type: string}
+        os_version: {type: string}
+        passive_mode: {type: string}
+        policy_id: {type: string}
+        policy_name: {type: string}
+        policy_override: {type: string}
+        quarantined: {type: string}
+        registered_time: {type: string}
+        scan_last_action_time: {type: string}
+        scan_last_complete_time: {type: string}
+        scan_status: {type: string}
+        sensor_out_of_date: {type: string}
+        sensor_pending_update: {type: string}
+        sensor_states: {type: string}
+        sensor_version: {type: string}
+        status: {type: string}
+        target_priority: {type: string}
+        uninstall_code: {type: string}
+        vdi_base_device: {type: string}
+        virtual_machine: {type: string}
+        virtualization_provider: {type: string}
+        windows_platform: {type: string}
+      type: object
+    tmp6:
+      properties:
+        activation_code: {type: string}
+        activation_code_expiry_time: {type: string}
+        ad_group_id: {type: string}
+        av_ave_version: {type: string}
+        av_engine: {type: string}
+        av_last_scan_time: {type: string}
+        av_master: {type: string}
+        av_pack_version: {type: string}
+        av_product_version: {type: string}
+        av_status: {type: string}
+        av_update_servers: {type: string}
+        av_vdf_version: {type: string}
+        current_sensor_policy_name: {type: string}
+        deregistered_time: {type: string}
+        device_meta_data_item_list: {type: string}
+        device_owner_id: {type: string}
+        email: {type: string}
+        encoded_activation_code: {type: string}
+        first_name: {type: string}
+        id: {type: string}
+        last_contact_time: {type: string}
+        last_device_policy_changed_time: {type: string}
+        last_device_policy_requested_time: {type: string}
+        last_external_ip_address: {type: string}
+        last_internal_ip_address: {type: string}
+        last_location: {type: string}
+        last_name: {type: string}
+        last_policy_updated_time: {type: string}
+        last_reported_time: {type: string}
+        last_reset_time: {type: string}
+        last_shutdown_time: {type: string}
+        linux_kernel_version: {type: string}
+        login_user_name: {type: string}
+        mac_address: {type: string}
+        middle_name: {type: string}
+        name: {type: string}
+        organization_id: {type: string}
+        organization_name: {type: string}
+        os: {type: string}
+        os_version: {type: string}
+        passive_mode: {type: string}
+        policy_id: {type: string}
+        policy_name: {type: string}
+        policy_override: {type: string}
+        quarantined: {type: string}
+        registered_time: {type: string}
+        scan_last_action_time: {type: string}
+        scan_last_complete_time: {type: string}
+        scan_status: {type: string}
+        sensor_out_of_date: {type: string}
+        sensor_pending_update: {type: string}
+        sensor_states: {type: string}
+        sensor_version: {type: string}
+        status: {type: string}
+        target_priority: {type: string}
+        uninstall_code: {type: string}
+        vdi_base_device: {type: string}
+        virtual_machine: {type: string}
+        virtualization_provider: {type: string}
+        windows_platform: {type: string}
+      type: object
+    tmp7:
+      properties:
+        activation_code: {type: string}
+        activation_code_expiry_time: {type: string}
+        ad_group_id: {type: string}
+        av_ave_version: {type: string}
+        av_engine: {type: string}
+        av_last_scan_time: {type: string}
+        av_master: {type: string}
+        av_pack_version: {type: string}
+        av_product_version: {type: string}
+        av_status: {type: string}
+        av_update_servers: {type: string}
+        av_vdf_version: {type: string}
+        current_sensor_policy_name: {type: string}
+        deregistered_time: {type: string}
+        device_meta_data_item_list: {type: string}
+        device_owner_id: {type: string}
+        email: {type: string}
+        encoded_activation_code: {type: string}
+        first_name: {type: string}
+        id: {type: string}
+        last_contact_time: {type: string}
+        last_device_policy_changed_time: {type: string}
+        last_device_policy_requested_time: {type: string}
+        last_external_ip_address: {type: string}
+        last_internal_ip_address: {type: string}
+        last_location: {type: string}
+        last_name: {type: string}
+        last_policy_updated_time: {type: string}
+        last_reported_time: {type: string}
+        last_reset_time: {type: string}
+        last_shutdown_time: {type: string}
+        linux_kernel_version: {type: string}
+        login_user_name: {type: string}
+        mac_address: {type: string}
+        middle_name: {type: string}
+        name: {type: string}
+        organization_id: {type: string}
+        organization_name: {type: string}
+        os: {type: string}
+        os_version: {type: string}
+        passive_mode: {type: string}
+        policy_id: {type: string}
+        policy_name: {type: string}
+        policy_override: {type: string}
+        quarantined: {type: string}
+        registered_time: {type: string}
+        scan_last_action_time: {type: string}
+        scan_last_complete_time: {type: string}
+        scan_status: {type: string}
+        sensor_out_of_date: {type: string}
+        sensor_pending_update: {type: string}
+        sensor_states: {type: string}
+        sensor_version: {type: string}
+        status: {type: string}
+        target_priority: {type: string}
+        uninstall_code: {type: string}
+        vdi_base_device: {type: string}
+        virtual_machine: {type: string}
+        virtualization_provider: {type: string}
+        windows_platform: {type: string}
+      type: object
+    tmp8:
+      properties:
+        activation_code: {type: string}
+        activation_code_expiry_time: {type: string}
+        ad_group_id: {type: string}
+        av_ave_version: {type: string}
+        av_engine: {type: string}
+        av_last_scan_time: {type: string}
+        av_master: {type: string}
+        av_pack_version: {type: string}
+        av_product_version: {type: string}
+        av_status: {type: string}
+        av_update_servers: {type: string}
+        av_vdf_version: {type: string}
+        current_sensor_policy_name: {type: string}
+        deregistered_time: {type: string}
+        device_meta_data_item_list: {type: string}
+        device_owner_id: {type: string}
+        email: {type: string}
+        encoded_activation_code: {type: string}
+        first_name: {type: string}
+        id: {type: string}
+        last_contact_time: {type: string}
+        last_device_policy_changed_time: {type: string}
+        last_device_policy_requested_time: {type: string}
+        last_external_ip_address: {type: string}
+        last_internal_ip_address: {type: string}
+        last_location: {type: string}
+        last_name: {type: string}
+        last_policy_updated_time: {type: string}
+        last_reported_time: {type: string}
+        last_reset_time: {type: string}
+        last_shutdown_time: {type: string}
+        linux_kernel_version: {type: string}
+        login_user_name: {type: string}
+        mac_address: {type: string}
+        middle_name: {type: string}
+        name: {type: string}
+        organization_id: {type: string}
+        organization_name: {type: string}
+        os: {type: string}
+        os_version: {type: string}
+        passive_mode: {type: string}
+        policy_id: {type: string}
+        policy_name: {type: string}
+        policy_override: {type: string}
+        quarantined: {type: string}
+        registered_time: {type: string}
+        scan_last_action_time: {type: string}
+        scan_last_complete_time: {type: string}
+        scan_status: {type: string}
+        sensor_out_of_date: {type: string}
+        sensor_pending_update: {type: string}
+        sensor_states: {type: string}
+        sensor_version: {type: string}
+        status: {type: string}
+        target_priority: {type: string}
+        uninstall_code: {type: string}
+        vdi_base_device: {type: string}
+        virtual_machine: {type: string}
+        virtualization_provider: {type: string}
+        windows_platform: {type: string}
+      type: object
+    tmp9:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of VMware Carbon Black Cloud
+  title: VMware Carbon Black Cloud
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Set bypass flag for device by ID
+      parameters:
+      - description: Device ID.
+        example: '1703053'
+        in: body
+        name: Device ID
+        required: true
+        schema: {type: string}
+      - description: Set flag for bypass on this device.
+        example: ''
+        in: query
+        name: Bypass
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Bypass Device
+  tmp1:
+    post:
+      description: Delete this sensor device by ID
+      parameters:
+      - description: Device ID.
+        example: '1703053'
+        in: body
+        name: Device ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Delete Sensor Device
+  tmp10:
+    post:
+      description: Update an alert workflow remediation, comment. Sets state to OPEN
+      parameters:
+      - description: ID of the alert to update.
+        example: 16897765e2c03c8745b11eaa09517a406e48f2d
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Remediation
+        required: false
+        schema: {type: string}
+      - description: ''
+        example: ''
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Update Alert
+  tmp11:
+    post:
+      description: Update the policy for a device by ID
+      parameters:
+      - description: ID of the device for which to add the policy to.
+        example: '1703053'
+        in: body
+        name: Device ID
+        required: true
+        schema: {type: string}
+      - description: ID of which policy details to retrieve.
+        example: '35717'
+        in: body
+        name: Policy ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Update Device Policy
+  tmp2:
+    post:
+      description: Dismiss an alert by ID with remediation and comment options.
+      parameters:
+      - description: ID of the alert to dismiss.
+        example: 16897765e2c03c8745b11eaa09517a406e48f2d
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      - description: Description or justification for the change.
+        example: Any string
+        in: query
+        name: Remediation
+        required: false
+        schema: {type: string}
+      - description: Optional comment.
+        example: Any string
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Dismiss Alert
+  tmp3:
+    post:
+      description: Get alert details by alert ID
+      parameters:
+      - description: ID of the alert to retrieve.
+        example: 16897765e2c03c8745b11eaa09517a406e48f2d
+        in: query
+        name: Alert ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Get Alert By ID
+  tmp4:
+    post:
+      description: Get all or filter alerts
+      parameters:
+      - description: Get alerts from X minutes ago. This overrides start/end
+        example: '5'
+        in: body
+        name: Minutes Ago
+        required: false
+        schema: {type: string}
+      - description: Filter alerts with this severity or higher.
+        example: '3'
+        in: body
+        name: Minimum Severity
+        required: false
+        schema: {type: string}
+      - description: Field to sort by, defaults to First Event Time.
+        example: first_event_time
+        in: query
+        name: Sort Field
+        required: false
+        schema: {type: string}
+      - description: Direction for sort field, defaults to DESC.
+        example: ASC
+        in: query
+        name: Sort Direction
+        required: false
+        schema: {type: string}
+      - description: Accepts CSV of IDs
+        example: 0827716dc4086284d2b11eab7ec3192a2cf8a09, 0827716dc4086284d2b11eab7ec3192a2cf8a09
+        in: query
+        name: Alert IDs
+        required: false
+        schema: {type: string}
+      - description: Accepts CSV of tags.
+        example: ''
+        in: query
+        name: Tags
+        required: false
+        schema: {type: string}
+      - description: Accepts CSV of threat IDs.
+        example: ''
+        in: query
+        name: Threat IDs
+        required: false
+        schema: {type: string}
+      - description: Filter by CSV of device usernames.
+        example: ''
+        in: query
+        name: Device Usernames
+        required: false
+        schema: {type: string}
+      - description: Filter by CSV of device operating systems.
+        example: ''
+        in: query
+        name: Device OS
+        required: false
+        schema: {type: string}
+      - description: 'Filter by CSV of alert types. Options: CB_ANALYTICS, VMWARE,
+          WATCHLIST'
+        example: ''
+        in: query
+        name: Alert Types
+        required: false
+        schema: {type: string}
+      - description: 'Filter by CSV of categories. Options: THREAT, MONITORED, INFO,
+          MINOR, SERIOUS, CRITICAL'
+        example: ''
+        in: query
+        name: Categories
+        required: false
+        schema: {type: string}
+      - description: Filter by CSV of Sha256 hashes.
+        example: ''
+        in: query
+        name: Sha256 Hashes
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Get Alerts
+  tmp5:
+    post:
+      description: Get details for a device by its ID
+      parameters:
+      - description: Device ID.
+        example: '1703053'
+        in: body
+        name: Device ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Get Device By ID
+  tmp6:
+    post:
+      description: Isolate device by device ID
+      parameters:
+      - description: Device ID.
+        example: '1703053'
+        in: body
+        name: Device ID
+        required: true
+        schema: {type: string}
+      - description: If True, device will be isolated, to remove quarantine set to
+          False.
+        example: ''
+        in: query
+        name: Quarantine
+        required: true
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Isolate Device
+  tmp7:
+    post:
+      description: Get all or query devices by filter criteria
+      parameters:
+      - description: Get devices from X minutes ago. This overrides start/end
+        example: '5'
+        in: body
+        name: Minutes Ago
+        required: false
+        schema: {type: string}
+      - description: Accepts CSV of IDs
+        example: 1703053,1804053
+        in: query
+        name: Device IDs
+        required: false
+        schema: {type: string}
+      - description: Accepts CSV of IDs
+        example: ''
+        in: query
+        name: Ad Group IDs
+        required: false
+        schema: {type: string}
+      - description: Accepts CSV of OSs
+        example: ''
+        in: query
+        name: Operating Systems
+        required: false
+        schema: {type: string}
+      - description: Accepts CSV of IDs
+        example: ''
+        in: query
+        name: Device IDs
+        required: false
+        schema: {type: string}
+      - description: Accepts CSV of statuses
+        example: ''
+        in: query
+        name: Statuses
+        required: false
+        schema: {type: string}
+      - description: Accepts CSV of priorities
+        example: ''
+        in: query
+        name: Target Priorities
+        required: false
+        schema: {type: string}
+      - description: Field to sort by, defaults to name.
+        example: first_event_time
+        in: query
+        name: Sort Field
+        required: false
+        schema: {type: string}
+      - description: Direction for sort field, defaults to ASC.
+        example: ASC
+        in: query
+        name: Sort Direction
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Search Devices
+  tmp8:
+    post:
+      description: Set the  background scan option for device by ID
+      parameters:
+      - description: ''
+        example: ''
+        in: query
+        name: Device ID
+        required: true
+        schema: {type: string}
+      - description: Flag for setting background scan on/off. True = On
+        example: ''
+        in: query
+        name: Background Scan
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Set Background Scan for Device
+  tmp9:
+    post:
+      description: Uninstall sensor device by ID
+      parameters:
+      - description: Device ID.
+        example: '1703053'
+        in: body
+        name: Device ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: VMware Carbon Black Cloud Uninstall Sensor Device
+tags:
+- {name: Endpoint Security & Management}

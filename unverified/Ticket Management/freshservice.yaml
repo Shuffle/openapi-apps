@@ -1,0 +1,296 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        success: {type: string}
+      type: object
+    tmp2:
+      properties:
+        _priority: {type: string}
+        _source: {type: string}
+        _status: {type: string}
+        assoc_asset_id: {type: string}
+        assoc_change_cause_id: {type: string}
+        assoc_change_id: {type: string}
+        assoc_problem_id: {type: string}
+        category: {type: string}
+        cc_email_cc_emails: {type: string}
+        cc_email_fwd_emails: {type: string}
+        cc_email_reply_cc: {type: string}
+        cc_email_tkt_cc: {type: string}
+        created_at: {type: string}
+        deleted: {type: string}
+        department_id_value: {type: string}
+        department_name: {type: string}
+        description: {type: string}
+        description_html: {type: string}
+        display_id: {type: string}
+        due_by: {type: string}
+        email_config_id: {type: string}
+        frDueBy: {type: string}
+        fr_escalated: {type: string}
+        group_id: {type: string}
+        id: {type: string}
+        impact: {type: string}
+        impact_name: {type: string}
+        isescalated: {type: string}
+        item_category: {type: string}
+        owner_id: {type: string}
+        priority_name: {type: string}
+        requester_id: {type: string}
+        requester_name: {type: string}
+        requester_status_name: {type: string}
+        responder_id: {type: string}
+        responder_name: {type: string}
+        source_name: {type: string}
+        spam: {type: string}
+        status_name: {type: string}
+        sub_category: {type: string}
+        subject: {type: string}
+        ticket_type: {type: string}
+        to_email: {type: string}
+        to_emails: {type: string}
+        updated_at: {type: string}
+        urgency: {type: string}
+        urgency_name: {type: string}
+      type: object
+    tmp3:
+      properties:
+        helpdesk_ticket_assoc_asset_id: {type: string}
+        helpdesk_ticket_assoc_change_cause_id: {type: string}
+        helpdesk_ticket_assoc_change_id: {type: string}
+        helpdesk_ticket_assoc_problem_id: {type: string}
+        helpdesk_ticket_attachments: {type: string}
+        helpdesk_ticket_category: {type: string}
+        helpdesk_ticket_cc_email_cc_emails: {type: string}
+        helpdesk_ticket_cc_email_fwd_emails: {type: string}
+        helpdesk_ticket_cc_email_reply_cc: {type: string}
+        helpdesk_ticket_cc_email_tkt_cc: {type: string}
+        helpdesk_ticket_created_at: {type: string}
+        helpdesk_ticket_deleted: {type: string}
+        helpdesk_ticket_department_id_value: {type: string}
+        helpdesk_ticket_department_name: {type: string}
+        helpdesk_ticket_description: {type: string}
+        helpdesk_ticket_description_html: {type: string}
+        helpdesk_ticket_display_id: {type: string}
+        helpdesk_ticket_due_by: {type: string}
+        helpdesk_ticket_email_config_id: {type: string}
+        helpdesk_ticket_frDueBy: {type: string}
+        helpdesk_ticket_fr_escalated: {type: string}
+        helpdesk_ticket_group_id: {type: string}
+        helpdesk_ticket_id: {type: string}
+        helpdesk_ticket_impact: {type: string}
+        helpdesk_ticket_impact_name: {type: string}
+        helpdesk_ticket_isescalated: {type: string}
+        helpdesk_ticket_item_category: {type: string}
+        helpdesk_ticket_notes_note_attachments: {type: string}
+        helpdesk_ticket_notes_note_body: {type: string}
+        helpdesk_ticket_notes_note_body_html: {type: string}
+        helpdesk_ticket_notes_note_created_at: {type: string}
+        helpdesk_ticket_notes_note_deleted: {type: string}
+        helpdesk_ticket_notes_note_id: {type: string}
+        helpdesk_ticket_notes_note_incoming: {type: string}
+        helpdesk_ticket_notes_note_private: {type: string}
+        helpdesk_ticket_notes_note_source: {type: string}
+        helpdesk_ticket_notes_note_support_email: {type: string}
+        helpdesk_ticket_notes_note_updated_at: {type: string}
+        helpdesk_ticket_notes_note_user_id: {type: string}
+        helpdesk_ticket_owner_id: {type: string}
+        helpdesk_ticket_priority: {type: string}
+        helpdesk_ticket_priority_name: {type: string}
+        helpdesk_ticket_requester_id: {type: string}
+        helpdesk_ticket_requester_name: {type: string}
+        helpdesk_ticket_requester_status_name: {type: string}
+        helpdesk_ticket_responder_id: {type: string}
+        helpdesk_ticket_responder_name: {type: string}
+        helpdesk_ticket_source: {type: string}
+        helpdesk_ticket_source_name: {type: string}
+        helpdesk_ticket_spam: {type: string}
+        helpdesk_ticket_status: {type: string}
+        helpdesk_ticket_status_name: {type: string}
+        helpdesk_ticket_sub_category: {type: string}
+        helpdesk_ticket_subject: {type: string}
+        helpdesk_ticket_tags: {type: string}
+        helpdesk_ticket_ticket_type: {type: string}
+        helpdesk_ticket_to_email: {type: string}
+        helpdesk_ticket_to_emails: {type: string}
+        helpdesk_ticket_updated_at: {type: string}
+        helpdesk_ticket_urgency: {type: string}
+        helpdesk_ticket_urgency_name: {type: string}
+      type: object
+    tmp4:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Freshworks Freshservice
+  title: Freshworks Freshservice
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Freshworks Freshservice Add Note To Ticket
+      parameters:
+      - description: Ticket ID of the ticket to add a note to
+        example: ''
+        in: body
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      - description: Body of the note
+        example: ''
+        in: query
+        name: Body
+        required: true
+        schema: {type: string}
+      - description: Create a private note
+        example: ''
+        in: query
+        name: Private
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Freshworks Freshservice Add Note To Ticket
+  tmp1:
+    post:
+      description: Freshworks Freshservice Create Ticket
+      parameters:
+      - description: Subject of the ticket
+        example: ''
+        in: query
+        name: Subject
+        required: true
+        schema: {type: string}
+      - description: Email address associated with the ticket
+        example: ''
+        in: query
+        name: Email
+        required: true
+        schema: {type: string}
+      - description: Description of the ticket
+        example: ''
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: CC Emails
+        example: ''
+        in: query
+        name: CC Emails
+        required: false
+        schema: {type: string}
+      - description: 1 = Email, 2 = Portal, 3 = Phone, 4 = Chat (Default is 2)
+        example: '2'
+        in: body
+        name: Source
+        required: false
+        schema: {type: string}
+      - description: 2 = Open, 3 = Pending, 4 = Resolved, 5 = Closed (Default is 2)
+        example: '2'
+        in: body
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: 1 = Low, 2 = Medium, 3 = High, 4 = Urgent (Default is 1)
+        example: '1'
+        in: body
+        name: Priority
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Freshworks Freshservice Create Ticket
+  tmp2:
+    post:
+      description: Freshworks Freshservice Get All Tickets
+      parameters:
+      - description: Field name to filter on
+        example: description
+        in: query
+        name: Filter Field
+        required: false
+        schema: {type: string}
+      - description: Filter value to match on, will match if it contains this string
+        example: critical
+        in: query
+        name: Filter Value
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Freshworks Freshservice Get All Tickets
+  tmp3:
+    post:
+      description: Freshworks Freshservice Get Ticket
+      parameters:
+      - description: Ticket ID of the ticket to get
+        example: ''
+        in: body
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Freshworks Freshservice Get Ticket
+  tmp4:
+    post:
+      description: Freshworks Freshservice Update Ticket
+      parameters:
+      - description: Ticket ID of the ticket to update
+        example: ''
+        in: body
+        name: Ticket ID
+        required: true
+        schema: {type: string}
+      - description: Subject of the ticket
+        example: ''
+        in: query
+        name: Subject
+        required: false
+        schema: {type: string}
+      - description: Status of the ticket. 2=Open, 3=Pending, 4=Resolved, or 5=Closed
+        example: '2'
+        in: body
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: Priority of the ticket. 1=Low, 2=Medium, 3=High, 4=Urgent
+        example: '1'
+        in: body
+        name: Priority
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Freshworks Freshservice Update Ticket
+tags:
+- {name: Ticket Management}

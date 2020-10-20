@@ -1,0 +1,213 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        message: {type: string}
+      type: object
+    tmp1:
+      properties:
+        message: {type: string}
+      type: object
+    tmp2:
+      properties:
+        message: {type: string}
+      type: object
+    tmp3:
+      properties:
+        files: {type: string}
+      type: object
+    tmp4:
+      properties:
+        shared_dirs: {type: string}
+      type: object
+    tmp5:
+      properties:
+        message: {type: string}
+      type: object
+    tmp6:
+      properties:
+        file_contents: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Swimlane Samba Share
+  title: Swimlane Samba Share
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Create A New Directory On The Samba Network Storage Directory.
+      parameters:
+      - description: Samba Share Directory
+        example: Contains the name of the shared folder.
+        in: query
+        name: Samba Share Directory
+        required: true
+        schema: {type: string}
+      - description: The path of the new folder (relative to) the shared folder. If
+          the path contains non-English characters, an unicode string must be used
+          to pass in the path.
+        example: /My/NewDirectory/Path/
+        in: query
+        name: New Directory Path
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: ' Create A Directory '
+  tmp1:
+    post:
+      description: Delete A Directory On The Samba Network Storage Directory.
+      parameters:
+      - description: Samba Share Directory
+        example: Contains the name of the shared folder.
+        in: query
+        name: Samba Share Directory
+        required: true
+        schema: {type: string}
+      - description: The path of the to-be-deleted folder (relative to) the shared
+          folder. If the path contains non-English characters, an unicode string must
+          be used to pass in the path.
+        example: /Delete/This/Directory
+        in: query
+        name: Delete Directory Path
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: ' Delete A Directory'
+  tmp2:
+    post:
+      description: Delete A File On The Samba Network Storage Directory.
+      parameters:
+      - description: Samba Share Directory
+        example: Contains the name of the shared folder.
+        in: query
+        name: Samba Share Directory
+        required: true
+        schema: {type: string}
+      - description: The pathname of the file(s) to be deleted, relative to the service_name.
+          Wildcards may be used in th filename component of the path.If your path/filename
+          contains non-English characters, you must pass in an unicode string.
+        example: /Delete/This/File.txt
+        in: query
+        name: Delete File Path
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: ' Delete A File'
+  tmp3:
+    post:
+      description: List All Files From A Specified Directory
+      parameters:
+      - description: Samba Share Directory
+        example: Contains the name of the shared folder.
+        in: query
+        name: Samba Share Directory
+        required: true
+        schema: {type: string}
+      - description: The path of the files/folders (relative to) the shared folder.
+          If the path contains non-English characters, an unicode string must be used
+          to pass in the path.
+        example: /Path/To/This/Directory
+        in: query
+        name: Path of Directory
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: ' List All Files'
+  tmp4:
+    post:
+      description: List Of All Current Shared Directories Available On The Remote
+        Server.
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: List All Shared Directories
+  tmp5:
+    post:
+      description: 'Rename or Move A File On THe Samba Network Storage Directory. '
+      parameters:
+      - description: Samba Share Directory
+        example: Contains the name of the shared folder.
+        in: query
+        name: Samba Share Directory
+        required: true
+        schema: {type: string}
+      - description: The path of the old file (relative to) the shared folder. If
+          the path contains non-English characters, an unicode string must be used
+          to pass in the path.
+        example: /My/OldDirectory/Path/
+        in: query
+        name: Old File Path
+        required: true
+        schema: {type: string}
+      - description: The path of the new file (relative to) the shared folder. If
+          the path contains non-English characters, an unicode string must be used
+          to pass in the path.
+        example: /My/NewDirectory/Path/
+        in: query
+        name: New File Path
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: ' Rename or Move A File '
+  tmp6:
+    post:
+      description: Returns The Content Of A File Located On The Samba Network Storage
+        Directory
+      parameters:
+      - description: Samba Share Directory
+        example: Contains the name of the shared folder.
+        in: query
+        name: Samba Share Directory
+        required: true
+        schema: {type: string}
+      - description: The path of the file (relative to) the shared folder. If the
+          path contains non-English characters, an unicode string must be used to
+          pass in the path.
+        example: /The/Path/Of/The/File
+        in: query
+        name: File Path
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: ' Retrieve Contents of a File'
+tags:
+- {name: Infrastructure}

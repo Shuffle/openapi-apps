@@ -1,0 +1,94 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        id: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Enhancesoft OSTicket
+  title: Enhancesoft OSTicket
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Create a new ticket on OSTicket
+      parameters:
+      - description: Email address of the submitter
+        example: api@osticket.com
+        in: query
+        name: Email
+        required: true
+        schema: {type: string}
+      - description: Name of the submitter
+        example: Angry User
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: Subject of the ticket
+        example: Testing API
+        in: query
+        name: Subject
+        required: true
+        schema: {type: string}
+      - description: Initial message for the ticket thread
+        example: This is a message
+        in: query
+        name: Message
+        required: true
+        schema: {type: string}
+      - description: If unset, disable alerts to staff
+        example: ''
+        in: query
+        name: Alert
+        required: false
+        schema: {type: boolean}
+      - description: If unset, disable autoresponses
+        example: ''
+        in: query
+        name: Autorespond
+        required: false
+        schema: {type: boolean}
+      - description: IP address of the submitter
+        example: 123.211.233.122
+        in: query
+        name: IP
+        required: false
+        schema: {type: string}
+      - description: Priority id for the new ticket to assume
+        example: ''
+        in: query
+        name: Priority
+        required: false
+        schema: {type: string}
+      - description: Source of the ticket
+        example: API
+        in: query
+        name: Source
+        required: false
+        schema: {type: string}
+      - description: Help topic id associated with the ticket
+        example: ''
+        in: query
+        name: Topic ID
+        required: false
+        schema: {type: string}
+      - description: An array of files to attach to the initial message
+        example: ''
+        in: query
+        name: Attachments
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: OSTicket Create Ticket
+tags:
+- {name: Ticket Management}

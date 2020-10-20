@@ -1,0 +1,342 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        data: {type: string}
+      type: object
+    tmp1:
+      properties:
+        createdBy: {type: string}
+        createdOn: {type: string}
+        criticality: {type: string}
+        description: {type: string}
+        hwl: {type: string}
+        id: {type: string}
+        name: {type: string}
+      type: object
+    tmp2:
+      properties:
+        directimport: {type: string}
+        hour: {type: string}
+        ignored: {type: string}
+        invalid: {type: string}
+        invalideventaction: {type: string}
+        tenantid: {type: string}
+        tenantname: {type: string}
+        u_criticality: {type: string}
+        u_deletedate: {type: string}
+        u_department: {type: string}
+        u_disabledate: {type: string}
+        u_employeeid: {type: string}
+        u_employeetype: {type: string}
+        u_enabledate: {type: string}
+        u_firstname: {type: string}
+        u_id: {type: string}
+        u_lastname: {type: string}
+        u_lastsynctime: {type: string}
+        u_masked: {type: string}
+        u_riskscore: {type: string}
+        u_status: {type: string}
+        u_statusdescription: {type: string}
+        u_timezoneoffset: {type: string}
+        u_userid: {type: string}
+      type: object
+    tmp3:
+      properties:
+        Criticality: {type: string}
+        Description: {type: string}
+        Generation time: {type: string}
+        No of violator: {type: string}
+        Policy category: {type: string}
+        Policy id: {type: string}
+        Policy name: {type: string}
+        Threat indicator: {type: string}
+        Violation entity: {type: string}
+      type: object
+    tmp4:
+      properties:
+        Department: {type: string}
+        Generation time: {type: string}
+        Name: {type: string}
+        Risk score: {type: string}
+        Violator entity: {type: string}
+      type: object
+    tmp5:
+      properties:
+        accountname: {type: string}
+        baseeventid: {type: string}
+        categorizedtime: {type: string}
+        category: {type: string}
+        categorybehavior: {type: string}
+        categoryobject: {type: string}
+        categoryseverity: {type: string}
+        customstring1: {type: string}
+        datetime: {type: string}
+        dayofmonth: {type: string}
+        dayofweek: {type: string}
+        dayofyear: {type: string}
+        destinationaddress: {type: string}
+        destinationhostname: {type: string}
+        destinationhostnamecity: {type: string}
+        destinationhostnamecountry: {type: string}
+        destinationhostnamelatitude: {type: string}
+        destinationhostnamelongitude: {type: string}
+        destinationhostnameregion: {type: string}
+        destinationprocessname: {type: string}
+        deviceaction: {type: string}
+        devicecustomstring1: {type: string}
+        deviceeventcategory: {type: string}
+        deviceexternalid: {type: string}
+        devicemacaddress: {type: string}
+        deviceseverity: {type: string}
+        eventid: {type: string}
+        filehash: {type: string}
+        filepath: {type: string}
+        generationtime: {type: string}
+        hour: {type: string}
+        id: {type: string}
+        invalid: {type: string}
+        ipaddress: {type: string}
+        jobid: {type: string}
+        jobstarttime: {type: string}
+        month: {type: string}
+        oldfilepath: {type: string}
+        policyname: {type: string}
+        rawevent: {type: string}
+        resourcegroupid: {type: string}
+        resourcegroupname: {type: string}
+        resourcename: {type: string}
+        riskthreatname: {type: string}
+        sourceaddress: {type: string}
+        sourcehostname: {type: string}
+        tenantid: {type: string}
+        tenantname: {type: string}
+        timeline: {type: string}
+        timeline_by_hour: {type: string}
+        timeline_by_minute: {type: string}
+        timeline_by_month: {type: string}
+        timeline_by_week: {type: string}
+        transactionstring1: {type: string}
+        transactionstring3: {type: string}
+        userid: {type: string}
+        violator: {type: string}
+        week: {type: string}
+        year: {type: string}
+      type: object
+    tmp6:
+      properties:
+        Criticality: {type: string}
+        Description: {type: string}
+        Generation time: {type: string}
+        No of violator: {type: string}
+        Policy category: {type: string}
+        Policy id: {type: string}
+        Policy name: {type: string}
+        Threat indicator: {type: string}
+        Violation entity: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Securonix SNYPR
+  title: Securonix SNYPR
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Run an activity query on Securonix
+      parameters:
+      - description: Query string to query Securonix with. See README for examples
+        example: ''
+        in: query
+        name: Query String
+        required: true
+        schema: {type: string}
+      - description: Limit query data from a date until now, in format 07/22/2019
+          23:59:59
+        example: ''
+        in: query
+        name: From Date
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Securonix Run Activity Query
+  tmp1:
+    post:
+      description: Get all Securonix Policies
+      parameters:
+      - description: Limit the number of policies returned
+        example: ''
+        in: body
+        name: limit
+        required: false
+        schema: {type: string}
+      - description: Filter policies returned with a filter, see README
+        example: ''
+        in: query
+        name: Filter
+        required: false
+        schema: {type: string}
+      - description: String delimiter to split input data on the query string. Defaults
+          to ','
+        example: ','
+        in: query
+        name: Pair Delimiter
+        required: false
+        schema: {type: string}
+      - description: Assignment delimiter to split the query string. Defaults to '='
+        example: '='
+        in: query
+        name: Value Delimiter
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Securonix Get All Policies
+  tmp2:
+    post:
+      description: Get all Securonix Users
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Securonix Get All Users
+  tmp3:
+    post:
+      description: Get Securonix Top Violations
+      parameters:
+      - description: Limit the number of policies returned
+        example: ''
+        in: body
+        name: limit
+        required: false
+        schema: {type: string}
+      - description: Offset from the top to start grabbing from
+        example: ''
+        in: body
+        name: Offset
+        required: false
+        schema: {type: string}
+      - description: Number of days to look back on
+        example: ''
+        in: body
+        name: Number of Days
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Securonix Get Top Violations
+  tmp4:
+    post:
+      description: Get Securonix Top Violators
+      parameters:
+      - description: Limit the number of policies returned
+        example: ''
+        in: body
+        name: limit
+        required: false
+        schema: {type: string}
+      - description: Offset from the top to start grabbing from
+        example: ''
+        in: body
+        name: Offset
+        required: false
+        schema: {type: string}
+      - description: Number of days to look back on
+        example: ''
+        in: body
+        name: Number of Days
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Securonix Get Top Violators
+  tmp5:
+    post:
+      description: Get Violation Events by policy name
+      parameters:
+      - description: Limit of events to return, defaults to 1000
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Name of policy to check for violation events
+        example: ''
+        in: query
+        name: Policy Name
+        required: true
+        schema: {type: string}
+      - description: Time to filter events generated from
+        example: ''
+        in: query
+        name: From Time
+        required: true
+        schema: {type: string}
+      - description: Time to filter events generated to
+        example: ''
+        in: query
+        name: To Time
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Securonix Get Violation Events by Policy Name
+  tmp6:
+    post:
+      description: Get Top Threats from Securonix
+      parameters:
+      - description: Limit to return
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Offset from beginning to grab from
+        example: ''
+        in: body
+        name: Offset
+        required: false
+        schema: {type: string}
+      - description: Number of days in the past to look through
+        example: ''
+        in: body
+        name: Number of Days
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Securonix Get Top Threats
+tags:
+- {name: SIEM & Log Management}

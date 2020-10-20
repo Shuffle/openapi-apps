@@ -1,0 +1,261 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        result: {type: string}
+      type: object
+    tmp1:
+      properties:
+        result: {type: string}
+      type: object
+    tmp2:
+      properties:
+        association: {type: string}
+        entry: {type: string}
+        first_seen: {type: string}
+        last_seen: {type: string}
+        types: {type: string}
+      type: object
+    tmp3:
+      properties:
+        entry: {type: string}
+        timeline: {type: string}
+      type: object
+    tmp4:
+      properties:
+        blacklist_comment: {type: string}
+        blacklist_compromised: {type: string}
+        blacklist_first_seen: {type: string}
+        blacklist_last_seen: {type: string}
+        blacklist_threat: {type: string}
+        blacklist_threat_class: {type: string}
+        blacklist_threat_impact: {type: string}
+        blacklist_threat_severity: {type: string}
+        entry: {type: string}
+      type: object
+    tmp5:
+      properties:
+        activity: {type: string}
+        analysis_env: {type: string}
+        count: {type: string}
+        severity: {type: string}
+        total: {type: string}
+      type: object
+    tmp6:
+      properties:
+        count: {type: string}
+        default_blacklist: {type: string}
+        domain: {type: string}
+        tags_compromised: {type: string}
+        tags_fullname: {type: string}
+        tags_severity: {type: string}
+        tags_threat: {type: string}
+        tags_threat_class: {type: string}
+        tags_type: {type: string}
+        total: {type: string}
+      type: object
+    tmp7:
+      properties:
+        count: {type: string}
+        default_blacklist: {type: string}
+        ip: {type: string}
+        tags_compromised: {type: string}
+        tags_fullname: {type: string}
+        tags_severity: {type: string}
+        tags_threat: {type: string}
+        tags_threat_class: {type: string}
+        tags_type: {type: string}
+        total: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Lastline Knowledge Base
+  title: Lastline Knowledge Base
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Lastline Knowledge Export provided domains into a blacklist file
+        of the required format.
+      parameters:
+      - description: List of comma separated domain entries.
+        example: foo.com,bar.org
+        in: query
+        name: Entries
+        required: true
+        schema: {type: string}
+      - description: The title of the blacklist (e.g. TTP).
+        example: my_domain_block
+        in: query
+        name: Title
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Lastline Knowledge Export Blacklist Domains
+  tmp1:
+    post:
+      description: Lastline Knowledge Export provided IPs into a blacklist file of
+        the required format.
+      parameters:
+      - description: List of comma separated IP entries.
+        example: 1.2.3.4,5.6.7.8
+        in: query
+        name: Entries
+        required: true
+        schema: {type: string}
+      - description: The title of the blacklist (e.g. TTP).
+        example: my_ip_blacklist
+        in: query
+        name: Title
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Lastline Knowledge Export Blacklist IPs
+  tmp2:
+    post:
+      description: Lastline Knowledge Query pDNS information collected during analysis
+        for the given entries.
+      parameters:
+      - description: 'The type of entries to be queried. Supported terms are: domain
+          or ip'
+        example: domain
+        in: query
+        name: Term
+        required: true
+        schema: {type: string}
+      - description: List of comma separated entries.
+        example: ''
+        in: query
+        name: Entries
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Lastline Knowledge Intel Analysis pDNS
+  tmp3:
+    post:
+      description: Lastline Knowledge Query timeline information collected during
+        analysis for the given entries.
+      parameters:
+      - description: 'The type of entries to be queried. Supported terms are: domain,
+          ip, file_md5, file_sha1, file_sha256, or threat.'
+        example: domain
+        in: query
+        name: Term
+        required: true
+        schema: {type: string}
+      - description: List of comma separated entries.
+        example: ''
+        in: query
+        name: Entries
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Lastline Knowledge Intel Analysis Timeline
+  tmp4:
+    post:
+      description: Lastline Knowledge Query network reputation information for the
+        given entries.
+      parameters:
+      - description: 'The type of entries to be queried. Supported terms are: domain
+          or ip.'
+        example: domain
+        in: query
+        name: Term
+        required: true
+        schema: {type: string}
+      - description: List of comma separated entries.
+        example: ''
+        in: query
+        name: Entries
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Lastline Knowledge Intel Network Reputation
+  tmp5:
+    post:
+      description: Lastline Knowledge Query related behavioral activities belonging
+        to analysis tasks that satisfy the given query string.
+      parameters:
+      - description: The query to search as a string. Uses the Lastline search query
+          language.
+        example: 'domain: foo.com'
+        in: query
+        name: Query String
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Lastline Knowledge Query Tasks Activites
+  tmp6:
+    post:
+      description: Lastline Knowledge Query related domains belonging to analysis
+        tasks that satisfy the given query string.
+      parameters:
+      - description: The query to search as a string. Uses the Lastline search query
+          language.
+        example: 'domain: foo.com'
+        in: query
+        name: Query String
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Lastline Knowledge Query Tasks Domains
+  tmp7:
+    post:
+      description: Query related IPs belonging to analysis tasks that satisfy the
+        query.
+      parameters:
+      - description: The query to search as a string. Uses the Lastline search query
+          language.
+        example: 'ip: 1.1.1.1'
+        in: query
+        name: Query String
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Lastline Knowledge Query Task IPs
+tags:
+- {name: Investigation}

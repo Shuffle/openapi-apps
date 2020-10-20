@@ -1,0 +1,524 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        domain_name: {type: string}
+        domain_uid: {type: string}
+        errors_message: {type: string}
+        groups: {type: string}
+        meta-info_creator: {type: string}
+        uid: {type: string}
+      type: object
+    tmp1:
+      properties:
+        domain_name: {type: string}
+        domain_uid: {type: string}
+        errors_message: {type: string}
+        groups: {type: string}
+        ipv4-address: {type: string}
+        ipv6-address: {type: string}
+        meta-info_creator: {type: string}
+        uid: {type: string}
+        warnings_message: {type: string}
+      type: object
+    tmp10:
+      properties:
+        from: {type: string}
+        objects_domain_domain-type: {type: string}
+        objects_domain_name: {type: string}
+        objects_domain_uid: {type: string}
+        objects_ipv4-address: {type: string}
+        objects_ipv6-address: {type: string}
+        objects_name: {type: string}
+        objects_type: {type: string}
+        objects_uid: {type: string}
+        to: {type: string}
+        total: {type: string}
+      type: object
+    tmp11:
+      properties:
+        from: {type: string}
+        objects_domain_domain-type: {type: string}
+        objects_domain_name: {type: string}
+        objects_domain_uid: {type: string}
+        objects_mask-length4: {type: string}
+        objects_mask-length6: {type: string}
+        objects_name: {type: string}
+        objects_subnet-mask: {type: string}
+        objects_subnet4: {type: string}
+        objects_subnet6: {type: string}
+        objects_type: {type: string}
+        objects_uid: {type: string}
+        to: {type: string}
+        total: {type: string}
+      type: object
+    tmp12:
+      properties:
+        domain_uid: {type: string}
+        members_domain_domain-type: {type: string}
+        members_ipv4-address: {type: string}
+        members_ipv6-address: {type: string}
+        members_mask-length4: {type: string}
+        members_mask-length6: {type: string}
+        members_name: {type: string}
+        members_subnet-mask: {type: string}
+        members_subnet4: {type: string}
+        members_subnet6: {type: string}
+        members_type: {type: string}
+        members_uid: {type: string}
+        message: {type: string}
+        meta-info_creator: {type: string}
+        uid: {type: string}
+      type: object
+    tmp13:
+      properties:
+        domain_name: {type: string}
+        domain_uid: {type: string}
+        groups: {type: string}
+        ipv4-address: {type: string}
+        ipv6-address: {type: string}
+        message: {type: string}
+        meta-info_creator: {type: string}
+        name: {type: string}
+        uid: {type: string}
+      type: object
+    tmp14:
+      properties:
+        domain_uid: {type: string}
+        mask-length4: {type: string}
+        mask-length6: {type: string}
+        message: {type: string}
+        meta-info_creator: {type: string}
+        name: {type: string}
+        subnet-mask: {type: string}
+        subnet4: {type: string}
+        subnet6: {type: string}
+        uid: {type: string}
+      type: object
+    tmp2:
+      properties:
+        domain_uid: {type: string}
+        errors_message: {type: string}
+        mask-length4: {type: string}
+        mask-length6: {type: string}
+        meta-info_creator: {type: string}
+        subnet-mask: {type: string}
+        subnet4: {type: string}
+        subnet6: {type: string}
+        uid: {type: string}
+        warnings_message: {type: string}
+      type: object
+    tmp3:
+      properties:
+        message: {type: string}
+      type: object
+    tmp4:
+      properties:
+        message: {type: string}
+      type: object
+    tmp5:
+      properties:
+        message: {type: string}
+      type: object
+    tmp6:
+      properties:
+        domain_name: {type: string}
+        domain_uid: {type: string}
+        groups: {type: string}
+        members_domain_name: {type: string}
+        members_domain_uid: {type: string}
+        members_ipv4-address: {type: string}
+        members_ipv6-address: {type: string}
+        members_mask-length4: {type: string}
+        members_mask-length6: {type: string}
+        members_name: {type: string}
+        members_subnet-mask: {type: string}
+        members_subnet4: {type: string}
+        members_subnet6: {type: string}
+        members_type: {type: string}
+        members_uid: {type: string}
+        message: {type: string}
+        meta-info_creator: {type: string}
+        uid: {type: string}
+      type: object
+    tmp7:
+      properties:
+        domain_name: {type: string}
+        domain_uid: {type: string}
+        groups_name: {type: string}
+        ipv4-address: {type: string}
+        ipv6-address: {type: string}
+        message: {type: string}
+        meta-info_creator: {type: string}
+        name: {type: string}
+        uid: {type: string}
+      type: object
+    tmp8:
+      properties:
+        domain_uid: {type: string}
+        mask-length4: {type: string}
+        mask-length6: {type: string}
+        message: {type: string}
+        meta-info_creator: {type: string}
+        name: {type: string}
+        subnet-mask: {type: string}
+        subnet4: {type: string}
+        subnet6: {type: string}
+        uid: {type: string}
+      type: object
+    tmp9:
+      properties:
+        from: {type: string}
+        objects_domain_domain-type: {type: string}
+        objects_domain_name: {type: string}
+        objects_domain_uid: {type: string}
+        objects_mask-length4: {type: string}
+        objects_mask-length6: {type: string}
+        objects_name: {type: string}
+        objects_subnet-mask: {type: string}
+        objects_subnet4: {type: string}
+        objects_subnet6: {type: string}
+        objects_type: {type: string}
+        objects_uid: {type: string}
+        to: {type: string}
+        total: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Check Point R80
+  title: Check Point R80
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Create a new Group
+      parameters:
+      - description: Name of Group
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Check Point R80 Add Group
+  tmp1:
+    post:
+      description: Create a new Host
+      parameters:
+      - description: Name of Host
+        example: my_host
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: IPv4 or IPv6 host address
+        example: 10.0.0.1
+        in: query
+        name: IP Address
+        required: true
+        schema: {type: string}
+      - description: Comma-seperated list of groups
+        example: this_group,that_group,another_group
+        in: query
+        name: Groups
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Check Point R80 Add Host
+  tmp10:
+    post:
+      description: Show All Hosts
+      parameters:
+      - description: Number of Hosts
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: Check Point R80 Show All Hosts
+  tmp11:
+    post:
+      description: Show All Networks
+      parameters:
+      - description: Number of Networks
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: Check Point R80 Show All Networks
+  tmp12:
+    post:
+      description: Show Group
+      parameters:
+      - description: Name of Group
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: Check Point R80 Show Group
+  tmp13:
+    post:
+      description: Show Host
+      parameters:
+      - description: Name of Host
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: Check Point R80 Show Host
+  tmp14:
+    post:
+      description: Show Network
+      parameters:
+      - description: Name of Network
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp14'}
+          description: Successful request
+      summary: Check Point R80 Show Network
+  tmp2:
+    post:
+      description: Create a new Network
+      parameters:
+      - description: Name of Network
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: IPv4 or IPv6 network address
+        example: ''
+        in: query
+        name: Subnet
+        required: true
+        schema: {type: string}
+      - description: IPv4 network mask
+        example: ''
+        in: query
+        name: Subnet Mask
+        required: true
+        schema: {type: string}
+      - description: Comma-seperated list of groups
+        example: this_group,that_group,another_group
+        in: query
+        name: Groups
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Check Point R80 Add Network
+  tmp3:
+    post:
+      description: Delete a Group
+      parameters:
+      - description: Name of Group
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Check Point R80 Delete Group
+  tmp4:
+    post:
+      description: Delete a Host
+      parameters:
+      - description: Name of Host
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Check Point R80 Delete Host
+  tmp5:
+    post:
+      description: Delete a Network
+      parameters:
+      - description: Name of Network
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: Check Point R80 Delete Network
+  tmp6:
+    post:
+      description: Add or Remove a Host or Network from Group
+      parameters:
+      - description: Name of Group
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: Name of Host or Network to add or remove from Group
+        example: ''
+        in: query
+        name: Host or Network Name
+        required: true
+        schema: {type: string}
+      - description: Operation to do with Host or Network
+        example: add or remove
+        in: query
+        name: Operation
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: Check Point R80 Modify Group
+  tmp7:
+    post:
+      description: Modify a Host
+      parameters:
+      - description: Name of Host
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: IPv4 or IPv6 host address
+        example: 10.0.0.1
+        in: query
+        name: IP Address
+        required: false
+        schema: {type: string}
+      - description: New name for the Host
+        example: ''
+        in: query
+        name: New Name
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: Check Point R80 Modify Host
+  tmp8:
+    post:
+      description: Modify a Network
+      parameters:
+      - description: Name of Network
+        example: ''
+        in: query
+        name: Name
+        required: true
+        schema: {type: string}
+      - description: IPv4 or IPv6 network address
+        example: ''
+        in: query
+        name: Subnet
+        required: false
+        schema: {type: string}
+      - description: IPv4 network mask
+        example: ''
+        in: query
+        name: Subnet Mask
+        required: false
+        schema: {type: string}
+      - description: New name for the Network
+        example: ''
+        in: query
+        name: New Name
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: Check Point R80 Modify Network
+  tmp9:
+    post:
+      description: Show All Groups
+      parameters:
+      - description: Number of Groups
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: Check Point R80 Show All Groups
+tags:
+- {name: Network Security & Management}

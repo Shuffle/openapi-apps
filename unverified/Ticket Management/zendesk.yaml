@@ -1,0 +1,250 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        allow_attachments: {type: string}
+        assignee_id: {type: string}
+        brand_id: {type: string}
+        collaborator_ids: {type: string}
+        created_at: {type: string}
+        custom_fields: {type: string}
+        description: {type: string}
+        due_at: {type: string}
+        external_id: {type: string}
+        fields: {type: string}
+        forum_topic_id: {type: string}
+        group_id: {type: string}
+        has_incidents: {type: string}
+        id: {type: string}
+        is_public: {type: string}
+        organization_id: {type: string}
+        priority: {type: string}
+        problem_id: {type: string}
+        raw_subject: {type: string}
+        recipient: {type: string}
+        requester_id: {type: string}
+        satisfaction_rating: {type: string}
+        sharing_agreement_ids: {type: string}
+        status: {type: string}
+        subject: {type: string}
+        submitter_id: {type: string}
+        tags: {type: string}
+        type: {type: string}
+        updated_at: {type: string}
+        url: {type: string}
+        via_channel: {type: string}
+      type: object
+    tmp1:
+      properties:
+        errorMessage: {type: string}
+        successful: {type: string}
+      type: object
+    tmp2:
+      properties:
+        content: {type: string}
+        id: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Zendesk Zendesk
+  title: Zendesk Zendesk
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Zendesk Create Ticket
+      parameters:
+      - description: The agent currently assigned to the ticket.
+        example: '1234'
+        in: body
+        name: Assignee ID
+        required: false
+        schema: {type: string}
+      - description: Enterprise only. The id of the brand this ticket is associated
+          with.
+        example: '1234'
+        in: body
+        name: Brand ID
+        required: false
+        schema: {type: string}
+      - description: Comma-separated list of ID's of users currently CC'd on the ticket.
+        example: 123,456,789
+        in: query
+        name: Collaborator IDs
+        required: false
+        schema: {type: string}
+      - description: When this record was created.
+        example: '2018-02-12T18:30:12'
+        in: query
+        name: Created At
+        required: false
+        schema: {type: string}
+      - description: Description of the ticket.
+        example: This is my description.
+        in: query
+        name: Description
+        required: true
+        schema: {type: string}
+      - description: If this is a ticket of type 'task' it has a due date. Due date
+          format uses ISO 8601 format.
+        example: '2019-12-25T13:37:00'
+        in: query
+        name: Due At
+        required: false
+        schema: {type: string}
+      - description: An ID you can use to link Zendesk Support tickets to local records.
+        example: '1234'
+        in: body
+        name: External ID
+        required: false
+        schema: {type: string}
+      - description: The topic this ticket originated from, if any.
+        example: '1234'
+        in: body
+        name: Forum Topic ID
+        required: false
+        schema: {type: string}
+      - description: The group this ticket is assigned to.
+        example: '1234'
+        in: body
+        name: Group ID
+        required: false
+        schema: {type: string}
+      - description: Is true if this ticket has been marked as a problem, false otherwise.
+        example: ''
+        in: query
+        name: Has Incidents
+        required: false
+        schema: {type: boolean}
+      - description: The organization of the requester. You can only specify the ID
+          of an organization associated with the requester. See Organization Memberships.
+        example: '1234'
+        in: body
+        name: Organization ID
+        required: false
+        schema: {type: string}
+      - description: 'The urgency with which the ticket should be addressed. Possible
+          values: ''urgent'', ''high'', ''normal'', ''low''.'
+        example: high
+        in: query
+        name: Priority
+        required: false
+        schema: {type: string}
+      - description: For tickets of type 'incident', the ID of the problem the incident
+          is linked to.
+        example: '1234'
+        in: body
+        name: Problem ID
+        required: false
+        schema: {type: string}
+      - description: The dynamic content placeholder, if present, or the 'subject'
+          value, if not. See Dynamic Content.
+        example: My Raw Subject
+        in: query
+        name: Raw Subject
+        required: false
+        schema: {type: string}
+      - description: The original recipient e-mail address of the ticket.
+        example: john.smith@company.com
+        in: query
+        name: Recipient
+        required: false
+        schema: {type: string}
+      - description: The user who requested this ticket.
+        example: '1234'
+        in: body
+        name: Requester ID
+        required: false
+        schema: {type: string}
+      - description: Comma-separated list of ID's of the sharing agreements used for
+          this ticket.
+        example: 123,456,789
+        in: query
+        name: Sharing Agreement IDs
+        required: false
+        schema: {type: string}
+      - description: 'The state of the ticket. Possible values: ''new'', ''open'',
+          ''pending'', ''hold'', ''solved'', ''closed''.'
+        example: open
+        in: query
+        name: Status
+        required: false
+        schema: {type: string}
+      - description: The value of the subject field for this ticket.
+        example: My Subject
+        in: query
+        name: Subject
+        required: false
+        schema: {type: string}
+      - description: The user who submitted the ticket. The submitter always becomes
+          the author of the first comment on the ticket.
+        example: '1234'
+        in: body
+        name: Submitter ID
+        required: false
+        schema: {type: string}
+      - description: 'The type of this ticket. Possible values: ''problem'', ''incident'',
+          ''question'' or ''task''.'
+        example: incident
+        in: query
+        name: Type
+        required: false
+        schema: {type: string}
+      - description: When this record last got updated.
+        example: '2019-01-15T22:45:00'
+        in: query
+        name: Updated At
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Zendesk Create Ticket
+  tmp1:
+    post:
+      description: Zendesk Delete Ticket
+      parameters:
+      - description: The ID of the ticket to be deleted
+        example: '123'
+        in: body
+        name: ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Zendesk Delete Ticket
+  tmp2:
+    post:
+      description: Zendesk Search by Sender
+      parameters:
+      - description: The sender whose instances are being searched for
+        example: someone@gmail.com
+        in: query
+        name: Sender
+        required: true
+        schema: {type: string}
+      - description: The recipient who is being searched for
+        example: support@subdomain.zendesk.com
+        in: query
+        name: Recipient
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Zendesk Search by Sender
+tags:
+- {name: Ticket Management}

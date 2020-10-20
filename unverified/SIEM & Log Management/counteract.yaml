@@ -1,0 +1,158 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        _times: {type: string}
+        access_ip: {type: string}
+        adm: {type: string}
+        agent_install_mode: {type: string}
+        agent_visible_mode: {type: string}
+        cl_rule: {type: string}
+        cl_type: {type: string}
+        classification_source_func: {type: string}
+        classification_source_os: {type: string}
+        dhcp_class: {type: string}
+        dhcp_opt_fingerprint: {type: string}
+        dhcp_os: {type: string}
+        dhcp_req_fingerprint: {type: string}
+        engine_seen_packet: {type: string}
+        error: {type: string}
+        fingerprint: {type: string}
+        gst_signed_in_stat: {type: string}
+        id: {type: string}
+        in-group: {type: string}
+        ip: {type: string}
+        ipv4_report_time: {type: string}
+        last_nbt_report_time: {type: string}
+        mac: {type: string}
+        mac_prefix32: {type: string}
+        mac_vendor_string: {type: string}
+        macs: {type: string}
+        manage_agent: {type: string}
+        matched_fingerprints: {type: string}
+        misc: {type: string}
+        nmap_def_fp5: {type: string}
+        nmap_def_fp7: {type: string}
+        nmap_fp7: {type: string}
+        nmap_netfunc7: {type: string}
+        online: {type: string}
+        onsite: {type: string}
+        openports: {type: string}
+        os_classification: {type: string}
+        prim_classification: {type: string}
+        samba_open_ports: {type: string}
+        user_def_fp: {type: string}
+        va_netfunc: {type: string}
+        vendor: {type: string}
+        vendor_classification: {type: string}
+      type: object
+    tmp1:
+      properties:
+        description: {type: string}
+        label: {type: string}
+        name: {type: string}
+        type: {type: string}
+      type: object
+    tmp2:
+      properties:
+        error: {type: string}
+        hostId: {type: string}
+        ip: {type: string}
+        mac: {type: string}
+      type: object
+    tmp3:
+      properties:
+        description: {type: string}
+        error: {type: string}
+        name: {type: string}
+        policyId: {type: string}
+        rule_description: {type: string}
+        rule_name: {type: string}
+        rule_ruleId: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Forescout Counteract
+  title: Forescout Counteract
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get detailed data about a host
+      parameters:
+      - description: Key to search off of, must be unique, from list in README
+        example: ip, mac or hostid
+        in: query
+        name: Search Key
+        required: true
+        schema: {type: string}
+      - description: Value to search for
+        example: 123.123.123.123, 00c29afacc7 or 169091319
+        in: query
+        name: Search Value
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Forescout Get Host Data
+  tmp1:
+    post:
+      description: Get the complete list of searchable fields for hosts
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Forescout Get Hostfields
+  tmp2:
+    post:
+      description: Get a list of hosts
+      parameters:
+      - description: List of values in format key1=value,key2=value2
+        example: va_netfunc=Windows
+        in: query
+        name: Query Value
+        required: false
+        schema: {type: string}
+      - description: Character to split the value from, defaults to '='
+        example: '='
+        in: query
+        name: Value Assignment Character
+        required: false
+        schema: {type: string}
+      - description: Character to split the keys from, defaults to ','
+        example: ','
+        in: query
+        name: Value Delimiter Character
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Forescout Get Hosts
+  tmp3:
+    post:
+      description: Get policies in CounterACT
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Forescout Get Policies
+tags:
+- {name: SIEM & Log Management}

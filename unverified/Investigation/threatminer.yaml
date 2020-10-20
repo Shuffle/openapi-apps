@@ -1,0 +1,386 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        first_seen: {type: string}
+        ip: {type: string}
+        last_seen: {type: string}
+      type: object
+    tmp1:
+      properties:
+        domain: {type: string}
+        ip: {type: string}
+        last_seen: {type: string}
+        uri: {type: string}
+      type: object
+    tmp10:
+      properties:
+        domains_domain: {type: string}
+        domains_ip: {type: string}
+        hosts: {type: string}
+      type: object
+    tmp11:
+      properties:
+        domain: {type: string}
+        ip: {type: string}
+        method: {type: string}
+        port: {type: string}
+        raw: {type: string}
+        source: {type: string}
+        url: {type: string}
+        user_agent: {type: string}
+      type: object
+    tmp12:
+      properties:
+        architecture: {type: string}
+        authentihash: {type: string}
+        date_analysed: {type: string}
+        file_name: {type: string}
+        file_size: {type: string}
+        file_type: {type: string}
+        imphash: {type: string}
+        md5: {type: string}
+        sha1: {type: string}
+        sha256: {type: string}
+        sha512: {type: string}
+        ssdeep: {type: string}
+      type: object
+    tmp13:
+      properties:
+        mutants: {type: string}
+      type: object
+    tmp2:
+      properties:
+        results: {type: string}
+      type: object
+    tmp3:
+      properties:
+        results: {type: string}
+      type: object
+    tmp4:
+      properties:
+        domain: {type: string}
+        is_subdomain: {type: string}
+        last_updated: {type: string}
+        root_domain: {type: string}
+        whois_admin_info_City: {type: string}
+        whois_admin_info_Country: {type: string}
+        whois_admin_info_Organization: {type: string}
+        whois_admin_info_Postal_Code: {type: string}
+        whois_admin_info_State: {type: string}
+        whois_billing_info_City: {type: string}
+        whois_billing_info_Country: {type: string}
+        whois_billing_info_Organization: {type: string}
+        whois_billing_info_Postal_Code: {type: string}
+        whois_billing_info_State: {type: string}
+        whois_creation_date: {type: string}
+        whois_date_checked: {type: string}
+        whois_email_hashes_admin: {type: string}
+        whois_email_hashes_billing: {type: string}
+        whois_email_hashes_registrant: {type: string}
+        whois_email_hashes_tech: {type: string}
+        whois_emails_admin: {type: string}
+        whois_emails_billing: {type: string}
+        whois_emails_registrant: {type: string}
+        whois_emails_tech: {type: string}
+        whois_expiration_date: {type: string}
+        whois_nameservers: {type: string}
+        whois_reg_info_City: {type: string}
+        whois_reg_info_Country: {type: string}
+        whois_reg_info_Organization: {type: string}
+        whois_reg_info_Postal_Code: {type: string}
+        whois_reg_info_State: {type: string}
+        whois_registrant_info_City: {type: string}
+        whois_registrant_info_Country: {type: string}
+        whois_registrant_info_Organization: {type: string}
+        whois_registrant_info_Postal_Code: {type: string}
+        whois_registrant_info_State: {type: string}
+        whois_registrant_info_Street: {type: string}
+        whois_registrar: {type: string}
+        whois_tech_info_City: {type: string}
+        whois_tech_info_Country: {type: string}
+        whois_tech_info_Organization: {type: string}
+        whois_tech_info_Postal_Code: {type: string}
+        whois_tech_info_State: {type: string}
+        whois_updated_date: {type: string}
+        whois_whois_md5: {type: string}
+        whois_whois_server: {type: string}
+      type: object
+    tmp5:
+      properties:
+        domain: {type: string}
+        first_seen: {type: string}
+        last_seen: {type: string}
+      type: object
+    tmp6:
+      properties:
+        results: {type: string}
+      type: object
+    tmp7:
+      properties:
+        results: {type: string}
+      type: object
+    tmp8:
+      properties:
+        asn: {type: string}
+        asn_name: {type: string}
+        bgp_prefix: {type: string}
+        cc: {type: string}
+        org_name: {type: string}
+        register: {type: string}
+        reverse_name: {type: string}
+      type: object
+    tmp9:
+      properties:
+        av_detections_av: {type: string}
+        av_detections_detection: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Threatminer Threatminer
+  title: Threatminer Threatminer
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Lookup Passive DNS information given a Domain.
+      parameters:
+      - description: Query
+        example: example.com
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: ThreatMiner Domain Passive DNS
+  tmp1:
+    post:
+      description: Lookup URIs given a Domain.
+      parameters:
+      - description: Query
+        example: example.com
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: ThreatMiner Domain Query URI
+  tmp10:
+    post:
+      description: Lookup Hosts given a Sample.
+      parameters:
+      - description: Query
+        example: e6ff1bf0821f00384cdd25efb9b1cc09
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp10'}
+          description: Successful request
+      summary: ThreatMiner Sample Hosts
+  tmp11:
+    post:
+      description: Lookup HTTP Traffic given a Sample.
+      parameters:
+      - description: Query
+        example: e6ff1bf0821f00384cdd25efb9b1cc09
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp11'}
+          description: Successful request
+      summary: ThreatMiner Sample HTTP Traffic
+  tmp12:
+    post:
+      description: Lookup Metadata given a Sample.
+      parameters:
+      - description: Query
+        example: e6ff1bf0821f00384cdd25efb9b1cc09
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp12'}
+          description: Successful request
+      summary: ThreatMiner Sample Metadata
+  tmp13:
+    post:
+      description: Lookup Mutants given a Sample.
+      parameters:
+      - description: Query
+        example: e6ff1bf0821f00384cdd25efb9b1cc09
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp13'}
+          description: Successful request
+      summary: ThreatMiner Sample Mutants
+  tmp2:
+    post:
+      description: Lookup Related Samples given a Domain.
+      parameters:
+      - description: Query
+        example: example.com
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: ThreatMiner Domain Related Samples
+  tmp3:
+    post:
+      description: Lookup Subdomains given a Domain.
+      parameters:
+      - description: Query
+        example: example.com
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: ThreatMiner Domain Subdomains
+  tmp4:
+    post:
+      description: Looup WHOIS information given a Domain.
+      parameters:
+      - description: Query
+        example: example.com
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: ThreatMiner Domain WHOIS
+  tmp5:
+    post:
+      description: Lookup Passive DNS given an IP.
+      parameters:
+      - description: Query
+        example: 1.2.3.4
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: ThreatMiner IP Passive DNS
+  tmp6:
+    post:
+      description: Lookup Related Samples given an IP.
+      parameters:
+      - description: Query
+        example: 1.2.3.4
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: ThreatMiner IP Related Samples
+  tmp7:
+    post:
+      description: Lookup SSL Certificates given an IP.
+      parameters:
+      - description: Query
+        example: 1.2.3.4
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: ThreatMiner IP SSL Certificates
+  tmp8:
+    post:
+      description: Lookup WHOIS information given an IP.
+      parameters:
+      - description: Query
+        example: 1.2.3.4
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: ThreatMiner IP WHOIS
+  tmp9:
+    post:
+      description: Lookup AV Detection given a Sample.
+      parameters:
+      - description: Query
+        example: e6ff1bf0821f00384cdd25efb9b1cc09
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: ThreatMiner Sample AV Detection
+tags:
+- {name: Investigation}

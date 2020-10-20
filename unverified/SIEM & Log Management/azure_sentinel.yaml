@@ -1,0 +1,89 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        AlertName: {type: string}
+        AlertSeverity: {type: string}
+        AlertType: {type: string}
+        ConfidenceLevel: {type: string}
+        ConfidenceScore: {type: string}
+        Description: {type: string}
+        DisplayName: {type: string}
+        EndTime: {type: string}
+        Entities: {type: string}
+        ExtendedLinks: {type: string}
+        ExtendedProperties: {type: string}
+        IsIncident: {type: string}
+        ProcessingEndTime: {type: string}
+        ProductComponentName: {type: string}
+        ProductName: {type: string}
+        ProviderName: {type: string}
+        RemediationSteps: {type: string}
+        ResourceId: {type: string}
+        SourceComputerId: {type: string}
+        SourceSystem: {type: string}
+        StartTime: {type: string}
+        SystemAlertId: {type: string}
+        TenantId: {type: string}
+        TimeGenerated: {type: string}
+        Type: {type: string}
+        VendorName: {type: string}
+        VendorOriginalId: {type: string}
+        WorkspaceResourceGroup: {type: string}
+        WorkspaceSubscriptionId: {type: string}
+      type: object
+    tmp1:
+      properties:
+        data: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Microsoft Azure Sentinel
+  title: Microsoft Azure Sentinel
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Integrate with Azure Sentinel Get Security Alerts
+      parameters:
+      - description: Timespan to query over
+        example: PT12H
+        in: query
+        name: Timespan
+        required: true
+        schema: {type: string}
+      - description: Limit of results to return
+        example: '5'
+        in: body
+        name: Result Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Microsoft Azure Sentinel Get Alerts
+  tmp1:
+    post:
+      description: Integrate with Azure Sentinel Run Query
+      parameters:
+      - description: Azure Monitor Log Query
+        example: Usage | where TimeGenerated < now() | limit 10
+        in: query
+        name: Query String
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Microsoft Azure Sentinel Run Query
+tags:
+- {name: SIEM & Log Management}

@@ -1,0 +1,57 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        json: {type: string}
+      type: object
+    tmp1:
+      properties:
+        json: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of BMC Remedy
+  title: BMC Remedy
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: BMC Remedy REST API Plugin Create Ticket
+      parameters:
+      - description: JSON String of values to create Incident
+        example: '{''First Name'': ''Name''}'
+        in: query
+        name: Values (JSON)
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: BMC Remedy Create Ticket
+  tmp1:
+    post:
+      description: Get tickets
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: BMC Remedy REST Get Tickets
+  tmp2:
+    post:
+      description: SOAP API Stub
+      parameters: []
+      responses:
+        '200': {description: Successful request}
+      summary: BMC Remedy SOAP API Stub
+tags:
+- {name: Ticket Management}

@@ -1,0 +1,146 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        collected: {type: string}
+        error_message: {type: string}
+        firstSeen: {type: string}
+        lastSeen: {type: string}
+        recordHash: {type: string}
+        recordType: {type: string}
+        resolve: {type: string}
+        resolveType: {type: string}
+        value: {type: string}
+      type: object
+    tmp1:
+      properties:
+        classification: {type: string}
+        dynamicDns: {type: string}
+        everCompromised: {type: string}
+        global_tags: {type: string}
+        primaryDomain: {type: string}
+        queryType: {type: string}
+        queryValue: {type: string}
+        sinkhole: {type: string}
+        subdomains: {type: string}
+        system_tags: {type: string}
+        tags: {type: string}
+        tld: {type: string}
+      type: object
+    tmp2:
+      properties:
+        admin_city: {type: string}
+        admin_country: {type: string}
+        admin_email: {type: string}
+        admin_fax: {type: string}
+        admin_name: {type: string}
+        admin_organization: {type: string}
+        admin_postalCode: {type: string}
+        admin_street: {type: string}
+        admin_telephone: {type: string}
+        contactEmail: {type: string}
+        domain: {type: string}
+        expiresAt: {type: string}
+        lastLoadedAt: {type: string}
+        name: {type: string}
+        nameServers: {type: string}
+        organization: {type: string}
+        registered: {type: string}
+        registrant_city: {type: string}
+        registrant_country: {type: string}
+        registrant_email: {type: string}
+        registrant_fax: {type: string}
+        registrant_name: {type: string}
+        registrant_organization: {type: string}
+        registrant_postalCode: {type: string}
+        registrant_street: {type: string}
+        registrant_telephone: {type: string}
+        registrar: {type: string}
+        registryUpdatedAt: {type: string}
+        tech_city: {type: string}
+        tech_country: {type: string}
+        tech_email: {type: string}
+        tech_fax: {type: string}
+        tech_name: {type: string}
+        tech_organization: {type: string}
+        tech_postalCode: {type: string}
+        tech_street: {type: string}
+        tech_telephone: {type: string}
+        telephone: {type: string}
+        text: {type: string}
+        whoisServer: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of RiskIQ PassiveTotal
+  title: RiskIQ PassiveTotal
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: RiskIQ PassiveTotal Passive DNS
+      parameters:
+      - description: The domain to query.
+        example: swimlane.com
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      - description: Earliest record datetime YYYY-MM-DD HH:MM:SS
+        example: '2017-04-11 22:42:20'
+        in: query
+        name: Start
+        required: false
+        schema: {type: string}
+      - description: Latest record datetime YYYY-MM-DD HH:MM:SS
+        example: '2018-12-25 08:15:30'
+        in: query
+        name: End
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: RiskIQ Passivetotal Passive DNS
+  tmp1:
+    post:
+      description: RiskIQ PassiveTotal Enrichment
+      parameters:
+      - description: The domain or IP to enrich.
+        example: swimlane.com
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: RiskIQ Passivetotal Enrichment
+  tmp2:
+    post:
+      description: RiskIQ PassiveTotal WHOIS
+      parameters:
+      - description: The domain to query.
+        example: swimlane.com
+        in: query
+        name: Query
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: RiskIQ Passivetotal WHOIS
+tags:
+- {name: Investigation}

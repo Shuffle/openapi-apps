@@ -1,0 +1,428 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        message: {type: string}
+      type: object
+    tmp1:
+      properties:
+        message: {type: string}
+      type: object
+    tmp2:
+      properties:
+        _id: {type: string}
+        contained_by_actor: {type: string}
+        contained_on: {type: string}
+        excluded: {type: string}
+        last_sysinfo: {type: string}
+        missing_software: {type: string}
+        queued: {type: string}
+        reported_clone: {type: string}
+        requested_by_actor__id: {type: string}
+        requested_by_actor_username: {type: string}
+        requested_on: {type: string}
+        state: {type: string}
+        state_update_time: {type: string}
+        url: {type: string}
+      type: object
+    tmp3:
+      properties:
+        _id: {type: string}
+        _revision: {type: string}
+        create_actor__id: {type: string}
+        create_actor_username: {type: string}
+        create_time: {type: string}
+        error: {type: string}
+        host_set: {type: string}
+        input_type: {type: string}
+        scripts__id: {type: string}
+        scripts_download: {type: string}
+        scripts_platform: {type: string}
+        scripts_url: {type: string}
+        settings_displayname: {type: string}
+        settings_exhaustive: {type: string}
+        settings_mode: {type: string}
+        settings_query_terms_exhaustive_terms: {type: string}
+        settings_query_terms_terms_field: {type: string}
+        settings_query_terms_terms_operator: {type: string}
+        settings_query_terms_terms_value: {type: string}
+        settings_search_type: {type: string}
+        state: {type: string}
+        stats_hosts: {type: string}
+        stats_running_state_ABORTED: {type: string}
+        stats_running_state_CANCELLED: {type: string}
+        stats_running_state_COMPLETE: {type: string}
+        stats_running_state_DELETED: {type: string}
+        stats_running_state_FAILED: {type: string}
+        stats_running_state_NEW: {type: string}
+        stats_running_state_QUEUED: {type: string}
+        stats_running_state_REFRESH: {type: string}
+        stats_search_state_ERROR: {type: string}
+        stats_search_state_MATCHED: {type: string}
+        stats_search_state_NOT_MATCHED: {type: string}
+        stats_search_state_PENDING: {type: string}
+        stats_skipped_hosts: {type: string}
+        update_actor__id: {type: string}
+        update_actor_username: {type: string}
+        update_time: {type: string}
+        url: {type: string}
+      type: object
+    tmp4:
+      properties:
+        _id: {type: string}
+        agent__id: {type: string}
+        agent_containment_state: {type: string}
+        agent_url: {type: string}
+        condition__id: {type: string}
+        condition_url: {type: string}
+        event_at: {type: string}
+        event_id: {type: string}
+        event_type: {type: string}
+        event_values_dnsLookupEvent_hostname: {type: string}
+        event_values_dnsLookupEvent_pid: {type: string}
+        event_values_dnsLookupEvent_timestamp: {type: string}
+        event_values_fileWriteEvent_closed: {type: string}
+        event_values_fileWriteEvent_dataAtLowestOffset: {type: string}
+        event_values_fileWriteEvent_devicePath: {type: string}
+        event_values_fileWriteEvent_drive: {type: string}
+        event_values_fileWriteEvent_fileExtension: {type: string}
+        event_values_fileWriteEvent_fileName: {type: string}
+        event_values_fileWriteEvent_filePath: {type: string}
+        event_values_fileWriteEvent_fullPath: {type: string}
+        event_values_fileWriteEvent_lowestFileOffsetSeen: {type: string}
+        event_values_fileWriteEvent_md5: {type: string}
+        event_values_fileWriteEvent_numBytesSeenWritten: {type: string}
+        event_values_fileWriteEvent_pid: {type: string}
+        event_values_fileWriteEvent_process: {type: string}
+        event_values_fileWriteEvent_processPath: {type: string}
+        event_values_fileWriteEvent_size: {type: string}
+        event_values_fileWriteEvent_textAtLowestOffset: {type: string}
+        event_values_fileWriteEvent_timestamp: {type: string}
+        event_values_fileWriteEvent_username: {type: string}
+        event_values_fileWriteEvent_writes: {type: string}
+        event_values_ipv4NetworkEvent_localIP: {type: string}
+        event_values_ipv4NetworkEvent_localPort: {type: string}
+        event_values_ipv4NetworkEvent_pid: {type: string}
+        event_values_ipv4NetworkEvent_process: {type: string}
+        event_values_ipv4NetworkEvent_processPath: {type: string}
+        event_values_ipv4NetworkEvent_protocol: {type: string}
+        event_values_ipv4NetworkEvent_remoteIP: {type: string}
+        event_values_ipv4NetworkEvent_remotePort: {type: string}
+        event_values_ipv4NetworkEvent_timestamp: {type: string}
+        event_values_ipv4NetworkEvent_username: {type: string}
+        indicator__id: {type: string}
+        indicator_display_name: {type: string}
+        indicator_uri_name: {type: string}
+        indicator_url: {type: string}
+        is_false_positive: {type: string}
+        matched_at: {type: string}
+        matched_source_alerts: {type: string}
+        reported_at: {type: string}
+        resolution: {type: string}
+        source: {type: string}
+        subtype: {type: string}
+        url: {type: string}
+      type: object
+    tmp5:
+      properties:
+        data: {type: string}
+        message: {type: string}
+      type: object
+    tmp6:
+      properties:
+        _id: {type: string}
+        _revision: {type: string}
+        alert: {type: string}
+        comment: {type: string}
+        condition: {type: string}
+        disable_cef: {type: string}
+        error_message: {type: string}
+        external_id: {type: string}
+        finish_time: {type: string}
+        host__id: {type: string}
+        host_url: {type: string}
+        indicator: {type: string}
+        md5: {type: string}
+        req_timestamp: {type: string}
+        request_actor__id: {type: string}
+        request_actor_username: {type: string}
+        request_time: {type: string}
+        state: {type: string}
+        url: {type: string}
+      type: object
+    tmp7:
+      properties:
+        _id: {type: string}
+        _revision: {type: string}
+        alert: {type: string}
+        comment: {type: string}
+        condition: {type: string}
+        disable_cef: {type: string}
+        download_url: {type: string}
+        error_message: {type: string}
+        external_id: {type: string}
+        finish_time: {type: string}
+        host__id: {type: string}
+        host_url: {type: string}
+        indicator: {type: string}
+        md5: {type: string}
+        req_timestamp: {type: string}
+        request_actor__id: {type: string}
+        request_actor_username: {type: string}
+        request_time: {type: string}
+        state: {type: string}
+        url: {type: string}
+      type: object
+    tmp8:
+      properties:
+        attachment: {type: string}
+      type: object
+    tmp9:
+      properties:
+        _id: {type: string}
+        _revision: {type: string}
+        alert: {type: string}
+        comment: {type: string}
+        condition: {type: string}
+        disable_cef: {type: string}
+        error_message: {type: string}
+        external_id: {type: string}
+        finish_time: {type: string}
+        host__id: {type: string}
+        host_url: {type: string}
+        indicator: {type: string}
+        md5: {type: string}
+        req_timestamp: {type: string}
+        request_actor__id: {type: string}
+        request_actor_username: {type: string}
+        request_time: {type: string}
+        state: {type: string}
+        url: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of FireEye Endpoint Security
+  title: FireEye Endpoint Security
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: FireEye Endpoint Security Cancel Containing a Host
+      parameters:
+      - description: Host Name of host to cancel containment
+        example: ''
+        in: query
+        name: Host Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: FireEye Endpoint Security Containment Cancellation
+  tmp1:
+    post:
+      description: FireEye Endpoint Security Contain a Host
+      parameters:
+      - description: Host Name of host to contain
+        example: ''
+        in: query
+        name: Host Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: FireEye Endpoint Security Contain Host
+  tmp2:
+    post:
+      description: FireEye Endpoint Security Host Containment Status
+      parameters:
+      - description: Host Name of host to contain
+        example: ''
+        in: query
+        name: Host Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: FireEye Endpoint Security Host Containment
+  tmp3:
+    post:
+      description: FireEye Endpoint Security Create Search
+      parameters:
+      - description: Comma Separated Host Names to run search on.
+        example: WIN-AB5FLBOL22C,WIN-AB5FLBOL44W
+        in: query
+        name: Host Names
+        required: false
+        schema: {type: string}
+      - description: Host Set ID to run search on. Either Host IDs or
+        example: ''
+        in: query
+        name: Host Set ID
+        required: false
+        schema: {type: string}
+      - description: Formatted Query Params in the form of `Field,Operator,Value|Field
+          2,Operator 2,Value 2` Use a pipe '|' to separate query sets and commas ','
+          to separate field, operator, and value
+        example: File Name,contains,evil.exe|File MD5 Hash,equals,d75caf1dfb0794580f5a71cc14686c470f7d43f0186a5efb12f381b04ee288ad
+        in: query
+        name: Query Parameters
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: FireEye Endpoint Security Create Search
+  tmp4:
+    post:
+      description: FireEye Endpoint Security Get Alerts
+      parameters:
+      - description: Alert ID to retrieve
+        example: ''
+        in: query
+        name: Alert ID
+        required: false
+        schema: {type: string}
+      - description: Number of alerts to return
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: FireEye Endpoint Security Get Alerts
+  tmp5:
+    post:
+      description: FireEye Endpoint Security Get Search Results
+      parameters:
+      - description: Search ID to retrieve
+        example: ''
+        in: query
+        name: Search ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp5'}
+          description: Successful request
+      summary: FireEye Endpoint Security Get Search Results
+  tmp6:
+    post:
+      description: FireEye Endpoint Security New Triage Acquisition Request
+      parameters:
+      - description: Host Name of host to contain
+        example: ''
+        in: query
+        name: Host Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp6'}
+          description: Successful request
+      summary: FireEye Endpoint Security New Triage Acquisition Request
+  tmp7:
+    post:
+      description: After you create a triage acquisition, you can use the ID to fetch
+        the triage acquisition
+      parameters:
+      - description: Triage ID to retrieve
+        example: ''
+        in: query
+        name: Triage ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp7'}
+          description: Successful request
+      summary: FireEye Endpoint Security Triage Acquisition by ID Request
+  tmp8:
+    post:
+      description: After you create a triage acquisition, you can use the triage ID
+        to fetch the triage collection
+      parameters:
+      - description: Triage ID to retrieve collection
+        example: ''
+        in: query
+        name: Triage ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp8'}
+          description: Successful request
+      summary: FireEye Endpoint Security Triage Collection by ID Request
+  tmp9:
+    post:
+      description: To get a list of triage acquisitions for all hosts connected to
+        your Endpoint Security server
+      parameters:
+      - description: Searches all triage acquisitions for hosts connected to the specified
+          Endpoint Security server. The search_term can be any condition value.
+        example: ''
+        in: query
+        name: Search
+        required: false
+        schema: {type: string}
+      - description: Specifies which record to start with in the response. The offset_value
+          must be an unsigned 32-bit integer. The default is 0.
+        example: ''
+        in: body
+        name: Search
+        required: false
+        schema: {type: string}
+      - description: Specifies how many records are returned. The limit_value must
+          be an unsigned 32-bit integer. The default is 50.
+        example: ''
+        in: body
+        name: Limit
+        required: false
+        schema: {type: string}
+      - description: Lists only results with the specified field value. You can filter
+          by external_id (external correlation ID from a SIEM solution).
+        example: ''
+        in: query
+        name: Filter
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp9'}
+          description: Successful request
+      summary: FireEye Endpoint Security Triage List
+tags:
+- {name: Endpoint Security & Management}

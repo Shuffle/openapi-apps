@@ -1,0 +1,356 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        AlarmDate: {type: string}
+        AlarmID: {type: string}
+        AlarmRuleID: {type: string}
+        AlarmRuleName: {type: string}
+        AlarmStatus: {type: string}
+        DateInserted: {type: string}
+        DateUpdated: {type: string}
+        EntityID: {type: string}
+        EntityName: {type: string}
+        EventCount: {type: string}
+        EventDateFirst: {type: string}
+        EventDateLast: {type: string}
+        LastUpdatedID: {type: string}
+        LastUpdatedName: {type: string}
+        RBPAvg: {type: string}
+        RBPMax: {type: string}
+      type: object
+    tmp1:
+      properties:
+        Account: {type: string}
+        Amount: {type: string}
+        Bytes: {type: string}
+        BytesIn: {type: string}
+        BytesOut: {type: string}
+        ClassificationID: {type: string}
+        ClassificationName: {type: string}
+        ClassificationTypeName: {type: string}
+        Command: {type: string}
+        CommonEventID: {type: string}
+        CommonEventName: {type: string}
+        Count: {type: string}
+        DateInserted: {type: string}
+        Direction: {type: string}
+        DirectionName: {type: string}
+        Domain: {type: string}
+        Duration: {type: string}
+        EntityID: {type: string}
+        EntityName: {type: string}
+        Group: {type: string}
+        ImpactedEntityID: {type: string}
+        ImpactedEntityName: {type: string}
+        ImpactedHostID: {type: string}
+        ImpactedHostName: {type: string}
+        ImpactedIP: {type: string}
+        ImpactedInterface: {type: string}
+        ImpactedLocationID: {type: string}
+        ImpactedLocation_CityName: {type: string}
+        ImpactedLocation_CountryName: {type: string}
+        ImpactedLocation_FullName: {type: string}
+        ImpactedLocation_FullNameRegion: {type: string}
+        ImpactedLocation_HasCity: {type: string}
+        ImpactedLocation_HasCountry: {type: string}
+        ImpactedLocation_HasLatLong: {type: string}
+        ImpactedLocation_HasParentLocation: {type: string}
+        ImpactedLocation_HasRegion: {type: string}
+        ImpactedLocation_IsValid: {type: string}
+        ImpactedLocation_Latitude: {type: string}
+        ImpactedLocation_LocationID: {type: string}
+        ImpactedLocation_LocationKey: {type: string}
+        ImpactedLocation_Longitude: {type: string}
+        ImpactedLocation_ParentLocationID: {type: string}
+        ImpactedLocation_RegionName: {type: string}
+        ImpactedLocation_Type: {type: string}
+        ImpactedMAC: {type: string}
+        ImpactedNATIP: {type: string}
+        ImpactedNATPort: {type: string}
+        ImpactedName: {type: string}
+        ImpactedNetworkID: {type: string}
+        ImpactedNetwork_BeginIPRange: {type: string}
+        ImpactedNetwork_DestinationRiskLevel: {type: string}
+        ImpactedNetwork_DestinationRiskLevelName: {type: string}
+        ImpactedNetwork_DisplayValue: {type: string}
+        ImpactedNetwork_EndIPRange: {type: string}
+        ImpactedNetwork_EntityID: {type: string}
+        ImpactedNetwork_HasLocationID: {type: string}
+        ImpactedNetwork_HasLocationKey: {type: string}
+        ImpactedNetwork_HostZone: {type: string}
+        ImpactedNetwork_HostZoneName: {type: string}
+        ImpactedNetwork_LocationID: {type: string}
+        ImpactedNetwork_LocationKey: {type: string}
+        ImpactedNetwork_NetworkID: {type: string}
+        ImpactedNetwork_SourceThreatLevel: {type: string}
+        ImpactedNetwork_WatchLevel: {type: string}
+        ImpactedNetwork_WatchLevelName: {type: string}
+        ImpactedPort: {type: string}
+        ImpactedZone: {type: string}
+        ImpactedZoneName: {type: string}
+        ItemsPacketsIn: {type: string}
+        ItemsPacketsOut: {type: string}
+        LogDate: {type: string}
+        LogMessage: {type: string}
+        LogSourceHost: {type: string}
+        LogSourceHostID: {type: string}
+        LogSourceHostName: {type: string}
+        LogSourceID: {type: string}
+        LogSourceName: {type: string}
+        LogSourceType: {type: string}
+        LogSourceTypeName: {type: string}
+        Login: {type: string}
+        MPERuleID: {type: string}
+        MPERuleName: {type: string}
+        MessageID: {type: string}
+        MessageType: {type: string}
+        NormalDate: {type: string}
+        NormalDateMax: {type: string}
+        Object: {type: string}
+        ObjectName: {type: string}
+        OriginEntityID: {type: string}
+        OriginEntityName: {type: string}
+        OriginHostID: {type: string}
+        OriginHostName: {type: string}
+        OriginIP: {type: string}
+        OriginInterface: {type: string}
+        OriginLocationID: {type: string}
+        OriginLocation_CityName: {type: string}
+        OriginLocation_CountryName: {type: string}
+        OriginLocation_FullName: {type: string}
+        OriginLocation_FullNameRegion: {type: string}
+        OriginLocation_HasCity: {type: string}
+        OriginLocation_HasCountry: {type: string}
+        OriginLocation_HasLatLong: {type: string}
+        OriginLocation_HasParentLocation: {type: string}
+        OriginLocation_HasRegion: {type: string}
+        OriginLocation_IsValid: {type: string}
+        OriginLocation_Latitude: {type: string}
+        OriginLocation_LocationID: {type: string}
+        OriginLocation_LocationKey: {type: string}
+        OriginLocation_Longitude: {type: string}
+        OriginLocation_ParentLocationID: {type: string}
+        OriginLocation_RegionName: {type: string}
+        OriginLocation_Type: {type: string}
+        OriginLogin: {type: string}
+        OriginMAC: {type: string}
+        OriginNATIP: {type: string}
+        OriginNATPort: {type: string}
+        OriginName: {type: string}
+        OriginNetworkID: {type: string}
+        OriginNetwork_BeginIPRange: {type: string}
+        OriginNetwork_DestinationRiskLevel: {type: string}
+        OriginNetwork_DestinationRiskLevelName: {type: string}
+        OriginNetwork_DisplayValue: {type: string}
+        OriginNetwork_EndIPRange: {type: string}
+        OriginNetwork_EntityID: {type: string}
+        OriginNetwork_HasLocationID: {type: string}
+        OriginNetwork_HasLocationKey: {type: string}
+        OriginNetwork_HostZone: {type: string}
+        OriginNetwork_HostZoneName: {type: string}
+        OriginNetwork_LocationID: {type: string}
+        OriginNetwork_LocationKey: {type: string}
+        OriginNetwork_NetworkID: {type: string}
+        OriginNetwork_SourceThreatLevel: {type: string}
+        OriginNetwork_WatchLevel: {type: string}
+        OriginNetwork_WatchLevelName: {type: string}
+        OriginPort: {type: string}
+        OriginZone: {type: string}
+        OriginZoneName: {type: string}
+        Priority: {type: string}
+        Process: {type: string}
+        ProcessID: {type: string}
+        ProtocolID: {type: string}
+        ProtocolName: {type: string}
+        Quantity: {type: string}
+        Rate: {type: string}
+        Recipient: {type: string}
+        Sender: {type: string}
+        SequenceNumber: {type: string}
+        ServiceID: {type: string}
+        ServiceName: {type: string}
+        Session: {type: string}
+        Severity: {type: string}
+        Size: {type: string}
+        Subject: {type: string}
+        URL: {type: string}
+        VendorMsgID: {type: string}
+        Version: {type: string}
+      type: object
+    tmp2:
+      properties:
+        AlarmDate: {type: string}
+        AlarmID: {type: string}
+        AlarmRuleID: {type: string}
+        AlarmRuleName: {type: string}
+        AlarmStatus: {type: string}
+        DateInserted: {type: string}
+        DateUpdated: {type: string}
+        EntityID: {type: string}
+        EntityName: {type: string}
+        EventCount: {type: string}
+        EventDateFirst: {type: string}
+        EventDateLast: {type: string}
+        LastUpdatedID: {type: string}
+        LastUpdatedName: {type: string}
+        RBPAvg: {type: string}
+        RBPMax: {type: string}
+      type: object
+    tmp3:
+      properties:
+        AlarmDate: {type: string}
+        AlarmID: {type: string}
+        AlarmRuleID: {type: string}
+        AlarmRuleName: {type: string}
+        AlarmStatus: {type: string}
+        DateInserted: {type: string}
+        DateUpdated: {type: string}
+        EntityID: {type: string}
+        EntityName: {type: string}
+        EventCount: {type: string}
+        EventDateFirst: {type: string}
+        EventDateLast: {type: string}
+        LastUpdatedID: {type: string}
+        LastUpdatedName: {type: string}
+        RBPAvg: {type: string}
+        RBPMax: {type: string}
+      type: object
+    tmp4:
+      properties:
+        DataID: {type: string}
+        Errors: {type: string}
+        Key: {type: string}
+        Succeeded: {type: string}
+        Warnings: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Logrhythm Logrhythm
+  title: Logrhythm Logrhythm
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAI9UlEQVR4nO2df4xUVxXHv/fNzC64s2DBasWGFNlSist2XreJTZSQNsY0drE1sdbEWlpNqX80aeANhpqY6fxhZdmZJbQxitVa4J+qJLSENNUaq0000br7HptNiwv9ARW1tVoKw5b9Me/6xy4wwMK+d985973h3c9/O7n3nLN3vu/e9+ade66A4eJs3L8K9cknIazrpj95Hvm5a1Fe/l5sMT0yciXGT+4EcBsAQOAwrMwD2NL1YmwxzYCIO4DEUXTvgcSuQG0Xt83Bw8vGmCMCtsscRrzxQG0FHkLF/hFzRAHCMEwhpUDR85X6Vm2+cXRcqdRvWaEFD4oJ4mgCY4QFAEXvCUj5UCQb1LPXr2QGf/EmI9kQ2I2KfRdRRCFdpx1n8BlA3E1ii0pcJWmh5tUJIgIgXkK1cCuNreBYuh0mik2vLiQTFQAcOXmKxA6ZqABA3gLHW0JnLxjpFtbEGP3Tneo9EVX/GZFv0Nu8NOkVljM4xGa79OYcpX5S8t2arHePstmegfQKC2Ilm+nasQ+V+qk+lQbBwiI22zO6SyOcM0OSKQ3ndblKp7A2eO+z+9j4Wju7j7AcH/tAl6t0CsvCfHYf/qmfh2pfdCtMkZzFsrR93+kUlg4kbg/Z/ktMkcSCERYXMvTYXlb3fUZYXAj8JlR7KV5giiQW0iksiVF2H+25b4Vq319YzxRJLKRTWO0F/pv3cuf/2H2EJZ9bqMtVOoVVFtGyBpoVjWJPp7AAQPhvstnOt6nNiJ8tZIkjOYvv8/9210B6hVXp/jSb7fKy40r9viYIsxrOY2v3AjbbM5BeYQFAFvTpJFGzSTmyUbPZArnNWUi3sHrttwDxEpk91SXwAju5VhI7ACCFh96V+8nsBSTdwgKAauFWSLEnsp1823zlJfB8yp3jJOIS4g/oL9gEEYV3HYfTRLJtpFU5AzSJmymsOfPQd/0J4mgCY4R1Po67EcCWQG1zmQXY3MX/tOV4bYCsBWxdRtV+lDOcIBhhXQpn/1fhT/4UlnXF9Cd/QyZ7L7asfC22mDYNd2BiYheAm6c/OQ5LrENf4ZexxWQwGAwGg8FgMBgMBoPBYDAYDAaDwWBoRpLzrtDx1gByC4DlgDgKIR9HxQ72MpiJK5Z/pXO8Pv6kkOJmAKcgsHvhooUPHP7jDpo6WCqUhltQm9wOyLsBzIXAKwDWoWJ7scU0A/EKa8PgyxBiVaC2nKkpDbR39KyRwN4gbZ1vdGfK5TJfhZhznAVMn7HE15PwQjoeYTnu/QCeCt3P909ga/c8+oCmyHf0KOU+1Q7tS14+Vr6QQVnoEf0M6M8gnRqo8KICAMtq56h4135tz2ZVUQFTgiyVSvRjGeV/rXl1ON52wmhCoXfGohQF0dLYtvT2Xwgh7qOwRbo0Uo2VxHPot+8ksRUCfcJy3IMAOkhtRhTX/Bvu+Gj9ZJ00A5RkWaSelVtbF+GxFf8itTkLOpdCWlEBwAb32SjdqUUFqN+nnYGjuO3Y2D/Jbc6CHmGxVAIGIHCHatf80h6PMJJzWL26xLejWRXH49v5PQPNv/3LcXco9RO4gTiSMwwcHVA7aoTrAgQAyGv4bF8Iv7Ac911mD/eG7cDyBNcMlI5+RJcrHQN8pQYfoejb9coxbh+f6LqnjdtHaGrv0myoDUAqr1zLstgrGp8c/SBkcVtvM1MojWQ0+ACQUmHpof7lcO3lGp444sEIiwvfCvdk6PvaZhMdGGExIQV+G6qDsMK1TzjpFJbvBzsGNwL5tpDFbSuFh5lCiQV+YfmIL3fpIlxlLWXLkDjNO0N7wv3MIgTjb1infeQ+ye5jGn5hbbXn8joIXzjt0KEn+A8ITyKVzn/rctX8S6H6sbR8g2wp/na3rNBCHMlZdNS2b0CPsPIFpicef0S1Z+3QPrZloTayT+3kVs5T5/ttrT/Y6hHWVCaj2uGQl6LafV2U7rlsjvwwzMhpMxwp2BYu48PGqzbteyqCL+D9A3uGIUFW+HVONkdzimk+R/dmQOAw+my6Ar4B0XuPRXU1El7Vtdf3FQTkn6LaaRFzr37vwB6aZLpyZ42kArPAq6jY10QPSMV1HDjucwBCvvKYhmm3zrwVdy3wxz/8r0rfRG6maMXVeMzWesB4I/Fu/3IGTgFWsLLTurZ/Xbvmx1LK7wRqLLIragef5a9H+j33UxjDP4I1Fk+jWrifN6AAUcQdwBmK3lOQsmFAxF+Rs27TUpX4IuQ7ejYB+OHpv334xzKZ7NoTf98baN8hCxuHVqNe3wmBxWc+E8JBpdAfW0wGg8FgMBgMBoPBYDAYDAaDwWAwGAyGZiQ57wq/634GvuiFrN8EiIOwxOPos38da0zbRlpxZPQngPw8pKjBkrtRsX8Qa0xNQszZDe4OBCnq4fs+tnbr2dD5yNByjNeDZSxoyrhoRuIZmOLQFyDrL4bvKN9G9cbFs7dTRDX3yQjsAvQPiONOImpxCuovUrWKcyNGXOegNzV5akaIvqRRFigret9HVFEBzEXTmg99V9l6dz8sdJHajDpLlIZbUJug3bxqZi4AOmcsalEBQNHdGak/tagAM3NN09zFbSW+qdzX8X5PGMm5SJn6Wav5t9grn74gb6ENpIGiF9tRI0lBR3Hb//A6kOt47RtU0DFjfUyDj3AUB95h97FtJNi2tsuU5l8KVZDWx9l9HBn9GbuPBJNOYWmhfmfcEcSJERYXPvhqXTUBRlhcWNbv4g4hTtIpLA3FbSFy32b3kWB0FLedZPcRlnkLopcImg2N9T6TiI7itjlmD38O3aO8JHGVnC83mn8prNqfU+ypVic0CK2tNJX9mhg9wmKrBizfVu5atflOJdN8TG4S0SOsB8UEy71W5GzSzE00gTRg0mYA6FwKqe+1KL7AatcAgAPRg5kmiyVktpqc1Be3RdW+HlIORraTyyxFr/1W9IAuD+KZtjcMvgwhVin15VpqisNXQU6o3RuZ5e8C4h2Q9QN1WFawWVPXl1d0n4bE2kBts+JG9BZc5oiakuRcacXBvZCi4ZRR+QZE7ouorHw9vpi8EqR89GxIGEUG98W+kbYJ+D9gClf9F/9cIgAAAABJRU5ErkJggg==
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: LogRhythm Alarms API Get Alarm by ID
+      parameters:
+      - description: Alarm ID of alarm to ingest
+        example: ''
+        in: query
+        name: Alarm ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Logrhythm Get Alarm by ID
+  tmp1:
+    post:
+      description: LogRhythm Alarms API Get Alarm Events
+      parameters:
+      - description: Alarm ID of alarm to get events from.
+        example: ''
+        in: query
+        name: Alarm ID
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: Logrhythm Get Alarm Events
+  tmp2:
+    post:
+      description: LogRhythm Alarms API Ingest Alarms with state tracking
+      parameters:
+      - description: Only alarms created after this date will be returned.  If no
+          value is provided, a look-back time of 14 days will be used. If you want
+          to use a relative time, see the README for details.
+        example: '2020-01-10T00:00:00Z'
+        in: query
+        name: Start Time
+        required: false
+        schema: {type: string}
+      - description: 'True for ingest all user''s alarms. Default: True.'
+        example: ''
+        in: query
+        name: All Users
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: Logrhythm Ingest Alarms
+  tmp3:
+    post:
+      description: LogRhythm Alarm API Ingest Alarm with state tracking
+      parameters:
+      - description: 'How many days in the past to ingest. Default: 14. (For first
+          time, all other task runs will use state tracking)'
+        example: ''
+        in: body
+        name: days
+        required: false
+        schema: {type: string}
+      - description: 'True for ingest all user''s alarms. Default: True.'
+        example: ''
+        in: query
+        name: All Users
+        required: false
+        schema: {type: boolean}
+      - description: The Device status to search by
+        example: ''
+        in: query
+        name: Status
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: Logrhythm Ingest Alarm by Status
+  tmp4:
+    post:
+      description: LogRhythm Alarms API update an Alarm status.
+      parameters:
+      - description: Alarm ID of alarm to ingest
+        example: ''
+        in: body
+        name: Alarm ID
+        required: true
+        schema: {type: string}
+      - description: New status for device (Opened, New, etc.)
+        example: ''
+        in: query
+        name: Status
+        required: true
+        schema: {type: string}
+      - description: Comment for Alarm
+        example: ''
+        in: query
+        name: Comment
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: Logrhythm Update Alarm Status
+tags:
+- {name: SIEM & Log Management}

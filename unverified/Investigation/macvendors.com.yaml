@@ -1,0 +1,34 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        vendor: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Nivel Technologies MacVendors.com
+  title: Nivel Technologies MacVendors.com
+  version: 1.0.0
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAF2klEQVR4nO3abYhUVRgH8P8zszvIqixpRoI5a2QfipCowMzSWUGohHBnJSMkMYWSAisToRctsijtRRCDoPqQlMXuKJoRku5uKQgWVB+iSHLHF4qwFySxZnfu04e5V889e+6dO7Oz6eb/B8vce85znnPunbPnvuwCREREREREREREREREREREREREREREREREREREREREREREREREREREREREREQXA4mrLPTPWQBJ7zbLFHoQKW91/qq+QyM7NBrNhkys7mLuZYGsSdJYS2UvP70v3fhh0WgXmljbf8x5mYzErmIuHdn9Nbeh/7dUsFEotmvUpCqrt0Ohr0Ql6e7PPToSg6PRSwCg0J97EiLWxNGVHdmeN6MaFortapfVunKpqpnjVhE5FFMPAKdFpNWKaQZQMorSIuIl7H8VgNcjqieLyC/WOO4UkU+tHIsBfAAAIrWv9iMlGPOFGlNlYhmTRAdKZ/LXHBiXpPHHxdmXlZD5/VwyKS9cOLVvZ9LOHROnSUTKMfWuiTVkgic5mVa7gojkHeXXi8h3qjoIIG3nVtU0gMFa+v2vXOiJlVI9fzkEgKSTCgAWZA/8Ye57/5S7hjmet2oJVtWtxu5fNbR7wtidG0wqYMgXcdj/jLrUb0na56UmteNYe7l6WDRV/T7Ylkwm3XW8PVdHmgH/c5mRty9Bu4eD9iIyPmaMgVl+0aagTkRc/eT8n7v9mKhbgoeM7Rajn9Aqqg5W/Qq/eKMjdJ0jz8oq+V+rch5Me4z6+fb4zH2jzamYfAogvFrVQ6HLQ/uet7CONEscZXcMs33dRKQ3+LHrVHVFRJuzrnJV/TOivOQoXu0oWx85ULhvBQA85oj7NSLFXXH5jfbvxlS/A+BbI/aK0MQaVK35pWdnW+9Bc79ckkdqzSEiHxqDGq+qu4w65z2Cqi51tffrXCfbmaa2kQJwX65bYuJbgcpxBPzyZsc4VzniIpntrXZPWXFlAJPsuKAPVf28Wl8AlhrNLlfVMX75fBF5UERm+PlyAK5rMlumFRMTdDDSThvbT8fEDfkNEhFxTaqYLynxja2Z278UTDDqzrr6UdUZxnbVSSwim6uNIaLqSivuRVXdYBQFC0jUfejtfru9iD4nofMtIn/7h7TXOrQlIrIttGJJSqZHJI1UODEvNBnTzbqz1hy+F+wCEdngCrTZ13e/rO7LvCufZSKSTcrJ9Y6hRqerhwAAfhtGH9vtAn+i2+foPVXtSpXVe2MYnQHlyo1cYFFbb0c9aUTkmaSxqroxQVjcQ8m5pzwNPyHavrb233bELI5qbL7zsi4/43D+AaERfjZ3VPXaiLhsRHmSW4LQu0FVvVdV14tIynH5zqcWtfWGbvS6j8yOfWwvFNs1eO/10bGZE8w6VW9BggFGspb6Qkzo6iDe5fx4KjesxgI0y2+3BUDGD9vkeqrx4260xhd6UAFwVsL3h5ErnV/8kqo+h8olqQfAiZhjHMJIvzI4fr+qVVXPqOqrft8/WOMWK0e3qpaCcYpIyq8b8lQYxT/udap6VFXHqmqTqr4fdDPkciHNmbHd/XO+cSWz37Y3aUtoac239e5B49zfgByToipEZCCqzvd8gvzLqodghrG9FsCz/vZmETmSoH019/ifLQAej4mbYmx3AGhuQN8A0IbKL8oAgPv8snECALtO3tQyONh6BgA86Fed2Z6bzZauP9/YPE9PdU7rifwiL2aq2gRgK4CxItKICe3qYxKA5QAOi8hnI5B/LYATIrKtStxMADcAOCkinzSg36kAHkDlLxP7ROQLwLoB7SrOu7ozu++nYL+7mDsgkNuqJed/N5AtdCk0J1VX/9w1SSaVwls7EgOj0a3qSrP9aO54JiVT7HL19Mv8tJ5bRmZYNNoluoQ14l9k6NKS6CViR3a/cCJRLWp6O92R3S9jpmbGlDwdrB5NRERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERJ/QvZSg52nFI14QAAAABJRU5ErkJggg==
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Get the vendor from a MAC address using MacVendors.com
+      parameters:
+      - description: MAC Address to pass to MacVendors.com
+        example: ''
+        in: query
+        name: MAC Address
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: MacVendors.com Get MAC Vendor
+tags:
+- {name: Investigation}

@@ -1,0 +1,601 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        batch_id: {type: string}
+        class: {type: string}
+        confidence: {type: string}
+        detected: {type: string}
+        domain: {type: string}
+        extended_threattype: {type: string}
+        host: {type: string}
+        id: {type: string}
+        imported: {type: string}
+        ip: {type: string}
+        message: {type: string}
+        origin: {type: string}
+        profile: {type: string}
+        property: {type: string}
+        received: {type: string}
+        target: {type: string}
+        threat_level: {type: string}
+        tld: {type: string}
+        tlp: {type: string}
+        type: {type: string}
+        url: {type: string}
+      type: object
+    tmp1:
+      properties:
+        alexa_details_adult_content: {type: string}
+        alexa_details_description: {type: string}
+        alexa_details_links_in_count: {type: string}
+        alexa_details_owned_domains: {type: string}
+        alexa_details_rank: {type: string}
+        alexa_match: {type: string}
+        atp_record_count: {type: string}
+        atp_threat: {type: string}
+        dns_AAAA: {type: string}
+        dns_A_ip: {type: string}
+        dns_A_reverse: {type: string}
+        dns_A_ttl: {type: string}
+        dns_MX: {type: string}
+        dns_NS: {type: string}
+        dns_SOA: {type: string}
+        dns_TXT: {type: string}
+        dns_rcode: {type: string}
+        gcs_items_displayURL: {type: string}
+        gcs_items_link: {type: string}
+        gcs_items_snippet: {type: string}
+        gcs_items_title: {type: string}
+        gsb_status: {type: string}
+        isight_match: {type: string}
+        malware_analysis_info: {type: string}
+        malware_analysis_reason: {type: string}
+        pdns_duration: {type: string}
+        pdns_items_Hostname: {type: string}
+        pdns_items_IP: {type: string}
+        pdns_items_Last_Seen: {type: string}
+        pdns_items_Record_Type: {type: string}
+        pdns_status: {type: string}
+        pdns_total_results: {type: string}
+        whois_response_domain_name: {type: string}
+        whois_response_emails: {type: string}
+        whois_response_name_servers: {type: string}
+        whois_response_parsed_whois_contacts_admin_city: {type: string}
+        whois_response_parsed_whois_contacts_admin_country: {type: string}
+        whois_response_parsed_whois_contacts_admin_email: {type: string}
+        whois_response_parsed_whois_contacts_admin_fax: {type: string}
+        whois_response_parsed_whois_contacts_admin_name: {type: string}
+        whois_response_parsed_whois_contacts_admin_org: {type: string}
+        whois_response_parsed_whois_contacts_admin_phone: {type: string}
+        whois_response_parsed_whois_contacts_admin_postal: {type: string}
+        whois_response_parsed_whois_contacts_admin_state: {type: string}
+        whois_response_parsed_whois_contacts_admin_street: {type: string}
+        whois_response_parsed_whois_contacts_billing_city: {type: string}
+        whois_response_parsed_whois_contacts_billing_country: {type: string}
+        whois_response_parsed_whois_contacts_billing_email: {type: string}
+        whois_response_parsed_whois_contacts_billing_fax: {type: string}
+        whois_response_parsed_whois_contacts_billing_name: {type: string}
+        whois_response_parsed_whois_contacts_billing_org: {type: string}
+        whois_response_parsed_whois_contacts_billing_phone: {type: string}
+        whois_response_parsed_whois_contacts_billing_postal: {type: string}
+        whois_response_parsed_whois_contacts_billing_state: {type: string}
+        whois_response_parsed_whois_contacts_billing_street: {type: string}
+        whois_response_parsed_whois_contacts_registrant_city: {type: string}
+        whois_response_parsed_whois_contacts_registrant_country: {type: string}
+        whois_response_parsed_whois_contacts_registrant_email: {type: string}
+        whois_response_parsed_whois_contacts_registrant_fax: {type: string}
+        whois_response_parsed_whois_contacts_registrant_name: {type: string}
+        whois_response_parsed_whois_contacts_registrant_org: {type: string}
+        whois_response_parsed_whois_contacts_registrant_phone: {type: string}
+        whois_response_parsed_whois_contacts_registrant_postal: {type: string}
+        whois_response_parsed_whois_contacts_registrant_state: {type: string}
+        whois_response_parsed_whois_contacts_registrant_street: {type: string}
+        whois_response_parsed_whois_contacts_tech_city: {type: string}
+        whois_response_parsed_whois_contacts_tech_country: {type: string}
+        whois_response_parsed_whois_contacts_tech_email: {type: string}
+        whois_response_parsed_whois_contacts_tech_fax: {type: string}
+        whois_response_parsed_whois_contacts_tech_name: {type: string}
+        whois_response_parsed_whois_contacts_tech_org: {type: string}
+        whois_response_parsed_whois_contacts_tech_phone: {type: string}
+        whois_response_parsed_whois_contacts_tech_postal: {type: string}
+        whois_response_parsed_whois_contacts_tech_state: {type: string}
+        whois_response_parsed_whois_contacts_tech_street: {type: string}
+        whois_response_parsed_whois_created_date: {type: string}
+        whois_response_parsed_whois_domain: {type: string}
+        whois_response_parsed_whois_expired_date: {type: string}
+        whois_response_parsed_whois_name_servers: {type: string}
+        whois_response_parsed_whois_other_properties_dnssec: {type: string}
+        whois_response_parsed_whois_other_properties_https: {type: string}
+        whois_response_parsed_whois_other_properties_registry_domain_id: {type: string}
+        whois_response_parsed_whois_registrar_abuse_contact_email: {type: string}
+        whois_response_parsed_whois_registrar_abuse_contact_phone: {type: string}
+        whois_response_parsed_whois_registrar_iana_id: {type: string}
+        whois_response_parsed_whois_registrar_name: {type: string}
+        whois_response_parsed_whois_registrar_url: {type: string}
+        whois_response_parsed_whois_registrar_whois_server: {type: string}
+        whois_response_parsed_whois_statuses: {type: string}
+        whois_response_parsed_whois_updated_date: {type: string}
+        whois_response_record_source: {type: string}
+        whois_response_registrant: {type: string}
+        whois_response_registration_created: {type: string}
+        whois_response_registration_expires: {type: string}
+        whois_response_registration_registrar: {type: string}
+        whois_response_registration_statuses: {type: string}
+        whois_response_registration_updated: {type: string}
+        whois_response_whois_date: {type: string}
+        whois_response_whois_record: {type: string}
+      type: object
+    tmp2:
+      properties:
+        atp_record_count: {type: string}
+        atp_threat: {type: string}
+        gcs_items_displayURL: {type: string}
+        gcs_items_link: {type: string}
+        gcs_items_snippet: {type: string}
+        gcs_items_title: {type: string}
+        geo_info: {type: string}
+        geo_reason: {type: string}
+        isight_match: {type: string}
+        malware_analysis_details_as_owner: {type: string}
+        malware_analysis_details_asn: {type: string}
+        malware_analysis_details_country: {type: string}
+        malware_analysis_details_detected_communicating_samples_date: {type: string}
+        malware_analysis_details_detected_communicating_samples_positives: {type: string}
+        malware_analysis_details_detected_communicating_samples_sha256: {type: string}
+        malware_analysis_details_detected_communicating_samples_total: {type: string}
+        malware_analysis_details_detected_downloaded_samples: {type: string}
+        malware_analysis_details_detected_referrer_samples_positives: {type: string}
+        malware_analysis_details_detected_referrer_samples_sha256: {type: string}
+        malware_analysis_details_detected_referrer_samples_total: {type: string}
+        malware_analysis_details_detected_urls_positives: {type: string}
+        malware_analysis_details_detected_urls_scan_date: {type: string}
+        malware_analysis_details_detected_urls_total: {type: string}
+        malware_analysis_details_detected_urls_url: {type: string}
+        malware_analysis_details_resolutions_hostname: {type: string}
+        malware_analysis_details_resolutions_last_resolved: {type: string}
+        malware_analysis_details_response_code: {type: string}
+        malware_analysis_details_undetected_communicating_samples_date: {type: string}
+        malware_analysis_details_undetected_communicating_samples_positives: {type: string}
+        malware_analysis_details_undetected_communicating_samples_sha256: {type: string}
+        malware_analysis_details_undetected_communicating_samples_total: {type: string}
+        malware_analysis_details_undetected_downloaded_samples_date: {type: string}
+        malware_analysis_details_undetected_downloaded_samples_positives: {type: string}
+        malware_analysis_details_undetected_downloaded_samples_sha256: {type: string}
+        malware_analysis_details_undetected_downloaded_samples_total: {type: string}
+        malware_analysis_details_undetected_referrer_samples_date: {type: string}
+        malware_analysis_details_undetected_referrer_samples_positives: {type: string}
+        malware_analysis_details_undetected_referrer_samples_sha256: {type: string}
+        malware_analysis_details_undetected_referrer_samples_total: {type: string}
+        malware_analysis_details_undetected_urls: {type: string}
+        malware_analysis_details_verbose_msg: {type: string}
+        malware_analysis_match: {type: string}
+        pdns_duration: {type: string}
+        pdns_items_Hostname: {type: string}
+        pdns_items_IP: {type: string}
+        pdns_items_Last_Seen: {type: string}
+        pdns_items_Record_Type: {type: string}
+        pdns_status: {type: string}
+        pdns_total_results: {type: string}
+        ptr_ptr_record: {type: string}
+        ptr_reason: {type: string}
+        ptr_status: {type: string}
+        whois_response_domain_name: {type: string}
+        whois_response_emails: {type: string}
+        whois_response_parsed_whois_contacts_abuse_mailbox: {type: string}
+        whois_response_parsed_whois_contacts_address: {type: string}
+        whois_response_parsed_whois_contacts_changed_by: {type: string}
+        whois_response_parsed_whois_contacts_contact_keys_admin: {type: string}
+        whois_response_parsed_whois_contacts_contact_keys_tech: {type: string}
+        whois_response_parsed_whois_contacts_country: {type: string}
+        whois_response_parsed_whois_contacts_created_date: {type: string}
+        whois_response_parsed_whois_contacts_descr: {type: string}
+        whois_response_parsed_whois_contacts_email: {type: string}
+        whois_response_parsed_whois_contacts_fax: {type: string}
+        whois_response_parsed_whois_contacts_id: {type: string}
+        whois_response_parsed_whois_contacts_mnt_keys_by: {type: string}
+        whois_response_parsed_whois_contacts_name: {type: string}
+        whois_response_parsed_whois_contacts_notify_email: {type: string}
+        whois_response_parsed_whois_contacts_other_auth: {type: string}
+        whois_response_parsed_whois_contacts_phone: {type: string}
+        whois_response_parsed_whois_contacts_ref: {type: string}
+        whois_response_parsed_whois_contacts_remarks: {type: string}
+        whois_response_parsed_whois_contacts_source: {type: string}
+        whois_response_parsed_whois_contacts_type: {type: string}
+        whois_response_parsed_whois_contacts_updated_date: {type: string}
+        whois_response_parsed_whois_networks_asn: {type: string}
+        whois_response_parsed_whois_networks_changed_by: {type: string}
+        whois_response_parsed_whois_networks_contact_keys_admin: {type: string}
+        whois_response_parsed_whois_networks_contact_keys_tech: {type: string}
+        whois_response_parsed_whois_networks_country: {type: string}
+        whois_response_parsed_whois_networks_created_date: {type: string}
+        whois_response_parsed_whois_networks_customer: {type: string}
+        whois_response_parsed_whois_networks_descr: {type: string}
+        whois_response_parsed_whois_networks_id: {type: string}
+        whois_response_parsed_whois_networks_mnt_keys_by: {type: string}
+        whois_response_parsed_whois_networks_mnt_keys_irt: {type: string}
+        whois_response_parsed_whois_networks_mnt_keys_routes: {type: string}
+        whois_response_parsed_whois_networks_name: {type: string}
+        whois_response_parsed_whois_networks_notify_email: {type: string}
+        whois_response_parsed_whois_networks_org: {type: string}
+        whois_response_parsed_whois_networks_parent: {type: string}
+        whois_response_parsed_whois_networks_parent_id: {type: string}
+        whois_response_parsed_whois_networks_phone: {type: string}
+        whois_response_parsed_whois_networks_range_cidr: {type: string}
+        whois_response_parsed_whois_networks_range_count: {type: string}
+        whois_response_parsed_whois_networks_range_from: {type: string}
+        whois_response_parsed_whois_networks_range_to: {type: string}
+        whois_response_parsed_whois_networks_ref: {type: string}
+        whois_response_parsed_whois_networks_remarks: {type: string}
+        whois_response_parsed_whois_networks_source: {type: string}
+        whois_response_parsed_whois_networks_status: {type: string}
+        whois_response_parsed_whois_networks_updated_date: {type: string}
+        whois_response_parsed_whois_other_properties: {type: string}
+        whois_response_parsed_whois_referral_servers: {type: string}
+        whois_response_parsed_whois_routes: {type: string}
+        whois_response_record_source: {type: string}
+        whois_response_registrant: {type: string}
+        whois_response_source: {type: string}
+        whois_response_whois_date: {type: string}
+        whois_response_whois_record: {type: string}
+      type: object
+    tmp3:
+      properties:
+        atp_record_count: {type: string}
+        atp_threat: {type: string}
+        gcs_items_displayURL: {type: string}
+        gcs_items_link: {type: string}
+        gcs_items_snippet: {type: string}
+        gcs_items_title: {type: string}
+        gsb_status: {type: string}
+        isight_match: {type: string}
+        malware_analysis_details_filescan_id: {type: string}
+        malware_analysis_details_permalink: {type: string}
+        malware_analysis_details_positives: {type: string}
+        malware_analysis_details_resource: {type: string}
+        malware_analysis_details_response_code: {type: string}
+        malware_analysis_details_scan_date: {type: string}
+        malware_analysis_details_scan_id: {type: string}
+        malware_analysis_details_scans_ADMINUSLabs_detected: {type: string}
+        malware_analysis_details_scans_ADMINUSLabs_result: {type: string}
+        malware_analysis_details_scans_AegisLab_WebGuard_detected: {type: string}
+        malware_analysis_details_scans_AegisLab_WebGuard_result: {type: string}
+        malware_analysis_details_scans_AlienVault_detected: {type: string}
+        malware_analysis_details_scans_AlienVault_result: {type: string}
+        malware_analysis_details_scans_Antiy-AVL_detected: {type: string}
+        malware_analysis_details_scans_Antiy-AVL_result: {type: string}
+        malware_analysis_details_scans_AutoShun_detected: {type: string}
+        malware_analysis_details_scans_AutoShun_result: {type: string}
+        malware_analysis_details_scans_Avira_detected: {type: string}
+        malware_analysis_details_scans_Avira_result: {type: string}
+        malware_analysis_details_scans_Baidu-International_detected: {type: string}
+        malware_analysis_details_scans_Baidu-International_result: {type: string}
+        malware_analysis_details_scans_BitDefender_detected: {type: string}
+        malware_analysis_details_scans_BitDefender_result: {type: string}
+        malware_analysis_details_scans_Blueliv_detected: {type: string}
+        malware_analysis_details_scans_Blueliv_result: {type: string}
+        malware_analysis_details_scans_C-SIRT_detected: {type: string}
+        malware_analysis_details_scans_C-SIRT_result: {type: string}
+        malware_analysis_details_scans_CLEAN_MX_detected: {type: string}
+        malware_analysis_details_scans_CLEAN_MX_result: {type: string}
+        malware_analysis_details_scans_Certly_detected: {type: string}
+        malware_analysis_details_scans_Certly_result: {type: string}
+        malware_analysis_details_scans_Comodo_Site_Inspector_detected: {type: string}
+        malware_analysis_details_scans_Comodo_Site_Inspector_result: {type: string}
+        malware_analysis_details_scans_CyRadar_detected: {type: string}
+        malware_analysis_details_scans_CyRadar_result: {type: string}
+        malware_analysis_details_scans_CyberCrime_detected: {type: string}
+        malware_analysis_details_scans_CyberCrime_result: {type: string}
+        malware_analysis_details_scans_DNS8_detected: {type: string}
+        malware_analysis_details_scans_DNS8_result: {type: string}
+        malware_analysis_details_scans_DrWeb_detected: {type: string}
+        malware_analysis_details_scans_DrWeb_result: {type: string}
+        malware_analysis_details_scans_ESET_detected: {type: string}
+        malware_analysis_details_scans_ESET_result: {type: string}
+        malware_analysis_details_scans_Emsisoft_detected: {type: string}
+        malware_analysis_details_scans_Emsisoft_result: {type: string}
+        malware_analysis_details_scans_Forcepoint_ThreatSeeker_detected: {type: string}
+        malware_analysis_details_scans_Forcepoint_ThreatSeeker_result: {type: string}
+        malware_analysis_details_scans_Fortinet_detected: {type: string}
+        malware_analysis_details_scans_Fortinet_result: {type: string}
+        malware_analysis_details_scans_FraudScore_detected: {type: string}
+        malware_analysis_details_scans_FraudScore_result: {type: string}
+        malware_analysis_details_scans_FraudSense_detected: {type: string}
+        malware_analysis_details_scans_FraudSense_result: {type: string}
+        malware_analysis_details_scans_G-Data_detected: {type: string}
+        malware_analysis_details_scans_G-Data_result: {type: string}
+        malware_analysis_details_scans_Google_Safebrowsing_detected: {type: string}
+        malware_analysis_details_scans_Google_Safebrowsing_result: {type: string}
+        malware_analysis_details_scans_K7AntiVirus_detected: {type: string}
+        malware_analysis_details_scans_K7AntiVirus_result: {type: string}
+        malware_analysis_details_scans_Kaspersky_detected: {type: string}
+        malware_analysis_details_scans_Kaspersky_result: {type: string}
+        malware_analysis_details_scans_Malc0de_Database_detail: {type: string}
+        malware_analysis_details_scans_Malc0de_Database_detected: {type: string}
+        malware_analysis_details_scans_Malc0de_Database_result: {type: string}
+        malware_analysis_details_scans_Malekal_detected: {type: string}
+        malware_analysis_details_scans_Malekal_result: {type: string}
+        malware_analysis_details_scans_MalwareDomainList_detail: {type: string}
+        malware_analysis_details_scans_MalwareDomainList_detected: {type: string}
+        malware_analysis_details_scans_MalwareDomainList_result: {type: string}
+        malware_analysis_details_scans_MalwarePatrol_detected: {type: string}
+        malware_analysis_details_scans_MalwarePatrol_result: {type: string}
+        malware_analysis_details_scans_Malware_Domain_Blocklist_detected: {type: string}
+        malware_analysis_details_scans_Malware_Domain_Blocklist_result: {type: string}
+        malware_analysis_details_scans_Malwarebytes_hpHosts_detected: {type: string}
+        malware_analysis_details_scans_Malwarebytes_hpHosts_result: {type: string}
+        malware_analysis_details_scans_Malwared_detected: {type: string}
+        malware_analysis_details_scans_Malwared_result: {type: string}
+        malware_analysis_details_scans_Netcraft_detected: {type: string}
+        malware_analysis_details_scans_Netcraft_result: {type: string}
+        malware_analysis_details_scans_NotMining_detected: {type: string}
+        malware_analysis_details_scans_NotMining_result: {type: string}
+        malware_analysis_details_scans_Nucleon_detected: {type: string}
+        malware_analysis_details_scans_Nucleon_result: {type: string}
+        malware_analysis_details_scans_OpenPhish_detected: {type: string}
+        malware_analysis_details_scans_OpenPhish_result: {type: string}
+        malware_analysis_details_scans_Opera_detected: {type: string}
+        malware_analysis_details_scans_Opera_result: {type: string}
+        malware_analysis_details_scans_PhishLabs_detected: {type: string}
+        malware_analysis_details_scans_PhishLabs_result: {type: string}
+        malware_analysis_details_scans_Phishtank_detected: {type: string}
+        malware_analysis_details_scans_Phishtank_result: {type: string}
+        malware_analysis_details_scans_Quttera_detected: {type: string}
+        malware_analysis_details_scans_Quttera_result: {type: string}
+        malware_analysis_details_scans_Rising_detected: {type: string}
+        malware_analysis_details_scans_Rising_result: {type: string}
+        malware_analysis_details_scans_SCUMWAREorg_detected: {type: string}
+        malware_analysis_details_scans_SCUMWAREorg_result: {type: string}
+        malware_analysis_details_scans_SecureBrain_detected: {type: string}
+        malware_analysis_details_scans_SecureBrain_result: {type: string}
+        malware_analysis_details_scans_Sophos_detected: {type: string}
+        malware_analysis_details_scans_Sophos_result: {type: string}
+        malware_analysis_details_scans_Spam404_detected: {type: string}
+        malware_analysis_details_scans_Spam404_result: {type: string}
+        malware_analysis_details_scans_StopBadware_detected: {type: string}
+        malware_analysis_details_scans_StopBadware_result: {type: string}
+        malware_analysis_details_scans_Sucuri_SiteCheck_detected: {type: string}
+        malware_analysis_details_scans_Sucuri_SiteCheck_result: {type: string}
+        malware_analysis_details_scans_Tencent_detected: {type: string}
+        malware_analysis_details_scans_Tencent_result: {type: string}
+        malware_analysis_details_scans_ThreatHive_detected: {type: string}
+        malware_analysis_details_scans_ThreatHive_result: {type: string}
+        malware_analysis_details_scans_Trustwave_detected: {type: string}
+        malware_analysis_details_scans_Trustwave_result: {type: string}
+        malware_analysis_details_scans_URLQuery_detected: {type: string}
+        malware_analysis_details_scans_URLQuery_result: {type: string}
+        malware_analysis_details_scans_VX_Vault_detected: {type: string}
+        malware_analysis_details_scans_VX_Vault_result: {type: string}
+        malware_analysis_details_scans_Virusdie_External_Site_Scan_detected: {type: string}
+        malware_analysis_details_scans_Virusdie_External_Site_Scan_result: {type: string}
+        malware_analysis_details_scans_Web_Security_Guard_detected: {type: string}
+        malware_analysis_details_scans_Web_Security_Guard_result: {type: string}
+        malware_analysis_details_scans_Webutation_detected: {type: string}
+        malware_analysis_details_scans_Webutation_result: {type: string}
+        malware_analysis_details_scans_Yandex_Safebrowsing_detail: {type: string}
+        malware_analysis_details_scans_Yandex_Safebrowsing_detected: {type: string}
+        malware_analysis_details_scans_Yandex_Safebrowsing_result: {type: string}
+        malware_analysis_details_scans_ZCloudsec_detected: {type: string}
+        malware_analysis_details_scans_ZCloudsec_result: {type: string}
+        malware_analysis_details_scans_ZDB_Zeus_detected: {type: string}
+        malware_analysis_details_scans_ZDB_Zeus_result: {type: string}
+        malware_analysis_details_scans_ZeroCERT_detected: {type: string}
+        malware_analysis_details_scans_ZeroCERT_result: {type: string}
+        malware_analysis_details_scans_Zerofox_detected: {type: string}
+        malware_analysis_details_scans_Zerofox_result: {type: string}
+        malware_analysis_details_scans_ZeusTracker_detail: {type: string}
+        malware_analysis_details_scans_ZeusTracker_detected: {type: string}
+        malware_analysis_details_scans_ZeusTracker_result: {type: string}
+        malware_analysis_details_scans_desenmascarame_detected: {type: string}
+        malware_analysis_details_scans_desenmascarame_result: {type: string}
+        malware_analysis_details_scans_malwarescom_URL_checker_detected: {type: string}
+        malware_analysis_details_scans_malwarescom_URL_checker_result: {type: string}
+        malware_analysis_details_scans_securolytics_detected: {type: string}
+        malware_analysis_details_scans_securolytics_result: {type: string}
+        malware_analysis_details_scans_zvelo_detected: {type: string}
+        malware_analysis_details_scans_zvelo_result: {type: string}
+        malware_analysis_details_total: {type: string}
+        malware_analysis_details_url: {type: string}
+        malware_analysis_details_verbose_msg: {type: string}
+        malware_analysis_match: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Infoblox BloxOne Threat Defense
+  title: Infoblox BloxOne Threat Defense
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: BloxOne Threat Defense TIDE Query Single Threat Indicator
+      parameters:
+      - description: Only retrieve active threats
+        example: ''
+        in: query
+        name: Active Only
+        required: true
+        schema: {type: boolean}
+      - description: Number of results to return.
+        example: ''
+        in: body
+        name: Limit
+        required: true
+        schema: {type: string}
+      - description: Type of threat. Choose between ip, host, url
+        example: ip
+        in: query
+        name: Type
+        required: true
+        schema: {type: string}
+      - description: IP for search
+        example: 1.2.3.4
+        in: query
+        name: IP
+        required: false
+        schema: {type: string}
+      - description: Host for search
+        example: myhost.swimlane.com
+        in: query
+        name: Host
+        required: false
+        schema: {type: string}
+      - description: Url for search
+        example: https://swimlane.com
+        in: query
+        name: URL
+        required: false
+        schema: {type: string}
+      - description: Domain for search
+        example: swimlane.com
+        in: query
+        name: Domain
+        required: false
+        schema: {type: string}
+      - description: Top Level Domain for search
+        example: swimlane.com
+        in: query
+        name: Top Level Domain
+        required: false
+        schema: {type: string}
+      - description: Profile IDs for the organizations that submitted data. Multiple
+          profiles may be queried by specifying comma-separated values. For example,
+          'A,B,C' will search for profiles A, B, and C. If not specified, all profiles
+          visible to the caller are included
+        example: myprofile
+        in: query
+        name: Profile
+        required: false
+        schema: {type: string}
+      - description: Property(ies) to search for. Multiple properties may be queried
+          by specifying comma-separated values. For example, 'A,B,C' will search for
+          properties A, B, and C.
+        example: MyProperty
+        in: query
+        name: Property
+        required: false
+        schema: {type: string}
+      - description: Threat class(es) to search for. Multiple classes may be queried
+          by specifying comma-separated values. For example, 'A,B,C' will search for
+          classes A, B, and C.
+        example: MyClass
+        in: query
+        name: Class
+        required: false
+        schema: {type: string}
+      - description: Target(s) to search for
+        example: 1.23.2.1
+        in: query
+        name: Target
+        required: false
+        schema: {type: string}
+      - description: Find records that do not expire or expire after this date
+        example: '2017-07-15T20:06:57.174Z'
+        in: query
+        name: Expiration
+        required: false
+        schema: {type: string}
+      - description: Find threats from dynamically generated algorithms or not
+        example: ''
+        in: query
+        name: Dynamically Generated Algorithm
+        required: false
+        schema: {type: boolean}
+      - description: Find records that were detected after this date
+        example: '2017-07-15T20:06:57.174Z'
+        in: query
+        name: From Date
+        required: false
+        schema: {type: string}
+      - description: Find records that were detected before this date
+        example: '2017-07-15T20:06:57.174Z'
+        in: query
+        name: To Date
+        required: false
+        schema: {type: string}
+      - description: 'This specifies the date period of the form: [y years][q quarters][m
+          months][w weeks][d days][h hours][m minutes]. This may be prefixed with
+          ''previous'' to indicate that the period should refer to the previous full
+          period before now. Examples: ''1 day'' refers to the 24 hours before now.
+          ''previous 1 day'' refers to yesterday. ''4 hours'' = the last 4 hours.
+          ''previous 1 week'' means last week'
+        example: '2017-07-15T20:06:57.174Z'
+        in: query
+        name: Period
+        required: false
+        schema: {type: string}
+      - description: Text search to perform; performs search across indicator fields
+          (domain, host, ip, url)
+        example: swimlane.com
+        in: query
+        name: Text Search
+        required: false
+        schema: {type: string}
+      - description: Field(s) to return
+        example: id
+        in: query
+        name: Field
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: BloxOne Threat Defense TIDE Query Single Threat Indicator
+  tmp1:
+    post:
+      description: BloxOne Threat Defense Dossier Host Lookup
+      parameters:
+      - description: Host to query for
+        example: example.com
+        in: query
+        name: host
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: BloxOne Threat Defense Dossier Host Lookup
+  tmp2:
+    post:
+      description: BloxOne Threat Defense Dossier IP Lookup
+      parameters:
+      - description: ip to query for
+        example: 1.2.3.4
+        in: query
+        name: ip
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: BloxOne Threat Defense Dossier IP Lookup
+  tmp3:
+    post:
+      description: BloxOne Threat Defense Dossier URL Lookup
+      parameters:
+      - description: URL to query for
+        example: https://example.com/endpoint
+        in: query
+        name: URL
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: BloxOne Threat Defense Dossier URL Lookup
+tags:
+- {name: Investigation}

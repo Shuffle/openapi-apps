@@ -1,0 +1,540 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        success: {type: string}
+      type: object
+    tmp1:
+      properties:
+        success: {type: string}
+      type: object
+    tmp2:
+      properties:
+        contents: {type: string}
+      type: object
+    tmp3:
+      properties:
+        assignee: {type: string}
+        assignees: {type: string}
+        author_association: {type: string}
+        body: {type: string}
+        closed_at: {type: string}
+        closed_by: {type: string}
+        comments: {type: string}
+        comments_url: {type: string}
+        created_at: {type: string}
+        events_url: {type: string}
+        html_url: {type: string}
+        id: {type: string}
+        labels: {type: string}
+        labels_url: {type: string}
+        locked: {type: string}
+        milestone: {type: string}
+        node_id: {type: string}
+        number: {type: string}
+        repository_url: {type: string}
+        state: {type: string}
+        title: {type: string}
+        updated_at: {type: string}
+        url: {type: string}
+        user_avatar_url: {type: string}
+        user_events_url: {type: string}
+        user_followers_url: {type: string}
+        user_following_url: {type: string}
+        user_gists_url: {type: string}
+        user_gravatar_id: {type: string}
+        user_html_url: {type: string}
+        user_id: {type: string}
+        user_login: {type: string}
+        user_node_id: {type: string}
+        user_organizations_url: {type: string}
+        user_received_events_url: {type: string}
+        user_repos_url: {type: string}
+        user_site_admin: {type: string}
+        user_starred_url: {type: string}
+        user_subscriptions_url: {type: string}
+        user_type: {type: string}
+        user_url: {type: string}
+      type: object
+    tmp4:
+      properties:
+        _links_comments_href: {type: string}
+        _links_commits_href: {type: string}
+        _links_html_href: {type: string}
+        _links_issue_href: {type: string}
+        _links_review_comment_href: {type: string}
+        _links_review_comments_href: {type: string}
+        _links_self_href: {type: string}
+        _links_statuses_href: {type: string}
+        additions: {type: string}
+        assignee: {type: string}
+        assignees: {type: string}
+        author_association: {type: string}
+        base_label: {type: string}
+        base_ref: {type: string}
+        base_repo_archive_url: {type: string}
+        base_repo_archived: {type: string}
+        base_repo_assignees_url: {type: string}
+        base_repo_blobs_url: {type: string}
+        base_repo_branches_url: {type: string}
+        base_repo_clone_url: {type: string}
+        base_repo_collaborators_url: {type: string}
+        base_repo_comments_url: {type: string}
+        base_repo_commits_url: {type: string}
+        base_repo_compare_url: {type: string}
+        base_repo_contents_url: {type: string}
+        base_repo_contributors_url: {type: string}
+        base_repo_created_at: {type: string}
+        base_repo_default_branch: {type: string}
+        base_repo_deployments_url: {type: string}
+        base_repo_description: {type: string}
+        base_repo_downloads_url: {type: string}
+        base_repo_events_url: {type: string}
+        base_repo_fork: {type: string}
+        base_repo_forks: {type: string}
+        base_repo_forks_count: {type: string}
+        base_repo_forks_url: {type: string}
+        base_repo_full_name: {type: string}
+        base_repo_git_commits_url: {type: string}
+        base_repo_git_refs_url: {type: string}
+        base_repo_git_tags_url: {type: string}
+        base_repo_git_url: {type: string}
+        base_repo_has_downloads: {type: string}
+        base_repo_has_issues: {type: string}
+        base_repo_has_pages: {type: string}
+        base_repo_has_projects: {type: string}
+        base_repo_has_wiki: {type: string}
+        base_repo_homepage: {type: string}
+        base_repo_hooks_url: {type: string}
+        base_repo_html_url: {type: string}
+        base_repo_id: {type: string}
+        base_repo_issue_comment_url: {type: string}
+        base_repo_issue_events_url: {type: string}
+        base_repo_issues_url: {type: string}
+        base_repo_keys_url: {type: string}
+        base_repo_labels_url: {type: string}
+        base_repo_language: {type: string}
+        base_repo_languages_url: {type: string}
+        base_repo_license: {type: string}
+        base_repo_merges_url: {type: string}
+        base_repo_milestones_url: {type: string}
+        base_repo_mirror_url: {type: string}
+        base_repo_name: {type: string}
+        base_repo_node_id: {type: string}
+        base_repo_notifications_url: {type: string}
+        base_repo_open_issues: {type: string}
+        base_repo_open_issues_count: {type: string}
+        base_repo_owner_avatar_url: {type: string}
+        base_repo_owner_events_url: {type: string}
+        base_repo_owner_followers_url: {type: string}
+        base_repo_owner_following_url: {type: string}
+        base_repo_owner_gists_url: {type: string}
+        base_repo_owner_gravatar_id: {type: string}
+        base_repo_owner_html_url: {type: string}
+        base_repo_owner_id: {type: string}
+        base_repo_owner_login: {type: string}
+        base_repo_owner_node_id: {type: string}
+        base_repo_owner_organizations_url: {type: string}
+        base_repo_owner_received_events_url: {type: string}
+        base_repo_owner_repos_url: {type: string}
+        base_repo_owner_site_admin: {type: string}
+        base_repo_owner_starred_url: {type: string}
+        base_repo_owner_subscriptions_url: {type: string}
+        base_repo_owner_type: {type: string}
+        base_repo_owner_url: {type: string}
+        base_repo_private: {type: string}
+        base_repo_pulls_url: {type: string}
+        base_repo_pushed_at: {type: string}
+        base_repo_releases_url: {type: string}
+        base_repo_size: {type: string}
+        base_repo_ssh_url: {type: string}
+        base_repo_stargazers_count: {type: string}
+        base_repo_stargazers_url: {type: string}
+        base_repo_statuses_url: {type: string}
+        base_repo_subscribers_url: {type: string}
+        base_repo_subscription_url: {type: string}
+        base_repo_svn_url: {type: string}
+        base_repo_tags_url: {type: string}
+        base_repo_teams_url: {type: string}
+        base_repo_trees_url: {type: string}
+        base_repo_updated_at: {type: string}
+        base_repo_url: {type: string}
+        base_repo_watchers: {type: string}
+        base_repo_watchers_count: {type: string}
+        base_sha: {type: string}
+        base_user_avatar_url: {type: string}
+        base_user_events_url: {type: string}
+        base_user_followers_url: {type: string}
+        base_user_following_url: {type: string}
+        base_user_gists_url: {type: string}
+        base_user_gravatar_id: {type: string}
+        base_user_html_url: {type: string}
+        base_user_id: {type: string}
+        base_user_login: {type: string}
+        base_user_node_id: {type: string}
+        base_user_organizations_url: {type: string}
+        base_user_received_events_url: {type: string}
+        base_user_repos_url: {type: string}
+        base_user_site_admin: {type: string}
+        base_user_starred_url: {type: string}
+        base_user_subscriptions_url: {type: string}
+        base_user_type: {type: string}
+        base_user_url: {type: string}
+        body: {type: string}
+        changed_files: {type: string}
+        closed_at: {type: string}
+        comments: {type: string}
+        comments_url: {type: string}
+        commits: {type: string}
+        commits_url: {type: string}
+        created_at: {type: string}
+        deletions: {type: string}
+        diff_url: {type: string}
+        head_label: {type: string}
+        head_ref: {type: string}
+        head_repo_archive_url: {type: string}
+        head_repo_archived: {type: string}
+        head_repo_assignees_url: {type: string}
+        head_repo_blobs_url: {type: string}
+        head_repo_branches_url: {type: string}
+        head_repo_clone_url: {type: string}
+        head_repo_collaborators_url: {type: string}
+        head_repo_comments_url: {type: string}
+        head_repo_commits_url: {type: string}
+        head_repo_compare_url: {type: string}
+        head_repo_contents_url: {type: string}
+        head_repo_contributors_url: {type: string}
+        head_repo_created_at: {type: string}
+        head_repo_default_branch: {type: string}
+        head_repo_deployments_url: {type: string}
+        head_repo_description: {type: string}
+        head_repo_downloads_url: {type: string}
+        head_repo_events_url: {type: string}
+        head_repo_fork: {type: string}
+        head_repo_forks: {type: string}
+        head_repo_forks_count: {type: string}
+        head_repo_forks_url: {type: string}
+        head_repo_full_name: {type: string}
+        head_repo_git_commits_url: {type: string}
+        head_repo_git_refs_url: {type: string}
+        head_repo_git_tags_url: {type: string}
+        head_repo_git_url: {type: string}
+        head_repo_has_downloads: {type: string}
+        head_repo_has_issues: {type: string}
+        head_repo_has_pages: {type: string}
+        head_repo_has_projects: {type: string}
+        head_repo_has_wiki: {type: string}
+        head_repo_homepage: {type: string}
+        head_repo_hooks_url: {type: string}
+        head_repo_html_url: {type: string}
+        head_repo_id: {type: string}
+        head_repo_issue_comment_url: {type: string}
+        head_repo_issue_events_url: {type: string}
+        head_repo_issues_url: {type: string}
+        head_repo_keys_url: {type: string}
+        head_repo_labels_url: {type: string}
+        head_repo_language: {type: string}
+        head_repo_languages_url: {type: string}
+        head_repo_license: {type: string}
+        head_repo_merges_url: {type: string}
+        head_repo_milestones_url: {type: string}
+        head_repo_mirror_url: {type: string}
+        head_repo_name: {type: string}
+        head_repo_node_id: {type: string}
+        head_repo_notifications_url: {type: string}
+        head_repo_open_issues: {type: string}
+        head_repo_open_issues_count: {type: string}
+        head_repo_owner_avatar_url: {type: string}
+        head_repo_owner_events_url: {type: string}
+        head_repo_owner_followers_url: {type: string}
+        head_repo_owner_following_url: {type: string}
+        head_repo_owner_gists_url: {type: string}
+        head_repo_owner_gravatar_id: {type: string}
+        head_repo_owner_html_url: {type: string}
+        head_repo_owner_id: {type: string}
+        head_repo_owner_login: {type: string}
+        head_repo_owner_node_id: {type: string}
+        head_repo_owner_organizations_url: {type: string}
+        head_repo_owner_received_events_url: {type: string}
+        head_repo_owner_repos_url: {type: string}
+        head_repo_owner_site_admin: {type: string}
+        head_repo_owner_starred_url: {type: string}
+        head_repo_owner_subscriptions_url: {type: string}
+        head_repo_owner_type: {type: string}
+        head_repo_owner_url: {type: string}
+        head_repo_private: {type: string}
+        head_repo_pulls_url: {type: string}
+        head_repo_pushed_at: {type: string}
+        head_repo_releases_url: {type: string}
+        head_repo_size: {type: string}
+        head_repo_ssh_url: {type: string}
+        head_repo_stargazers_count: {type: string}
+        head_repo_stargazers_url: {type: string}
+        head_repo_statuses_url: {type: string}
+        head_repo_subscribers_url: {type: string}
+        head_repo_subscription_url: {type: string}
+        head_repo_svn_url: {type: string}
+        head_repo_tags_url: {type: string}
+        head_repo_teams_url: {type: string}
+        head_repo_trees_url: {type: string}
+        head_repo_updated_at: {type: string}
+        head_repo_url: {type: string}
+        head_repo_watchers: {type: string}
+        head_repo_watchers_count: {type: string}
+        head_sha: {type: string}
+        head_user_avatar_url: {type: string}
+        head_user_events_url: {type: string}
+        head_user_followers_url: {type: string}
+        head_user_following_url: {type: string}
+        head_user_gists_url: {type: string}
+        head_user_gravatar_id: {type: string}
+        head_user_html_url: {type: string}
+        head_user_id: {type: string}
+        head_user_login: {type: string}
+        head_user_node_id: {type: string}
+        head_user_organizations_url: {type: string}
+        head_user_received_events_url: {type: string}
+        head_user_repos_url: {type: string}
+        head_user_site_admin: {type: string}
+        head_user_starred_url: {type: string}
+        head_user_subscriptions_url: {type: string}
+        head_user_type: {type: string}
+        head_user_url: {type: string}
+        html_url: {type: string}
+        id: {type: string}
+        issue_url: {type: string}
+        labels: {type: string}
+        locked: {type: string}
+        maintainer_can_modify: {type: string}
+        merge_commit_sha: {type: string}
+        mergeable: {type: string}
+        mergeable_state: {type: string}
+        merged: {type: string}
+        merged_at: {type: string}
+        merged_by: {type: string}
+        milestone: {type: string}
+        node_id: {type: string}
+        number: {type: string}
+        patch_url: {type: string}
+        rebaseable: {type: string}
+        requested_reviewers: {type: string}
+        requested_teams: {type: string}
+        review_comment_url: {type: string}
+        review_comments: {type: string}
+        review_comments_url: {type: string}
+        state: {type: string}
+        statuses_url: {type: string}
+        title: {type: string}
+        updated_at: {type: string}
+        url: {type: string}
+        user_avatar_url: {type: string}
+        user_events_url: {type: string}
+        user_followers_url: {type: string}
+        user_following_url: {type: string}
+        user_gists_url: {type: string}
+        user_gravatar_id: {type: string}
+        user_html_url: {type: string}
+        user_id: {type: string}
+        user_login: {type: string}
+        user_node_id: {type: string}
+        user_organizations_url: {type: string}
+        user_received_events_url: {type: string}
+        user_repos_url: {type: string}
+        user_site_admin: {type: string}
+        user_starred_url: {type: string}
+        user_subscriptions_url: {type: string}
+        user_type: {type: string}
+        user_url: {type: string}
+      type: object
+  securitySchemes:
+    BasicAuth: {scheme: basic, type: http}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of GitHub GitHub
+  title: GitHub GitHub
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: GitHub Append To File
+      parameters:
+      - description: Repository username, will default to the asset username if not
+          specified.
+        example: ''
+        in: query
+        name: Repo User
+        required: false
+        schema: {type: string}
+      - description: Repository title
+        example: ''
+        in: query
+        name: Repo Tile
+        required: true
+        schema: {type: string}
+      - description: Repository branch
+        example: master
+        in: query
+        name: Branch
+        required: true
+        schema: {type: string}
+      - description: Name of file to append to.
+        example: ''
+        in: query
+        name: File Name
+        required: true
+        schema: {type: string}
+      - description: Commit Message
+        example: My commit message.
+        in: query
+        name: Commit Message
+        required: true
+        schema: {type: string}
+      - description: Data to append to the file
+        example: ''
+        in: query
+        name: Append Data
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Github Append To File
+  tmp1:
+    post:
+      description: GitHub Create Issue
+      parameters:
+      - description: Repository username, will default to the asset username if not
+          specified.
+        example: ''
+        in: query
+        name: Repo User
+        required: false
+        schema: {type: string}
+      - description: Repository title
+        example: ''
+        in: query
+        name: Repo Tile
+        required: true
+        schema: {type: string}
+      - description: Issue Title
+        example: ''
+        in: query
+        name: Issue Title
+        required: true
+        schema: {type: string}
+      - description: Issue body
+        example: ''
+        in: query
+        name: Issue Body
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp1'}
+          description: Successful request
+      summary: GitHub Create Issue
+  tmp2:
+    post:
+      description: GitHub Get File Contents
+      parameters:
+      - description: Repository username, will default to the asset username if not
+          specified.
+        example: ''
+        in: query
+        name: Repo User
+        required: false
+        schema: {type: string}
+      - description: Repository title
+        example: ''
+        in: query
+        name: Repo Tile
+        required: true
+        schema: {type: string}
+      - description: Repository branch
+        example: master
+        in: query
+        name: Branch
+        required: true
+        schema: {type: string}
+      - description: Name of file to append to.
+        example: ''
+        in: query
+        name: File Name
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp2'}
+          description: Successful request
+      summary: GitHub Get File Contents
+  tmp3:
+    post:
+      description: GitHub Get Issue Details
+      parameters:
+      - description: Repository username, will default to the asset username if not
+          specified.
+        example: ''
+        in: query
+        name: Repo User
+        required: false
+        schema: {type: string}
+      - description: Repository title
+        example: ''
+        in: query
+        name: Repo Tile
+        required: true
+        schema: {type: string}
+      - description: Issue Number
+        example: '13'
+        in: body
+        name: Issue Number
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp3'}
+          description: Successful request
+      summary: GitHub Get Issue Details
+  tmp4:
+    post:
+      description: GitHub Get Pull Request Details
+      parameters:
+      - description: Repository username, will default to the asset username if not
+          specified.
+        example: ''
+        in: query
+        name: Repo User
+        required: false
+        schema: {type: string}
+      - description: Repository title
+        example: ''
+        in: query
+        name: Repo Tile
+        required: true
+        schema: {type: string}
+      - description: Pull Request Number
+        example: '13'
+        in: body
+        name: Pull Request Number
+        required: true
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp4'}
+          description: Successful request
+      summary: GitHub Get Pull Request Details
+tags:
+- {name: DevOps & Application Security}

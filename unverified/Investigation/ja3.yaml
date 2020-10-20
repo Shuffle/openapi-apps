@@ -1,0 +1,46 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        destination_ip: {type: string}
+        destination_port: {type: string}
+        ja3: {type: string}
+        ja3_digest: {type: string}
+        source_ip: {type: string}
+        source_port: {type: string}
+        timestamp: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Salesforce JA3
+  title: Salesforce JA3
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Process raw PCAP to get JA3 fingerprints
+      parameters:
+      - description: Raw PCAP data
+        example: ''
+        in: query
+        name: Raw PCAP
+        required: true
+        schema: {type: string}
+      - description: Fingerprint SSL or TLS sessions on any port
+        example: ''
+        in: query
+        name: Any Port
+        required: false
+        schema: {type: boolean}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Salesforce JA3 Process PCAP
+tags:
+- {name: Investigation}

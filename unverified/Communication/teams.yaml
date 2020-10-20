@@ -1,0 +1,52 @@
+components:
+  schemas:
+    tmp0:
+      properties:
+        success: {type: string}
+      type: object
+  securitySchemes: {}
+info:
+  contact: {email: frikky@shuffler.io, name: '@frikkylikeme', url: 'https://twitter.com/frikkylikeme'}
+  description: Automated generation of Microsoft Teams
+  title: Microsoft Teams
+  version: 1.0.0
+  x-logo: data:image/png;base64,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
+openapi: 3.0.2
+paths:
+  tmp0:
+    post:
+      description: Post messages to a Microsoft Teams channel
+      parameters:
+      - description: The message to post
+        example: ''
+        in: query
+        name: Text
+        required: true
+        schema: {type: string}
+      - description: The message title
+        example: ''
+        in: query
+        name: Title
+        required: false
+        schema: {type: string}
+      - description: Text displayed on the button
+        example: ''
+        in: query
+        name: Link Button Text
+        required: false
+        schema: {type: string}
+      - description: Link to follow when the button is clicked
+        example: ''
+        in: query
+        name: Link Button Link
+        required: false
+        schema: {type: string}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/tmp0'}
+          description: Successful request
+      summary: Microsoft Teams Post Message
+tags:
+- {name: Communication}
