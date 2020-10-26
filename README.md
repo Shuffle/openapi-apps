@@ -14,6 +14,9 @@ I'm working on an [automation platform](https://shuffler.io) that leverages Open
 2. Not having to write custom python code for everything I automate anymore
 3. Teach security people about OpenAPI
 
+## Want a quickstart? Check this repo and import one in Shuffle
+* [Shuffle unverified apps](https://github.com/frikky/security-openapi-unverified)
+
 ## Other resources (non-infosec)
 * [openapi-directory](https://opencollective.com/openapi-directory)
 * [security-apis](https://github.com/deralexxx/security-apis)
