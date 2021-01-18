@@ -1,0 +1,353 @@
+swagger: "3.0"
+info:
+  title: Palo Alto Networks
+  description: Based on documentation
+    https://docs.paloaltonetworks.com/pan-os/9-1/pan-os-panorama-api/get-started-with-the-pan-os-rest-api/access-the-rest-api.html
+    and
+    https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-panorama-api/get-started-with-the-pan-os-rest-api/create-security-policy-rule-rest-api.html#id0f21fe09-3763-4088-844c-36c7ad5ace0a_id4ee5d90b-501b-45b9-a9d2-e2c48a5f469c
+    and
+    https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-panorama-api/get-started-with-the-pan-os-rest-api/access-the-rest-api.html#id0e536ca4-6154-4188-b70f-227c2c113ec4
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact:
+    name: "@frikkylikeme"
+    url: https://twitter.com/frikkylikeme
+    email: frikky@shuffler.io
+  x-categories:
+    - FW
+    - Firewall
+servers:
+  - url: ""
+basePath: /
+schemes:
+  - ""
+paths:
+  /restapi/9.0/Objects/Applications:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create application Object
+      operationId: Create_application_Object
+      description: ""
+      parameters:
+        - in: query
+          name: app_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+               "entry":[
+                  {
+                     "@name":"${rule_name}",
+                     "@location":"vsys",
+                     "@vsys":"vsys1",
+                     "to":{
+                        "member":[
+                           "any"
+                        ]
+                     },
+                     "from":{
+                        "member":[
+                           "zone-edge1"
+                        ]
+                     },
+                     "source-user":{
+                        "member":[
+                           "any"
+                        ]
+                     },
+                     "application":{
+                        "member":[
+                           "${application_name}"
+                        ]
+                     },
+                     "service":{
+                        "member":[
+                           "application-default"
+                        ]
+                     },
+                     "hip-profiles":{
+                        "member":[
+                           "any"
+                        ]
+                     },
+                     "action":"deny",
+                     "category":{
+                        "member":[
+                           "any"
+                        ]
+                     },
+                     "source":{
+                        "member":[
+                           "any"
+                        ]
+                     },
+                     "destination":{
+                        "member":[
+                           "any"
+                        ]
+                     }
+                  }
+               ]
+            }
+          schema:
+            type: string
+        - in: header
+          name: X-PAN-KEY
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: LUFRPT
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/x-www-form-urlencoded
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                 "entry":[
+                    {
+                       "@name":"${rule_name}",
+                       "@location":"vsys",
+                       "@vsys":"vsys1",
+                       "to":{
+                          "member":[
+                             "any"
+                          ]
+                       },
+                       "from":{
+                          "member":[
+                             "zone-edge1"
+                          ]
+                       },
+                       "source-user":{
+                          "member":[
+                             "any"
+                          ]
+                       },
+                       "application":{
+                          "member":[
+                             "${application_name}"
+                          ]
+                       },
+                       "service":{
+                          "member":[
+                             "application-default"
+                          ]
+                       },
+                       "hip-profiles":{
+                          "member":[
+                             "any"
+                          ]
+                       },
+                       "action":"deny",
+                       "category":{
+                          "member":[
+                             "any"
+                          ]
+                       },
+                       "source":{
+                          "member":[
+                             "any"
+                          ]
+                       },
+                       "destination":{
+                          "member":[
+                             "any"
+                          ]
+                       }
+                    }
+                 ]
+              }
+  /restapi/9.0/Policies/SecurityRules:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Add "
+      operationId: Add_
+      description: ""
+      parameters:
+        - in: query
+          name: rule_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+               "entry":[
+                  {
+                     "@name":"${rule_name_}",
+                     "@location":"vsys",
+                     "@vsys":"vsys1",
+                     "to":{
+                        "member":[
+                           "any"
+                        ]
+                     },
+                     "from":{
+                        "member":[
+                           "zone-edge1"
+                        ]
+                     },
+                     "source-user":{
+                        "member":[
+                           "any"
+                        ]
+                     },
+                     "application":{
+                        "member":[
+                           "${application}"
+                        ]
+                     },
+                     "service":{
+                        "member":[
+                           "application-default"
+                        ]
+                     },
+                     "hip-profiles":{
+                        "member":[
+                           "any"
+                        ]
+                     },
+                     "action":"allow",
+                     "category":{
+                        "member":[
+                           "any"
+                        ]
+                     },
+                     "source":{
+                        "member":[
+                           "any"
+                        ]
+                     },
+                     "destination":{
+                        "member":[
+                           "any"
+                        ]
+                     }
+                  }
+               ]
+            }
+          schema:
+            type: string
+        - in: header
+          name: X-PAN-KEY
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: LUFRPT
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/x-www-form-urlencoded
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                 "entry":[
+                    {
+                       "@name":"${rule_name_}",
+                       "@location":"vsys",
+                       "@vsys":"vsys1",
+                       "to":{
+                          "member":[
+                             "any"
+                          ]
+                       },
+                       "from":{
+                          "member":[
+                             "zone-edge1"
+                          ]
+                       },
+                       "source-user":{
+                          "member":[
+                             "any"
+                          ]
+                       },
+                       "application":{
+                          "member":[
+                             "${application}"
+                          ]
+                       },
+                       "service":{
+                          "member":[
+                             "application-default"
+                          ]
+                       },
+                       "hip-profiles":{
+                          "member":[
+                             "any"
+                          ]
+                       },
+                       "action":"allow",
+                       "category":{
+                          "member":[
+                             "any"
+                          ]
+                       },
+                       "source":{
+                          "member":[
+                             "any"
+                          ]
+                       },
+                       "destination":{
+                          "member":[
+                             "any"
+                          ]
+                       }
+                    }
+                 ]
+              }
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: query
+      name: key
+tags:
+  - name: FW
+  - name: Firewall
