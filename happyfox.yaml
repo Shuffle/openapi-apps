@@ -1,0 +1,192 @@
+swagger: "3.0"
+info:
+  title: HappyFox
+  description: Happyfox OpenAPI integration based on
+    https://www.happyfox.com/developers/api/1.1/
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact:
+    name: "@frikkylikeme"
+    url: https://twitter.com/frikkylikeme
+    email: frikky@shuffler.io
+  x-categories:
+    - Ticketing
+    - Ticket system
+servers:
+  - url: ""
+basePath: /
+schemes:
+  - ""
+paths:
+  /api/1.1/json/tickets:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Read all tickets
+      operationId: Read_all_tickets
+      description: ""
+      parameters:
+        - in: query
+          name: size
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: page
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/api/1.1/json/tickets/{ticketid}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get ticket
+      operationId: Get_ticket
+      description: ""
+      parameters:
+        - in: path
+          name: ticketid
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /api/1.1/json/tickets/:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create ticket
+      operationId: Create_ticket
+      description: ""
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-2
+                {
+                    "subject": "${subject}",
+                    "text": "${text}",
+                    "category": 1,
+                    "priority": 2,
+                    "user": ${userid}
+                }
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-2
+                  {
+                      "subject": "${subject}",
+                      "text": "${text}",
+                      "category": 1,
+                      "priority": 2,
+                      "user": ${userid}
+                  }
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Search tickets
+      operationId: Search_tickets
+      description: ""
+      parameters:
+        - in: query
+          name: q
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/api/1.1/json/tickets/{ticketid}/staff_update/":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add staff update
+      operationId: Add_staff_update
+      description: ""
+      parameters:
+        - in: path
+          name: ticketid
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-2
+                {
+                    "assignee" : ${assignee},
+                    "due_date" : "${due_date}",
+                    "notify_user" : 1,
+                    "priority" : 1,
+                    "staff" : 13,
+                    "status" : 2,
+                    "text" : "${text}",
+                    "time_spent" : 2
+                }
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-2
+                  {
+                      "assignee" : ${assignee},
+                      "due_date" : "${due_date}",
+                      "notify_user" : 1,
+                      "priority" : 1,
+                      "staff" : 13,
+                      "status" : 2,
+                      "text" : "${text}",
+                      "time_spent" : 2
+                  }
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic

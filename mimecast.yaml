@@ -1,0 +1,1627 @@
+swagger: "3.0"
+info:
+  title: Mimecast
+  description: Mimecast public API from
+    https://www.mimecast.com/tech-connect/documentation/api-overview/
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact: {}
+  x-categories:
+    - SIEM
+servers:
+  - url: https://us-api.mimecast.com
+host: us-api.mimecast.com
+basePath: /
+schemes:
+  - "https:"
+paths:
+  /api/account/get-account:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Account
+      operationId: Get_Account
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        account/get-account/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/account/get-dashboard-notifications:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Dashboard Notifications
+      operationId: Get_Dashboard_Notifications
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        account/get-dashboard-notifications/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/account/get-support-info:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Support Info
+      operationId: Get_Support_Info
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        account/get-support-info/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/archive/get-file:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get File
+      operationId: Get_File
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        archive/get-file/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/archive/get-message-detail:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Message Detail
+      operationId: Get_Message_Detail
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        archive/get-message-detail/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/archive/get-message-list:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Message List
+      operationId: Get_Message_List
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        archive/get-message-list/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/archive/get-message-part:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Message Part
+      operationId: Get_Message_Part
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        archive/get-message-part/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/archive/get-search-logs:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Archive Search Logs
+      operationId: Get_Archive_Search_Logs
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        logs-and-statistics/get-archive-search-logs/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/archive/get-view-logs:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Archive Message View Logs
+      operationId: Get_Archive_Message_View_Logs
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        logs-and-statistics/get-archive-message-view-logs/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/archive/search:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Search
+      operationId: Search
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        archive/search/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/audit/get-audit-events:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Audit Events
+      operationId: Get_Audit_Events
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        logs-and-statistics/get-audit-events/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/audit/get-siem-logs:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get SIEM Logs
+      operationId: Get_SIEM_Logs
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        logs-and-statistics/get-siem-logs/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/byo-threat-intelligence/create-batch:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create Batch
+      operationId: Create_Batch
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        threat-intel/bring-your-own/create-batch/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/byo-threat-intelligence/delete-batch:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete Batch
+      operationId: Delete_Batch
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        threat-intel/bring-your-own/delete-batch/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/byo-threat-intelligence/get-batches:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Batches
+      operationId: Get_Batches
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        threat-intel/bring-your-own/get-batches/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/byo-threat-intelligence/get-quota:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Quota
+      operationId: Get_Quota
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        threat-intel/bring-your-own/get-quota/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/directory/add-group-member:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add Group Member
+      operationId: Add_Group_Member
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        directory/add-group-member/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/directory/create-group:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create Group
+      operationId: Create_Group
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        directory/create-group/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/directory/find-groups:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Find Groups
+      operationId: Find_Groups
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        directory/find-groups/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/directory/get-connection:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Connection
+      operationId: Get_Connection
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        directory-sync/get-connection/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/directory/get-group-members:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Group Members
+      operationId: Get_Group_Members
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        directory/get-group-members/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/directory/remove-group-member:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove Group Member Copy
+      operationId: Remove_Group_Member_Copy
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        directory/remove-group-member/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/directory/update-group:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update Group
+      operationId: Update_Group
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        directory/update-group/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/dlp/get-logs:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get DLP Logs
+      operationId: Get_DLP_Logs
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        logs-and-statistics/get-dlp-logs/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/domain/create-domain:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create Domain
+      operationId: Create_Domain
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        domain/create-domain/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/domain/delete-pending-domain:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete Pending Domain
+      operationId: Delete_Pending_Domain
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        domain/delete-pending-domain/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/domain/get-internal-domain:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Internal Domain
+      operationId: Get_Internal_Domain
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        domain/get-internal-domain/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/domain/get-pending-domain:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Pending Domain
+      operationId: Get_Pending_Domain
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        domain/get-pending-domain/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/domain/get-provision-status:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Provision Status
+      operationId: Get_Provision_Status
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        domain/get-provision-status/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/domain/get-verification-code:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Verification Code
+      operationId: Get_Verification_Code
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        domain/get-verification-code/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/domain/verify-domain:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Verify Domain
+      operationId: Verify_Domain
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        domain/verify-domain/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/email/get-email-queues:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Email Queues
+      operationId: Get_Email_Queues
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        message-queues/inbound-outbound-queues/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/email/send-email:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Send Email
+      operationId: Send_Email
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        email/send-email/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/file/file-upload:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: File Upload
+      operationId: File_Upload
+      description: >-
+        To use this call, populate the hash and fileSize variables under the
+        Pre-request Script tab.
+
+
+        Documentation link: https://www.mimecast.com/tech-connect/documentation/endpoint-reference/email/file-upload/
+      parameters: []
+      requestBody:
+        content: {}
+  /api/gateway/find-processing-messages:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Find Processing Messages
+      operationId: Find_Processing_Messages
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        message-queues/find-processsing-messages/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/gateway/get-hold-message-list:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Message Hold List
+      operationId: Get_Message_Hold_List
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        message-queues/get-hold-message-list/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/gateway/get-hold-summary-list:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Message Hold Summary List
+      operationId: Get_Message_Hold_Summary_List
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        message-queues/get-hold-summary-list/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/gateway/hold-reject:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Reject Message
+      operationId: Reject_Message
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        message-queues/reject-message/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/gateway/hold-release:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Release Message
+      operationId: Release_Message
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        message-queues/release-message/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/journaling/get-service:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Journal Service
+      operationId: Get_Journal_Service
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        logs-and-statistics/get-journal-service/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/managedsender/permit-or-block-sender:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Permit or Block Sender
+      operationId: Permit_or_Block_Sender
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        managed-sender/permit-or-block-sender/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/message-finder/get-message-info:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Message Info
+      operationId: Get_Message_Info
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        message-finder-formally-tracking/get-message-info/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/message-finder/search:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Search
+      operationId: Search
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        message-finder-formally-tracking/search/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/address-alteration/create-address-alteration-set:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create Set
+      operationId: Create_Set
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        policies/address-alteration/create-set/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/address-alteration/create-definition:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create Definition
+      operationId: Create_Definition
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        policies/address-alteration/create-definition/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/address-alteration/create-policy:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create Policy
+      operationId: Create_Policy
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        policies/address-alteration/create-policy/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/address-alteration/delete-definition:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete Definition
+      operationId: Delete_Definition
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        policies/address-alteration/delete-definition/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/address-alteration/delete-policy:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete Policy
+      operationId: Delete_Policy
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        policies/address-alteration/delete-policy/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/address-alteration/get-address-alteration-set:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Set
+      operationId: Get_Set
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        policies/address-alteration/get-set/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/address-alteration/get-definition:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Definition
+      operationId: Get_Definition
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        policies/address-alteration/get-definition/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/address-alteration/get-policy:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Policy
+      operationId: Get_Policy
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        policies/address-alteration/get-policy/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/address-alteration/update-policy:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update Policy
+      operationId: Update_Policy
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        policies/address-alteration/update-policy/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/antispoofing-bypass/create-policy:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create Policy
+      operationId: Create_Policy
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        policies/antispoofing-spf-bypass/create-policy/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/antispoofing-bypass/delete-policy:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete Policy
+      operationId: Delete_Policy
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        policies/antispoofing-spf-bypass/delete-policy/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/antispoofing-bypass/get-policy:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Policy
+      operationId: Get_Policy
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        policies/antispoofing-spf-bypass/get-policy/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/antispoofing-bypass/update-policy:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update Policy
+      operationId: Update_Policy
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        policies/antispoofing-spf-bypass/update-policy/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/blockedsenders/create-policy:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create Policy
+      operationId: Create_Policy
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        blocked-sender-policy/create-policy/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/blockedsenders/get-policy:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Policy
+      operationId: Get_Policy
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        blocked-sender-policy/get-policy/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/webwhiteurl/create-policy-with-targets:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create Policy
+      operationId: Create_Policy
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        web-security/create-policy/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/webwhiteurl/delete-policy-with-targets:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete Policy
+      operationId: Delete_Policy
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        web-security/delete-policy/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/webwhiteurl/get-policy-with-targets:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Policies
+      operationId: Get_Policies
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        web-security/get-policies/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/policy/webwhiteurl/update-policy-with-targets:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update Policy
+      operationId: Update_Policy
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        web-security/update-policy/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/provisioning/get-packages:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Products
+      operationId: Get_Products
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        account/get-products/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/ttp/attachment/get-logs:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get TTP Attachment Logs
+      operationId: Get_TTP_Attachment_Logs
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        logs-and-statistics/get-attachment-protection-logs/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/ttp/impersonation/get-logs:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get TTP Impersonation Logs
+      operationId: Get_TTP_Impersonation_Logs
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        logs-and-statistics/get-ttp-impersonation-protect-logs/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/ttp/remediation/create:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create Remedation Incident
+      operationId: Create_Remedation_Incident
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        threat-intel/create-incident/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/ttp/remediation/find-incidents:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Find Remediation Incidents
+      operationId: Find_Remediation_Incidents
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        threat-intel/find-incidents/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/ttp/remediation/get-incident:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Remediation Incident
+      operationId: Get_Remediation_Incident
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        threat-intel/get-incident/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/ttp/remediation/search-hash:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Search File Hash
+      operationId: Search_File_Hash
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        threat-intel/search-hash/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/ttp/threat-intel/get-feed:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Threat Intel Feed
+      operationId: Get_Threat_Intel_Feed
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        threat-intel/get-feed/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/ttp/url/create-managed-url:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create Managed URL
+      operationId: Create_Managed_URL
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        targeted-threat-protection-url-protect/create-managed-url/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/ttp/url/decode-url:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Decode URL
+      operationId: Decode_URL
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        targeted-threat-protection-url-protect/decode-url/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/ttp/url/delete-managed-url:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete Managed URL
+      operationId: Delete_Managed_URL
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        targeted-threat-protection-url-protect/delete-managed-url/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/ttp/url/get-all-managed-urls:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Managed URL
+      operationId: Get_Managed_URL
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        targeted-threat-protection-url-protect/get-managed-url/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/ttp/url/get-logs:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get TTP URL Logs
+      operationId: Get_TTP_URL_Logs
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        logs-and-statistics/get-ttp-url-logs/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/user/add-delegate-user:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add Delegate User
+      operationId: Add_Delegate_User
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        user/add-delegate-user/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/user/create-user:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create User
+      operationId: Create_User
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        user/create-user/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/user/find-delegate-users:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Find Delegate Users
+      operationId: Find_Delegate_Users
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        user/find-delegate-users/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/user/get-aliases:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Aliases
+      operationId: Get_Aliases
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        user/get-aliases/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/user/get-attributes:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Attributes
+      operationId: Get_Attributes
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        user/get-attributes/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/user/get-delegated-access:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Delegated Access
+      operationId: Get_Delegated_Access
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        user/get-delegated-access/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/user/get-internal-users:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Internal Users
+      operationId: Get_Internal_Users
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        user/get-internal-users/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/user/get-most-used-contacts:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Most Used Contacts
+      operationId: Get_Most_Used_Contacts
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        user/get-most-used-contacts/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/user/get-profile:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Profile
+      operationId: Get_Profile
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        user/get-profile/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/user/remove-alias:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove Alias
+      operationId: Remove_Alias
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        user/remove-alias/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/user/remove-delegate-user:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove Delegate User
+      operationId: Remove_Delegate_User
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        user/remove-delegate-user/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/user/update-alias:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update Alias
+      operationId: Update_Alias
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        user/update-alias/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/user/update-attributes:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update Attributes
+      operationId: Update_Attributes
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        user/update-attributes/"
+      parameters: []
+      requestBody:
+        content: {}
+  /api/user/update-user:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update User
+      operationId: Update_User
+      description: "Documentation link:
+        https://www.mimecast.com/tech-connect/documentation/endpoint-reference/\
+        user/update-user/"
+      parameters: []
+      requestBody:
+        content: {}
+components:
+  securitySchemes: {}
+tags:
+  - name: SIEM
+  - name: Threat Protection
