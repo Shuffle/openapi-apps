@@ -1,0 +1,1716 @@
+[{
+    "count": 3,
+    "next": null,
+    "results": [
+        {
+            "indicator": "rustybrooks.com",
+            "description": null,
+            "title": null,
+            "content": "",
+            "type": "domain",
+            "id": 1
+        },
+        {
+            "indicator": "roll20.com",
+            "description": null,
+            "title": null,
+            "content": "",
+            "type": "domain",
+            "id": 3
+        },
+        {
+            "indicator": "redacted.ch",
+            "description": null,
+            "title": null,
+            "content": "",
+            "type": "domain",
+            "id": 6
+        }
+    ],
+    "previous": null
+},{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalParameters": false,
+  "required": [
+    "urls", "tlp"
+  ],
+  "parameters": {
+    "urls": {"type": "array", "items": {"type": "string"}},
+    "tlp": {"type": "string", "enum":  ["white", "green", "amber", "red"]}
+  }
+}
+,{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalParameters": false,
+  "required": ["url"],
+  "parameters": {
+    "url": {"type": "string"},
+    "tlp": {"type": "string", "enum":  ["white", "green", "amber", "red"]}
+  }
+}
+,{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalParameters": false,
+  "required": ["url"],
+  "parameters": {
+    "url": {"type": "string"},
+    "tlp": {"type": "string", "enum":  ["white", "green", "amber", "red"]}
+  }
+}
+,{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalParameters": false,
+  "required": [
+    "hashes", "tlp"
+  ],
+  "parameters": {
+    "hashes": {"type": "array", "items": {"type": "string"}},
+    "tlp": {"type": "string", "enum":  ["white", "green", "amber", "red"]}
+  }
+}
+,{
+    "description": "New Description",
+    "tags": {"add": ["addtag1", "addtag2"], "remove": ["remtag1"]}
+}
+,{
+    &#39;add&#39;: [
+        {&#39;indicator&#39;: &#39;8.8.8.9&#39;, &#39;type&#39;: &#39;IPv4&#39;, &#39;role&#39;: &#39;command_and_control&#39;},
+        {&#39;indicator&#39;: &#39;8.8.8.10&#39;, &#39;type&#39;: &#39;IPv4&#39;},
+    ],
+    &#39;edit&#39;: [
+        {&#39;id&#39;: 1 &#39;type&#39;: &#39;hostname&#39;, &#39;indicator&#39;: &#39;www.amazon.com&#39;},
+        {&#39;id&#39;: 2, &#39;indicator&#39;: &#39;you@rustybrooks.com&#39;},
+        {&#39;id&#39;: 3, &#39;is_active&#39;: True, &#39;expiration&#39;: &#39;2017-01-01&#39;, &#39;role&#39;: &#39;scanning_host&#39;},
+    ],
+    &#39;remove&#39;: [
+        {&#39;id&#39;: 4},
+    ]
+}
+,{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": [
+      "count", "results", "next", "previous"
+  ],
+  "properties": {
+      "count": {"type": "integer"},
+      "next": {"type": ["string", "null"], "format": "uri"},
+      "previous": {"type": ["string", "null"], "format": "uri"},
+      "results": {
+          "type": "array",
+          "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                  "revision", "adversary", "id", "description", "industries", "TLP", "name", "tags", "created",
+                  "modified", "author_name", "public", "references", "targeted_countries", "indicators"
+              ],
+              "properties": {
+                  "id": {"type": "string"},
+                  "name": {"type": "string"},
+                  "description": {"type": "string"},
+                  "author_name": {"type": "string"},
+                  "public": {"type": "boolean"},
+                  "revision": {"type": "integer"},
+                  "adversary": {"type": "string"},
+                  "industries": {"type": "array", "items": {"type": "string"}},
+                  "TLP": {"enum": ["white", "green", "amber", "red"]},
+                  "tags": {"type": "array", "items": {"type": "string"}},
+                  "created": {"type": "string", "format": "date-time"},
+                  "modified": {"type": "string", "format": "date-time"},
+                  "references": {"type": "array", "items": {"type": "string"}},
+                  "targeted_countries": {"type": "array", "items": {"type": "string"}},
+                  "indicators": {
+                      "type": "array",
+                      "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                              "indicator", "type", "title", "description", "created", "is_active", "access_type",
+                              "content", "role", "expiration", "id", "observations"
+                          ],
+                          "properties": {
+                              "access_groups": {"type": "array", "items": {"type": "integer"}},
+                              "indicator": {"type": "string"},
+                              "description": {"type": "string"},
+                              "title": {"type": "string"},
+                              "access_reason": {"type": "string"},
+                              "created": {"type": "string", "format": "date-time"},
+                              "is_active": {"type": ["boolean", "integer"]},
+                              "access_type": {"enum": ["public", "private", "redacted"]},
+                              "content": {"type": "string"},
+                              "role": {"type": ["string", "null"]},
+                              "expiration": {"type": ["string", "null"], "format": "date-time"},
+                              "type": {"type": "string"},
+                              "id": {"type": "integer"},
+                              "observations": {"type": "integer"}
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+},{
+  "count": 4,
+  "next": "https://otx.alienvault.com/api/v1/pulses/subscribed?modified_since=2017-03-01&amp;limit=2&amp;page=2",
+  "results": [
+    {
+      "industries": [],
+      "TLP": "red",
+      "name": "Example pulse 2",
+      "tags": [],
+      "created": "2017-04-14T22:45:41.530000",
+      "modified": "2017-05-01T15:33:24.178000",
+      "author_name": "aperson",
+      "public": false,
+      "references": [],
+      "targeted_countries": [
+        "Zimbabwe"
+      ],
+      "indicators": [],
+      "revision": 4,
+      "adversary": "",
+      "id": "58f15111d3bb0b0b8ac54662",
+      "description": "Another example pulse"
+    },
+    {
+      "industries": [
+        "Sports Betting"
+      ],
+      "TLP": "red",
+      "name": "Example pulse 1",
+      "tags": [
+        "test",
+        "atag",
+        "stuff"
+      ],
+      "created": "2017-04-15T01:43:39.803000",
+      "modified": "2017-05-01T15:32:16.030000",
+      "author_name": "aperson",
+      "public": false,
+      "references": [
+        "http://google.com/"
+      ],
+      "targeted_countries": [
+        "Algeria",
+        "Bahamas"
+      ],
+      "indicators": [
+        {
+          "access_groups": [],
+          "indicator": "9.9.9.9",
+          "description": "",
+          "title": "",
+          "access_reason": "",
+          "created": "2017-04-15T01:43:40",
+          "is_active": 1,
+          "access_type": "public",
+          "content": "",
+          "role": null,
+          "expiration": null,
+          "type": "IPv4",
+          "id": 9798004,
+          "observations": 1
+        }
+      ],
+      "revision": 11,
+      "adversary": "Imaginary Adversary",
+      "id": "58f17acb98e10f0199f85c0c",
+      "description": "This is a test pulse created as an example"
+    }
+  ],
+  "previous": null
+},{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": ["count", "next", "results", "previous"],
+  "properties": {
+    "count": {"type": "integer"},
+    "next": {"type":  ["string", "null"]},
+    "results": {
+      "type": "array", 
+      "items": {"type": "string"}},
+    "previous": {"type":  ["string", "null"]}
+  }
+}
+,{
+    "count": 2,
+    "next": null,
+    "results": [
+        "546ce8eb11d40838dc6e43f1",
+        "5e6138dc020b38eaa184d9e7"
+    ],
+    "previous": null
+}
+,{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": ["name", "public"],
+  "properties": {
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "public": {"type": "boolean"},
+    "tags": {
+      "type": "array", "items": {"type": "string"}
+    },
+    "TLP": {"enum": ["white", "green", "amber", "red"]},
+    "references": {
+      "type": "array", "items": {"type": "string"}
+    },
+    "adversary": {"type": "string"},
+    "targeted_countries": {
+      "type": "array", "items": {"type": "string"}
+    },
+    "industries": {
+      "type": "array", "items": {"type": "string"}
+    },
+    "group_ids": {
+      "type": "array", "items": {"type": "integer"}
+    },
+    "malware_families": {
+      "type": "array", "items": {"type": "string"}
+    },
+    "attack_ids": {
+      "type": "array", "items": {
+        "type": "string", "pattern": "^[A-Z][0-9]{4}$"
+      }
+    },
+    "indicators": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["indicator", "type", "description"],
+        "properties": {
+          "indicator": {"type": "string"},
+          "type": {"type": "string"},
+          "title": {"type": "string"},
+          "description": {"type": "string"},
+          "expiration": {"type": "string", "format":  "date-time"},
+          "content": {"type": "string"},
+          "role": {"type": ["string", "null"], "enum": [
+            null, "", "scanning_host", "malware_hosting",
+            "command_and_control", "exploit_kit",
+            "malvertising", "phishing",
+            "bruteforce", "web_attack",
+            "exploit_source", "trojan", "rat",
+            "backdoor", "adware", "hacking_tool",
+            "ransomware", "worm", "macro_malware",
+            "domain_owner", "delivery_email",
+            "unknown", "file_scanning",
+            "memory_scanning", "hunting",
+            "pcap_scanning"
+          ]}
+        }
+      }
+    }
+  }
+}
+,{
+  "references": [
+    "https://google.com",
+    "https://amazon.com"
+  ],
+  "indicators": [
+    {
+      "expiration": "01/01/20",
+      "type": "IPv4",
+      "indicator": "8.8.8.8",
+      "content": "",
+      "role": null,
+      "title": "",
+      "description": ""
+    },
+    {
+      "description": "A longer description can be used if desired",
+      "indicator": "rustybrooks.com",
+      "title": "It&#39;s my website",
+      "content": "",
+      "role": "scanning_host",
+      "expiration": "2019-01-01T00:00:00",
+      "type": "domain"
+    }
+  ],
+  "name": "Test Pulse Name",
+  "description": "Test Pulse Description",
+  "public": true,
+  "TLP": "white",
+  "tags": ["tag1", "tag2", "tag3"],
+  "group_ids": [1, 2, 3],
+  "industries": [
+    "Industry1",
+    "Industry2"
+  ],
+  "targeted_countries": [
+    "Afghanistan",
+    "Anguilla"
+  ],
+  "malware_families": [
+    "Backdoor:Linux/Netbus",
+    "Backdoor:Linux/Cyrax"
+  ],
+  "attack_ids": ["T1000", "T1486"],
+  "adversary": "APT 1"
+}
+,{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string"},
+    "revision": {"type": "integer"},
+    "author_id": {"type": "integer"},
+    "author_name": {"type": "string"},
+    "name": {"type": "string"},
+    "pulse_name": {"type": "string"},
+    "description": {"type": "string"},
+    "public": {"type": "boolean"},
+    "active": {"type": "boolean"},
+    "locked": {"type": "boolean"},
+    "tags": {"type": "array", "items": {"type": "string"}},
+    "tags_count": {"type": "integer"},
+    "TLP": {"type": "string", "enum": ["white", "green", "amber", "red", ""]},
+    "references": {"type": "array", "items": {"type": "string"}},
+    "adversary": {"type": "string"},
+    "targeted_countries": {"type": "array", "items": {"type": "string"}},
+    "industries": {"type": "array", "items": {"type": "string"}},
+    "malware_families": {
+      "type": "array", "items": {"type": "string"}
+    },
+    "attack_ids": {
+      "type": "array", "items": {
+        "type": "string", "pattern": "^[A-Z][0-9]{4}$"
+      }
+    },
+    "indicators_count": {"type": "integer"},
+    "references_count": {"type": "integer"},
+    "extract_source": {"type": "array", "items": {"type": "string"}},
+    "subscribers": {"type": "array", "items": {"type": "integer"}},
+    "subscribers_count": {"type": "integer"},
+    "followers": {"type": "array", "items": {"type": "integer"}},
+    "followers_count": {"type": "integer"},
+    "unsubscribed_users": {"type": "array", "items": {"type": "integer"}},
+    "upvotes": {"type": "array", "items": {"type": "integer"}},
+    "downvotes": {"type": "array", "items": {"type": "integer"}},
+    "upvotes_count": {"type": "integer"},
+    "downvotes_count": {"type": "integer"},
+    "votes_count": {"type": "integer"},
+    "comments_count": {"type": "integer"},
+    "exported_by": {"type": "array", "items": {"type": "integer"}},
+    "export_count": {"type": "integer"},
+    "pulse_source": {"type": "string", "enum": ["api", "web"]},
+    "group_ids": {"type": "array", "items": {"type": "integer"}},
+    "validators": {"type": "array", "items": {"type": "string"}},
+    "validators_count": {"type": "integer"},
+    "cloned_from": {"type": ["null", "string"]},
+    "created": {"type": "string"},
+    "modified": {"type": "string"},
+    "in_group": {"type":  "boolean"},
+    "groups": {
+      "type": "array",
+      "additionalProperties": false,
+      "required": ["name", "id"],
+      "items": {
+        "properties": {
+          "name": {"type": "string"},
+          "id": {"type": "integer"}
+        }
+      }
+    },
+    "indicators": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "indicator", "type", "description", "title", "content",
+          "expiration", "role", "access_groups", "access_reason", "access_type"
+        ],
+        "properties": {
+          "indicator": {"type": "string"},
+          "type": {"type": "string"},
+          "title": {"type": "string"},
+          "description": {"type": "string"},
+          "expiration": {"type": "string", "format": "date-time"},
+          "content": {"type": "string"},
+          "role": {
+            "type": ["string", "null"],
+            "enum": [
+              null, "",
+              "scanning_host", "malware_hosting", "command_and_control",
+              "exploit_kit", "malvertising", "phishing",
+              "bruteforce", "web_attack", "exploit_source",
+              "trojan", "rat", "backdoor",
+              "adware", "hacking_tool", "ransomware",
+              "worm", "macro_malware", "domain_owner",
+              "delivery_email", "unknown", "file_scanning",
+              "memory_scanning", "hunting", "pcap_scanning"
+            ]
+          },
+          "access_groups": {"type": "array", "items": {"type":  "integer"}},
+          "access_reason": {"type": "string"},
+          "is_active": {"type": "boolean"},
+          "access_type": {"type": "string"}
+        }
+      }
+    }
+  }
+}
+,{
+    "TLP": "white",
+    "active": true,
+    "adversary": "APT 1",
+    "attack_ids": [],
+    "author_id": 16976,
+    "author_name": "rbrooks_av",
+    "cloned_from": null,
+    "comments_count": 0,
+    "created": "2019-11-14T20:43:27.994238",
+    "description": "Test Pulse Description",
+    "downvotes": [],
+    "downvotes_count": 0,
+    "export_count": 0,
+    "exported_by": [],
+    "extract_source": [],
+    "followers": [],
+    "followers_count": 0,
+    "group_ids": [1, 2, 3],
+    "in_group": true,
+    "groups": [
+      {"id": 1, "name": "Group 1"},
+      {"id": 2, "name": "Group 2"},
+      {"id": 3, "name": "Group 3"}
+    ],
+    "id": "5dcdbc6f9d8108c36bbcbb56",
+    "indicators": [
+        {
+            "access_groups": [],
+            "access_reason": "",
+            "access_type": "public",
+            "content": "",
+            "description": "",
+            "expiration": "2020-01-01T00:00:00",
+            "indicator": "8.8.8.8",
+            "is_active": true,
+            "role": null,
+            "title": "",
+            "type": "IPv4"
+        },
+        {
+            "access_groups": [],
+            "access_reason": "",
+            "access_type": "public",
+            "content": "",
+            "description": "A longer description can be used if desired",
+            "expiration": "2019-01-01T00:00:00+00:00",
+            "indicator": "rustybrooks.com",
+            "is_active": true,
+            "role": "scanning_host",
+            "title": "It&#39;s my website",
+            "type": "domain"
+        }
+    ],
+    "indicators_count": 2,
+    "industries": [
+        "Industry1",
+        "Industry2"
+    ],
+    "locked": false,
+    "malware_families": [
+        "Backdoor:Linux/Netbus",
+        "Backdoor:Linux/Cyrax"
+    ],
+    "modified": "2019-11-14T20:43:27.994238",
+    "name": "Test Pulse Name",
+    "public": true,
+    "pulse_name": "Test Pulse Name",
+    "pulse_source": "api",
+    "references": [
+        "https://google.com",
+        "https://amazon.com"
+    ],
+    "references_count": 2,
+    "revision": 1,
+    "subscribers": [],
+    "subscribers_count": 6,
+    "tags": [
+        "tag1",
+        "tag2",
+        "tag3"
+    ],
+    "tags_count": 3,
+    "targeted_countries": [
+        "Afghanistan",
+        "Anguilla"
+    ],
+    "unsubscribed_users": [],
+    "upvotes": [],
+    "upvotes_count": 0,
+    "validators": [],
+    "validators_count": 0,
+    "votes_count": 0
+}
+,{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": ["status"],
+  "properties": {
+    "status": {"type": "string"}
+  } 
+}
+,{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": ["status", "subscriber_count"],
+  "properties": {
+    "status": {"type": "string", "enum": ["subscribe"]},
+    "subscriber_count": {"type":  "integer"}
+  }
+}
+,}
+,{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": ["status", "subscriber_count"],
+  "properties": {
+    "status": {"type": "string", "enum": ["unsubscribe"]},
+    "subscriber_count": {"type":  "integer"}
+  }
+}
+,}
+,{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": ["detail"],
+  "properties": {
+    "detail": {
+        "type": "array", 
+        "items": {
+            "additionalProperties": false,
+            "required": ["slug", "name", "description"],
+            "properties": {
+                "slug": {"type": "string"},
+                "name": {"type": "string"},
+                "description": {"type": "string"}
+            }
+        }
+    }
+  } 
+}
+,{
+    "detail": [
+        {
+            "slug": "ip",
+            "name": "IPv4",
+            "description": "An IPv4 address indicating the online location of a server or other computer."
+        },
+        {
+            "slug": "ip",
+            "name": "IPv6",
+            "description": "An IPv6 address indicating the online location of a server or other computer."
+        },
+        {
+            "slug": "domain",
+            "name": "domain",
+            "description": "A domain name for a website or server. Domains encompass a series of hostnames."
+        },
+        {
+            "slug": "hostname",
+            "name": "hostname",
+            "description": "The hostname for a server located within a domain."
+        },
+        {
+            "slug": "email",
+            "name": "email",
+            "description": "An email associated with suspicious activity."
+        },
+        {
+            "slug": "url",
+            "name": "URL",
+            "description": " Uniform Resource Location (URL) summarizing the online location of a file or resource."
+        },
+        {
+            "slug": "",
+            "name": "URI",
+            "description": "Uniform Resource Indicator (URI) describing the explicit path to a file hosted online."
+        },
+        {
+            "slug": "file",
+            "name": "FileHash-MD5",
+            "description": "A MD5-format hash that summarizes the architecture and content of a file."
+        },
+        {
+            "slug": "file",
+            "name": "FileHash-SHA1",
+            "description": "A SHA-format hash that summarizes the architecture and content of a file."
+        },
+        {
+            "slug": "file",
+            "name": "FileHash-SHA256",
+            "description": "A SHA-256-format hash that summarizes the architecture and content of a file."
+        },
+        {
+            "slug": "",
+            "name": "FileHash-PEHASH",
+            "description": "A PEPHASH-format hash that summarizes the architecture and content of a file."
+        },
+        {
+            "slug": "",
+            "name": "FileHash-IMPHASH",
+            "description": "An IMPHASH-format hash that summarizes the architecture and content of a file."
+        },
+        {
+            "slug": "",
+            "name": "CIDR",
+            "description": "Classless Inter-Domain Routing (CIDR) address, which describes both a server&#39;s IP address and the network architecture (routing path) surrounding that server."
+        },
+        {
+            "slug": "",
+            "name": "FilePath",
+            "description": "A unique location in a file system."
+        },
+        {
+            "slug": "",
+            "name": "Mutex",
+            "description": "The name of a mutex resource describing the execution architecture of a file."
+        },
+        {
+            "slug": "cve",
+            "name": "CVE",
+            "description": "Common Vulnerability and Exposure (CVE) entry describing a software vulnerability that can be exploited to engage in malicious activity."
+        },
+        {
+            "slug": "yara",
+            "name": "YARA",
+            "description": "YARA Rule"
+        },
+        {
+            "slug": "",
+            "name": "JA3",
+            "description": "JA3 Signature"
+        },
+        {
+            "slug": "",
+            "name": "osquery",
+            "description": "osquery rule"
+        },
+        {
+            "slug": "",
+            "name": "SSLCertFingerprint",
+            "description": "SSL Certificate Fingerprint"
+        },
+        {
+            "slug": "",
+            "name": "BitcoinAddress",
+            "description": "Bitcoin Address"
+        }
+    ]
+},{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": [
+      "count", "results", "next", "previous"
+  ],
+  "properties": {
+      "count": {"type": "integer"},
+      "next": {"type": ["string", "null"], "format": "uri"},
+      "previous": {"type": ["string", "null"], "format": "uri"},
+      "results": {
+          "type": "array",
+          "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                  "action", "object_type", "id", "object_id", "created"
+              ],
+              "properties": {
+                  "action": {"enum": ["subscribe", "unsubscribe", "private", "delete", "join", "leave", "add_pulse", "remove_pulse"]},
+                  "object_type": {"enum": ["pulse", "user", "group"]},
+                  "id": {"type": ["integer", "string"]},
+                  "object_id": {"type": "string"},
+                  "created": {"type": "string", "format": "date-time"}
+              }
+          }
+      }
+  }
+}
+,{
+  "count": 15,
+  "next": "https://otx.alienvault.com/api/v1/pulses/events?page=2",
+  "results": [
+    {
+      "action": "subscribe",
+      "object_type": "user",
+      "id": "577c0a187aaa310134fd9c1a",
+      "object_id": "AlienVault",
+      "created": "2016-07-05T19:27:20.469000"
+    },
+    {
+      "action": "unsubscribe",
+      "object_type": "pulse",
+      "id": "57c1fb61614ce41139315417",
+      "object_id": "57c1f7f81bae72014630887f",
+      "created": "2016-08-27T20:43:13.990000"
+    },
+    {
+      "action": "unsubscribe",
+      "object_type": "pulse",
+      "id": "57fd0ddde3347aa0c6af9472",
+      "object_id": "57fcff61b1ef1b20f8032b16",
+      "created": "2016-10-11T16:05:49.848000"
+    },
+    {
+      "action": "subscribe",
+      "object_type": "user",
+      "id": "584b5bca726d6c01e27fc006",
+      "object_id": "AUser1",
+      "created": "2016-12-10T01:02:02.701000"
+    },
+    {
+      "action": "private",
+      "object_type": "pulse",
+      "id": "584f3285d4ccbf0026a09f0e",
+      "object_id": "584f3209b187b4155a7c5a88",
+      "created": "2016-12-12T23:28:05.872000"
+    }
+  ],
+  "previous": null
+},{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": [
+    "count", "results", "next", "previous"
+  ],
+  "properties": {
+    "count": {"type": "integer"},
+    "next": {"type": ["string", "null"], "format": "uri"},
+    "previous": {"type": ["string", "null"], "format": "uri"},
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id", "name", "created", "modified", "pulse_source", "TLP", "description", "indicator_type_counts",
+          "tags", "malware_families", "references", "targeted_countries", "groups", "vote", "adversary", "industries",
+          "cloned_from", "attack_ids", "author", "threat_hunter_has_agents", "threat_hunter_scannable", "is_author",
+          "locked", "is_subscribing", "is_modified", "in_group", "public", "subscriber_count", "export_count",
+          "upvotes_count", "downvotes_count", "votes_count", "validator_count", "comment_count", "indicator_count",
+          "follower_count"
+        ],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "created": {"type": "string", "format": "date-time"},
+          "modified": {"type": "string", "format": "date-time"},
+          "pulse_source": {"enum": ["web", "api"]},
+          "TLP": {"enum": ["white", "green", "amber", "red"]},
+          "description": {"type": "string"},
+          "indicator_type_counts": {"type": "object"},
+          "tags": {"type": "array", "items": {"type": "string"}},
+          "malware_families": {
+            "type": "array", "items": {
+              "type": "object",
+              "required": ["display_name", "id", "target"],
+              "additionalProperties": false,
+              "properties": {
+                "display_name": {"type": "string"},
+                "id": {"type": "string"},
+                "target": {"type": ["string", "null"]}
+              }
+            }
+          },
+          "modified_text":  {"type": "string"},
+          "references": {"type": "array", "items": {"type": "string"}},
+          "targeted_countries": {"type": "array", "items": {"type": "string"}},
+          "groups": {
+            "type": "array",
+            "items": {
+              "additionalProperties": false,
+              "required": ["name", "id"],
+              "properties": {
+                "name": {"type": "string"},
+                "id": {"type": "integer"}
+              }
+            }
+          },
+          "vote": {"type": "integer"},
+          "adversary": {"type": "string"},
+          "industries": {"type": "array", "items": {"type": "string"}},
+          "cloned_from": {"type": ["null", "string"]},
+          "attack_ids": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "display_name", "name"],
+              "additionalProperties": false,
+              "properties": {
+                "id": {"type": "string"},
+                "display_name": {"type": "string"},
+                "name": {"type": "string"}
+              }
+            }
+          },
+          "author": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["username", "is_subscribed", "avatar_url", "is_following", "id"],
+            "properties": {
+              "username": {"type": "string"},
+              "is_subscribed": {"type": "boolean"},
+              "avatar_url": {"type": "string"},
+              "is_following": {"type":  "boolean"},
+              "id": {"type": "string"}
+            }
+          },
+          "threat_hunter_has_agents": {"type": "integer"},
+          "threat_hunter_scannable": {"type": "boolean"},
+          "is_author": {"type":  "boolean"},
+          "locked": {"type":  "boolean"},
+          "is_subscribing": {"type": ["boolean", "null"]},
+          "is_modified": {"type": "boolean"},
+          "in_group": {"type": "boolean"},
+          "public": {"type": ["boolean", "integer"]},
+          "subscriber_count": {"type": "integer"},
+          "export_count": {"type": "integer"},
+          "upvotes_count": {"type": "integer"},
+          "downvotes_count": {"type": "integer"},
+          "votes_count": {"type": "integer"},
+          "validator_count": {"type": "integer"},
+          "comment_count": {"type": "integer"},
+          "indicator_count": {"type": "integer"},
+          "follower_count":{"type": "integer"}
+        }
+      }
+    }
+  }
+}
+,{
+  "count": 3062,
+  "next": "https://otx.alienvault.com/api/v1/pulses/my?page=2",
+  "results": [
+    {
+      "indicator_type_counts": {
+        "SSLCertFingerprint": 1
+      },
+      "pulse_source": "web",
+      "TLP": "white",
+      "description": "fdsfds",
+      "subscriber_count": 16,
+      "tags": [],
+      "export_count": 0,
+      "malware_families": [],
+      "is_modified": false,
+      "upvotes_count": 0,
+      "modified_text": "5 days ago ",
+      "is_subscribing": null,
+      "references": [],
+      "targeted_countries": [],
+      "groups": [],
+      "vote": 0,
+      "validator_count": 0,
+      "threat_hunter_scannable": false,
+      "is_author": true,
+      "adversary": "",
+      "id": "5ef3f97d7210ef3380011424",
+      "industries": [],
+      "locked": false,
+      "name": "fdfds",
+      "created": "2020-06-25T01:10:21.979000",
+      "threat_hunter_has_agents": 1,
+      "cloned_from": null,
+      "downvotes_count": 0,
+      "modified": "2020-06-25T01:10:21.979000",
+      "comment_count": 0,
+      "indicator_count": 1,
+      "attack_ids": [],
+      "in_group": false,
+      "follower_count": 0,
+      "votes_count": 0,
+      "author": {
+        "username": "AlienVault",
+        "is_subscribed": true,
+        "avatar_url": "https://otx.alienvault.com/assets/images/default-avatar.png",
+        "is_following": false,
+        "id": "2"
+      },
+      "public": 1
+    },
+    {
+      "indicator_type_counts": {
+        "domain": 1,
+        "BitcoinAddress": 2
+      },
+      "pulse_source": "web",
+      "TLP": "white",
+      "description": "",
+      "subscriber_count": 16,
+      "tags": [],
+      "export_count": 0,
+      "malware_families": [],
+      "is_modified": true,
+      "upvotes_count": 0,
+      "modified_text": "5 days ago ",
+      "is_subscribing": null,
+      "references": [],
+      "targeted_countries": [
+        "Albania",
+        "Taiwan"
+      ],
+      "groups": [],
+      "vote": 0,
+      "validator_count": 0,
+      "threat_hunter_scannable": false,
+      "is_author": true,
+      "adversary": "",
+      "id": "5ecd781592397ee1cebf38fc",
+      "industries": [],
+      "locked": false,
+      "name": "test test",
+      "created": "2020-05-26T20:12:05.989000",
+      "threat_hunter_has_agents": 1,
+      "cloned_from": null,
+      "downvotes_count": 0,
+      "modified": "2020-06-25T01:09:25.054000",
+      "comment_count": 0,
+      "indicator_count": 3,
+      "attack_ids": [],
+      "in_group": false,
+      "follower_count": 0,
+      "votes_count": 0,
+      "author": {
+        "username": "AlienVault",
+        "is_subscribed": true,
+        "avatar_url": "https://otx.alienvault.com/assets/images/default-avatar.png",
+        "is_following": false,
+        "id": "2"
+      },
+      "public": 1
+    },
+    {
+      "indicator_type_counts": {
+        "domain": 2,
+        "JA3": 1
+      },
+      "pulse_source": "web",
+      "TLP": "white",
+      "description": "",
+      "subscriber_count": 16,
+      "tags": [],
+      "export_count": 0,
+      "malware_families": [],
+      "is_modified": true,
+      "upvotes_count": 0,
+      "modified_text": "35 days ago ",
+      "is_subscribing": null,
+      "references": [],
+      "targeted_countries": [],
+      "groups": [],
+      "vote": 0,
+      "validator_count": 0,
+      "threat_hunter_scannable": false,
+      "is_author": true,
+      "adversary": "",
+      "id": "5ea34db3699f0f69a4028c76",
+      "industries": [],
+      "locked": false,
+      "name": "fsfdsfds",
+      "created": "2020-04-24T20:36:03.665000",
+      "threat_hunter_has_agents": 1,
+      "cloned_from": null,
+      "downvotes_count": 0,
+      "modified": "2020-05-26T15:28:28.627000",
+      "comment_count": 0,
+      "indicator_count": 3,
+      "attack_ids": [],
+      "in_group": false,
+      "follower_count": 0,
+      "votes_count": 0,
+      "author": {
+        "username": "AlienVault",
+        "is_subscribed": true,
+        "avatar_url": "https://otx.alienvault.com/assets/images/default-avatar.png",
+        "is_following": false,
+        "id": "2"
+      },
+      "public": 1
+    },
+    {
+      "indicator_type_counts": {
+        "YARA": 1,
+        "domain": 1,
+        "FilePath": 1,
+        "URL": 1,
+        "FileHash-PEHASH": 1,
+        "hostname": 1,
+        "URI": 1,
+        "email": 1,
+        "FileHash-SHA1": 1,
+        "Mutex": 1,
+        "IPv4": 2,
+        "IPv6": 1,
+        "CVE": 1,
+        "FileHash-MD5": 1,
+        "FileHash-SHA256": 1,
+        "FileHash-IMPHASH": 1
+      },
+      "pulse_source": "web",
+      "TLP": "white",
+      "description": "",
+      "subscriber_count": 16,
+      "tags": [],
+      "export_count": 0,
+      "malware_families": [],
+      "is_modified": false,
+      "upvotes_count": 0,
+      "modified_text": "94 days ago ",
+      "is_subscribing": null,
+      "references": [],
+      "targeted_countries": [],
+      "groups": [
+        {
+          "name": "test group 1",
+          "id": 1
+        }
+      ],
+      "vote": 0,
+      "validator_count": 0,
+      "threat_hunter_scannable": true,
+      "is_author": true,
+      "adversary": "",
+      "id": "5e7ea3da11d0c1fa4d81476c",
+      "industries": [],
+      "locked": false,
+      "name": "misp feed test pulse",
+      "created": "2020-03-28T01:09:46.249000",
+      "threat_hunter_has_agents": 1,
+      "cloned_from": null,
+      "downvotes_count": 0,
+      "modified": "2020-03-28T01:09:54.552000",
+      "comment_count": 0,
+      "indicator_count": 17,
+      "attack_ids": [],
+      "in_group": true,
+      "follower_count": 0,
+      "votes_count": 0,
+      "author": {
+        "username": "AlienVault",
+        "is_subscribed": true,
+        "avatar_url": "https://otx.alienvault.com/assets/images/default-avatar.png",
+        "is_following": false,
+        "id": "2"
+      },
+      "public": 1
+    },
+    {
+      "indicator_type_counts": {
+        "domain": 2
+      },
+      "pulse_source": "web",
+      "TLP": "white",
+      "description": "",
+      "subscriber_count": 16,
+      "tags": [
+        "tag1",
+        "tag2"
+      ],
+      "export_count": 0,
+      "malware_families": [
+        {
+          "display_name": "#Exploit:NtQueryIntervalProfile",
+          "id": "#Exploit:NtQueryIntervalProfile",
+          "target": null
+        },
+        {
+          "display_name": "Backdoor:MSIL/Aataki",
+          "id": "Backdoor:MSIL/Aataki",
+          "target": "/malware/Backdoor:MSIL/Aataki"
+        }
+      ],
+      "is_modified": true,
+      "upvotes_count": 0,
+      "modified_text": "35 days ago ",
+      "is_subscribing": null,
+      "references": [],
+      "targeted_countries": [
+        "Afghanistan",
+        "Albania"
+      ],
+      "groups": [
+        {
+          "name": "private test group",
+          "id": 3
+        },
+        {
+          "name": "test group 1",
+          "id": 1
+        },
+        {
+          "name": "test group 2",
+          "id": 2
+        }
+      ],
+      "vote": 0,
+      "validator_count": 0,
+      "threat_hunter_scannable": false,
+      "is_author": true,
+      "adversary": "",
+      "id": "5e7ce89583cf67a885acfee9",
+      "industries": [
+        "xxx",
+        "yyy"
+      ],
+      "locked": false,
+      "name": "test 1",
+      "created": "2020-03-26T17:38:29.959000",
+      "threat_hunter_has_agents": 1,
+      "cloned_from": null,
+      "downvotes_count": 0,
+      "modified": "2020-05-26T15:28:51.390000",
+      "comment_count": 0,
+      "indicator_count": 2,
+      "attack_ids": [
+        {
+          "display_name": "T1002 - Data Compressed",
+          "id": "T1002",
+          "name": "Data Compressed"
+        },
+        {
+          "display_name": "T1001 - Data Obfuscation",
+          "id": "T1001",
+          "name": "Data Obfuscation"
+        }
+      ],
+      "in_group": true,
+      "follower_count": 0,
+      "votes_count": 0,
+      "author": {
+        "username": "AlienVault",
+        "is_subscribed": true,
+        "avatar_url": "https://otx.alienvault.com/assets/images/default-avatar.png",
+        "is_following": false,
+        "id": "2"
+      },
+      "public": 1
+    }
+  ],
+  "previous": null
+}
+,{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": [
+    "count", "results", "next", "previous"
+  ],
+  "properties": {
+    "count": {"type": "integer"},
+    "next": {"type": ["string", "null"], "format": "uri"},
+    "previous": {"type": ["string", "null"], "format": "uri"},
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id", "name", "created", "modified", "pulse_source", "TLP", "description", "indicator_type_counts",
+          "tags", "malware_families", "references", "targeted_countries", "groups", "vote", "adversary", "industries",
+          "cloned_from", "attack_ids", "author", "threat_hunter_has_agents", "threat_hunter_scannable", "is_author",
+          "locked", "is_subscribing", "is_modified", "in_group", "public", "subscriber_count", "export_count",
+          "upvotes_count", "downvotes_count", "votes_count", "validator_count", "comment_count", "indicator_count",
+          "follower_count"
+        ],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "created": {"type": "string", "format": "date-time"},
+          "modified": {"type": "string", "format": "date-time"},
+          "pulse_source": {"enum": ["web", "api"]},
+          "TLP": {"enum": ["white", "green", "amber", "red"]},
+          "description": {"type": "string"},
+          "indicator_type_counts": {"type": "object"},
+          "tags": {"type": "array", "items": {"type": "string"}},
+          "malware_families": {
+            "type": "array", "items": {
+              "type": "object",
+              "required": ["display_name", "id", "target"],
+              "additionalProperties": false,
+              "properties": {
+                "display_name": {"type": "string"},
+                "id": {"type": "string"},
+                "target": {"type": ["string", "null"]}
+              }
+            }
+          },
+          "modified_text":  {"type": "string"},
+          "references": {"type": "array", "items": {"type": "string"}},
+          "targeted_countries": {"type": "array", "items": {"type": "string"}},
+          "groups": {
+            "type": "array",
+            "items": {
+              "additionalProperties": false,
+              "required": ["name", "id"],
+              "properties": {
+                "name": {"type": "string"},
+                "id": {"type": "integer"}
+              }
+            }
+          },
+          "vote": {"type": "integer"},
+          "adversary": {"type": "string"},
+          "industries": {"type": "array", "items": {"type": "string"}},
+          "cloned_from": {"type": ["null", "string"]},
+          "attack_ids": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "display_name", "name"],
+              "additionalProperties": false,
+              "properties": {
+                "id": {"type": "string"},
+                "display_name": {"type": "string"},
+                "name": {"type": "string"}
+              }
+            }
+          },
+          "author": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["username", "is_subscribed", "avatar_url", "is_following", "id"],
+            "properties": {
+              "username": {"type": "string"},
+              "is_subscribed": {"type": "boolean"},
+              "avatar_url": {"type": "string"},
+              "is_following": {"type":  "boolean"},
+              "id": {"type": "string"}
+            }
+          },
+          "threat_hunter_has_agents": {"type": "integer"},
+          "threat_hunter_scannable": {"type": "boolean"},
+          "is_author": {"type":  "boolean"},
+          "locked": {"type":  "boolean"},
+          "is_subscribing": {"type": ["boolean", "null"]},
+          "is_modified": {"type": "boolean"},
+          "in_group": {"type": "boolean"},
+          "public": {"type": ["boolean", "integer"]},
+          "subscriber_count": {"type": "integer"},
+          "export_count": {"type": "integer"},
+          "upvotes_count": {"type": "integer"},
+          "downvotes_count": {"type": "integer"},
+          "votes_count": {"type": "integer"},
+          "validator_count": {"type": "integer"},
+          "comment_count": {"type": "integer"},
+          "indicator_count": {"type": "integer"},
+          "follower_count":{"type": "integer"}
+        }
+      }
+    }
+  }
+}
+,{
+  "count": 3062,
+  "next": "https://otx.alienvault.com/api/v1/pulses/my?page=2",
+  "results": [
+    {
+      "indicator_type_counts": {
+        "SSLCertFingerprint": 1
+      },
+      "pulse_source": "web",
+      "TLP": "white",
+      "description": "fdsfds",
+      "subscriber_count": 16,
+      "tags": [],
+      "export_count": 0,
+      "malware_families": [],
+      "is_modified": false,
+      "upvotes_count": 0,
+      "modified_text": "5 days ago ",
+      "is_subscribing": null,
+      "references": [],
+      "targeted_countries": [],
+      "groups": [],
+      "vote": 0,
+      "validator_count": 0,
+      "threat_hunter_scannable": false,
+      "is_author": true,
+      "adversary": "",
+      "id": "5ef3f97d7210ef3380011424",
+      "industries": [],
+      "locked": false,
+      "name": "fdfds",
+      "created": "2020-06-25T01:10:21.979000",
+      "threat_hunter_has_agents": 1,
+      "cloned_from": null,
+      "downvotes_count": 0,
+      "modified": "2020-06-25T01:10:21.979000",
+      "comment_count": 0,
+      "indicator_count": 1,
+      "attack_ids": [],
+      "in_group": false,
+      "follower_count": 0,
+      "votes_count": 0,
+      "author": {
+        "username": "AlienVault",
+        "is_subscribed": true,
+        "avatar_url": "https://otx.alienvault.com/assets/images/default-avatar.png",
+        "is_following": false,
+        "id": "2"
+      },
+      "public": 1
+    },
+    {
+      "indicator_type_counts": {
+        "domain": 1,
+        "BitcoinAddress": 2
+      },
+      "pulse_source": "web",
+      "TLP": "white",
+      "description": "",
+      "subscriber_count": 16,
+      "tags": [],
+      "export_count": 0,
+      "malware_families": [],
+      "is_modified": true,
+      "upvotes_count": 0,
+      "modified_text": "5 days ago ",
+      "is_subscribing": null,
+      "references": [],
+      "targeted_countries": [
+        "Albania",
+        "Taiwan"
+      ],
+      "groups": [],
+      "vote": 0,
+      "validator_count": 0,
+      "threat_hunter_scannable": false,
+      "is_author": true,
+      "adversary": "",
+      "id": "5ecd781592397ee1cebf38fc",
+      "industries": [],
+      "locked": false,
+      "name": "test test",
+      "created": "2020-05-26T20:12:05.989000",
+      "threat_hunter_has_agents": 1,
+      "cloned_from": null,
+      "downvotes_count": 0,
+      "modified": "2020-06-25T01:09:25.054000",
+      "comment_count": 0,
+      "indicator_count": 3,
+      "attack_ids": [],
+      "in_group": false,
+      "follower_count": 0,
+      "votes_count": 0,
+      "author": {
+        "username": "AlienVault",
+        "is_subscribed": true,
+        "avatar_url": "https://otx.alienvault.com/assets/images/default-avatar.png",
+        "is_following": false,
+        "id": "2"
+      },
+      "public": 1
+    },
+    {
+      "indicator_type_counts": {
+        "domain": 2,
+        "JA3": 1
+      },
+      "pulse_source": "web",
+      "TLP": "white",
+      "description": "",
+      "subscriber_count": 16,
+      "tags": [],
+      "export_count": 0,
+      "malware_families": [],
+      "is_modified": true,
+      "upvotes_count": 0,
+      "modified_text": "35 days ago ",
+      "is_subscribing": null,
+      "references": [],
+      "targeted_countries": [],
+      "groups": [],
+      "vote": 0,
+      "validator_count": 0,
+      "threat_hunter_scannable": false,
+      "is_author": true,
+      "adversary": "",
+      "id": "5ea34db3699f0f69a4028c76",
+      "industries": [],
+      "locked": false,
+      "name": "fsfdsfds",
+      "created": "2020-04-24T20:36:03.665000",
+      "threat_hunter_has_agents": 1,
+      "cloned_from": null,
+      "downvotes_count": 0,
+      "modified": "2020-05-26T15:28:28.627000",
+      "comment_count": 0,
+      "indicator_count": 3,
+      "attack_ids": [],
+      "in_group": false,
+      "follower_count": 0,
+      "votes_count": 0,
+      "author": {
+        "username": "AlienVault",
+        "is_subscribed": true,
+        "avatar_url": "https://otx.alienvault.com/assets/images/default-avatar.png",
+        "is_following": false,
+        "id": "2"
+      },
+      "public": 1
+    },
+    {
+      "indicator_type_counts": {
+        "YARA": 1,
+        "domain": 1,
+        "FilePath": 1,
+        "URL": 1,
+        "FileHash-PEHASH": 1,
+        "hostname": 1,
+        "URI": 1,
+        "email": 1,
+        "FileHash-SHA1": 1,
+        "Mutex": 1,
+        "IPv4": 2,
+        "IPv6": 1,
+        "CVE": 1,
+        "FileHash-MD5": 1,
+        "FileHash-SHA256": 1,
+        "FileHash-IMPHASH": 1
+      },
+      "pulse_source": "web",
+      "TLP": "white",
+      "description": "",
+      "subscriber_count": 16,
+      "tags": [],
+      "export_count": 0,
+      "malware_families": [],
+      "is_modified": false,
+      "upvotes_count": 0,
+      "modified_text": "94 days ago ",
+      "is_subscribing": null,
+      "references": [],
+      "targeted_countries": [],
+      "groups": [
+        {
+          "name": "test group 1",
+          "id": 1
+        }
+      ],
+      "vote": 0,
+      "validator_count": 0,
+      "threat_hunter_scannable": true,
+      "is_author": true,
+      "adversary": "",
+      "id": "5e7ea3da11d0c1fa4d81476c",
+      "industries": [],
+      "locked": false,
+      "name": "misp feed test pulse",
+      "created": "2020-03-28T01:09:46.249000",
+      "threat_hunter_has_agents": 1,
+      "cloned_from": null,
+      "downvotes_count": 0,
+      "modified": "2020-03-28T01:09:54.552000",
+      "comment_count": 0,
+      "indicator_count": 17,
+      "attack_ids": [],
+      "in_group": true,
+      "follower_count": 0,
+      "votes_count": 0,
+      "author": {
+        "username": "AlienVault",
+        "is_subscribed": true,
+        "avatar_url": "https://otx.alienvault.com/assets/images/default-avatar.png",
+        "is_following": false,
+        "id": "2"
+      },
+      "public": 1
+    },
+    {
+      "indicator_type_counts": {
+        "domain": 2
+      },
+      "pulse_source": "web",
+      "TLP": "white",
+      "description": "",
+      "subscriber_count": 16,
+      "tags": [
+        "tag1",
+        "tag2"
+      ],
+      "export_count": 0,
+      "malware_families": [
+        {
+          "display_name": "#Exploit:NtQueryIntervalProfile",
+          "id": "#Exploit:NtQueryIntervalProfile",
+          "target": null
+        },
+        {
+          "display_name": "Backdoor:MSIL/Aataki",
+          "id": "Backdoor:MSIL/Aataki",
+          "target": "/malware/Backdoor:MSIL/Aataki"
+        }
+      ],
+      "is_modified": true,
+      "upvotes_count": 0,
+      "modified_text": "35 days ago ",
+      "is_subscribing": null,
+      "references": [],
+      "targeted_countries": [
+        "Afghanistan",
+        "Albania"
+      ],
+      "groups": [
+        {
+          "name": "private test group",
+          "id": 3
+        },
+        {
+          "name": "test group 1",
+          "id": 1
+        },
+        {
+          "name": "test group 2",
+          "id": 2
+        }
+      ],
+      "vote": 0,
+      "validator_count": 0,
+      "threat_hunter_scannable": false,
+      "is_author": true,
+      "adversary": "",
+      "id": "5e7ce89583cf67a885acfee9",
+      "industries": [
+        "xxx",
+        "yyy"
+      ],
+      "locked": false,
+      "name": "test 1",
+      "created": "2020-03-26T17:38:29.959000",
+      "threat_hunter_has_agents": 1,
+      "cloned_from": null,
+      "downvotes_count": 0,
+      "modified": "2020-05-26T15:28:51.390000",
+      "comment_count": 0,
+      "indicator_count": 2,
+      "attack_ids": [
+        {
+          "display_name": "T1002 - Data Compressed",
+          "id": "T1002",
+          "name": "Data Compressed"
+        },
+        {
+          "display_name": "T1001 - Data Obfuscation",
+          "id": "T1001",
+          "name": "Data Obfuscation"
+        }
+      ],
+      "in_group": true,
+      "follower_count": 0,
+      "votes_count": 0,
+      "author": {
+        "username": "AlienVault",
+        "is_subscribed": true,
+        "avatar_url": "https://otx.alienvault.com/assets/images/default-avatar.png",
+        "is_following": false,
+        "id": "2"
+      },
+      "public": 1
+    }
+  ],
+  "previous": null
+}
+,{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": [
+    "username", "pulse_count", "user_id", "subscriber_count", "member_since", "award_count",
+    "avatar_url", "follower_count", "indicator_count"
+  ],
+  "properties": {
+    "username": {"type": "string"},
+    "pulse_count": {"type":  "integer"},
+    "user_id": {"type": "integer"},
+    "subscriber_count": {"type": "integer"},
+    "member_since": {"type":  "string"},
+    "award_count": {"type": "integer"},
+    "avatar_url": {"type": "string", "format": "uri"},
+    "follower_count": {"type": "integer"},
+    "indicator_count": {"type": "integer"}
+  }
+}
+,{
+  "username": "AlienVault",
+  "pulse_count": 178,
+  "user_id": 16976,
+  "subscriber_count": 7,
+  "member_since": "1343 days ago ",
+  "award_count": 0,
+  "avatar_url": "https://otx.alienvault.com/assets/images/default-avatar.png",
+  "follower_count": 4,
+  "indicator_count": 62545
+}
+,{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "subscribed",
+        "unsubscribed",
+        "followed",
+        "unfollowed"
+      ]
+    }
+  }
+}
+,{
+  "status": "followed"
+}
+,{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": [
+    "username", "pulse_count", "user_id", "subscriber_count", "member_since", "award_count",
+    "avatar_url", "follower_count", "indicator_count"
+  ],
+  "properties": {
+    "username": {"type": "string"},
+    "pulse_count": {"type":  "integer"},
+    "user_id": {"type": "integer"},
+    "subscriber_count": {"type": "integer"},
+    "member_since": {"type":  "string"},
+    "award_count": {"type": "integer"},
+    "avatar_url": {"type": "string", "format": "uri"},
+    "follower_count": {"type": "integer"},
+    "indicator_count": {"type": "integer"}
+  }
+}
+,{
+  "username": "AlienVault",
+  "pulse_count": 178,
+  "user_id": 16976,
+  "subscriber_count": 7,
+  "member_since": "1343 days ago ",
+  "award_count": 0,
+  "avatar_url": "https://otx.alienvault.com/assets/images/default-avatar.png",
+  "follower_count": 4,
+  "indicator_count": 62545
+}
+,{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "subscribed",
+        "unsubscribed",
+        "followed",
+        "unfollowed"
+      ]
+    }
+  }}
+]
