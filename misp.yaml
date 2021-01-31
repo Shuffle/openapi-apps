@@ -1,6 +1,6 @@
 swagger: "3.0"
 info:
-  title: MISP 
+  title: MISP  
   description: "MISP API generated from the misp book:
     https://github.com/MISP/misp-book/blob/master/automation/README.md"
   version: "1.0"
