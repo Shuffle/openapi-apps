@@ -1,0 +1,897 @@
+swagger: "3.0"
+info:
+  title: QRadar
+  description: API based on
+    https://www.ibm.com/support/knowledgecenter/SS42VS_SHR/com.ibm.qradarapi.doc/c_rest_api_getting_started.html
+  version: "1.0"
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAYAAACvDDbuAAAgAElEQVR4Xu1dB1RVx9b+lN47ihRFERQBRbABUtRETdUYjaYnxjRTjDExLz15yUuxJjG9v9gSNTG/JrEiKIiioDQFQaUj0nuHf+3BywOl3HvO3AZn1uOtFe+ZOTN7vrNnz66D2tra2iA1iQJaRoFBEnC1bMek6TIKSMCVgKCVFJCAq5XbJk1aAq6EAa2kgARcrdw2adIScCUMaCUFJOBq5bZJk5aAK2FAKykgAVcrt02atARcgRhoaGlGXXMjGlua0djSgqbWVjS3taClrQ2tba2QmSMHYxAGDx4EnUGDoTtoMPQG60BfRwcGOnow0tVj/y01xSkgAbcXmpE1vK6lCfXNTahoqEd2dSnyaspRVFuFwtoqXKmtREl9Dcqb6lDVWI/a5iYG4ua2VrRes6QTWHUGD4bBYB0Y6+nDXN8QVvpGsDU0hYOJBeyMTDDE2BzOZtZwNLaEqb4+DHX1YKCji0EYpPiODpAeEnCv2+i65ibk15Qjt7oclyuLkVCch+yqUpQ01KCwthrljXWoa2nuAGY7Z21j/2u3RXb8X6eRO/3Ofm6HJP0RJzbW1YO1oTHsjUxha2ACNws7eNkMwwhzGziZWMLexBz6EmfuslMDHrjEVauaGhg4TxVmMaAmlebhcmUpqpsbUd8JpO2Y5M8HGebb2jqwrzt4MIx0dGGpbwQ3C1t4Ww+Dn70zfO1cMNTEHMa6+gOEr/a8zAEJXDrGa5sbkVp2BQlFuYgquIiksgLkVVcyEF/DJ+OJ6jqsO4N50KBBsNE3wjBTC/jbuiBo2EjGkV3NbZlYoa45qvPrGVDAbW5tQX51BY4VZOBY/kXEFmUhp7qCcVXivAQQTQUB8WMSmwcPGgQTXX2MtLBGgL0rZjh7YKKdM+yMzNhvA6UNCODWtzQhrawQkXnp+CsrGcmlhahorG+XM7Vws4kb04dGQLU1MMZEOyfc4eqN6Q5u7JJHokZ/b/0auJWN9UgqycPfl5NxMC8NGZUlaGppYbcizeWtikGOxQEMAkx09OFlMxRzXTwxZ7gnu+CRyq2/tn4JXOKw8UU5+O1CPA7mpiKvthLNra39+iiVcWFDHV2MtrDBbcO9cJebL0Zb2PdLDtyvgEvgpAvXr+lx2JOVjEuVpR2ya3/lPN2tiy6fpD7zsRmKe9wm4tYRPnA2tdRKsainfesXwKXjMqeqHHsyE7A1PQ4pZYX9nsPK8yESgElHPNneGQ94TMFNzmNgbWgiT1eNf0brgUtWrYi8C/gmOQpRhZnMejWQbtd9IUwmQtAlbo7LWCwdFwBfW2etFx+0FrjEZS9XluCX1FhsyzjN5Nj+c+XqC46K/07qNLqQelja4bGx07Bg1ATYGpkpPpCG9NBK4JJZ9khuGj5PPoqYK1loam3pV/KbMrFB4oO5ngHmOo/BE97TMdHORSu5r9YBt6iuCj+dP4EfU08ip7pcAqwAlMu4r5f1ECz3Csa8keNhomcgYCT1ddEa4BKnOFdagI1nw/F/WSkgrquNxgP1bfWNbyaa2hka40GPKVjmGQgnM0tNml6vc9EK4JIocDgnFesSDiO2MAetMicsrSGz5k6U7grkQjnX2QMv+M6Cr62TVjAEjQcuOcP8lh6H9YlHmMdWf7F4aRKUSfNARuJJ9k74l99shDq6M3dLTW4aDdzyhlp8mxKNL5KPoai+VmPVXDf45LZ76LLWxe3lmq+uprrCkOgwysIGr/jOwvxRE2CowSZjjQUuXcI+S4jEd+djmKuhJsizMoCSewAF51BYjgGF4QzWZZYqcm6hP/p32XzpKG5ua0NLWyvTfjS2tjBvNLLyycYgPx9NOUkIvE4m5njZdxaWuE9i4UWa2DQSuOR6uO7MIWxJj0NNS6NaN5WAR4AlQBI4LfQNmfnU0dic6UEdTSxYCA5ZpCz0jdhG0zFLRhCZKyIBlkQeOkGK66pRUFOB/NoqXK2tREFdJXKrK9jHSc9RzJq6gUxrpmiMZ72n4xHPALYuTWsaB1wC7Qdx+7EtIx4Nrc1qAa0McATUoUam7LZNDtzjbBzgaGoJZ1MrFidGRykBVBFLncySRRy4pqkBBbWVyKkqYxEYicX5SCjNZUAubqhFS2ur2kBM4KWPlMD7pHewxoFXo4BLoP0o/gDjtKoGrQxQxFntDE3ga+PIHLQDho3ESDNbWBuZKDVkRhZCRBz5fNkVxF7JRGxRJpJLrqCiqYHFuCnygfDgkDQnSwMjrPAOxuPewTDTIF2vxgCXImffP70fm9NPo4EsYTwoL8cYshAZUz19uFvaYZajB0IcR8PTeiisDE3UdrsmsaGguhLnyvJxMDsVEQXpyKwqR6OKTyE6fSgq+QWfUCzzCoKphoBXI4Bb0ViH9WfC8WVKFAsHV8VFRQZYChefZOeE20Z4IczJA06mVkyvqUmN5GOK4CBd9t/Z55BUeoUZYFTFgYnz2hoa43W/2XhgzBToawB91A7cmqZGfJkUgfUJkahqblAJaOnYNdPTR+BQVyxym4iAoSMxzNSSKxDoHSS7VjXVs3FZIpDBujDSpT99lmNBUV0paSIuVhbhUPZ5/HE5EWeK80GJSVQBYAIvXUrfm3IbMxGr4p29MQ+1ApeywPycegL/Pr0fZQ11Sld5yaxEfnaOWOzmh1tGeMHeyEwp7yV3y1VRv2NfznkGWgNdXSYj2hgYs2Qg9F4nU0u4WthgtOUQ9u8m+oZy5U+gi11WZSl2ZsTjt0tnkF5RwrLnKPukoo9xjKUdPgqYhxlO7kp/n0YCl47qg9nn8NLx3SxSQZl6WpkxwMXEgkUELPGYhJHmNgpzPEXEBzrKHw/fjB2Xk1jqpe4ahdlYGRhhqLEpXEys2GVwgr0LRpvbwcHUos/0TMRtE4tz8d/UWBbxUVJfq1Q60hpI5p02ZDjWBy5gIfLqamrjuAnFuVgZtQuxV3OUSmzispR7YI6TOx71DMTUoa4qUaoTcJ8I38KAq9dL1K1M9UaXUZKtSQVFl0Q/WxeEOo2Gj80w2BiZ9vqRlTfU4UD2OXx7LhqninKZsUOZ3JfmusDVG/+ZdieGmlioBbtqAW5edTn+dXw3/shKUar2gEDraGKOhzwm41HPAKZ7VVWTF7jXz6dz/gRSy/lYO+A2Vy/mPzCchZ53nySP1ppeUYRNiZH4/VICyhvbZWtlNDrBKBcaqcnIMcdET/WZdVQOXNrQDWcOYWPSUZaDSzmkbd8uirV63icUM53HKFUH2x04hAK381jtoeeDYKqrB28bB6aqu32kD0Zb2PUI4NL6GuzIiGcamouVJUrjvPSB2RmY4P2pt2HRaD+lil3d0VflwP3zUgJejP4DhXXVShERiKB0e7/VeQxe9rsZ46wdlPKevjgZD+DK3iEzjpAo4WllhwUjJ+BO1/EsKV53dwPSAUflZ+CD+AM4WZitNDdQuqyNt3XAZ9MXMflclU2lwL1QfhXPHv0V0VeylHKMEYcy0zfAg6Mn4WmfELiYWamSll3exRO4nQcmsBCAp9o7Y6lnAGY6jYGFwY2+BAR2ukesjT+If3JSmXOPMuReOjHvdfPDf6bdAStDY5XRW2XArWiow3un9uH71BMsfyzvRqAlldJzPsFMnrU0UB0RlSUq9EYjOlnsDUxx63BPPOo5Dd62jt0e16Q223A2HFsz4pQimtEHYqFngLf85+ARz2k9ijC891tlwN2RHoeXYv5UisqGuJC9kQlenjATD46dqnJ5Vh3AlammiIt6Ww/FM94huN3Vu1uTbEldNbNMfpsaoxTLJNHfw9IWX4TcgylDXHljtNvxVALc7MpSLD+6HRH5l7jLm+3mSBO8MnEWHhozlam+NKEpS1Tobm0EnCFGprh/9CQ84RXE0pFe3wi8H8cfwg9pJ0EpqpQhNjzo7o/3p97RrejCe0+UDlwi0vr4Q1ifGMnkLJ6NiQeGxljtOwsPaQinla1PlcCVcV9yaL/VZSxe8J0JHxvHG+4RxXVVWBt/mIGXt0aHRBfKpv5xwJ1Y6DaR5zarh+NS0uSnI39tjxfjqFckQpnpGuCF8SFY7h3KbP+a1Ai4y8I3Y+d1lrP/Zdrnz/NI3qTxSQ34ut8cBDuOvgG85IX3Tuw/TOblfdcgRhI2bBQ+D1kMZyVfjJXKccnr642YvfjpQixXTMkU4MvGTsNqv5vUfhHrbnGkktqcehIJxfnMklXVWMfqSOTXVqK0vo55d9W2NDE/W955eumjHmc1BK/7z8FsF88bTMcXK4rxWsyf+Dsnleu+0GBkxn7TbzZzPldmnl6lAvevzGQ8f2wnd50tbfT8EV54f9o8OHYjz3HfDYEDEngJmPRHDkVUmae4oYaF75D1MK4oB6nlV3C5ohSF9dXtIOaUFZ3GGmlujdf8bsZdo3xvAG9icR5ejP4dJ65mcZV36b3eNkPxTegSeNs4CqRc392UBlyKr1p5bCd2XE7kShg6jugo3BB0N3xslUeYvkkn7gniivXNzSwOLb4oG9H5lxBdeAkXyotQ1dTIJWSHQDTC1ArvTb0Nd7j63CA27M86h1UxfyCzsoyrGEdORS+OD8VLE29Smu+u0oC793ISnju2E0UNNdyAS6AdbmqJdUF3sSOwPzXiyFlVpThecBF/ZabgVFEO485i43+JZpTo7r0pt+MmlzFddL10Wf4+JRrvxR1AJUVScyIofTCU3unr0CUYb+vEadSuwygFuBRa/tzRHdibfY4faEHp4vXwr4mz8JR3sNK+ZKVQWYFBadNL66tZcZUtF04hquAyK1slxmGGwEu+Dh9Pm4egYaO6zIY4/usxe/BL+umOXBAKTLfHR4nrrvAJwSv+s+XyMVb0nUoBLnHbZ4/tZByD5935zuHjsCZwvtpc6RQlrpjn6QJaUF2BPZmJ+DktFimlhaBMDELpSePd5OiGdYEL4Gph22VqiSV5eCbyVxZRwUvzQx+gj40Dk3WV4bfLHbjkG7o6+g9szYjnRgTZcffp9LsR4NCVY4gBhzb0JY1Eckk+vkmOZs7iZY11gsFLXPs+Nz+8PfkW2Bn/LzcugWz7hdN47eRersyGuC6dkC9MmMHdFMwduOSVtOzINuTWVHABLnEKUrG85TcbT/kEq9x9Tgy4ZVoFWe6FwYMox42wRkf6zowz2JgQgczqMkGiA9HSREcXL02YgeXjQ7ukWKok1eWJvfgpLZabyEAfhL+dE36c8QALUeLZuAKXNurD0/uxLjGio9at2MkSt53p6IZNwffASclKbbFz7dyfLlubEiNwpiiXJdMYamLG3BApvmyIkRnsjc0U9qkg+u7LSsGaM4eQUFIgCGBEzxHmVtgQuACznMd0WTKVhH0ychvSyosFfRjX0480JxZ6hlgTcCcWu08S/NF2ty9cgZtefhVLwzcjvjif28LJWXl90F0sslSbGhkYHjtMMWeJ7HJCOcaoBi9lAycQ+9m4YIKdIybau2C4mY3c4UTExc4W5eCj+IM4mHsBTSxMR7FGY8wc5oZPgheyj0nW6MP49OwRfHDmEDfzPIH3blcfrA9awPJU8GrcgEvH0HcpUXjj5N+oYU4cfNqSUb74KHCeRlrHelthd74KsrAc6icrbUo1yagi5J0jfZjTu7yZwdPKC/Huyb+wNyeVlcRSpNHT9DG96BOClRNndREZLlUUM65LJQp4XNRobi6mlvgqdDGmD3NTZJq9PssNuKTCWXF0J37PTObDbVnWQAt8HrIIM5w8uC1YVQPJ42TTOe3TMGNzFpqz2H0i48LypPikJCFvndyLfblpCotmMpHhs6CFCHVy7yALceMfz8fgjZN/oaqZEg6KbxQs+vKEGVjpO6vPyGV538YNuMcLLjExIbemksuXSgt4xGMyiyRVRzCevATs6Tl5gNu5LwGJOByZae8Z5YvFo/0xwsK2T+CcK72CV2N243D+xT6f7W6ud43wwvrpC2BtaNrxMyUyWR65HeH5F7kxoclDnPHzzIdYLgkejQtwSWXzRWIk3jm9n4tsREfqUCMzfB26WCu5LW2MosCVbaYsNGf60BFYMX4GU//p63Qf2SvrE11wESujf2e6XkUMFbK8YBsC78ICN98uXPfr5GN4M/ZvlsdNbKP3UHTKF8GLWBIWHo0LcElV81TEduzJOqcQ4XpaAC100cjxWBd0N8sWqI1NKHBlayUO7GpujSc8A3Cfx+ReZXwC++5LZ/Hqib3IU1ANSX1nO7nj85B7uhh2yIPskcP/5XbRpnWt9AnF65PmcvEa4wLcuKvZWBaxBenlJaLFBNnXuTZgHha4TRR0/GkC0MUCl9YgC/58YmwAnh8fBsteghHJYZ80AmsSjrCM5/LKpkRvcz1DfDT1dtzrMbmD8ZAfw7r4g1ibcARNreJjBOkDCR02El+F3Mulug8X4P5w7jhejvk/PmJCWxtCOC5QXSC+3pFcaJZxApaprj6rBrlifBjLatNTo0znK47tZH628gKXxiJQ3eI8Bp8GL+zCdeOuZmHpka24WMGHIdkbmuKHGfcixPF/l0Gh+yMauORj+vqJPfghLVYhYvU0YbqBUsTocp8QrbKSXb8eyutFxpgj+ReYw3hJXS1KrmUZp2cVUTUReCks57ExU7Ha7+Zew8DDc9PwfNROhVwVZbLuJ0ELWNESWaOM6aujd+Pn9NNc9pbC6t+ZNAdPeE0XvbeigUuy0MOHf8bZ4gKFNqM74Mqcn78NuxdThowQ+jFqRD8CQ1l9LSiNallDLS5XFoMMNGeLcxF7NRtX62sUqvDeznkNsGpCGJ72DmapSrtrlEt3bfwhfJIUqfARTzrzNUHzYd6p5sPWtFN4OeZPlhVdES7e3dxI/Xe3qzc2Tl8oOqBSNHAPZJ/HY0e2oayxVrDzR+cbNalnNoUuBiVc7m+NPsyy+hqklhdif9Z5/J2djIzK0vaCJXIslmReiuZ9d/ItuMfdv0euRfrdxyO2Iq4oT+7Lsuwy+OPM++Fn59Ixm4yKIjx6+BculzRaP6V4/X7G/XCzsJNjxT0/Igq4za0tWH/mMD46e1jhr/v6KdHXaKSji7cnzcGTXsFyE1zU6tXYWZYi9Nf0eOy6lICi+hq51kyb72llj0+nL2SZJ3s6ub5MisRbp/YpdO8gb643/G7GigkzOk7P6qYGvHr8T/x04ZRoarEkJoamIJHkNldvUeOJAi7JQM8f3YHtF8/KRfTeZtoe3WCFn2c9AD/7/33xolanBZ0rG+tB/sufJUUiuaxQPs6LNtw1whtrA+fDrocMlGS6XXpkM05dzZV7b+ijuNlpND4LvodVF5I1cnl8LmoX01aIbaRnftt/NlZMmClqKFHAJQsLqcGiCjLlJk5PsyWOO8fJA59dd7MVtTot6UwGnNNXs/Fx3AEczs/o03wrU2G9O3kuHh47rVuRgRxmPjkbjg/PHJab69K4QwxNQXeMsE5mYJLLlx3ZgtSyItH3GGJQD7lPYv4n8vpldLeNooB7LD8DT0RsQ061eN9b+hLJnk0BdpR6fiC21LIrTENzIPdCn8uXBY1+GboE7pb23T5P+nXan7Ry+QFHWp1XfGfi+fEzOyx2ZGB6NvJX/JGZIp5BtbVh6hAXfB92P1zMrftcZ08PiAIuHSEron9HTbM4bzDitpb6hth4nelR8Kq0uCOF0ayK/h0xhX2HjZOH10sTwnp0XiFR7s0Te/Ft6gm5KULiAmVv/ypsCaucSY3+bU3cAXycEC7+LtPWBgdjc/w6+xH4ikhNKhi4BLbPEo7gndP7RC9GFhVKR5QyY/Hl3j01Pkh0jci7wMB7oby416OZ6DbRdhi7pY/ugetSgZMXov9AuZwhP7LL3/cz7uuyF39nJuOZYzvYJVJo3BuRVeZc/m3YEswdPk4wpQUDl/SFb8bsYV+zYt6gN85VZi//bsZ9XJ2NBVNFzR1JW0NV46kaUV+uhcR13598Kyue152DDaUZfeDQT3Krs2gvydl9feA83DPav4MSqWWFuP/gjyw6QhHjyfWklIViveM/h2W7UcQpqPNYgoFL2ViePLIN+3PTRC1ENpmlY6bgg4A75fJDVTOuVPJ6yvH1wrGd+JPqZPSSc00WzUBHOxXDvr7VNTfi1Zj/w/epJ+WeN3HUV3xnYLXf7A5gUcHsZeFbEZ6fwWW/n/QMwL+n3i64GKJg4OZWleP+Qz/itAJK7u4ox77AwTrt+ltv7QqGlBsJAh9kSVWidvZ6PMsKtFDyDSrl2l3bnHYSL0T9IbeLIh3n943yY1Y0s2uGILIAMtM+pxOWvP8+C1kkWLMgGLgppQXsCBLrEcZL5hGIDY3uRrd58hXYevFMr/pdMhys9AnBav/Z3WpkyMn/sfAtyKmtkEs+JS4+xd6ZRefKbv60T+R99m7cfi53Gqb6DFnU7Skhz6YIBi45c1D60LzaSrmI0dNk2s2YZuyWOZAMD/JsDj2zNzMJzx3tPZUVAY3y4lJG8O68xyjB3pMR2xBBURJypHqlPaGwqV/nPMry7MralrRYdtETm1uX5kv536hC5ST74fKSostzgoFLt9VVx3ejhEqZCnp1eydaxFgrO/wy62GMsRoiYqT+2ZVA90j4LzjeS8EX4oYeFnb4JmwJJnbyM5BRhC7SK4/twpb0OPmASxEL+sb4adb9rL6arO25nISnj/4mt4aiR2bF5muLdyffJjgiQjBwv0uJxhuxf6FapA5X5mD8dei9XcyM/ROGiq+KfBo+OL0fG5Mie7WoGevo4YuQhSyl6PWNrGj/ObUPG/oYQ9aP7h3kA7wxcD5z5pG1mCuXmUGDStgK1QbQWDS+o5EZXp80G/d7TFGcKOQW2qZobPO112w8exj/jjsIIoqYRsAljzCK8ecZdy9mTprWd/elBCw/uqPXjIoEpPcm34LlPqE3nIBEY3L2pxiyvtRrsrWTmo18Z2k8WSPLHpl+zxQXiAYuVeqhuh3PdBpfEboLBu6/Y/9mYSJiG303D4z2x8dB87utGCN2/P7QP7YwE0uPbOnVOZzEteXjgvDWlFu7VTH9lZmE54/tYgmk5TEgkCz88vgwvDZpbgcJyTfl0SObWc4FMRyXBqT+q8ZTDNotgrZIMHBfid6NT1OO9VgZXN7ZEHCfHheE96bdPmB9FPqiFRkRnojc2qszE3HV+SPG4YvQJR0qrM7jnrwG/iw5kzjTePQhfBg4r4ODU/ET0k4cyEsXve9Uf+K5cdPZ+EKaYOCuOrYLn5873mtlcHkmRMB9wScUb0+5VfRXLM/7tPEZUos9F/kbdmYm9QgYAkKYw0hsvunhbkUuUl8+eOhnufOC0XhLPaawODSZJoLm8Xj4VuzNOS8auBSAudwzAGunLxC0JYKBS36435yPEc0lCbgvjZ+BNybPlevGK2iVWt6JAi9fjNrF4vpIZ9tdI6AFDHHBjtmPdasSo5RN9x34CSllV6Ejh0qMxnvYfRK+CF3cwVCoOuiTEVvxZ9Y5DsBtweNjp7G7jZAmGLjPRP6G71JPiM42Taqc1eNn4DUCrijFmpDla0cfyvz4UdwB/HbpTI/hOuTT62PlgM9C7oF1N8nlLleUYGXUTlysKpHrZKPxbnfxwnvT7uh4ngJjn47Yhl2ZyaKBS+HvFPy5KWSRoE2QgCuIbKrtROqj8voaVDc19vpiynhja2Tao2M5VZdUJEeCiZ5el9RMPIFL2qhlY6bh0xAVc1zeosLrk+fKxQlUCxnpbZ0pwFdUaAU52mxQtYy7Kup3fJ4SLV3OBhC2eV/Onh0XxNSgQppgUUFShwkht3b34a0Oe94rmLmyCmmCgcvVAOHuz6rpiAmeE7J4qY9iFOBvgAhjSfCENMHA3Xg2nBV2E1sRXWby3Ri8sNvbsJBFSX2UQwEy+ZIFL0GbTb68nWy+Cr2XW9Jf5WybNGrMlUt4ImI7Pycb/9m4f4yKnWz4uzU+hDFWQyV0aDAF9lxOxNNHd4h3a2RlWtXk1sjXkdwU22c/Cv8BlMFGg/HZ49Q2p8ViJUdH8o8D5sFf1Y7kvEN3vglbjFuG80mzro2g0PQ595vQndzqchauzCNY0uBasCQVl9bpwRav6Rvb3+dHyUVei9mDH9NOcklHoLZgSTIfPsExPP1Rjyn4MFAKT9fUD6CwtpJ5hvEKT3/KMwDvqiM8vT0hCKX3ieHyBVIBjW9n3CepxDQUuZQQ5L6DP/aZXaev6XckBBGZTlawHpcmsCnhCN6WUjD1tVf94ve/MpPxLKcUTJZ6RqA7jVpSMNFucE16p2eIDUHzcbfbxH6x0f1pEWQkohSoazglvXM0MWdapAm2ToLJJJjj0hujWJrR7ciuLhftBM7SjI4Pw0t+N4t2ThdMDaljtxQg55pnIn/Fbq5pRinZiJVgiosCbi5L7LwVxwoui3ZJJNFjtqM7cywe2k0OLMErlDqKpsCZohwsO7JVoTy7Pb2UIl4e9piMDwOo1K2B4LmJAi6pSFYc3YFtnFLpU5VtSqUvVCktmApSx14psP3CKTwX9Xv/SaXPu3iJIdXBEpl+UsIgXwpUXSte8jOn4iWUqn/j9AW4bYQai5cQiahc1ONHtqGEU7mo+SO88HnoPV1qbfHdCmk0RSiQfq1c1JnifNHioMaUiyICyIoV08LkSajWG9FoYa7mVvg29N4eSyEpQnTpWfEUoER3VO62klOBvoWu3tgQvBAWnYoACpmlKBmXXljVVI83Yvbi+7QTXKJ0Kfz6Lf/ZeGZ8qGT+FbKjHPtQjbOXo3fjF04lUZkoOGkuHvcKEr23ooFLdPrx3HG8xLEIdbCDK8g/19lMuLqE4/4N2KFOXc3CY0e2MP9bsakD2ktRmbEi1ME9JKBWhNBcgBtflM0WKDbJM02cFkgpLtcEzmPGCDEpTBUhhPRsVwpQLoe18QexLjFCoZD2nuhIYmDYsFH4KnQJl6ycXIBLCurlEdtZhhOxydAYeNvaQN5D66YvgKWBsYQpNVCAavg+cvgX8LiUyaa/0oeS3M2F7uDus/ydeSYAAAybSURBVPEoskwuwKWsJ18mHcU7p/bJXWegt0nKjpWvQxdjprOHIuuRnuVAAeKOXyUdxZun/hEdUyg7RW0NTPBFyCJR/gmdl8YFuDQg1RlYGr4FuTXiq0zKJviw+2R8EHCHKAsLh30ccENQNO/TkdtwJP8StxN0yhAX/DzzQS5iAm0IN+CW1tew8ka7LidxWyw5Y3wesggzncYMOPCoa8HtSaCj8WbsP3Inge5rrlRmdfWEmXjBdyY3PxRuwCVfgx9SovFa7F+iS6TKCEFjLh7pi48D75SylfeFDk6/X6woYoVOYgqzuTEgMuV/HbYEQQ6jOM2SI8elGaVXXMXSw5vlrmLY1ypI1rUzMMH6oPmYN3JCX49Lv4ukgJCK6329kvbwblcfrA+6G1aG/C7a3DguLYAWTukw1yZEoLWtta81yfU7LTzMYRQ+D1ks6XXlopjwhyhr+VOR21mUAxftENpgoWeItQHzWBEUnqpNrsAlkkXlX2QucLwuabLKk2/4z8ZynxDRFhfh29q/e1Y01uGNE3vxc1qs6FAsGaVIXp5k54QfZz6AEeY2XAnIHbjlDXVYHf0Htl6MF21t6ZB129rgbmmLT6Yv5ConcaWkFg9GANt24RReP/kXihvEVUfvTAYy3/9r4iy8MGEGdAfrcKUQd+DS7KjCy7N9VEMUsoo7XDyxJuguwWU0hbxzIPRJKM7FM0d/xdniAtGOUp2ZzQRbB1D9Ok9rB+5kVApwKR3liqM78Wd2Cj+uC8BIRxf/8p3FRAZ9HV3uxBiIA5bX1+LVE/+HzelxXJdPKrAV3iF4pYf6wmJfphTgKovr0kXNxcQSawPnY87wcVyFfbGE1Mb+5I/w3blovB93AJVNjdzoSaKHl/UQfBN2b5dawDxppDTgkv8CVYr57VICN65LC5cJ/Bum3y0qSpQnEbV1rH+ykvFS9G5kcQh2vV62XTUhDKt8ZyntZFQacGkhRJhnj+5CYV0VN9lJRiCKlPjPtDu5mRC1FXxC501y7YvRu3CyMIfr3hBj8bEZim9C74WXzTCh0+uzn1KBW9lYhzdP/MUl31TnlZCKjPKNUbmh1X43SVa1Pre56wPk+fVqzJ/Yl5OmYM++HydncQoEeNIrGDocvMB6eqNSgUsvJeebp47+iosV8tXX6ps07U+QvEsVvp/3DsGz40MlRxw5CXe1thJvn/wb2y+eARXh49nIHXWmoxs2BS+Gk5klz6FvGEvpwKWy9VRpfc3ZI8zlkaf1hAhlZWCE1b6z8IjnNBjr6iuVWNo+eFFtFdbEH8KPF2JZqDnvvbA3MmVWsvmjlG+eVzpwabNzq8rxzNHtOJSXwcWU2EVsaGuDjaExA+/DY6fBSFdP2/GllPkX1VVhTdwhJrbVtxJoecK2fcqUcfPdqbfBXN9QKWvoPKhKgEsv3JURj1XH/0RxfQ3XywCNTRcCO0MT0E32kbEBMNaTOG/nTSa9+tr4w/ieQNvSxB20RP+xVnb4MmSxypK5qAy4lY31+PD0fnx9/jiXGKbrP2mZ2PCcdzCWegZIF7ZrBMqsLMH6M+HYdjGeu3jQftcArPQNWfTuA2OmcgnLkYddqwy4NBny9Xzu2G+IzBefa6y7xRF4zfQMcN9oPzzjE4rh5tby0KBfPkOX1zNFuVgTfxD7c9LQ1NaqBOEAjHs/6O6P96beDgsDI5XRUqXApVXtvZyEldG/o6CWv25Xpm3QH6yDuU5j8LLfzfC2GcZdNFHZ7gh8EdWeO5qXjo/iDyD2ag5Id8Bfom0X0SbaDsNnwYswXkTKUCHLVDlw65ub8ElCODYkRKKGyVvKa/52TnjeJxSznMcMGHUZlTj4LSMOX6ZE43KV+HwIPe2OLKD1g6m3YYHbRO6X7r5QoXLg0oQKaiqYApzi05TZSHRwMDbDgx6T8JhnYL9OX0prTSsvxKaESPyRmYSKxnqlgak9Hb4OVvmE4bkJM9SiyVELcAmsiSV5WBm1CyevZnO/5Xb+GGhDyZpzs5M7lo4LZDnJ+pu+l/xC9mWdw7fno1kVJIo+UYa6S0ZXGvvukd7M5D7E2FyZvKfHsdUGXJrRwZzzeOn4bmZVE5swrzfqEYeg5mxsjkVuE3GfxySMtLDV+mgKMiIkFOXgv6mx2JOVgrKGWqXSUXaHCBw6AusCF2CcEvxs5f0K1ApcukRsTj2Jd0/vQ0m9Coje1gYDHV342g5jAKYcrUONzZW+2fJuhrzPUQKWy5Ul2JEeh52XziKjslTpXJbm1q6vtcfH0+Yh1MldqfeTvmihVuDS5KjsFGVNWZcQgcqmeqUecTJi0AaQnwNxjoVuExHgMIoVwOYRINgXwcX8TsGopFI8mH0ef1xOREJJPhpaWlQybxK5hpta4v2pt+N2Vx+VvLM3WqkduDQ5Mk5sPBOOTSnHUKcEy053BGDiA+l99Q3gb+uEW0d4YYazB1xMrRlX1qRGJQuoztjhnFT8k30OSaVXmDFBVR8agZYskxSwet+YKSB1o7qbRgCXiEBmyQ9PHwClbK/n7IzTp/xLHFhPH24Wtpjp6IFQp9EYZ+UAayMTtcnBxF3zqyuQXJqHg9lpOHolA1lVZWhsaVGpaNNukTTGi+ND8di4IJhoiDldY4BL4CqorsBH8QexJeP0NfOkMrW8XeFMHJg2iXxI7QyMMcHWERPtnBHgMBIjzWxhY2SiVF0wvZtEpaK6aqSWXsHJK5mILcpCcukVUB0GEm9UxWFllJGZ0Vf4hOBxr+kwFVElhzeH1ijg0uLyaypYUpEt6XFoUJIXU19EJOV6WxvYkWhvZMLkX39bF4yzcWARFy5m1hhiZMb0l4MHDVYIUPSBkLqKgFjdWI+C2kpkV5Uiu6oMiSX5SCjJQX5NJYrr60CXMNK2qO7z7UoZW0NjPOMVjGVegTDTU77HV1/70vl3jQMu47w1FdhwJhz/TT+FmmYK4lPX1rU7rBOIiRMTkCkzi7OpBYYZm8PG0AzDTMxZuLy1oTHL5Us6YuKMVAWefJHpyCcA1jU3gSJCiuuqUVhbxcKZyNUwv7YSeTUVqG5qvPZsGwYNavcBUGejKN27XMdjsbsf8/8g7suzEV3tjcyZWlJI00jgtsu81fg8MRLfnI9hlzdl6nkVIZwMyK1ow2AMYmA20NFhCS9oswmwOgS7QYOYuENRBrTpxGHpj/6bwExOL9RoDE0A6vU0oM+GRANaE82bd2tubcX97v74OHC+oKE1Fri0moqGOnx/Lhqbko7han2NQkeyIGoI7NS+rW3tPn7dIYD9WzsHVS8fVWyBHetSrJtcTze2tmKZxxRsCr1HrudvIGsb7zNA0DR67kR63l0ZZ7AuIRwXK0vUfoRyXt6AHY6MTxTsSiVwhTSN5riyBdHRGp6bhnVnD7NwajqmtYlzCdmY/t5nQACXNpHkrNSyK9h49gh2Zyaxy46myL39HWTKWN+AAa6MeGSo+Dn1JH44fwLZ1eWgm43EfZUBLeWOOeCAS+SkgL+I3Av4PCkSxwuzVG5NUu6WDozRByRw2+/wbcisKMWWCyex5UIccmsr2J1d4r7aAfwBC1zZ9hD3pfiqb5KjEHUlE9XNjRqrNtMOSKlmlgMeuIz7trUhr7ocezITsS09DomlV0AKblXb9lWz5f3jLRJwO+0jWaUulBXit/R47MlKQnpFCQO1pH3QPLBLwO1mT8hH4GxRDnakx2NfTiqTfyUOrFnglYDby35UNdYjuTQff2em4GBuKtIripkGgm5w0jVOvUCWgCsH/YkDXyi/iojcNOzJSkZK6RVUNDa0ayAkPbAcFOT/iARcBWjafC2qIKrgIqILLuHk1UxmxKhrae6QhSV1mgIEFfGoBFwBxKMLGznvpJVfRWJxLo7lZyCptAC51RUs2oC8oiRuLICwCnSRgKsAsbp7lEBc3dSAnOoyxF3NRmJxHs6W5OFSZQlqmhpR29LU4Y8qgVkksTt1l4DLj5ZsJDJoUJBiXk05LlUUIbE4n4G6uIEiF6pR1lDHHMRbWGSEzGO1ky9uh6whCR29bQ15/D3Wn/1xOeNSoeHII42A3MDCbhqQXV3KYuIo5KawpgoFtRUsUXVZYy3L1VXf1MQiHFquRTpouKuzQrTg/TCpJx9w92eVQoU0rfDHFbIwZfchTUVdcyOoyB2p2IiDEGjJV5gAS+CVWs8UkIW9U/CpkCYBVwjVpD5qp4AEXLVvgTQBIRSQgCuEalIftVNAAq7at0CagBAKSMAVQjWpj9opIAFX7VsgTUAIBSTgCqGa1EftFJCAq/YtkCYghAIScIVQTeqjdgpIwFX7FkgTEEKB/wfAu45BkbeDdAAAAABJRU5ErkJggg==
+  contact:
+    name: "@frikkylikeme"
+    url: https://twitter.com/frikkylikeme
+    email: frikky@shuffler.io
+  x-categories:
+    - SIEM
+    - Case Management
+servers:
+  - url: ""
+basePath: /
+schemes:
+  - ""
+paths:
+  /siem/offenses:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: '[{"last_persisted_time": 42, "username_count": 42, "description":
+                  "String", "rules": [{"id": 42, "type": "String <one of:
+                  ADE_RULE, BUILDING_BLOCK_RULE, CRE_RULE>"}], "event_count":
+                  42, "flow_count": 42, "assigned_to": "String",
+                  "security_category_count": 42, "follow_up": true,
+                  "source_address_ids": [42], "source_count": 42, "inactive":
+                  true, "protected": true, "category_count": 42,
+                  "source_network": "String", "destination_networks":
+                  ["String"], "closing_user": "String", "close_time": 42,
+                  "remote_destination_count": 42, "start_time": 42,
+                  "last_updated_time": 42, "credibility": 42, "magnitude": 42,
+                  "id": 42, "categories": ["String"], "severity": 42,
+                  "log_sources": [{"type_name": "String", "type_id": 42, "name":
+                  "String", "id": 42}], "policy_category_count": 42,
+                  "device_count": 42, "closing_reason_id": 42,
+                  "first_persisted_time": 42, "offense_type": 42, "relevance":
+                  42, "domain_id": 42, "offense_source": "String",
+                  "local_destination_address_ids": [42],
+                  "local_destination_count": 42, "status": "String <one of:
+                  OPEN, HIDDEN, CLOSED>"}]'
+      summary: Get Offenses
+      operationId: Get_Offenses
+      description: ""
+      parameters:
+        - in: query
+          name: filter
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: sort
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: range
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/siem/offenses/{offense_id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                      "assigned_to": "String",
+                      "categories": [
+                          "String"
+                      ],
+                      "category_count": 42,
+                      "close_time": 42,
+                      "closing_reason_id": 42,
+                      "closing_user": "String",
+                      "credibility": 42,
+                      "description": "String",
+                      "destination_networks": [
+                          "String"
+                      ],
+                      "device_count": 42,
+                      "domain_id": 42,
+                      "event_count": 42,
+                      "first_persisted_time": 42,
+                      "flow_count": 42,
+                      "follow_up": true,
+                      "id": 42,
+                      "inactive": true,
+                      "last_persisted_time": 42,
+                      "last_updated_time": 42,
+                      "local_destination_address_ids": [
+                          42
+                      ],
+                      "local_destination_count": 42,
+                      "log_sources": [
+                          {
+                              "id": 42,
+                              "name": "String",
+                              "type_id": 42,
+                              "type_name": "String"
+                          }
+                      ],
+                      "magnitude": 42,
+                      "offense_source": "String",
+                      "offense_type": 42,
+                      "policy_category_count": 42,
+                      "protected": true,
+                      "relevance": 42,
+                      "remote_destination_count": 42,
+                      "rules": [
+                          {
+                              "id": 42,
+                              "type": "String <one of: ADE_RULE, BUILDING_BLOCK_RULE, CRE_RULE>"
+                          }
+                      ],
+                      "security_category_count": 42,
+                      "severity": 42,
+                      "source_address_ids": [
+                          42
+                      ],
+                      "source_count": 42,
+                      "source_network": "String",
+                      "start_time": 42,
+                      "status": "String <one of: OPEN, HIDDEN, CLOSED>",
+                      "username_count": 42
+                  }
+      summary: Get offense
+      operationId: Get_offense
+      description: ""
+      parameters:
+        - in: query
+          name: protected
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: follow_up
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: status
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: closing_reason_id
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: assigned_to
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: offense_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                      "assigned_to": "String",
+                      "categories": [
+                          "String"
+                      ],
+                      "category_count": 42,
+                      "close_time": 42,
+                      "closing_reason_id": 42,
+                      "closing_user": "String",
+                      "credibility": 42,
+                      "description": "String",
+                      "destination_networks": [
+                          "String"
+                      ],
+                      "device_count": 42,
+                      "domain_id": 42,
+                      "event_count": 42,
+                      "first_persisted_time": 42,
+                      "flow_count": 42,
+                      "follow_up": true,
+                      "id": 42,
+                      "inactive": true,
+                      "last_persisted_time": 42,
+                      "last_updated_time": 42,
+                      "local_destination_address_ids": [
+                          42
+                      ],
+                      "local_destination_count": 42,
+                      "log_sources": [
+                          {
+                              "id": 42,
+                              "name": "String",
+                              "type_id": 42,
+                              "type_name": "String"
+                          }
+                      ],
+                      "magnitude": 42,
+                      "offense_source": "String",
+                      "offense_type": 42,
+                      "policy_category_count": 42,
+                      "protected": true,
+                      "relevance": 42,
+                      "remote_destination_count": 42,
+                      "rules": [
+                          {
+                              "id": 42,
+                              "type": "String <one of: ADE_RULE, BUILDING_BLOCK_RULE, CRE_RULE>"
+                          }
+                      ],
+                      "security_category_count": 42,
+                      "severity": 42,
+                      "source_address_ids": [
+                          42
+                      ],
+                      "source_count": 42,
+                      "source_network": "String",
+                      "start_time": 42,
+                      "status": "String <one of: OPEN, HIDDEN, CLOSED>",
+                      "username_count": 42
+                  }
+      summary: Update Offense
+      operationId: Update_Offense
+      description: ""
+      parameters:
+        - in: query
+          name: protected
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: follow_up
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: status
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: closing_reason_id
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: assigned_to
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: offense_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/siem/offenses/{offense_id}/notes":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  [
+                      {
+                          "create_time": 42,
+                          "id": 42,
+                          "note_text": "String",
+                          "username": "String"
+                      }
+                  ]
+      summary: Get Offense notes
+      operationId: Get_Offense_notes
+      description: ""
+      parameters:
+        - in: query
+          name: filter
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: offense_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                      "create_time": 42,
+                      "id": 42,
+                      "note_text": "String",
+                      "username": "String"
+                  }
+      summary: Add note to Offense
+      operationId: Add_note_to_Offense
+      description: ""
+      parameters:
+        - in: query
+          name: note_text
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: offense_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/siem/offenses/{offense_id}/notes/{note_id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                      "create_time": 42,
+                      "id": 42,
+                      "note_text": "String",
+                      "username": "String"
+                  }
+      summary: Get Offense Note
+      operationId: Get_Offense_Note
+      description: ""
+      parameters:
+        - in: query
+          name: fields
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: offense_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: note_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /siem/offense_saved_searches:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  [
+                      {
+                          "id": 42,
+                          "name": "String",
+                          "owner": "String"
+                      }
+                  ]
+      summary: Get Offense Saved Searches
+      operationId: Get_Offense_Saved_Searches
+      description: ""
+      parameters:
+        - in: query
+          name: fields
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: filter
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/siem/offense_saved_searches/{id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                          "id": 42,
+                          "name": "String",
+                          "owner": "String"
+                  }
+      summary: Get Offense Saved Search
+      operationId: Get_Offense_Saved_Search
+      description: ""
+      parameters:
+        - in: query
+          name: fields
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: filter
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /ariel/searches:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  [
+                      "String"
+                  ]
+      summary: Get Ariel Searches
+      operationId: Get_Ariel_Searches
+      description: ""
+      parameters:
+        - in: query
+          name: db_name
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: data_lake
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: filter
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                    "cursor_id": "s16",
+                    "compressed_data_file_count": 0,
+                    "compressed_data_total_size": 0,
+                    "data_file_count": 5470,
+                    "data_total_size": 67183115,
+                    "index_file_count": 0,
+                    "index_total_size": 0,
+                    "processed_record_count": 1256462,
+                    "error_messages": [
+                      {
+                        "code": "String",
+                        "contexts": [
+                          "String"
+                        ],
+                        "message": "String",
+                        "severity": "String <one of: INFO, WARN, ERROR>"
+                      }
+                    ],
+                    "desired_retention_time_msec": 86400000,
+                    "progress": 46,
+                    "progress_details": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      66957,
+                      652657,
+                      76594,
+                      89809,
+                      86032,
+                      107729
+                    ],
+                    "query_execution_time": 1480,
+                    "query_string": "SELECT sourceip, starttime, qid, sourceport  from events into s16 where sourceip in (select destinationip from events) parameters snapshotsize=2, PROGRESSDETAILSRESOLUTION=10",
+                    "record_count": 1240923,
+                    "save_results": false,
+                    "status": "String <one of: WAIT, EXECUTE, SORTING, COMPLETED, CANCELED, ERROR>",
+                    "snapshot": {
+                      "events": [
+                        {
+                          "sourceip": "10.100.65.20",
+                          "starttime": 1467049610018,
+                          "qid": 10034,
+                          "sourceport": 13675
+                        },
+                        {
+                          "sourceip": "10.100.100.121",
+                          "starttime": 1467049610019,
+                          "qid": 20034,
+                          "sourceport": 80
+                        }
+                      ]
+                    },
+                    "subsearch_ids": [
+                       "sub_id_1"
+                     ],
+                    "search_id": "s16"
+                  }
+      summary: Create new Ariel Search
+      operationId: Create_new_Ariel_Search
+      description: ""
+      parameters:
+        - in: query
+          name: query_expression
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: saved_search_id
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: data_lake
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/ariel/searches/{search_id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "events": [
+                      {
+                        "sourceIP": "1.1.1.1",
+                        "destinationIP": "127.0.0.1",
+                        "qid": 1004
+                      },
+                      {
+                        "sourceIP": "1.1.1.1",
+                        "destinationIP": "127.0.0.1",
+                        "qid": 1005
+                      }
+                    ]
+                  }
+      summary: Get Ariel Search Results
+      operationId: Get_Ariel_Search_Results
+      description: ""
+      parameters:
+        - in: query
+          name: data_lake
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: search_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /help/endpoints:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get available endpoints
+      operationId: Get_available_endpoints
+      description: ""
+      parameters:
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: SEC
+tags:
+  - name: SIEM
+  - name: Case Management
