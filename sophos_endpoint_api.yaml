@@ -1,0 +1,1667 @@
+swagger: "3.0"
+info:
+  title: Sophos Endpoint API
+  description: This is the OAS 3.0 specification for the Endpoint API in Sophos Central.
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact:
+    email: apis@sophos.com
+    name: Sophos Central APIs
+    url: https://developers.sophos.com
+  x-categories:
+    - EDR
+servers:
+  - url: https://api-eu01.central.sophos.com/endpoint/v1
+host: api-eu01.central.sophos.com
+basePath: /endpoint/v1
+schemes:
+  - "https:"
+paths:
+  /endpoints:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Query endpoints
+      operationId: Query_endpoints
+      description: Get all the endpoints for the specified tenant.
+      parameters:
+        - in: query
+          name: pageFromKey
+          description: The key of the item from where to fetch a page.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageSize
+          description: The size of the page requested.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageTotal
+          description: Whether the number of pages should be calculated and returned in
+            the response.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: sort
+          description: Defines how to sort the data.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: healthStatus
+          description: Match endpoints that have any of the specified health status.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: type
+          description: Match endpoints that have any of the specified endpoint type.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: tamperProtectionEnabled
+          description: Tamper protection status.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: lockdownStatus
+          description: Match endpoints that have any of the specified lockdown status.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: lastSeenBefore
+          description: Last seen before date and time (UTC) or duration exclusive.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: lastSeenAfter
+          description: Last seen after date and time (UTC) or duration inclusive.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: ids
+          description: Match endpoints that have any of the specified ids.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: The fields to return in a partial response.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: view
+          description: Type of view to be returned in response.
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/endpoints/{endpointId}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete endpoint
+      operationId: Delete_endpoint
+      description: Deletes the specified endpoint.
+      parameters:
+        - in: path
+          name: endpointId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get endpoint details
+      operationId: Get_endpoint_details
+      description: Get the endpoint based on ID.
+      parameters:
+        - in: query
+          name: fields
+          description: The fields to return in a partial response.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: view
+          description: Type of view to be returned in response.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: endpointId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/endpoints/{endpointId}/scans":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Scan an endpoint
+      operationId: Scan_an_endpoint
+      description: Sends a request to the specified endpoint to perform or configure a scan.
+      parameters:
+        - in: path
+          name: endpointId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/endpoints/{endpointId}/tamper-protection":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get settings
+      operationId: Get_settings
+      description: Get the Tamper Protection settings for the specified endpoint.
+      parameters:
+        - in: path
+          name: endpointId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update settings
+      operationId: Update_settings
+      description: Turns Tamper Protection on or off on the endpoint. Or generates a
+        new Tamper Protection password. Note that Tamper Protection can be
+        enabled for an endpoint only if it has also been enabled globally.
+      parameters:
+        - in: path
+          name: endpointId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "enabled": "${enabled}",
+              "regeneratePassword": "${regeneratePassword}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "enabled": "${enabled}",
+                "regeneratePassword": "${regeneratePassword}"
+              }
+  "/endpoints/{endpointId}/update-checks":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Check for updates
+      operationId: Check_for_updates
+      description: Sends a request to the endpoint to check for Sophos management
+        agent software updates.
+      parameters:
+        - in: path
+          name: endpointId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /settings/allowed-items:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get allowed items
+      operationId: Get_allowed_items
+      description: Get all allowed items.
+      parameters:
+        - in: query
+          name: page
+          description: The page number to fetch, starting with 1.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageSize
+          description: The size of the page requested.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageTotal
+          description: Whether the number of pages should be calculated and returned in
+            the response.
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Allow an item
+      operationId: Allow_an_item
+      description: Exempt an item from conviction.
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "comment": "${comment}",
+              "originEndpointId": "${originEndpointId}",
+              "originPersonId": "${originPersonId}",
+              "properties": "${properties}",
+              "type": "${type}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "comment": "${comment}",
+                "originEndpointId": "${originEndpointId}",
+                "originPersonId": "${originPersonId}",
+                "properties": "${properties}",
+                "type": "${type}"
+              }
+  "/settings/allowed-items/{allowedItemId}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete allowed item
+      operationId: Delete_allowed_item
+      description: Deletes the specified allowed item.
+      parameters:
+        - in: path
+          name: allowedItemId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get an allowed item
+      operationId: Get_an_allowed_item
+      description: Get an allowed item by ID.
+      parameters:
+        - in: path
+          name: allowedItemId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update allowed item
+      operationId: Update_allowed_item
+      description: Update an allowed item.
+      parameters:
+        - in: path
+          name: allowedItemId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "comment": "${comment}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "comment": "${comment}"
+              }
+  /settings/blocked-items:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get blocked items
+      operationId: Get_blocked_items
+      description: Get all blocked items.
+      parameters:
+        - in: query
+          name: page
+          description: The page number to fetch, starting with 1.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageSize
+          description: The size of the page requested.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageTotal
+          description: Whether the number of pages should be calculated and returned in
+            the response.
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Block an item
+      operationId: Block_an_item
+      description: Block an item from exoneration.
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "comment": "${comment}",
+              "properties": "${properties}",
+              "type": "${type}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "comment": "${comment}",
+                "properties": "${properties}",
+                "type": "${type}"
+              }
+  "/settings/blocked-items/{blockedItemId}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete blocked item
+      operationId: Delete_blocked_item
+      description: Deletes the specified blocked item.
+      parameters:
+        - in: path
+          name: blockedItemId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get a blocked item
+      operationId: Get_a_blocked_item
+      description: Get a blocked item by ID.
+      parameters:
+        - in: path
+          name: blockedItemId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /settings/exclusions/intrusion-prevention:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Intrusion Prevention
+      operationId: Intrusion_Prevention
+      description: Get all Intrusion Prevention exclusions.
+      parameters:
+        - in: query
+          name: page
+          description: The page number to fetch, starting with 1.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageSize
+          description: The size of the page requested.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageTotal
+          description: Whether the number of pages should be calculated and returned in
+            the response.
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Intrusion Prevention
+      operationId: Intrusion_Prevention
+      description: Add a new Intrusion Prevention exclusion.
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "comment": "${comment}",
+              "direction": "${direction}",
+              "localPorts": "${localPorts}",
+              "remoteAddresses": "${remoteAddresses}",
+              "remotePorts": "${remotePorts}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "comment": "${comment}",
+                "direction": "${direction}",
+                "localPorts": "${localPorts}",
+                "remoteAddresses": "${remoteAddresses}",
+                "remotePorts": "${remotePorts}"
+              }
+  "/settings/exclusions/intrusion-prevention/{exclusionId}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Intrusion Prevention
+      operationId: Intrusion_Prevention
+      description: Delete an Intrusion Prevention exclusion by ID.
+      parameters:
+        - in: path
+          name: exclusionId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Intrusion Prevention
+      operationId: Intrusion_Prevention
+      description: Get an Intrusion Prevention exclusion by ID.
+      parameters:
+        - in: path
+          name: exclusionId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Intrusion Prevention
+      operationId: Intrusion_Prevention
+      description: Update an Intrusion Prevention exclusion by ID.
+      parameters:
+        - in: path
+          name: exclusionId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "comment": "${comment}",
+              "direction": "${direction}",
+              "localPorts": "${localPorts}",
+              "remoteAddresses": "${remoteAddresses}",
+              "remotePorts": "${remotePorts}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "comment": "${comment}",
+                "direction": "${direction}",
+                "localPorts": "${localPorts}",
+                "remoteAddresses": "${remoteAddresses}",
+                "remotePorts": "${remotePorts}"
+              }
+  /settings/exclusions/scanning:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get exclusions
+      operationId: Get_exclusions
+      description: Get all scanning exclusions.
+      parameters:
+        - in: query
+          name: type
+          description: Scanning Exclusion type.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: page
+          description: The page number to fetch, starting with 1.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageSize
+          description: The size of the page requested.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageTotal
+          description: Whether the number of pages should be calculated and returned in
+            the response.
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add exclusion
+      operationId: Add_exclusion
+      description: Add a new scanning exclusion.
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "comment": "${comment}",
+              "scanMode": "${scanMode}",
+              "type": "${type}",
+              "value": "${value}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "comment": "${comment}",
+                "scanMode": "${scanMode}",
+                "type": "${type}",
+                "value": "${value}"
+              }
+  "/settings/exclusions/scanning/{exclusionId}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete exclusion
+      operationId: Delete_exclusion
+      description: Deletes a scanning exclusion.
+      parameters:
+        - in: path
+          name: exclusionId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get an exclusion
+      operationId: Get_an_exclusion
+      description: Get a scanning exclusion by ID.
+      parameters:
+        - in: path
+          name: exclusionId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update exclusion
+      operationId: Update_exclusion
+      description: Update a scanning exclusion by ID.
+      parameters:
+        - in: path
+          name: exclusionId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "comment": "${comment}",
+              "scanMode": "${scanMode}",
+              "value": "${value}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "comment": "${comment}",
+                "scanMode": "${scanMode}",
+                "value": "${value}"
+              }
+  /settings/exploit-mitigation/applications:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get applications
+      operationId: Get_applications
+      description: Get Exploit Mitigation settings for all protected applications.
+      parameters:
+        - in: query
+          name: page
+          description: The page number to fetch, starting with 1.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageSize
+          description: The size of the page requested.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageTotal
+          description: Whether the number of pages should be calculated and returned in
+            the response.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: type
+          description: Exploit Mitigation Application type.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: modified
+          description: Whether or not Exploit Mitigation Application has been customized.
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add application
+      operationId: Add_application
+      description: Exclude a set of file paths from Exploit Mitigation.
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "paths": "${paths}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "paths": "${paths}"
+              }
+  "/settings/exploit-mitigation/applications/{exploitMitigationApplicationId}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete application
+      operationId: Delete_application
+      description: Deletes a custom (user-defined) Exploit Mitigation application by
+        ID. Note you can only delete custom applications. A request to delete a
+        syst em-detected application will fail with a 409 Conflict message.
+      parameters:
+        - in: path
+          name: exploitMitigationApplicationId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get application
+      operationId: Get_application
+      description: Get Exploit Mitigation settings for an application.
+      parameters:
+        - in: path
+          name: exploitMitigationApplicationId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update application
+      operationId: Update_application
+      description: Update Exploit Mitigation settings for an application.
+      parameters:
+        - in: path
+          name: exploitMitigationApplicationId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "modifications": "${modifications}",
+              "paths": "${paths}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "modifications": "${modifications}",
+                "paths": "${paths}"
+              }
+  /settings/exploit-mitigation/categories:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get categories
+      operationId: Get_categories
+      description: Get Exploit Mitigation categories.
+      parameters:
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /settings/exploit-mitigation/detected-exploits:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Detected exploits
+      operationId: Detected_exploits
+      description: Get detected exploits and the number of each detected exploit.
+      parameters:
+        - in: query
+          name: page
+          description: The page number to fetch, starting with 1.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageSize
+          description: The size of the page requested.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageTotal
+          description: Whether the number of pages should be calculated and returned in
+            the response.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: thumbprintNotIn
+          description: Filter out detected exploits with these thumbprints.
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/settings/exploit-mitigation/detected-exploits/{detectedExploitId}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Detected exploit
+      operationId: Detected_exploit
+      description: Get a detected exploit by ID.
+      parameters:
+        - in: path
+          name: detectedExploitId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /settings/tamper-protection:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Globally enabled
+      operationId: Globally_enabled
+      description: Check whether Tamper Protection is enabled globally.
+      parameters:
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /settings/web-control/categories:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get web categories
+      operationId: Get_web_categories
+      description: Get all Web Control categories.
+      parameters:
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /settings/web-control/local-sites:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get local sites
+      operationId: Get_local_sites
+      description: Get all local sites.
+      parameters:
+        - in: query
+          name: page
+          description: The page number to fetch, starting with 1.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageSize
+          description: The size of the page requested.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: pageTotal
+          description: Whether the number of pages should be calculated and returned in
+            the response.
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add local site
+      operationId: Add_local_site
+      description: Adds a new local site.
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "categoryId": "${categoryId}",
+              "comment": "${comment}",
+              "tags": "${tags}",
+              "url": "${url}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "categoryId": "${categoryId}",
+                "comment": "${comment}",
+                "tags": "${tags}",
+                "url": "${url}"
+              }
+  "/settings/web-control/local-sites/{localSiteId}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete local site
+      operationId: Delete_local_site
+      description: Deletes the specified local site.
+      parameters:
+        - in: path
+          name: localSiteId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get a local site
+      operationId: Get_a_local_site
+      description: Get a local site by ID.
+      parameters:
+        - in: path
+          name: localSiteId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update a local site
+      operationId: Update_a_local_site
+      description: Update a local site definition.
+      parameters:
+        - in: path
+          name: localSiteId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "categoryId": "${categoryId}",
+              "comment": "${comment}",
+              "tags": "${tags}",
+              "url": "${url}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: X-Tenant-ID
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "categoryId": "${categoryId}",
+                "comment": "${comment}",
+                "tags": "${tags}",
+                "url": "${url}"
+              }
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: UUID
+tags:
+  - name: Endpoints
+  - name: Tamper Protection
+  - name: Global Tamper Protection
+  - name: Scans
+  - name: Update Checks
+  - name: Allowed Items
+  - name: Blocked Items
+  - name: Scanning Exclusions
+  - name: Web Control
