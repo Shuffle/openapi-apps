@@ -1,0 +1,70 @@
+swagger: "3.0"
+info:
+  title: Discord
+  description: Send an alert to the discord channel via webhook.
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact:
+    name: "@frikkylikeme"
+    url: https://twitter.com/frikkylikeme
+    email: frikky@shuffler.io
+servers:
+  - url: https://discordapp.com/api/webhooks
+host: discordapp.com
+basePath: /api/webhooks
+schemes:
+  - "https:"
+paths:
+  "/{webhook_url}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Send a message
+      operationId: Send_a_message
+      description: Send a message to Discord server
+      parameters:
+        - in: path
+          name: webhook_url
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+            "content":"${message}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+              "content":"${message}"
+              }
+components:
+  securitySchemes: {}
+tags:
+  - name: Alert
+  - name: Message
