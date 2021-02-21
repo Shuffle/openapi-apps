@@ -67,11 +67,6 @@ def upload(filename, category, apikey):
         except:
             print("Error uploading %s in step 3" % filename)
 
-        #exit()
-    
-            #print("RET3 SUCCESS!")
-
-
 
 # 1 mig    POST http://localhost:5001/api/v1/validate_openapi 
 # 2 setup. GET the ID 
