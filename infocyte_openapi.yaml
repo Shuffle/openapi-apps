@@ -1,20 +1,19 @@
 swagger: "3.0"
 info:
-  title: Infocyte HUNT API
+  title: Infocyte OpenAPI
   description: Hunting operations and analytics
   version: "1.0"
   x-logo: data:image/png;base64,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
   contact:
+    email: frikky@shuffler.io
     name: "@frikkylikeme"
     url: https://twitter.com/frikkylikeme
-    email: frikky@shuffler.io
   x-categories:
-    - EDR
-    - Threat Hunting
+    - Eradication
 servers:
-  - url: https://darkrhinodemo.infocyte.com
-host: darkrhinodemo.infocyte.com
-basePath: /
+  - url: https://your-domain.infocyte.com/api
+host: your-domain.infocyte.com
+basePath: /api
 schemes:
   - "https:"
 paths:
@@ -6419,8 +6418,8 @@ paths:
               schema:
                 type: string
                 example: ""
-      summary: Find all instances of the model matched by filter from the data source
-      operationId: Find_all_instances_of_the_model_matched_by_filter_from_the_data_source
+      summary: Get alerts
+      operationId: Get_alerts
       parameters:
         - in: query
           name: filter
@@ -21502,10 +21501,10 @@ paths:
         content: {}
 components:
   securitySchemes:
-    BearerAuth:
-      type: http
-      scheme: bearer
-      bearerFormat: UUID
+    ApiKeyAuth:
+      type: apiKey
+      in: query
+      name: access_token
 tags:
   - name: role
   - name: UserIdentity

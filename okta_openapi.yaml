@@ -1,6 +1,6 @@
 swagger: "3.0"
 info:
-  title: Okta
+  title: Okta OpenAPI
   description: "Allows customers to easily access the Okta API. Generated from
     https://raw.githubusercontent.com/okta/okta-management-openapi-spec/master/\
     resources/spec.yaml. Prefix auth token with SSWS. More docs:
@@ -3713,7 +3713,7 @@ paths:
             type: string
       requestBody:
         content: {}
-  /api/v1/logs:
+  /api/v1/events:
     get:
       responses:
         default:
