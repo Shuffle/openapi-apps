@@ -29,7 +29,7 @@ paths:
                 example: ""
       summary: Get all notifications
       operationId: Get_all_notifications
-      description: Fetches all notification
+      description: Fetches all notifications
       parameters:
         - in: query
           name: All
@@ -74,7 +74,7 @@ paths:
                 type: string
                 example: ""
       summary: Get repository notificiations
-      operationId: Get_repository_notificiations
+      operationId: Get_repository_notifications
       description: Repository specific notifications
       parameters:
         - in: path
