@@ -1,0 +1,1703 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "InsightIDR API",
+    "version": "v1",
+    "description": "Insight IDR API V1 Get more info at https://help.rapid7.com/insightidr/en-us/api/v1/docs.html#"
+  },
+  "host": "[region].api.insight.rapid7.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/idr/v1/investigations": {
+      "get": {
+        "tags": [
+          "Investigations"
+        ],
+        "summary": "List investigations",
+        "description": "Retrieve a page of investigations matching the given request parameters.  The investigations will always be sorted by investigation created_time in descending order.",
+        "operationId": "listInvestigations",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "end_time",
+            "in": "query",
+            "description": "An optional ISO formatted timestamp.  Only investigations whose createTime is before this date will be returned by the api.  If this parameter is omitted investigations with any create_time may be returned.",
+            "required": false,
+            "type": "string",
+            "allowEmptyValue": false,
+            "x-example": "2018-07-04T00:00:00Z"
+          },
+          {
+            "name": "index",
+            "in": "query",
+            "description": "The optional 0 based index of the page to retrieve.  Must be an integer greater than or equal to 0",
+            "required": false,
+            "type": "integer",
+            "default": 0,
+            "format": "int32",
+            "allowEmptyValue": false,
+            "x-example": 0
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "description": "The optional size of the page to retrieve. Must be an integer greater than 0 or less then or equal to 1000",
+            "required": false,
+            "type": "integer",
+            "default": 20,
+            "maximum": 1000,
+            "exclusiveMaximum": false,
+            "minimum": 1,
+            "exclusiveMinimum": false,
+            "format": "int32",
+            "allowEmptyValue": false,
+            "x-example": 20
+          },
+          {
+            "name": "start_time",
+            "in": "query",
+            "description": "An optional ISO formatted timestamp.  Only investigations whose createTime is after this date will be returned by the api.  If this parameter is omitted investigations with any create_time may be returned.",
+            "required": false,
+            "type": "string",
+            "allowEmptyValue": false,
+            "x-example": "2018-07-01T00:00:00Z"
+          },
+          {
+            "name": "statuses",
+            "in": "query",
+            "description": "An optional comma separated set of investigation statuses.  Only investigation whose status match one of the entries in the list will be returned.  If this parameter is omitted investigations with any status may be returned.",
+            "required": false,
+            "type": "string",
+            "allowEmptyValue": false,
+            "x-example": "OPEN,CLOSED"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "required": [
+                "data",
+                "metadata"
+              ],
+              "properties": {
+                "data": {
+                  "type": "array",
+                  "description": "The list of data that matches the pagination parameters.  If no results match this will be an empty list",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "created_time",
+                      "id",
+                      "source",
+                      "status",
+                      "title"
+                    ],
+                    "properties": {
+                      "alerts": {
+                        "type": "array",
+                        "description": "The alerts involved in this investigation if any",
+                        "items": {
+                          "type": "object",
+                          "required": [
+                            "first_event_time",
+                            "type"
+                          ],
+                          "properties": {
+                            "first_event_time": {
+                              "type": "string",
+                              "example": "2018-06-06T16:56:42Z",
+                              "description": "The time the first event involved in this alert occurred"
+                            },
+                            "type": {
+                              "type": "string",
+                              "example": "Account Created",
+                              "description": "The alert's type"
+                            },
+                            "type_description": {
+                              "type": "string",
+                              "example": "A new account has been created.",
+                              "description": "An optional description of this type of alert"
+                            }
+                          },
+                          "title": "AlertInfo"
+                        }
+                      },
+                      "assignee": {
+                        "description": "The user assigned to this investigation if any",
+                        "type": "object",
+                        "required": [
+                          "email",
+                          "name"
+                        ],
+                        "properties": {
+                          "email": {
+                            "type": "string",
+                            "example": "example@test.com",
+                            "description": "The email of the assigned user"
+                          },
+                          "name": {
+                            "type": "string",
+                            "example": "Ellen Example",
+                            "description": "The name of the assigned user"
+                          }
+                        },
+                        "title": "Assignee"
+                      },
+                      "created_time": {
+                        "type": "string",
+                        "example": "2018-06-06T16:56:42Z",
+                        "description": "The time the investigation was created as an ISO formatted timestamp"
+                      },
+                      "id": {
+                        "type": "string",
+                        "example": "174e4f99-2ac7-4481-9301-4d24c34baf06",
+                        "description": "The id of the investigation"
+                      },
+                      "source": {
+                        "type": "string",
+                        "example": "ALERT",
+                        "description": "The source of this investigation"
+                      },
+                      "status": {
+                        "type": "string",
+                        "example": "OPEN",
+                        "description": "The status of the investigations",
+                        "enum": [
+                          "OPEN",
+                          "CLOSED"
+                        ]
+                      },
+                      "title": {
+                        "type": "string",
+                        "example": "Joe enabled account Joebob",
+                        "description": "The investigation's title"
+                      }
+                    },
+                    "title": "Investigation"
+                  }
+                },
+                "metadata": {
+                  "description": "The pagination parameters used to generate this page result",
+                  "type": "object",
+                  "required": [
+                    "index",
+                    "size",
+                    "total_data",
+                    "total_pages"
+                  ],
+                  "properties": {
+                    "index": {
+                      "type": "integer",
+                      "format": "int32",
+                      "example": 0,
+                      "description": "The 0 based index of the page retrieved"
+                    },
+                    "size": {
+                      "type": "integer",
+                      "format": "int32",
+                      "example": 20,
+                      "description": "The size of the page requested"
+                    },
+                    "total_data": {
+                      "type": "integer",
+                      "format": "int32",
+                      "example": 15,
+                      "description": "The total number of results available with the given filter parameters"
+                    },
+                    "total_pages": {
+                      "type": "integer",
+                      "format": "int32",
+                      "example": 1,
+                      "description": "The total number of pages available with the given filter parameters"
+                    }
+                  },
+                  "title": "PageMetadata"
+                }
+              },
+              "title": "Page«Investigation»"
+            }
+          },
+          "400": {
+            "description": "Invalid Parameters",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Insufficient Permissions",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/idr/v1/investigations/bulk_close": {
+      "post": {
+        "tags": [
+          "Investigations"
+        ],
+        "summary": "Close investigations in bulk",
+        "description": "Close all investigations that match the parameters provided in the request body. This api returns the number of investigations that were closed and a list of their ids.",
+        "operationId": "bulkCloseInvestigations",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "closeRequest",
+            "description": "The criteria for what investigations to close",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "required": [
+                "from",
+                "source",
+                "to"
+              ],
+              "properties": {
+                "alert_type": {
+                  "type": "string",
+                  "example": "Account Created",
+                  "description": "The category of alerts that should be closed. This parameter is required if the source is ALERT and ignored for other sources. This value must exactly match the alert type returned by the List Investigations response."
+                },
+                "from": {
+                  "type": "string",
+                  "example": "2018-07-01T00:00:00Z",
+                  "description": "An ISO formatted timestamp. Only investigations whose createTime is after this date will be closed."
+                },
+                "max_investigations_to_close": {
+                  "type": "integer",
+                  "format": "int32",
+                  "example": 10,
+                  "description": "An optional maximum number of alerts to close with this request. If this parameter is not specified then there is no maximum. If this limit is exceeded, then a 400 error response is returned. The minimum value is 0."
+                },
+                "source": {
+                  "type": "string",
+                  "example": "ALERT",
+                  "description": "The name of an investigation source. Only investigations from this source will be closed. If the source is ALERT, an alert type must be specified as well.",
+                  "enum": [
+                    "ALERT",
+                    "MANUAL",
+                    "HUNT"
+                  ]
+                },
+                "to": {
+                  "type": "string",
+                  "example": "2018-07-08T00:00:00Z",
+                  "description": "An ISO formatted timestamp. Only investigations whose createTime is before this date will be closed."
+                }
+              },
+              "title": "BulkCloseInvestigationsRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "required": [
+                "ids",
+                "num_closed"
+              ],
+              "properties": {
+                "ids": {
+                  "type": "array",
+                  "example": [
+                    "581134c9-2510-4010-865c-7ae81761315b",
+                    "114c706d-e64a-4731-997b-9115beef3026"
+                  ],
+                  "description": "The ids of the investigations that were closed by the request.",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "num_closed": {
+                  "type": "integer",
+                  "format": "int32",
+                  "example": 2,
+                  "description": "The number of investigations closed by the request."
+                }
+              },
+              "title": "ClosedInvestigations"
+            }
+          },
+          "400": {
+            "description": "Invalid Parameters",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Insufficient Permissions",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/idr/v1/investigations/{id}/assignee": {
+      "put": {
+        "tags": [
+          "Investigations"
+        ],
+        "summary": "Assign user to investigation",
+        "description": "Assigning a user to the specified investigation. The user must be a platform administrator, product administrator, or read/write user with access to either InsightIDR or InsightUBA",
+        "operationId": "assignUserToInvestigation",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "assignUserRequest",
+            "description": "Details about which user to assign",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "required": [
+                "user_email_address"
+              ],
+              "properties": {
+                "user_email_address": {
+                  "type": "string",
+                  "example": "example@test.com",
+                  "description": "The email address of the user to assign to this investigation, used to log into the insight platform"
+                }
+              },
+              "title": "AssignUserToInvestigationRequest"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Assign the user to this investigation, by id",
+            "required": true,
+            "type": "string",
+            "x-example": "174e4f99-2ac7-4481-9301-4d24c34baf06"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "required": [
+                "created_time",
+                "id",
+                "source",
+                "status",
+                "title"
+              ],
+              "properties": {
+                "alerts": {
+                  "type": "array",
+                  "description": "The alerts involved in this investigation if any",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "first_event_time",
+                      "type"
+                    ],
+                    "properties": {
+                      "first_event_time": {
+                        "type": "string",
+                        "example": "2018-06-06T16:56:42Z",
+                        "description": "The time the first event involved in this alert occurred"
+                      },
+                      "type": {
+                        "type": "string",
+                        "example": "Account Created",
+                        "description": "The alert's type"
+                      },
+                      "type_description": {
+                        "type": "string",
+                        "example": "A new account has been created.",
+                        "description": "An optional description of this type of alert"
+                      }
+                    },
+                    "title": "AlertInfo"
+                  }
+                },
+                "assignee": {
+                  "description": "The user assigned to this investigation if any",
+                  "type": "object",
+                  "required": [
+                    "email",
+                    "name"
+                  ],
+                  "properties": {
+                    "email": {
+                      "type": "string",
+                      "example": "example@test.com",
+                      "description": "The email of the assigned user"
+                    },
+                    "name": {
+                      "type": "string",
+                      "example": "Ellen Example",
+                      "description": "The name of the assigned user"
+                    }
+                  },
+                  "title": "Assignee"
+                },
+                "created_time": {
+                  "type": "string",
+                  "example": "2018-06-06T16:56:42Z",
+                  "description": "The time the investigation was created as an ISO formatted timestamp"
+                },
+                "id": {
+                  "type": "string",
+                  "example": "174e4f99-2ac7-4481-9301-4d24c34baf06",
+                  "description": "The id of the investigation"
+                },
+                "source": {
+                  "type": "string",
+                  "example": "ALERT",
+                  "description": "The source of this investigation"
+                },
+                "status": {
+                  "type": "string",
+                  "example": "OPEN",
+                  "description": "The status of the investigations",
+                  "enum": [
+                    "OPEN",
+                    "CLOSED"
+                  ]
+                },
+                "title": {
+                  "type": "string",
+                  "example": "Joe enabled account Joebob",
+                  "description": "The investigation's title"
+                }
+              },
+              "title": "Investigation"
+            }
+          },
+          "400": {
+            "description": "Invalid Parameters",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Insufficient Permissions",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "404": {
+            "description": "User or Investigation not found",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/idr/v1/investigations/{id}/status/{status}": {
+      "put": {
+        "tags": [
+          "Investigations"
+        ],
+        "summary": "Set the status of an investigation",
+        "description": "Set the status of the investigation with the given id.  This api returns the investigation with its status updated to the new state.  If the investigation already has the given status no change is made, but the investigation will still be returned.",
+        "operationId": "setStatus",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The id of the investigation to change the status of",
+            "required": true,
+            "type": "string",
+            "x-example": "174e4f99-2ac7-4481-9301-4d24c34baf06"
+          },
+          {
+            "name": "status",
+            "in": "path",
+            "description": "The new status for the investigation (case insensitive)",
+            "required": true,
+            "type": "string",
+            "x-example": "OPEN",
+            "enum": [
+              "OPEN",
+              "CLOSED"
+            ]
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "required": [
+                "created_time",
+                "id",
+                "source",
+                "status",
+                "title"
+              ],
+              "properties": {
+                "alerts": {
+                  "type": "array",
+                  "description": "The alerts involved in this investigation if any",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "first_event_time",
+                      "type"
+                    ],
+                    "properties": {
+                      "first_event_time": {
+                        "type": "string",
+                        "example": "2018-06-06T16:56:42Z",
+                        "description": "The time the first event involved in this alert occurred"
+                      },
+                      "type": {
+                        "type": "string",
+                        "example": "Account Created",
+                        "description": "The alert's type"
+                      },
+                      "type_description": {
+                        "type": "string",
+                        "example": "A new account has been created.",
+                        "description": "An optional description of this type of alert"
+                      }
+                    },
+                    "title": "AlertInfo"
+                  }
+                },
+                "assignee": {
+                  "description": "The user assigned to this investigation if any",
+                  "type": "object",
+                  "required": [
+                    "email",
+                    "name"
+                  ],
+                  "properties": {
+                    "email": {
+                      "type": "string",
+                      "example": "example@test.com",
+                      "description": "The email of the assigned user"
+                    },
+                    "name": {
+                      "type": "string",
+                      "example": "Ellen Example",
+                      "description": "The name of the assigned user"
+                    }
+                  },
+                  "title": "Assignee"
+                },
+                "created_time": {
+                  "type": "string",
+                  "example": "2018-06-06T16:56:42Z",
+                  "description": "The time the investigation was created as an ISO formatted timestamp"
+                },
+                "id": {
+                  "type": "string",
+                  "example": "174e4f99-2ac7-4481-9301-4d24c34baf06",
+                  "description": "The id of the investigation"
+                },
+                "source": {
+                  "type": "string",
+                  "example": "ALERT",
+                  "description": "The source of this investigation"
+                },
+                "status": {
+                  "type": "string",
+                  "example": "OPEN",
+                  "description": "The status of the investigations",
+                  "enum": [
+                    "OPEN",
+                    "CLOSED"
+                  ]
+                },
+                "title": {
+                  "type": "string",
+                  "example": "Joe enabled account Joebob",
+                  "description": "The investigation's title"
+                }
+              },
+              "title": "Investigation"
+            }
+          },
+          "400": {
+            "description": "Invalid Parameters",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Insufficient Permissions",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "404": {
+            "description": "Investigation Not Found",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/idr/v1/customthreats": {
+      "post": {
+        "tags": [
+          "Threats"
+        ],
+        "summary": "Create a threat",
+        "description": "Create a private InsightIDR threat and add indicators to this threat. The following threat indicators are supported in the request body formatted as json.<ul><li>threatName</li><li>notetext</li><li>indicators</li><ul><li>IP addresses (non CIDR notation)</li><li>Process hashes</li><li>Domain names</li><li>URLs</li></ul></ul>The request content type must be to in json. See request samples on the right.<br/>The maximum file size is 50 MB.",
+        "operationId": "createThreat",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "createThreatRequest",
+            "description": "The request body format must be in json. \nThe maximum payload size is 50 MB.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "x-examples": {
+              "application/json": "{\n  \"threat\": \"threatName\",\n  \"note\": \"notetext\",\n  \"indicators\": {\n       \"ips\": [ \"192.168.0.1\" ],\n       \"hashes\": [ \"b95663ec7339033cf1fde459a34b6606\" ],\n       \"domain_names\": [ \"rapid7.com\", \"mailxpy.com\" ],\n       \"urls\": [ \"http://example.com/index\", \" http://www.mailxpy.com/login/index.php\" ]\n  }\n}"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "required": [
+                "rejected_indicators",
+                "threat"
+              ],
+              "properties": {
+                "rejected_indicators": {
+                  "type": "array",
+                  "example": [
+                    "blacklisted",
+                    "invalid"
+                  ],
+                  "description": "The list of indicators that have been rejected during the update",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "threat": {
+                  "description": "The information about the threat",
+                  "type": "object",
+                  "required": [
+                    "indicator_count",
+                    "name",
+                    "published"
+                  ],
+                  "properties": {
+                    "indicator_count": {
+                      "type": "integer",
+                      "format": "int64",
+                      "example": 1,
+                      "description": "The number of indicators in this threat",
+                      "minimum": 0,
+                      "exclusiveMinimum": false,
+                      "exclusiveMaximum": false
+                    },
+                    "name": {
+                      "type": "string",
+                      "example": "Threat",
+                      "description": "The name of the threat"
+                    },
+                    "note": {
+                      "type": "string",
+                      "example": "Notes",
+                      "description": "Notes about this threat"
+                    },
+                    "published": {
+                      "type": "boolean",
+                      "example": true,
+                      "description": "Indicates whether this threat has been published"
+                    }
+                  },
+                  "title": "Threat"
+                }
+              },
+              "title": "ThreatUpdateResult"
+            }
+          },
+          "400": {
+            "description": "Invalid Parameters / Duplicate Threat Found",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Insufficient Permissions",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "413": {
+            "description": "Payload Is Too Large",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/idr/v1/customthreats/key/{key}/indicators/add": {
+      "post": {
+        "tags": [
+          "Threats"
+        ],
+        "summary": "Add indicators to a threat",
+        "description": "Add InsightIDR threat indicators to a threat with the given threat key. The following threat indicators are supported in the request body formatted as json, stix_xml, or csv: <br/><ul><li>IP addresses</li><li>Process hashes</li><li>Domain names</li><li>URLs</li></ul>The request content type is expected to match the specified format: \"application/json\" for \"json\" format, \"text/xml\" for \"stix_xml\" format and \"text/csv\" for \"csv\" format. See request samples on the right.<br/>The multipart file upload (with multipart/form-data content type) is also supported by the endpoint. The maximum file size is 50 MB.",
+        "operationId": "addIndicators",
+        "consumes": [
+          "application/json",
+          "multipart/form-data",
+          "text/xml",
+          "text/csv"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "The input format",
+            "required": true,
+            "type": "string",
+            "x-example": "json",
+            "enum": [
+              "json",
+              "csv",
+              "stix_xml"
+            ]
+          },
+          {
+            "name": "key",
+            "in": "path",
+            "description": "The key of a threat for which the indicators are going to be added",
+            "required": true,
+            "type": "string",
+            "x-example": "156c9e48-64da-4bba-939e-e1c329be591b"
+          },
+          {
+            "in": "body",
+            "name": "requestBody",
+            "description": "The request body format should be one of json, stix_xml, csv or multi-part file data. \nThe maximum payload size is 50 MB.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "x-examples": {
+              "application/json": {
+                "ips": [
+                  "192.168.0.1"
+                ],
+                "hashes": [
+                  "b95663ec7339033cf1fde459a34b6606"
+                ],
+                "domain_names": [
+                  "rapid7.com"
+                ],
+                "urls": [
+                  "http://example.com"
+                ]
+              },
+              "text/csv": "192.168.0.1,b95663ec7339033cf1fde459a34b6606,rapid7.com,http://example.com",
+              "text/xml": "\n<stix:STIX_Package xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n                   xmlns:stix=\"http://stix.mitre.org/stix-1\"\n                   xmlns:indicator=\"http://stix.mitre.org/Indicator-2\"\n                   xmlns:cybox=\"http://cybox.mitre.org/cybox-2\"\n                   xmlns:DomainNameObj=\"http://cybox.mitre.org/objects#DomainNameObject-1\"\n                   xmlns:cyboxVocabs=\"http://cybox.mitre.org/default_vocabularies-2\"\n                   xmlns:stixVocabs=\"http://stix.mitre.org/default_vocabularies-1\"\n                   xmlns:example=\"http://example.com/\"\n                   xsi:schemaLocation=\n                           \"http://stix.mitre.org/stix-1 ../stix_core.xsd\n                            http://stix.mitre.org/Indicator-2 ../indicator.xsd\n                            http://cybox.mitre.org/default_vocabularies-2 ../cybox/cybox_default_vocabularies.xsd\n                            http://stix.mitre.org/default_vocabularies-1 ../stix_default_vocabularies.xsd\n                            http://cybox.mitre.org/objects#DomainNameObject-1 ../cybox/objects/Domain_Name_Object.xsd\"\n                   id=\"example:STIXPackage-f61cd874-494d-4194-a3e6-6b487dbb6d6e\"\n                   timestamp=\"2014-05-08T09:00:00.000000Z\"\n                   version=\"1.1.1\">\n    <stix:STIX_Header>\n        <stix:Title>Example watchlist that contains domain information.</stix:Title>\n        <stix:Package_Intent xsi:type=\"stixVocabs:PackageIntentVocab-1.0\">Indicators - Watchlist</stix:Package_Intent>\n    </stix:STIX_Header>\n    <stix:Indicators>\n        <stix:Indicator xsi:type=\"indicator:IndicatorType\" id=\"example:Indicator-2e20c5b2-56fa-46cd-9662-8f199c69d2c9\" timestamp=\"2014-05-08T09:00:00.000000Z\">\n            <indicator:Type xsi:type=\"stixVocabs:IndicatorTypeVocab-1.1\">Domain Watchlist</indicator:Type>\n            <indicator:Description>Sample domain Indicator for this watchlist</indicator:Description>\n            <indicator:Observable id=\"example:Observable-87c9a5bb-d005-4b3e-8081-99f720fad62b\">\n                <cybox:Object id=\"example:Object-12c760ba-cd2c-4f5d-a37d-18212eac7928\">\n                    <cybox:Properties xsi:type=\"DomainNameObj:DomainNameObjectType\" type=\"FQDN\">\n                        <DomainNameObj:Value condition=\"Equals\" apply_condition=\"ANY\">malicious1.example.com##comma##malicious2.example.com##comma##malicious3.example.com</DomainNameObj:Value>\n                    </cybox:Properties>\n                </cybox:Object>\n            </indicator:Observable>\n            <indicator:Observable id=\"NCCIC:Observable-fb5606ea-23f0-472d-babf-8b7e89571881\">\n                <cybox:Object id=\"NCCIC:Object-a105a51a-c324-11e7-b25d-64006a91c899\">\n                    <cybox:Properties xsi:type=\"AddressObj:AddressObjectType\" category=\"ipv4-addr\" is_spoofed=\"false\">\n                        <AddressObj:Address_Value condition=\"Equals\">185.134.98.141</AddressObj:Address_Value>\n                    </cybox:Properties>\n                </cybox:Object>\n            </indicator:Observable>\n        </stix:Indicator>\n    </stix:Indicators>\n</stix:STIX_Package>"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "required": [
+                "rejected_indicators",
+                "threat"
+              ],
+              "properties": {
+                "rejected_indicators": {
+                  "type": "array",
+                  "example": [
+                    "blacklisted",
+                    "invalid"
+                  ],
+                  "description": "The list of indicators that have been rejected during the update",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "threat": {
+                  "description": "The information about the threat",
+                  "type": "object",
+                  "required": [
+                    "indicator_count",
+                    "name",
+                    "published"
+                  ],
+                  "properties": {
+                    "indicator_count": {
+                      "type": "integer",
+                      "format": "int64",
+                      "example": 1,
+                      "description": "The number of indicators in this threat",
+                      "minimum": 0,
+                      "exclusiveMinimum": false,
+                      "exclusiveMaximum": false
+                    },
+                    "name": {
+                      "type": "string",
+                      "example": "Threat",
+                      "description": "The name of the threat"
+                    },
+                    "note": {
+                      "type": "string",
+                      "example": "Notes",
+                      "description": "Notes about this threat"
+                    },
+                    "published": {
+                      "type": "boolean",
+                      "example": true,
+                      "description": "Indicates whether this threat has been published"
+                    }
+                  },
+                  "title": "Threat"
+                }
+              },
+              "title": "ThreatUpdateResult"
+            }
+          },
+          "400": {
+            "description": "Invalid Parameters",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Insufficient Permissions",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "404": {
+            "description": "Threat Not Found",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "413": {
+            "description": "Payload Is Too Large",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/idr/v1/customthreats/key/{key}/indicators/replace": {
+      "post": {
+        "tags": [
+          "Threats"
+        ],
+        "summary": "Replace indicators for a threat",
+        "description": "Replace InsightIDR threat indicators for a threat with the given threat key. The following threat indicators are supported in the request body formatted as json, stix_xml, or csv: <br/><ul><li>IP addresses</li><li>Process hashes</li><li>Domain names</li><li>URLs</li></ul>The request content type is expected to match the specified format: \"application/json\" for \"json\" format, \"text/xml\" for \"stix_xml\" format and \"text/csv\" for \"csv\" format. See request samples on the right.<br/>The multipart file upload (with multipart/form-data content type) is also supported by the endpoint. The maximum file size is 50 MB.",
+        "operationId": "replaceIndicators",
+        "consumes": [
+          "application/json",
+          "multipart/form-data",
+          "text/xml",
+          "text/csv"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "The input format",
+            "required": true,
+            "type": "string",
+            "x-example": "json",
+            "enum": [
+              "json",
+              "csv",
+              "stix_xml"
+            ]
+          },
+          {
+            "name": "key",
+            "in": "path",
+            "description": "The key of a threat for which the indicators are going to be added",
+            "required": true,
+            "type": "string",
+            "x-example": "156c9e48-64da-4bba-939e-e1c329be591b"
+          },
+          {
+            "in": "body",
+            "name": "requestBody",
+            "description": "The request body format should be one of json, stix_xml, csv or multi-part file data. \nThe maximum payload size is 50 MB.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "x-examples": {
+              "application/json": {
+                "ips": [
+                  "192.168.0.1"
+                ],
+                "hashes": [
+                  "b95663ec7339033cf1fde459a34b6606"
+                ],
+                "domain_names": [
+                  "rapid7.com"
+                ],
+                "urls": [
+                  "http://example.com"
+                ]
+              },
+              "text/csv": "192.168.0.1,b95663ec7339033cf1fde459a34b6606,rapid7.com,http://example.com",
+              "text/xml": "\n<stix:STIX_Package xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n                   xmlns:stix=\"http://stix.mitre.org/stix-1\"\n                   xmlns:indicator=\"http://stix.mitre.org/Indicator-2\"\n                   xmlns:cybox=\"http://cybox.mitre.org/cybox-2\"\n                   xmlns:DomainNameObj=\"http://cybox.mitre.org/objects#DomainNameObject-1\"\n                   xmlns:cyboxVocabs=\"http://cybox.mitre.org/default_vocabularies-2\"\n                   xmlns:stixVocabs=\"http://stix.mitre.org/default_vocabularies-1\"\n                   xmlns:example=\"http://example.com/\"\n                   xsi:schemaLocation=\n                           \"http://stix.mitre.org/stix-1 ../stix_core.xsd\n                            http://stix.mitre.org/Indicator-2 ../indicator.xsd\n                            http://cybox.mitre.org/default_vocabularies-2 ../cybox/cybox_default_vocabularies.xsd\n                            http://stix.mitre.org/default_vocabularies-1 ../stix_default_vocabularies.xsd\n                            http://cybox.mitre.org/objects#DomainNameObject-1 ../cybox/objects/Domain_Name_Object.xsd\"\n                   id=\"example:STIXPackage-f61cd874-494d-4194-a3e6-6b487dbb6d6e\"\n                   timestamp=\"2014-05-08T09:00:00.000000Z\"\n                   version=\"1.1.1\">\n    <stix:STIX_Header>\n        <stix:Title>Example watchlist that contains domain information.</stix:Title>\n        <stix:Package_Intent xsi:type=\"stixVocabs:PackageIntentVocab-1.0\">Indicators - Watchlist</stix:Package_Intent>\n    </stix:STIX_Header>\n    <stix:Indicators>\n        <stix:Indicator xsi:type=\"indicator:IndicatorType\" id=\"example:Indicator-2e20c5b2-56fa-46cd-9662-8f199c69d2c9\" timestamp=\"2014-05-08T09:00:00.000000Z\">\n            <indicator:Type xsi:type=\"stixVocabs:IndicatorTypeVocab-1.1\">Domain Watchlist</indicator:Type>\n            <indicator:Description>Sample domain Indicator for this watchlist</indicator:Description>\n            <indicator:Observable id=\"example:Observable-87c9a5bb-d005-4b3e-8081-99f720fad62b\">\n                <cybox:Object id=\"example:Object-12c760ba-cd2c-4f5d-a37d-18212eac7928\">\n                    <cybox:Properties xsi:type=\"DomainNameObj:DomainNameObjectType\" type=\"FQDN\">\n                        <DomainNameObj:Value condition=\"Equals\" apply_condition=\"ANY\">malicious1.example.com##comma##malicious2.example.com##comma##malicious3.example.com</DomainNameObj:Value>\n                    </cybox:Properties>\n                </cybox:Object>\n            </indicator:Observable>\n            <indicator:Observable id=\"NCCIC:Observable-fb5606ea-23f0-472d-babf-8b7e89571881\">\n                <cybox:Object id=\"NCCIC:Object-a105a51a-c324-11e7-b25d-64006a91c899\">\n                    <cybox:Properties xsi:type=\"AddressObj:AddressObjectType\" category=\"ipv4-addr\" is_spoofed=\"false\">\n                        <AddressObj:Address_Value condition=\"Equals\">185.134.98.141</AddressObj:Address_Value>\n                    </cybox:Properties>\n                </cybox:Object>\n            </indicator:Observable>\n        </stix:Indicator>\n    </stix:Indicators>\n</stix:STIX_Package>"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "required": [
+                "rejected_indicators",
+                "threat"
+              ],
+              "properties": {
+                "rejected_indicators": {
+                  "type": "array",
+                  "example": [
+                    "blacklisted",
+                    "invalid"
+                  ],
+                  "description": "The list of indicators that have been rejected during the update",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "threat": {
+                  "description": "The information about the threat",
+                  "type": "object",
+                  "required": [
+                    "indicator_count",
+                    "name",
+                    "published"
+                  ],
+                  "properties": {
+                    "indicator_count": {
+                      "type": "integer",
+                      "format": "int64",
+                      "example": 1,
+                      "description": "The number of indicators in this threat",
+                      "minimum": 0,
+                      "exclusiveMinimum": false,
+                      "exclusiveMaximum": false
+                    },
+                    "name": {
+                      "type": "string",
+                      "example": "Threat",
+                      "description": "The name of the threat"
+                    },
+                    "note": {
+                      "type": "string",
+                      "example": "Notes",
+                      "description": "Notes about this threat"
+                    },
+                    "published": {
+                      "type": "boolean",
+                      "example": true,
+                      "description": "Indicates whether this threat has been published"
+                    }
+                  },
+                  "title": "Threat"
+                }
+              },
+              "title": "ThreatUpdateResult"
+            }
+          },
+          "400": {
+            "description": "Invalid Parameters",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Insufficient Permissions",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "404": {
+            "description": "Threat Not Found",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "413": {
+            "description": "Payload Is Too Large",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "type": "object",
+              "required": [
+                "correlation_id",
+                "message"
+              ],
+              "properties": {
+                "correlation_id": {
+                  "type": "string",
+                  "description": "An id that uniquely identifies the failed request"
+                },
+                "message": {
+                  "type": "string",
+                  "description": "A human readable message describing the error that occurred"
+                }
+              },
+              "title": "ErrorResponse"
+            }
+          }
+        },
+        "deprecated": false
+      }
+    }
+  }
+}
