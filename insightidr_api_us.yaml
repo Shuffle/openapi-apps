@@ -1,6 +1,6 @@
 swagger: "3.0"
 info:
-  title: InsightIDR API [US]
+  title: InsightIDR API US
   description: Insight IDR API V1 Get more info at
     https://help.rapid7.com/insightidr/en-us/api/v1/docs.html#
   version: "1.0"
