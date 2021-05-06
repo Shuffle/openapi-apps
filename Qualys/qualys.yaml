@@ -1,0 +1,891 @@
+swagger: "3.0"
+info:
+  title: Qualys
+  description: Qualys integration for Shuffle
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact:
+    name: "@dhavaldave"
+    url: https://twitter.com/dhavaldave98
+    email: dhavald@infopercept.com
+  x-categories:
+    - Assets
+servers:
+  - url: ""
+basePath: /
+schemes:
+  - ""
+paths:
+  /api/2.0/fo/asset/ip:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  ?xml version="1.0" encoding="UTF-8" ?>
+
+                  <!DOCTYPE IP_LIST_OUTPUT SYSTEM
+
+                  "https://qualysapi.qualys.com/api/2.0/fo/asset/ip/
+
+                  ip_list_output.dtd">
+
+                  <IP_LIST_OUTPUT>
+
+                    <RESPONSE>
+
+                      <DATETIME>2018-05-21T13:32:17Z</DATETIME>
+
+                      <IP_SET>
+
+                        <IP>123.123.45.0</IP>
+
+                        <IP_RANGE>123.124.45.0-123.124.45.255</IP_RANGE>
+
+                        <IP_RANGE>123.124.46.0-123.124.46.255</IP_RANGE>
+
+                        <IP_RANGE>123.124.47.0-123.124.47.255</IP_RANGE>
+
+                        <IP_RANGE>123.124.48.0-123.124.48.255</IP_RANGE>
+
+                      </IP_SET>
+
+                    </RESPONSE>
+
+                  </IP_LIST_OUTPUT>
+      summary: List IPs
+      operationId: List_IPs
+      description: List IP addresses in the user's account
+      parameters:
+        - in: header
+          name: X-Requested-With
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: Shuffle
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /api/2.0/fo/asset/host:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  HOST_LIST_OUTPUT>
+
+                      <RESPONSE>
+
+                          <DATETIME>2021-01-21T08:23:54Z</DATETIME>
+
+                          <HOST_LIST>
+
+                              <HOST>
+
+                                  <ID>7933740</ID>
+
+                                  <IP>10.4.4.1</IP>
+
+                                  <TRACKING_METHOD>IP</TRACKING_METHOD>
+
+                                  <NETWORK_ID>63010</NETWORK_ID>
+
+                                  <DNS>
+
+                                      <![CDATA[10-4-4-1.sample.qualys.com]]>
+
+                                  </DNS>
+
+                                  <DNS_DATA>
+
+                                      <HOSTNAME>
+
+                                          <![CDATA[10-4-4-1]]>
+
+                                      </HOSTNAME>
+
+                                      <DOMAIN>
+
+                                          <![CDATA[sample.qualys.com]]>
+
+                                      </DOMAIN>
+
+                                      <FQDN>
+
+                                          <![CDATA[10-4-4-1.sample.qualys.com]]>
+
+                                      </FQDN>
+
+                                  </DNS_DATA>
+
+                                  <OS>
+
+                                      <![CDATA[Linux 2.4-2.6 / Embedded Device / F5 Networks Big-IP]]>
+
+                                  </OS>
+
+                              </HOST>
+
+                          </HOST_LIST>
+
+                      </RESPONSE>
+
+                  </HOST_LIST_OUTPUT>
+      summary: Host List
+      operationId: Host_List
+      description: List of scanned hosts in the user’s account.
+      parameters:
+        - in: query
+          name: truncation_limit
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: X-Requested-With
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: Shuffle
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /api/2.0/fo/asset/host/vm/detection:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  <HOST_LIST_VM_DETECTION_OUTPUT>
+
+                    <RESPONSE>
+
+                      <DATETIME>2018-04-26T11:25:58Z</DATETIME>
+
+                      <HOST_LIST>
+
+                        <HOST>
+
+                          <ID>6506432</ID>
+
+                          <IP>10.10.10.11</IP>
+
+                          <TRACKING_METHOD>IP</TRACKING_METHOD>
+
+                          <OS><![CDATA[Windows 2008 R2 Enterprise Service Pack 1]]></OS>
+
+                          <DNS><![CDATA[2k8r2-u-10-11.sample.qualys.com]]></DNS>
+
+                          <DNS_DATA>
+
+                             <HOSTNAME><![CDATA[2k8r2-u-10-11]]></HOSTNAME>
+
+                             <DOMAIN><![CDATA[sample.qualys.com]]></DOMAIN>
+
+                             <FQDN><![CDATA[2k8r2-u-10-11.sample.qualys.com]]></FQDN>
+
+                          </DNS_DATA>
+
+                          <NETBIOS><![CDATA[2K8R2-U-10-11]]></NETBIOS>
+
+                          <LAST_SCAN_DATETIME>2018-04-13T03:49:05Z</LAST_SCAN_DATETIME>
+
+                          <LAST_VM_SCANNED_DATE>2018-04-13T03:48:50Z</LAST_VM_SCANNED_DATE>
+
+                          <LAST_VM_SCANNED_DURATION>352</LAST_VM_SCANNED_DURATION>
+
+                          <DETECTION_LIST>
+
+                            <DETECTION>
+
+                              <QID>38170</QID>
+
+                              <TYPE>Confirmed</TYPE>
+
+                              <SEVERITY>2</SEVERITY>
+
+                              <PORT>3389</PORT>
+
+                              <PROTOCOL>tcp</PROTOCOL>
+
+                              <SSL>1</SSL>
+
+                              <RESULTS><![CDATA[Certificate #0 CN=2k8r2-u-10-11 (2k8r2-u-10-11) doesn&apos;t resolve]]></RESULTS>
+
+                              <STATUS>Active</STATUS>
+
+                              <FIRST_FOUND_DATETIME>2018-01-26T04:45:50Z</FIRST_FOUND_DATETIME>
+
+                              <LAST_FOUND_DATETIME>2018-04-13T03:48:50Z</LAST_FOUND_DATETIME>
+
+                              <TIMES_FOUND>111</TIMES_FOUND>
+
+                              <LAST_TEST_DATETIME>2018-04-13T03:48:50Z</LAST_TEST_DATETIME>
+
+                              <LAST_UPDATE_DATETIME>2018-04-13T03:49:05Z</LAST_UPDATE_DATETIME>
+
+                              <IS_IGNORED>0</IS_IGNORED>
+
+                              <IS_DISABLED>0</IS_DISABLED>
+
+                              <LAST_PROCESSED_DATETIME>2018-04-13T03:49:05Z</LAST_PROCESSED_DATETIME>
+
+                            </DETECTION>
+
+                            <DETECTION>
+
+                              <QID>38173</QID>
+
+                              <TYPE>Confirmed</TYPE>
+
+                              <SEVERITY>2</SEVERITY>
+
+                              <PORT>3389</PORT>
+
+                              <PROTOCOL>tcp</PROTOCOL>
+
+                              <SSL>1</SSL>
+
+                              <RESULTS><![CDATA[Certificate #0 CN=2k8r2-u-10-11 unable to get local issuer certificate]]></RESULTS>
+
+                              <STATUS>Active</STATUS>
+
+                              <FIRST_FOUND_DATETIME>2018-01-26T04:45:50Z</FIRST_FOUND_DATETIME>
+
+                              <LAST_FOUND_DATETIME>2018-04-13T03:48:50Z</LAST_FOUND_DATETIME>
+
+                              <TIMES_FOUND>111</TIMES_FOUND>
+
+                              <LAST_TEST_DATETIME>2018-04-13T03:48:50Z</LAST_TEST_DATETIME>
+
+                              <LAST_UPDATE_DATETIME>2018-04-13T03:49:05Z</LAST_UPDATE_DATETIME>
+
+                              <IS_IGNORED>0</IS_IGNORED>
+
+                              <IS_DISABLED>0</IS_DISABLED>
+
+                              <LAST_PROCESSED_DATETIME>2018-04-13T03:49:05Z</LAST_PROCESSED_DATETIME>
+
+                            </DETECTION>
+
+                            <DETECTION>
+
+                              <QID>38601</QID>
+
+                              <TYPE>Confirmed</TYPE>
+
+                              <SEVERITY>2</SEVERITY>
+
+                              <PORT>3389</PORT>
+
+                              <PROTOCOL>tcp</PROTOCOL>
+
+                              <SSL>1</SSL>
+
+                              <RESULTS><![CDATA[CIPHER KEY-EXCHANGE AUTHENTICATION MAC ENCRYPTION(KEY-STRENGTH) GRADE
+
+                  TLSv1 WITH RC4 CIPHERs IS SUPPORTED      
+
+
+                  RC4-SHA RSA RSA SHA1 RC4(128) MEDIUM
+
+
+                  RC4-MD5 RSA RSA MD5 RC4(128) MEDIUM]]></RESULTS>
+
+                              <STATUS>Active</STATUS>
+
+                              <FIRST_FOUND_DATETIME>2018-01-26T04:45:50Z</FIRST_FOUND_DATETIME>
+
+                              <LAST_FOUND_DATETIME>2018-04-13T03:48:50Z</LAST_FOUND_DATETIME>
+
+                              <TIMES_FOUND>111</TIMES_FOUND>
+
+                              <LAST_TEST_DATETIME>2018-04-13T03:48:50Z</LAST_TEST_DATETIME>
+
+                              <LAST_UPDATE_DATETIME>2018-04-13T03:49:05Z</LAST_UPDATE_DATETIME>
+
+                              <IS_IGNORED>0</IS_IGNORED>
+
+                              <IS_DISABLED>0</IS_DISABLED>
+
+                              <LAST_PROCESSED_DATETIME>2018-04-13T03:49:05Z</LAST_PROCESSED_DATETIME>
+
+                            </DETECTION>
+
+                            ...
+
+                          </DETECTION_LIST>
+
+                        </HOST>
+
+                      </HOST_LIST>
+
+                    </RESPONSE>
+
+                  </HOST_LIST_VM_DETECTION_OUTPUT>
+      summary: Host Detection List
+      operationId: Host_Detection_List
+      description: " List of hosts with the hosts latest vulnerability data, based on
+        the host based scan data available in the user’s account"
+      parameters:
+        - in: query
+          name: show_asset_id
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: X-Requested-With
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: Shuffle
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /api/2.0/fo/asset/vhost:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  <?xml version="1.0" encoding="UTF-8" ?>
+
+
+                  <!DOCTYPE VIRTUAL_HOST_LIST_OUTPUT SYSTEM "https://qualysapi.qualys.com/api/2.0/fo/asset/vhost/vhost_list_output.dtd">
+
+
+                  <VIRTUAL_HOST_LIST_OUTPUT>
+
+                    <RESPONSE>
+
+                      <DATETIME>2018-04-26T11:20:42Z</DATETIME>
+
+                      <VIRTUAL_HOST_LIST>
+
+                        <VIRTUAL_HOST>
+
+                          <IP>10.11.65.3</IP>
+
+                          <PORT>255</PORT>
+
+                          <FQDN>asadfsadf-123.com</FQDN>
+
+                        </VIRTUAL_HOST>
+
+                        <VIRTUAL_HOST>
+
+                          <IP>10.11.65.5</IP>
+
+                          <PORT>246</PORT>
+
+                          <FQDN>asdfsahydk.com</FQDN>
+
+                        </VIRTUAL_HOST>
+
+                      </VIRTUAL_HOST_LIST>
+
+                    </RESPONSE>
+
+                  </VIRTUAL_HOST_LIST_OUTPUT>
+      summary: List virtual hosts
+      operationId: List_virtual_hosts
+      description: List virtual hosts in the user's account
+      parameters:
+        - in: header
+          name: X-Requested-With
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: Shuffle
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /api/2.0/fo/asset/group:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  <?xml version="1.0" encoding="UTF-8" ?>
+
+
+                  <!DOCTYPE ASSET_GROUP_LIST_OUTPUT SYSTEM "https://qualysapi.qualys.com/api/2.0/fo/asset/group/asset_group_list_output.dtd">
+
+
+                  <ASSET_GROUP_LIST_OUTPUT>
+
+                    <RESPONSE>
+
+                      <DATETIME>2018-05-17T08:48:41Z</DATETIME>
+
+                      <ASSET_GROUP_LIST>
+
+                        <ASSET_GROUP>
+
+                          <ID>442838</ID>
+
+                          <TITLE><![CDATA[All]]></TITLE>
+
+                          <OWNER_ID>103448</OWNER_ID>
+
+                          <UNIT_ID>0</UNIT_ID>
+
+                          <NETWORK_ID>0</NETWORK_ID>
+
+                          <IP_SET>
+
+                            <IP_RANGE>10.10.10.0-10.10.10.1</IP_RANGE>
+
+                            <IP_RANGE>10.10.10.3-10.10.10.6</IP_RANGE>
+
+                            <IP>10.10.10.14</IP>
+
+                            <IP_RANGE>10.10.10.16-10.10.10.20</IP_RANGE>
+
+                            <IP_RANGE>10.10.10.22-10.10.10.255</IP_RANGE>
+
+                            <IP>10.10.31.26</IP>
+
+                          </IP_SET>
+
+                        </ASSET_GROUP>
+
+                      </ASSET_GROUP_LIST>
+
+                    </RESPONSE>
+
+                  </ASSET_GROUP_LIST_OUTPUT>
+      summary: List asset groups
+      operationId: List_asset_groups
+      description: List asset groups in the user's account
+      parameters:
+        - in: query
+          name: ids
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: truncation_limit
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: X-Requested-With
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: Shuffle
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /api/2.0/fo/network:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  <?xml version="1.0" encoding="UTF-8" ?>
+
+
+                  <!DOCTYPE NETWORK_LIST SYSTEM "https://qualysapi.qualys.com/api/2.0/fo/network/network_list_output.dtd">
+
+
+                  <RESPONSE>
+
+                    <DATETIME>2018-05-28T01:06:45Z</DATETIME>
+
+                    <NETWORK_LIST>
+
+                      <NETWORK>
+
+                        <ID>7343</ID>
+
+                        <NAME><![CDATA[My New Network]]></TITLE>
+
+                        <SCANNER_APPLIANCE_LIST>
+
+                          <SCANNER_APPLIANCE>
+
+                            <ID>1234</ID>
+
+                            <FRIENDLY_NAME><![[CDATA[abc123]]></FRIENDLY_NAME>
+
+                          </SCANNER_APPLIANCE>
+
+                        </SCANNER_APPLIANCE_LIST>
+
+                      </NETWORK>
+
+                      ...
+
+                    </NETWORK_LIST>
+
+                  </RESPONSE>
+      summary: List Networks
+      operationId: List_Networks
+      description: List custom networks in your account
+      parameters:
+        - in: header
+          name: X-Requested-With
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: Shuffle
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /api/2.0/fo/asset/ip/v4_6:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List IPv6 mapping records
+      operationId: List_IPv6_mapping_records
+      description: List IPv6 mapping records in the user's account
+      parameters:
+        - in: header
+          name: X-Requested-With
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: Shuffle
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/qps/rest/2.0/get/am/hostasset/{id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Host Asset Info
+      operationId: Get_Host_Asset_Info
+      description: Returns a single host asset by ID
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/qps/rest/2.0/get/am/asset/{id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Asset Info
+      operationId: Get_Asset_Info
+      description: Returns a single asset by ID
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/qps/rest/2.0/get/am/hostinstancevuln/{id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Vulnerability Info
+      operationId: Get_Vulnerability_Info
+      description: Returns a single host instance vulnerability data by ID
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /api/2.0/fo/report:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  <?xml version="1.0" encoding="UTF-8" ?>
+
+
+                  <!DOCTYPE REPORT_LIST_OUTPUT SYSTEM "https://qualysapi.qualys.com/api/2.0/fo/report/report_list_output.dtd">
+
+
+                  <REPORT_LIST_OUTPUT>
+
+                    <RESPONSE>
+
+                      <DATETIME>2017-10-30T22:32:15Z</DATETIME>
+
+                      <REPORT_LIST>
+
+                        <REPORT>
+
+                          <ID>42703</ID>
+
+                          <TITLE><![CDATA[Test now]]></TITLE>
+
+                          <TYPE>Scan</TYPE>
+
+                          <USER_LOGIN>acme_aa</USER_LOGIN>
+
+                          <LAUNCH_DATETIME>2017-10-30T17:59:22Z</LAUNCH_DATETIME>
+
+                          <OUTPUT_FORMAT>PDF</OUTPUT_FORMAT>
+
+                          <SIZE>129.1 MB</SIZE>
+
+                          <STATUS>
+
+                            <STATE>Finished</STATE>
+
+                          </STATUS>
+
+                          <EXPIRATION_DATETIME>2017-11-06T17:59:24Z</EXPIRATION_DATETIME>
+
+                        </REPORT>
+
+                        <REPORT>
+
+                          <ID>42700</ID>
+
+                          <TYPE>Scorecard</TYPE>
+
+                          <USER_LOGIN>acme_ts2</USER_LOGIN>
+
+                          <LAUNCH_DATETIME>2017-10-29T22:12:42Z</LAUNCH_DATETIME>
+
+                          <OUTPUT_FORMAT>SECURE_PDF</OUTPUT_FORMAT>
+
+                          <SIZE>18.1 KB</SIZE>
+
+                          <STATUS>
+
+                            <STATE>Finished</STATE>
+
+                          </STATUS>
+
+                          <EXPIRATION_DATETIME>2017-11-05T22:12:44Z</EXPIRATION_DATETIME>
+
+                        </REPORT>
+
+                        <REPORT>
+
+                          <ID>42699</ID>
+
+                          <TYPE>Scorecard</TYPE>
+
+                          <USER_LOGIN>quays_ts2</USER_LOGIN>
+
+                          <LAUNCH_DATETIME>2017-10-29T21:52:19Z</LAUNCH_DATETIME>
+
+                          <OUTPUT_FORMAT>PDF</OUTPUT_FORMAT>
+
+                          <SIZE>19.87 KB</SIZE>
+
+                          <STATUS>
+
+                            <STATE>Finished</STATE>
+
+                          </STATUS>
+
+                          <EXPIRATION_DATETIME>2017-11-05T21:52:21Z</EXPIRATION_DATETIME>
+
+                        </REPORT>
+
+                      </REPORT_LIST>
+
+                    </RESPONSE>
+
+                  </REPORT_LIST_OUTPUT>
+      summary: List reports
+      operationId: List_reports
+      description: List reports in the user's account. The report list output includes
+        all report types, including scorecard reports
+      parameters:
+        - in: query
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: X-Requested-With
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: Shuffle
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /qps/rest/1.0/search/cm/alert/:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Search alerts
+      operationId: Search_alerts
+      description: Returns a list of alerts in the user's account
+      parameters:
+        - in: header
+          name: content-type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: text/xml
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/qps/rest/1.0/get/cm/alert/{id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  <?xml version="1.0" encoding="UTF-8"?>
+
+                  <ServiceResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+                  xsi:noNamespaceSchemaLocation="https://qualysapi.qualys.com/qps/
+
+                  xsd/1.0/cm/alert.xsd">
+                   <responseCode>SUCCESS</responseCode>
+                   <count>1</count>
+                   <data>
+                   <Alert>
+                   <id>246213</id>
+                   <source>REMEDIATION</source>
+                   <eventType>HOST_UPDATED</eventType>
+                   <triggerUuid>3d41baf9-7caa-4269-9889-d7377aeaace5</triggerUuid>
+                   <ipAddress>10.10.30.240</ipAddress>
+                   <hostname>win12-30-240</hostname>
+                   <eventDate>2018-06-04T18:11:54Z</eventDate>
+                   <alertDate>2018-06-04T18:11:59Z</alertDate>
+                   <isHidden>false</isHidden>
+                   <profile>
+                  <id>7401</id>
+                   <title>All Critical</title>
+                   <dateCreated>2018-09-16T19:54:48Z</dateCreated>
+                   <dateUpdated>2018-09-16T19:54:48Z</dateUpdated>
+                   <frequency>FREQ_NEVER</frequency>
+                   <isActive>true</isActive>
+                   <includedIps>10.10.10.1-10.10.31.255</includedIps>
+                   <targetList>10.10.10.1-10.10.31.255</targetList>
+                   </profile>
+                   <alertInfo>
+                   <operatingSystem>Windows Server 2012 Standard 64 bit
+                  Edition</operatingSystem>
+                   <port>0</port>
+                   </alertInfo>
+                   </Alert>
+                   </data>
+                  </ServiceResponse>
+      summary: View alert details
+      operationId: View_alert_details
+      description: Returns details for an alert
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+tags:
+  - name: Assets
+  - name: Vulnerabilities
