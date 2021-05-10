@@ -1,0 +1,922 @@
+---
+swagger: "2.0"
+info:
+  description: "Imperva api-security API Documentation"
+  version: "1.0.0"
+  title: "Imperva api-security"
+  license:
+    name: "The terms in the absence of an applicable signed agreement between you\
+      \ and Imperva"
+    url: "https://www.imperva.com/legal/license-agreement/"
+host: "api.imperva.com"
+basePath: "/api-security"
+tags:
+- name: "API"
+- name: "Endpoint"
+- name: "SiteConfiguration"
+schemes:
+- "https"
+security:
+- api_id: []
+  api_key: []
+paths:
+  /api:
+    get:
+      tags:
+      - "API"
+      summary: "Retrieve all APIs for the account"
+      description: "Retrieves details of all protected APIs for all sites in the account"
+      operationId: "getAllApis"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/GetApisResponse"
+        500:
+          description: "Internal error"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+  /api/{siteId}:
+    get:
+      tags:
+      - "API"
+      summary: "Retrieve all APIs for a site"
+      description: "Retrieves details of all protected APIs for a specific site in\
+        \ the account"
+      operationId: "getAllSiteApis"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "siteId"
+        in: "path"
+        description: "The site ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/GetApisResponse"
+        500:
+          description: "Internal error"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+    post:
+      tags:
+      - "API"
+      summary: "Add an API"
+      description: "Adds an API specification to a site"
+      operationId: "addApi"
+      consumes:
+      - "multipart/form-data"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "apiSpecification"
+        in: "formData"
+        description: "The API specification document. The supported format is OAS2\
+          \ or OAS3 (JSON or YAML)"
+        required: true
+        type: "file"
+      - name: "basePath"
+        in: "formData"
+        description: "Override the spec basePath / server base path with this value"
+        required: false
+        type: "string"
+      - name: "description"
+        in: "formData"
+        description: "A description that will help recognize the API in the dashboard"
+        required: false
+        type: "string"
+      - name: "siteId"
+        in: "path"
+        description: "The site ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      - name: "specificationViolationAction"
+        in: "formData"
+        description: "The action taken when an API Specification Violation occurs"
+        required: false
+        type: "string"
+        default: "ALERT_ONLY"
+        enum:
+        - "ALERT_ONLY"
+        - "BLOCK_REQUEST"
+        - "BLOCK_USER"
+        - "BLOCK_IP"
+        - "IGNORE"
+        - "DEFAULT"
+      - name: "validateHost"
+        in: "formData"
+        description: "When set to true, verifies that the host name and site name\
+          \ match. Set to false in cases such as CNAME reuse or API management integrations\
+          \ where the host name and site name do not match."
+        required: false
+        type: "boolean"
+        default: true
+      - name: "violationActions"
+        in: "formData"
+        description: "Json payload described by ViolationActions Object. This object\
+          \ defines different actions taken when each violation occurs"
+        required: false
+        type: "string"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/AddApiResponse"
+        400:
+          description: "Bad request"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+        422:
+          description: "Failed to parse the API specification document"
+          schema:
+            $ref: "#/definitions/ParserErrorResponse"
+        500:
+          description: "Internal error"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+  /api/{siteId}/all:
+    get:
+      tags:
+      - "API"
+      summary: "Retrieve all APIs and endpoints for a site"
+      description: "Retrieves details of all protected APIs and their endpoints for\
+        \ a specific site in the account"
+      operationId: "getAllSiteApisWithEndpoints"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "siteId"
+        in: "path"
+        description: "The site ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/GetApisWithEndpointsResponse"
+        400:
+          description: "Bad request"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+        500:
+          description: "Internal error"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+  /api/{siteId}/{apiId}:
+    get:
+      tags:
+      - "API"
+      summary: "Retrieve an API"
+      description: "Retrieves details of a specific API"
+      operationId: "getApi"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "apiId"
+        in: "path"
+        description: "The API ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      - name: "siteId"
+        in: "path"
+        description: "The site ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/GetApiResponse"
+        400:
+          description: "Bad request"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+        500:
+          description: "Internal error"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+    post:
+      tags:
+      - "API"
+      summary: "Update an API"
+      description: "Updates any or all of the optional parameters."
+      operationId: "updateApi"
+      consumes:
+      - "multipart/form-data"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "apiId"
+        in: "path"
+        description: "The API ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      - name: "apiSpecification"
+        in: "formData"
+        description: "The API specification document. The supported format is OAS2\
+          \ or OAS3 (JSON or YAML)"
+        required: false
+        type: "file"
+      - name: "description"
+        in: "formData"
+        description: "A description that will help recognize the API in the dashboard"
+        required: false
+        type: "string"
+      - name: "siteId"
+        in: "path"
+        description: "The site ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      - name: "specificationViolationAction"
+        in: "formData"
+        description: "The action taken when an API Specification Violation occurs"
+        required: false
+        type: "string"
+        enum:
+        - "ALERT_ONLY"
+        - "BLOCK_REQUEST"
+        - "BLOCK_USER"
+        - "BLOCK_IP"
+        - "IGNORE"
+        - "DEFAULT"
+      - name: "validateHost"
+        in: "formData"
+        description: "When set to true, verifies that the host name and site name\
+          \ match. Set to false in cases such as CNAME reuse or API management integrations\
+          \ where the host name and site name do not match."
+        required: false
+        type: "boolean"
+        default: true
+      - name: "violationActions"
+        in: "formData"
+        description: "Json payload described by ViolationActions Object. This object\
+          \ defines different actions taken when each violation occurs"
+        required: false
+        type: "string"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/AddApiResponse"
+        400:
+          description: "Bad request"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+        422:
+          description: "Failed to parse the API specification document"
+          schema:
+            $ref: "#/definitions/ParserErrorResponse"
+        500:
+          description: "Internal error"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+    delete:
+      tags:
+      - "API"
+      summary: "Delete an API"
+      description: "Deletes an API from a site in the account"
+      operationId: "deleteApi"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "apiId"
+        in: "path"
+        description: "The API ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      - name: "siteId"
+        in: "path"
+        description: "The site ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/SimpleTextSuccessResponse"
+        400:
+          description: "Bad request"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+        500:
+          description: "Internal error"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+  /config/site:
+    get:
+      tags:
+      - "SiteConfiguration"
+      summary: "Retrieve the all site configuration in account"
+      description: "Retrieve all the site configurations in account"
+      operationId: "getSiteConfigurationForAccount"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/GetSiteConfigurationsResponse"
+        500:
+          description: "Internal error"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+  /config/site/{siteId}:
+    get:
+      tags:
+      - "SiteConfiguration"
+      summary: "Retrieve the site configuration for a given site"
+      description: "Retrieve all the site configuration of a specific site"
+      operationId: "getSiteConfigurationForSite"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "siteId"
+        in: "path"
+        description: "The site ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/GetApisResponse"
+        500:
+          description: "Internal error"
+          schema:
+            $ref: "#/definitions/GetSiteConfigurationResponse"
+    post:
+      tags:
+      - "SiteConfiguration"
+      summary: "Update site configuration"
+      description: "Update site configuration with one of the optional parameters"
+      operationId: "updateSiteConfiguration"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Settings for attack policy and more"
+        required: false
+        schema:
+          $ref: "#/definitions/SiteConfigurationResponse"
+      - name: "siteId"
+        in: "path"
+        description: "The site ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/UpdateSiteConfigurationResponse"
+        400:
+          description: "Bad request"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+        500:
+          description: "Internal error"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+  /endpoint/{apiId}:
+    get:
+      tags:
+      - "Endpoint"
+      summary: "Retrieve all endpoints"
+      description: "Retrieve details on all endpoints for an API"
+      operationId: "getAllUserFacingEndpoints"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "apiId"
+        in: "path"
+        description: "The API ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/GetEndpointsResponse"
+        400:
+          description: "Bad request"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+        500:
+          description: "Internal error"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+  /endpoint/{apiId}/{endpointId}:
+    get:
+      tags:
+      - "Endpoint"
+      summary: "Retrieve an endpoint"
+      description: "Retrieve details for an endpoint"
+      operationId: "getUserFacingEndpoint"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "apiId"
+        in: "path"
+        description: "The API ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      - name: "endpointId"
+        in: "path"
+        description: "The endpoint ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/GetEndpointResponse"
+        400:
+          description: "Bad request"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+        500:
+          description: "Internal error"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+    post:
+      tags:
+      - "Endpoint"
+      summary: "Update an endpoint"
+      description: "Update an endpoint API Specification Violation Action"
+      operationId: "updateEndpoint"
+      consumes:
+      - "multipart/form-data"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "apiId"
+        in: "path"
+        description: "The API ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      - name: "endpointId"
+        in: "path"
+        description: "The endpoint ID"
+        required: true
+        type: "integer"
+        format: "int64"
+      - name: "specificationViolationAction"
+        in: "formData"
+        description: "The action taken when an API Specification Violation occurs"
+        required: false
+        type: "string"
+        enum:
+        - "ALERT_ONLY"
+        - "BLOCK_REQUEST"
+        - "BLOCK_USER"
+        - "BLOCK_IP"
+        - "IGNORE"
+        - "DEFAULT"
+      - name: "violationActions"
+        in: "formData"
+        description: "Json payload described by ViolationActions Object. This object\
+          \ defines different actions taken when each violation occurs"
+        required: false
+        type: "string"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/UpdateEndpointResponse"
+        400:
+          description: "Bad request"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+        500:
+          description: "Internal error"
+          schema:
+            $ref: "#/definitions/SimpleTextErrorResponse"
+securityDefinitions:
+  api_id:
+    description: "An API ID created and managed in the Imperva Cloud Security Console\
+      \ and used for authentication"
+    type: "apiKey"
+    name: "x-API-Id"
+    in: "header"
+  api_key:
+    description: "An API key created and managed in the Imperva Cloud Security Console\
+      \ and used for authentication"
+    type: "apiKey"
+    name: "x-API-Key"
+    in: "header"
+definitions:
+  AddApiResponse:
+    type: "object"
+    properties:
+      value:
+        $ref: "#/definitions/AddApiResponseValue"
+      isError:
+        type: "boolean"
+        example: false
+        description: "States if an error has occurred"
+  AddApiResponseValue:
+    type: "object"
+    properties:
+      apiId:
+        type: "integer"
+        format: "int64"
+        example: 10
+        description: "The API specification ID"
+  ApiResponse:
+    type: "object"
+    properties:
+      specificationViolationAction:
+        type: "string"
+        example: "ALERT_ONLY"
+        description: "The action taken when an API Specification Violation occurs"
+        enum:
+        - "ALERT_ONLY"
+        - "BLOCK_REQUEST"
+        - "BLOCK_USER"
+        - "BLOCK_IP"
+        - "IGNORE"
+        - "DEFAULT"
+      violationActions:
+        $ref: "#/definitions/ViolationActions"
+      id:
+        type: "integer"
+        format: "int64"
+        example: 10
+        description: "The API ID"
+      siteId:
+        type: "integer"
+        format: "int64"
+        example: 11
+        description: "The site ID"
+      siteName:
+        type: "string"
+        example: "example.com"
+        description: "The site’s domain name"
+      hostName:
+        type: "string"
+        example: "example.com"
+        description: "The  API's host name"
+      basePath:
+        type: "string"
+        example: "/api"
+        description: "The API's basePath"
+      description:
+        type: "string"
+        example: "This is an example API"
+        description: "The API's description in the dashboard"
+      lastModified:
+        type: "integer"
+        format: "int64"
+        example: 1556735907
+        description: "The last modified timestamp"
+  ApiWithEndpointResponse:
+    type: "object"
+    required:
+    - "endpoints"
+    properties:
+      specificationViolationAction:
+        type: "string"
+        example: "ALERT_ONLY"
+        description: "The action taken when an API Specification Violation occurs"
+        enum:
+        - "ALERT_ONLY"
+        - "BLOCK_REQUEST"
+        - "BLOCK_USER"
+        - "BLOCK_IP"
+        - "IGNORE"
+        - "DEFAULT"
+      violationActions:
+        $ref: "#/definitions/ViolationActions"
+      id:
+        type: "integer"
+        format: "int64"
+        example: 10
+        description: "The API ID"
+      siteId:
+        type: "integer"
+        format: "int64"
+        example: 11
+        description: "The site ID"
+      siteName:
+        type: "string"
+        example: "example.com"
+        description: "The site’s domain name"
+      hostName:
+        type: "string"
+        example: "example.com"
+        description: "The  API's host name"
+      basePath:
+        type: "string"
+        example: "/api"
+        description: "The API's basePath"
+      description:
+        type: "string"
+        example: "This is an example API"
+        description: "The API's description in the dashboard"
+      lastModified:
+        type: "integer"
+        format: "int64"
+        example: 1556735907
+        description: "The last modified timestamp"
+      endpoints:
+        type: "array"
+        items:
+          $ref: "#/definitions/EndpointResponse"
+  EndpointResponse:
+    type: "object"
+    properties:
+      specificationViolationAction:
+        type: "string"
+        example: "ALERT_ONLY"
+        description: "The action taken when an API Specification Violation occurs"
+        enum:
+        - "ALERT_ONLY"
+        - "BLOCK_REQUEST"
+        - "BLOCK_USER"
+        - "BLOCK_IP"
+        - "IGNORE"
+        - "DEFAULT"
+      violationActions:
+        $ref: "#/definitions/ViolationActions"
+      id:
+        type: "integer"
+        format: "int64"
+        example: 10
+        description: "The endpoint ID"
+      path:
+        type: "string"
+        example: "/api/{param}"
+        description: "The endpoint path"
+      method:
+        type: "string"
+        example: "GET"
+        description: "The endpoint HTTP method"
+        enum:
+        - "POST"
+        - "GET"
+        - "PUT"
+        - "PATCH"
+        - "DELETE"
+        - "HEAD"
+        - "OPTIONS"
+  GetApiResponse:
+    type: "object"
+    properties:
+      value:
+        $ref: "#/definitions/ApiResponse"
+      isError:
+        type: "boolean"
+        example: false
+        description: "States if an error has occurred"
+  GetApisResponse:
+    type: "object"
+    properties:
+      value:
+        type: "array"
+        items:
+          $ref: "#/definitions/ApiResponse"
+      isError:
+        type: "boolean"
+        example: false
+        description: "States if an error has occurred"
+  GetApisWithEndpointsResponse:
+    type: "object"
+    properties:
+      value:
+        type: "array"
+        items:
+          $ref: "#/definitions/ApiWithEndpointResponse"
+      isError:
+        type: "boolean"
+        example: false
+        description: "States if an error has occurred"
+  GetEndpointResponse:
+    type: "object"
+    properties:
+      value:
+        $ref: "#/definitions/EndpointResponse"
+      isError:
+        type: "boolean"
+        example: false
+        description: "States if an error has occurred"
+  GetEndpointsResponse:
+    type: "object"
+    properties:
+      value:
+        type: "array"
+        items:
+          $ref: "#/definitions/EndpointResponse"
+      isError:
+        type: "boolean"
+        example: false
+        description: "States if an error has occurred"
+  GetSiteConfigurationResponse:
+    type: "object"
+    properties:
+      value:
+        $ref: "#/definitions/SiteConfigurationResponse"
+      isError:
+        type: "boolean"
+        example: false
+        description: "States if an error has occurred"
+  GetSiteConfigurationsResponse:
+    type: "object"
+    properties:
+      value:
+        type: "array"
+        items:
+          $ref: "#/definitions/SiteConfigurationResponse"
+      isError:
+        type: "boolean"
+        example: false
+        description: "States if an error has occurred"
+  ParserErrorResponse:
+    type: "object"
+    properties:
+      value:
+        type: "array"
+        items:
+          type: "string"
+      isError:
+        type: "boolean"
+        example: true
+        description: "States if an error has occurred"
+  SimpleTextErrorResponse:
+    type: "object"
+    properties:
+      value:
+        type: "string"
+      isError:
+        type: "boolean"
+        example: true
+        description: "States if an error has occurred"
+  SimpleTextSuccessResponse:
+    type: "object"
+    properties:
+      value:
+        type: "string"
+      isError:
+        type: "boolean"
+        example: false
+        description: "States if an error has occurred"
+  SiteConfigurationResponse:
+    type: "object"
+    required:
+    - "apiOnlySite"
+    - "nonApiRequestViolationAction"
+    properties:
+      siteId:
+        type: "integer"
+        format: "int64"
+        description: "The site id"
+      accountId:
+        type: "integer"
+        format: "int64"
+        description: "The account Id"
+      siteName:
+        type: "string"
+        example: "example.com"
+        description: "The site name"
+      apiOnlySite:
+        type: "boolean"
+      nonApiRequestViolationAction:
+        type: "string"
+      lastModified:
+        type: "integer"
+        format: "int64"
+        example: 1556735907
+        description: "The last modified timestamp"
+      violationActions:
+        $ref: "#/definitions/ViolationActions"
+  UpdateEndpointResponse:
+    type: "object"
+    properties:
+      value:
+        $ref: "#/definitions/UpdateEndpointResponseValue"
+      isError:
+        type: "boolean"
+        example: false
+        description: "States if an error has occurred"
+  UpdateEndpointResponseValue:
+    type: "object"
+    properties:
+      endpointId:
+        type: "integer"
+        format: "int64"
+        example: 10
+        description: "The API endpoint ID"
+  UpdateSiteConfigurationResponse:
+    type: "object"
+    properties:
+      value:
+        $ref: "#/definitions/UpdateSiteConfigurationResponseValue"
+      isError:
+        type: "boolean"
+        example: false
+        description: "States if an error has occurred"
+  UpdateSiteConfigurationResponseValue:
+    type: "object"
+    properties:
+      siteId:
+        type: "integer"
+        format: "int64"
+        example: 10
+        description: "The Site ID"
+  ViolationActions:
+    type: "object"
+    properties:
+      invalidUrlViolationAction:
+        type: "string"
+        example: "ALERT_ONLY"
+        description: "The action taken when an invalid URL Violation occurs. Assigning\
+          \ DEFAULT will inherit the action from parent object, DEFAULT is not applicable\
+          \ for site-level configuration APIs"
+        enum:
+        - "ALERT_ONLY"
+        - "BLOCK_REQUEST"
+        - "BLOCK_USER"
+        - "BLOCK_IP"
+        - "IGNORE"
+        - "DEFAULT"
+      invalidMethodViolationAction:
+        type: "string"
+        example: "ALERT_ONLY"
+        description: "The action taken when an invalid method Violation occurs. Assigning\
+          \ DEFAULT will inherit the action from parent object, DEFAULT is not applicable\
+          \ for site-level configuration APIs"
+        enum:
+        - "ALERT_ONLY"
+        - "BLOCK_REQUEST"
+        - "BLOCK_USER"
+        - "BLOCK_IP"
+        - "IGNORE"
+        - "DEFAULT"
+      missingParamViolationAction:
+        type: "string"
+        example: "ALERT_ONLY"
+        description: "The action taken when a missing parameter Violation occurs.\
+          \ Assigning DEFAULT will inherit the action from parent object, DEFAULT\
+          \ is not applicable for site-level configuration APIs"
+        enum:
+        - "ALERT_ONLY"
+        - "BLOCK_REQUEST"
+        - "BLOCK_USER"
+        - "BLOCK_IP"
+        - "IGNORE"
+        - "DEFAULT"
+      invalidParamValueViolationAction:
+        type: "string"
+        example: "ALERT_ONLY"
+        description: "The action taken when an invalid parameter value Violation occurs.\
+          \ Assigning DEFAULT will inherit the action from parent object, DEFAULT\
+          \ is not applicable for site-level configuration APIs"
+        enum:
+        - "ALERT_ONLY"
+        - "BLOCK_REQUEST"
+        - "BLOCK_USER"
+        - "BLOCK_IP"
+        - "IGNORE"
+        - "DEFAULT"

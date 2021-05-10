@@ -1,0 +1,432 @@
+swagger: "3.0"
+info:
+  title: Humio
+  description: Rest API based on https://docs.humio.com/reference/api/search-api/
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact:
+    name: "@frikkylikeme"
+    url: https://twitter.com/frikkylikeme
+    email: frikky@shuffler.io
+  x-categories:
+    - SIEM
+servers:
+  - url: http://your-humio-instance/api/v1
+host: your-humio-instance
+basePath: /api/v1
+schemes:
+  - "http:"
+paths:
+  "/repositories/{dataspace}/alerts/{id}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete Alert
+      operationId: Delete_Alert
+      description: ""
+      parameters:
+        - in: path
+          name: dataspace
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get alert
+      operationId: Get_alert
+      description: ""
+      parameters:
+        - in: path
+          name: dataspace
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update Alert
+      operationId: Update_Alert
+      description: ""
+      parameters:
+        - in: path
+          name: dataspace
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: '{"name":"different test", "query": {"queryString":"foobar",
+            "start":"1h"}, "description":"this is a test",
+            "throttleTimeMillis":600000, "throttleField":"server",
+            "silenced":false, "notifiers":["GrpMXUR2me8045Sz39qcsoWjXT3fJ7rT"],
+            "labels":["test"]}'
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: '{"name":"different test", "query": {"queryString":"foobar",
+              "start":"1h"}, "description":"this is a test",
+              "throttleTimeMillis":600000, "throttleField":"server",
+              "silenced":false,
+              "notifiers":["GrpMXUR2me8045Sz39qcsoWjXT3fJ7rT"],
+              "labels":["test"]}'
+  "/repositories/{dataspace}/alerts":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List alerts
+      operationId: List_alerts
+      description: ""
+      parameters:
+        - in: path
+          name: dataspace
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create Alert
+      operationId: Create_Alert
+      description: ""
+      parameters:
+        - in: path
+          name: dataspace
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: '{"name":"test", "query": {"queryString":"foobar", "start":"1h"},
+            "description":"this is a test", "throttleTimeMillis":600000,
+            "silenced":false, "notifiers":["GrpMXUR2me8045Sz39qcsoWjXT3fJ7rT"],
+            "labels":["test"]}'
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: '{"name":"test", "query": {"queryString":"foobar", "start":"1h"},
+              "description":"this is a test", "throttleTimeMillis":600000,
+              "silenced":false,
+              "notifiers":["GrpMXUR2me8045Sz39qcsoWjXT3fJ7rT"],
+              "labels":["test"]}'
+  "/repositories/{repository_name}/files":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Upload file
+      operationId: Upload_file
+      description: ""
+      parameters:
+        - in: path
+          name: repository_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                fieldname:
+                  type: string
+                  value: file
+  /uploadedfiles/shared:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Upload file to all repositories
+      operationId: Upload_file_to_all_repositories
+      description: ""
+      parameters: []
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                fieldname:
+                  type: string
+                  value: file
+  "/uploadedfiles/shared/{filename}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete File
+      operationId: Delete_File
+      description: ""
+      parameters:
+        - in: path
+          name: filename
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /repositories/$REPOSITORY_NAME/query:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Search Repository
+      operationId: Search_Repository
+      description: ""
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: '{"queryString":"","start":"10s","isLive":true}'
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/x-ndjson
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: '{"queryString":"","start":"10s","isLive":true}'
+  /repositories/$REPOSITORY_NAME/queryjobs:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Repository Queries
+      operationId: Get_Repository_Queries
+      description: ""
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: '{"queryString":"","start":
+            "1d","showQueryEventDistribution":true,"isLive":false}'
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: '{"queryString":"","start":
+              "1d","showQueryEventDistribution":true,"isLive":false}'
+  /repositories/$REPOSITORY_NAME/queryjobs/$ID:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Poll running queries
+      operationId: Poll_running_queries
+      description: ""
+      parameters: []
+      requestBody:
+        content: {}
+  "/repositories/{repository_name}/queryjobs/{id}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Stop running query
+      operationId: Stop_running_query
+      description: ""
+      parameters:
+        - in: path
+          name: repository_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: UUID
+tags:
+  - name: Search
