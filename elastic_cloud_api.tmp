@@ -1,0 +1,1742 @@
+swagger: "3.0"
+info:
+  title: Elastic Cloud API
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact:
+    name: "@frikkylikeme"
+    url: https://twitter.com/frikkylikeme
+    email: frikky@shuffler.io
+servers:
+  - url: https://api.elastic-cloud.com/api/v1
+host: api.elastic-cloud.com
+basePath: /api/v1
+schemes:
+  - "https:"
+paths:
+  /deployments:
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: List Deployments
+      description: List Deployments.
+      parameters: []
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Create Deployment
+      description: Creates a Deployment.
+      parameters:
+        - in: query
+          name: request_id
+          description: An optional idempotency token - if two create requests share the
+            same request_id token (min size 32 characters, max 128) then only
+            one deployment will be created, the second request will return the
+            info of that deployment (in the same format described below, but
+            with blanks for auth-related fields)
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: validate_only
+          description: If true, will just validate the Deployment definition but will not
+            perform the creation
+          required: false
+          schema:
+            type: string
+  /deployments/_search:
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Search Deployments
+      description: Retrieves the information for all of the deployments that match the
+        specified query.
+      parameters: []
+  /deployments/extensions:
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: List Extensions
+      description: Retrieves all of the available extensions.
+      parameters:
+        - in: query
+          name: include_deployments
+          description: >
+            Include deployments referencing this extension.
+
+            DEPRECATED: To get the list of deployments that reference an extension, use the Get Extension API.
+          required: false
+          schema:
+            type: string
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Create an extension
+      description: >
+        Creates the extension.
+         The extensions API supports two types of usage patterns.
+         A). Specify a `download_url`, http or https URL,  where the extension is currently hosted. This will result in extension being copied to elastic repository.
+         B). Create only the extension metadata using the `POST` endpoint and then use `PUT` to upload the extension file. Leave the `download_url` unspecified in this case.
+      parameters: []
+  "/deployments/extensions/{extension_id}":
+    delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Delete Extension
+      description: Deletes a Extension.
+      parameters:
+        - in: path
+          name: extension_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get Extension
+      description: Retrieves an extension.
+      parameters:
+        - in: query
+          name: include_deployments
+          description: Include deployments referencing this extension. Up to only 10000
+            deployments will be included.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: extension_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Update Extension
+      description: Updates an extension.
+      parameters:
+        - in: path
+          name: extension_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Uploads the Extension
+      description: Uploads archive for an extension.
+      parameters:
+        - in: path
+          name: extension_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  /deployments/templates:
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get deployment templates
+      description: Retrieves all deployment templates.
+      parameters:
+        - in: query
+          name: metadata
+          description: An optional key/value pair in the form of (key:value) that will act
+            as a filter and exclude any templates that do not have a matching
+            metadata item associated.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: stack_version
+          description: If present, it will cause the returned deployment templates to be
+            adapted to return only the elements allowed in that version.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: region
+          description: Region of the deployment templates
+          required: true
+          schema:
+            type: string
+  "/deployments/templates/{template_id}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get deployment template
+      description: Retrieves a deployment template by id.
+      parameters:
+        - in: query
+          name: stack_version
+          description: If present, it will cause the returned deployment template to be
+            adapted to return only the elements allowed in that version.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: region
+          description: Region of the deployment template
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: template_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/traffic-filter/associations/{association_type}/{associated_entity_id}/rulesets":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get associated rulesets
+      description: Retrieves the rulesets associated with a deployment.
+      parameters:
+        - in: path
+          name: association_type
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: associated_entity_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  /deployments/traffic-filter/rulesets:
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: List traffic filter rulesets
+      description: List all of the traffic filter rulesets.
+      parameters:
+        - in: query
+          name: include_associations
+          description: Retrieves a list of resources that are associated to the specified
+            ruleset.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: region
+          description: If provided limits the rulesets to that region only.
+          required: false
+          schema:
+            type: string
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Create a ruleset
+      description: Creates a ruleset that consists of a set of rules.
+      parameters: []
+  "/deployments/traffic-filter/rulesets/{ruleset_id}":
+    delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Delete a ruleset
+      description: Deletes the ruleset by ID.
+      parameters:
+        - in: query
+          name: ignore_associations
+          description: When true, ignores the associations and deletes the ruleset. When
+            false, recognizes the associations, which prevents the deletion of
+            the rule set.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: ruleset_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Retrieves the ruleset by ID.
+      description: Retrieves a list of resources that are associated to the specified
+        ruleset.
+      parameters:
+        - in: query
+          name: include_associations
+          description: Retrieves a list of resources that are associated to the specified
+            ruleset.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: ruleset_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Updates a ruleset
+      description: Updates the ruleset with the definition.
+      parameters:
+        - in: path
+          name: ruleset_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/traffic-filter/rulesets/{ruleset_id}/associations":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get associated deployments
+      description: Retrieves a list of deployments that are associated to the specified
+        ruleset.
+      parameters:
+        - in: path
+          name: ruleset_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Create ruleset association
+      description: Applies the ruleset to the specified deployment.
+      parameters:
+        - in: path
+          name: ruleset_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/traffic-filter/rulesets/{ruleset_id}/associations/{association_type}/{associated_entity_id}":
+    delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Delete ruleset association
+      description: Deletes the traffic rules in the ruleset from the deployment.
+      parameters:
+        - in: path
+          name: ruleset_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: association_type
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: associated_entity_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get Deployment
+      description: Retrieves information about a Deployment.
+      parameters:
+        - in: query
+          name: show_security
+          description: Whether to include the Elasticsearch 2.x security information in the
+            response - can be large per cluster and also include credentials
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_metadata
+          description: Whether to include the full cluster metadata in the response - can
+            be large per cluster and also include credentials
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plans
+          description: Whether to include the full current and pending plan information in
+            the response - can be large per cluster
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_logs
+          description: Whether to include with the current and pending plan information the
+            attempt log - can be very large per cluster
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_history
+          description: Whether to include with the current and pending plan information the
+            plan history- can be very large per cluster
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_defaults
+          description: If showing plans, whether to show values that are left at their
+            default value (less readable but more informative)
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: convert_legacy_plans
+          description: If showing plans, whether to leave pre-2.0.0 plans in their legacy
+            format (the default), or whether to update them to 2.0.x+ format (if
+            'true')
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_system_alerts
+          description: Number of system alerts (such as forced restarts due to memory
+            limits) to be included in the response - can be large per cluster.
+            Negative numbers or 0 will not return field.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_settings
+          description: Whether to show cluster settings in the response.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: enrich_with_template
+          description: If showing plans, whether to enrich the plan by including the
+            missing elements from the deployment template it is based on
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Update Deployment
+      description: Updates a Deployment.
+      parameters:
+        - in: query
+          name: hide_pruned_orphans
+          description: Whether or not to hide orphaned resources that were shut down
+            (relevant if prune on the request is true)
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: skip_snapshot
+          description: Whether or not to skip snapshots before shutting down orphaned
+            resources (relevant if prune on the request is true)
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: validate_only
+          description: If true, will just validate the Deployment definition but will not
+            perform the update
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: version
+          description: If specified then checks for conflicts against the version stored in
+            the persistent store (returned in 'x-cloud-resource-version' of the
+            GET request)
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/_migrate":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Build Migrate Deployment Template request
+      description: Returns a deployment update request that would transform this deployment
+        from its template to the provided one.
+      parameters:
+        - in: query
+          name: template
+          description: The ID of the deployment template to migrate to
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/_restore":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Restores a shutdown Deployment
+      description: Restores all resources in a Deployment.
+      parameters:
+        - in: query
+          name: restore_snapshot
+          description: Whether or not to restore a snapshot for those resources that allow
+            it.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/_shutdown":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Shuts down Deployment
+      description: Shuts down all resources in a Deployment.
+      parameters:
+        - in: query
+          name: hide
+          description: Whether or not to hide the deployment and its resources.Only
+            applicable for Platform administrators.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: skip_snapshot
+          description: Whether or not to skip snapshots before shutting down the resources
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/apm/{ref_id}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get Deployment APM Resource Info
+      description: Get info about an APM Resource belonging to a given Deployment.
+      parameters:
+        - in: query
+          name: show_metadata
+          description: Whether to include the full cluster metadata in the response - can
+            be large per cluster and also include credentials.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plans
+          description: Whether to include the full current and pending plan information in
+            the response - can be large per cluster.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_logs
+          description: Whether to include with the current and pending plan information the
+            attempt log - can be very large per cluster.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_history
+          description: Whether to include with the current and pending plan information the
+            plan history- can be very large per cluster.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_defaults
+          description: If showing plans, whether to show values that are left at their
+            default value (less readable but more informative).
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_settings
+          description: Whether to show cluster settings in the response.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/apm/{ref_id}/_reset-token":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Reset the secret token for an APM resource.
+      description: Reset the token of an APM resource.
+      parameters:
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/appsearch/{ref_id}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get Deployment App Search Resource Info
+      description: Get info about an App Search Resource belonging to a given Deployment.
+      parameters:
+        - in: query
+          name: show_metadata
+          description: Whether to include the full cluster metadata in the response - can
+            be large per cluster and also include credentials.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plans
+          description: Whether to include the full current and pending plan information in
+            the response - can be large per cluster.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_logs
+          description: Whether to include with the current and pending plan information the
+            attempt log - can be very large per cluster.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_history
+          description: Whether to include with the current and pending plan information the
+            plan history- can be very large per cluster.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_defaults
+          description: If showing plans, whether to show values that are left at their
+            default value (less readable but more informative).
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_settings
+          description: Whether to show cluster settings in the response.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/appsearch/{ref_id}/read_only_mode":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Set AppSearch read-only status
+      description: Enable/Disable read-only mode on the given App Search resource.
+      parameters:
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Set AppSearch read-only status
+      description: Enable/Disable read-only mode on the given App Search resource.
+      parameters:
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/elasticsearch/{ref_id}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get Deployment Elasticsearch Resource Info
+      description: Get info about an Elasticsearch Resource belonging to a given Deployment.
+      parameters:
+        - in: query
+          name: show_security
+          description: Whether to include the Elasticsearch 2.x security information in the
+            response - can be large per cluster and also include credentials.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_metadata
+          description: Whether to include the full cluster metadata in the response - can
+            be large per cluster and also include credentials.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plans
+          description: Whether to include the full current and pending plan information in
+            the response - can be large per cluster.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_logs
+          description: Whether to include with the current and pending plan information the
+            attempt log - can be very large per cluster.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_history
+          description: Whether to include with the current and pending plan information the
+            plan history- can be very large per cluster.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_defaults
+          description: If showing plans, whether to show values that are left at their
+            default value (less readable but more informative).
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: convert_legacy_plans
+          description: If showing plans, whether to leave pre-2.0.0 plans in their legacy
+            format (the default), or whether to update them to 2.0.x+ format (if
+            'true').
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_system_alerts
+          description: Number of system alerts (such as forced restarts due to memory
+            limits) to be included in the response - can be large per cluster.
+            Negative numbers or 0 will not return field.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_settings
+          description: Whether to show cluster settings in the response.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: enrich_with_template
+          description: If showing plans, whether to enrich the plan by including the
+            missing elements from the deployment template it is based on.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/elasticsearch/{ref_id}/_enable-ilm":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Migrate Elasticsearch resource to use ILM
+      description: Migrates the specified Elasticsearch resource to use ILM.
+      parameters:
+        - in: query
+          name: validate_only
+          description: When `true`, does not enable ILM but returns warnings if any
+            applications may lose availability during ILM migration.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/elasticsearch/{ref_id}/_enable-slm":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Migrate Elasticsearch resource to use SLM
+      description: Migrates the specified Elasticsearch resource to use SLM.
+      parameters:
+        - in: query
+          name: validate_only
+          description: When `true`, does not enable SLM but returns warnings if any
+            applications may lose availability during SLM migration.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/elasticsearch/{ref_id}/_reset-password":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Reset 'elastic' user password
+      description: Resets the password of the 'elastic' user.
+      parameters:
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/elasticsearch/{ref_id}/_restart":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Restart Deployment Elasticsearch Resource
+      description: 'Restarts an Elasticsearch Resource. If a Resource is active: this
+        command re-applies the existing plan but applies a "cluster_reboot",
+        which issues a restart command and waits for it to complete. If a
+        Resource is inactive: this command starts it up with the most recent
+        successful plan.'
+      parameters:
+        - in: query
+          name: restore_snapshot
+          description: When set to true and restoring from shutdown, then will restore the
+            cluster from the last snapshot (if available).
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: skip_snapshot
+          description: If true, will not take a snapshot of the cluster before restarting.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: cancel_pending
+          description: If true, cancels any pending plans before restarting. If false and
+            there are pending plans, returns an error.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: group_attribute
+          description: "Indicates the property or properties used to divide the list of
+            instances to restart in groups. Valid options are: '\\_\\_all\\_\\_'
+            (restart all at once), '\\_\\_zone\\_\\_' by logical zone,
+            '\\_\\_name\\_\\_' one instance at a time, or a comma-separated list
+            of attributes of the instances"
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: shard_init_wait_time
+          description: "The time, in seconds, to wait for shards that show no progress of
+            initializing, before rolling the next group (default: 10 minutes)"
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/elasticsearch/{ref_id}/_shutdown":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Shutdown Deployment Elasticsearch Resource
+      description: Shutdown Elasticsearch Resource belonging to a given Deployment.
+      parameters:
+        - in: query
+          name: hide
+          description: Hide cluster on shutdown. Hidden clusters are not listed by default.
+            Only applicable for Platform administrators.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: skip_snapshot
+          description: If true, will skip taking a snapshot of the cluster before shutting
+            the cluster down (if even possible).
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/elasticsearch/{ref_id}/keystore":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get the settings from the Elasticsearch resource keystore
+      description: Adds the specified values to the Elasticsearch keystore, or removes the
+        keys for the unspecified values.
+      parameters:
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    patch:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Add or remove settings from the Elasticsearch resource keystore
+      description: Fetches the current values of the keystore for the Elasticsearch
+        resource.
+      parameters:
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/elasticsearch/{ref_id}/remote-clusters":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get remote clusters
+      description: Returns the list of remote clusters for the elasticsearch resource.
+      parameters:
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+    put:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Set remote clusters
+      description: Overwrites or creates the remote clusters for the elasticsearch resource.
+      parameters:
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/enterprise_search/{ref_id}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get Deployment Enterprise Search Resource Info
+      description: Get info about an Enterprise Search Resource belonging to a given
+        Deployment.
+      parameters:
+        - in: query
+          name: show_metadata
+          description: Whether to include the full cluster metadata in the response - can
+            be large per cluster and also include credentials.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plans
+          description: Whether to include the full current and pending plan information in
+            the response - can be large per cluster.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_logs
+          description: Whether to include with the current and pending plan information the
+            attempt log - can be very large per cluster.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_history
+          description: Whether to include with the current and pending plan information the
+            plan history- can be very large per cluster.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_defaults
+          description: If showing plans, whether to show values that are left at their
+            default value (less readable but more informative).
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_settings
+          description: Whether to show cluster settings in the response.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/kibana/{ref_id}":
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get Deployment Kibana Resource Info
+      description: Get info about a Kibana Resource belonging to a given Deployment.
+      parameters:
+        - in: query
+          name: show_metadata
+          description: Whether to include the full cluster metadata in the response - can
+            be large per cluster and also include credentials.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plans
+          description: Whether to include the full current and pending plan information in
+            the response - can be large per cluster.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_logs
+          description: Whether to include with the current and pending plan information the
+            attempt log - can be very large per cluster.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_history
+          description: Whether to include with the current and pending plan information the
+            plan history- can be very large per cluster.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_plan_defaults
+          description: If showing plans, whether to show values that are left at their
+            default value (less readable but more informative).
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: convert_legacy_plans
+          description: If showing plans, whether to leave pre-2.0.0 plans in their legacy
+            format (the default), or whether to update them to 2.0.x+ format (if
+            'true').
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_settings
+          description: Whether to show cluster settings in the response.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/{resource_kind}/{ref_id}/_restore":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Restores a shutdown resource
+      description: Restores a shutdown resource belonging to a given Deployment.
+      parameters:
+        - in: query
+          name: restore_snapshot
+          description: Whether or not to restore a snapshot for those resources that allow
+            it.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: resource_kind
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/{resource_kind}/{ref_id}/instances/_start":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Start all instances
+      description: Starts all instances belonging to a Deployment Resource.
+      parameters:
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: resource_kind
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/{resource_kind}/{ref_id}/instances/_stop":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Stop all instances
+      description: Stops all instances belonging to a Deployment Resource.
+      parameters:
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: resource_kind
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/{resource_kind}/{ref_id}/instances/maintenance-mode/_start":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Start maintenance mode (all instances)
+      description: Starts maintenance mode of all instances belonging to a Deployment
+        Resource.
+      parameters:
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: resource_kind
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/{resource_kind}/{ref_id}/instances/maintenance-mode/_stop":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Stop maintenance mode (all instances)
+      description: Stops maintenance mode of all instances belonging to a Deployment
+        Resource.
+      parameters:
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: resource_kind
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/{resource_kind}/{ref_id}/instances/{instance_ids}/_start":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Start instances
+      description: Starts instances belonging to a Deployment Resource.
+      parameters:
+        - in: query
+          name: ignore_missing
+          description: If true and the instance does not exist then quietly proceed to the
+            next instance, otherwise treated as an error
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: resource_kind
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: instance_ids
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/{resource_kind}/{ref_id}/instances/{instance_ids}/_stop":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Stop instances
+      description: Stops instances belonging to a Deployment Resource.
+      parameters:
+        - in: query
+          name: ignore_missing
+          description: If true and the instance does not exist then quietly proceed to the
+            next instance, otherwise treated as an error.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: resource_kind
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: instance_ids
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/{resource_kind}/{ref_id}/instances/{instance_ids}/maintenance-mode/_start":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Start maintenance mode
+      description: Starts maintenance mode of instances belonging to a Deployment Resource.
+      parameters:
+        - in: query
+          name: ignore_missing
+          description: If true and the instance does not exist then quietly proceed to the
+            next instance, otherwise treated as an error.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: resource_kind
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: instance_ids
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/{resource_kind}/{ref_id}/instances/{instance_ids}/maintenance-mode/_stop":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Stop maintenance mode
+      description: Stops maintenance mode of instances belonging to a Resource.
+      parameters:
+        - in: query
+          name: ignore_missing
+          description: If true and the instance does not exist then quietly proceed to the
+            next instance, otherwise treated as an error.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: resource_kind
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: instance_ids
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/{resource_kind}/{ref_id}/plan/pending":
+    delete:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Cancel resource pending plan
+      description: Cancels the pending plan of a Resource belonging to a given Deployment.
+      parameters:
+        - in: query
+          name: force_delete
+          description: When `true`, deletes the pending plan instead of attempting a
+            graceful cancellation. The default is `false`.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: ignore_missing
+          description: When `true`, returns successfully, even when plans are missing. The
+            default is `false`.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: resource_kind
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/{stateless_resource_kind}/{ref_id}/_restart":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Restart Deployment Stateless Resource
+      description: 'Restarts a Stateless Resource. If a Resource is active: this command
+        re-applies the existing plan but applies a "cluster_reboot", which
+        issues a restart command and waits for it to complete. If a Resource is
+        inactive: this command starts it up with the most recent successful
+        plan.'
+      parameters:
+        - in: query
+          name: cancel_pending
+          description: If true, cancels any pending plans before restarting. If false and
+            there are pending plans, returns an error.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: stateless_resource_kind
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/{stateless_resource_kind}/{ref_id}/_shutdown":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Shutdown Deployment Stateless Resource
+      description: Shutdown Stateless Resource belonging to a given Deployment.
+      parameters:
+        - in: query
+          name: hide
+          description: Hide cluster on shutdown. Hidden clusters are not listed by default.
+            Only applicable for Platform administrators.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: skip_snapshot
+          description: If true, will skip taking a snapshot of the cluster before shutting
+            the cluster down (if even possible)
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: stateless_resource_kind
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  "/deployments/{deployment_id}/{stateless_resource_kind}/{ref_id}/_upgrade":
+    post:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Upgrade Kibana, APM, AppSearch inside Deployment
+      description: Upgrades a running cluster.
+      parameters:
+        - in: query
+          name: validate_only
+          description: When `true`, returns the update version without performing the
+            upgrade
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: deployment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: stateless_resource_kind
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: ref_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+  /stack/versions:
+    get:
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get stack versions
+      description: By default, retrieves only the available Elastic Stack versions. To
+        retrieve all of the Elastic Stack versions, use the `show_deleted
+        parameter`.
+      parameters:
+        - in: query
+          name: show_deleted
+          description: Whether to show deleted stack versions or not
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: show_unusable
+          description: Whether to show versions that are unusable by the authenticated user
+          required: false
+          schema:
+            type: string
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: Authorization
+tags:
+  - name: DeploymentTemplates
+  - name: Deployments
+  - name: DeploymentsTrafficFilter
+  - name: Extensions
+  - name: Stack
