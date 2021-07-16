@@ -1,140 +1,156 @@
-swagger: "3.0"
-info:
-  title: IBM X-Force API
-  description: API based on https://exchange.xforce.ibmcloud.com/api/doc/?#!/Usage
-  version: "1.0"
-  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAYAAACvDDbuAAASa0lEQVR4Xu2dB6wUVRfHL/aOqCBgw0CColLsvYsi2DExihWNMSYajbHGaIwx0Wg0RqPYFRsICCpYsWBDUSSigtHYpdh7V8zvfp79Zoe3O7tvZnbnnjk3MY88983ee89vz545/3PPdHHOLXE2bAcC24EuBm5gFrPp+h0wcA2EIHfAwA3SbDZpA9cYCHIHDNwgzWaTNnCNgSB3wMAN0mw2aQPXGAhyBwzcIM1mkzZwjYEgd8DADdJsNmkD1xgIcgcM3CDNZpM2cI2BIHfAwA3SbDZpA9cYCHIHDNwgzWaTNnCNgSB3wMAN0mw2aQPXGAhyBwzcIM1mkzZwjYEgd8DADdJsNmkD1xgIcgcM3CDNZpM2cI2BIHfAwA3SbDZpA9cYCHIHDNwgzWaTNnCNgSB3wMAN0mw2aQPXGAhyBwzcIM1mkzZwjYEgd8DADdJsNmkD1xgIcgcM3CDNZpM2cI2BIHfAwA3SbDZpA9cYCHIHDNwgzWaTNnCNgSB3wMDNyWzLLbec++eff/x/NrLfAQM34z1dbbXV3B577OEOO+wwt3jxYnffffe5uXPnur///jvjdyr35QzcjOy/+uqre2BHjx7t9txzTwfAjM8++8w98MADbuzYsR7gv/76K6N3LPdlDNyU9l9jjTU8qAC7++67V4CNXxaAJ02a5O68804P8J9//pnyncv95wZuJ+0PsPvss4874YQT3K677loT2OjllyxZ4hYsWOAefPBBD/CcOXPMA3dy/w3cJjeua9eubujQoRVgV1lllSav8L+XL1y40E2ePNndcccd7o033jAP3OQuGrgNbli3bt08sMcff7zbZZddXBKwv/76qyOzsPzyy9d9h0WLFnmA8cCzZ892f/zxR4MzKvfLDNwE+6+11loVD7vTTjslAvvjjz+6p556yt17772ud+/e7thjj3UDBw70ENcbZCCmTJniAX7ttdcM4AS7GLg1Nghg99tvP3/TtcMOO7iVV1657lb+8MMPHtjbbrvNPfvss+7nn392Xbp08fAecsghHuDBgwcnAvzFF1+4hx9+2N1+++1u1qxZBnCNXTdwYxuz9tpru/3339/HsNtvv71baaWV6gL73XffeWBvvfVWN2PGDPfLL790+PpevXpVAbzCCivUve5XX33lHnnkEf9BePXVV93vv/9e7tggtnoD978NWWedddyIESPccccd57bbbruGgH3iiSc8sC+88EJNYOO09ezZ0x188MH+fYYMGeIaAXjatGke4FdeecX99ttvBrBzrvTgdu/e3R1wwAEepG233datuOKKiR72scce88C+9NJLDQMbv+i6667rDjzwQH+zt9VWWyUC/PXXX7tHH33UA/zyyy+XHuDSgtujRw8PLOBss802ieB88803VeCQNchiROex9dZbJ35wvv32W4cHJgbmg5PVPLJYSyuvUTpw+aoWYBv1dAJKnp4Oz0+owgepEc8PwI8//rj3wC+++GKnPX8rYcvyvUoDbmdiy6lTp3rP1srYklh7+PDhHuA8Y+0sIWrHtdSDy938oYceWklHJQkCX375pQPYdt/Nk44D4EazG99//73Pbtxyyy3u+eef9+k4zUMtuChdRx11VNvyp/IBSVtMwzokPddMPvmmm25y06dPV1sLoRZc7tjvv//+ROFAFCtqBpBcs8qXcqN15JFH+oow8rBppVxR8BBEUPCSBBHqH4jlP//8c5WOVy24I0eO9EXctaTWvGsEKHUEWjzuQw895GPlLABec801KxJ0vZqJ+fPnu3333dd98sknBm5IO1ALXMoKpaglz6osisp5H8ofGaKECcBphQSpUuMmjrLKVVddtco88+bN85K1gRsStc65jsAFHuLep59+OvfYLw6ubB9CgmQrZs6cmVpIAOC9997bZyF22223Sl2wgRsYsDLdjsD99NNPfUnixx9/nPuqCBUoGBePG39DABYFLov8MEeH9tprr8rRITythQq5mzn7N2g3uDvvvLMHl7xsvYGQAMAiJKRVwgRgPqBXXXWVP3GhcZTq5qyVHpfDkuSPTzzxRC8pJ1WZiRJGDNxM0U4tKKm54GCm1tPFBm7O7giPSx6WGJQ8bCNFPFSd4YEREmqVSeY87cJf3sBtkYmo8x02bJhXwgA4yQNTmP7kk09W6ny1K2HNmsHAbXbHUr4eJUwA3nHHHROFBABGAaOM8rnnnnM//fRTyhno+HMDt012BGDu+vHAjZxlA+BnnnnGhxCk88oOsIHbJnDlbVHC6M/ATRyZiKTTwwArAOOJOZxZxmHgFsTqIiRQi9CREhafJjEvhzLxwFSF4ZHLNAzcglkbwUKUsHotnWTaAMwhTWJgPDCHN8sw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
-  contact:
-    name: X-Force API Support
-    email: xfe@us.ibm.com
-  x-categories:
-    - TI
-    - Threat intel
-    - Search
-servers:
-  - url: https://api.xforce.ibmcloud.com
-host: api.xforce.ibmcloud.com
 basePath: /
-schemes:
-  - "https:"
+components:
+  securitySchemes:
+    BasicAuth:
+      scheme: basic
+      type: http
+host: api.xforce.ibmcloud.com
+info:
+  contact:
+    email: xfe@us.ibm.com
+    name: X-Force API Support
+  description: API based on https://exchange.xforce.ibmcloud.com/api/doc/?#!/Usage
+  title: IBM X-Force API
+  version: '1.0'
+  x-categories:
+  - TI
+  - Threat intel
+  - Search
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAYAAACvDDbuAAASa0lEQVR4Xu2dB6wUVRfHL/aOqCBgw0CColLsvYsi2DExihWNMSYajbHGaIwx0Wg0RqPYFRsICCpYsWBDUSSigtHYpdh7V8zvfp79Zoe3O7tvZnbnnjk3MY88983ee89vz545/3PPdHHOLXE2bAcC24EuBm5gFrPp+h0wcA2EIHfAwA3SbDZpA9cYCHIHDNwgzWaTNnCNgSB3wMAN0mw2aQPXGAhyBwzcIM1mkzZwjYEgd8DADdJsNmkD1xgIcgcM3CDNZpM2cI2BIHfAwA3SbDZpA9cYCHIHDNwgzWaTNnCNgSB3wMAN0mw2aQPXGAhyBwzcIM1mkzZwjYEgd8DADdJsNmkD1xgIcgcM3CDNZpM2cI2BIHfAwA3SbDZpA9cYCHIHDNwgzWaTNnCNgSB3wMAN0mw2aQPXGAhyBwzcIM1mkzZwjYEgd8DADdJsNmkD1xgIcgcM3CDNZpM2cI2BIHfAwA3SbDZpA9cYCHIHDNwgzWaTNnCNgSB3wMDNyWzLLbec++eff/x/NrLfAQM34z1dbbXV3B577OEOO+wwt3jxYnffffe5uXPnur///jvjdyr35QzcjOy/+uqre2BHjx7t9txzTwfAjM8++8w98MADbuzYsR7gv/76K6N3LPdlDNyU9l9jjTU8qAC7++67V4CNXxaAJ02a5O68804P8J9//pnyncv95wZuJ+0PsPvss4874YQT3K677loT2OjllyxZ4hYsWOAefPBBD/CcOXPMA3dy/w3cJjeua9eubujQoRVgV1lllSav8L+XL1y40E2ePNndcccd7o033jAP3OQuGrgNbli3bt08sMcff7zbZZddXBKwv/76qyOzsPzyy9d9h0WLFnmA8cCzZ892f/zxR4MzKvfLDNwE+6+11loVD7vTTjslAvvjjz+6p556yt17772ud+/e7thjj3UDBw70ENcbZCCmTJniAX7ttdcM4AS7GLg1Nghg99tvP3/TtcMOO7iVV1657lb+8MMPHtjbbrvNPfvss+7nn392Xbp08fAecsghHuDBgwcnAvzFF1+4hx9+2N1+++1u1qxZBnCNXTdwYxuz9tpru/3339/HsNtvv71baaWV6gL73XffeWBvvfVWN2PGDPfLL790+PpevXpVAbzCCivUve5XX33lHnnkEf9BePXVV93vv/9e7tggtnoD978NWWedddyIESPccccd57bbbruGgH3iiSc8sC+88EJNYOO09ezZ0x188MH+fYYMGeIaAXjatGke4FdeecX99ttvBrBzrvTgdu/e3R1wwAEepG233datuOKKiR72scce88C+9NJLDQMbv+i6667rDjzwQH+zt9VWWyUC/PXXX7tHH33UA/zyyy+XHuDSgtujRw8PLOBss802ieB88803VeCQNchiROex9dZbJ35wvv32W4cHJgbmg5PVPLJYSyuvUTpw+aoWYBv1dAJKnp4Oz0+owgepEc8PwI8//rj3wC+++GKnPX8rYcvyvUoDbmdiy6lTp3rP1srYklh7+PDhHuA8Y+0sIWrHtdSDy938oYceWklHJQkCX375pQPYdt/Nk44D4EazG99//73Pbtxyyy3u+eef9+k4zUMtuChdRx11VNvyp/IBSVtMwzokPddMPvmmm25y06dPV1sLoRZc7tjvv//+ROFAFCtqBpBcs8qXcqN15JFH+oow8rBppVxR8BBEUPCSBBHqH4jlP//8c5WOVy24I0eO9EXctaTWvGsEKHUEWjzuQw895GPlLABec801KxJ0vZqJ+fPnu3333dd98sknBm5IO1ALXMoKpaglz6osisp5H8ofGaKECcBphQSpUuMmjrLKVVddtco88+bN85K1gRsStc65jsAFHuLep59+OvfYLw6ubB9CgmQrZs6cmVpIAOC9997bZyF22223Sl2wgRsYsDLdjsD99NNPfUnixx9/nPuqCBUoGBePG39DABYFLov8MEeH9tprr8rRITythQq5mzn7N2g3uDvvvLMHl7xsvYGQAMAiJKRVwgRgPqBXXXWVP3GhcZTq5qyVHpfDkuSPTzzxRC8pJ1WZiRJGDNxM0U4tKKm54GCm1tPFBm7O7giPSx6WGJQ8bCNFPFSd4YEREmqVSeY87cJf3sBtkYmo8x02bJhXwgA4yQNTmP7kk09W6ny1K2HNmsHAbXbHUr4eJUwA3nHHHROFBABGAaOM8rnnnnM//fRTyhno+HMDt012BGDu+vHAjZxlA+BnnnnGhxCk88oOsIHbJnDlbVHC6M/ATRyZiKTTwwArAOOJOZxZxmHgFsTqIiRQi9CREhafJjEvhzLxwFSF4ZHLNAzcglkbwUKUsHotnWTaAMwhTWJgPDCHN8sw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
+openapi: 3.0.0
 paths:
-  /auth/api_key:
-    post:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Returns an API key and password pair which are needed when accessingthe
-        API as an logged in user
-      description: |-
-        You can generate an API key and password in your XFE user
-        profile, or generate a new pair with this endpoint. The new
-        credentials are in the response object.
-
-        API keys and passwords do not expire. For example, the
-        following is usage of an API key/password with curl:
-
-        ```
-        curl -u {apikey:password} https://api.xforce.ibmcloud.com/url/cnn.com
-        ```
-      parameters: []
-  "/auth/api_key/{apikey}":
-    delete:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Revoke specific API Key
-      parameters:
-        - in: path
-          name: apikey
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
   /all-subscriptions/usage:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Get API usage details per month for each subscription type
-      parameters: []
   /app/:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns list of all Internet Application Profiles IAP
-      parameters: []
+  /app/{appname}:
+    get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: appname
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns the Internet Application Profiles IAP that needs to befetched
   /apps/fulltext:
     get:
+      parameters:
+      - description: Search term, For example, TestApp for Social Networking
+        in: query
+        name: q
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
       summary: Returns list of all Internet Application Profiles IAP associated withthe
         search term
-      parameters:
-        - in: query
-          name: q
-          description: Search term, For example, TestApp for Social Networking
-          required: true
-          schema:
-            type: string
-  "/app/{appname}":
-    get:
+  /auth/api_key:
+    post:
+      description: 'You can generate an API key and password in your XFE user
+
+        profile, or generate a new pair with this endpoint. The new
+
+        credentials are in the response object.
+
+
+        API keys and passwords do not expire. For example, the
+
+        following is usage of an API key/password with curl:
+
+
+        ```
+
+        curl -u {apikey:password} https://api.xforce.ibmcloud.com/url/cnn.com
+
+        ```'
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns the Internet Application Profiles IAP that needs to befetched
+      summary: Returns an API key and password pair which are needed when accessingthe
+        API as an logged in user
+  /auth/api_key/{apikey}:
+    delete:
       parameters:
-        - in: path
-          name: appname
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/casefiles/{collectionID}":
-    get:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: apikey
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns a JSON resentation of a Collection
-      description: Returns details for a given Collection.
-      parameters:
-        - in: path
-          name: collectionID
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/casefiles/{collectionID}/stix":
+      summary: Revoke specific API Key
+  /casefiles:
     get:
+      description: 'This endpoint returns all the Collections that you have created,
+        whether
+
+        they are shared or not.'
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns a STIX representation of a Collection with Attachments
+      summary: Gets all of your Collections
+  /casefiles/group/{groupID}:
+    get:
+      description: This endpoint returns a list of Collections for a given Group ID.
       parameters:
-        - in: path
-          name: collectionID
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: groupID
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns a list of Collections for a given Group ID
+  /casefiles/private/fulltext:
+    get:
+      description: This endpoint searches the title and wiki content of private collections
+        that were created by owner, shared with me, or shared with a group of which
+        I am a member and returns the result
+      parameters:
+      - description: Search term, For example, Advisory
+        in: query
+        name: q
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns a list of private Collections that were found
   /casefiles/public:
     get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Gets all public Collections that you are able to see
-      description: >-
-        Returns a list of all publicly accessible Collections.
+      description: 'Returns a list of all publicly accessible Collections.
 
         ####  Curl Example:
 
@@ -142,454 +158,206 @@ paths:
 
         curl -u {apikey:password} GET https://api.xforce.ibmcloud.com/casefiles/public
 
-        ```
+        ```'
       parameters: []
-  /casefiles/shared:
-    get:
       responses:
         default:
           description: default
           schema: {}
-      summary: Gets all shared Collections that you are able to see
-      description: Returns a list of all Collections that have been shared with you.
-      parameters: []
-  /casefiles:
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Gets all of your Collections
-      description: |-
-        This endpoint returns all the Collections that you have created, whether
-        they are shared or not.
-      parameters: []
-  "/casefiles/group/{groupID}":
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Returns a list of Collections for a given Group ID
-      description: This endpoint returns a list of Collections for a given Group ID.
-      parameters:
-        - in: path
-          name: groupID
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
+      summary: Gets all public Collections that you are able to see
   /casefiles/public/fulltext:
     get:
+      description: This endpoint searches the title and wiki content of public Collections
+        and returns the result.
+      parameters:
+      - description: Search term, For example, Advisory
+        in: query
+        name: q
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
       summary: Returns a list of public Collections that were found
-      description: This endpoint searches the title and wiki content of public Collections
-        and returns the result.
-      parameters:
-        - in: query
-          name: q
-          description: Search term, For example, Advisory
-          required: true
-          schema:
-            type: string
-  /casefiles/private/fulltext:
+  /casefiles/shared:
     get:
+      description: Returns a list of all Collections that have been shared with you.
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns a list of private Collections that were found
-      description: This endpoint searches the title and wiki content of private collections
-        that were created by owner, shared with me, or shared with a group of
-        which I am a member and returns the result
-      parameters:
-        - in: query
-          name: q
-          description: Search term, For example, Advisory
-          required: true
-          schema:
-            type: string
-  "/casefiles/{casefileid}/upload":
-    post:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Endpoint to initiate the upload of a file
-      parameters:
-        - in: path
-          name: casefileid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/casefiles/{casefileid}/linkedcasefiles/{linkedcasefileid}":
-    delete:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Removes the linked Collection from the specified Collection
-      parameters:
-        - in: path
-          name: casefileid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: linkedcasefileid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/casefiles/{casefileid}/linkedcasefiles":
+      summary: Gets all shared Collections that you are able to see
+  /casefiles/{casefileid}/attachments:
     get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Gets all linked Collections that you are able to see for the
-        specifiedCollection
       parameters:
-        - in: path
-          name: casefileid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-    put:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Adds a Collection link to a Collection
-      parameters:
-        - in: path
-          name: casefileid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/casefiles/{casefileid}/attachments":
-    get:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: casefileid
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
       summary: Get all attachments for a specified Collection
-      parameters:
-        - in: path
-          name: casefileid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/casefiles/{casefileid}/createreports":
-    post:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Endpoint to add reports to a casefile
-      parameters:
-        - in: path
-          name: casefileid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/casefiles/{casefileid}/attachments/{attachmentid}":
+  /casefiles/{casefileid}/attachments/{attachmentid}:
     get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: casefileid
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: attachmentid
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
       summary: Get an attachment for a specified Collection by ID
-      parameters:
-        - in: path
-          name: casefileid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: attachmentid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/casefiles/{casefileid}/attachments/{attachmentid}/{filename}":
+  /casefiles/{casefileid}/attachments/{attachmentid}/{filename}:
     get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: casefileid
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: attachmentid
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: filename
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
       summary: Get a file attachment for a specified Collection by ID
+  /casefiles/{casefileid}/createreports:
+    post:
       parameters:
-        - in: path
-          name: casefileid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: attachmentid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: filename
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  /ipr:
-    get:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: casefileid
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Return a list of IPs according to the category and date range
-      description: Access to this information is restricted to trial and paid users. Please
-        visit this link (https://exchange.xforce.ibmcloud.com/marketplace) for
-        more information
-      parameters:
-        - in: query
-          name: category
-          description: |-
-            categories for IPs, For example,
-            ```
-            - Spam
-            - Anonymisation Services
-            - Scanning IPs
-            - Dynamic IPs
-            - Malware
-            - Bots
-            - Botnet Command and Control Server
-            ```
-          required: true
-          schema:
-            type: string
-        - in: query
-          name: startDate
-          description: the start of the date range for searching, For example,
-            `2016-01-01T00:00:00Z`.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: endDate
-          description: the end of the date range for searching, For example,
-            `2016-01-01T00:00:00Z`. If not specified, the query will return the
-            newest IPs.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: descending
-          description: the order of returned IPs according to the created date and ips,
-            default value is true
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: limit
-          description: the number of IPs to be returned. If not specified, the query will
-            return 200 IPs by default.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: skip
-          description: the number of IPs to be skipped while searching.
-          required: false
-          schema:
-            type: string
-  /industries:
+      summary: Endpoint to add reports to a casefile
+  /casefiles/{casefileid}/linkedcasefiles:
     get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: casefileid
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Return a list of Industry Analysis Reports
-      description: Access to this information is restricted to trial and paid users. Please
-        visit this link (https://exchange.xforce.ibmcloud.com/marketplace) for
-        more information
+      summary: Gets all linked Collections that you are able to see for the specifiedCollection
+    put:
       parameters:
-        - in: query
-          name: limit
-          description: the limit how many entries to retrieve, default value is 20
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: offset
-          description: the startingpoint to retrieve entries, default value is 0
-          required: false
-          schema:
-            type: string
-  "/industries/{id}":
-    get:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: casefileid
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Return a Industry Analysis Report
-      description: Full access to this information is restricted to paid users. Trial and
-        free users will have access to selected set of reports. Please visit
-        this link (https://exchange.xforce.ibmcloud.com/marketplace) for more
-        information.
+      summary: Adds a Collection link to a Collection
+  /casefiles/{casefileid}/linkedcasefiles/{linkedcasefileid}:
+    delete:
       parameters:
-        - in: path
-          name: id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  /malware_analysis:
-    get:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: casefileid
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: linkedcasefileid
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Return a list of Malware Analysis Reports
-      description: Access to this information is restricted to trial and paid users. Please
-        visit this link (https://exchange.xforce.ibmcloud.com/marketplace) for
-        more information
+      summary: Removes the linked Collection from the specified Collection
+  /casefiles/{casefileid}/upload:
+    post:
       parameters:
-        - in: query
-          name: limit
-          description: the limit how many entries to retrieve, default value is 20
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: offset
-          description: the startingpoint to retrieve entries, default value is 0
-          required: false
-          schema:
-            type: string
-  "/malware_analysis/{id}":
-    get:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: casefileid
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Return a Malware Analysis Report
-      description: Full access to this information is restricted to paid users. Trial and
-        free users will have access to selected set of reports. Please visit
-        this link (https://exchange.xforce.ibmcloud.com/marketplace) for more
-        information.
-      parameters:
-        - in: path
-          name: id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  /threat_groups:
+      summary: Endpoint to initiate the upload of a file
+  /casefiles/{collectionID}:
     get:
+      description: Returns details for a given Collection.
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: collectionID
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Return a list of Threat Group Profiles
-      description: Access to this information is restricted to trial and paid users. Please
-        visit this link (https://exchange.xforce.ibmcloud.com/marketplace) for
-        more information
-      parameters:
-        - in: query
-          name: limit
-          description: the limit how many entries to retrieve, default value is 20
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: offset
-          description: the startingpoint to retrieve entries, default value is 0
-          required: false
-          schema:
-            type: string
-  "/threat_groups/{id}":
+      summary: Returns a JSON resentation of a Collection
+  /casefiles/{collectionID}/stix:
     get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: collectionID
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Return a Threat Group Profile
-      description: Full access to this information is restricted to paid users. Trial and
-        free users will have access to selected set of reports. Please visit
-        this link (https://exchange.xforce.ibmcloud.com/marketplace) for more
-        information.
-      parameters:
-        - in: path
-          name: id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/stix/v2/export/{object}/{type}/{fullReport}":
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Return an Object in STIX format
-      description: Access to this information is restricted to trial and paid users. Please
-        visit this link (https://exchange.xforce.ibmcloud.com/marketplace) for
-        more information
-      parameters:
-        - in: path
-          name: type
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: object
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: fullReport
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  /stix/v2/botnets:
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Return the full list of botnets in STIX format with their associated
-        Command and Control server details
-      description: Access to this information is restricted to trial and paid users. Please
-        visit this link (https://exchange.xforce.ibmcloud.com/marketplace) for
-        more information
-      parameters:
-        - in: query
-          name: fullReport
-          description: If set to true the DNS details are added to the returned data.
-          required: false
-          schema:
-            type: string
+      summary: Returns a STIX representation of a Collection with Attachments
   /hub/extensions:
     get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Gets all published Extensions in App Exchange
-      description: >-
-        Returns an object containing an array of all published extensions and
-        the size of the array.
+      description: 'Returns an object containing an array of all published extensions
+        and the size of the array.
 
         ####  Curl Example:
 
@@ -597,42 +365,17 @@ paths:
 
         curl GET https://api.xforce.ibmcloud.com/hub/extensions
 
-        ```
+        ```'
       parameters: []
-  "/stix/v2/tis-export/{object}/{type}/false":
-    get:
       responses:
         default:
           description: default
           schema: {}
-      summary: Return a TIS Object Threat Group Industry or Malware report in STIX
-        format
-      description: Access to this information is restricted to trial and paid users. Please
-        visit this link (https://exchange.xforce.ibmcloud.com/marketplace) for
-        more information
-      parameters:
-        - in: path
-          name: type
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: object
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/hub/extensions/brand/{brandnames}":
+      summary: Gets all published Extensions in App Exchange
+  /hub/extensions/brand/{brandnames}:
     get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Gets all published Extensions by brand names IBM Security Products
-      description: >-
-        Returns an object containing an array of all published extensions and
-        the size of the array.
+      description: 'Returns an object containing an array of all published extensions
+        and the size of the array.
 
         ####  Curl Example:
 
@@ -640,846 +383,659 @@ paths:
 
         curl -u {apikey:password} GET https://api.xforce.ibmcloud.com/hub/extensions/brand/QRADAR_APP
 
-        ```
+        ```'
       parameters:
-        - in: path
-          name: brandnames
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/ipr/{ip}":
-    get:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: brandnames
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns the IP report for the entered IP
-      parameters:
-        - in: path
-          name: ip
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/ipr/history/{ip}":
+      summary: Gets all published Extensions by brand names IBM Security Products
+  /industries:
     get:
+      description: Access to this information is restricted to trial and paid users.
+        Please visit this link (https://exchange.xforce.ibmcloud.com/marketplace)
+        for more information
+      parameters:
+      - description: the limit how many entries to retrieve, default value is 20
+        in: query
+        name: limit
+        required: false
+        schema:
+          type: string
+      - description: the startingpoint to retrieve entries, default value is 0
+        in: query
+        name: offset
+        required: false
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Return a list of Industry Analysis Reports
+  /industries/{id}:
+    get:
+      description: Full access to this information is restricted to paid users. Trial
+        and free users will have access to selected set of reports. Please visit this
+        link (https://exchange.xforce.ibmcloud.com/marketplace) for more information.
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Return a Industry Analysis Report
+  /ipr:
+    get:
+      description: Access to this information is restricted to trial and paid users.
+        Please visit this link (https://exchange.xforce.ibmcloud.com/marketplace)
+        for more information
+      parameters:
+      - description: 'categories for IPs, For example,
+
+          ```
+
+          - Spam
+
+          - Anonymisation Services
+
+          - Scanning IPs
+
+          - Dynamic IPs
+
+          - Malware
+
+          - Bots
+
+          - Botnet Command and Control Server
+
+          ```'
+        in: query
+        name: category
+        required: true
+        schema:
+          type: string
+      - description: the start of the date range for searching, For example, `2016-01-01T00:00:00Z`.
+        in: query
+        name: startDate
+        required: false
+        schema:
+          type: string
+      - description: the end of the date range for searching, For example, `2016-01-01T00:00:00Z`.
+          If not specified, the query will return the newest IPs.
+        in: query
+        name: endDate
+        required: false
+        schema:
+          type: string
+      - description: the order of returned IPs according to the created date and ips,
+          default value is true
+        in: query
+        name: descending
+        required: false
+        schema:
+          type: string
+      - description: the number of IPs to be returned. If not specified, the query
+          will return 200 IPs by default.
+        in: query
+        name: limit
+        required: false
+        schema:
+          type: string
+      - description: the number of IPs to be skipped while searching.
+        in: query
+        name: skip
+        required: false
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Return a list of IPs according to the category and date range
+  /ipr/asn/{asn}:
+    get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: asn
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns all networks that are assigned to an Autonomous System Number
+  /ipr/history/{ip}:
+    get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: ip
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
       summary: Returns the IP reputation report for the entered IP
-      parameters:
-        - in: path
-          name: ip
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/ipr/malware/{ip}":
+  /ipr/malware/{ip}:
     get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: ip
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
       summary: Returns the malware associated with the entered IP
-      parameters:
-        - in: path
-          name: ip
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/resolve/{input}":
+  /ipr/{ip}:
     get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: ip
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns live and passive DNS records
-      parameters:
-        - in: path
-          name: input
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  /url/host/early_warning:
+      summary: Returns the IP report for the entered IP
+  /malware/family/{family}:
     get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Returns the list of domains in early warning feed
-      description: Access to this information is restricted to trial and enterprise users.
       parameters:
-        - in: query
-          name: startDate
-          description: the start of the date range, for example, `2019-01-01T00:00:00Z`.
-            The default value is the beginning of the feed.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: endDate
-          description: the end of the date range, for example, `2019-01-01T00:00:00Z`. The
-            default value is now.
-          required: false
-          schema:
-            type: string
-  /url:
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Return a list of URLs according to the category and date range
-      description: Access to this information is restricted to trial and paid users. Please
-        visit this link (https://exchange.xforce.ibmcloud.com/marketplace) for
-        more information
-      parameters:
-        - in: query
-          name: category
-          description: |-
-            categories for URLs, For example,
-            ```
-            - Illegal Activities
-            - Computer Crime / Hacking
-            - Warez / Software Piracy
-            - Violence / Extreme
-            - Spam URLs
-            - Malware
-            - Phishing URLs
-            - Botnet Command and Control Server
-            ```
-          required: true
-          schema:
-            type: string
-        - in: query
-          name: startDate
-          description: the start of the date range for searching, For example,
-            `2016-01-01T00:00:00Z`.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: endDate
-          description: the end of the date range for searching, For example,
-            `2016-01-01T00:00:00Z`. If not specified, the query will return the
-            newest URLs.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: descending
-          description: the order of returned URLs according to the created date and URLs,
-            default value is true
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: limit
-          description: the number of URLs to be returned. If not specified, the query will
-            return 200 URLs by default.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: skip
-          description: the number of URLs to be skipped while searching.
-          required: false
-          schema:
-            type: string
-  "/url/{url}":
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Returns the URL report for the entered URL
-      parameters:
-        - in: path
-          name: url
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/url/history/{url}":
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Returns the URL history for the entered URL
-      parameters:
-        - in: path
-          name: url
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/url/malware/{url}":
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Returns the malware associated with the entered URL
-      parameters:
-        - in: path
-          name: url
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/malware/{filehash}":
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Returns a malware report for the given file hash For example md5 sha1
-        and sha256
-      parameters:
-        - in: path
-          name: filehash
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/malware/family/{family}":
-    get:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: family
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
       summary: Returns the malware associated with the entered family
-      parameters:
-        - in: path
-          name: family
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/malware/familyext/{family}":
+  /malware/familyext/{family}:
     get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: family
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
       summary: Returns the malware associated with the entered family using wildcard
         search
-      parameters:
-        - in: path
-          name: family
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  /vulnerabilities/:
+  /malware/{filehash}:
     get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: filehash
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns recent vulnerabilities
-      parameters:
-        - in: query
-          name: startDate
-          description: the start of the date range for searching, For example,
-            `2016-01-01T00:00:00Z`.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: endDate
-          description: the end of the date range for searching, For example,
-            `2016-01-01T00:00:00Z`. If not specified, the query will return the
-            newest vulnerabilities.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: descending
-          description: the order of returned Vulnerabilities according to the reported
-            date, default value is true
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: limit
-          description: number of vulnerabilities
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: skip
-          description: the number of Vulnerabilities to be skipped while searching.
-          required: false
-          schema:
-            type: string
-  /vulnerabilities/fulltext:
+      summary: Returns a malware report for the given file hash For example md5 sha1
+        and sha256
+  /malware_analysis:
     get:
+      description: Access to this information is restricted to trial and paid users.
+        Please visit this link (https://exchange.xforce.ibmcloud.com/marketplace)
+        for more information
+      parameters:
+      - description: the limit how many entries to retrieve, default value is 20
+        in: query
+        name: limit
+        required: false
+        schema:
+          type: string
+      - description: the startingpoint to retrieve entries, default value is 0
+        in: query
+        name: offset
+        required: false
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns list of all vulnerabilities associated with the search term
-      parameters:
-        - in: query
-          name: q
-          description: Search term For example, Heartbleed. For searching based on affected
-            platforms, place the index "platforms_affected" before search term,
-            For example, platforms_affected:"IBM Security Network Protection"
-          required: true
-          schema:
-            type: string
-        - in: query
-          name: startDate
-          description: the start of the date range for searching, For example,
-            `2016-01-01T00:00:00Z`.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: endDate
-          description: the end of the date range for searching, For example,
-            `2016-01-01T00:00:00Z`. If not specified, the query will return the
-            newest vulnerabilities.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: bookmark
-          description: Bookmark used to page through results.
-          required: false
-          schema:
-            type: string
-  "/vulnerabilities/{xfid}":
+      summary: Return a list of Malware Analysis Reports
+  /malware_analysis/{id}:
     get:
+      description: Full access to this information is restricted to paid users. Trial
+        and free users will have access to selected set of reports. Please visit this
+        link (https://exchange.xforce.ibmcloud.com/marketplace) for more information.
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns the vulnerability associated with the entered xfdbid
-      parameters:
-        - in: path
-          name: xfid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/vulnerabilities/search/{stdcode}":
+      summary: Return a Malware Analysis Report
+  /resolve/{input}:
     get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: input
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns the vulnerability associated with the entered stdcode
-      description: Supported codes are CVE, BID, US-CERT VU# and RHSA.
-      parameters:
-        - in: path
-          name: stdcode
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/vulnerabilities/msid/{msid}":
-    get:
+      summary: Returns live and passive DNS records
+  /sightings/bulk/latest:
+    post:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns the vulnerability associated with the entered Microsoft Security
-        Bulletin ID
-      parameters:
-        - in: path
-          name: msid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/signatures/{input}":
+      summary: Returns IOCs  their sighting data collected from all advisories via
+        the Managed Security Systems APIIOCs
+  /signatures/fulltext:
     get:
+      parameters:
+      - description: Search term, For example, ManageEngine
+        in: query
+        name: q
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns list of all signatures associated with the search term
+  /signatures/xpu/directory:
+    get:
+      parameters: []
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns list of all XPUs
+  /signatures/xpu/{xpu}:
+    get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: xpu
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns list of all signatures associated with the entered XPU
+  /signatures/{input}:
+    get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: input
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
       summary: Returns the signature details associated with the entered pamID or
         pamName
-      parameters:
-        - in: path
-          name: input
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  /signatures/fulltext:
+  /stix/v2/botnets:
     get:
+      description: Access to this information is restricted to trial and paid users.
+        Please visit this link (https://exchange.xforce.ibmcloud.com/marketplace)
+        for more information
+      parameters:
+      - description: If set to true the DNS details are added to the returned data.
+        in: query
+        name: fullReport
+        required: false
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns list of all signatures associated with the search term
-      parameters:
-        - in: query
-          name: q
-          description: Search term, For example, ManageEngine
-          required: true
-          schema:
-            type: string
-  "/signatures/xpu/{xpu}":
+      summary: Return the full list of botnets in STIX format with their associated
+        Command and Control server details
+  /stix/v2/export/{object}/{type}/{fullReport}:
     get:
+      description: Access to this information is restricted to trial and paid users.
+        Please visit this link (https://exchange.xforce.ibmcloud.com/marketplace)
+        for more information
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: type
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: object
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: fullReport
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns list of all signatures associated with the entered XPU
-      parameters:
-        - in: path
-          name: xpu
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  /signatures/xpu/directory:
+      summary: Return an Object in STIX format
+  /stix/v2/tis-export/{object}/{type}/false:
     get:
+      description: Access to this information is restricted to trial and paid users.
+        Please visit this link (https://exchange.xforce.ibmcloud.com/marketplace)
+        for more information
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: type
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: object
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns list of all XPUs
-      parameters: []
-  "/whois/{host}":
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Returns a JSON object containing information about the given hostaddress
-      parameters:
-        - in: path
-          name: host
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
+      summary: Return a TIS Object Threat Group Industry or Malware report in STIX
+        format
   /tags/search:
     get:
+      parameters:
+      - description: Query text. Tags will be parsed from the text.
+        in: query
+        name: q
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
       summary: Returns a list of tagged collections and reports The tags will be parsed
         out from the query parameterA tag has the structure example
-      parameters:
-        - in: query
-          name: q
-          description: Query text. Tags will be parsed from the text.
-          required: true
-          schema:
-            type: string
   /taxii:
     get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Returns a discovery resource contains information about a TAXII Server
-      description: >-
-        Returns a list of available api roots.
+      description: 'Returns a list of available api roots.
 
         ####  Curl Example:
 
         ```
 
-        curl -u {apikey:password} -H "Accept: application/vnd.oasis.taxii+json; version=2.0" https://api.xforce.ibmcloud.com/taxii
+        curl -u {apikey:password} -H "Accept: application/vnd.oasis.taxii+json; version=2.0"
+        https://api.xforce.ibmcloud.com/taxii
 
-        ```
+        ```'
       parameters: []
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns a discovery resource contains information about a TAXII Server
     post:
+      description: "This is the single endpoint for TAXII services. TAXII message\
+        \ must be transmitted via this endpoint over HTTPS.\n\nAvailable TAXII services\
+        \ are listed as follows:\n<script src=\"taxii.js\" type=\"text/javascript\"\
+        ></script>\n<script type=\"text/javascript\">\n//<!--\n  $(document).ready(function()\
+        \ {\n    $('#taxiiIprCategoryList').html(taxiiIprCategories.reduce(function(html,\
+        \ category) {\n      return (html + '<li style=\"padding:0;\"><a href=\"#TAXII_message_input\"\
+        \ onclick=\"taxiiSetExamplePollIprByCategory(\\'' + category + '\\');\">'\
+        \ + category + '</a></li>');\n    }, ''));\n    $('#taxiiUrlCategoryList').html(taxiiUrlCategories.reduce(function(html,\
+        \ category) {\n      return (html + '<li style=\"padding:0;\"><a href=\"#TAXII_message_input\"\
+        \ onclick=\"taxiiSetExamplePollUrlByCategory(\\'' + category + '\\');\">'\
+        \ + category + '</a></li>');\n    }, ''));\n  });\n//-->\n</script>\n<table>\n\
+        \  <thead>\n    <tr>\n      <th>TAXII Message Type</th>\n      <th>Data Collection</th>\n\
+        \      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n\
+        \      <td>Discovery Request</td>\n      <td></td>\n      <td>\n        <p>This\
+        \ message can be used to query all available TAXII services which XFE supports.</p>\n\
+        \        <button class=\"btn btn-default\" onclick=\"taxiiSetExampleDiscovery();\"\
+        >Try out</button>\n      </td>\n    </tr>\n    <tr>\n      <td>Collection\
+        \ Information Request</td>\n      <td></td>\n      <td>\n        <p>This message\
+        \ can be used to query all available TAXII data collections you have access.</p>\n\
+        \        <button class=\"btn btn-default\" onclick=\"taxiiSetExampleCollectionInformation();\"\
+        >Try out</button>\n      </td>\n    </tr>\n\n    <tr>\n      <td rowspan=\"\
+        13\">Poll Request</td>\n      <td>xfe.botnets</td>\n      <td>\n        <p>This\
+        \ TAXII data collection can be polled for all botnets.</p>\n        <button\
+        \ class=\"btn btn-default\" onclick=\"taxiiSetExamplePollBotnets();\">Try\
+        \ out</button>\n      </td>\n    </tr>\n    <tr>\n      <td>xfe.default</td>\n\
+        \      <td>\n        <p>This TAXII data collection can be polled for XFE default\
+        \ feed.</p>\n        <button class=\"btn btn-default\" onclick=\"taxiiSetExamplePollDefault();\"\
+        >Try out</button>\n      </td>\n    </tr>\n    <tr>\n      <td rowspan=\"\
+        2\">xfe.collections.public</td>\n      <td>\n        <p>This TAXII data collection\
+        \ can be polled for XFE public collections.</p>\n        <button class=\"\
+        btn btn-default\" onclick=\"taxiiSetExamplePollPublicCollections();\">Try\
+        \ out</button>\n      </td>\n    </tr>\n    <tr>\n      <td>\n        <p>The\
+        \ result can be restricted to specific XFE collection by ID.</p>\n       \
+        \ <form onsubmit=\"taxiiSetExamplePollPublicCollectionsById($('#taxiiPublicCollectionsById_Id').val());\
+        \ return false;\">\n          <div class=\"input-group\" style=\"width:100%\"\
+        >\n            <span class=\"input-group-addon\">Collection ID:</span>\n \
+        \           <input type=\"text\" class=\"form-control\"\n                \
+        \   aria-label=\"Collection ID\" placeholder=\"Collection ID\"\n         \
+        \          value=\"7ac6c4578facafa0de50b72e7bf8f8c4\" id=\"taxiiPublicCollectionsById_Id\"\
+        />\n            <div class=\"input-group-btn\">\n              <button class=\"\
+        btn btn-default\" type=\"submit\">Try out</button>\n            </div>\n \
+        \         </div>\n        </form>\n      </td>\n    </tr>\n    <tr>\n    \
+        \  <td>xfe.collections.following</td>\n      <td>\n        <p>This TAXII data\
+        \ collection can be polled for XFE collections you are following.</p>\n  \
+        \      <button class=\"btn btn-default\" onclick=\"taxiiSetExamplePollCollectionsFollowing();\"\
+        >Try out</button>\n      </td>\n    </tr>\n    <tr>\n      <td>xfe.collections.advisory</td>\n\
+        \      <td>\n        <p>This TAXII data collection can be polled for XFE public\
+        \ advisories.</p>\n        <button class=\"btn btn-default\" onclick=\"taxiiSetExamplePollCollectionsAdvisory();\"\
+        >Try out</button>\n      </td>\n    </tr>\n    <tr>\n      <td>xfe.early_warning.hosts</td>\n\
+        \      <td>\n        <p>This TAXII data collection can be polled for all Early\
+        \ Warning hosts. Access to this information is restricted to trial and enterprise\
+        \ users.</p>\n        <button class=\"btn btn-default\" onclick=\"taxiiSetExamplePollEarlyWarningHosts();\"\
+        >Try out</button>\n      </td>\n    </tr>\n    <tr>\n      <td>xfe.early_warning.threats</td>\n\
+        \      <td>\n        <p>This TAXII data collection can be polled for all Early\
+        \ Warning threats. Access to this information is restricted to trial and enterprise\
+        \ users.</p>\n        <button class=\"btn btn-default\" onclick=\"taxiiSetExamplePollEarlyWarningThreats();\"\
+        >Try out</button>\n      </td>\n    </tr>\n    <tr>\n      <td>xfe.collectionById.<i>{collectionId}</i></td>\n\
+        \      <td>\n        <p>This type of TAXII data collections is used to poll\
+        \ one XFE collection you have access. A full list may be retrieved first using\
+        \ TAXII Collection Information Request.</p>\n        <form onsubmit=\"taxiiSetExamplePollCollectionById($('#taxiiCollectionById_Id').val());\
+        \ return false;\">\n          <div class=\"input-group\" style=\"width:100%\"\
+        >\n            <span class=\"input-group-addon\">Collection ID:</span>\n \
+        \           <input type=\"text\" class=\"form-control\"\n                \
+        \   aria-label=\"Collection ID\" placeholder=\"Collection ID\"\n         \
+        \          value=\"7ac6c4578facafa0de50b72e7bf8f8c4\" id=\"taxiiCollectionById_Id\"\
+        />\n            <div class=\"input-group-btn\">\n              <button class=\"\
+        btn btn-default\" type=\"submit\">Try out</button>\n            </div>\n \
+        \         </div>\n        </form>\n      </td>\n    </tr>\n    <tr>\n    \
+        \  <td>xfe.ipr</td>\n      <td>\n        <p>This TAXII data collection is\
+        \ used to query IP reputation report. You should set constraint to the IP\
+        \ address to query.</p>\n        <form onsubmit=\"taxiiSetExamplePollIpr($('#taxiiIpr_Ip').val());\
+        \ return false;\">\n          <div class=\"input-group\" style=\"width:100%\"\
+        >\n            <span class=\"input-group-addon\">IP:</span>\n            <input\
+        \ type=\"text\" class=\"form-control\"\n                   aria-label=\"IP\
+        \ Address\" placeholder=\"IP Address\"\n                   value=\"1.2.3.4\"\
+        \ id=\"taxiiIpr_Ip\"/>\n            <div class=\"input-group-btn\">\n    \
+        \          <button class=\"btn btn-default\" type=\"submit\">Try out</button>\n\
+        \            </div>\n          </div>\n        </form>\n      </td>\n    </tr>\n\
+        \    <tr>\n      <td>xfe.ipr.<i>{category}</i></td>\n      <td>\n        <p>This\
+        \ kind of TAXII data collections can be polled for XFE IP reputation report\
+        \ in specific category. You should query for categories with access using\
+        \ TAXII Collection Information Request.</p>\n        <div class=\"dropdown\"\
+        >\n          <button class=\"btn btn-default dropdown-toggle\" id=\"taxiiIprCategory\"\
+        \ data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">Try\
+        \ out<span class=\"caret\" style=\"margin-left:12pt;\"></span></button>\n\
+        \          <ul class=\"dropdown-menu nav\" style=\"padding:0;margin:0;max-height:168pt;overflow:auto;\"\
+        \ id=\"taxiiIprCategoryList\" role=\"menubar\" aria-labelledby=\"taxiiIprCategory\"\
+        >\n          </ul>\n        </div>\n      </td>\n    </tr>\n    <tr>\n   \
+        \   <td>xfe.url</td>\n      <td>\n        <p>This TAXII data collection can\
+        \ be polled for XFE URL report. You should set constraint to the URL to query.</p>\n\
+        \        <form onsubmit=\"taxiiSetExamplePollUrl($('#taxiiUrl_Url').val());\
+        \ return false;\">\n          <div class=\"input-group\" style=\"width:100%\"\
+        >\n            <span class=\"input-group-addon\">URL:</span>\n           \
+        \ <input type=\"text\" class=\"form-control\"\n                   aria-label=\"\
+        URL\" placeholder=\"URL\"\n                   value=\"http://www.cnn.com\"\
+        \ id=\"taxiiUrl_Url\"/>\n            <div class=\"input-group-btn\">\n   \
+        \           <button class=\"btn btn-default\" type=\"submit\">Try out</button>\n\
+        \            </div>\n          </div>\n        </form>\n      </td>\n    </tr>\n\
+        \    <tr>\n      <td>xfe.url.<i>{category}</i></td>\n      <td>\n        <p>This\
+        \ set of TAXII data collections can be polled for XFE URL report in specific\
+        \ category. You should query for categories with access using TAXII Collection\
+        \ Information Request.</p>\n        <div class=\"dropdown\">\n          <button\
+        \ class=\"btn btn-default dropdown-toggle\" id=\"taxiiUrlCategory\" data-toggle=\"\
+        dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">Try out<span class=\"\
+        caret\" style=\"margin-left:12pt;\"></span></button>\n          <ul class=\"\
+        dropdown-menu nav\" style=\"padding:0;margin:0;max-height:168pt;overflow:auto;\"\
+        \ id=\"taxiiUrlCategoryList\" role=\"menubar\">\n          </ul>\n       \
+        \ </div>\n      </td>\n    </tr>\n    <tr>\n      <td>xfe.vulnerabilities</td>\n\
+        \      <td>\n        <p>This TAXII data collection can be polled for XFE vulnerabilities\
+        \ information. You should set constraint to the vulnerability to query.</p>\n\
+        \        <form onsubmit=\"taxiiSetExamplePollVulnerabilities($('#taxiiVul_Vul').val());\
+        \ return false;\">\n          <div class=\"input-group\" style=\"width:100%\"\
+        >\n            <span class=\"input-group-addon\">Vulnerability:</span>\n \
+        \           <input type=\"text\" class=\"form-control\"\n                \
+        \   aria-label=\"Vulnerability\" placeholder=\"Vulnerability\"\n         \
+        \          value=\"CVE-2013-3893\" id=\"taxiiVul_Vul\"/>\n            <div\
+        \ class=\"input-group-btn\">\n              <button class=\"btn btn-default\"\
+        \ type=\"submit\">Try out</button>\n            </div>\n          </div>\n\
+        \        </form>\n      </td>\n    </tr>\n    <tr>\n      <td>Inbox Message</td>\n\
+        \      <td>xfe.collectionInbox.<i>{collectionId}</td></td>\n      <td>\n \
+        \       <p>Inbox message against this set of TAXII data collection is used\
+        \ to modify XFE collection of specific collection ID. You should query for\
+        \ collection inboxes with access using TAXII Collection Information Request.</p>\n\
+        \        <form onsubmit=\"taxiiSetExampleInboxCollectionById($('#taxiiInbox_Id').val());\
+        \ return false;\">\n          <div class=\"input-group\" style=\"width:100%\"\
+        >\n            <span class=\"input-group-addon\">Collection ID:</span>\n \
+        \           <input type=\"text\" class=\"form-control\"\n                \
+        \   aria-label=\"Collection ID\" placeholder=\"Collection ID\"\n         \
+        \          value=\"c7341384a62c2bb30058dd974b3c4ed4\" id=\"taxiiInbox_Id\"\
+        />\n            <div class=\"input-group-btn\">\n              <button class=\"\
+        btn btn-default\" type=\"submit\">Try out</button>\n            </div>\n \
+        \         </div>\n        </form>\n      </td>\n    </tr>\n  </tbody>\n</table>\n\
+        \nFor more information about TAXII, refer to <a rel=\"noopener noreferrer\"\
+        \ href=\"https://taxii.mitre.org/\" target=\"_blank\">https://taxii.mitre.org/</a>.\n\
+        \n"
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Trusted Automated eXchange of Indicator Information version 11
-      description: >+
-        This is the single endpoint for TAXII services. TAXII message must be
-        transmitted via this endpoint over HTTPS.
-
-
-        Available TAXII services are listed as follows:
-
-        <script src="taxii.js" type="text/javascript"></script>
-
-        <script type="text/javascript">
-
-        //<!--
-          $(document).ready(function() {
-            $('#taxiiIprCategoryList').html(taxiiIprCategories.reduce(function(html, category) {
-              return (html + '<li style="padding:0;"><a href="#TAXII_message_input" onclick="taxiiSetExamplePollIprByCategory(\'' + category + '\');">' + category + '</a></li>');
-            }, ''));
-            $('#taxiiUrlCategoryList').html(taxiiUrlCategories.reduce(function(html, category) {
-              return (html + '<li style="padding:0;"><a href="#TAXII_message_input" onclick="taxiiSetExamplePollUrlByCategory(\'' + category + '\');">' + category + '</a></li>');
-            }, ''));
-          });
-        //-->
-
-        </script>
-
-        <table>
-          <thead>
-            <tr>
-              <th>TAXII Message Type</th>
-              <th>Data Collection</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Discovery Request</td>
-              <td></td>
-              <td>
-                <p>This message can be used to query all available TAXII services which XFE supports.</p>
-                <button class="btn btn-default" onclick="taxiiSetExampleDiscovery();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Collection Information Request</td>
-              <td></td>
-              <td>
-                <p>This message can be used to query all available TAXII data collections you have access.</p>
-                <button class="btn btn-default" onclick="taxiiSetExampleCollectionInformation();">Try out</button>
-              </td>
-            </tr>
-
-            <tr>
-              <td rowspan="13">Poll Request</td>
-              <td>xfe.botnets</td>
-              <td>
-                <p>This TAXII data collection can be polled for all botnets.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollBotnets();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfe.default</td>
-              <td>
-                <p>This TAXII data collection can be polled for XFE default feed.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollDefault();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td rowspan="2">xfe.collections.public</td>
-              <td>
-                <p>This TAXII data collection can be polled for XFE public collections.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollPublicCollections();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>The result can be restricted to specific XFE collection by ID.</p>
-                <form onsubmit="taxiiSetExamplePollPublicCollectionsById($('#taxiiPublicCollectionsById_Id').val()); return false;">
-                  <div class="input-group" style="width:100%">
-                    <span class="input-group-addon">Collection ID:</span>
-                    <input type="text" class="form-control"
-                           aria-label="Collection ID" placeholder="Collection ID"
-                           value="7ac6c4578facafa0de50b72e7bf8f8c4" id="taxiiPublicCollectionsById_Id"/>
-                    <div class="input-group-btn">
-                      <button class="btn btn-default" type="submit">Try out</button>
-                    </div>
-                  </div>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <td>xfe.collections.following</td>
-              <td>
-                <p>This TAXII data collection can be polled for XFE collections you are following.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollCollectionsFollowing();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfe.collections.advisory</td>
-              <td>
-                <p>This TAXII data collection can be polled for XFE public advisories.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollCollectionsAdvisory();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfe.early_warning.hosts</td>
-              <td>
-                <p>This TAXII data collection can be polled for all Early Warning hosts. Access to this information is restricted to trial and enterprise users.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollEarlyWarningHosts();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfe.early_warning.threats</td>
-              <td>
-                <p>This TAXII data collection can be polled for all Early Warning threats. Access to this information is restricted to trial and enterprise users.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollEarlyWarningThreats();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfe.collectionById.<i>{collectionId}</i></td>
-              <td>
-                <p>This type of TAXII data collections is used to poll one XFE collection you have access. A full list may be retrieved first using TAXII Collection Information Request.</p>
-                <form onsubmit="taxiiSetExamplePollCollectionById($('#taxiiCollectionById_Id').val()); return false;">
-                  <div class="input-group" style="width:100%">
-                    <span class="input-group-addon">Collection ID:</span>
-                    <input type="text" class="form-control"
-                           aria-label="Collection ID" placeholder="Collection ID"
-                           value="7ac6c4578facafa0de50b72e7bf8f8c4" id="taxiiCollectionById_Id"/>
-                    <div class="input-group-btn">
-                      <button class="btn btn-default" type="submit">Try out</button>
-                    </div>
-                  </div>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <td>xfe.ipr</td>
-              <td>
-                <p>This TAXII data collection is used to query IP reputation report. You should set constraint to the IP address to query.</p>
-                <form onsubmit="taxiiSetExamplePollIpr($('#taxiiIpr_Ip').val()); return false;">
-                  <div class="input-group" style="width:100%">
-                    <span class="input-group-addon">IP:</span>
-                    <input type="text" class="form-control"
-                           aria-label="IP Address" placeholder="IP Address"
-                           value="1.2.3.4" id="taxiiIpr_Ip"/>
-                    <div class="input-group-btn">
-                      <button class="btn btn-default" type="submit">Try out</button>
-                    </div>
-                  </div>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <td>xfe.ipr.<i>{category}</i></td>
-              <td>
-                <p>This kind of TAXII data collections can be polled for XFE IP reputation report in specific category. You should query for categories with access using TAXII Collection Information Request.</p>
-                <div class="dropdown">
-                  <button class="btn btn-default dropdown-toggle" id="taxiiIprCategory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Try out<span class="caret" style="margin-left:12pt;"></span></button>
-                  <ul class="dropdown-menu nav" style="padding:0;margin:0;max-height:168pt;overflow:auto;" id="taxiiIprCategoryList" role="menubar" aria-labelledby="taxiiIprCategory">
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>xfe.url</td>
-              <td>
-                <p>This TAXII data collection can be polled for XFE URL report. You should set constraint to the URL to query.</p>
-                <form onsubmit="taxiiSetExamplePollUrl($('#taxiiUrl_Url').val()); return false;">
-                  <div class="input-group" style="width:100%">
-                    <span class="input-group-addon">URL:</span>
-                    <input type="text" class="form-control"
-                           aria-label="URL" placeholder="URL"
-                           value="http://www.cnn.com" id="taxiiUrl_Url"/>
-                    <div class="input-group-btn">
-                      <button class="btn btn-default" type="submit">Try out</button>
-                    </div>
-                  </div>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <td>xfe.url.<i>{category}</i></td>
-              <td>
-                <p>This set of TAXII data collections can be polled for XFE URL report in specific category. You should query for categories with access using TAXII Collection Information Request.</p>
-                <div class="dropdown">
-                  <button class="btn btn-default dropdown-toggle" id="taxiiUrlCategory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Try out<span class="caret" style="margin-left:12pt;"></span></button>
-                  <ul class="dropdown-menu nav" style="padding:0;margin:0;max-height:168pt;overflow:auto;" id="taxiiUrlCategoryList" role="menubar">
-                  </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>xfe.vulnerabilities</td>
-              <td>
-                <p>This TAXII data collection can be polled for XFE vulnerabilities information. You should set constraint to the vulnerability to query.</p>
-                <form onsubmit="taxiiSetExamplePollVulnerabilities($('#taxiiVul_Vul').val()); return false;">
-                  <div class="input-group" style="width:100%">
-                    <span class="input-group-addon">Vulnerability:</span>
-                    <input type="text" class="form-control"
-                           aria-label="Vulnerability" placeholder="Vulnerability"
-                           value="CVE-2013-3893" id="taxiiVul_Vul"/>
-                    <div class="input-group-btn">
-                      <button class="btn btn-default" type="submit">Try out</button>
-                    </div>
-                  </div>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <td>Inbox Message</td>
-              <td>xfe.collectionInbox.<i>{collectionId}</td></td>
-              <td>
-                <p>Inbox message against this set of TAXII data collection is used to modify XFE collection of specific collection ID. You should query for collection inboxes with access using TAXII Collection Information Request.</p>
-                <form onsubmit="taxiiSetExampleInboxCollectionById($('#taxiiInbox_Id').val()); return false;">
-                  <div class="input-group" style="width:100%">
-                    <span class="input-group-addon">Collection ID:</span>
-                    <input type="text" class="form-control"
-                           aria-label="Collection ID" placeholder="Collection ID"
-                           value="c7341384a62c2bb30058dd974b3c4ed4" id="taxiiInbox_Id"/>
-                    <div class="input-group-btn">
-                      <button class="btn btn-default" type="submit">Try out</button>
-                    </div>
-                  </div>
-                </form>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-
-        For more information about TAXII, refer to <a rel="noopener noreferrer" href="https://taxii.mitre.org/" target="_blank">https://taxii.mitre.org/</a>.
-
-      parameters: []
   /taxii2:
     get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Returns api root resource contains general information about the API Root
-      description: >-
-        Returns information contains title, description, TAXII versions
+      description: 'Returns information contains title, description, TAXII versions
         and  maximum size of the content body.
 
         ####  Curl Example:
 
         ```
 
-        curl -u {apikey:password} -H "Accept: application/vnd.oasis.taxii+json; version=2.0" https://api.xforce.ibmcloud.com/taxii2
+        curl -u {apikey:password} -H "Accept: application/vnd.oasis.taxii+json; version=2.0"
+        https://api.xforce.ibmcloud.com/taxii2
 
-        ```
+        ```'
       parameters: []
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns api root resource contains general information about the API
+        Root
   /taxii2/collections:
     get:
+      description: 'Returns a list of public/private/shared collection resources which
+        users have the access.
+
+        ####  Curl Example:
+
+        ```
+
+        curl -u {apikey:password} -H "Accept: application/vnd.oasis.taxii+json; version=2.0"
+        https://api.xforce.ibmcloud.com/taxii2/collections
+
+        ```'
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns general information about all accessiable collections
-      description: >-
-        Returns a list of public/private/shared collection resources which users
-        have the access.
+  /taxii2/collections/{collectionID}:
+    get:
+      description: 'Returns general information about the collection, such as id,
+        title, description, can_read, can_write and media_types.
+
+        {collectionID} must be in UUID format or ''public''. For example: d4ff8286-b4ed-38f7-0520-4cbfcf8216fa.
+
+        Collection ID ''public'' is an pseudo-collection that contains objects for
+        all public collections.
 
         ####  Curl Example:
 
         ```
 
-        curl -u {apikey:password} -H "Accept: application/vnd.oasis.taxii+json; version=2.0" https://api.xforce.ibmcloud.com/taxii2/collections
+        curl -u {apikey:password} -H "Accept: application/vnd.oasis.taxii+json; version=2.0"
+        https://api.xforce.ibmcloud.com/taxii2/collections/d4ff8286-b4ed-38f7-0520-4cbfcf8216fa
 
-        ```
-      parameters: []
-  "/taxii2/collections/{collectionID}":
-    get:
+        ```'
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: collectionID
+        required: true
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
       summary: Returns information for a specific collection
-      description: >-
-        Returns general information about the collection, such as id, title,
-        description, can_read, can_write and media_types.
-
-        {collectionID} must be in UUID format or 'public'. For example: d4ff8286-b4ed-38f7-0520-4cbfcf8216fa.
-
-        Collection ID 'public' is an pseudo-collection that contains objects for all public collections.
-
-        ####  Curl Example:
-
-        ```
-
-        curl -u {apikey:password} -H "Accept: application/vnd.oasis.taxii+json; version=2.0" https://api.xforce.ibmcloud.com/taxii2/collections/d4ff8286-b4ed-38f7-0520-4cbfcf8216fa
-
-        ```
-      parameters:
-        - in: path
-          name: collectionID
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/taxii2/collections/{collectionID}/objects":
+  /taxii2/collections/{collectionID}/manifest:
     get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Returns objects information from a collection
-      description: >-
-        Retrive all avaiable objects in a Collection.
-
-        {collectionID} must be in UUID format. For example: d4ff8286-b4ed-38f7-0520-4cbfcf8216fa.
-
-        ####  Curl Example:
-
-        ```
-
-        curl -u {apikey:password} -H "Accept: application/vnd.oasis.stix+json; version=2.0" https://api.xforce.ibmcloud.com/taxii2/collections/d4ff8286-b4ed-38f7-0520-4cbfcf8216fa/objects
-
-        ```
-      parameters:
-        - in: query
-          name: added_after
-          description: "Filter the result set to only include the items added after the
-            specified time. For example: 2019-04-29T10:07:38.165Z"
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: added_before
-          description: "Filter the result set to only include the items added before the
-            specified time. For example: 2019-04-29T10:07:38.165Z"
-          required: false
-          schema:
-            type: string
-        - in: path
-          name: collectionID
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/taxii2/collections/{collectionID}/objects/{objectID}":
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Returns an object from a Collection by object id
-      description: >-
-        Returns general information for the specific object in one collection.
-
-        ####  Curl Example:
-
-        ```
-
-        curl -u {apikey:password} -H "Accept: application/vnd.oasis.stix+json; version=2.0" https://api.xforce.ibmcloud.com/taxii2/collections/d4ff8286-b4ed-38f7-0520-4cbfcf8216fa/objects/indicator--4387a7a4-67d4-33d5-58fb-59bfad9c17a3
-
-        ```
-      parameters:
-        - in: path
-          name: collectionID
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: objectID
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-  "/taxii2/collections/{collectionID}/manifest":
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Returns manifest about objects from a Collection
-      description: >-
-        Returns manifest information about all available objects. The
+      description: 'Returns manifest information about all available objects. The
         information contains id, date_added and media_types.
 
         {collectionID} must be in UUID format. For example: d4ff8286-b4ed-38f7-0520-4cbfcf8216fa.
@@ -1488,531 +1044,792 @@ paths:
 
         ```
 
-        curl -u {apikey:password} -H "Accept: application/vnd.oasis.taxii+json; version=2.0" https://api.xforce.ibmcloud.com/taxii2/collections/d4ff8286-b4ed-38f7-0520-4cbfcf8216fa/manifest
+        curl -u {apikey:password} -H "Accept: application/vnd.oasis.taxii+json; version=2.0"
+        https://api.xforce.ibmcloud.com/taxii2/collections/d4ff8286-b4ed-38f7-0520-4cbfcf8216fa/manifest
+
+        ```'
+      parameters:
+      - description: 'Filter the result set to only include the items added after
+          the specified time. For example: 2019-04-29T10:07:38.165Z'
+        in: query
+        name: added_after
+        required: false
+        schema:
+          type: string
+      - description: 'Filter the result set to only include the items added before
+          the specified time. For example: 2019-04-29T10:07:38.165Z'
+        in: query
+        name: added_before
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: collectionID
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns manifest about objects from a Collection
+  /taxii2/collections/{collectionID}/objects:
+    get:
+      description: 'Retrive all avaiable objects in a Collection.
+
+        {collectionID} must be in UUID format. For example: d4ff8286-b4ed-38f7-0520-4cbfcf8216fa.
+
+        ####  Curl Example:
 
         ```
+
+        curl -u {apikey:password} -H "Accept: application/vnd.oasis.stix+json; version=2.0"
+        https://api.xforce.ibmcloud.com/taxii2/collections/d4ff8286-b4ed-38f7-0520-4cbfcf8216fa/objects
+
+        ```'
       parameters:
-        - in: query
-          name: added_after
-          description: "Filter the result set to only include the items added after the
-            specified time. For example: 2019-04-29T10:07:38.165Z"
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: added_before
-          description: "Filter the result set to only include the items added before the
-            specified time. For example: 2019-04-29T10:07:38.165Z"
-          required: false
-          schema:
-            type: string
-        - in: path
-          name: collectionID
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
+      - description: 'Filter the result set to only include the items added after
+          the specified time. For example: 2019-04-29T10:07:38.165Z'
+        in: query
+        name: added_after
+        required: false
+        schema:
+          type: string
+      - description: 'Filter the result set to only include the items added before
+          the specified time. For example: 2019-04-29T10:07:38.165Z'
+        in: query
+        name: added_before
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: collectionID
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns objects information from a collection
+  /taxii2/collections/{collectionID}/objects/{objectID}:
+    get:
+      description: 'Returns general information for the specific object in one collection.
+
+        ####  Curl Example:
+
+        ```
+
+        curl -u {apikey:password} -H "Accept: application/vnd.oasis.stix+json; version=2.0"
+        https://api.xforce.ibmcloud.com/taxii2/collections/d4ff8286-b4ed-38f7-0520-4cbfcf8216fa/objects/indicator--4387a7a4-67d4-33d5-58fb-59bfad9c17a3
+
+        ```'
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: collectionID
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: objectID
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns an object from a Collection by object id
+  /threat_groups:
+    get:
+      description: Access to this information is restricted to trial and paid users.
+        Please visit this link (https://exchange.xforce.ibmcloud.com/marketplace)
+        for more information
+      parameters:
+      - description: the limit how many entries to retrieve, default value is 20
+        in: query
+        name: limit
+        required: false
+        schema:
+          type: string
+      - description: the startingpoint to retrieve entries, default value is 0
+        in: query
+        name: offset
+        required: false
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Return a list of Threat Group Profiles
+  /threat_groups/{id}:
+    get:
+      description: Full access to this information is restricted to paid users. Trial
+        and free users will have access to selected set of reports. Please visit this
+        link (https://exchange.xforce.ibmcloud.com/marketplace) for more information.
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Return a Threat Group Profile
+  /url:
+    get:
+      description: Access to this information is restricted to trial and paid users.
+        Please visit this link (https://exchange.xforce.ibmcloud.com/marketplace)
+        for more information
+      parameters:
+      - description: 'categories for URLs, For example,
+
+          ```
+
+          - Illegal Activities
+
+          - Computer Crime / Hacking
+
+          - Warez / Software Piracy
+
+          - Violence / Extreme
+
+          - Spam URLs
+
+          - Malware
+
+          - Phishing URLs
+
+          - Botnet Command and Control Server
+
+          ```'
+        in: query
+        name: category
+        required: true
+        schema:
+          type: string
+      - description: the start of the date range for searching, For example, `2016-01-01T00:00:00Z`.
+        in: query
+        name: startDate
+        required: false
+        schema:
+          type: string
+      - description: the end of the date range for searching, For example, `2016-01-01T00:00:00Z`.
+          If not specified, the query will return the newest URLs.
+        in: query
+        name: endDate
+        required: false
+        schema:
+          type: string
+      - description: the order of returned URLs according to the created date and
+          URLs, default value is true
+        in: query
+        name: descending
+        required: false
+        schema:
+          type: string
+      - description: the number of URLs to be returned. If not specified, the query
+          will return 200 URLs by default.
+        in: query
+        name: limit
+        required: false
+        schema:
+          type: string
+      - description: the number of URLs to be skipped while searching.
+        in: query
+        name: skip
+        required: false
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Return a list of URLs according to the category and date range
+  /url/history/{url}:
+    get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: url
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns the URL history for the entered URL
+  /url/host/early_warning:
+    get:
+      description: Access to this information is restricted to trial and enterprise
+        users.
+      parameters:
+      - description: the start of the date range, for example, `2019-01-01T00:00:00Z`.
+          The default value is the beginning of the feed.
+        in: query
+        name: startDate
+        required: false
+        schema:
+          type: string
+      - description: the end of the date range, for example, `2019-01-01T00:00:00Z`.
+          The default value is now.
+        in: query
+        name: endDate
+        required: false
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns the list of domains in early warning feed
+  /url/malware/{url}:
+    get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: url
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns the malware associated with the entered URL
+  /url/{url}:
+    get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: url
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns the URL report for the entered URL
   /user/profile:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns information about the users profile
-      parameters: []
   /version:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns information on the current running API version
-      parameters: []
-  "/ipr/asn/{asn}":
+  /vulnerabilities/:
     get:
+      parameters:
+      - description: the start of the date range for searching, For example, `2016-01-01T00:00:00Z`.
+        in: query
+        name: startDate
+        required: false
+        schema:
+          type: string
+      - description: the end of the date range for searching, For example, `2016-01-01T00:00:00Z`.
+          If not specified, the query will return the newest vulnerabilities.
+        in: query
+        name: endDate
+        required: false
+        schema:
+          type: string
+      - description: the order of returned Vulnerabilities according to the reported
+          date, default value is true
+        in: query
+        name: descending
+        required: false
+        schema:
+          type: string
+      - description: number of vulnerabilities
+        in: query
+        name: limit
+        required: false
+        schema:
+          type: string
+      - description: the number of Vulnerabilities to be skipped while searching.
+        in: query
+        name: skip
+        required: false
+        schema:
+          type: string
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns all networks that are assigned to an Autonomous System Number
+      summary: Returns recent vulnerabilities
+  /vulnerabilities/fulltext:
+    get:
       parameters:
-        - in: path
-          name: asn
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
+      - description: Search term For example, Heartbleed. For searching based on affected
+          platforms, place the index "platforms_affected" before search term, For
+          example, platforms_affected:"IBM Security Network Protection"
+        in: query
+        name: q
+        required: true
+        schema:
+          type: string
+      - description: the start of the date range for searching, For example, `2016-01-01T00:00:00Z`.
+        in: query
+        name: startDate
+        required: false
+        schema:
+          type: string
+      - description: the end of the date range for searching, For example, `2016-01-01T00:00:00Z`.
+          If not specified, the query will return the newest vulnerabilities.
+        in: query
+        name: endDate
+        required: false
+        schema:
+          type: string
+      - description: Bookmark used to page through results.
+        in: query
+        name: bookmark
+        required: false
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns list of all vulnerabilities associated with the search term
+  /vulnerabilities/msid/{msid}:
+    get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: msid
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns the vulnerability associated with the entered Microsoft Security
+        Bulletin ID
+  /vulnerabilities/search/{stdcode}:
+    get:
+      description: Supported codes are CVE, BID, US-CERT VU# and RHSA.
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: stdcode
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns the vulnerability associated with the entered stdcode
+  /vulnerabilities/{xfid}:
+    get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: xfid
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns the vulnerability associated with the entered xfdbid
+  /whois/{host}:
+    get:
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: host
+        required: true
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns a JSON object containing information about the given hostaddress
   /xfti:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
-      summary: This is the TAXII 2 root information endpointYou can specify your
-        response type with the Accept header TAXII 20 Accept
-        applicationvndoasistaxiijson version20 or Accept
-        applicationvndoasistaxiijson TAXII 21 Accept
-        applicationvndoasistaxiijson version21
-      parameters: []
+      summary: This is the TAXII 2 root information endpointYou can specify your response
+        type with the Accept header TAXII 20 Accept applicationvndoasistaxiijson version20
+        or Accept applicationvndoasistaxiijson TAXII 21 Accept applicationvndoasistaxiijson
+        version21
     post:
+      description: "This is the endpoint for TAXII services for Advanced Threat Protection\
+        \ Feed. TAXII message must be transmitted via this endpoint over HTTPS.\n\n\
+        Available TAXII services are listed as follows:\n<script src=\"taxiiATP.js\"\
+        \ type=\"text/javascript\"></script>\n<table>\n  <thead>\n    <tr>\n     \
+        \ <th>TAXII Message Type</th>\n      <th>Data Collection</th>\n      <th>Description</th>\n\
+        \    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Discovery Request</td>\n\
+        \      <td></td>\n      <td>\n        <p>This message can be used to query\
+        \ all available TAXII services which XFE supports.</p>\n        <button class=\"\
+        btn btn-default\" onclick=\"taxiiSetExampleDiscoveryATP();\">Try out</button>\n\
+        \      </td>\n    </tr>\n    <tr>\n      <td>Collection Information Request</td>\n\
+        \      <td></td>\n      <td>\n        <p>This message can be used to query\
+        \ all available TAXII data collections you have access.</p>\n        <button\
+        \ class=\"btn btn-default\" onclick=\"taxiiSetExampleCollectionInformationATP();\"\
+        >Try out</button>\n      </td>\n    </tr>\n\n    <tr>\n      <td rowspan=\"\
+        22\">Poll Request</td>\n      <td>xfti.c2server.ipv4</td>\n      <td>\n  \
+        \      <p>This TAXII data collection can be polled for IPv4s related to Botnet\
+        \ Command and Control Server.</p>\n        <button class=\"btn btn-default\"\
+        \ onclick=\"taxiiSetExamplePollC2IPv4();\">Try out</button>\n      </td>\n\
+        \    </tr>\n    <tr>\n      <td>xfti.c2server.ipv6</td>\n      <td>\n    \
+        \    <p>This TAXII data collection can be polled for IPv6s related to Botnet\
+        \ Command and Control Server.</p>\n        <button class=\"btn btn-default\"\
+        \ onclick=\"taxiiSetExamplePollC2IPv6();\">Try out</button>\n      </td>\n\
+        \    </tr>\n    <tr>\n      <td>xfti.c2server.url</td>\n      <td>\n     \
+        \   <p>This TAXII data collection can be polled for URLs related to Botnet\
+        \ Command and Control Server.</p>\n        <button class=\"btn btn-default\"\
+        \ onclick=\"taxiiSetExamplePollC2Url();\">Try out</button>\n      </td>\n\
+        \    </tr>\n    <tr>\n      <td>xfti.bots.ipv4</td>\n      <td>\n        <p>This\
+        \ TAXII data collection can be polled for IPv4s related to Bots.</p>\n   \
+        \     <button class=\"btn btn-default\" onclick=\"taxiiSetExamplePollBotsIPv4();\"\
+        >Try out</button>\n      </td>\n    </tr>\n    <tr>\n      <td>xfti.bots.ipv6</td>\n\
+        \      <td>\n        <p>This TAXII data collection can be polled for IPv6s\
+        \ related to Bots.</p>\n        <button class=\"btn btn-default\" onclick=\"\
+        taxiiSetExamplePollBotsIPv6();\">Try out</button>\n      </td>\n    </tr>\n\
+        \    <tr>\n      <td>xfti.phishing.url</td>\n      <td>\n        <p>This TAXII\
+        \ data collection can be polled for URLs related to Phishing URLs.</p>\n \
+        \       <button class=\"btn btn-default\" onclick=\"taxiiSetExamplePollPhishingUrl();\"\
+        >Try out</button>\n      </td>\n    </tr>\n    <tr>\n      <td>xfti.anonsvcs.ipv4</td>\n\
+        \      <td>\n        <p>This TAXII data collection can be polled for IPv4s\
+        \ related to Anonymization Services.</p>\n        <button class=\"btn btn-default\"\
+        \ onclick=\"taxiiSetExamplePollAnonIPv4();\">Try out</button>\n      </td>\n\
+        \    </tr>\n    <tr>\n      <td>xfti.anonsvcs.ipv6</td>\n      <td>\n    \
+        \    <p>This TAXII data collection can be polled for IPv6s related to Anonymization\
+        \ Services.</p>\n        <button class=\"btn btn-default\" onclick=\"taxiiSetExamplePollAnonIPv6();\"\
+        >Try out</button>\n      </td>\n    </tr>\n    <tr>\n      <td>xfti.anonsvcs.url</td>\n\
+        \      <td>\n        <p>This TAXII data collection can be polled for URLs\
+        \ related to Anonymization Services.</p>\n        <button class=\"btn btn-default\"\
+        \ onclick=\"taxiiSetExamplePollAnonUrl();\">Try out</button>\n      </td>\n\
+        \    </tr>\n    <tr>\n      <td>xfti.cryptomining.ipv4</td>\n      <td>\n\
+        \        <p>This TAXII data collection can be polled for IPv4s related to\
+        \ Cryptocurrency Mining.</p>\n        <button class=\"btn btn-default\" onclick=\"\
+        taxiiSetExamplePollCryptoIPv4();\">Try out</button>\n      </td>\n    </tr>\n\
+        \    <tr>\n      <td>xfti.cryptomining.ipv6</td>\n      <td>\n        <p>This\
+        \ TAXII data collection can be polled for IPv6s related to Cryptocurrency\
+        \ Mining.</p>\n        <button class=\"btn btn-default\" onclick=\"taxiiSetExamplePollCryptoIPv6();\"\
+        >Try out</button>\n      </td>\n    </tr>\n    <tr>\n      <td>xfti.cryptomining.url</td>\n\
+        \      <td>\n        <p>This TAXII data collection can be polled for URLs\
+        \ related to Cryptocurrency Mining.</p>\n        <button class=\"btn btn-default\"\
+        \ onclick=\"taxiiSetExamplePollCryptoUrl();\">Try out</button>\n      </td>\n\
+        \    </tr>\n    <tr>\n      <td>xfti.scanning.ipv4</td>\n      <td>\n    \
+        \    <p>This TAXII data collection can be polled for IPv4s related to Scanning\
+        \ IPs.</p>\n        <button class=\"btn btn-default\" onclick=\"taxiiSetExamplePollScanningIPv4();\"\
+        >Try out</button>\n      </td>\n    </tr>\n    <tr>\n      <td>xfti.scanning.ipv6</td>\n\
+        \      <td>\n        <p>This TAXII data collection can be polled for IPv6s\
+        \ related to Scanning IPs.</p>\n        <button class=\"btn btn-default\"\
+        \ onclick=\"taxiiSetExamplePollScanningIPv6();\">Try out</button>\n      </td>\n\
+        \    </tr>\n    <tr>\n      <td>xfti.ew.url</td>\n      <td>\n        <p>This\
+        \ TAXII data collection can be polled for URLs related to Early Warning.</p>\n\
+        \        <button class=\"btn btn-default\" onclick=\"taxiiSetExamplePollEWUrl();\"\
+        >Try out</button>\n      </td>\n    </tr>\n    <tr>\n      <td>xfti.mw.ipv4</td>\n\
+        \      <td>\n        <p>This TAXII data collection can be polled for IPv4s\
+        \ related to Malware.</p>\n        <button class=\"btn btn-default\" onclick=\"\
+        taxiiSetExamplePollMWIPv4();\">Try out</button>\n      </td>\n    </tr>\n\
+        \    <tr>\n      <td>xfti.mw.ipv6</td>\n      <td>\n        <p>This TAXII\
+        \ data collection can be polled for IPv6s related to Malware.</p>\n      \
+        \  <button class=\"btn btn-default\" onclick=\"taxiiSetExamplePollMWIPv6();\"\
+        >Try out</button>\n      </td>\n    </tr>\n    <tr>\n      <td>xfti.mw.url</td>\n\
+        \      <td>\n        <p>This TAXII data collection can be polled for URLs\
+        \ related to Malware.</p>\n        <button class=\"btn btn-default\" onclick=\"\
+        taxiiSetExamplePollMWUrl();\">Try out</button>\n      </td>\n    </tr>\n \
+        \   <tr>\n      <td>xfti.topact.url.10k</td>\n      <td>\n        <p>This\
+        \ TAXII data collection can be polled for the top hundred thousand URLs rated\
+        \ by activity as known by X-Force Exchange.</p>\n        <button class=\"\
+        btn btn-default\" onclick=\"taxiiSetExamplePollTOPACTUrl10k();\">Try out</button>\n\
+        \      </td>\n    </tr>\n  </tbody>\n</table>\n\nFor more information about\
+        \ TAXII, refer to <a rel=\"noopener noreferrer\" href=\"https://taxii.mitre.org/\"\
+        \ target=\"_blank\">https://taxii.mitre.org/</a>.\n\n"
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Trusted Automated eXchange of Indicator Information version 11
-      description: >+
-        This is the endpoint for TAXII services for Advanced Threat Protection
-        Feed. TAXII message must be transmitted via this endpoint over HTTPS.
-
-
-        Available TAXII services are listed as follows:
-
-        <script src="taxiiATP.js" type="text/javascript"></script>
-
-        <table>
-          <thead>
-            <tr>
-              <th>TAXII Message Type</th>
-              <th>Data Collection</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Discovery Request</td>
-              <td></td>
-              <td>
-                <p>This message can be used to query all available TAXII services which XFE supports.</p>
-                <button class="btn btn-default" onclick="taxiiSetExampleDiscoveryATP();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>Collection Information Request</td>
-              <td></td>
-              <td>
-                <p>This message can be used to query all available TAXII data collections you have access.</p>
-                <button class="btn btn-default" onclick="taxiiSetExampleCollectionInformationATP();">Try out</button>
-              </td>
-            </tr>
-
-            <tr>
-              <td rowspan="22">Poll Request</td>
-              <td>xfti.c2server.ipv4</td>
-              <td>
-                <p>This TAXII data collection can be polled for IPv4s related to Botnet Command and Control Server.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollC2IPv4();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.c2server.ipv6</td>
-              <td>
-                <p>This TAXII data collection can be polled for IPv6s related to Botnet Command and Control Server.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollC2IPv6();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.c2server.url</td>
-              <td>
-                <p>This TAXII data collection can be polled for URLs related to Botnet Command and Control Server.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollC2Url();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.bots.ipv4</td>
-              <td>
-                <p>This TAXII data collection can be polled for IPv4s related to Bots.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollBotsIPv4();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.bots.ipv6</td>
-              <td>
-                <p>This TAXII data collection can be polled for IPv6s related to Bots.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollBotsIPv6();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.phishing.url</td>
-              <td>
-                <p>This TAXII data collection can be polled for URLs related to Phishing URLs.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollPhishingUrl();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.anonsvcs.ipv4</td>
-              <td>
-                <p>This TAXII data collection can be polled for IPv4s related to Anonymization Services.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollAnonIPv4();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.anonsvcs.ipv6</td>
-              <td>
-                <p>This TAXII data collection can be polled for IPv6s related to Anonymization Services.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollAnonIPv6();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.anonsvcs.url</td>
-              <td>
-                <p>This TAXII data collection can be polled for URLs related to Anonymization Services.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollAnonUrl();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.cryptomining.ipv4</td>
-              <td>
-                <p>This TAXII data collection can be polled for IPv4s related to Cryptocurrency Mining.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollCryptoIPv4();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.cryptomining.ipv6</td>
-              <td>
-                <p>This TAXII data collection can be polled for IPv6s related to Cryptocurrency Mining.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollCryptoIPv6();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.cryptomining.url</td>
-              <td>
-                <p>This TAXII data collection can be polled for URLs related to Cryptocurrency Mining.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollCryptoUrl();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.scanning.ipv4</td>
-              <td>
-                <p>This TAXII data collection can be polled for IPv4s related to Scanning IPs.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollScanningIPv4();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.scanning.ipv6</td>
-              <td>
-                <p>This TAXII data collection can be polled for IPv6s related to Scanning IPs.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollScanningIPv6();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.ew.url</td>
-              <td>
-                <p>This TAXII data collection can be polled for URLs related to Early Warning.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollEWUrl();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.mw.ipv4</td>
-              <td>
-                <p>This TAXII data collection can be polled for IPv4s related to Malware.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollMWIPv4();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.mw.ipv6</td>
-              <td>
-                <p>This TAXII data collection can be polled for IPv6s related to Malware.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollMWIPv6();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.mw.url</td>
-              <td>
-                <p>This TAXII data collection can be polled for URLs related to Malware.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollMWUrl();">Try out</button>
-              </td>
-            </tr>
-            <tr>
-              <td>xfti.topact.url.10k</td>
-              <td>
-                <p>This TAXII data collection can be polled for the top hundred thousand URLs rated by activity as known by X-Force Exchange.</p>
-                <button class="btn btn-default" onclick="taxiiSetExamplePollTOPACTUrl10k();">Try out</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-
-        For more information about TAXII, refer to <a rel="noopener noreferrer" href="https://taxii.mitre.org/" target="_blank">https://taxii.mitre.org/</a>.
-
-      parameters: []
-  /xfti/collections:
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: This is the TAXII 2 getCollections endpointYou can specify your response
-        type with the Accept header TAXII 20 Accept applicationvndoasistaxiijson
-        version20 or Accept applicationvndoasistaxiijson TAXII 21 Accept
-        applicationvndoasistaxiijson version21
-      parameters: []
-  "/xfti/collections/{collectionID}":
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: This is the TAXII 2 endpoint to get collection metadataYou can specify
-        your response type with the Accept header TAXII 20 Accept
-        applicationvndoasistaxiijson version20 or Accept
-        applicationvndoasistaxiijson TAXII 21 Accept
-        applicationvndoasistaxiijson version21
-      parameters: []
-  "/xfti/collections/{collection_id}/objects":
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: This is the TAXII 2 endpoint to get collection content objects in STIX
-        2x formatYou can specify your response type with the Accept header STIX
-        20 Accept applicationvndoasisstixjson version20 or Accept
-        applicationvndoasisstixjson STIX 21 Accept applicationvndoasisstixjson
-        version21
-      parameters: []
   /xfti/anonsvcs/ipv4:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns a list of IPv4 addresses that are categorized as anonymization
-        servicesYou can specify your response type with the Accept header plain
-        text Accept textplain commaseparated values Accept textcsv JSON default
-        Accept applicationjson
-      parameters: []
+        servicesYou can specify your response type with the Accept header plain text
+        Accept textplain commaseparated values Accept textcsv JSON default Accept
+        applicationjson
   /xfti/anonsvcs/ipv6:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns a list of IPv4 addresses that are categorized as anonymization
-        servicesYou can specify your response type with the Accept header plain
-        text Accept textplain commaseparated values Accept textcsv JSON default
-        Accept applicationjson
-      parameters: []
+        servicesYou can specify your response type with the Accept header plain text
+        Accept textplain commaseparated values Accept textcsv JSON default Accept
+        applicationjson
   /xfti/anonsvcs/url:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns a list of URL addresses that are categorized as anonymization
-        serviceYou can specify your response type with the Accept header plain
-        text Accept textplain commaseparated values Accept textcsv JSON default
-        Accept applicationjson
+        serviceYou can specify your response type with the Accept header plain text
+        Accept textplain commaseparated values Accept textcsv JSON default Accept
+        applicationjson
+  /xfti/bots/ipv4:
+    get:
       parameters: []
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns a list of IPv4 addresses that are categorized as botsYou can
+        specify your response type with the Accept header plain text Accept textplain
+        commaseparated values Accept textcsv JSON default Accept applicationjson
+  /xfti/bots/ipv6:
+    get:
+      parameters: []
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Returns a list of IPv4 addresses that are categorized as botsYou can
+        specify your response type with the Accept header plain text Accept textplain
+        commaseparated values Accept textcsv JSON default Accept applicationjson
   /xfti/c2server/ipv4:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns a list of IPv4 addresses that are categorized as botnet command
-        and control serversYou can specify your response type with the Accept
-        header plain text Accept textplain commaseparated values Accept textcsv
-        JSON default Accept applicationjson
-      parameters: []
+        and control serversYou can specify your response type with the Accept header
+        plain text Accept textplain commaseparated values Accept textcsv JSON default
+        Accept applicationjson
   /xfti/c2server/ipv6:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns a list of IPv6 addresses that are categorized as botnet command
-        and control serversYou can specify your response type with the Accept
-        header plain text Accept textplain commaseparated values Accept textcsv
-        JSON default Accept applicationjson
-      parameters: []
+        and control serversYou can specify your response type with the Accept header
+        plain text Accept textplain commaseparated values Accept textcsv JSON default
+        Accept applicationjson
   /xfti/c2server/url:
     get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Returns a list of URLs that are categorized as botnet command and
-        control server urlsYou can specify your response type with the Accept
-        header plain text Accept textplain commaseparated values Accept textcsv
-        JSON default Accept applicationjson
       parameters: []
-  /xfti/bots/ipv4:
-    get:
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns a list of IPv4 addresses that are categorized as botsYou can
-        specify your response type with the Accept header plain text Accept
-        textplain commaseparated values Accept textcsv JSON default Accept
+      summary: Returns a list of URLs that are categorized as botnet command and control
+        server urlsYou can specify your response type with the Accept header plain
+        text Accept textplain commaseparated values Accept textcsv JSON default Accept
         applicationjson
-      parameters: []
-  /xfti/bots/ipv6:
+  /xfti/collections:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns a list of IPv4 addresses that are categorized as botsYou can
-        specify your response type with the Accept header plain text Accept
-        textplain commaseparated values Accept textcsv JSON default Accept
-        applicationjson
+      summary: This is the TAXII 2 getCollections endpointYou can specify your response
+        type with the Accept header TAXII 20 Accept applicationvndoasistaxiijson version20
+        or Accept applicationvndoasistaxiijson TAXII 21 Accept applicationvndoasistaxiijson
+        version21
+  /xfti/collections/{collectionID}:
+    get:
       parameters: []
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: This is the TAXII 2 endpoint to get collection metadataYou can specify
+        your response type with the Accept header TAXII 20 Accept applicationvndoasistaxiijson
+        version20 or Accept applicationvndoasistaxiijson TAXII 21 Accept applicationvndoasistaxiijson
+        version21
+  /xfti/collections/{collection_id}/objects:
+    get:
+      parameters: []
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: This is the TAXII 2 endpoint to get collection content objects in STIX
+        2x formatYou can specify your response type with the Accept header STIX 20
+        Accept applicationvndoasisstixjson version20 or Accept applicationvndoasisstixjson
+        STIX 21 Accept applicationvndoasisstixjson version21
   /xfti/cryptomining/ipv4:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns a list of IPv4 addresses that are categorized as Cryptocurrency
-        miningYou can specify your response type with the Accept header plain
-        text Accept textplain commaseparated values Accept textcsv JSON default
-        Accept applicationjson
-      parameters: []
+        miningYou can specify your response type with the Accept header plain text
+        Accept textplain commaseparated values Accept textcsv JSON default Accept
+        applicationjson
   /xfti/cryptomining/ipv6:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns a list of IPv6 addresses that are categorized as Cryptocurrency
-        mining hostsYou can specify your response type with the Accept header
-        plain text Accept textplain commaseparated values Accept textcsv JSON
-        default Accept applicationjson
-      parameters: []
+        mining hostsYou can specify your response type with the Accept header plain
+        text Accept textplain commaseparated values Accept textcsv JSON default Accept
+        applicationjson
   /xfti/cryptomining/url:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns a list of URLs that are categorized as Cryptocurrency miningYou
-        can specify your response type with the Accept header plain text Accept
-        textplain commaseparated values Accept textcsv JSON default Accept
-        applicationjson
-      parameters: []
+        can specify your response type with the Accept header plain text Accept textplain
+        commaseparated values Accept textcsv JSON default Accept applicationjson
   /xfti/ew/url:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns a list of URLs that are categorized as early warningYou can
-        specify your response type with the Accept header plain text Accept
-        textplain commaseparated values Accept textcsv JSON default Accept
-        applicationjson
-      parameters: []
+        specify your response type with the Accept header plain text Accept textplain
+        commaseparated values Accept textcsv JSON default Accept applicationjson
   /xfti/mw/ipv4:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns a list of IPv4 addresses that are categorized as malwareYou can
-        specify your response type with the Accept header plain text Accept
-        textplain commaseparated values Accept textcsv JSON default Accept
-        applicationjson
-      parameters: []
+      summary: Returns a list of IPv4 addresses that are categorized as malwareYou
+        can specify your response type with the Accept header plain text Accept textplain
+        commaseparated values Accept textcsv JSON default Accept applicationjson
   /xfti/mw/ipv6:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
-      summary: Returns a list of IPv6 addresses that are categorized as malwareYou can
-        specify your response type with the Accept header plain text Accept
-        textplain commaseparated values Accept textcsv JSON default Accept
-        applicationjson
-      parameters: []
+      summary: Returns a list of IPv6 addresses that are categorized as malwareYou
+        can specify your response type with the Accept header plain text Accept textplain
+        commaseparated values Accept textcsv JSON default Accept applicationjson
   /xfti/mw/url:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns a list of URLs that are categorized as malwareYou can specify
-        your response type with the Accept header plain text Accept textplain
-        commaseparated values Accept textcsv JSON default Accept applicationjson
-      parameters: []
+        your response type with the Accept header plain text Accept textplain commaseparated
+        values Accept textcsv JSON default Accept applicationjson
   /xfti/phishing/url:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns a list of URLs that are categorized as phishingYou can specify
-        your response type with the Accept header plain text Accept textplain
-        commaseparated values Accept textcsv JSON default Accept applicationjson
-      parameters: []
+        your response type with the Accept header plain text Accept textplain commaseparated
+        values Accept textcsv JSON default Accept applicationjson
   /xfti/scanning/ipv4:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns a list of IPv4 addresses that are categorized as scanning IPsYou
-        can specify your response type with the Accept header plain text Accept
-        textplain commaseparated values Accept textcsv JSON default Accept
-        applicationjson
-      parameters: []
+        can specify your response type with the Accept header plain text Accept textplain
+        commaseparated values Accept textcsv JSON default Accept applicationjson
   /xfti/scanning/ipv6:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns a list of IPv6 addresses that are categorized as scanning IPsYou
-        can specify your response type with the Accept header plain text Accept
-        textplain commaseparated values Accept textcsv JSON default Accept
-        applicationjson
-      parameters: []
+        can specify your response type with the Accept header plain text Accept textplain
+        commaseparated values Accept textcsv JSON default Accept applicationjson
   /xfti/topact/url/10k:
     get:
+      parameters: []
       responses:
         default:
           description: default
           schema: {}
       summary: Returns the top ten thousand URLs rated by activity as known by XForce
-        ExchangeYou can specify your response type with the Accept header plain
-        text Accept textplain commaseparated values Accept textcsv JSON default
-        Accept applicationjson
-      parameters: []
-  /sightings/bulk/latest:
-    post:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Returns IOCs  their sighting data collected from all advisories via the
-        Managed Security Systems APIIOCs
-      parameters: []
-components:
-  securitySchemes:
-    BasicAuth:
-      type: http
-      scheme: basic
+        ExchangeYou can specify your response type with the Accept header plain text
+        Accept textplain commaseparated values Accept textcsv JSON default Accept
+        applicationjson
+schemes:
+- 'https:'
+servers:
+- url: https://api.xforce.ibmcloud.com
 tags:
-  - name: Authentication
-  - name: Usage
-  - name: App Exchange
-  - name: Collections
-  - name: Early Warning
-  - name: Internet Application Profile
-  - name: DNS
-  - name: Malware
-  - name: IP Reputation
-  - name: STIX export
-  - name: Industries
-  - name: Malware Analysis
-  - name: Threat Groups
-  - name: URL
-  - name: Vulnerabilities
-  - name: Signatures
-  - name: Tags
-  - name: TAXII
-  - name: TAXII2
-  - name: Advanced Threat Protection Feed
-  - name: Advanced Threat Protection Feed TAXII
-  - name: Advanced Threat Protection Feed TAXII2
-  - name: Managed Security Systems Sightings
+- name: Authentication
+- name: Usage
+- name: App Exchange
+- name: Collections
+- name: Early Warning
+- name: Internet Application Profile
+- name: DNS
+- name: Malware
+- name: IP Reputation
+- name: STIX export
+- name: Industries
+- name: Malware Analysis
+- name: Threat Groups
+- name: URL
+- name: Vulnerabilities
+- name: Signatures
+- name: Tags
+- name: TAXII
+- name: TAXII2
+- name: Advanced Threat Protection Feed
+- name: Advanced Threat Protection Feed TAXII
+- name: Advanced Threat Protection Feed TAXII2
+- name: Managed Security Systems Sightings

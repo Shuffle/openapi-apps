@@ -1,223 +1,214 @@
-swagger: "3.0"
-info:
-  title: Pulsedive
-  description: Pulsedive API
-  version: "1.0"
-  x-logo: data:image/png;base64,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
-  contact:
-    name: "@frikkylikeme"
-    url: https://twitter.com/frikkylikeme
-    email: frikky@shuffler.io
-  x-categories:
-    - TI
-    - Threat Intel
-    - Threat Intelligence
-servers:
-  - url: https://pulsedive.com
-host: pulsedive.com
 basePath: /
-schemes:
-  - "https:"
+components:
+  securitySchemes: {}
+host: pulsedive.com
+info:
+  contact:
+    email: frikky@shuffler.io
+    name: '@frikkylikeme'
+    url: https://twitter.com/frikkylikeme
+  description: Pulsedive API
+  title: Pulsedive
+  version: '1.0'
+  x-categories:
+  - TI
+  - Threat Intel
+  - Threat Intelligence
+  x-logo: data:image/png;base64,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
+openapi: 3.0.0
 paths:
-  /api/info.php:
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Get_Info
-      operationId: Get_Info
-      description: Retrieve information on indicators, threats, feeds, and related data
-      parameters:
-        - in: query
-          name: indicator
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: pretty
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: key
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: query
-          name: iid
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: historical
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: schema
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: indicator
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: get
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-  /api/search.php:
-    get:
-      responses:
-        default:
-          description: default
-          schema: {}
-      summary: Search
-      operationId: Search
-      description: Search indicators, threats, and feeds.
-      parameters:
-        - in: query
-          name: key
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: query
-          name: value
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: type
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: risk
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: retired
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: attribute
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: property
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: threat
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: feed
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: limit
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: pretty
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: search
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: category
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: splitrisk
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
   /api/analyze.php:
     post:
+      description: Scan indicators and retrieve results.
+      operationId: Analyze
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        example: "{\n  \"value\": \"pulsedive.com\",\n  \"probe\": \"1\",\n  \"pretty\"\
+          : \"1\",\n  \"key\": \"KEY HERE\"\n}"
+        in: body
+        multiline: true
+        name: body
+        required: false
+        schema:
+          type: string
+      - description: Header generated by shuffler.io OpenAPI
+        example: application/x-www-form-urlencoded; charset
+        in: header
+        multiline: false
+        name: Content-Type
+        required: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          example:
+            example: "{\n  \"value\": \"pulsedive.com\",\n  \"probe\": \"1\",\n  \"\
+              pretty\": \"1\",\n  \"key\": \"KEY HERE\"\n}"
+        description: Generated by Shuffler.io
+        required: false
       responses:
         default:
           description: default
           schema: {}
       summary: Analyze
-      operationId: Analyze
-      description: Scan indicators and retrieve results.
+  /api/info.php:
+    get:
+      description: Retrieve information on indicators, threats, feeds, and related
+        data
+      operationId: Get_Info
       parameters:
-        - in: body
-          name: body
-          multiline: true
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          example: |-
-            {
-              "value": "pulsedive.com",
-              "probe": "1",
-              "pretty": "1",
-              "key": "KEY HERE"
-            }
-          schema:
-            type: string
-        - in: header
-          name: Content-Type
-          multiline: false
-          description: Header generated by shuffler.io OpenAPI
-          required: false
-          example: application/x-www-form-urlencoded; charset
-          schema:
-            type: string
-      requestBody:
-        description: Generated by Shuffler.io
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: indicator
         required: false
-        content:
-          example:
-            example: |-
-              {
-                "value": "pulsedive.com",
-                "probe": "1",
-                "pretty": "1",
-                "key": "KEY HERE"
-              }
-components:
-  securitySchemes: {}
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: pretty
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: key
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: iid
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: historical
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: schema
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: indicator
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: get
+        required: false
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get_Info
+  /api/search.php:
+    get:
+      description: Search indicators, threats, and feeds.
+      operationId: Search
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: key
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: value
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: type
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: risk
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: retired
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: attribute
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: property
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: threat
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: feed
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: limit
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: pretty
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: search
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: category
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: splitrisk
+        required: false
+        schema:
+          type: string
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Search
+schemes:
+- 'https:'
+servers:
+- url: https://pulsedive.com
 tags:
-  - name: TI
-  - name: Threat Intel
-  - name: Threat Intelligence
+- name: TI
+- name: Threat Intel
+- name: Threat Intelligence

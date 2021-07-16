@@ -1,627 +1,535 @@
-swagger: "3.0"
-info:
-  title: Elasticsearch
-  description: API for Elasticsearch database. Missing bulk options. Based on
-    https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html
-  version: "1.0"
-  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAYAAACvDDbuAAAd6UlEQVR4Xu2dCZQcVbnH/7X1vs/0rEkmy2QhhLAFBcKiIOphyRMeeERFFsEHsoQt4gNEOAqERUD0iYjP5T2PPsWHosJ5bKIQIEACBAIEQgKBrMykZ6Znpmd6qap3vltVSWcyk9mqu6u67+VwAifVt25991dffff7vvtdQdd1HbxxCbhMAgIH12UzxofLJMDB5SC4UgIcXFdOGx80B5cz4EoJcHBdOW180BxczoArJcDBdeW08UFzcDkDrpQAB9eV08YHzcHlDLhSAhxcV04bHzQHlzPgSglwcF05bXzQHFxbGRgt0U6w9W613BkHd1yzb4LJMkGHQCoQlBaYQwG1rtWBvbJIBYD9luU8jWs0tXwxB3efs2+BqhmgCiIA+neExqDUYKQ402+oiRAYmGIRoMP9XgN0+g2BbN2DgzySqDm4w0rG1Ix7aFFiV4Oe74Ne6IGW3w493wldy0CABi3fBxR6oet5QFONPwlDQQFEyfhTDkNUQtAJZjEAQamHqDRBkKMQlFARsPTLEcZQy2q26Nk5uEwYpCH31m66OghtYBvUgXXQB9ZBy26Dnv0YWq4TWr4DyO8AtH6jB6YtVVNrWn0Wff6ZFiWATW0qBgGlEaKShOiph+BtgOhthuCfB8k/D6K/GYLkGwbT4cdaazzXKLiWzbm3LUqgFnpeRaHr/6ANvgs91w2tsBMopABt0OSDzAZliNlQ3Bd97ndfuqc9XGwbk3lAmtm8WPQBcgKiXAfBE4PomwM5/nnI0YMZyHu/XCM9R/VjXEPgDjPJug69kIY6sAlqagXyOx+BNrgWupozIKV/SUMKkgnqEDht4aMYZDIP8oBuam4CWfRBED0Q/Aug1J0EOXEUJH8bBDkyxGauLYhrAFzLVty9qNILvVD716HQvRL5jr9B630a0AqA6AcEjwkEXV8M6miuLlsoHuaepJXpGehlGgBEGWL401CSJ0OOHQ4pOA+CHN59czJZhtrmdg3NQf1UN7jFk6gXoA5uhdr9HAqpvyOfegL64CYIkghICUOrkqYb6uZyzGSR+WGOUU1BVzUIvjYoiRMgJ46DFFsMydcCCHLRwm4fHhDHPNfEBlKl4JKGIs0jgS2w+t9CPvVPFFJPQO19BXr+YwiyH5BixnWmB2BiIqzAr8i+JhNG7YZeGICgNEAKHwI5cQKUxLEQg/ONhR29iGwxWH1utSoE11x16xoK6deR73gIBWa7bgDUAUAKAoLf9AAULYwqwN/kbmktEEkLDwBqPyD5IfpmQa47CUryNMiRhSa41eeJqEJwyRTcjNy2XyPf8TC0gbXG158WOmS/suAAmQTV1GjxKJh2MC0oyVxfACX5L/A0nw3RP6WaHpY9SxWAu3s1reXTyO/4X+S3/wpq36vGp5IBK5v+1XItsCrFiRl10wumR0SCFDoYSvO58DT+q7mIqw7vg4vBJTuWhaagFQbQv/lx7Fz7Y+iDryEcUaF4CR6p2JlaKZoqcF/LpiX7PcdeXClyNHxtV0KOLzZde+4G2J3gsoWXsWLO96xHx5qfIP3+bwDIgBiFrBQQiQ7AG8hWABon3lIAtD5AisLTfAE8LedACs4yB0oRP/d5H1wIrrHQ0PL9SH/4OHrevhf921dD8rcYE8FcWoAo6ghFBuEPDe5OvnIiU+UaEzOXBqHneiBFj4Zv+reh1H8GED0jhrzLNbSJ3Mdl4BrQ5vs+RNfbv0b3+t9BzX4MydsIXcvt8fy0BqP1SiQ2AH9wcHfC1USkVDW/EVgUjvIsRM9UeFq/AU/TlyH6p7oOXveAa5LYv/1FdK29C5ltK6DDA0HyQ9eMTKzhmiDoCISzCIZyEKVq8yZM8I0i7UvJQYIHcuxz8LZdBTl2qKvgdQG4ll9WRc/Gv2DnGz9ELv0uBBaeVXaZBvuaQtK8gVAOwXAGolTtnoUxwsyicJSCmYMYPAC+6ddCSZ7kGr+vs8G1FmFaDl1v3YOONfdRqisEiew1WlBYydqjTxbB6w/lEA5nIHB4TYGR94E8DyogBRi83infdAW8DgbX0LTqYBqda25D17ofQxDrzVj82IEdinQgzOHd+zWn4AVlpA3AM+1a+NqugCCHHG06OBRcA9pc+iN0vHIT0h/8HqLcakvEi3omsyEc4WbDsACrPVAaz4dv5nUQ/SRzZ4aLnQeuuQgb7HoPHatvRP/mv0CQydVl38KKbhGK5hCOGrsXeCuWgABdTUOp/yJ8M2+AFJrtSHidBe4uaN9Bx+o70L/lUQiUFMMc5BM3D4b3NgDh6AACYWtXA8fXkADZvTp0rR9y/GT4Z94EKTLflL9zAhXOAXcXtOvRsfo2ZLY9ZSTFsGYvtBai5CqLxsnPm3VsFm5lXicDXnKZSQRv+y2m5nVOlM0Z4Jreg1x6Mz5++Ub0b3kSEK09XaWB1gJCVjSEIxQe3jOAURlgnHTX3ZpXqTsd/tnLTZvXGfBWHlxT06rZNLa/cCV6N/0Jgpw00w9LC62FicdXQDSegaTQytpJ8FR6LCa8ai88jV+Hf+7tjvE2VBhcc8Wq5bHj5RuRevteiGwhVh5gd2GhA/5wDpFoBoLIyd3zdTEzzdRuw1U243oIEn0NK+ttqDC4JCIdXWvvwI7VN0OQaAu2fd6DcekrXUQomkEwMsCTcoYVHGWY9cI7/XvwzVg2LtGW4uIKgmu8sT0b/oQdK6+ErtE28MquWknbxuIZeIM5bjIMR5uuQZAD8M/5DygNS8wrKrOfrTLgFiXM7Fh5DXLpTSxrqewmwtDJ0QHFqyKa6IfioTJKpdAVbu6TtO4A5NhnEJj/SwjeeMVMhvKDa3oQKDVxx8pl6Nv6rOGrdQgkBKs/kEM0we3dvWxdPc+y8XyzbmF72Sr5hSwzuIZ5oBey6HztTqTe/gkgUH0sqgVQ5gXZKIovVtcPfygLXavMp9BRepkyyTTaTaLBO/MWeKdcBEG0tkVVZqQVAbdnw5+x4+XroOczgOgdU2piucXj9ZOLrA+ibO5tK/cAHHE/swgJQasPwjf7Hnhavg5BJEVT2VZGcM3EmZ712PbsBch0rIXkbdhnEnhlRUP5DIMIRQYqPYwK3Z80qmrsFlYa4JtxIzwtZ5m1fivrCiOBlBFcUqw5bH/heqTW3QclMG2v7TYVmqERb0v71mKJDDz+GouqsSRz8qyoEEOL4Jt5I5TEMRVbiA03QWUFt3/LE9j897MBMeJI82A4AfkCeUTj/TUSmCAtq5k7gkNQkl+Cr+1qiIE2x5VzKhu4FNLd/OQZGOh8nVXgtnbjOk3LDh0P2bjRaAa+YK663WOkZdVeQPBCCi+C0nwelOSJEBWaK+dVgCwDuIY9tPONH7GkcEGqr1x0bCJvCbnHQjlEYtXkHjPPpGBRSrOEKZkFgYVQkqdCaTgVUmiOaRqw+lUTkVxJf1NacM1AQ7ZnA7Y+cz5yXRvNffwlfSbbO6eIWryuH15/3oVat/jgFCtdcdA4o4JKNQk6RP+B8DScDqXuc5AiC3aXKmWSdKY7sMTgGhVnOl9bjp1v/gyAD4KZqGw7XSXsUIfAghKRRD8oh9c1jZ1LUQD0LNvNq7OyozIEynNWEhCDi+BpWAI5egSzYwVyTbqklQ5cM0KW2b4C2577JrJd6yBIJBgXTbw5ifThIA9DvD4Ln193zRMIrBR/jNXKFeQYRE8Cgnca5BgVg14M0dvoyi9gid1hhm070PEi+rc+BV0rmCfOuA9cSwnJigAvldZ1SRM9dRDkRgieRki+GRB9BOrQiJc7i9+VTuO6ZHJra5jVcwhgGcCljXdOPlth7OjuOrl07D9xwJXWUa3W0avOXGyNV1BlAHe8Q+LXcwmMLgEO7ugy4lc4UAIcXAdOCh/S6BLg4I4uI36FAyXAwXXgpPAhjS4BDu7oMuJXOFACHFwHTsp4h+TOEMJ4n3LP6zm4k5Ofo35NAFtnX1SHt3Zk8doKrqbr+Nn99yO1MwVRdF4qnC2UMTKA/P7HQmvdzzz4j3ouDypGDXEdPklEa1DCtJCM6WEF9X4JQdmQOTts3TgCrkyjskWy4+rEVnA/2rINxx97DHq7uyErCvRqK0xghs6EwiDSp1yG/s+fR3uWAc1KtB6X7Cd+MSX9CGDwUjUKvyzg0KgHp07x49CkD+1hBV5JgGa8Y1VZmccWcAlQQRDwPw89jKv+7QKIklS9Gpeq7eQGkFmwGDvPWQ4EwoBaucOsWeai1XQddV4JX50axNmzgjiozsvmpfJbGyf+jo70S1vA1TSNgXrBhRfhzw8+iKDPV33a1pKgKELIZpCLN6Dz4vtQaJ0NFGgzZXlMhWEn0swPZ+dQk5kwoKItquDMmVFcMjuI1mDlt5Pbje6kwbW0bSabxamnLMGqlS8gHI5UL7hERz4LNRhG5zm3Ibf/YhNcu6dm4v1JooBCnjY9CvhCqx/XLohgUdJnbi2feL9O+uWkwbW07Zvr3sGF556H9e+sg8/vr15wSbPSTgKPF6kvXIX+o04zTQUnTatp15L5XdDxybgH3z8wjuNbA+zDUMFvg21CmjS4qqpCkiQ89NdHcN2yZUinUpDlypbnsU06IxpYdPp1HunjzkLPqZcZVzl4IaoXdBwaU3D7wXEc1xqsCpt30uAWCgXIsowf3HU3lt98M3weD0R3Jq6OnXdBhDDQjd7DTkTXV78HeHxFbrGxd1O2K+kjkTc07/2H1+HAOh/zOJBnwq1tUuAyd5exIQtXf+sa/Py++xALh90qi7GPm4HbhcH9Dkfn2bdBizWAHXnp4Ea6RMvpOLHJj18flWR+XytY4eBhjzi0SYNL7padPT1YeulleOShhxCJRNwoh/GNmVxi2T5kp81D59dugTZlTuU9C2N4AlEUoA6ouOewOiydHx3DL5x7yaTAtRZm6zd+gCuWLsVLK55FgBZmzn1ee0ZmehbyjTPR8ZUboLYf5Apw2cMLQIsi4slPN2Je3Otae3dS4FoLs5dffQ2XL70CG996E16vp4o9Chb39N0tQAsl0HHm9cgdeKx7wKV1pKrjyplh3Hl4vWujaraA+9gTT+DSiy5GX083PJ5aANfyIgj4+Ev/juziU90FrgbsF5Lxt2MbMDNqHYJoz8eoXL3YAu7vH3wQV1x6GaCqtQMufXMH0kidsQz9J5wHqBWOno2TGI8kYPn+MVw+P+pKc8EWcH/z299h2eVXQNC12gGX7NzeFFKnXYH+Ey90vFdhKNfk2/3i1CB+tbgefjOrbJzsV/TyCYPLcj/NHIWf/fwXuOHb10ASJSiKXAM2rply1ZtC15KL0XfyxRWdxIncnIJ/n6rz4D+PqGfmgttcYxMHlzLCKICk6fjh3Xfjzptvhqx4ISvkH6x6v4IRU+1Lofez56J7yVJAcZetSFllzX4R9y+qwylTg64LSEwOXEFAvlDA3XfcibuW3wbZ74Ms1RC4mRTSJ5yL9CmXQ1fomFD3NLMmIe49OI5L5kah6oDkokiaPeDe+QPcdetyDq57uDWKjAO4fWEMVy+IcY3LNa476GXJ5aqOWw9I4JqFUQ4uB5eDWw4JcFNholKmxZnbbVxuKvDFGV+cTVQDTOx3k9O43B3menfYTxfVYUlNucN4AIJFzlwbgCgAn643AhAzaikAQQreyg7jIV93hnzPbAvhv46sh+wmB65pWUzYVCgG9/d/fBBXXMKTbNy0DVEWgNsPiNd2ks1jjz+BSy76JvrTPbWTZMPC2u5Na5wfkvHXWk9rXPnSKlx26WX4aMN6eL3eGshVcG8iOdt7VgC+u18ENx6ccNNHYg/3w6RMBWvrzrsb3seVtHXnuRV8687EvDtl+RWDVtUxOyjj0U81op0WZZWtwTPh554UuFYVm5S5WfJvfLPkhCeiHD+ksgHqoIoHjqjD+XPcmUC+a/OUPokcxD22py+7Bj//Kd+eXg4AJ3IPpm2zOr40PYifHl6PqEd0rbal55+UxqUOeEEQ9xQEOSrhwQNH1LPdvTVdEKTYJcZLMDk3eZ626SyKKbjtkDiOa+ElmNgXixe9c27RO9KqKOj4TNKH7yyM4qgmP6vY6KJ88RGtokmbCrzMqLPKjJItS4uwQk6DJAj44tQArlsQxf4J9xb/GI7eSYNbrHV5YeeJLJts+E1xYWcV0HMq5iU8WNoewRkzQqijOmEudXuNJB1bwOWl9CtUSl8zDinZ1TQdjQEJZ08L4WvtIewfMzZwVhu0tngViuXGDy+xQXuOpQujQCZoe6ZPFBCSRRxsHl5yWIMP7SEFCj+8ZCySNK7hx0WNXVYTvXIsx0WxRRncXf92NPnYYiqMdhP+9+WRAD+grzxy5nexSQL8SFSbBMm74RIotQS4qVBqCfP+SyIBDm5JxMo7LbUEOLilljDvvyQS4OCWRKy801JLgINbagnz/ksigZKDS+HgQpXVyzXOH3RDjpXhKLPywUT2Pzw7rCRvEu+0tBKg6KaVu+DmFMeSaVxLOC/t2IqnNn8AVdNdfQSnhZMGAcFQkB39qlGRWYdqXvoexBQPgrKMqKSgwedDqz+IiMe7SwPTM7k1eFEycOnNprzQZ7Z8iK/98zFs6toJiHQ4tXN3Cuxb17EtspDDYcxuagKd0uj0rCufKMIviPBJMqtWE1W8CCteLAxHcGx9M6YFwogqHpZc7rZWMnBJEBa8N728Aje9vgo6HSVKQnIbuyzfVYcoijgw2YB4JISCqjn+cDsjd0FHAUBO05DXNai6joAoQpYUtHi9OCHZjMPrm9DmD+0BsdNfypKCa+XpvpfqxOlPP4I1qZSRj+fGpuuQfT4c1NIM0mRuaZYuLbZnCd6sRmYOUIAOvyTj6Hg9jk624IhEAxJeH/s7J8NbUnCLH/5Hb72Gpc//w9C6rlO5BqaN9QnMicXYQR/uQXf4V8wC2jjzXcegpiEoyjgikcRJTVOxKJFEQFYcawOXHFxLbOl8Fqc/9hc8sfVDQFbYp9dNTfR6cGBzE4KS7KZhj3ms5u4f9KsqWn0+fCLRgDNaZmJelA420ZlZ5CRHWtnAJQk++dH7OOmxh5Fz22JA19HcUIcZkZjrNe1oJNOCmuxhMiHmBSL48rRZOL6xFR7ROAbMKQu5soJb0DRc89zTuGvNS0AozM7+dXyjRZnfhwUNDYjWyAHbpFlJt5AdTB6J05qn4tzpcxFWqNYYHcxYeS9E2cDdtVBLd+PMvz+KVdu3AB6v400GWRQxJ1mPWChU9dp2qBIh7ZvXDfuXFm/XzjsIjX5nFBQpG7hsCWB+av684R1csOIpdOaygCQ5F15dRzISxtz6JATTb+v4L4TNAxRB/modnfk8jknU44b5h6DFH7L5LuPvrrzgmnGmrKri9ldX4rtrVpmrVmtpMP4HKOUvRFnGAfX1iAQDLvWD2CMda3bID3xEPInL2w9AWyhcUXdZWcElMVpBic19aVy18hn84f31zvTtCgLq41HMjidAfgR3+UDsAXa4XnK6jk/E6vCtOQsxNRiu2IKt7OAWw7uqYxsufOZxrHZaYELXEQ8EMLuxAR5Zdq4pUzo+h+2ZNO+ApmGKP4Dl+x+GuRHDVUa2cLlbRcA1XN7G6vSPG9bhrOeexmA+V+5nH/l+soS5ySSag0GQhnF7sMEuwRKkkigybXty87TaMhWGCpHCj3evXY1lLzxjLNQq2UhzFFT4Y2Ec3NgE0WVBklKKjnRqWlNx0fQ5OH/GfqygXiVbxTSuoXWNpEDy796wagVuffUlI6pWqUYaxevFgU1NCHrkqgjtTlaUFp5dagHfaJuNC2fsB0WqfBG9ioJb7CJL57K4esVTeGD92wDZleVuZBLIMmY1NaLJ72dZVLVuIljQdqsFnNLQyvy4QRaEqHwWcsXBLV6sbUn34Fsv/AO/3bTBMBtYCmT51vMz4jFMicehV/gzWO53drj7WS6wjKbhmEQSy+YsREsgVHuRs9EmwwpOvNudwndefBZ/2LQRkMqn88KRIOYl6uEzP4Ojjbea/35Xwo2mYnE8iatmH4DpoYhjoCXZO0LjWhBY8L7TtRM3vLQCf7A0bykp0XV4/X7MaUgiViO5CPsSp2Ue9GsajozX49L2/TEnHHMUtI4Dt9jmJc1704vP4rcfvGcu2EpjMvhlBe11CYRDwZq3aRkQAMimPb6uEUvbF5iatvI27dCXzVEad5fmNX28ZPPetOo5PPDum4BiVNe2u81N1qEpEgXVFC+fYWL3U9jTH0FL3oMlDa24eNZ806Z1HrSO1LhD4e3L5XDv2tW4btXzgM1J3C11ccyKJ2rg7OF9g81ckpQFpus4b9osnNM2ByGHeA9GGrkjNa41WCucSH7ee958Bde/+jKy2UEzt2FyiTkE7exEHVRz75U9OstdvZAEKSOa1haUd3tuWzu+MrWdbQp1St6tK8FlNq9pNhR0DQ9vfBe3vvbi7tyGCbrLmhMxtCdI07oLNDtHy46U0nW226E9GMaFM+bhmGQz2+HgBD/taM/qaI1bPHgL4FUd23HHmlV4cNMG6KQtx5PPKwhojkcxIxavSGLIaJNRrr+ncG1GVVnewTF1DTh72mzMjyZcAawlI9eAW+xxoJTIX657A/e//Tq29PdB8Pmhj7YNyIR2eixe8Th7uQDdayUOgHZ07Mzn0ejx4AstbTijdSaSJD8HRMPGIxdXgVsMb05V8dRHG/G911bhhc0fAP7APiNtZB7UMrSkZbO6ju58jvlnz50+h+3kZZsgXQato70K+3r7inNA30t340drVuOBd97AgKYCEiXp7Gm8ErQz4omadXfRIiyjqQzSM1racObUWWjyB5mInb4Ic+3ibKSBMzTNPWxZtYDntm3GXWtW4dHtm6GzM+1FttBoScSYy4tgr5VWXOyDFrWiIOKwaAJntc3GQbF6KKbXwFmVEsY3O64zFYY+XnG1Qcow++8N6/CLt1/Hht5etNXFEQqHINOGP7O85vjE466rDWAFqDBKLNGLOzcYxumt03FC4xQEHVyZZrySdj24wz3wpp4uPLllE57PdOPV3h6WEO4RRXgEkQFsVM2qnkYRP4I0p2vMvUXZbbODIRxb14wlTVPRGgxXz8OaT1J14FoLDQL03d4ePNmxBf/s3IZNAwPIqwV4RQk+UWL5tkaJY/c22vpEi65BTUVWU6FIMtr8flZC9LPJVrSHo67xy453FqoOXMvzQEiyckKqio19abzY9TGeT32Md3rT6MxnEZFl+ASJfVbdZv/Sc0kQMKirSBcKqFe8mBuO4MhEAz4Zb8DMUAQeSTJrfjmh7sx4sRz9+qoE13pso1ibMXGkYTsGM3ileydWdXfglVQH1vb3ISYrCFEOrgtMCMsk6FNVdBfyWBAM4ZBEEotiSRwSq0PSF2Aa2KqLW4ndt6MjZ88VVQ0u075mLL54EjOFAt7vT+OVrk4837kdz6dTTJoBVgLV0NQMkgrWU7DuTfa49UXIsNL9wJGRBI6sb8Ih8XrMCEYQKNrqVPyy2oOIM3upenAtsQ931gFp2b5CHlsGMnglZZgS6zK9oEo7BADZjeRKoh1wpLmL0x7t2uNabGUTllYFcTpfguxxeom8koR5gTAzBQ5JNKDVH0BIVvaonOjWsxwm+lrUDLjFAtrXJDNzoqsTr6dT2DjQj55cFpl8Dt2FAvo0lSXmKCbExUeX7AKZ/cdQrPVdMRHr3swGJ20KsMJylC8UEiXEZBkBxYOox4uZ/iAWRhJMs5IZMLTVGqzFz1+T4I71Lc9rKrZm+rAp04dt2UFsyWawc3AA6VwOvfkctuYG0UfuJ934nDOzhP5hwQ4LXsvONmxt0qAGpCJaPD5WujPi8aDO50erN4Bmrw9tgRBL4lbYYS+8DScBDu4wUrEApEqFe2hqXUemkEdXLstW86l8Fj2FPHKair58zijJqRaQJ+e/+UPqiyJVlO9KmpoStCn0GpUVJBQv827EPV5Wtn5o0WTNTOm0yyyppleAgzvKbBoa1CxeMsTO3dP8MK5Tdc1wQ5no0u+Z+0qgEPTIQVbLviVInVa23onAc3DHOSuWl8LyWFja0NKWI2nHXbatmTNRbEy4+YTHcYrPtss5uDaJcqwxOP7Zt0fgHFx75Mh7KbMEOLhlFji/nT0S4ODaI0feS5klwMEts8D57eyRAAfXHjnyXsosAQ5umQXOb2ePBDi49siR91JmCXBwyyxwfjt7JMDBtUeOvJcyS4CDW2aB89vZIwEOrj1y5L2UWQIc3DILnN/OHglwcO2RI++lzBLg4JZZ4Px29kjg/wFNg8m6X0TvWAAAAABJRU5ErkJggg==
-  contact:
-    email: frikky@shuffler.io
-    name: "@frikkylikeme"
-    url: https://twitter.com/frikkylikeme
-  x-categories:
-    - SIEM
-servers:
-  - url: ""
 basePath: /
-schemes:
-  - ""
-paths:
-  "/{index}/_create/{id}":
-    post:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Create a document POST
-      operationId: Create_a_document_POST
-      parameters:
-        - in: path
-          name: index
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: body
-          name: body
-          multiline: true
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          example: |-
-            {
-              "@timestamp": "2099-11-15T13:12:00",
-              "message": "GET /search HTTP/1.1 200 1070000",
-              "user": {
-                "id": "kimchy"
-              }
-            }
-          schema:
-            type: string
-      requestBody:
-        description: Generated by Shuffler.io
-        required: false
-        content:
-          example:
-            example: |-
-              {
-                "@timestamp": "2099-11-15T13:12:00",
-                "message": "GET /search HTTP/1.1 200 1070000",
-                "user": {
-                  "id": "kimchy"
-                }
-              }
-    put:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Create a document PUT
-      operationId: Create_a_document_PUT
-      parameters:
-        - in: path
-          name: index
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: body
-          name: body
-          multiline: true
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          example: |-
-            {
-              "@timestamp": "2099-11-15T13:12:00",
-              "message": "GET /search HTTP/1.1 200 1070000",
-              "user": {
-                "id": "kimchy"
-              }
-            }
-          schema:
-            type: string
-      requestBody:
-        description: Generated by Shuffler.io
-        required: false
-        content:
-          example:
-            example: |-
-              {
-                "@timestamp": "2099-11-15T13:12:00",
-                "message": "GET /search HTTP/1.1 200 1070000",
-                "user": {
-                  "id": "kimchy"
-                }
-              }
-  "/{index}/_doc":
-    post:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Create a document without ID
-      operationId: Create_a_document_without_ID
-      parameters:
-        - in: path
-          name: index
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: body
-          name: body
-          multiline: true
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          example: |-
-            {
-              "@timestamp": "2099-11-15T13:12:00",
-              "message": "GET /search HTTP/1.1 200 1070000",
-              "user": {
-                "id": "kimchy"
-              }
-            }
-          schema:
-            type: string
-      requestBody:
-        description: Generated by Shuffler.io
-        required: false
-        content:
-          example:
-            example: |-
-              {
-                "@timestamp": "2099-11-15T13:12:00",
-                "message": "GET /search HTTP/1.1 200 1070000",
-                "user": {
-                  "id": "kimchy"
-                }
-              }
-  "/{index}/_doc/{id}":
-    delete:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Delete document
-      operationId: Delete_document
-      parameters:
-        - in: path
-          name: index
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Get document by index
-      operationId: Get_document_by_index
-      parameters:
-        - in: path
-          name: index
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-    head:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Head document by index
-      operationId: Head_document_by_index
-      parameters:
-        - in: path
-          name: index
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-    post:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Index a document POST
-      operationId: Index_a_document_POST
-      parameters:
-        - in: path
-          name: index
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: body
-          name: body
-          multiline: true
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          example: |-
-            {
-              "@timestamp": "2099-11-15T13:12:00",
-              "message": "GET /search HTTP/1.1 200 1070000",
-              "user": {
-                "id": "kimchy"
-              }
-            }
-          schema:
-            type: string
-      requestBody:
-        description: Generated by Shuffler.io
-        required: false
-        content:
-          example:
-            example: |-
-              {
-                "@timestamp": "2099-11-15T13:12:00",
-                "message": "GET /search HTTP/1.1 200 1070000",
-                "user": {
-                  "id": "kimchy"
-                }
-              }
-    put:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Index a document PUT
-      operationId: Index_a_document_PUT
-      parameters:
-        - in: path
-          name: index
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: body
-          name: body
-          multiline: true
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          example: |-
-            {
-              "@timestamp": "2099-11-15T13:12:00",
-              "message": "GET /search HTTP/1.1 200 1070000",
-              "user": {
-                "id": "kimchy"
-              }
-            }
-          schema:
-            type: string
-      requestBody:
-        description: Generated by Shuffler.io
-        required: false
-        content:
-          example:
-            example: |-
-              {
-                "@timestamp": "2099-11-15T13:12:00",
-                "message": "GET /search HTTP/1.1 200 1070000",
-                "user": {
-                  "id": "kimchy"
-                }
-              }
-  "/{index}/_source/{id}":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Get source by index
-      operationId: Get_source_by_index
-      parameters:
-        - in: path
-          name: index
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-    head:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Head source by index
-      operationId: Head_source_by_index
-      parameters:
-        - in: path
-          name: index
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/{index}/_update/{id}":
-    post:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Update document
-      operationId: Update_document
-      parameters:
-        - in: path
-          name: index
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: body
-          name: body
-          multiline: true
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          example: |-
-            {
-              "script" : {
-                "source": "ctx._source.counter += params.count",
-                "lang": "painless",
-                "params" : {
-                  "count" : 4
-                }
-              }
-            }
-          schema:
-            type: string
-      requestBody:
-        description: Generated by Shuffler.io
-        required: false
-        content:
-          example:
-            example: |-
-              {
-                "script" : {
-                  "source": "ctx._source.counter += params.count",
-                  "lang": "painless",
-                  "params" : {
-                    "count" : 4
-                  }
-                }
-              }
-  "/{index}/_search#":
-    post:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: '{"src":{"took":138,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}},"namespace":["Results
-                  for Elasticsearch_6"],"name":"Results for Elasticsearch_6"}'
-      summary: Index Search KQL
-      operationId: Index_Search_KQL
-      description: ""
-      parameters:
-        - in: path
-          name: index
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: body
-          name: body
-          multiline: true
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          example: |-
-            {
-              "query": {
-                  "query_string" : {
-                      "query" : "${query}",
-                      "default_field" : "*"
-                  }
-              }
-            }
-          schema:
-            type: string
-        - in: header
-          name: Content-Type
-          multiline: false
-          description: Header generated by shuffler.io OpenAPI
-          required: false
-          example: application/json
-          schema:
-            type: string
-      requestBody:
-        description: Generated by Shuffler.io
-        required: false
-        content:
-          example:
-            example: |-
-              {
-                "query": {
-                    "query_string" : {
-                        "query" : "${query}",
-                        "default_field" : "*"
-                    }
-                }
-              }
-  /internal/bsearch:
-    post:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Internal Search
-      operationId: Internal_Search
-      description: ""
-      parameters:
-        - in: body
-          name: body
-          multiline: true
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          example: '
-            {"batch":[{"request":{"params":{"before":"last","endTimestamp":1620277511567,"query":{"multi_match":{"type":"best_fields","query":"68.171.244.207","lenient":true}},"size":200,"sourceId":"default","startTimestamp":1620191060820}},"options":{"strategy":"infra-log-entries"}}]}'
-          schema:
-            type: string
-        - in: header
-          name: kbn-xsrf
-          multiline: false
-          description: Header generated by shuffler.io OpenAPI
-          required: false
-          example: reporting
-          schema:
-            type: string
-      requestBody:
-        description: Generated by Shuffler.io
-        required: false
-        content:
-          example:
-            example: '
-              {"batch":[{"request":{"params":{"before":"last","endTimestamp":1620277511567,"query":{"multi_match":{"type":"best_fields","query":"68.171.244.207","lenient":true}},"size":200,"sourceId":"default","startTimestamp":1620191060820}},"options":{"strategy":"infra-log-entries"}}]}'
-  "/{index}/_search":
-    post:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: '{"src":{"took":138,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}},"namespace":["Results
-                  for Elasticsearch_6"],"name":"Results for Elasticsearch_6"}'
-      summary: Index Search
-      operationId: Index_Search
-      description: ""
-      parameters:
-        - in: path
-          name: index
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: body
-          name: body
-          multiline: true
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          example: |-
-            {
-              "query": {
-                "term": {
-                  "user.id": "kimchy"
-                }
-              }
-            }
-          schema:
-            type: string
-        - in: header
-          name: Content-Type
-          multiline: false
-          description: Header generated by shuffler.io OpenAPI
-          required: false
-          example: application/json
-          schema:
-            type: string
-      requestBody:
-        description: Generated by Shuffler.io
-        required: false
-        content:
-          example:
-            example: |-
-              {
-                "query": {
-                  "term": {
-                    "user.id": "kimchy"
-                  }
-                }
-              }
 components:
   securitySchemes:
     BasicAuth:
-      type: http
       scheme: basic
+      type: http
+info:
+  contact:
+    email: frikky@shuffler.io
+    name: '@frikkylikeme'
+    url: https://twitter.com/frikkylikeme
+  description: API for Elasticsearch database. Missing bulk options. Based on https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html
+  title: Elasticsearch
+  version: '1.0'
+  x-categories:
+  - SIEM
+  x-logo: data:image/png;base64,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
+openapi: 3.0.0
+paths:
+  /internal/bsearch:
+    post:
+      description: ''
+      operationId: Internal_Search
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        example: ' {"batch":[{"request":{"params":{"before":"last","endTimestamp":1620277511567,"query":{"multi_match":{"type":"best_fields","query":"68.171.244.207","lenient":true}},"size":200,"sourceId":"default","startTimestamp":1620191060820}},"options":{"strategy":"infra-log-entries"}}]}'
+        in: body
+        multiline: true
+        name: body
+        required: false
+        schema:
+          type: string
+      - description: Header generated by shuffler.io OpenAPI
+        example: reporting
+        in: header
+        multiline: false
+        name: kbn-xsrf
+        required: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          example:
+            example: ' {"batch":[{"request":{"params":{"before":"last","endTimestamp":1620277511567,"query":{"multi_match":{"type":"best_fields","query":"68.171.244.207","lenient":true}},"size":200,"sourceId":"default","startTimestamp":1620191060820}},"options":{"strategy":"infra-log-entries"}}]}'
+        description: Generated by Shuffler.io
+        required: false
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Internal Search
+  /{index}/_create/{id}:
+    post:
+      operationId: Create_a_document_POST
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: index
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        example: "{\n  \"@timestamp\": \"2099-11-15T13:12:00\",\n  \"message\": \"\
+          GET /search HTTP/1.1 200 1070000\",\n  \"user\": {\n    \"id\": \"kimchy\"\
+          \n  }\n}"
+        in: body
+        multiline: true
+        name: body
+        required: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          example:
+            example: "{\n  \"@timestamp\": \"2099-11-15T13:12:00\",\n  \"message\"\
+              : \"GET /search HTTP/1.1 200 1070000\",\n  \"user\": {\n    \"id\":\
+              \ \"kimchy\"\n  }\n}"
+        description: Generated by Shuffler.io
+        required: false
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Create a document POST
+    put:
+      operationId: Create_a_document_PUT
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: index
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        example: "{\n  \"@timestamp\": \"2099-11-15T13:12:00\",\n  \"message\": \"\
+          GET /search HTTP/1.1 200 1070000\",\n  \"user\": {\n    \"id\": \"kimchy\"\
+          \n  }\n}"
+        in: body
+        multiline: true
+        name: body
+        required: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          example:
+            example: "{\n  \"@timestamp\": \"2099-11-15T13:12:00\",\n  \"message\"\
+              : \"GET /search HTTP/1.1 200 1070000\",\n  \"user\": {\n    \"id\":\
+              \ \"kimchy\"\n  }\n}"
+        description: Generated by Shuffler.io
+        required: false
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Create a document PUT
+  /{index}/_doc:
+    post:
+      operationId: Create_a_document_without_ID
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: index
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        example: "{\n  \"@timestamp\": \"2099-11-15T13:12:00\",\n  \"message\": \"\
+          GET /search HTTP/1.1 200 1070000\",\n  \"user\": {\n    \"id\": \"kimchy\"\
+          \n  }\n}"
+        in: body
+        multiline: true
+        name: body
+        required: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          example:
+            example: "{\n  \"@timestamp\": \"2099-11-15T13:12:00\",\n  \"message\"\
+              : \"GET /search HTTP/1.1 200 1070000\",\n  \"user\": {\n    \"id\":\
+              \ \"kimchy\"\n  }\n}"
+        description: Generated by Shuffler.io
+        required: false
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Create a document without ID
+  /{index}/_doc/{id}:
+    delete:
+      operationId: Delete_document
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: index
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Delete document
+    get:
+      operationId: Get_document_by_index
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: index
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Get document by index
+    head:
+      operationId: Head_document_by_index
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: index
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Head document by index
+    post:
+      operationId: Index_a_document_POST
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: index
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        example: "{\n  \"@timestamp\": \"2099-11-15T13:12:00\",\n  \"message\": \"\
+          GET /search HTTP/1.1 200 1070000\",\n  \"user\": {\n    \"id\": \"kimchy\"\
+          \n  }\n}"
+        in: body
+        multiline: true
+        name: body
+        required: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          example:
+            example: "{\n  \"@timestamp\": \"2099-11-15T13:12:00\",\n  \"message\"\
+              : \"GET /search HTTP/1.1 200 1070000\",\n  \"user\": {\n    \"id\":\
+              \ \"kimchy\"\n  }\n}"
+        description: Generated by Shuffler.io
+        required: false
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Index a document POST
+    put:
+      operationId: Index_a_document_PUT
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: index
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        example: "{\n  \"@timestamp\": \"2099-11-15T13:12:00\",\n  \"message\": \"\
+          GET /search HTTP/1.1 200 1070000\",\n  \"user\": {\n    \"id\": \"kimchy\"\
+          \n  }\n}"
+        in: body
+        multiline: true
+        name: body
+        required: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          example:
+            example: "{\n  \"@timestamp\": \"2099-11-15T13:12:00\",\n  \"message\"\
+              : \"GET /search HTTP/1.1 200 1070000\",\n  \"user\": {\n    \"id\":\
+              \ \"kimchy\"\n  }\n}"
+        description: Generated by Shuffler.io
+        required: false
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Index a document PUT
+  /{index}/_search:
+    post:
+      description: ''
+      operationId: Index_Search
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: index
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        example: "{\n  \"query\": {\n    \"term\": {\n      \"user.id\": \"kimchy\"\
+          \n    }\n  }\n}"
+        in: body
+        multiline: true
+        name: body
+        required: false
+        schema:
+          type: string
+      - description: Header generated by shuffler.io OpenAPI
+        example: application/json
+        in: header
+        multiline: false
+        name: Content-Type
+        required: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          example:
+            example: "{\n  \"query\": {\n    \"term\": {\n      \"user.id\": \"kimchy\"\
+              \n    }\n  }\n}"
+        description: Generated by Shuffler.io
+        required: false
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: '{"src":{"took":138,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}},"namespace":["Results
+                  for Elasticsearch_6"],"name":"Results for Elasticsearch_6"}'
+                type: string
+          description: default
+      summary: Index Search
+  /{index}/_search#:
+    post:
+      description: ''
+      operationId: Index_Search_KQL
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: index
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        example: "{\n  \"query\": {\n      \"query_string\" : {\n          \"query\"\
+          \ : \"${query}\",\n          \"default_field\" : \"*\"\n      }\n  }\n}"
+        in: body
+        multiline: true
+        name: body
+        required: false
+        schema:
+          type: string
+      - description: Header generated by shuffler.io OpenAPI
+        example: application/json
+        in: header
+        multiline: false
+        name: Content-Type
+        required: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          example:
+            example: "{\n  \"query\": {\n      \"query_string\" : {\n          \"\
+              query\" : \"${query}\",\n          \"default_field\" : \"*\"\n     \
+              \ }\n  }\n}"
+        description: Generated by Shuffler.io
+        required: false
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: '{"src":{"took":138,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":0,"relation":"eq"},"max_score":null,"hits":[]}},"namespace":["Results
+                  for Elasticsearch_6"],"name":"Results for Elasticsearch_6"}'
+                type: string
+          description: default
+      summary: Index Search KQL
+  /{index}/_source/{id}:
+    get:
+      operationId: Get_source_by_index
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: index
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Get source by index
+    head:
+      operationId: Head_source_by_index
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: index
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Head source by index
+  /{index}/_update/{id}:
+    post:
+      operationId: Update_document
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: index
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: id
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        example: "{\n  \"script\" : {\n    \"source\": \"ctx._source.counter += params.count\"\
+          ,\n    \"lang\": \"painless\",\n    \"params\" : {\n      \"count\" : 4\n\
+          \    }\n  }\n}"
+        in: body
+        multiline: true
+        name: body
+        required: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          example:
+            example: "{\n  \"script\" : {\n    \"source\": \"ctx._source.counter +=\
+              \ params.count\",\n    \"lang\": \"painless\",\n    \"params\" : {\n\
+              \      \"count\" : 4\n    }\n  }\n}"
+        description: Generated by Shuffler.io
+        required: false
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Update document
+schemes:
+- ''
+servers:
+- url: ''
 tags:
-  - name: Elasticsearch
-  - name: SIEM
-  - name: Database
+- name: Elasticsearch
+- name: SIEM
+- name: Database

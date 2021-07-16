@@ -1,780 +1,548 @@
-swagger: "3.0"
+basePath: /
+components:
+  securitySchemes:
+    BasicAuth:
+      scheme: basic
+      type: http
+host: tenant.service-now.com
 info:
-  title: Servicenow API
-  description: service-now
-  version: "1.0"
-  x-logo: data:image/png;base64,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
   contact:
     email: frikky@shuffler.io
-    name: "@frikkylikeme"
+    name: '@frikkylikeme'
     url: https://twitter.com/frikkylikeme
+  description: service-now
+  title: Servicenow API
+  version: '1.0'
   x-categories:
-    - Cases
-servers:
-  - url: https://tenant.service-now.com
-host: tenant.service-now.com
-basePath: /
-schemes:
-  - "https:"
+  - Cases
+  x-logo: data:image/png;base64,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
+openapi: 3.0.0
 paths:
-  "/api/now/table/{tableName}":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: >-
-                  {
-                    "result": [
-                      {
-                        "parent": "",
-                        "made_sla": "true",
-                        "watch_list": "",
-                        "upon_reject": "cancel",
-                        "sys_updated_on": "2016-01-19 04:52:04",
-                        "approval_history": "",
-                        "number": "PRB0000050",
-                        "sys_updated_by": "glide.maint",
-                        "opened_by": {
-                          "link": "https://instance.servicenow.com/api/now/table/sys_user/glide.maint",
-                          "value": "glide.maint"
-                        },
-                        "user_input": "",
-                        "sys_created_on": "2016-01-19 04:51:19",
-                        "sys_domain": {
-                          "link": "https://instance.servicenow.com/api/now/table/sys_user_group/global",
-                          "value": "global"
-                        },
-                        "state": "4",
-                        "sys_created_by": "glide.maint",
-                        "knowledge": "false",
-                        "order": "",
-                        "closed_at": "2016-01-19 04:52:04",
-                        "cmdb_ci": {
-                          "link": "https://instance.servicenow.com/api/now/table/cmdb_ci/55b35562c0a8010e01cff22378e0aea9",
-                          "value": "55b35562c0a8010e01cff22378e0aea9"
-                        },
-                        "delivery_plan": "",
-                        "impact": "3",
-                        "active": "false",
-                        "work_notes_list": "",
-                        "business_service": "",
-                        "priority": "4",
-                        "sys_domain_path": "/",
-                        "time_worked": "",
-                        "expected_start": "",
-                        "rejection_goto": "",
-                        "opened_at": "2016-01-19 04:49:47",
-                        "business_duration": "1970-01-01 00:00:00",
-                        "group_list": "",
-                        "work_end": "",
-                        "approval_set": "",
-                        "wf_activity": "",
-                        "work_notes": "",
-                        "short_description": "Switch occasionally drops connections",
-                        "correlation_display": "",
-                        "delivery_task": "",
-                        "work_start": "",
-                        "assignment_group": "",
-                        "additional_assignee_list": "",
-                        "description": "Switch occasionally drops connections",
-                        "calendar_duration": "1970-01-01 00:02:17",
-                        "close_notes": "updated firmware",
-                        "sys_class_name": "problem",
-                        "closed_by": "",
-                        "follow_up": "",
-                        "sys_id": "04ce72c9c0a8016600b5b7f75ac67b5b",
-                        "contact_type": "phone",
-                        "urgency": "3",
-                        "company": "",
-                        "reassignment_count": "",
-                        "activity_due": "",
-                        "assigned_to": "",
-                        "comments": "",
-                        "approval": "not requested",
-                        "sla_due": "",
-                        "comments_and_work_notes": "",
-                        "due_date": "",
-                        "sys_mod_count": "1",
-                        "sys_tags": "",
-                        "escalation": "0",
-                        "upon_approval": "proceed",
-                        "correlation_id": "",
-                        "location": ""
-                      }
-                    ]
-                  }
-      summary: Get Table
-      operationId: Get_Table
-      description: get
-      parameters:
-        - in: path
-          name: tableName
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-    post:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: >-
-                  {
-                    "result": {
-                        "parent": "",
-                        "made_sla": "true",
-                        "watch_list": "",
-                        "upon_reject": "cancel",
-                        "sys_updated_on": "2016-01-19 04:52:04",
-                        "approval_history": "",
-                        "number": "PRB0000050",
-                        "sys_updated_by": "glide.maint",
-                        "opened_by": {
-                          "link": "https://instance.servicenow.com/api/now/table/sys_user/glide.maint",
-                          "value": "glide.maint"
-                        },
-                        "user_input": "",
-                        "sys_created_on": "2016-01-19 04:51:19",
-                        "sys_domain": {
-                          "link": "https://instance.servicenow.com/api/now/table/sys_user_group/global",
-                          "value": "global"
-                        },
-                        "state": "4",
-                        "sys_created_by": "glide.maint",
-                        "knowledge": "false",
-                        "order": "",
-                        "closed_at": "2016-01-19 04:52:04",
-                        "cmdb_ci": {
-                          "link": "https://instance.servicenow.com/api/now/table/cmdb_ci/55b35562c0a8010e01cff22378e0aea9",
-                          "value": "55b35562c0a8010e01cff22378e0aea9"
-                        },
-                        "delivery_plan": "",
-                        "impact": "3",
-                        "active": "false",
-                        "work_notes_list": "",
-                        "business_service": "",
-                        "priority": "4",
-                        "sys_domain_path": "/",
-                        "time_worked": "",
-                        "expected_start": "",
-                        "rejection_goto": "",
-                        "opened_at": "2016-01-19 04:49:47",
-                        "business_duration": "1970-01-01 00:00:00",
-                        "group_list": "",
-                        "work_end": "",
-                        "approval_set": "",
-                        "wf_activity": "",
-                        "work_notes": "",
-                        "short_description": "Switch occasionally drops connections",
-                        "correlation_display": "",
-                        "delivery_task": "",
-                        "work_start": "",
-                        "assignment_group": "",
-                        "additional_assignee_list": "",
-                        "description": "Switch occasionally drops connections",
-                        "calendar_duration": "1970-01-01 00:02:17",
-                        "close_notes": "updated firmware",
-                        "sys_class_name": "problem",
-                        "closed_by": "",
-                        "follow_up": "",
-                        "sys_id": "04ce72c9c0a8016600b5b7f75ac67b5b",
-                        "contact_type": "phone",
-                        "urgency": "3",
-                        "company": "",
-                        "reassignment_count": "",
-                        "activity_due": "",
-                        "assigned_to": "",
-                        "comments": "",
-                        "approval": "not requested",
-                        "sla_due": "",
-                        "comments_and_work_notes": "",
-                        "due_date": "",
-                        "sys_mod_count": "1",
-                        "sys_tags": "",
-                        "escalation": "0",
-                        "upon_approval": "proceed",
-                        "correlation_id": "",
-                        "location": ""
-                    }
-                  }
-      summary: Create Table Record
-      operationId: Create_Table_Record
-      description: post
-      parameters:
-        - in: path
-          name: tableName
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: body
-          name: body
-          multiline: true
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          example: |-
-            {
-            		"short_description": "${short_description}"
-            }
-          schema:
-            type: string
-      requestBody:
-        description: Generated by Shuffler.io
-        required: false
-        content:
-          example:
-            example: |-
-              {
-              		"short_description": "${short_description}"
-              }
-  "/api/now/table/{tableName}/{sys_id}":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: >-
-                  {
-                    "result": {
-                        "parent": "",
-                        "made_sla": "true",
-                        "watch_list": "",
-                        "upon_reject": "cancel",
-                        "sys_updated_on": "2016-01-19 04:52:04",
-                        "approval_history": "",
-                        "number": "PRB0000050",
-                        "sys_updated_by": "glide.maint",
-                        "opened_by": {
-                          "link": "https://instance.servicenow.com/api/now/table/sys_user/glide.maint",
-                          "value": "glide.maint"
-                        },
-                        "user_input": "",
-                        "sys_created_on": "2016-01-19 04:51:19",
-                        "sys_domain": {
-                          "link": "https://instance.servicenow.com/api/now/table/sys_user_group/global",
-                          "value": "global"
-                        },
-                        "state": "4",
-                        "sys_created_by": "glide.maint",
-                        "knowledge": "false",
-                        "order": "",
-                        "closed_at": "2016-01-19 04:52:04",
-                        "cmdb_ci": {
-                          "link": "https://instance.servicenow.com/api/now/table/cmdb_ci/55b35562c0a8010e01cff22378e0aea9",
-                          "value": "55b35562c0a8010e01cff22378e0aea9"
-                        },
-                        "delivery_plan": "",
-                        "impact": "3",
-                        "active": "false",
-                        "work_notes_list": "",
-                        "business_service": "",
-                        "priority": "4",
-                        "sys_domain_path": "/",
-                        "time_worked": "",
-                        "expected_start": "",
-                        "rejection_goto": "",
-                        "opened_at": "2016-01-19 04:49:47",
-                        "business_duration": "1970-01-01 00:00:00",
-                        "group_list": "",
-                        "work_end": "",
-                        "approval_set": "",
-                        "wf_activity": "",
-                        "work_notes": "",
-                        "short_description": "Switch occasionally drops connections",
-                        "correlation_display": "",
-                        "delivery_task": "",
-                        "work_start": "",
-                        "assignment_group": "",
-                        "additional_assignee_list": "",
-                        "description": "Switch occasionally drops connections",
-                        "calendar_duration": "1970-01-01 00:02:17",
-                        "close_notes": "updated firmware",
-                        "sys_class_name": "problem",
-                        "closed_by": "",
-                        "follow_up": "",
-                        "sys_id": "04ce72c9c0a8016600b5b7f75ac67b5b",
-                        "contact_type": "phone",
-                        "urgency": "3",
-                        "company": "",
-                        "reassignment_count": "",
-                        "activity_due": "",
-                        "assigned_to": "",
-                        "comments": "",
-                        "approval": "not requested",
-                        "sla_due": "",
-                        "comments_and_work_notes": "",
-                        "due_date": "",
-                        "sys_mod_count": "1",
-                        "sys_tags": "",
-                        "escalation": "0",
-                        "upon_approval": "proceed",
-                        "correlation_id": "",
-                        "location": ""
-                    }
-                  }
-      summary: Get Table Record
-      operationId: Get_Table_Record
-      description: get record
-      parameters:
-        - in: path
-          name: tableName
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: sys_id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-    patch:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: >-
-                  {
-                    "result": {
-                        "parent": "",
-                        "made_sla": "true",
-                        "watch_list": "",
-                        "upon_reject": "cancel",
-                        "sys_updated_on": "2016-01-19 04:52:04",
-                        "approval_history": "",
-                        "number": "PRB0000050",
-                        "sys_updated_by": "glide.maint",
-                        "opened_by": {
-                          "link": "https://instance.servicenow.com/api/now/table/sys_user/glide.maint",
-                          "value": "glide.maint"
-                        },
-                        "user_input": "",
-                        "sys_created_on": "2016-01-19 04:51:19",
-                        "sys_domain": {
-                          "link": "https://instance.servicenow.com/api/now/table/sys_user_group/global",
-                          "value": "global"
-                        },
-                        "state": "4",
-                        "sys_created_by": "glide.maint",
-                        "knowledge": "false",
-                        "order": "",
-                        "closed_at": "2016-01-19 04:52:04",
-                        "cmdb_ci": {
-                          "link": "https://instance.servicenow.com/api/now/table/cmdb_ci/55b35562c0a8010e01cff22378e0aea9",
-                          "value": "55b35562c0a8010e01cff22378e0aea9"
-                        },
-                        "delivery_plan": "",
-                        "impact": "3",
-                        "active": "false",
-                        "work_notes_list": "",
-                        "business_service": "",
-                        "priority": "4",
-                        "sys_domain_path": "/",
-                        "time_worked": "",
-                        "expected_start": "",
-                        "rejection_goto": "",
-                        "opened_at": "2016-01-19 04:49:47",
-                        "business_duration": "1970-01-01 00:00:00",
-                        "group_list": "",
-                        "work_end": "",
-                        "approval_set": "",
-                        "wf_activity": "",
-                        "work_notes": "",
-                        "short_description": "Switch occasionally drops connections",
-                        "correlation_display": "",
-                        "delivery_task": "",
-                        "work_start": "",
-                        "assignment_group": "",
-                        "additional_assignee_list": "",
-                        "description": "Switch occasionally drops connections",
-                        "calendar_duration": "1970-01-01 00:02:17",
-                        "close_notes": "updated firmware",
-                        "sys_class_name": "problem",
-                        "closed_by": "",
-                        "follow_up": "",
-                        "sys_id": "04ce72c9c0a8016600b5b7f75ac67b5b",
-                        "contact_type": "phone",
-                        "urgency": "3",
-                        "company": "",
-                        "reassignment_count": "",
-                        "activity_due": "",
-                        "assigned_to": "",
-                        "comments": "",
-                        "approval": "not requested",
-                        "sla_due": "",
-                        "comments_and_work_notes": "",
-                        "due_date": "",
-                        "sys_mod_count": "1",
-                        "sys_tags": "",
-                        "escalation": "0",
-                        "upon_approval": "proceed",
-                        "correlation_id": "",
-                        "location": ""
-                    }
-                  }
-      summary: Edit Table Record
-      operationId: Edit_Table_Record
-      description: patch
-      parameters:
-        - in: path
-          name: tableName
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: sys_id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: body
-          name: body
-          multiline: true
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          example: '{"short_description":"${modified_description}"}'
-          schema:
-            type: string
-      requestBody:
-        description: Generated by Shuffler.io
-        required: false
-        content:
-          example:
-            example: '{"short_description":"${modified_description}"}'
-  "/now/table/{tableName}/{sys_id}":
-    delete:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: >-
-                  {
-                    "result": {
-                        "parent": "",
-                        "made_sla": "true",
-                        "watch_list": "",
-                        "upon_reject": "cancel",
-                        "sys_updated_on": "2016-01-19 04:52:04",
-                        "approval_history": "",
-                        "number": "PRB0000050",
-                        "sys_updated_by": "glide.maint",
-                        "opened_by": {
-                          "link": "https://instance.servicenow.com/api/now/table/sys_user/glide.maint",
-                          "value": "glide.maint"
-                        },
-                        "user_input": "",
-                        "sys_created_on": "2016-01-19 04:51:19",
-                        "sys_domain": {
-                          "link": "https://instance.servicenow.com/api/now/table/sys_user_group/global",
-                          "value": "global"
-                        },
-                        "state": "4",
-                        "sys_created_by": "glide.maint",
-                        "knowledge": "false",
-                        "order": "",
-                        "closed_at": "2016-01-19 04:52:04",
-                        "cmdb_ci": {
-                          "link": "https://instance.servicenow.com/api/now/table/cmdb_ci/55b35562c0a8010e01cff22378e0aea9",
-                          "value": "55b35562c0a8010e01cff22378e0aea9"
-                        },
-                        "delivery_plan": "",
-                        "impact": "3",
-                        "active": "false",
-                        "work_notes_list": "",
-                        "business_service": "",
-                        "priority": "4",
-                        "sys_domain_path": "/",
-                        "time_worked": "",
-                        "expected_start": "",
-                        "rejection_goto": "",
-                        "opened_at": "2016-01-19 04:49:47",
-                        "business_duration": "1970-01-01 00:00:00",
-                        "group_list": "",
-                        "work_end": "",
-                        "approval_set": "",
-                        "wf_activity": "",
-                        "work_notes": "",
-                        "short_description": "Switch occasionally drops connections",
-                        "correlation_display": "",
-                        "delivery_task": "",
-                        "work_start": "",
-                        "assignment_group": "",
-                        "additional_assignee_list": "",
-                        "description": "Switch occasionally drops connections",
-                        "calendar_duration": "1970-01-01 00:02:17",
-                        "close_notes": "updated firmware",
-                        "sys_class_name": "problem",
-                        "closed_by": "",
-                        "follow_up": "",
-                        "sys_id": "04ce72c9c0a8016600b5b7f75ac67b5b",
-                        "contact_type": "phone",
-                        "urgency": "3",
-                        "company": "",
-                        "reassignment_count": "",
-                        "activity_due": "",
-                        "assigned_to": "",
-                        "comments": "",
-                        "approval": "not requested",
-                        "sla_due": "",
-                        "comments_and_work_notes": "",
-                        "due_date": "",
-                        "sys_mod_count": "1",
-                        "sys_tags": "",
-                        "escalation": "0",
-                        "upon_approval": "proceed",
-                        "correlation_id": "",
-                        "location": ""
-                    }
-                  }
-      summary: Delete Table Record
-      operationId: Delete_Table_Record
-      description: ""
-      parameters:
-        - in: path
-          name: tableName
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: sys_id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/now/attachment/{sys_id}":
-    delete:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: "Delete Attachment "
-      operationId: Delete_Attachment_
-      description: ""
-      parameters:
-        - in: path
-          name: sys_id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: >-
-                  {
-                    "result": {
-                      "table_sys_id": "5054b6f8c0a800060056addcf551ecf8",
-                      "size_bytes": "462",
-                      "download_link": "https://instance.service-now.com/api/now/attachment/615ea769c0a80166001cf5f2367302f5/file",
-                      "sys_updated_on": "2009-05-21 04:12:21",
-                      "sys_id": "615ea769c0a80166001cf5f2367302f5",
-                      "image_height": "",
-                      "sys_created_on": "2009-05-21 04:12:21",
-                      "file_name": "blocks.swf",
-                      "sys_created_by": "glide.maint",
-                      "compressed": "true",
-                      "average_image_color": "",
-                      "sys_updated_by": "glide.maint",
-                      "sys_tags": "",
-                      "table_name": "content_block_programmatic",
-                      "image_width": "",
-                      "sys_mod_count": "0",
-                      "content_type": "application/x-shockwave-flash",
-                      "size_compressed": "485"
-                    }
-                  }
-      summary: Get Attachment
-      operationId: Get_Attachment
-      description: ""
-      parameters:
-        - in: path
-          name: sys_id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  /now/attachment:
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Get Attachments
-      operationId: Get_Attachments
-      description: ""
-      parameters: []
-      requestBody:
-        content: {}
-  "/now/attachment/{sys_id}/file":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Get Attachment File
-      operationId: Get_Attachment_File
-      description: ""
-      parameters:
-        - in: path
-          name: sys_id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
   /api/now/attachment/upload:
     post:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: >-
-                  {
-                    "result": {
-                      "table_sys_id": "d71f7935c0a8016700802b64c67c11c6",
-                      "size_bytes": "36597",
-                      "download_link": "https://instance.service-now.com/api/now/attachment/994adbc64f511200adf9f8e18110c796/file",
-                      "sys_updated_on": "2016-02-02 14:00:21",
-                      "sys_id": "994adbc64f511200adf9f8e18110c796",
-                      "image_height": "",
-                      "sys_created_on": "2016-02-02 14:00:21",
-                      "file_name": "banner-CS0001345_v1_1.jpeg",
-                      "sys_created_by": "admin",
-                      "compressed": "true",
-                      "average_image_color": "",
-                      "sys_updated_by": "admin",
-                      "sys_tags": "",
-                      "table_name": "incident",
-                      "image_width": "",
-                      "sys_mod_count": "0",
-                      "content_type": "image/jpeg",
-                      "size_compressed": "25130"
-                    }
-                  }
-      summary: Upload Attachment
+      description: ''
       operationId: Upload_Attachment
-      description: ""
       parameters:
-        - in: body
-          name: body
-          multiline: true
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          example: table_name=${table}&table_sys_id=${sys_id}
-          schema:
-            type: string
-      requestBody:
-        description: Generated by Shuffler.io
+      - description: Generated by shuffler.io OpenAPI
+        example: table_name=${table}&table_sys_id=${sys_id}
+        in: body
+        multiline: true
+        name: body
         required: false
+        schema:
+          type: string
+      requestBody:
         content:
           example:
             example: table_name=${table}&table_sys_id=${sys_id}
           multipart/form-data:
             schema:
-              type: object
               properties:
                 fieldname:
                   type: string
                   value: uploadFile
-  "/api/now/table/{table}/{sys_id}":
-    patch:
+              type: object
+        description: Generated by Shuffler.io
+        required: false
       responses:
         default:
-          description: default
           content:
             text/plain:
               schema:
+                example: "{\n  \"result\": {\n    \"table_sys_id\": \"d71f7935c0a8016700802b64c67c11c6\"\
+                  ,\n    \"size_bytes\": \"36597\",\n    \"download_link\": \"https://instance.service-now.com/api/now/attachment/994adbc64f511200adf9f8e18110c796/file\"\
+                  ,\n    \"sys_updated_on\": \"2016-02-02 14:00:21\",\n    \"sys_id\"\
+                  : \"994adbc64f511200adf9f8e18110c796\",\n    \"image_height\": \"\
+                  \",\n    \"sys_created_on\": \"2016-02-02 14:00:21\",\n    \"file_name\"\
+                  : \"banner-CS0001345_v1_1.jpeg\",\n    \"sys_created_by\": \"admin\"\
+                  ,\n    \"compressed\": \"true\",\n    \"average_image_color\": \"\
+                  \",\n    \"sys_updated_by\": \"admin\",\n    \"sys_tags\": \"\"\
+                  ,\n    \"table_name\": \"incident\",\n    \"image_width\": \"\"\
+                  ,\n    \"sys_mod_count\": \"0\",\n    \"content_type\": \"image/jpeg\"\
+                  ,\n    \"size_compressed\": \"25130\"\n  }\n}"
                 type: string
-                example: ""
-      summary: Add Comment
-      operationId: Add_Comment
-      description: ""
+          description: default
+      summary: Upload Attachment
+  /api/now/table/{tableName}:
+    get:
+      description: get
+      operationId: Get_Table
       parameters:
-        - in: path
-          name: table
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: sys_id
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: body
-          name: body
-          multiline: true
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          example: |-
-            {
-              "comments": "${work_note}."
-            }
-          schema:
-            type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: tableName
+        required: true
+        schema:
+          type: string
       requestBody:
-        description: Generated by Shuffler.io
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: "{\n  \"result\": [\n    {\n      \"parent\": \"\",\n   \
+                  \   \"made_sla\": \"true\",\n      \"watch_list\": \"\",\n     \
+                  \ \"upon_reject\": \"cancel\",\n      \"sys_updated_on\": \"2016-01-19\
+                  \ 04:52:04\",\n      \"approval_history\": \"\",\n      \"number\"\
+                  : \"PRB0000050\",\n      \"sys_updated_by\": \"glide.maint\",\n\
+                  \      \"opened_by\": {\n        \"link\": \"https://instance.servicenow.com/api/now/table/sys_user/glide.maint\"\
+                  ,\n        \"value\": \"glide.maint\"\n      },\n      \"user_input\"\
+                  : \"\",\n      \"sys_created_on\": \"2016-01-19 04:51:19\",\n  \
+                  \    \"sys_domain\": {\n        \"link\": \"https://instance.servicenow.com/api/now/table/sys_user_group/global\"\
+                  ,\n        \"value\": \"global\"\n      },\n      \"state\": \"\
+                  4\",\n      \"sys_created_by\": \"glide.maint\",\n      \"knowledge\"\
+                  : \"false\",\n      \"order\": \"\",\n      \"closed_at\": \"2016-01-19\
+                  \ 04:52:04\",\n      \"cmdb_ci\": {\n        \"link\": \"https://instance.servicenow.com/api/now/table/cmdb_ci/55b35562c0a8010e01cff22378e0aea9\"\
+                  ,\n        \"value\": \"55b35562c0a8010e01cff22378e0aea9\"\n   \
+                  \   },\n      \"delivery_plan\": \"\",\n      \"impact\": \"3\"\
+                  ,\n      \"active\": \"false\",\n      \"work_notes_list\": \"\"\
+                  ,\n      \"business_service\": \"\",\n      \"priority\": \"4\"\
+                  ,\n      \"sys_domain_path\": \"/\",\n      \"time_worked\": \"\"\
+                  ,\n      \"expected_start\": \"\",\n      \"rejection_goto\": \"\
+                  \",\n      \"opened_at\": \"2016-01-19 04:49:47\",\n      \"business_duration\"\
+                  : \"1970-01-01 00:00:00\",\n      \"group_list\": \"\",\n      \"\
+                  work_end\": \"\",\n      \"approval_set\": \"\",\n      \"wf_activity\"\
+                  : \"\",\n      \"work_notes\": \"\",\n      \"short_description\"\
+                  : \"Switch occasionally drops connections\",\n      \"correlation_display\"\
+                  : \"\",\n      \"delivery_task\": \"\",\n      \"work_start\": \"\
+                  \",\n      \"assignment_group\": \"\",\n      \"additional_assignee_list\"\
+                  : \"\",\n      \"description\": \"Switch occasionally drops connections\"\
+                  ,\n      \"calendar_duration\": \"1970-01-01 00:02:17\",\n     \
+                  \ \"close_notes\": \"updated firmware\",\n      \"sys_class_name\"\
+                  : \"problem\",\n      \"closed_by\": \"\",\n      \"follow_up\"\
+                  : \"\",\n      \"sys_id\": \"04ce72c9c0a8016600b5b7f75ac67b5b\"\
+                  ,\n      \"contact_type\": \"phone\",\n      \"urgency\": \"3\"\
+                  ,\n      \"company\": \"\",\n      \"reassignment_count\": \"\"\
+                  ,\n      \"activity_due\": \"\",\n      \"assigned_to\": \"\",\n\
+                  \      \"comments\": \"\",\n      \"approval\": \"not requested\"\
+                  ,\n      \"sla_due\": \"\",\n      \"comments_and_work_notes\":\
+                  \ \"\",\n      \"due_date\": \"\",\n      \"sys_mod_count\": \"\
+                  1\",\n      \"sys_tags\": \"\",\n      \"escalation\": \"0\",\n\
+                  \      \"upon_approval\": \"proceed\",\n      \"correlation_id\"\
+                  : \"\",\n      \"location\": \"\"\n    }\n  ]\n}"
+                type: string
+          description: default
+      summary: Get Table
+    post:
+      description: post
+      operationId: Create_Table_Record
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: tableName
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        example: "{\n\t\t\"short_description\": \"${short_description}\"\n}"
+        in: body
+        multiline: true
+        name: body
         required: false
+        schema:
+          type: string
+      requestBody:
         content:
           example:
-            example: |-
-              {
-                "comments": "${work_note}."
-              }
-components:
-  securitySchemes:
-    BasicAuth:
-      type: http
-      scheme: basic
+            example: "{\n\t\t\"short_description\": \"${short_description}\"\n}"
+        description: Generated by Shuffler.io
+        required: false
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: "{\n  \"result\": {\n      \"parent\": \"\",\n      \"made_sla\"\
+                  : \"true\",\n      \"watch_list\": \"\",\n      \"upon_reject\"\
+                  : \"cancel\",\n      \"sys_updated_on\": \"2016-01-19 04:52:04\"\
+                  ,\n      \"approval_history\": \"\",\n      \"number\": \"PRB0000050\"\
+                  ,\n      \"sys_updated_by\": \"glide.maint\",\n      \"opened_by\"\
+                  : {\n        \"link\": \"https://instance.servicenow.com/api/now/table/sys_user/glide.maint\"\
+                  ,\n        \"value\": \"glide.maint\"\n      },\n      \"user_input\"\
+                  : \"\",\n      \"sys_created_on\": \"2016-01-19 04:51:19\",\n  \
+                  \    \"sys_domain\": {\n        \"link\": \"https://instance.servicenow.com/api/now/table/sys_user_group/global\"\
+                  ,\n        \"value\": \"global\"\n      },\n      \"state\": \"\
+                  4\",\n      \"sys_created_by\": \"glide.maint\",\n      \"knowledge\"\
+                  : \"false\",\n      \"order\": \"\",\n      \"closed_at\": \"2016-01-19\
+                  \ 04:52:04\",\n      \"cmdb_ci\": {\n        \"link\": \"https://instance.servicenow.com/api/now/table/cmdb_ci/55b35562c0a8010e01cff22378e0aea9\"\
+                  ,\n        \"value\": \"55b35562c0a8010e01cff22378e0aea9\"\n   \
+                  \   },\n      \"delivery_plan\": \"\",\n      \"impact\": \"3\"\
+                  ,\n      \"active\": \"false\",\n      \"work_notes_list\": \"\"\
+                  ,\n      \"business_service\": \"\",\n      \"priority\": \"4\"\
+                  ,\n      \"sys_domain_path\": \"/\",\n      \"time_worked\": \"\"\
+                  ,\n      \"expected_start\": \"\",\n      \"rejection_goto\": \"\
+                  \",\n      \"opened_at\": \"2016-01-19 04:49:47\",\n      \"business_duration\"\
+                  : \"1970-01-01 00:00:00\",\n      \"group_list\": \"\",\n      \"\
+                  work_end\": \"\",\n      \"approval_set\": \"\",\n      \"wf_activity\"\
+                  : \"\",\n      \"work_notes\": \"\",\n      \"short_description\"\
+                  : \"Switch occasionally drops connections\",\n      \"correlation_display\"\
+                  : \"\",\n      \"delivery_task\": \"\",\n      \"work_start\": \"\
+                  \",\n      \"assignment_group\": \"\",\n      \"additional_assignee_list\"\
+                  : \"\",\n      \"description\": \"Switch occasionally drops connections\"\
+                  ,\n      \"calendar_duration\": \"1970-01-01 00:02:17\",\n     \
+                  \ \"close_notes\": \"updated firmware\",\n      \"sys_class_name\"\
+                  : \"problem\",\n      \"closed_by\": \"\",\n      \"follow_up\"\
+                  : \"\",\n      \"sys_id\": \"04ce72c9c0a8016600b5b7f75ac67b5b\"\
+                  ,\n      \"contact_type\": \"phone\",\n      \"urgency\": \"3\"\
+                  ,\n      \"company\": \"\",\n      \"reassignment_count\": \"\"\
+                  ,\n      \"activity_due\": \"\",\n      \"assigned_to\": \"\",\n\
+                  \      \"comments\": \"\",\n      \"approval\": \"not requested\"\
+                  ,\n      \"sla_due\": \"\",\n      \"comments_and_work_notes\":\
+                  \ \"\",\n      \"due_date\": \"\",\n      \"sys_mod_count\": \"\
+                  1\",\n      \"sys_tags\": \"\",\n      \"escalation\": \"0\",\n\
+                  \      \"upon_approval\": \"proceed\",\n      \"correlation_id\"\
+                  : \"\",\n      \"location\": \"\"\n  }\n}"
+                type: string
+          description: default
+      summary: Create Table Record
+  /api/now/table/{tableName}/{sys_id}:
+    get:
+      description: get record
+      operationId: Get_Table_Record
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: tableName
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: sys_id
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: "{\n  \"result\": {\n      \"parent\": \"\",\n      \"made_sla\"\
+                  : \"true\",\n      \"watch_list\": \"\",\n      \"upon_reject\"\
+                  : \"cancel\",\n      \"sys_updated_on\": \"2016-01-19 04:52:04\"\
+                  ,\n      \"approval_history\": \"\",\n      \"number\": \"PRB0000050\"\
+                  ,\n      \"sys_updated_by\": \"glide.maint\",\n      \"opened_by\"\
+                  : {\n        \"link\": \"https://instance.servicenow.com/api/now/table/sys_user/glide.maint\"\
+                  ,\n        \"value\": \"glide.maint\"\n      },\n      \"user_input\"\
+                  : \"\",\n      \"sys_created_on\": \"2016-01-19 04:51:19\",\n  \
+                  \    \"sys_domain\": {\n        \"link\": \"https://instance.servicenow.com/api/now/table/sys_user_group/global\"\
+                  ,\n        \"value\": \"global\"\n      },\n      \"state\": \"\
+                  4\",\n      \"sys_created_by\": \"glide.maint\",\n      \"knowledge\"\
+                  : \"false\",\n      \"order\": \"\",\n      \"closed_at\": \"2016-01-19\
+                  \ 04:52:04\",\n      \"cmdb_ci\": {\n        \"link\": \"https://instance.servicenow.com/api/now/table/cmdb_ci/55b35562c0a8010e01cff22378e0aea9\"\
+                  ,\n        \"value\": \"55b35562c0a8010e01cff22378e0aea9\"\n   \
+                  \   },\n      \"delivery_plan\": \"\",\n      \"impact\": \"3\"\
+                  ,\n      \"active\": \"false\",\n      \"work_notes_list\": \"\"\
+                  ,\n      \"business_service\": \"\",\n      \"priority\": \"4\"\
+                  ,\n      \"sys_domain_path\": \"/\",\n      \"time_worked\": \"\"\
+                  ,\n      \"expected_start\": \"\",\n      \"rejection_goto\": \"\
+                  \",\n      \"opened_at\": \"2016-01-19 04:49:47\",\n      \"business_duration\"\
+                  : \"1970-01-01 00:00:00\",\n      \"group_list\": \"\",\n      \"\
+                  work_end\": \"\",\n      \"approval_set\": \"\",\n      \"wf_activity\"\
+                  : \"\",\n      \"work_notes\": \"\",\n      \"short_description\"\
+                  : \"Switch occasionally drops connections\",\n      \"correlation_display\"\
+                  : \"\",\n      \"delivery_task\": \"\",\n      \"work_start\": \"\
+                  \",\n      \"assignment_group\": \"\",\n      \"additional_assignee_list\"\
+                  : \"\",\n      \"description\": \"Switch occasionally drops connections\"\
+                  ,\n      \"calendar_duration\": \"1970-01-01 00:02:17\",\n     \
+                  \ \"close_notes\": \"updated firmware\",\n      \"sys_class_name\"\
+                  : \"problem\",\n      \"closed_by\": \"\",\n      \"follow_up\"\
+                  : \"\",\n      \"sys_id\": \"04ce72c9c0a8016600b5b7f75ac67b5b\"\
+                  ,\n      \"contact_type\": \"phone\",\n      \"urgency\": \"3\"\
+                  ,\n      \"company\": \"\",\n      \"reassignment_count\": \"\"\
+                  ,\n      \"activity_due\": \"\",\n      \"assigned_to\": \"\",\n\
+                  \      \"comments\": \"\",\n      \"approval\": \"not requested\"\
+                  ,\n      \"sla_due\": \"\",\n      \"comments_and_work_notes\":\
+                  \ \"\",\n      \"due_date\": \"\",\n      \"sys_mod_count\": \"\
+                  1\",\n      \"sys_tags\": \"\",\n      \"escalation\": \"0\",\n\
+                  \      \"upon_approval\": \"proceed\",\n      \"correlation_id\"\
+                  : \"\",\n      \"location\": \"\"\n  }\n}"
+                type: string
+          description: default
+      summary: Get Table Record
+    patch:
+      description: patch
+      operationId: Edit_Table_Record
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: tableName
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: sys_id
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        example: '{"short_description":"${modified_description}"}'
+        in: body
+        multiline: true
+        name: body
+        required: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          example:
+            example: '{"short_description":"${modified_description}"}'
+        description: Generated by Shuffler.io
+        required: false
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: "{\n  \"result\": {\n      \"parent\": \"\",\n      \"made_sla\"\
+                  : \"true\",\n      \"watch_list\": \"\",\n      \"upon_reject\"\
+                  : \"cancel\",\n      \"sys_updated_on\": \"2016-01-19 04:52:04\"\
+                  ,\n      \"approval_history\": \"\",\n      \"number\": \"PRB0000050\"\
+                  ,\n      \"sys_updated_by\": \"glide.maint\",\n      \"opened_by\"\
+                  : {\n        \"link\": \"https://instance.servicenow.com/api/now/table/sys_user/glide.maint\"\
+                  ,\n        \"value\": \"glide.maint\"\n      },\n      \"user_input\"\
+                  : \"\",\n      \"sys_created_on\": \"2016-01-19 04:51:19\",\n  \
+                  \    \"sys_domain\": {\n        \"link\": \"https://instance.servicenow.com/api/now/table/sys_user_group/global\"\
+                  ,\n        \"value\": \"global\"\n      },\n      \"state\": \"\
+                  4\",\n      \"sys_created_by\": \"glide.maint\",\n      \"knowledge\"\
+                  : \"false\",\n      \"order\": \"\",\n      \"closed_at\": \"2016-01-19\
+                  \ 04:52:04\",\n      \"cmdb_ci\": {\n        \"link\": \"https://instance.servicenow.com/api/now/table/cmdb_ci/55b35562c0a8010e01cff22378e0aea9\"\
+                  ,\n        \"value\": \"55b35562c0a8010e01cff22378e0aea9\"\n   \
+                  \   },\n      \"delivery_plan\": \"\",\n      \"impact\": \"3\"\
+                  ,\n      \"active\": \"false\",\n      \"work_notes_list\": \"\"\
+                  ,\n      \"business_service\": \"\",\n      \"priority\": \"4\"\
+                  ,\n      \"sys_domain_path\": \"/\",\n      \"time_worked\": \"\"\
+                  ,\n      \"expected_start\": \"\",\n      \"rejection_goto\": \"\
+                  \",\n      \"opened_at\": \"2016-01-19 04:49:47\",\n      \"business_duration\"\
+                  : \"1970-01-01 00:00:00\",\n      \"group_list\": \"\",\n      \"\
+                  work_end\": \"\",\n      \"approval_set\": \"\",\n      \"wf_activity\"\
+                  : \"\",\n      \"work_notes\": \"\",\n      \"short_description\"\
+                  : \"Switch occasionally drops connections\",\n      \"correlation_display\"\
+                  : \"\",\n      \"delivery_task\": \"\",\n      \"work_start\": \"\
+                  \",\n      \"assignment_group\": \"\",\n      \"additional_assignee_list\"\
+                  : \"\",\n      \"description\": \"Switch occasionally drops connections\"\
+                  ,\n      \"calendar_duration\": \"1970-01-01 00:02:17\",\n     \
+                  \ \"close_notes\": \"updated firmware\",\n      \"sys_class_name\"\
+                  : \"problem\",\n      \"closed_by\": \"\",\n      \"follow_up\"\
+                  : \"\",\n      \"sys_id\": \"04ce72c9c0a8016600b5b7f75ac67b5b\"\
+                  ,\n      \"contact_type\": \"phone\",\n      \"urgency\": \"3\"\
+                  ,\n      \"company\": \"\",\n      \"reassignment_count\": \"\"\
+                  ,\n      \"activity_due\": \"\",\n      \"assigned_to\": \"\",\n\
+                  \      \"comments\": \"\",\n      \"approval\": \"not requested\"\
+                  ,\n      \"sla_due\": \"\",\n      \"comments_and_work_notes\":\
+                  \ \"\",\n      \"due_date\": \"\",\n      \"sys_mod_count\": \"\
+                  1\",\n      \"sys_tags\": \"\",\n      \"escalation\": \"0\",\n\
+                  \      \"upon_approval\": \"proceed\",\n      \"correlation_id\"\
+                  : \"\",\n      \"location\": \"\"\n  }\n}"
+                type: string
+          description: default
+      summary: Edit Table Record
+  /api/now/table/{table}/{sys_id}:
+    patch:
+      description: ''
+      operationId: Add_Comment
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: table
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: sys_id
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        example: "{\n  \"comments\": \"${work_note}.\"\n}"
+        in: body
+        multiline: true
+        name: body
+        required: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          example:
+            example: "{\n  \"comments\": \"${work_note}.\"\n}"
+        description: Generated by Shuffler.io
+        required: false
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Add Comment
+  /now/attachment:
+    get:
+      description: ''
+      operationId: Get_Attachments
+      parameters: []
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Get Attachments
+  /now/attachment/{sys_id}:
+    delete:
+      description: ''
+      operationId: Delete_Attachment_
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: sys_id
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: 'Delete Attachment '
+    get:
+      description: ''
+      operationId: Get_Attachment
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: sys_id
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: "{\n  \"result\": {\n    \"table_sys_id\": \"5054b6f8c0a800060056addcf551ecf8\"\
+                  ,\n    \"size_bytes\": \"462\",\n    \"download_link\": \"https://instance.service-now.com/api/now/attachment/615ea769c0a80166001cf5f2367302f5/file\"\
+                  ,\n    \"sys_updated_on\": \"2009-05-21 04:12:21\",\n    \"sys_id\"\
+                  : \"615ea769c0a80166001cf5f2367302f5\",\n    \"image_height\": \"\
+                  \",\n    \"sys_created_on\": \"2009-05-21 04:12:21\",\n    \"file_name\"\
+                  : \"blocks.swf\",\n    \"sys_created_by\": \"glide.maint\",\n  \
+                  \  \"compressed\": \"true\",\n    \"average_image_color\": \"\"\
+                  ,\n    \"sys_updated_by\": \"glide.maint\",\n    \"sys_tags\": \"\
+                  \",\n    \"table_name\": \"content_block_programmatic\",\n    \"\
+                  image_width\": \"\",\n    \"sys_mod_count\": \"0\",\n    \"content_type\"\
+                  : \"application/x-shockwave-flash\",\n    \"size_compressed\": \"\
+                  485\"\n  }\n}"
+                type: string
+          description: default
+      summary: Get Attachment
+  /now/attachment/{sys_id}/file:
+    get:
+      description: ''
+      operationId: Get_Attachment_File
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: sys_id
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Get Attachment File
+  /now/table/{tableName}/{sys_id}:
+    delete:
+      description: ''
+      operationId: Delete_Table_Record
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: tableName
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: sys_id
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: "{\n  \"result\": {\n      \"parent\": \"\",\n      \"made_sla\"\
+                  : \"true\",\n      \"watch_list\": \"\",\n      \"upon_reject\"\
+                  : \"cancel\",\n      \"sys_updated_on\": \"2016-01-19 04:52:04\"\
+                  ,\n      \"approval_history\": \"\",\n      \"number\": \"PRB0000050\"\
+                  ,\n      \"sys_updated_by\": \"glide.maint\",\n      \"opened_by\"\
+                  : {\n        \"link\": \"https://instance.servicenow.com/api/now/table/sys_user/glide.maint\"\
+                  ,\n        \"value\": \"glide.maint\"\n      },\n      \"user_input\"\
+                  : \"\",\n      \"sys_created_on\": \"2016-01-19 04:51:19\",\n  \
+                  \    \"sys_domain\": {\n        \"link\": \"https://instance.servicenow.com/api/now/table/sys_user_group/global\"\
+                  ,\n        \"value\": \"global\"\n      },\n      \"state\": \"\
+                  4\",\n      \"sys_created_by\": \"glide.maint\",\n      \"knowledge\"\
+                  : \"false\",\n      \"order\": \"\",\n      \"closed_at\": \"2016-01-19\
+                  \ 04:52:04\",\n      \"cmdb_ci\": {\n        \"link\": \"https://instance.servicenow.com/api/now/table/cmdb_ci/55b35562c0a8010e01cff22378e0aea9\"\
+                  ,\n        \"value\": \"55b35562c0a8010e01cff22378e0aea9\"\n   \
+                  \   },\n      \"delivery_plan\": \"\",\n      \"impact\": \"3\"\
+                  ,\n      \"active\": \"false\",\n      \"work_notes_list\": \"\"\
+                  ,\n      \"business_service\": \"\",\n      \"priority\": \"4\"\
+                  ,\n      \"sys_domain_path\": \"/\",\n      \"time_worked\": \"\"\
+                  ,\n      \"expected_start\": \"\",\n      \"rejection_goto\": \"\
+                  \",\n      \"opened_at\": \"2016-01-19 04:49:47\",\n      \"business_duration\"\
+                  : \"1970-01-01 00:00:00\",\n      \"group_list\": \"\",\n      \"\
+                  work_end\": \"\",\n      \"approval_set\": \"\",\n      \"wf_activity\"\
+                  : \"\",\n      \"work_notes\": \"\",\n      \"short_description\"\
+                  : \"Switch occasionally drops connections\",\n      \"correlation_display\"\
+                  : \"\",\n      \"delivery_task\": \"\",\n      \"work_start\": \"\
+                  \",\n      \"assignment_group\": \"\",\n      \"additional_assignee_list\"\
+                  : \"\",\n      \"description\": \"Switch occasionally drops connections\"\
+                  ,\n      \"calendar_duration\": \"1970-01-01 00:02:17\",\n     \
+                  \ \"close_notes\": \"updated firmware\",\n      \"sys_class_name\"\
+                  : \"problem\",\n      \"closed_by\": \"\",\n      \"follow_up\"\
+                  : \"\",\n      \"sys_id\": \"04ce72c9c0a8016600b5b7f75ac67b5b\"\
+                  ,\n      \"contact_type\": \"phone\",\n      \"urgency\": \"3\"\
+                  ,\n      \"company\": \"\",\n      \"reassignment_count\": \"\"\
+                  ,\n      \"activity_due\": \"\",\n      \"assigned_to\": \"\",\n\
+                  \      \"comments\": \"\",\n      \"approval\": \"not requested\"\
+                  ,\n      \"sla_due\": \"\",\n      \"comments_and_work_notes\":\
+                  \ \"\",\n      \"due_date\": \"\",\n      \"sys_mod_count\": \"\
+                  1\",\n      \"sys_tags\": \"\",\n      \"escalation\": \"0\",\n\
+                  \      \"upon_approval\": \"proceed\",\n      \"correlation_id\"\
+                  : \"\",\n      \"location\": \"\"\n  }\n}"
+                type: string
+          description: default
+      summary: Delete Table Record
+schemes:
+- 'https:'
+servers:
+- url: https://tenant.service-now.com
 tags:
-  - name: Snow
+- name: Snow

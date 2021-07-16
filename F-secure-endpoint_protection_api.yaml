@@ -1,806 +1,803 @@
-swagger: "3.0"
-info:
-  title: Endpoint Protection API
-  description: A multi-purpose API that is used to manage computers, monitor
-    events, list subscriptions, control various endpoint protection features,
-    and generate reports.
-  version: "1.0"
-  x-logo: data:image/png;base64,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
-  contact:
-    name: "@azgaviperr"
-    url: https://azgaviperr.github.io/
-    email: azgarech@linuxtrack.net
-  x-categories:
-    - Assets
-servers:
-  - url: https://psblive.psb-stg.fsapi.com/mp/v1
-host: psblive.psb-stg.fsapi.com
 basePath: /mp/v1
-schemes:
-  - "https:"
-paths:
-  /authentication/login:
-    post:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Authenticate
-      operationId: Authenticate
-      description: Access to Endpoint Protection API is granted using user name and
-        password-based authentication in combination with an API key. The
-        obtained token is used in the subsequent requests.
-      parameters:
-        - in: body
-          name: body
-          multiline: true
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          example: |-
-            {
-              "password": "${password}",
-              "username": "${username}"
-            }
-          schema:
-            type: string
-        - in: header
-          name: Content-Type
-          multiline: false
-          description: Header generated by shuffler.io OpenAPI
-          required: false
-          example: application/json
-          schema:
-            type: string
-        - in: header
-          name: Accept
-          multiline: false
-          description: Header generated by shuffler.io OpenAPI
-          required: false
-          example: application/json
-          schema:
-            type: string
-      requestBody:
-        description: Generated by Shuffler.io
-        required: false
-        content:
-          example:
-            example: |-
-              {
-                "password": "${password}",
-                "username": "${username}"
-              }
-  "/companies/{companyId}":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Get company details
-      operationId: Get_company_details
-      description: Retrieve company information by the given ID.
-      parameters:
-        - in: path
-          name: companyId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/companies/{companyId}/computers":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: List company computers
-      operationId: List_company_computers
-      description: List computers of a company with the given ID.
-      parameters:
-        - in: path
-          name: companyId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/companies/{companyId}/computers/{computerId}":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Get company computer details
-      operationId: Get_company_computer_details
-      description: Retrieve computer information by the given ID.
-      parameters:
-        - in: path
-          name: computerId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/companies/{companyId}/computers/{computerId}/infections":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: List found infections for a company computer
-      operationId: List_found_infections_for_a_company_computer
-      description: List found infections for a computer with the given ID.
-      parameters:
-        - in: query
-          name: action
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: infectionType
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: quarantined
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: path
-          name: companyId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: computerId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/companies/{companyId}/computers/{computerId}/missing-software-updates":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: List missing software updates
-      operationId: List_missing_software_updates
-      description: List software updates missing from a company computer with given ID.
-      parameters:
-        - in: query
-          name: softwareName
-          description: Filter used for searching for software updates with the given
-            software name.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: softwareVendor
-          description: Filter used for searching for software updates with the given
-            software vendor.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: softwareServicePack
-          description: Filter used for searching for software updates with the given
-            software service pack.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: category
-          description: Filter used for searching for software updates with the given
-            category.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: severity
-          description: Filter used for searching for software updates with the given
-            severity.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: sort
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: path
-          name: companyId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: computerId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/companies/{companyId}/infections":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: List found infections for a company
-      operationId: List_found_infections_for_a_company
-      description: List found infections for a company with the given ID.
-      parameters:
-        - in: path
-          name: companyId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/companies/{companyId}/reports/computers":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Get company computers report
-      operationId: Get_company_computers_report
-      description: Provides information in CSV format on the computers owned by the
-        given company.
-      parameters:
-        - in: path
-          name: companyId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/companies/{companyId}/subscriptions":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: List company subscriptions
-      operationId: List_company_subscriptions
-      description: List subscriptions that belong to a company with the given ID.
-      parameters:
-        - in: path
-          name: companyId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/companies/{companyId}/subscriptions/{subscriptionId}":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Get company subscription details
-      operationId: Get_company_subscription_details
-      description: Retrieve subscription information by the given ID.
-      parameters:
-        - in: path
-          name: companyId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: subscriptionId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/companies/{companyId}/subscriptions/{subscriptionId}/removed-computers":
-    delete:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Remove computers from subscription
-      operationId: Remove_computers_from_subscription
-      description: Removes computers from the subscription-specific blacklist,
-        allowing computers to register and connect to PSB again.
-      parameters:
-        - in: path
-          name: companyId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-        - in: path
-          name: subscriptionId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/companies/{companyUuid}":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Get company details by UUID
-      operationId: Get_company_details_by_UUID
-      description: Retrieve company information by the given UUID.
-      parameters:
-        - in: path
-          name: companyUuid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/companies/{companyUuid}/security-events":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: List security events for a company
-      operationId: List_security_events_for_a_company
-      description: List security events for a company with the given ID.
-      parameters:
-        - in: path
-          name: companyUuid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/companies/{companyUuid}/subscriptions":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: List company subscriptions by UUID
-      operationId: List_company_subscriptions_by_UUID
-      description: List subscriptions that belong to a company with the given UUID.
-      parameters:
-        - in: path
-          name: companyUuid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/partners/{partnerId}/companies":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: List partner companies
-      operationId: List_partner_companies
-      description: List companies of a partner with the given ID.
-      parameters:
-        - in: query
-          name: page
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: perPage
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: perPage
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: path
-          name: partnerId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/partners/{partnerId}/computers":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: List partner computers
-      operationId: List_partner_computers
-      description: List computers of a partner with the given ID.
-      parameters:
-        - in: query
-          name: category
-          description: Category of computer information to return.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: issue
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: overallProtection
-          description: Filter used for searching for computers with the given
-            overallProtection state.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: automaticUpdates
-          description: Filter used for searching for computers with the given
-            automaticUpdates state.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: virusProtection
-          description: Filter used for searching for computers with the given
-            virusProtection state.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: softwareUpdates
-          description: Filter used for searching for computers with the given
-            softwareUpdates state.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: subscriptionKey
-          description: Filter used for searching for computers with the given subscription
-            key.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: label
-          description: Filter used for searching for computers with the given label value.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: firewall
-          description: Filter used for searching for computers with the given firewall
-            state.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: realTimeScanning
-          description: Filter used for searching for computers with the given real-time
-            scanning state.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: applicationControl
-          description: Filter used for searching for computers with the given application
-            control state.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: clientType
-          description: Filter used for searching for computers with the given client type.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: profileType
-          description: Filter used for searching for computers applicable for given
-            profile type.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: sort
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: order
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: q
-          description: Search term.
-          required: false
-          schema:
-            type: string
-        - in: path
-          name: partnerId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/partners/{partnerId}/infections":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: List found infections for a partner
-      operationId: List_found_infections_for_a_partner
-      description: List found infections for a partner with the given ID.
-      parameters:
-        - in: query
-          name: sort
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: from
-          description: The earliest timestamp of the infections (aka Client Date) that
-            should be returned
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: to
-          description: The latest timestamp of the infections (aka Client Date) that
-            should be retuned
-          required: false
-          schema:
-            type: string
-        - in: path
-          name: partnerId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/partners/{partnerId}/reports/computers":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Get partner computers report
-      operationId: Get_partner_computers_report
-      description: Provides information in CSV format on the computers managed by the
-        given partner.
-      parameters:
-        - in: path
-          name: partnerId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/partners/{partnerId}/subscriptions":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: List partner subscriptions
-      operationId: List_partner_subscriptions
-      description: List subscriptions that that match the search criteria.
-      parameters:
-        - in: query
-          name: expiration
-          description: Filter used for searching subscriptions with 'expirationTimestamp'
-            matching a specific time period.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: products
-          description: Filters by product type
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: sort
-          description: Generated by shuffler.io OpenAPI
-          required: false
-          schema:
-            type: string
-        - in: path
-          name: partnerId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/partners/{partnerId}/subscriptions/{subscriptionId}":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: Get partner subscription details
-      operationId: Get_partner_subscription_details
-      description: Retrieve subscription information by the given ID.
-      parameters:
-        - in: path
-          name: subscriptionId
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
-  "/partners/{partnerUuid}/security-events":
-    get:
-      responses:
-        default:
-          description: default
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ""
-      summary: List security events for a partner
-      operationId: List_security_events_for_a_partner
-      description: List security events for a partner with the given ID.
-      parameters:
-        - in: query
-          name: cursor
-          description: Value pointing to the beginning of the events page to be fetched.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: severity
-          description: Severity of event.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: engine
-          description: Engine that triggered an event.
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: agentId
-          description: Device's agentId, e.g. 35a6fbca-acc8-11eb-8529-0242ac130003
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: eventId
-          description: Id of an event (unique).
-          required: false
-          schema:
-            type: string
-        - in: path
-          name: partnerUuid
-          description: Generated by shuffler.io OpenAPI
-          required: true
-          schema:
-            type: string
-      requestBody:
-        content: {}
 components:
   securitySchemes:
     ApiKeyAuth:
-      type: apiKey
       in: header
       name: X-API-Key
+      type: apiKey
+host: psblive.psb-stg.fsapi.com
+info:
+  contact:
+    email: azgarech@linuxtrack.net
+    name: '@azgaviperr'
+    url: https://azgaviperr.github.io/
+  description: A multi-purpose API that is used to manage computers, monitor events,
+    list subscriptions, control various endpoint protection features, and generate
+    reports.
+  title: Endpoint Protection API
+  version: '1.0'
+  x-categories:
+  - Assets
+  x-logo: data:image/png;base64,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
+openapi: 3.0.0
+paths:
+  /authentication/login:
+    post:
+      description: Access to Endpoint Protection API is granted using user name and
+        password-based authentication in combination with an API key. The obtained
+        token is used in the subsequent requests.
+      operationId: Authenticate
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        example: "{\n  \"password\": \"${password}\",\n  \"username\": \"${username}\"\
+          \n}"
+        in: body
+        multiline: true
+        name: body
+        required: false
+        schema:
+          type: string
+      - description: Header generated by shuffler.io OpenAPI
+        example: application/json
+        in: header
+        multiline: false
+        name: Content-Type
+        required: false
+        schema:
+          type: string
+      - description: Header generated by shuffler.io OpenAPI
+        example: application/json
+        in: header
+        multiline: false
+        name: Accept
+        required: false
+        schema:
+          type: string
+      requestBody:
+        content:
+          example:
+            example: "{\n  \"password\": \"${password}\",\n  \"username\": \"${username}\"\
+              \n}"
+        description: Generated by Shuffler.io
+        required: false
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Authenticate
+  /companies/{companyId}:
+    get:
+      description: Retrieve company information by the given ID.
+      operationId: Get_company_details
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: companyId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Get company details
+  /companies/{companyId}/computers:
+    get:
+      description: List computers of a company with the given ID.
+      operationId: List_company_computers
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: companyId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: List company computers
+  /companies/{companyId}/computers/{computerId}:
+    get:
+      description: Retrieve computer information by the given ID.
+      operationId: Get_company_computer_details
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: computerId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Get company computer details
+  /companies/{companyId}/computers/{computerId}/infections:
+    get:
+      description: List found infections for a computer with the given ID.
+      operationId: List_found_infections_for_a_company_computer
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: action
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: infectionType
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: quarantined
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: companyId
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: computerId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: List found infections for a company computer
+  /companies/{companyId}/computers/{computerId}/missing-software-updates:
+    get:
+      description: List software updates missing from a company computer with given
+        ID.
+      operationId: List_missing_software_updates
+      parameters:
+      - description: Filter used for searching for software updates with the given
+          software name.
+        in: query
+        name: softwareName
+        required: false
+        schema:
+          type: string
+      - description: Filter used for searching for software updates with the given
+          software vendor.
+        in: query
+        name: softwareVendor
+        required: false
+        schema:
+          type: string
+      - description: Filter used for searching for software updates with the given
+          software service pack.
+        in: query
+        name: softwareServicePack
+        required: false
+        schema:
+          type: string
+      - description: Filter used for searching for software updates with the given
+          category.
+        in: query
+        name: category
+        required: false
+        schema:
+          type: string
+      - description: Filter used for searching for software updates with the given
+          severity.
+        in: query
+        name: severity
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: sort
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: companyId
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: computerId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: List missing software updates
+  /companies/{companyId}/infections:
+    get:
+      description: List found infections for a company with the given ID.
+      operationId: List_found_infections_for_a_company
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: companyId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: List found infections for a company
+  /companies/{companyId}/reports/computers:
+    get:
+      description: Provides information in CSV format on the computers owned by the
+        given company.
+      operationId: Get_company_computers_report
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: companyId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Get company computers report
+  /companies/{companyId}/subscriptions:
+    get:
+      description: List subscriptions that belong to a company with the given ID.
+      operationId: List_company_subscriptions
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: companyId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: List company subscriptions
+  /companies/{companyId}/subscriptions/{subscriptionId}:
+    get:
+      description: Retrieve subscription information by the given ID.
+      operationId: Get_company_subscription_details
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: companyId
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: subscriptionId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Get company subscription details
+  /companies/{companyId}/subscriptions/{subscriptionId}/removed-computers:
+    delete:
+      description: Removes computers from the subscription-specific blacklist, allowing
+        computers to register and connect to PSB again.
+      operationId: Remove_computers_from_subscription
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: companyId
+        required: true
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: subscriptionId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Remove computers from subscription
+  /companies/{companyUuid}:
+    get:
+      description: Retrieve company information by the given UUID.
+      operationId: Get_company_details_by_UUID
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: companyUuid
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Get company details by UUID
+  /companies/{companyUuid}/security-events:
+    get:
+      description: List security events for a company with the given ID.
+      operationId: List_security_events_for_a_company
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: companyUuid
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: List security events for a company
+  /companies/{companyUuid}/subscriptions:
+    get:
+      description: List subscriptions that belong to a company with the given UUID.
+      operationId: List_company_subscriptions_by_UUID
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: companyUuid
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: List company subscriptions by UUID
+  /partners/{partnerId}/companies:
+    get:
+      description: List companies of a partner with the given ID.
+      operationId: List_partner_companies
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: page
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: perPage
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: perPage
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: partnerId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: List partner companies
+  /partners/{partnerId}/computers:
+    get:
+      description: List computers of a partner with the given ID.
+      operationId: List_partner_computers
+      parameters:
+      - description: Category of computer information to return.
+        in: query
+        name: category
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: issue
+        required: false
+        schema:
+          type: string
+      - description: Filter used for searching for computers with the given overallProtection
+          state.
+        in: query
+        name: overallProtection
+        required: false
+        schema:
+          type: string
+      - description: Filter used for searching for computers with the given automaticUpdates
+          state.
+        in: query
+        name: automaticUpdates
+        required: false
+        schema:
+          type: string
+      - description: Filter used for searching for computers with the given virusProtection
+          state.
+        in: query
+        name: virusProtection
+        required: false
+        schema:
+          type: string
+      - description: Filter used for searching for computers with the given softwareUpdates
+          state.
+        in: query
+        name: softwareUpdates
+        required: false
+        schema:
+          type: string
+      - description: Filter used for searching for computers with the given subscription
+          key.
+        in: query
+        name: subscriptionKey
+        required: false
+        schema:
+          type: string
+      - description: Filter used for searching for computers with the given label
+          value.
+        in: query
+        name: label
+        required: false
+        schema:
+          type: string
+      - description: Filter used for searching for computers with the given firewall
+          state.
+        in: query
+        name: firewall
+        required: false
+        schema:
+          type: string
+      - description: Filter used for searching for computers with the given real-time
+          scanning state.
+        in: query
+        name: realTimeScanning
+        required: false
+        schema:
+          type: string
+      - description: Filter used for searching for computers with the given application
+          control state.
+        in: query
+        name: applicationControl
+        required: false
+        schema:
+          type: string
+      - description: Filter used for searching for computers with the given client
+          type.
+        in: query
+        name: clientType
+        required: false
+        schema:
+          type: string
+      - description: Filter used for searching for computers applicable for given
+          profile type.
+        in: query
+        name: profileType
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: sort
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: order
+        required: false
+        schema:
+          type: string
+      - description: Search term.
+        in: query
+        name: q
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: partnerId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: List partner computers
+  /partners/{partnerId}/infections:
+    get:
+      description: List found infections for a partner with the given ID.
+      operationId: List_found_infections_for_a_partner
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: sort
+        required: false
+        schema:
+          type: string
+      - description: The earliest timestamp of the infections (aka Client Date) that
+          should be returned
+        in: query
+        name: from
+        required: false
+        schema:
+          type: string
+      - description: The latest timestamp of the infections (aka Client Date) that
+          should be retuned
+        in: query
+        name: to
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: partnerId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: List found infections for a partner
+  /partners/{partnerId}/reports/computers:
+    get:
+      description: Provides information in CSV format on the computers managed by
+        the given partner.
+      operationId: Get_partner_computers_report
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: partnerId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Get partner computers report
+  /partners/{partnerId}/subscriptions:
+    get:
+      description: List subscriptions that that match the search criteria.
+      operationId: List_partner_subscriptions
+      parameters:
+      - description: Filter used for searching subscriptions with 'expirationTimestamp'
+          matching a specific time period.
+        in: query
+        name: expiration
+        required: false
+        schema:
+          type: string
+      - description: Filters by product type
+        in: query
+        name: products
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: query
+        name: sort
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: partnerId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: List partner subscriptions
+  /partners/{partnerId}/subscriptions/{subscriptionId}:
+    get:
+      description: Retrieve subscription information by the given ID.
+      operationId: Get_partner_subscription_details
+      parameters:
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: subscriptionId
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: Get partner subscription details
+  /partners/{partnerUuid}/security-events:
+    get:
+      description: List security events for a partner with the given ID.
+      operationId: List_security_events_for_a_partner
+      parameters:
+      - description: Value pointing to the beginning of the events page to be fetched.
+        in: query
+        name: cursor
+        required: false
+        schema:
+          type: string
+      - description: Severity of event.
+        in: query
+        name: severity
+        required: false
+        schema:
+          type: string
+      - description: Engine that triggered an event.
+        in: query
+        name: engine
+        required: false
+        schema:
+          type: string
+      - description: Device's agentId, e.g. 35a6fbca-acc8-11eb-8529-0242ac130003
+        in: query
+        name: agentId
+        required: false
+        schema:
+          type: string
+      - description: Id of an event (unique).
+        in: query
+        name: eventId
+        required: false
+        schema:
+          type: string
+      - description: Generated by shuffler.io OpenAPI
+        in: path
+        name: partnerUuid
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content: {}
+      responses:
+        default:
+          content:
+            text/plain:
+              schema:
+                example: ''
+                type: string
+          description: default
+      summary: List security events for a partner
+schemes:
+- 'https:'
+servers:
+- url: https://psblive.psb-stg.fsapi.com/mp/v1
 tags:
-  - name: authentication
-  - name: companies
-  - name: subscriptions
-  - name: computers
-  - name: infections
-  - name: security events
+- name: authentication
+- name: companies
+- name: subscriptions
+- name: computers
+- name: infections
+- name: security events
