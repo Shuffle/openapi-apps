@@ -28,7 +28,7 @@ info:
     \    \"error\": 0\n}\n```\nUse the token from previous response to perform any\
     \ endpoint request:\n\n`curl -k -X <METHOD> \"https://<HOST_IP>:55000/<ENDPOINT>\"\
     \ -H  \"Authorization: Bearer <YOUR_JWT_TOKEN>\"`\n\n<SecurityDefinitions />\n"
-  title: Wazuh OpenAPI
+  title: Wazuh
   version: '1.0'
   x-categories:
   - SIEM
