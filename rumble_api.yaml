@@ -1,0 +1,3138 @@
+openapi: 3.0.0
+info:
+  title: Rumble 
+  description: Rumble Network Discovery API from
+    https://app.swaggerhub.com/apis-docs/RumbleDiscovery/Rumble/2.0.3#/Organization/getOrganization
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact:
+    email: support@rumble.run
+  x-categories:
+    - Assets
+servers:
+  - url: https://console.rumble.run/api/v1.0
+host: console.rumble.run
+basePath: /api/v1.0
+schemes:
+  - "https:"
+paths:
+  /account/agents:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get all agents across all organizations
+      operationId: Get_all_agents_across_all_organizations
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /account/credentials:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get all account credentials
+      operationId: Get_all_account_credentials
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "acl": [],
+                    "cidrs": [],
+                    "client_id": "",
+                    "created_at": 0,
+                    "created_by_email": "",
+                    "created_by_id": "",
+                    "global": [],
+                    "id": "",
+                    "last_used_at": 0,
+                    "last_used_by_id": "",
+                    "name": "",
+                    "type": "The service the credentials are for."
+                  }
+      summary: Create a new credential
+      operationId: Create_a_new_credential
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "acl": "${acl}",
+              "cidrs": "${cidrs}",
+              "global": "${global}",
+              "name": "${name}",
+              "secret": "${secret}",
+              "type": "${type}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "acl": "${acl}",
+                "cidrs": "${cidrs}",
+                "global": "${global}",
+                "name": "${name}",
+                "secret": "${secret}",
+                "type": "${type}"
+              }
+  "/account/credentials/{credential_id}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove this credential
+      operationId: Remove_this_credential
+      parameters:
+        - in: path
+          name: credential_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "acl": [],
+                    "cidrs": [],
+                    "client_id": "",
+                    "created_at": 0,
+                    "created_by_email": "",
+                    "created_by_id": "",
+                    "global": [],
+                    "id": "",
+                    "last_used_at": 0,
+                    "last_used_by_id": "",
+                    "name": "",
+                    "type": "The service the credentials are for."
+                  }
+      summary: Get credential details
+      operationId: Get_credential_details
+      parameters:
+        - in: path
+          name: credential_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /account/events.json:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: System event log as JSON
+      operationId: System_event_log_as_JSON
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: an optional list of fields to export, comma-separated
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /account/events.jsonl:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: System event log as JSON linedelimited
+      operationId: System_event_log_as_JSON_linedelimited
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: an optional list of fields to export, comma-separated
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /account/keys:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get all active API keys
+      operationId: Get_all_active_API_keys
+      parameters: []
+      requestBody:
+        content: {}
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "client_id": "",
+                    "comment": "",
+                    "counter": 0,
+                    "created_at": 0,
+                    "created_by": "",
+                    "id": "",
+                    "inactive": [],
+                    "last_used_at": 0,
+                    "last_used_ip": "",
+                    "last_used_ua": "",
+                    "organization_id": "",
+                    "token": "",
+                    "type": "",
+                    "usage_limit": 0,
+                    "usage_today": 0
+                  }
+      summary: Create a new key
+      operationId: Create_a_new_key
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "comment": "${comment}",
+              "organization_id": "${organization_id}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "comment": "${comment}",
+                "organization_id": "${organization_id}"
+              }
+  "/account/keys/{key_id}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove this key
+      operationId: Remove_this_key
+      parameters:
+        - in: path
+          name: key_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get key details
+      operationId: Get_key_details
+      parameters:
+        - in: path
+          name: key_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/account/keys/{key_id}/rotate":
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "client_id": "",
+                    "comment": "",
+                    "counter": 0,
+                    "created_at": 0,
+                    "created_by": "",
+                    "id": "",
+                    "inactive": [],
+                    "last_used_at": 0,
+                    "last_used_ip": "",
+                    "last_used_ua": "",
+                    "organization_id": "",
+                    "token": "",
+                    "type": "",
+                    "usage_limit": 0,
+                    "usage_today": 0
+                  }
+      summary: Rotates the key secret
+      operationId: Rotates_the_key_secret
+      parameters:
+        - in: path
+          name: key_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /account/license:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get license details
+      operationId: Get_license_details
+      parameters: []
+      requestBody:
+        content: {}
+  /account/orgs:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get all organization details
+      operationId: Get_all_organization_details
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "asset_count": 0,
+                    "client_id": "",
+                    "created_at": 0,
+                    "deactivated_at": 0,
+                    "description": "",
+                    "download_token": "",
+                    "download_token_created_at": 0,
+                    "expiration_assets_offline": 0,
+                    "expiration_assets_stale": 0,
+                    "expiration_scans": 0,
+                    "export_token": "",
+                    "export_token_counter": 0,
+                    "export_token_created_at": 0,
+                    "export_token_last_used_at": 0,
+                    "export_token_last_used_by": "",
+                    "id": "",
+                    "inactive": [],
+                    "name": "",
+                    "parent_id": "",
+                    "permanent": [],
+                    "project": [],
+                    "service_count": 0,
+                    "service_count_arp": 0,
+                    "service_count_icmp": 0,
+                    "service_count_tcp": 0,
+                    "service_count_udp": 0,
+                    "updated_at": 0
+                  }
+      summary: Create a new organization
+      operationId: Create_a_new_organization
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "description": "${description}",
+              "expiration_assets_offline": "${expiration_assets_offline}",
+              "expiration_assets_stale": "${expiration_assets_stale}",
+              "expiration_scans": "${expiration_scans}",
+              "export_token": "${export_token}",
+              "name": "${name}",
+              "parent_id": "${parent_id}",
+              "project": "${project}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "description": "${description}",
+                "expiration_assets_offline": "${expiration_assets_offline}",
+                "expiration_assets_stale": "${expiration_assets_stale}",
+                "expiration_scans": "${expiration_scans}",
+                "export_token": "${export_token}",
+                "name": "${name}",
+                "parent_id": "${parent_id}",
+                "project": "${project}"
+              }
+  "/account/orgs/{org_id}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove this organization
+      operationId: Remove_this_organization
+      parameters:
+        - in: path
+          name: org_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get organization details
+      operationId: Get_organization_details
+      parameters:
+        - in: path
+          name: org_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "asset_count": 0,
+                    "client_id": "",
+                    "created_at": 0,
+                    "deactivated_at": 0,
+                    "description": "",
+                    "download_token": "",
+                    "download_token_created_at": 0,
+                    "expiration_assets_offline": 0,
+                    "expiration_assets_stale": 0,
+                    "expiration_scans": 0,
+                    "export_token": "",
+                    "export_token_counter": 0,
+                    "export_token_created_at": 0,
+                    "export_token_last_used_at": 0,
+                    "export_token_last_used_by": "",
+                    "id": "",
+                    "inactive": [],
+                    "name": "",
+                    "parent_id": "",
+                    "permanent": [],
+                    "project": [],
+                    "service_count": 0,
+                    "service_count_arp": 0,
+                    "service_count_icmp": 0,
+                    "service_count_tcp": 0,
+                    "service_count_udp": 0,
+                    "updated_at": 0
+                  }
+      summary: Update organization details
+      operationId: Update_organization_details
+      parameters:
+        - in: path
+          name: org_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "description": "${description}",
+              "expiration_assets_offline": "${expiration_assets_offline}",
+              "expiration_assets_stale": "${expiration_assets_stale}",
+              "expiration_scans": "${expiration_scans}",
+              "export_token": "${export_token}",
+              "name": "${name}",
+              "parent_id": "${parent_id}",
+              "project": "${project}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "description": "${description}",
+                "expiration_assets_offline": "${expiration_assets_offline}",
+                "expiration_assets_stale": "${expiration_assets_stale}",
+                "expiration_scans": "${expiration_scans}",
+                "export_token": "${export_token}",
+                "name": "${name}",
+                "parent_id": "${parent_id}",
+                "project": "${project}"
+              }
+  "/account/orgs/{org_id}/exportToken":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Removes the export token from the specified organization
+      operationId: Removes_the_export_token_from_the_specified_organization
+      parameters:
+        - in: path
+          name: org_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/account/orgs/{org_id}/exportToken/rotate":
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "asset_count": 0,
+                    "client_id": "",
+                    "created_at": 0,
+                    "deactivated_at": 0,
+                    "description": "",
+                    "download_token": "",
+                    "download_token_created_at": 0,
+                    "expiration_assets_offline": 0,
+                    "expiration_assets_stale": 0,
+                    "expiration_scans": 0,
+                    "export_token": "",
+                    "export_token_counter": 0,
+                    "export_token_created_at": 0,
+                    "export_token_last_used_at": 0,
+                    "export_token_last_used_by": "",
+                    "id": "",
+                    "inactive": [],
+                    "name": "",
+                    "parent_id": "",
+                    "permanent": [],
+                    "project": [],
+                    "service_count": 0,
+                    "service_count_arp": 0,
+                    "service_count_icmp": 0,
+                    "service_count_tcp": 0,
+                    "service_count_udp": 0,
+                    "updated_at": 0
+                  }
+      summary: Rotates the organization export token and returns the updated
+        organization
+      operationId: Rotates_the_organization_export_token_and_returns_the_updated_organization
+      parameters:
+        - in: path
+          name: org_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /account/sites:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get all sites details across all organizations
+      operationId: Get_all_sites_details_across_all_organizations
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /account/tasks:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get all task details across all organizations up to 1000
+      operationId: Get_all_task_details_across_all_organizations_up_to_1000
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /account/users:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get all users
+      operationId: Get_all_users
+      parameters: []
+      requestBody:
+        content: {}
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "client_admin": [],
+                    "client_id": "",
+                    "created_at": 0,
+                    "email": "",
+                    "first_name": "",
+                    "id": "",
+                    "invite_token_expiration": 0,
+                    "last_login_at": 0,
+                    "last_login_ip": "",
+                    "last_login_ua": "",
+                    "last_name": "",
+                    "login_failures": 0,
+                    "org_default_role": "",
+                    "org_roles": [],
+                    "reset_token_expiration": 0,
+                    "sso_only": [],
+                    "updated_at": 0
+                  }
+      summary: Create a new user account
+      operationId: Create_a_new_user_account
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "client_admin": "${client_admin}",
+              "email": "${email}",
+              "first_name": "${first_name}",
+              "last_name": "${last_name}",
+              "org_default_role": "${org_default_role}",
+              "org_roles": "${org_roles}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "client_admin": "${client_admin}",
+                "email": "${email}",
+                "first_name": "${first_name}",
+                "last_name": "${last_name}",
+                "org_default_role": "${org_default_role}",
+                "org_roles": "${org_roles}"
+              }
+  /account/users/invite:
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "client_admin": [],
+                    "client_id": "",
+                    "created_at": 0,
+                    "email": "",
+                    "first_name": "",
+                    "id": "",
+                    "invite_token_expiration": 0,
+                    "last_login_at": 0,
+                    "last_login_ip": "",
+                    "last_login_ua": "",
+                    "last_name": "",
+                    "login_failures": 0,
+                    "org_default_role": "",
+                    "org_roles": [],
+                    "reset_token_expiration": 0,
+                    "sso_only": [],
+                    "updated_at": 0
+                  }
+      summary: Create a new user account and send an email invite
+      operationId: Create_a_new_user_account_and_send_an_email_invite
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "client_admin": "${client_admin}",
+              "email": "${email}",
+              "first_name": "${first_name}",
+              "last_name": "${last_name}",
+              "message": "${message}",
+              "org_default_role": "${org_default_role}",
+              "org_roles": "${org_roles}",
+              "subject": "${subject}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "client_admin": "${client_admin}",
+                "email": "${email}",
+                "first_name": "${first_name}",
+                "last_name": "${last_name}",
+                "message": "${message}",
+                "org_default_role": "${org_default_role}",
+                "org_roles": "${org_roles}",
+                "subject": "${subject}"
+              }
+  "/account/users/{user_id}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove this user
+      operationId: Remove_this_user
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get user details
+      operationId: Get_user_details
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update a users details
+      operationId: Update_a_users_details
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "client_admin": "${client_admin}",
+              "email": "${email}",
+              "first_name": "${first_name}",
+              "last_name": "${last_name}",
+              "org_default_role": "${org_default_role}",
+              "org_roles": "${org_roles}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "client_admin": "${client_admin}",
+                "email": "${email}",
+                "first_name": "${first_name}",
+                "last_name": "${last_name}",
+                "org_default_role": "${org_default_role}",
+                "org_roles": "${org_roles}"
+              }
+  "/account/users/{user_id}/resetLockout":
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Resets the users lockout status
+      operationId: Resets_the_users_lockout_status
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/account/users/{user_id}/resetMFA":
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Resets the users MFA tokens
+      operationId: Resets_the_users_MFA_tokens
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/account/users/{user_id}/resetPassword":
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sends the user a password reset email
+      operationId: Sends_the_user_a_password_reset_email
+      parameters:
+        - in: path
+          name: user_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /export/org/assets.cisco.csv:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Cisco serial number and model name export for Cisco Smart Net Total
+        Care Service
+      operationId: Cisco_serial_number_and_model_name_export_for_Cisco_Smart_Net_Total_Care_Service
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /export/org/assets.csv:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Asset inventory as CSV
+      operationId: Asset_inventory_as_CSV
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /export/org/assets.json:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Exports the asset inventory
+      operationId: Exports_the_asset_inventory
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: an optional list of fields to export, comma-separated
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /export/org/assets.jsonl:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Asset inventory as JSON linedelimited
+      operationId: Asset_inventory_as_JSON_linedelimited
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: an optional list of fields to export, comma-separated
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /export/org/assets.nmap.xml:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Asset inventory as Nmapstyle XML
+      operationId: Asset_inventory_as_Nmapstyle_XML
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /export/org/assets.servicenow.csv:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Export an asset inventory as CSV for ServiceNow integration
+      operationId: Export_an_asset_inventory_as_CSV_for_ServiceNow_integration
+      parameters: []
+      requestBody:
+        content: {}
+  /export/org/assets.servicenow.json:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Exports the asset inventory as JSON
+      operationId: Exports_the_asset_inventory_as_JSON
+      parameters: []
+      requestBody:
+        content: {}
+  /export/org/assets/sync/created/assets.json:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "assets": [],
+                    "since": 0
+                  }
+      summary: Exports the asset inventory in a syncfriendly manner using created_at
+        as a checkpoint Requires the Splunk entitlement
+      operationId: Exports_the_asset_inventory_in_a_syncfriendly_manner_using_created_at_as_a_checkpoint_Requires_the_Splunk_entitlement
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: an optional list of fields to export, comma-separated
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: since
+          description: an optional unix timestamp to use as a checkpoint
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /export/org/assets/sync/updated/assets.json:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "assets": [],
+                    "since": 0
+                  }
+      summary: Exports the asset inventory in a syncfriendly manner using updated_at
+        as a checkpoint Requires the Splunk entitlement
+      operationId: Exports_the_asset_inventory_in_a_syncfriendly_manner_using_updated_at_as_a_checkpoint_Requires_the_Splunk_entitlement
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: an optional list of fields to export, comma-separated
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: since
+          description: an optional unix timestamp to use as a checkpoint
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /export/org/services.csv:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Service inventory as CSV
+      operationId: Service_inventory_as_CSV
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /export/org/services.json:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Service inventory as JSON
+      operationId: Service_inventory_as_JSON
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: an optional list of fields to export, comma-separated
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /export/org/services.jsonl:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Service inventory as JSON linedelimited
+      operationId: Service_inventory_as_JSON_linedelimited
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: an optional list of fields to export, comma-separated
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /export/org/services.servicenow.csv:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Export a service inventory as CSV for ServiceNow integration
+      operationId: Export_a_service_inventory_as_CSV_for_ServiceNow_integration
+      parameters: []
+      requestBody:
+        content: {}
+  /export/org/sites.csv:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Site list as CSV
+      operationId: Site_list_as_CSV
+      parameters: []
+      requestBody:
+        content: {}
+  /export/org/sites.json:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Export all sites
+      operationId: Export_all_sites
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: an optional list of fields to export, comma-separated
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /export/org/sites.jsonl:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Site list as JSON linedelimited
+      operationId: Site_list_as_JSON_linedelimited
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: an optional list of fields to export, comma-separated
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /export/org/wireless.csv:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Wireless inventory as CSV
+      operationId: Wireless_inventory_as_CSV
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /export/org/wireless.json:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Wireless inventory as JSON
+      operationId: Wireless_inventory_as_JSON
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: an optional list of fields to export, comma-separated
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /export/org/wireless.jsonl:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Wireless inventory as JSON linedelimited
+      operationId: Wireless_inventory_as_JSON_linedelimited
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fields
+          description: an optional list of fields to export, comma-separated
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /org:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "asset_count": 0,
+                    "client_id": "",
+                    "created_at": 0,
+                    "deactivated_at": 0,
+                    "description": "",
+                    "download_token": "",
+                    "download_token_created_at": 0,
+                    "expiration_assets_offline": 0,
+                    "expiration_assets_stale": 0,
+                    "expiration_scans": 0,
+                    "export_token": "",
+                    "export_token_counter": 0,
+                    "export_token_created_at": 0,
+                    "export_token_last_used_at": 0,
+                    "export_token_last_used_by": "",
+                    "id": "",
+                    "inactive": [],
+                    "name": "",
+                    "parent_id": "",
+                    "permanent": [],
+                    "project": [],
+                    "service_count": 0,
+                    "service_count_arp": 0,
+                    "service_count_icmp": 0,
+                    "service_count_tcp": 0,
+                    "service_count_udp": 0,
+                    "updated_at": 0
+                  }
+      summary: Get organization details
+      operationId: Get_organization_details
+      parameters: []
+      requestBody:
+        content: {}
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "asset_count": 0,
+                    "client_id": "",
+                    "created_at": 0,
+                    "deactivated_at": 0,
+                    "description": "",
+                    "download_token": "",
+                    "download_token_created_at": 0,
+                    "expiration_assets_offline": 0,
+                    "expiration_assets_stale": 0,
+                    "expiration_scans": 0,
+                    "export_token": "",
+                    "export_token_counter": 0,
+                    "export_token_created_at": 0,
+                    "export_token_last_used_at": 0,
+                    "export_token_last_used_by": "",
+                    "id": "",
+                    "inactive": [],
+                    "name": "",
+                    "parent_id": "",
+                    "permanent": [],
+                    "project": [],
+                    "service_count": 0,
+                    "service_count_arp": 0,
+                    "service_count_icmp": 0,
+                    "service_count_tcp": 0,
+                    "service_count_udp": 0,
+                    "updated_at": 0
+                  }
+      summary: Update organization details
+      operationId: Update_organization_details
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "description": "${description}",
+              "expiration_assets_offline": "${expiration_assets_offline}",
+              "expiration_assets_stale": "${expiration_assets_stale}",
+              "expiration_scans": "${expiration_scans}",
+              "export_token": "${export_token}",
+              "name": "${name}",
+              "parent_id": "${parent_id}",
+              "project": "${project}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "description": "${description}",
+                "expiration_assets_offline": "${expiration_assets_offline}",
+                "expiration_assets_stale": "${expiration_assets_stale}",
+                "expiration_scans": "${expiration_scans}",
+                "export_token": "${export_token}",
+                "name": "${name}",
+                "parent_id": "${parent_id}",
+                "project": "${project}"
+              }
+  /org/agents:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get all agents
+      operationId: Get_all_agents
+      parameters: []
+      requestBody:
+        content: {}
+  "/org/agents/{agent_id}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove and uninstall an agent
+      operationId: Remove_and_uninstall_an_agent
+      parameters:
+        - in: path
+          name: agent_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "arch": "",
+                    "client_id": "",
+                    "connected": [],
+                    "created_at": 0,
+                    "deactivated_at": 0,
+                    "external_ip": "",
+                    "host_id": "",
+                    "hub_id": "",
+                    "id": "",
+                    "inactive": [],
+                    "internal_ip": "",
+                    "last_checkin": 0,
+                    "name": "",
+                    "organization_id": "",
+                    "os": "",
+                    "site_id": "",
+                    "system_info": [],
+                    "updated_at": 0,
+                    "version": ""
+                  }
+      summary: Get details for a single agent
+      operationId: Get_details_for_a_single_agent
+      parameters:
+        - in: path
+          name: agent_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "arch": "",
+                    "client_id": "",
+                    "connected": [],
+                    "created_at": 0,
+                    "deactivated_at": 0,
+                    "external_ip": "",
+                    "host_id": "",
+                    "hub_id": "",
+                    "id": "",
+                    "inactive": [],
+                    "internal_ip": "",
+                    "last_checkin": 0,
+                    "name": "",
+                    "organization_id": "",
+                    "os": "",
+                    "site_id": "",
+                    "system_info": [],
+                    "updated_at": 0,
+                    "version": ""
+                  }
+      summary: Update the site associated with agent
+      operationId: Update_the_site_associated_with_agent
+      parameters:
+        - in: path
+          name: agent_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "site_id": "${site_id}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "site_id": "${site_id}"
+              }
+  "/org/agents/{agent_id}/update":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Force an agent to update and restart
+      operationId: Force_an_agent_to_update_and_restart
+      parameters:
+        - in: path
+          name: agent_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /org/assets:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get all assets
+      operationId: Get_all_assets
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/org/assets/{asset_id}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove an asset
+      operationId: Remove_an_asset
+      parameters:
+        - in: path
+          name: asset_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "addresses": [],
+                    "addresses_extra": [],
+                    "agent_name": "",
+                    "alive": [],
+                    "attributes": [],
+                    "comments": "",
+                    "created_at": 0,
+                    "credentials": [],
+                    "detected_by": "",
+                    "domains": [],
+                    "first_seen": 0,
+                    "hw": "",
+                    "id": "",
+                    "last_agent_id": "",
+                    "last_seen": 0,
+                    "last_task_id": "",
+                    "lowest_rtt": 0,
+                    "lowest_ttl": 0,
+                    "mac_vendors": [],
+                    "macs": [],
+                    "names": [],
+                    "newest_mac": "",
+                    "newest_mac_age": 0,
+                    "newest_mac_vendor": "",
+                    "org_name": "",
+                    "organization_id": "",
+                    "os": "",
+                    "os_version": "",
+                    "rtts": [],
+                    "service_count": 0,
+                    "service_count_arp": 0,
+                    "service_count_icmp": 0,
+                    "service_count_tcp": 0,
+                    "service_count_udp": 0,
+                    "service_ports_products": [],
+                    "service_ports_protocols": [],
+                    "service_ports_tcp": [],
+                    "service_ports_udp": [],
+                    "services": [],
+                    "site_id": "",
+                    "site_name": "",
+                    "tags": [],
+                    "type": "",
+                    "updated_at": 0
+                  }
+      summary: Get asset details
+      operationId: Get_asset_details
+      parameters:
+        - in: path
+          name: asset_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/org/assets/{asset_id}/comments":
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "addresses": [],
+                    "addresses_extra": [],
+                    "agent_name": "",
+                    "alive": [],
+                    "attributes": [],
+                    "comments": "",
+                    "created_at": 0,
+                    "credentials": [],
+                    "detected_by": "",
+                    "domains": [],
+                    "first_seen": 0,
+                    "hw": "",
+                    "id": "",
+                    "last_agent_id": "",
+                    "last_seen": 0,
+                    "last_task_id": "",
+                    "lowest_rtt": 0,
+                    "lowest_ttl": 0,
+                    "mac_vendors": [],
+                    "macs": [],
+                    "names": [],
+                    "newest_mac": "",
+                    "newest_mac_age": 0,
+                    "newest_mac_vendor": "",
+                    "org_name": "",
+                    "organization_id": "",
+                    "os": "",
+                    "os_version": "",
+                    "rtts": [],
+                    "service_count": 0,
+                    "service_count_arp": 0,
+                    "service_count_icmp": 0,
+                    "service_count_tcp": 0,
+                    "service_count_udp": 0,
+                    "service_ports_products": [],
+                    "service_ports_protocols": [],
+                    "service_ports_tcp": [],
+                    "service_ports_udp": [],
+                    "services": [],
+                    "site_id": "",
+                    "site_name": "",
+                    "tags": [],
+                    "type": "",
+                    "updated_at": 0
+                  }
+      summary: Update asset comments
+      operationId: Update_asset_comments
+      parameters:
+        - in: path
+          name: asset_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "comments": "${comments}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "comments": "${comments}"
+              }
+  "/org/assets/{asset_id}/tags":
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "addresses": [],
+                    "addresses_extra": [],
+                    "agent_name": "",
+                    "alive": [],
+                    "attributes": [],
+                    "comments": "",
+                    "created_at": 0,
+                    "credentials": [],
+                    "detected_by": "",
+                    "domains": [],
+                    "first_seen": 0,
+                    "hw": "",
+                    "id": "",
+                    "last_agent_id": "",
+                    "last_seen": 0,
+                    "last_task_id": "",
+                    "lowest_rtt": 0,
+                    "lowest_ttl": 0,
+                    "mac_vendors": [],
+                    "macs": [],
+                    "names": [],
+                    "newest_mac": "",
+                    "newest_mac_age": 0,
+                    "newest_mac_vendor": "",
+                    "org_name": "",
+                    "organization_id": "",
+                    "os": "",
+                    "os_version": "",
+                    "rtts": [],
+                    "service_count": 0,
+                    "service_count_arp": 0,
+                    "service_count_icmp": 0,
+                    "service_count_tcp": 0,
+                    "service_count_udp": 0,
+                    "service_ports_products": [],
+                    "service_ports_protocols": [],
+                    "service_ports_tcp": [],
+                    "service_ports_udp": [],
+                    "services": [],
+                    "site_id": "",
+                    "site_name": "",
+                    "tags": [],
+                    "type": "",
+                    "updated_at": 0
+                  }
+      summary: Update asset tags
+      operationId: Update_asset_tags
+      parameters:
+        - in: path
+          name: asset_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "tags": "${tags}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "tags": "${tags}"
+              }
+  /org/key:
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove the current API key
+      operationId: Remove_the_current_API_key
+      parameters: []
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "client_id": "",
+                    "comment": "",
+                    "counter": 0,
+                    "created_at": 0,
+                    "created_by": "",
+                    "id": "",
+                    "inactive": [],
+                    "last_used_at": 0,
+                    "last_used_ip": "",
+                    "last_used_ua": "",
+                    "organization_id": "",
+                    "token": "",
+                    "type": "",
+                    "usage_limit": 0,
+                    "usage_today": 0
+                  }
+      summary: Get API key details
+      operationId: Get_API_key_details
+      parameters: []
+      requestBody:
+        content: {}
+  /org/key/rotate:
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "client_id": "",
+                    "comment": "",
+                    "counter": 0,
+                    "created_at": 0,
+                    "created_by": "",
+                    "id": "",
+                    "inactive": [],
+                    "last_used_at": 0,
+                    "last_used_ip": "",
+                    "last_used_ua": "",
+                    "organization_id": "",
+                    "token": "",
+                    "type": "",
+                    "usage_limit": 0,
+                    "usage_today": 0
+                  }
+      summary: Rotate the API key secret and return the updated key
+      operationId: Rotate_the_API_key_secret_and_return_the_updated_key
+      parameters: []
+      requestBody:
+        content: {}
+  /org/services:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get all services
+      operationId: Get_all_services
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/org/services/{service_id}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove a service
+      operationId: Remove_a_service
+      parameters:
+        - in: path
+          name: service_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "addresses": [],
+                    "addresses_extra": [],
+                    "agent_name": "",
+                    "alive": [],
+                    "attributes": [],
+                    "comments": "",
+                    "created_at": 0,
+                    "credentials": [],
+                    "detected_by": "",
+                    "domains": [],
+                    "first_seen": 0,
+                    "hw": "",
+                    "id": "",
+                    "last_agent_id": "",
+                    "last_seen": 0,
+                    "last_task_id": "",
+                    "lowest_rtt": 0,
+                    "lowest_ttl": 0,
+                    "mac_vendors": [],
+                    "macs": [],
+                    "names": [],
+                    "newest_mac": "",
+                    "newest_mac_age": 0,
+                    "newest_mac_vendor": "",
+                    "org_name": "",
+                    "organization_id": "",
+                    "os": "",
+                    "os_version": "",
+                    "rtts": [],
+                    "service_address": "",
+                    "service_asset_id": "",
+                    "service_count": 0,
+                    "service_count_arp": 0,
+                    "service_count_icmp": 0,
+                    "service_count_tcp": 0,
+                    "service_count_udp": 0,
+                    "service_created_at": 0,
+                    "service_data": [],
+                    "service_id": "",
+                    "service_link": "",
+                    "service_port": "",
+                    "service_ports_products": [],
+                    "service_ports_protocols": [],
+                    "service_ports_tcp": [],
+                    "service_ports_udp": [],
+                    "service_protocol": "",
+                    "service_screenshot_link": "",
+                    "service_summary": "",
+                    "service_transport": "",
+                    "service_updated_at": 0,
+                    "service_vhost": "",
+                    "services": [],
+                    "site_id": "",
+                    "site_name": "",
+                    "tags": [],
+                    "type": "",
+                    "updated_at": 0
+                  }
+      summary: Get service details
+      operationId: Get_service_details
+      parameters:
+        - in: path
+          name: service_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /org/sites:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get all sites
+      operationId: Get_all_sites
+      parameters: []
+      requestBody:
+        content: {}
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "created_at": 0,
+                    "description": "",
+                    "excludes": "",
+                    "id": "",
+                    "name": "",
+                    "permanent": [],
+                    "scope": "",
+                    "updated_at": 0
+                  }
+      summary: Create a new site
+      operationId: Create_a_new_site
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "description": "${description}",
+              "excludes": "${excludes}",
+              "name": "${name}",
+              "scope": "${scope}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "description": "${description}",
+                "excludes": "${excludes}",
+                "name": "${name}",
+                "scope": "${scope}"
+              }
+  "/org/sites/{site_id}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove a site and associated assets
+      operationId: Remove_a_site_and_associated_assets
+      parameters:
+        - in: path
+          name: site_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "created_at": 0,
+                    "description": "",
+                    "excludes": "",
+                    "id": "",
+                    "name": "",
+                    "permanent": [],
+                    "scope": "",
+                    "updated_at": 0
+                  }
+      summary: Get site details
+      operationId: Get_site_details
+      parameters:
+        - in: path
+          name: site_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "created_at": 0,
+                    "description": "",
+                    "excludes": "",
+                    "id": "",
+                    "name": "",
+                    "permanent": [],
+                    "scope": "",
+                    "updated_at": 0
+                  }
+      summary: Update a site definition
+      operationId: Update_a_site_definition
+      parameters:
+        - in: path
+          name: site_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "description": "${description}",
+              "excludes": "${excludes}",
+              "name": "${name}",
+              "scope": "${scope}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "description": "${description}",
+                "excludes": "${excludes}",
+                "name": "${name}",
+                "scope": "${scope}"
+              }
+  "/org/sites/{site_id}/import":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "agent_id": "",
+                    "client_id": "",
+                    "created_at": 0,
+                    "created_by": "",
+                    "created_by_user_id": "",
+                    "cruncher_id": "",
+                    "description": "",
+                    "error": "",
+                    "hidden": [],
+                    "id": "",
+                    "name": "",
+                    "organization_id": "",
+                    "params": [],
+                    "parent_id": "",
+                    "recur": [],
+                    "recur_frequency": "",
+                    "recur_last": 0,
+                    "recur_last_task_id": "",
+                    "recur_next": 0,
+                    "site_id": "",
+                    "start_time": 0,
+                    "stats": [],
+                    "status": "",
+                    "type": "",
+                    "updated_at": 0
+                  }
+      summary: Import a scan data file into a site
+      operationId: Import_a_scan_data_file_into_a_site
+      parameters:
+        - in: path
+          name: site_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/org/sites/{site_id}/scan":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "agent_id": "",
+                    "client_id": "",
+                    "created_at": 0,
+                    "created_by": "",
+                    "created_by_user_id": "",
+                    "cruncher_id": "",
+                    "description": "",
+                    "error": "",
+                    "hidden": [],
+                    "id": "",
+                    "name": "",
+                    "organization_id": "",
+                    "params": [],
+                    "parent_id": "",
+                    "recur": [],
+                    "recur_frequency": "",
+                    "recur_last": 0,
+                    "recur_last_task_id": "",
+                    "recur_next": 0,
+                    "site_id": "",
+                    "start_time": 0,
+                    "stats": [],
+                    "status": "",
+                    "type": "",
+                    "updated_at": 0
+                  }
+      summary: Create a scan task for a given site
+      operationId: Create_a_scan_task_for_a_given_site
+      parameters:
+        - in: path
+          name: site_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /org/tasks:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get all tasks last 1000
+      operationId: Get_all_tasks_last_1000
+      parameters:
+        - in: query
+          name: status
+          description: an optional status string for filtering results
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/org/tasks/{task_id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "agent_id": "",
+                    "client_id": "",
+                    "created_at": 0,
+                    "created_by": "",
+                    "created_by_user_id": "",
+                    "cruncher_id": "",
+                    "description": "",
+                    "error": "",
+                    "hidden": [],
+                    "id": "",
+                    "name": "",
+                    "organization_id": "",
+                    "params": [],
+                    "parent_id": "",
+                    "recur": [],
+                    "recur_frequency": "",
+                    "recur_last": 0,
+                    "recur_last_task_id": "",
+                    "recur_next": 0,
+                    "site_id": "",
+                    "start_time": 0,
+                    "stats": [],
+                    "status": "",
+                    "type": "",
+                    "updated_at": 0
+                  }
+      summary: Get task details
+      operationId: Get_task_details
+      parameters:
+        - in: path
+          name: task_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "agent_id": "",
+                    "client_id": "",
+                    "created_at": 0,
+                    "created_by": "",
+                    "created_by_user_id": "",
+                    "cruncher_id": "",
+                    "description": "",
+                    "error": "",
+                    "hidden": [],
+                    "id": "",
+                    "name": "",
+                    "organization_id": "",
+                    "params": [],
+                    "parent_id": "",
+                    "recur": [],
+                    "recur_frequency": "",
+                    "recur_last": 0,
+                    "recur_last_task_id": "",
+                    "recur_next": 0,
+                    "site_id": "",
+                    "start_time": 0,
+                    "stats": [],
+                    "status": "",
+                    "type": "",
+                    "updated_at": 0
+                  }
+      summary: Update task parameters
+      operationId: Update_task_parameters
+      parameters:
+        - in: path
+          name: task_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "agent_id": "${agent_id}",
+              "client_id": "${client_id}",
+              "created_at": "${created_at}",
+              "created_by": "${created_by}",
+              "created_by_user_id": "${created_by_user_id}",
+              "cruncher_id": "${cruncher_id}",
+              "description": "${description}",
+              "error": "${error}",
+              "hidden": "${hidden}",
+              "id": "${id}",
+              "name": "${name}",
+              "organization_id": "${organization_id}",
+              "params": "${params}",
+              "parent_id": "${parent_id}",
+              "recur": "${recur}",
+              "recur_frequency": "${recur_frequency}",
+              "recur_last": "${recur_last}",
+              "recur_last_task_id": "${recur_last_task_id}",
+              "recur_next": "${recur_next}",
+              "site_id": "${site_id}",
+              "start_time": "${start_time}",
+              "stats": "${stats}",
+              "status": "${status}",
+              "type": "${type}",
+              "updated_at": "${updated_at}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "agent_id": "${agent_id}",
+                "client_id": "${client_id}",
+                "created_at": "${created_at}",
+                "created_by": "${created_by}",
+                "created_by_user_id": "${created_by_user_id}",
+                "cruncher_id": "${cruncher_id}",
+                "description": "${description}",
+                "error": "${error}",
+                "hidden": "${hidden}",
+                "id": "${id}",
+                "name": "${name}",
+                "organization_id": "${organization_id}",
+                "params": "${params}",
+                "parent_id": "${parent_id}",
+                "recur": "${recur}",
+                "recur_frequency": "${recur_frequency}",
+                "recur_last": "${recur_last}",
+                "recur_last_task_id": "${recur_last_task_id}",
+                "recur_next": "${recur_next}",
+                "site_id": "${site_id}",
+                "start_time": "${start_time}",
+                "stats": "${stats}",
+                "status": "${status}",
+                "type": "${type}",
+                "updated_at": "${updated_at}"
+              }
+  "/org/tasks/{task_id}/changes":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Returns a temporary task change report data url
+      operationId: Returns_a_temporary_task_change_report_data_url
+      parameters:
+        - in: path
+          name: task_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/org/tasks/{task_id}/data":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Returns a temporary task scan data url
+      operationId: Returns_a_temporary_task_scan_data_url
+      parameters:
+        - in: path
+          name: task_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/org/tasks/{task_id}/hide":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Signal that a completed task should be hidden
+      operationId: Signal_that_a_completed_task_should_be_hidden
+      parameters:
+        - in: path
+          name: task_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/org/tasks/{task_id}/stop":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Signal that a task should be stopped or canceledThis will also remove
+        recurring and scheduled tasks
+      operationId: Signal_that_a_task_should_be_stopped_or_canceledThis_will_also_remove_recurring_and_scheduled_tasks
+      parameters:
+        - in: path
+          name: task_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /org/wireless:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get all wireless LANs
+      operationId: Get_all_wireless_LANs
+      parameters:
+        - in: query
+          name: search
+          description: an optional search string for filtering results
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/org/wirelesss/{wireless_id}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove a wireless LAN
+      operationId: Remove_a_wireless_LAN
+      parameters:
+        - in: path
+          name: wireless_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "agent_name": "",
+                    "authentication": "",
+                    "bssid": "",
+                    "channels": "",
+                    "created_at": 0,
+                    "data": [],
+                    "encryption": "",
+                    "essid": "",
+                    "family": "",
+                    "id": "",
+                    "interface": "",
+                    "last_agent_id": "",
+                    "last_seen": 0,
+                    "last_task_id": "",
+                    "org_name": "",
+                    "organization_id": "",
+                    "signal": 0,
+                    "site_id": "",
+                    "site_name": "",
+                    "type": "",
+                    "vendor": ""
+                  }
+      summary: Get wireless LAN details
+      operationId: Get_wireless_LAN_details
+      parameters:
+        - in: path
+          name: wireless_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /releases/agent/version:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "id": "",
+                    "version": ""
+                  }
+      summary: Returns latest agent version
+      operationId: Returns_latest_agent_version
+      parameters: []
+      requestBody:
+        content: {}
+  /releases/platform/version:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "id": "",
+                    "version": ""
+                  }
+      summary: Returns latest platform version
+      operationId: Returns_latest_platform_version
+      parameters: []
+      requestBody:
+        content: {}
+  /releases/scanner/version:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "id": "",
+                    "version": ""
+                  }
+      summary: Returns latest scanner version
+      operationId: Returns_latest_scanner_version
+      parameters: []
+      requestBody:
+        content: {}
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: UUID
+tags:
+  - name: Organization
+  - name: Export
+  - name: Public
+  - name: Network
+  - name: discovery
+  - name: assets
