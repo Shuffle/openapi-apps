@@ -1,0 +1,491 @@
+openapi: 3.0.0
+info:
+  title: Darktrace
+  description: API built based on
+    https://github.com/rfizzle/darktrace/search?q=buildrequest - Lack of
+    documentation. Custom Authentication not available.
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact:
+    name: "@frikkylikeme"
+    url: https://twitter.com/frikkylikeme
+    email: frikky@shuffler.io
+  x-categories:
+    - Intel
+servers:
+  - url: https://darktrace.example.com
+host: darktrace.example.com
+basePath: /
+schemes:
+  - "https:"
+paths:
+  /enums:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Enums
+      operationId: Get_Enums
+      description: ""
+      parameters: []
+      requestBody:
+        content: {}
+  /enums/applicationprotocols:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Enum Protocol List
+      operationId: Get_Enum_Protocol_List
+      description: ""
+      parameters: []
+      requestBody:
+        content: {}
+  /enums/countries:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Enum Country List
+      operationId: Get_Enum_Country_List
+      description: ""
+      parameters: []
+      requestBody:
+        content: {}
+  /enums/destinationdevicetypes:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Enum Destination Device Types
+      operationId: Get_Enum_Destination_Device_Types
+      description: ""
+      parameters: []
+      requestBody:
+        content: {}
+  /enums/protocols:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Enum Protocols
+      operationId: Get_Enum_Protocols
+      description: ""
+      parameters: []
+      requestBody:
+        content: {}
+  /enums/sourcedevicetypes:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Enum Source Device Types
+      operationId: Get_Enum_Source_Device_Types
+      description: ""
+      parameters: []
+      requestBody:
+        content: {}
+  /devices:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List Devices
+      operationId: List_Devices
+      description: ""
+      parameters:
+        - in: query
+          name: ip
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: iptime
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: mac
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: seensince
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /deviceinfo:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Device Info
+      operationId: Get_Device_Info
+      description: ""
+      parameters:
+        - in: query
+          name: datatype
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: did
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: externaldomain
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fulldevicedetails
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: odid
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: showallgraphdata
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: similardevices
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /similardevices:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Similar Devices
+      operationId: Get_Similar_Devices
+      description: ""
+      parameters:
+        - in: query
+          name: did
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: count
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /metricdata:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Device Metrics
+      operationId: Get_Device_Metrics
+      description: ""
+      parameters:
+        - in: query
+          name: applicationprotocol
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: breachtimes
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: ddid
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: destinationport
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: did
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: endtime
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: from
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: fulldevicedetails
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: interval
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: metric
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: odid
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: port
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: protocol
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: sourceport
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: starttime
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: to
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /endpointdetails:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Endpoint Details
+      operationId: Get_Endpoint_Details
+      description: ""
+      parameters:
+        - in: query
+          name: additionalinfo
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: devices
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: hostname
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: ip
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: score
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /acknowledgeevent:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Acknowledge Event
+      operationId: Acknowledge_Event
+      description: ""
+      parameters: []
+      requestBody:
+        content: {}
+  /unacknowledgeevent:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: UnAcknowledge Event
+      operationId: UnAcknowledge_Event
+      description: ""
+      parameters: []
+      requestBody:
+        content: {}
+  /details:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List Events
+      operationId: List_Events
+      description: ""
+      parameters: []
+      requestBody:
+        content: {}
+  /network:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List Network
+      operationId: List_Network
+      description: ""
+      parameters: []
+      requestBody:
+        content: {}
+  /pcaps:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get Pcaps
+      operationId: Get_Pcaps
+      description: ""
+      parameters: []
+      requestBody:
+        content: {}
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+tags:
+  - name: Intel
+  - name: Eradication
+  - name: Network
+  - name: unfinished
