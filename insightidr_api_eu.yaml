@@ -1,325 +1,333 @@
-basePath: /
-components:
-  securitySchemes:
-    ApiKeyAuth:
-      in: header
-      name: X-Api-Key
-      type: apiKey
-host: eu.api.insight.rapid7.com
-info:
-  contact:
-    email: frikky@shuffler.io
-    name: '@frikkylikeme'
-    url: https://twitter.com/frikkylikeme
-  description: Insight IDR API V1 Get more info at https://help.rapid7.com/insightidr/en-us/api/v1/docs.html#
-  title: InsightIDR API EU
-  version: '1.0'
-  x-categories:
-  - SIEM
-  x-logo: data:image/png;base64,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
 openapi: 3.0.0
+info:
+  title: InsightIDR API EU
+  description: Insight IDR API V1 Get more info at
+    https://help.rapid7.com/insightidr/en-us/api/v1/docs.html#
+  version: "1.1"
+  x-logo: data:image/png;base64,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
+  contact:
+    name: "Azgaviperr"
+    url: https://github.com/azgaviperr    
+  x-categories:
+    - SIEM
+servers:
+  - url: https://eu.api.insight.rapid7.com
+host: eu.api.insight.rapid7.com
+basePath: /
+schemes:
+  - "https:"
 paths:
   /idr/v1/customthreats:
     post:
-      description: Create a private InsightIDR threat and add indicators to this threat.
-        The following threat indicators are supported in the request body formatted
-        as json.<ul><li>threatName</li><li>notetext</li><li>indicators</li><ul><li>IP
-        addresses (non CIDR notation)</li><li>Process hashes</li><li>Domain names</li><li>URLs</li></ul></ul>The
-        request content type must be to in json. See request samples on the right.<br/>The
-        maximum file size is 50 MB.
-      operationId: Create_a_threat
-      parameters:
-      - description: Header generated by shuffler.io OpenAPI
-        example: application/json
-        in: header
-        multiline: false
-        name: Content-Type
-        required: false
-        schema:
-          type: string
-      requestBody:
-        content: {}
       responses:
         default:
+          description: default
           content:
             text/plain:
               schema:
-                example: ''
                 type: string
-          description: default
+                example: ""
       summary: Create a threat
-  /idr/v1/customthreats/key/{key}/indicators/add:
-    post:
-      description: 'Add InsightIDR threat indicators to a threat with the given threat
-        key. The following threat indicators are supported in the request body formatted
-        as json, stix_xml, or csv: <br/><ul><li>IP addresses</li><li>Process hashes</li><li>Domain
-        names</li><li>URLs</li></ul>The request content type is expected to match
-        the specified format: "application/json" for "json" format, "text/xml" for
-        "stix_xml" format and "text/csv" for "csv" format. See request samples on
-        the right.<br/>The multipart file upload (with multipart/form-data content
-        type) is also supported by the endpoint. The maximum file size is 50 MB.'
-      operationId: Add_indicators_to_a_threat
+      operationId: Create_a_threat
+      description: Create a private InsightIDR threat and add indicators to this threat. The following threat indicators are supported in the request body formatted as json. The maximum file size is 50MB.
       parameters:
-      - description: The input format
-        in: query
-        name: format
-        required: true
-        schema:
-          type: string
-      - description: Generated by shuffler.io OpenAPI
-        in: path
-        name: key
-        required: true
-        schema:
-          type: string
-      - description: Header generated by shuffler.io OpenAPI
-        example: application/json
-        in: header
-        multiline: false
-        name: Content-Type
-        required: false
-        schema:
-          type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
       requestBody:
         content: {}
+  "/idr/v1/customthreats/key/{key}/indicators/add":
+    post:
       responses:
         default:
+          description: default
           content:
             text/plain:
               schema:
-                example: ''
                 type: string
-          description: default
+                example: ""
       summary: Add indicators to a threat
-  /idr/v1/customthreats/key/{key}/indicators/replace:
-    post:
-      description: 'Replace InsightIDR threat indicators for a threat with the given
-        threat key. The following threat indicators are supported in the request body
-        formatted as json, stix_xml, or csv: <br/><ul><li>IP addresses</li><li>Process
-        hashes</li><li>Domain names</li><li>URLs</li></ul>The request content type
-        is expected to match the specified format: "application/json" for "json" format,
-        "text/xml" for "stix_xml" format and "text/csv" for "csv" format. See request
-        samples on the right.<br/>The multipart file upload (with multipart/form-data
-        content type) is also supported by the endpoint. The maximum file size is
-        50 MB.'
-      operationId: Replace_indicators_for_a_threat
+      operationId: Add_indicators_to_a_threat
+      description: 'Add InsightIDR threat indicators to a threat with the given threat key. The following threat indicators are supported in the request body formatted as json, stix_xml, or csv. The request content type is expected to match the specified format: "application/json" for "json" format, "text/xml" for "stix_xml" format and "text/csv" for "csv" format. See request samples on the right. The multipart file upload (with multipart/form-data content type) is also supported by the endpoint. The maximum file size is 50 MB.'
       parameters:
-      - description: The input format
-        in: query
-        name: format
-        required: true
-        schema:
-          type: string
-      - description: Generated by shuffler.io OpenAPI
-        in: path
-        name: key
-        required: true
-        schema:
-          type: string
-      - description: Header generated by shuffler.io OpenAPI
-        example: application/json
-        in: header
-        multiline: false
-        name: Content-Type
-        required: false
-        schema:
-          type: string
+        - in: query
+          name: format
+          description: The input format
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: key
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
       requestBody:
         content: {}
+  "/idr/v1/customthreats/key/{key}/indicators/replace":
+    post:
       responses:
         default:
+          description: default
           content:
             text/plain:
               schema:
-                example: ''
                 type: string
-          description: default
+                example: ""
       summary: Replace indicators for a threat
+      operationId: Replace_indicators_for_a_threat
+      description: 'Replace InsightIDR threat indicators for a threat with the given threat key. The following threat indicators are supported in the request   body formatted as json, stix_xml, or csv. The multipart file upload (with multipart/form-data content type) is also supported by the endpoint. The maximum file size is 50 MB.'
+      parameters:
+        - in: query
+          name: format
+          description: The input format
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: key
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
   /idr/v1/investigations:
     get:
-      description: Retrieve a page of investigations matching the given request parameters.  The
-        investigations will always be sorted by investigation created_time in descending
-        order.
-      operationId: List_investigations
-      parameters:
-      - description: An optional ISO formatted timestamp.  Only investigations whose
-          createTime is before this date will be returned by the api.  If this parameter
-          is omitted investigations with any create_time may be returned.
-        in: query
-        name: end_time
-        required: false
-        schema:
-          type: string
-      - description: The optional 0 based index of the page to retrieve.  Must be
-          an integer greater than or equal to 0
-        in: query
-        name: index
-        required: false
-        schema:
-          type: string
-      - description: The optional size of the page to retrieve. Must be an integer
-          greater than 0 or less then or equal to 1000
-        in: query
-        name: size
-        required: false
-        schema:
-          type: string
-      - description: An optional ISO formatted timestamp.  Only investigations whose
-          createTime is after this date will be returned by the api.  If this parameter
-          is omitted investigations with any create_time may be returned.
-        in: query
-        name: start_time
-        required: false
-        schema:
-          type: string
-      - description: An optional comma separated set of investigation statuses.  Only
-          investigation whose status match one of the entries in the list will be
-          returned.  If this parameter is omitted investigations with any status may
-          be returned.
-        in: query
-        name: statuses
-        required: false
-        schema:
-          type: string
-      requestBody:
-        content: {}
       responses:
         default:
+          description: default
           content:
             text/plain:
               schema:
-                example: ''
                 type: string
-          description: default
+                example: ""
       summary: List investigations
+      operationId: List_investigations
+      description: Retrieve a page of investigations matching the given requestb parameters.  The investigations will always be sorted by investigation created_time in descending order.
+      parameters:
+        - in: query
+          name: end_time
+          description: An optional ISO formatted timestamp.  Only investigations whose createTime is before this date will be returned by the api.  If this parameter is omitted investigations with any create_time may be returned.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: index
+          description: The optional 0 based index of the page to retrieve.  Must be an integer greater than or equal to 0
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: size
+          description: The optional size of the page to retrieve. Must be an integer greater than 0 or less then or equal to 1000
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: start_time
+          description: An optional ISO formatted timestamp.  Only investigations whose createTime is after this date will be returned by the api.  If this parameter is omitted investigations with any create_time may be returned.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: statuses
+          description: An optional comma separated set of investigation statuses.  Only investigation whose status match one of the entries in the list will be returned.  If this parameter is omitted investigations with any status may be returned.
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
   /idr/v1/investigations/bulk_close:
     post:
-      description: Close all investigations that match the parameters provided in
-        the request body. This api returns the number of investigations that were
-        closed and a list of their ids.
-      operationId: Close_investigations_in_bulk
-      parameters:
-      - description: Generated by shuffler.io OpenAPI
-        example: "{\n  \"alert_type\": \"${alert_type}\",\n  \"from\": \"${from}\"\
-          ,\n  \"max_investigations_to_close\": \"${max_investigations_to_close}\"\
-          ,\n  \"source\": \"${source}\",\n  \"to\": \"${to}\"\n}"
-        in: body
-        multiline: true
-        name: body
-        required: false
-        schema:
-          type: string
-      - description: Header generated by shuffler.io OpenAPI
-        example: application/json
-        in: header
-        multiline: false
-        name: Content-Type
-        required: false
-        schema:
-          type: string
-      requestBody:
-        content:
-          example:
-            example: "{\n  \"alert_type\": \"${alert_type}\",\n  \"from\": \"${from}\"\
-              ,\n  \"max_investigations_to_close\": \"${max_investigations_to_close}\"\
-              ,\n  \"source\": \"${source}\",\n  \"to\": \"${to}\"\n}"
-        description: Generated by Shuffler.io
-        required: false
       responses:
         default:
+          description: default
           content:
             text/plain:
               schema:
-                example: ''
                 type: string
-          description: default
+                example: ""
       summary: Close investigations in bulk
-  /idr/v1/investigations/{id}/assignee:
-    put:
-      description: Assigning a user to the specified investigation. The user must
-        be a platform administrator, product administrator, or read/write user with
-        access to either InsightIDR or InsightUBA
-      operationId: Assign_user_to_investigation
+      operationId: Close_investigations_in_bulk
+      description: Close all investigations that match the parameters provided in the request body. This api returns the number of investigations that were closed and a list of their ids.
       parameters:
-      - description: Generated by shuffler.io OpenAPI
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-      - description: Generated by shuffler.io OpenAPI
-        example: "{\n  \"user_email_address\": \"${user_email_address}\"\n}"
-        in: body
-        multiline: true
-        name: body
-        required: false
-        schema:
-          type: string
-      - description: Header generated by shuffler.io OpenAPI
-        example: application/json
-        in: header
-        multiline: false
-        name: Content-Type
-        required: false
-        schema:
-          type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "alert_type": "${alert_type}",
+              "from": "${from}",
+              "max_investigations_to_close": "${max_investigations_to_close}",
+              "source": "${source}",
+              "to": "${to}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
       requestBody:
-        content:
-          example:
-            example: "{\n  \"user_email_address\": \"${user_email_address}\"\n}"
         description: Generated by Shuffler.io
         required: false
+        content:
+          example:
+            example: |-
+              {
+                "alert_type": "${alert_type}",
+                "from": "${from}",
+                "max_investigations_to_close": "${max_investigations_to_close}",
+                "source": "${source}",
+                "to": "${to}"
+              }
+  "/idr/v1/investigations/{id}/assignee":
+    put:
       responses:
         default:
+          description: default
           content:
             text/plain:
               schema:
-                example: ''
                 type: string
-          description: default
+                example: ""
       summary: Assign user to investigation
-  /idr/v1/investigations/{id}/status/{status}:
-    put:
-      description: Set the status of the investigation with the given id.  This api
-        returns the investigation with its status updated to the new state.  If the
-        investigation already has the given status no change is made, but the investigation
-        will still be returned.
-      operationId: Set_the_status_of_an_investigation
+      operationId: Assign_user_to_investigation
+      description: Assigning a user to the specified investigation. The user must be a platform administrator, product administrator, or read/write user with access to either InsightIDR or InsightUBA
       parameters:
-      - description: Generated by shuffler.io OpenAPI
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-      - description: Generated by shuffler.io OpenAPI
-        in: path
-        name: status
-        required: true
-        schema:
-          type: string
-      - description: Header generated by shuffler.io OpenAPI
-        example: application/json
-        in: header
-        multiline: false
-        name: Content-Type
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "user_email_address": "${user_email_address}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
         required: false
-        schema:
-          type: string
+        content:
+          example:
+            example: |-
+              {
+                "user_email_address": "${user_email_address}"
+              }
+  "/idr/v1/investigations/{id}/status/{status}":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Set the status of an investigation
+      operationId: Set_the_status_of_an_investigation
+      description: Set the status of the investigation with the given id.  This api returns the investigation with its status updated to the new state.  If the investigation already has the given status no change is made, but the investigation will still be returned.
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: status
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
       requestBody:
         content: {}
-      responses:
-        default:
-          content:
-            text/plain:
-              schema:
-                example: ''
-                type: string
-          description: default
-      summary: Set the status of an investigation
-schemes:
-- 'https:'
-servers:
-- url: https://eu.api.insight.rapid7.com
-tags:
-- name: IDR
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-Api-Key
