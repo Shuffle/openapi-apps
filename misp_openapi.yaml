@@ -1,0 +1,2312 @@
+openapi: 3.0.0
+info:
+  title: MISP Openapi
+  description: >
+    
+    ### Getting Started
+
+    Automation functionality is designed to automatically generate signatures for intrusion detection systems. 
+
+    To enable signature generation for a given attribute, Signature field of this attribute must be set to Yes. 
+
+    Note that not all attribute types are applicable for signature generation, currently we only support NIDS signature 
+
+    generation for IP, domains, host names, user agents etc., and hash list generation for MD5/SHA1 values of file artefacts. 
+
+    Support for more attribute types is planned. To make this functionality available for automated tools an authentication 
+
+    key is used. This makes it easier for your tools to access the data without further form-based-authentication. 
+
+    The [API](https://www.circl.lu/doc/misp/GLOSSARY.html#api) key can be found and managed under My Profile page (/users/view/me) 
+
+    on a MISP instance.
+
+
+    #### Accept and Content-Type headers 
+
+    When performing your request, depending on the type of request, you might need to explicitly specify in what content 
+
+    type you want to get your results. This is done by setting one of the below `Accept` headers:
+
+        Accept: application/json
+        Accept: application/xml
+
+    When submitting data in a `POST`, `PUT` or `DELETE` operation you also need to specify in what content-type you encoded the payload. 
+
+    This is done by setting one of the below `Content-Type` headers:
+
+        Content-Type: application/json
+        Content-Type: application/xml
+
+    Example:
+
+    ```
+
+    curl  --header "Authorization: YOUR_API_KEY" \
+          --header "Accept: application/json" \
+          --header "Content-Type: application/json" https://<misp url>/ 
+    ```
+
+
+    > **NOTE**: By appending .json or .xml the content type can also be set without the need for a header.
+
+
+    #### Automation using PyMISP
+
+
+    [PyMISP](https://github.com/MISP/PyMISP) is a Python library to access MISP platforms via their REST [API](https://www.circl.lu/doc/misp/GLOSSARY.html#api).
+
+    It allows you to fetch events, add or update events/attributes, add or update samples or search for attributes.
+
+
+    ### FAQ
+
+    * [Dev FAQ](https://www.circl.lu/doc/misp/dev-faq/)
+
+    * [GitHub project FAQ](https://github.com/MISP/MISP/wiki/Frequently-Asked-Questions)
+  version: "1.0"
+  x-logo: data:image/png;base64,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8EGuL+1jY2NWDcDDQO7evVuXX365+B4wAEY6j050oLqWzeAzKe699169/PLLQ+nkA1znnZTH9Tt27NCVV16pLVu2DDXukydP6sEHH7S3A9UHpg5i6r9t2zZdf/31Bigmgq8kdRPe3NycAfWJJ57QCy+8YMDlDZBpBxOUcrnH3y5ZaRtlbt++XXv27LG67ty508DM9y7t2SY+1h7V/Nycbrv1Vn351lutD+xlS7teoTSeHrylkjTV5OSE1q1brw0bNmjz5s3avn2bLrjgAvs39eXN830lpTwTMBZ5wzHp81Wg7ohKTtUky01I2m7SGXPg/PFD2rhu3JwthDeSwLqflSrjpr0JTmrFkIXz91oRuC7pvvOd7+j//t//q+eee244U5ndbipzKdXpdGxQ3/GOd+iWW27RRRddFHgXSYtr0tqlJt8BuOeff15/9Vd/pccff7xaMjlHYcnO61q9lwXoPvrRj+qKK66wiQJgDh48qC9+8Yv68pe/bD12OvAyUHv37tUv/dIv6bLLLhsC0aU2z2Ai/fCHP9T3v/99Pfroo8NrnB7UweffuVSrUySXalyP5N23b59+4id+QpdcconVG9tqI27YYSR33HmHgXdm5li1WpXqs624sgucCQYhNiF43KAF9AcvJD8Thol69dVXa9dFu0waowCacwGQQf9sZyTG5k44A7XAszKiIk3t+FaOnMD827bzetlBkWnQXVC7mUoxtAc/DgFFnP9QKk1WsoOcG6ijImT7fYUmXleuvHikzn/8j//Rlkg3A7kkrCsiSGdmNYP4kY98RO985zut8+pc1pdqBo6/AckXvvAF3XPPPbYkuyT257iEdh6N1GfwP/7xj5tUd9526NAhfe5zn9NXv/rV4fJYN035JGSyIAV/7ud+zgaViYYUd3MY0vXb3/627r77bqMDPoEchG468/rU+W1d4lKeg9otHvQNUvi6667TDTfcUPVVagLvi1/8sr7yla/o6MzREFPgXrMiKE+BMgTLidt1eR7XwVnhskSANTjfoZGoB3/mvsoRsnPXTl137XW69tq3a+PGTeYR41rzjDXTkFU957ziLLhtY7x9DYuxcN3Qt/mEVP2Vpw52bKlNq9fKYQrnhlrweirg+gDXlZ+nnnpK//7f/3uTPHV7bV0qAiiWcpemgOoDH/iASRnnu4Ac8FMG13L/HXfcoc9//vM6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
+  contact:
+    name: "@frikkylikeme"
+    url: https://twitter.com/frikkylikeme
+    email: frikky@shuffler.io
+  x-categories:
+    - Intel
+servers:
+  - url: https://misp.local
+host: misp.local
+basePath: /
+schemes:
+  - "https:"
+paths:
+  /admin/logs:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get instance logs
+      operationId: Get_instance_logs
+      parameters: []
+      requestBody:
+        content: {}
+  /admin/organisations/add:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add organisation
+      operationId: Add_organisation
+      parameters: []
+      requestBody:
+        content: {}
+  "/admin/organisations/delete/{organisationId}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete organisation
+      operationId: Delete_organisation
+      parameters:
+        - in: path
+          name: organisationId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/admin/organisations/edit/{organisationId}":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Edit organisation
+      operationId: Edit_organisation
+      parameters:
+        - in: path
+          name: organisationId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /admin/users:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get users
+      operationId: Get_users
+      parameters: []
+      requestBody:
+        content: {}
+  /admin/users/add:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add user
+      operationId: Add_user
+      parameters: []
+      requestBody:
+        content: {}
+  "/admin/users/delete/{userId}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete user
+      operationId: Delete_user
+      parameters:
+        - in: path
+          name: userId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/admin/users/edit/{userId}":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Edit user
+      operationId: Edit_user
+      parameters:
+        - in: path
+          name: userId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/admin/users/view/{userId}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get user by ID
+      operationId: Get_user_by_ID
+      parameters:
+        - in: path
+          name: userId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /attributes:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get a list of attributes
+      operationId: Get_a_list_of_attributes
+      parameters: []
+      requestBody:
+        content: {}
+  "/attributes/add/{eventId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add an attribute
+      operationId: Add_an_attribute
+      parameters:
+        - in: path
+          name: eventId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/attributes/addTag/{attributeId}/{tagId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add a tag to an attribute
+      operationId: Add_a_tag_to_an_attribute
+      parameters:
+        - in: path
+          name: attributeId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: tagId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/attributes/attributeStatistics/{context}/{percentage}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get the count of attributes per category
+      operationId: Get_the_count_of_attributes_per_category
+      parameters:
+        - in: path
+          name: context
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: percentage
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/attributes/delete/{attributeId}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete an attribute
+      operationId: Delete_an_attribute
+      parameters:
+        - in: path
+          name: attributeId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /attributes/describeTypes:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get a list of the available attribute types
+      operationId: Get_a_list_of_the_available_attribute_types
+      parameters: []
+      requestBody:
+        content: {}
+  "/attributes/edit/{attributeId}":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Edit an attribute
+      operationId: Edit_an_attribute
+      parameters:
+        - in: path
+          name: attributeId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/attributes/removeTag/{attributeId}/{tagId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove a tag from an attribute
+      operationId: Remove_a_tag_from_an_attribute
+      parameters:
+        - in: path
+          name: attributeId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: tagId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /attributes/restSearch:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: restSearch Get a filtered and paginated list of attributes
+      operationId: restSearch_Get_a_filtered_and_paginated_list_of_attributes
+      description: |
+        **This is the recommended endpoint for searching attributes.**
+      parameters: []
+      requestBody:
+        content: {}
+  "/attributes/restore/{attributeId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Restore an attribute
+      operationId: Restore_an_attribute
+      parameters:
+        - in: path
+          name: attributeId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/attributes/view/{attributeId}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get an attribute by ID
+      operationId: Get_an_attribute_by_ID
+      parameters:
+        - in: path
+          name: attributeId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /events:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get a list of events
+      operationId: Get_a_list_of_events
+      parameters: []
+      requestBody:
+        content: {}
+  /events/add:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add event
+      operationId: Add_event
+      parameters: []
+      requestBody:
+        content: {}
+  "/events/addTag/{eventId}/{tagId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add event tag
+      operationId: Add_event_tag
+      parameters:
+        - in: path
+          name: eventId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: tagId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/events/delete/{eventId}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete event
+      operationId: Delete_event
+      parameters:
+        - in: path
+          name: eventId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/events/edit/{eventId}":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Edit event
+      operationId: Edit_event
+      parameters:
+        - in: path
+          name: eventId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /events/index:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Search events
+      operationId: Search_events
+      parameters: []
+      requestBody:
+        content: {}
+  "/events/publish/{eventId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Publish an event
+      operationId: Publish_an_event
+      parameters:
+        - in: path
+          name: eventId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/events/removeTag/{eventId}/{tagId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove event tag
+      operationId: Remove_event_tag
+      parameters:
+        - in: path
+          name: eventId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: tagId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /events/restSearch:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: restSearch Get a filtered and paginated list of events
+      operationId: restSearch_Get_a_filtered_and_paginated_list_of_events
+      description: |
+        **This is the recommended endpoint for searching events.**
+      parameters: []
+      requestBody:
+        content: {}
+  "/events/unpublish/{eventId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Unpublish an event
+      operationId: Unpublish_an_event
+      parameters:
+        - in: path
+          name: eventId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/events/view/{eventId}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get event by ID
+      operationId: Get_event_by_ID
+      parameters:
+        - in: path
+          name: eventId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /feeds:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get a list of feeds
+      operationId: Get_a_list_of_feeds
+      parameters: []
+      requestBody:
+        content: {}
+  /feeds/add:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add a feed
+      operationId: Add_a_feed
+      parameters: []
+      requestBody:
+        content: {}
+  "/feeds/cacheFeeds/{cacheFeedsScope}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Cache feeds
+      operationId: Cache_feeds
+      parameters:
+        - in: path
+          name: cacheFeedsScope
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/feeds/disable/{feedId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Disable feed
+      operationId: Disable_feed
+      parameters:
+        - in: path
+          name: feedId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/feeds/edit/{feedId}":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Edit a feed
+      operationId: Edit_a_feed
+      parameters:
+        - in: path
+          name: feedId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/feeds/enable/{feedId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Enable feed
+      operationId: Enable_feed
+      parameters:
+        - in: path
+          name: feedId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /feeds/fetchFromAllFeeds:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Fetch from all feeds
+      operationId: Fetch_from_all_feeds
+      parameters: []
+      requestBody:
+        content: {}
+  "/feeds/fetchFromFeed/{feedId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Fetch from feed by ID
+      operationId: Fetch_from_feed_by_ID
+      parameters:
+        - in: path
+          name: feedId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/feeds/view/{feedId}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get a feed by ID
+      operationId: Get_a_feed_by_ID
+      parameters:
+        - in: path
+          name: feedId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /galaxies:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get galaxies
+      operationId: Get_galaxies
+      parameters: []
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Search galaxies
+      operationId: Search_galaxies
+      parameters: []
+      requestBody:
+        content: {}
+  "/galaxies/attachCluster/{attachTargetId}/{attachTargetType}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Attach the galaxy cluster tag a given entity
+      operationId: Attach_the_galaxy_cluster_tag_a_given_entity
+      parameters:
+        - in: path
+          name: attachTargetId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: attachTargetType
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/galaxies/delete/{galaxyId}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete a galaxy
+      operationId: Delete_a_galaxy
+      parameters:
+        - in: path
+          name: galaxyId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/galaxies/export/{galaxyId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Export galaxy clusters
+      operationId: Export_galaxy_clusters
+      parameters:
+        - in: path
+          name: galaxyId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /galaxies/import:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Import a galaxy cluster
+      operationId: Import_a_galaxy_cluster
+      parameters: []
+      requestBody:
+        content: {}
+  /galaxies/update:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Force update the galaxies with the galaxy json definitions
+      operationId: Force_update_the_galaxies_with_the_galaxy_json_definitions
+      parameters: []
+      requestBody:
+        content: {}
+  "/galaxies/view/{galaxyId}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get galaxy by ID
+      operationId: Get_galaxy_by_ID
+      parameters:
+        - in: path
+          name: galaxyId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/galaxy_clusters/add/{galaxyId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add galaxy cluster
+      operationId: Add_galaxy_cluster
+      parameters:
+        - in: path
+          name: galaxyId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/galaxy_clusters/delete/{galaxyClusterId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete galaxy cluster
+      operationId: Delete_galaxy_cluster
+      parameters:
+        - in: path
+          name: galaxyClusterId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/galaxy_clusters/edit/{galaxyClusterId}":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Edit galaxy cluster
+      operationId: Edit_galaxy_cluster
+      parameters:
+        - in: path
+          name: galaxyClusterId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/galaxy_clusters/index/{galaxyId}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get galaxy clusters
+      operationId: Get_galaxy_clusters
+      parameters:
+        - in: path
+          name: galaxyId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Search galaxy clusters
+      operationId: Search_galaxy_clusters
+      parameters:
+        - in: path
+          name: galaxyId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/galaxy_clusters/publish/{galaxyClusterId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Publish galaxy cluster
+      operationId: Publish_galaxy_cluster
+      parameters:
+        - in: path
+          name: galaxyClusterId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/galaxy_clusters/restore/{galaxyClusterId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Restore galaxy cluster
+      operationId: Restore_galaxy_cluster
+      parameters:
+        - in: path
+          name: galaxyClusterId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/galaxy_clusters/unpublish/{galaxyClusterId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Unpublish galaxy cluster
+      operationId: Unpublish_galaxy_cluster
+      parameters:
+        - in: path
+          name: galaxyClusterId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/galaxy_clusters/view/{galaxyClusterId}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get galaxy cluster by ID
+      operationId: Get_galaxy_cluster_by_ID
+      parameters:
+        - in: path
+          name: galaxyClusterId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /noticelists:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get a list of noticelists
+      operationId: Get_a_list_of_noticelists
+      parameters: []
+      requestBody:
+        content: {}
+  "/noticelists/toggleEnable/{noticelistId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Enabledisable noticelist
+      operationId: Enabledisable_noticelist
+      parameters:
+        - in: path
+          name: noticelistId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /noticelists/update:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update noticelists
+      operationId: Update_noticelists
+      parameters: []
+      requestBody:
+        content: {}
+  "/noticelists/view/{noticelistId}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get a noticelist by ID
+      operationId: Get_a_noticelist_by_ID
+      parameters:
+        - in: path
+          name: noticelistId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/objects/add/{eventId}/{objectTemplateId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add an object to an event
+      operationId: Add_an_object_to_an_event
+      parameters:
+        - in: path
+          name: eventId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: objectTemplateId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/objects/delete/{objectId}/{hardDelete}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete object
+      operationId: Delete_object
+      parameters:
+        - in: path
+          name: objectId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: hardDelete
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/objects/view/{objectId}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get object by ID
+      operationId: Get_object_by_ID
+      parameters:
+        - in: path
+          name: objectId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /organisations:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get organisations
+      operationId: Get_organisations
+      parameters: []
+      requestBody:
+        content: {}
+  "/organisations/view/{organisationId}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get organisation by ID
+      operationId: Get_organisation_by_ID
+      parameters:
+        - in: path
+          name: organisationId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /servers:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get servers
+      operationId: Get_servers
+      parameters: []
+      requestBody:
+        content: {}
+  /servers/add:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add server
+      operationId: Add_server
+      parameters: []
+      requestBody:
+        content: {}
+  /servers/cache:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Cache server
+      operationId: Cache_server
+      parameters: []
+      requestBody:
+        content: {}
+  /servers/createSync:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create sync
+      operationId: Create_sync
+      parameters: []
+      requestBody:
+        content: {}
+  "/servers/delete/{serverId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete server
+      operationId: Delete_server
+      parameters:
+        - in: path
+          name: serverId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/servers/edit/{serverId}":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Edit server
+      operationId: Edit_server
+      parameters:
+        - in: path
+          name: serverId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /servers/getInstanceUUID:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get instance UUID
+      operationId: Get_instance_UUID
+      parameters: []
+      requestBody:
+        content: {}
+  /servers/getPyMISPVersion:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get current instance PyMISP version
+      operationId: Get_current_instance_PyMISP_version
+      parameters: []
+      requestBody:
+        content: {}
+  "/servers/getSetting/{settingName}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get server setting by name
+      operationId: Get_server_setting_by_name
+      parameters:
+        - in: path
+          name: settingName
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /servers/getVersion:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get current instance version
+      operationId: Get_current_instance_version
+      parameters: []
+      requestBody:
+        content: {}
+  /servers/getWorkers:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get workers
+      operationId: Get_workers
+      parameters: []
+      requestBody:
+        content: {}
+  /servers/import:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Import server
+      operationId: Import_server
+      parameters: []
+      requestBody:
+        content: {}
+  /servers/killAllWorkers:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Kill all workers
+      operationId: Kill_all_workers
+      parameters: []
+      requestBody:
+        content: {}
+  "/servers/pull/{serverId}/{pullTechnique}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Pull server
+      operationId: Pull_server
+      parameters:
+        - in: path
+          name: serverId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: pullTechnique
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/servers/push/{serverId}/{pushTechnique}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Push server
+      operationId: Push_server
+      parameters:
+        - in: path
+          name: serverId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: pushTechnique
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /servers/restartDeadWorkers:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Restart dead workers
+      operationId: Restart_dead_workers
+      parameters: []
+      requestBody:
+        content: {}
+  /servers/restartWorkers:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Restart workers
+      operationId: Restart_workers
+      parameters: []
+      requestBody:
+        content: {}
+  /servers/serverSettings:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get current instance settings and diagnostics
+      operationId: Get_current_instance_settings_and_diagnostics
+      parameters: []
+      requestBody:
+        content: {}
+  "/servers/serverSettingsEdit/{settingName}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Edit server setting
+      operationId: Edit_server_setting
+      parameters:
+        - in: path
+          name: settingName
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/servers/startWorker/{workerType}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Start worker
+      operationId: Start_worker
+      parameters:
+        - in: path
+          name: workerType
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/servers/stopWorker/{workerPid}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Stop worker
+      operationId: Stop_worker
+      parameters:
+        - in: path
+          name: workerPid
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /servers/update:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update server
+      operationId: Update_server
+      parameters: []
+      requestBody:
+        content: {}
+  /sharing_groups:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get a list of sharing groups
+      operationId: Get_a_list_of_sharing_groups
+      parameters: []
+      requestBody:
+        content: {}
+  /sharing_groups/add:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add a sharing group
+      operationId: Add_a_sharing_group
+      parameters: []
+      requestBody:
+        content: {}
+  "/sharing_groups/addOrg/{sharingGroupId}/{organisationId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add an organisation to a sharing group
+      operationId: Add_an_organisation_to_a_sharing_group
+      parameters:
+        - in: path
+          name: sharingGroupId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: organisationId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/sharing_groups/addServer/{sharingGroupId}/{serverId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add a server to a sharing group
+      operationId: Add_a_server_to_a_sharing_group
+      parameters:
+        - in: path
+          name: sharingGroupId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: serverId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/sharing_groups/delete/{sharingGroupId}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete a sharing group
+      operationId: Delete_a_sharing_group
+      parameters:
+        - in: path
+          name: sharingGroupId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/sharing_groups/edit/{sharingGroupId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Edit a sharing group
+      operationId: Edit_a_sharing_group
+      parameters:
+        - in: path
+          name: sharingGroupId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/sharing_groups/removeOrg/{sharingGroupId}/{organisationId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove an organisation from a sharing group
+      operationId: Remove_an_organisation_from_a_sharing_group
+      parameters:
+        - in: path
+          name: sharingGroupId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: organisationId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/sharing_groups/removeServer/{sharingGroupId}/{serverId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Remove a server from a sharing group
+      operationId: Remove_a_server_from_a_sharing_group
+      parameters:
+        - in: path
+          name: sharingGroupId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: serverId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/sharing_groups/view/{sharingGroupId}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get a sharing group by ID
+      operationId: Get_a_sharing_group_by_ID
+      parameters:
+        - in: path
+          name: sharingGroupId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /sightings/add:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add sightings of a list of values
+      operationId: Add_sightings_of_a_list_of_values
+      parameters: []
+      requestBody:
+        content: {}
+  "/sightings/add/{attributeId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add sighting of an attribute
+      operationId: Add_sighting_of_an_attribute
+      parameters:
+        - in: path
+          name: attributeId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/sightings/delete/{sightingId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete sighting
+      operationId: Delete_sighting
+      parameters:
+        - in: path
+          name: sightingId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/sightings/index/{eventId}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get sightings by event ID
+      operationId: Get_sightings_by_event_ID
+      parameters:
+        - in: path
+          name: eventId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /tags:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get tags
+      operationId: Get_tags
+      parameters: []
+      requestBody:
+        content: {}
+  /tags/add:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add tag
+      operationId: Add_tag
+      parameters: []
+      requestBody:
+        content: {}
+  "/tags/delete/{tagId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete tag
+      operationId: Delete_tag
+      parameters:
+        - in: path
+          name: tagId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/tags/edit/{tagId}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Edit tag
+      operationId: Edit_tag
+      parameters:
+        - in: path
+          name: tagId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/tags/search/{tagSearchTerm}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Search tag
+      operationId: Search_tag
+      parameters:
+        - in: path
+          name: tagSearchTerm
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/tags/view/{tagId}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get tag by ID
+      operationId: Get_tag_by_ID
+      parameters:
+        - in: path
+          name: tagId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/users/initiatePasswordReset/{userId}/{firstTimeReset}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Reset user password
+      operationId: Reset_user_password
+      parameters:
+        - in: path
+          name: userId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: firstTimeReset
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /warninglists:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get a list of warninglists
+      operationId: Get_a_list_of_warninglists
+      parameters: []
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Search warninglists
+      operationId: Search_warninglists
+      parameters: []
+      requestBody:
+        content: {}
+  /warninglists/checkValue:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Check if a list of values matches any warninglists
+      operationId: Check_if_a_list_of_values_matches_any_warninglists
+      parameters: []
+      requestBody:
+        content: {}
+  /warninglists/toggleEnable:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Enabledisable warninglists
+      operationId: Enabledisable_warninglists
+      parameters: []
+      requestBody:
+        content: {}
+  /warninglists/update:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update warninglists
+      operationId: Update_warninglists
+      parameters: []
+      requestBody:
+        content: {}
+  "/warninglists/view/{warninglistId}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get warninglist by ID
+      operationId: Get_warninglist_by_ID
+      parameters:
+        - in: path
+          name: warninglistId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: Authorization
+tags:
+  - name: Attributes
+  - name: Events
+  - name: Galaxies
+  - name: Galaxy Clusters
+  - name: Users
+  - name: Organisations
+  - name: Servers
+  - name: Sharing Groups
+  - name: Feeds
