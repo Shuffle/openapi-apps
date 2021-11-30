@@ -1,0 +1,3773 @@
+openapi: 3.0.0
+info:
+  title: KES Web API
+  description: This is a KES web api documentation
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact:
+    email: support@example.com
+    name: API Support
+    url: http://www.example.com/support
+servers:
+  - url: http://localhost:8080
+host: localhost:8080
+basePath: /
+schemes:
+  - "http:"
+paths:
+  /kes/private/v1/aacheuristics:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "heuristicgroups": []
+                  }
+      summary: Get Adaptive Anomalies Control heuristics info list
+      operationId: Get_Adaptive_Anomalies_Control_heuristics_info_list
+      description: Returns list of AAC heuristics groups
+      parameters: []
+      requestBody:
+        content: {}
+  /kes/private/v1/appctrlcategorytree:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get application control category tree
+      operationId: Get_application_control_category_tree
+      description: Return application control category tree
+      parameters: []
+      requestBody:
+        content: {}
+  /kes/private/v1/componentList:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "code": 0,
+                    "result": []
+                  }
+      summary: Get component list
+      operationId: Get_component_list
+      description: Return component list
+      parameters: []
+      requestBody:
+        content: {}
+  /kes/private/v1/devices:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "devices": []
+                  }
+      summary: Get devices info list
+      operationId: Get_devices_info_list
+      description: Return list of all host devices
+      parameters: []
+      requestBody:
+        content: {}
+  /kes/private/v1/events:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Events info
+      operationId: Events_info
+      description: >-
+        If query isn't specified returns json array of available event names
+        that you can to subscribe, 
+                if query is specified you gonna subscribe to events
+      parameters:
+        - in: query
+          name: subscribe
+          description: Array of event names separated by commas that you wanna subscribe
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /kes/private/v1/folderapps:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "columns": [],
+                    "records": []
+                  }
+      summary: Get list applications in folder
+      operationId: Get_list_applications_in_folder
+      description: >+
+        Returns list of applications in required folder.
+
+
+        Before the request you need to subscribe to the EventSource with name 'folderapps'.
+
+
+        The first request for particular folder should be with only query parameter 'path', only after that you can request data for retrive.
+
+
+        --- 
+
+         Accessible column names:
+
+        * file_name - File;
+
+
+        * file_hash - File hash code;
+
+
+        * folder_path - Folder path;
+
+
+        * certificate_issuer - Issuer;
+
+
+        * certificate_subject - Subject;
+
+
+        * certificate_thumbprint - Thumbprint;
+
+
+        * kl_category_name - Kl category;
+
+
+        * kl_category_id - Kl category id (Not represintation on UI);
+
+
+        * original_file_name - File name;
+
+
+        * file_version - File version;
+
+
+        * program_name - Application name;
+
+
+        * program_version - Application version;
+
+
+        * program_vendor - Vendor;
+
+      parameters:
+        - in: query
+          name: columns
+          description: Columns to retrieve (Array of columns names separated by comma)
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: end
+          description: End record position to retrieve
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: filter-columns
+          description: Columns filtered by (Array of columns names separated by comma)
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: filter-string
+          description: Filter string
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: path
+          description: Path to the folder to get from
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: recursive
+          description: Include subfolders (default is false)
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: start
+          description: Start record position to retrieve
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /kes/private/v1/ksn/requestaccept:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Request KSN Agreement accept
+      operationId: Request_KSN_Agreement_accept
+      description: Request KSN Agreement accept by user
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: ""
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: ""
+  /kes/private/v1/ksn/vieweula:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: View KSN Agreement
+      operationId: View_KSN_Agreement
+      description: View KSN Agreement in maximized window
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: ""
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: ""
+  /kes/private/v1/principals:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "code": 0,
+                    "result": []
+                  }
+      summary: Get principals info list
+      operationId: Get_principals_info_list
+      description: Return list of all host principals
+      parameters: []
+      requestBody:
+        content: {}
+  /kes/private/v1/principalsBySids:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "code": 0,
+                    "result": []
+                  }
+      summary: Get principals info by sid list
+      operationId: Get_principals_info_by_sid_list
+      description: Return principal list by sid list
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "sids": "${sids}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "sids": "${sids}"
+              }
+  /kes/private/v1/reports/count:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "columns": [],
+                    "records": []
+                  }
+      summary: Returns count of rows
+      operationId: Returns_count_of_rows
+      description: Returns count of rows in FileAvReportTable
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "command": "${command}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "command": "${command}"
+              }
+  /kes/private/v1/reports/view:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "columns": [],
+                    "records": []
+                  }
+      summary: Returns report records
+      operationId: Returns_report_records
+      description: Returns report records preset with filters in query
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "command": "${command}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "command": "${command}"
+              }
+  "/kes/private/v1/settings/id/{id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Gets any product settings
+      operationId: Gets_any_product_settings
+      description: Gets any product settings by id
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets any product settings
+      operationId: Sets_any_product_settings
+      description: Sets any product settings by id
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: ""
+          schema:
+            type: string
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: ""
+  /kes/private/v1/startedapps:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "columns": [],
+                    "records": []
+                  }
+      summary: Get list of started applications
+      operationId: Get_list_of_started_applications
+      description: >+
+        Returns list of started applications.
+
+
+        Before the request you need to subscribe to the EventSource with name 'startedapps'.
+
+
+        The first request for started applications should be without any query parameters, only after that you can request data for retrive.
+
+
+        --- 
+
+         Accessible column names:
+
+        * file_name - File;
+
+
+        * file_hash - File hash code;
+
+
+        * folder_path - Folder path;
+
+
+        * certificate_issuer - Issuer;
+
+
+        * certificate_subject - Subject;
+
+
+        * certificate_thumbprint - Thumbprint;
+
+
+        * kl_category_name - Kl category;
+
+
+        * kl_category_id - Kl category id (Not represintation on UI);
+
+
+        * original_file_name - File name;
+
+
+        * file_version - File version;
+
+
+        * program_name - Application name;
+
+
+        * program_version - Application version;
+
+
+        * program_vendor - Vendor;
+
+      parameters:
+        - in: query
+          name: columns
+          description: Columns to retrieve (Array of columns names separated by comma)
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: end
+          description: End record position to retrieve
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: filter-columns
+          description: Columns filtered by (Array of columns names separated by comma)
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: filter-string
+          description: Filter string
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: start
+          description: Start record position to retrieve
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /kes/private/v1/tasks:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "tasks": []
+                  }
+      summary: "Get list of products task "
+      operationId: Get_list_of_products_task_
+      description: Description of the method is not specified
+      parameters: []
+      requestBody:
+        content: {}
+  "/kes/private/v1/tasks/{task_id}":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Allows to control task "
+      operationId: Allows_to_control_task_
+      description: "NOTE: operation can be performed asynchronously."
+      parameters:
+        - in: path
+          name: task_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "action": "${action}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "action": "${action}"
+              }
+  "/kes/private/v1/tasks/{task_id}/settings":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Get tasks settings "
+      operationId: Get_tasks_settings_
+      description: Description of the method is not specified
+      parameters:
+        - in: path
+          name: task_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Apply tasks settings "
+      operationId: Apply_tasks_settings_
+      description: Description of the method is not specified
+      parameters:
+        - in: path
+          name: task_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: ""
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: ""
+  /kes/private/v1/trace/settings:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "maxrotationfilecount": 0,
+                    "maxrotationfilesizeinmb": 0,
+                    "tracelevel": 0,
+                    "tracestate": 0
+                  }
+      summary: "Get trace settings "
+      operationId: Get_trace_settings_
+      description: Description of the method is not specified
+      parameters: []
+      requestBody:
+        content: {}
+  /kes/private/v1/windows/selectprincipal:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Show window select principal "
+      operationId: Show_window_select_principal_
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: ""
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: ""
+  "/kes/private/v2/settings/id/{id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Gets any product settings
+      operationId: Gets_any_product_settings
+      description: Gets any product settings by id
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets any product settings
+      operationId: Sets_any_product_settings
+      description: Sets any product settings by id
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: ""
+          schema:
+            type: string
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: ""
+  /kes/public/v1/api-docs:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: This documentation
+      operationId: This_documentation
+      description: Description of the method is not specified
+      parameters: []
+      requestBody:
+        content: {}
+  /kes/public/v1/settings/AMSI:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "donotunpackarchiveswhenbig": false,
+                    "donotunpackarchiveswhenbiggerthanmb": 0,
+                    "enabled": false,
+                    "scanarchives": false,
+                    "scaninstallpackages": false,
+                    "scanofficefiles": false,
+                    "useichecker": false,
+                    "workmode": 0
+                  }
+      summary: Gets a AMSI settings
+      operationId: Gets_a_AMSI_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a AMSI settings
+      operationId: Sets_a_AMSI_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: >-
+            {
+              "donotunpackarchiveswhenbig": "${donotunpackarchiveswhenbig}",
+              "donotunpackarchiveswhenbiggerthanmb": "${donotunpackarchiveswhenbiggerthanmb}",
+              "enabled": "${enabled}",
+              "scanarchives": "${scanarchives}",
+              "scaninstallpackages": "${scaninstallpackages}",
+              "scanofficefiles": "${scanofficefiles}",
+              "useichecker": "${useichecker}",
+              "workmode": "${workmode}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: >-
+              {
+                "donotunpackarchiveswhenbig": "${donotunpackarchiveswhenbig}",
+                "donotunpackarchiveswhenbiggerthanmb": "${donotunpackarchiveswhenbiggerthanmb}",
+                "enabled": "${enabled}",
+                "scanarchives": "${scanarchives}",
+                "scaninstallpackages": "${scaninstallpackages}",
+                "scanofficefiles": "${scanofficefiles}",
+                "useichecker": "${useichecker}",
+                "workmode": "${workmode}"
+              }
+  /kes/public/v1/settings/AdaptiveAnomaliesControl:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "enabled": false,
+                    "heuristicgroups": [],
+                    "messagetemplates": []
+                  }
+      summary: Gets a AdaptiveAnomaliesControl settings
+      operationId: Gets_a_AdaptiveAnomaliesControl_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a AdaptiveAnomaliesControl settings
+      operationId: Sets_a_AdaptiveAnomaliesControl_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "enabled": "${enabled}",
+              "heuristicgroups": "${heuristicgroups}",
+              "messagetemplates": "${messagetemplates}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "enabled": "${enabled}",
+                "heuristicgroups": "${heuristicgroups}",
+                "messagetemplates": "${messagetemplates}"
+              }
+  /kes/public/v1/settings/ApplicationSettings:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "backgroundscan": [],
+                    "backupstorage": [],
+                    "basesvalidity": [],
+                    "debuginformation": [],
+                    "hsdpstatus": [],
+                    "notifications": [],
+                    "operatingmode": [],
+                    "passwordprotection": [],
+                    "performance": [],
+                    "proxy": [],
+                    "removabledrivesscan": [],
+                    "reports": [],
+                    "selfdefense": [],
+                    "support": [],
+                    "taskcontrol": [],
+                    "userinteraction": [],
+                    "warnings": []
+                  }
+      summary: Gets a ApplicationSettings settings
+      operationId: Gets_a_ApplicationSettings_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a ApplicationSettings settings
+      operationId: Sets_a_ApplicationSettings_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "backgroundscan": "${backgroundscan}",
+              "backupstorage": "${backupstorage}",
+              "basesvalidity": "${basesvalidity}",
+              "debuginformation": "${debuginformation}",
+              "hsdpstatus": "${hsdpstatus}",
+              "notifications": "${notifications}",
+              "operatingmode": "${operatingmode}",
+              "passwordprotection": "${passwordprotection}",
+              "performance": "${performance}",
+              "proxy": "${proxy}",
+              "removabledrivesscan": "${removabledrivesscan}",
+              "reports": "${reports}",
+              "selfdefense": "${selfdefense}",
+              "support": "${support}",
+              "taskcontrol": "${taskcontrol}",
+              "userinteraction": "${userinteraction}",
+              "warnings": "${warnings}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "backgroundscan": "${backgroundscan}",
+                "backupstorage": "${backupstorage}",
+                "basesvalidity": "${basesvalidity}",
+                "debuginformation": "${debuginformation}",
+                "hsdpstatus": "${hsdpstatus}",
+                "notifications": "${notifications}",
+                "operatingmode": "${operatingmode}",
+                "passwordprotection": "${passwordprotection}",
+                "performance": "${performance}",
+                "proxy": "${proxy}",
+                "removabledrivesscan": "${removabledrivesscan}",
+                "reports": "${reports}",
+                "selfdefense": "${selfdefense}",
+                "support": "${support}",
+                "taskcontrol": "${taskcontrol}",
+                "userinteraction": "${userinteraction}",
+                "warnings": "${warnings}"
+              }
+  /kes/public/v1/settings/BehaviourDetection:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "action": 0,
+                    "enabled": false,
+                    "sfanticryptor": []
+                  }
+      summary: Gets a BehaviourDetection settings
+      operationId: Gets_a_BehaviourDetection_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a BehaviourDetection settings
+      operationId: Sets_a_BehaviourDetection_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "action": "${action}",
+              "enabled": "${enabled}",
+              "sfanticryptor": "${sfanticryptor}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "action": "${action}",
+                "enabled": "${enabled}",
+                "sfanticryptor": "${sfanticryptor}"
+              }
+  /kes/public/v1/settings/CloudControl:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "groupstoblock": [],
+                    "mode": 0,
+                    "servicestoblock": []
+                  }
+      summary: Gets a CloudControl settings
+      operationId: Gets_a_CloudControl_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a CloudControl settings
+      operationId: Sets_a_CloudControl_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "groupstoblock": "${groupstoblock}",
+              "mode": "${mode}",
+              "servicestoblock": "${servicestoblock}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "groupstoblock": "${groupstoblock}",
+                "mode": "${mode}",
+                "servicestoblock": "${servicestoblock}"
+              }
+  /kes/public/v1/settings/ContextScan:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "compoundfilessettings": [],
+                    "forceadvanceddisinfection": false,
+                    "heuristiclevel": 0,
+                    "scanaction": 0,
+                    "scanfilter": 0,
+                    "scanunchangedobjects": false,
+                    "timelimits": [],
+                    "useichecker": false,
+                    "useiswift": false
+                  }
+      summary: Gets a ContextScan settings
+      operationId: Gets_a_ContextScan_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a ContextScan settings
+      operationId: Sets_a_ContextScan_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "compoundfilessettings": "${compoundfilessettings}",
+              "forceadvanceddisinfection": "${forceadvanceddisinfection}",
+              "heuristiclevel": "${heuristiclevel}",
+              "scanaction": "${scanaction}",
+              "scanfilter": "${scanfilter}",
+              "scanunchangedobjects": "${scanunchangedobjects}",
+              "timelimits": "${timelimits}",
+              "useichecker": "${useichecker}",
+              "useiswift": "${useiswift}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "compoundfilessettings": "${compoundfilessettings}",
+                "forceadvanceddisinfection": "${forceadvanceddisinfection}",
+                "heuristiclevel": "${heuristiclevel}",
+                "scanaction": "${scanaction}",
+                "scanfilter": "${scanfilter}",
+                "scanunchangedobjects": "${scanunchangedobjects}",
+                "timelimits": "${timelimits}",
+                "useichecker": "${useichecker}",
+                "useiswift": "${useiswift}"
+              }
+  /kes/public/v1/settings/DeviceControl:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "allowrequestaccess": false,
+                    "antibridgingsettings": [],
+                    "blockmsg": "",
+                    "busaccessrules": [],
+                    "complaintaddress": "",
+                    "complaintmsg": "",
+                    "complaintsubject": "",
+                    "deviceaccessrules": [],
+                    "enabled": false,
+                    "fileoperationsmonitoringsettings": [],
+                    "schedules": [],
+                    "trusteddevices": [],
+                    "wirelesssettings": []
+                  }
+      summary: Gets a DeviceControl settings
+      operationId: Gets_a_DeviceControl_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a DeviceControl settings
+      operationId: Sets_a_DeviceControl_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: >-
+            {
+              "allowrequestaccess": "${allowrequestaccess}",
+              "antibridgingsettings": "${antibridgingsettings}",
+              "blockmsg": "${blockmsg}",
+              "busaccessrules": "${busaccessrules}",
+              "complaintaddress": "${complaintaddress}",
+              "complaintmsg": "${complaintmsg}",
+              "complaintsubject": "${complaintsubject}",
+              "deviceaccessrules": "${deviceaccessrules}",
+              "enabled": "${enabled}",
+              "fileoperationsmonitoringsettings": "${fileoperationsmonitoringsettings}",
+              "schedules": "${schedules}",
+              "trusteddevices": "${trusteddevices}",
+              "wirelesssettings": "${wirelesssettings}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: >-
+              {
+                "allowrequestaccess": "${allowrequestaccess}",
+                "antibridgingsettings": "${antibridgingsettings}",
+                "blockmsg": "${blockmsg}",
+                "busaccessrules": "${busaccessrules}",
+                "complaintaddress": "${complaintaddress}",
+                "complaintmsg": "${complaintmsg}",
+                "complaintsubject": "${complaintsubject}",
+                "deviceaccessrules": "${deviceaccessrules}",
+                "enabled": "${enabled}",
+                "fileoperationsmonitoringsettings": "${fileoperationsmonitoringsettings}",
+                "schedules": "${schedules}",
+                "trusteddevices": "${trusteddevices}",
+                "wirelesssettings": "${wirelesssettings}"
+              }
+  /kes/public/v1/settings/DiskEncryption:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "bitlockerfixeddiskssettings": [],
+                    "fixeddisksencryptiontechnology": 0,
+                    "kasperskyfdefixeddiskssettings": [],
+                    "kasperskyfderemovablediskssettings": []
+                  }
+      summary: Gets a DiskEncryption settings
+      operationId: Gets_a_DiskEncryption_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a DiskEncryption settings
+      operationId: Sets_a_DiskEncryption_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: >-
+            {
+              "bitlockerfixeddiskssettings": "${bitlockerfixeddiskssettings}",
+              "fixeddisksencryptiontechnology": "${fixeddisksencryptiontechnology}",
+              "kasperskyfdefixeddiskssettings": "${kasperskyfdefixeddiskssettings}",
+              "kasperskyfderemovablediskssettings": "${kasperskyfderemovablediskssettings}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: >-
+              {
+                "bitlockerfixeddiskssettings": "${bitlockerfixeddiskssettings}",
+                "fixeddisksencryptiontechnology": "${fixeddisksencryptiontechnology}",
+                "kasperskyfdefixeddiskssettings": "${kasperskyfdefixeddiskssettings}",
+                "kasperskyfderemovablediskssettings": "${kasperskyfderemovablediskssettings}"
+              }
+  /kes/public/v1/settings/EnterpriseApplicationControl:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "blacklistrules": [],
+                    "customcategories": [],
+                    "defaultdenymode": false,
+                    "enabled": false,
+                    "id": 0,
+                    "messagetemplates": [],
+                    "modulecontrol": 0,
+                    "testmode": 0,
+                    "whitelistrules": []
+                  }
+      summary: Gets a EnterpriseApplicationControl settings
+      operationId: Gets_a_EnterpriseApplicationControl_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a EnterpriseApplicationControl settings
+      operationId: Sets_a_EnterpriseApplicationControl_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "blacklistrules": "${blacklistrules}",
+              "customcategories": "${customcategories}",
+              "defaultdenymode": "${defaultdenymode}",
+              "enabled": "${enabled}",
+              "id": "${id}",
+              "messagetemplates": "${messagetemplates}",
+              "modulecontrol": "${modulecontrol}",
+              "testmode": "${testmode}",
+              "whitelistrules": "${whitelistrules}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "blacklistrules": "${blacklistrules}",
+                "customcategories": "${customcategories}",
+                "defaultdenymode": "${defaultdenymode}",
+                "enabled": "${enabled}",
+                "id": "${id}",
+                "messagetemplates": "${messagetemplates}",
+                "modulecontrol": "${modulecontrol}",
+                "testmode": "${testmode}",
+                "whitelistrules": "${whitelistrules}"
+              }
+  /kes/public/v1/settings/ExclusionsSettings:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "scanexclusionsandtrustedzone": [],
+                    "threats": []
+                  }
+      summary: Gets a ExclusionsSettings settings
+      operationId: Gets_a_ExclusionsSettings_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a ExclusionsSettings settings
+      operationId: Sets_a_ExclusionsSettings_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "scanexclusionsandtrustedzone": "${scanexclusionsandtrustedzone}",
+              "threats": "${threats}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: >-
+              {
+                "scanexclusionsandtrustedzone": "${scanexclusionsandtrustedzone}",
+                "threats": "${threats}"
+              }
+  /kes/public/v1/settings/ExploitPrevention:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "action": 0,
+                    "enablesystemprocessesmemoryprotection": false,
+                    "enabled": false
+                  }
+      summary: Gets a ExploitPrevention settings
+      operationId: Gets_a_ExploitPrevention_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a ExploitPrevention settings
+      operationId: Sets_a_ExploitPrevention_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: >-
+            {
+              "action": "${action}",
+              "enablesystemprocessesmemoryprotection": "${enablesystemprocessesmemoryprotection}",
+              "enabled": "${enabled}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: >-
+              {
+                "action": "${action}",
+                "enablesystemprocessesmemoryprotection": "${enablesystemprocessesmemoryprotection}",
+                "enabled": "${enabled}"
+              }
+  /kes/public/v1/settings/FileAv:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "compoundfilessettings": [],
+                    "enabled": false,
+                    "heuristiclevel": 0,
+                    "scanaction": 0,
+                    "scanfilter": 0,
+                    "scanmode": 0,
+                    "scanscope": [],
+                    "scanunchangedobjects": false,
+                    "sleepmode": [],
+                    "useichecker": false,
+                    "useiswift": false
+                  }
+      summary: Gets a FileAv settings
+      operationId: Gets_a_FileAv_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a FileAv settings
+      operationId: Sets_a_FileAv_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "compoundfilessettings": "${compoundfilessettings}",
+              "enabled": "${enabled}",
+              "heuristiclevel": "${heuristiclevel}",
+              "scanaction": "${scanaction}",
+              "scanfilter": "${scanfilter}",
+              "scanmode": "${scanmode}",
+              "scanscope": "${scanscope}",
+              "scanunchangedobjects": "${scanunchangedobjects}",
+              "sleepmode": "${sleepmode}",
+              "useichecker": "${useichecker}",
+              "useiswift": "${useiswift}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "compoundfilessettings": "${compoundfilessettings}",
+                "enabled": "${enabled}",
+                "heuristiclevel": "${heuristiclevel}",
+                "scanaction": "${scanaction}",
+                "scanfilter": "${scanfilter}",
+                "scanmode": "${scanmode}",
+                "scanscope": "${scanscope}",
+                "scanunchangedobjects": "${scanunchangedobjects}",
+                "sleepmode": "${sleepmode}",
+                "useichecker": "${useichecker}",
+                "useiswift": "${useiswift}"
+              }
+  /kes/public/v1/settings/FileEncryption:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "adminmessagetemplate": "",
+                    "complaintbodytemplate": "",
+                    "complaintrecipient": "",
+                    "complaintsubject": "",
+                    "fixeddrivesettings": [],
+                    "removabledrivesettings": [],
+                    "securewipeoriginals": false,
+                    "sfxpasswordsettings": []
+                  }
+      summary: Gets a FileEncryption settings
+      operationId: Gets_a_FileEncryption_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a FileEncryption settings
+      operationId: Sets_a_FileEncryption_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "adminmessagetemplate": "${adminmessagetemplate}",
+              "complaintbodytemplate": "${complaintbodytemplate}",
+              "complaintrecipient": "${complaintrecipient}",
+              "complaintsubject": "${complaintsubject}",
+              "fixeddrivesettings": "${fixeddrivesettings}",
+              "removabledrivesettings": "${removabledrivesettings}",
+              "securewipeoriginals": "${securewipeoriginals}",
+              "sfxpasswordsettings": "${sfxpasswordsettings}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "adminmessagetemplate": "${adminmessagetemplate}",
+                "complaintbodytemplate": "${complaintbodytemplate}",
+                "complaintrecipient": "${complaintrecipient}",
+                "complaintsubject": "${complaintsubject}",
+                "fixeddrivesettings": "${fixeddrivesettings}",
+                "removabledrivesettings": "${removabledrivesettings}",
+                "securewipeoriginals": "${securewipeoriginals}",
+                "sfxpasswordsettings": "${sfxpasswordsettings}"
+              }
+  /kes/public/v1/settings/Hips:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "firewall": [],
+                    "hips": []
+                  }
+      summary: Gets a Hips settings
+      operationId: Gets_a_Hips_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a Hips settings
+      operationId: Sets_a_Hips_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "firewall": "${firewall}",
+              "hips": "${hips}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "firewall": "${firewall}",
+                "hips": "${hips}"
+              }
+  /kes/public/v1/settings/KATA:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "serveraddress": "",
+                    "serverport": 0,
+                    "enabled": false
+                  }
+      summary: Gets a KATA settings
+      operationId: Gets_a_KATA_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a KATA settings
+      operationId: Sets_a_KATA_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "serveraddress": "${serveraddress}",
+              "serverport": "${serverport}",
+              "enabled": "${enabled}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "serveraddress": "${serveraddress}",
+                "serverport": "${serverport}",
+                "enabled": "${enabled}"
+              }
+  /kes/public/v1/settings/KeyboardAuthorization:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "enablevirtualkeyboard": false,
+                    "enabled": false
+                  }
+      summary: Gets a KeyboardAuthorization settings
+      operationId: Gets_a_KeyboardAuthorization_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a KeyboardAuthorization settings
+      operationId: Sets_a_KeyboardAuthorization_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "enablevirtualkeyboard": "${enablevirtualkeyboard}",
+              "enabled": "${enabled}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "enablevirtualkeyboard": "${enablevirtualkeyboard}",
+                "enabled": "${enabled}"
+              }
+  /kes/public/v1/settings/Ksn:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "agreedksnmd5s": [],
+                    "enablecloudavmode": false,
+                    "ksninaccessiblecloudavmodeseverity": 0,
+                    "ksninaccessibleseverity": 0,
+                    "requestsagreement": [],
+                    "statisticsagreement": [],
+                    "useklservers": false,
+                    "useksnproxy": false
+                  }
+      summary: Gets a Ksn settings
+      operationId: Gets_a_Ksn_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a Ksn settings
+      operationId: Sets_a_Ksn_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: >-
+            {
+              "agreedksnmd5s": "${agreedksnmd5s}",
+              "enablecloudavmode": "${enablecloudavmode}",
+              "ksninaccessiblecloudavmodeseverity": "${ksninaccessiblecloudavmodeseverity}",
+              "ksninaccessibleseverity": "${ksninaccessibleseverity}",
+              "requestsagreement": "${requestsagreement}",
+              "statisticsagreement": "${statisticsagreement}",
+              "useklservers": "${useklservers}",
+              "useksnproxy": "${useksnproxy}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: >-
+              {
+                "agreedksnmd5s": "${agreedksnmd5s}",
+                "enablecloudavmode": "${enablecloudavmode}",
+                "ksninaccessiblecloudavmodeseverity": "${ksninaccessiblecloudavmodeseverity}",
+                "ksninaccessibleseverity": "${ksninaccessibleseverity}",
+                "requestsagreement": "${requestsagreement}",
+                "statisticsagreement": "${statisticsagreement}",
+                "useklservers": "${useklservers}",
+                "useksnproxy": "${useksnproxy}"
+              }
+  /kes/public/v1/settings/MailAv:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "attachmentsfiltersettings": [],
+                    "compoundfilessettings": [],
+                    "enabled": false,
+                    "heuristiclevel": 0,
+                    "outlookpluginsettings": [],
+                    "scanaction": 0,
+                    "scandirection": 0,
+                    "scanmailtraffic": false
+                  }
+      summary: Gets a MailAv settings
+      operationId: Gets_a_MailAv_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a MailAv settings
+      operationId: Sets_a_MailAv_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "attachmentsfiltersettings": "${attachmentsfiltersettings}",
+              "compoundfilessettings": "${compoundfilessettings}",
+              "enabled": "${enabled}",
+              "heuristiclevel": "${heuristiclevel}",
+              "outlookpluginsettings": "${outlookpluginsettings}",
+              "scanaction": "${scanaction}",
+              "scandirection": "${scandirection}",
+              "scanmailtraffic": "${scanmailtraffic}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "attachmentsfiltersettings": "${attachmentsfiltersettings}",
+                "compoundfilessettings": "${compoundfilessettings}",
+                "enabled": "${enabled}",
+                "heuristiclevel": "${heuristiclevel}",
+                "outlookpluginsettings": "${outlookpluginsettings}",
+                "scanaction": "${scanaction}",
+                "scandirection": "${scandirection}",
+                "scanmailtraffic": "${scanmailtraffic}"
+              }
+  /kes/public/v1/settings/NetworkThreatProtection:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "bantimeout": 0,
+                    "enableban": false,
+                    "enabled": false,
+                    "excludeips": [],
+                    "macspoofingprotectionmode": 0
+                  }
+      summary: Gets a NetworkThreatProtection settings
+      operationId: Gets_a_NetworkThreatProtection_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a NetworkThreatProtection settings
+      operationId: Sets_a_NetworkThreatProtection_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "bantimeout": "${bantimeout}",
+              "enableban": "${enableban}",
+              "enabled": "${enabled}",
+              "excludeips": "${excludeips}",
+              "macspoofingprotectionmode": "${macspoofingprotectionmode}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "bantimeout": "${bantimeout}",
+                "enableban": "${enableban}",
+                "enabled": "${enabled}",
+                "excludeips": "${excludeips}",
+                "macspoofingprotectionmode": "${macspoofingprotectionmode}"
+              }
+  /kes/public/v1/settings/RemediationEngine:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "enabled": false
+                  }
+      summary: Gets a RemediationEngine settings
+      operationId: Gets_a_RemediationEngine_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a RemediationEngine settings
+      operationId: Sets_a_RemediationEngine_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "enabled": "${enabled}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "enabled": "${enabled}"
+              }
+  /kes/public/v1/settings/TrafficMonitorSettings:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "portsmonitoring": [],
+                    "trafficdecoding": []
+                  }
+      summary: Gets a TrafficMonitorSettings settings
+      operationId: Gets_a_TrafficMonitorSettings_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a TrafficMonitorSettings settings
+      operationId: Sets_a_TrafficMonitorSettings_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "portsmonitoring": "${portsmonitoring}",
+              "trafficdecoding": "${trafficdecoding}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "portsmonitoring": "${portsmonitoring}",
+                "trafficdecoding": "${trafficdecoding}"
+              }
+  /kes/public/v1/settings/WebAv:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "antiphishingsettings": [],
+                    "checklinkswithsuspiciousurldatabase": false,
+                    "enabled": false,
+                    "heuristiclevel": 0,
+                    "scanaction": 0,
+                    "trustedurlsettings": []
+                  }
+      summary: Gets a WebAv settings
+      operationId: Gets_a_WebAv_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a WebAv settings
+      operationId: Sets_a_WebAv_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: >-
+            {
+              "antiphishingsettings": "${antiphishingsettings}",
+              "checklinkswithsuspiciousurldatabase": "${checklinkswithsuspiciousurldatabase}",
+              "enabled": "${enabled}",
+              "heuristiclevel": "${heuristiclevel}",
+              "scanaction": "${scanaction}",
+              "trustedurlsettings": "${trustedurlsettings}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: >-
+              {
+                "antiphishingsettings": "${antiphishingsettings}",
+                "checklinkswithsuspiciousurldatabase": "${checklinkswithsuspiciousurldatabase}",
+                "enabled": "${enabled}",
+                "heuristiclevel": "${heuristiclevel}",
+                "scanaction": "${scanaction}",
+                "trustedurlsettings": "${trustedurlsettings}"
+              }
+  /kes/public/v1/settings/WebControl:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "advancedsettings": [],
+                    "complaintbodytemplate": "",
+                    "complaintrecipient": "",
+                    "complaintsubject": "",
+                    "defaultverdict": 0,
+                    "denymessagetemplate": "",
+                    "enabled": false,
+                    "rules": [],
+                    "schedules": [],
+                    "urlcategories": [],
+                    "warnmessagetemplate": ""
+                  }
+      summary: Gets a WebControl settings
+      operationId: Gets_a_WebControl_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: header
+          name: Big-Int-String-Format
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Sets a WebControl settings
+      operationId: Sets_a_WebControl_settings
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "advancedsettings": "${advancedsettings}",
+              "complaintbodytemplate": "${complaintbodytemplate}",
+              "complaintrecipient": "${complaintrecipient}",
+              "complaintsubject": "${complaintsubject}",
+              "defaultverdict": "${defaultverdict}",
+              "denymessagetemplate": "${denymessagetemplate}",
+              "enabled": "${enabled}",
+              "rules": "${rules}",
+              "schedules": "${schedules}",
+              "urlcategories": "${urlcategories}",
+              "warnmessagetemplate": "${warnmessagetemplate}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/jsonBig-Int-String-Format
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "advancedsettings": "${advancedsettings}",
+                "complaintbodytemplate": "${complaintbodytemplate}",
+                "complaintrecipient": "${complaintrecipient}",
+                "complaintsubject": "${complaintsubject}",
+                "defaultverdict": "${defaultverdict}",
+                "denymessagetemplate": "${denymessagetemplate}",
+                "enabled": "${enabled}",
+                "rules": "${rules}",
+                "schedules": "${schedules}",
+                "urlcategories": "${urlcategories}",
+                "warnmessagetemplate": "${warnmessagetemplate}"
+              }
+  /kes/public/v1/tasks:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "tasks": []
+                  }
+      summary: "Get list of products task "
+      operationId: Get_list_of_products_task_
+      description: Description of the method is not specified
+      parameters: []
+      requestBody:
+        content: {}
+  /kes/public/v1/tasks/IntegrityCheck:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Allows to control task "
+      operationId: Allows_to_control_task_
+      description: "NOTE: operation can be performed asynchronously."
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "action": "${action}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "action": "${action}"
+              }
+  /kes/public/v1/tasks/IntegrityCheck/settings:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "run_as": [],
+                    "schedule": [],
+                    "settings": []
+                  }
+      summary: "Get IntegrityCheck settings "
+      operationId: Get_IntegrityCheck_settings_
+      description: Description of the method is not specified
+      parameters: []
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Set IntegrityCheck settings "
+      operationId: Set_IntegrityCheck_settings_
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "run_as": "${run_as}",
+              "schedule": "${schedule}",
+              "settings": "${settings}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "run_as": "${run_as}",
+                "schedule": "${schedule}",
+                "settings": "${settings}"
+              }
+  /kes/public/v1/tasks/Rollback:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Allows to control task "
+      operationId: Allows_to_control_task_
+      description: "NOTE: operation can be performed asynchronously."
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "action": "${action}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "action": "${action}"
+              }
+  /kes/public/v1/tasks/Rollback/settings:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "run_as": [],
+                    "schedule": [],
+                    "settings": []
+                  }
+      summary: "Get Rollback settings "
+      operationId: Get_Rollback_settings_
+      description: Description of the method is not specified
+      parameters: []
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Set Rollback settings "
+      operationId: Set_Rollback_settings_
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "run_as": "${run_as}",
+              "schedule": "${schedule}",
+              "settings": "${settings}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "run_as": "${run_as}",
+                "schedule": "${schedule}",
+                "settings": "${settings}"
+              }
+  /kes/public/v1/tasks/Scan_My_Computer:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Allows to control task "
+      operationId: Allows_to_control_task_
+      description: "NOTE: operation can be performed asynchronously."
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "action": "${action}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "action": "${action}"
+              }
+  /kes/public/v1/tasks/Scan_My_Computer/settings:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "run_as": [],
+                    "schedule": [],
+                    "settings": []
+                  }
+      summary: "Get Scan_My_Computer settings "
+      operationId: Get_Scan_My_Computer_settings_
+      description: Description of the method is not specified
+      parameters: []
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Set Scan_My_Computer settings "
+      operationId: Set_Scan_My_Computer_settings_
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "run_as": "${run_as}",
+              "schedule": "${schedule}",
+              "settings": "${settings}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "run_as": "${run_as}",
+                "schedule": "${schedule}",
+                "settings": "${settings}"
+              }
+  /kes/public/v1/tasks/Scan_Objects:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Allows to control task "
+      operationId: Allows_to_control_task_
+      description: "NOTE: operation can be performed asynchronously."
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "action": "${action}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "action": "${action}"
+              }
+  /kes/public/v1/tasks/Scan_Objects/settings:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "run_as": [],
+                    "schedule": [],
+                    "settings": []
+                  }
+      summary: "Get Scan_Objects settings "
+      operationId: Get_Scan_Objects_settings_
+      description: Description of the method is not specified
+      parameters: []
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Set Scan_Objects settings "
+      operationId: Set_Scan_Objects_settings_
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "run_as": "${run_as}",
+              "schedule": "${schedule}",
+              "settings": "${settings}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "run_as": "${run_as}",
+                "schedule": "${schedule}",
+                "settings": "${settings}"
+              }
+  /kes/public/v1/tasks/Scan_Startup:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Allows to control task "
+      operationId: Allows_to_control_task_
+      description: "NOTE: operation can be performed asynchronously."
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "action": "${action}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "action": "${action}"
+              }
+  /kes/public/v1/tasks/Scan_Startup/settings:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "run_as": [],
+                    "schedule": [],
+                    "settings": []
+                  }
+      summary: "Get Scan_Startup settings "
+      operationId: Get_Scan_Startup_settings_
+      description: Description of the method is not specified
+      parameters: []
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Set Scan_Startup settings "
+      operationId: Set_Scan_Startup_settings_
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "run_as": "${run_as}",
+              "schedule": "${schedule}",
+              "settings": "${settings}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "run_as": "${run_as}",
+                "schedule": "${schedule}",
+                "settings": "${settings}"
+              }
+  /kes/public/v1/tasks/Updater:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Allows to control task "
+      operationId: Allows_to_control_task_
+      description: "NOTE: operation can be performed asynchronously."
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "action": "${action}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "action": "${action}"
+              }
+  /kes/public/v1/tasks/Updater/settings:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "run_as": [],
+                    "schedule": [],
+                    "settings": []
+                  }
+      summary: "Get Updater settings "
+      operationId: Get_Updater_settings_
+      description: Description of the method is not specified
+      parameters: []
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: "Set Updater settings "
+      operationId: Set_Updater_settings_
+      description: Description of the method is not specified
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "run_as": "${run_as}",
+              "schedule": "${schedule}",
+              "settings": "${settings}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "run_as": "${run_as}",
+                "schedule": "${schedule}",
+                "settings": "${settings}"
+              }
+components:
+  securitySchemes: {}
