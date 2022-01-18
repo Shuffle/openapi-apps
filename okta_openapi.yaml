@@ -6556,7 +6556,7 @@ paths:
 schemes:
 - 'https:'
 servers:
-- url: https://your-domain.okta.com
+- url: 
 tags:
 - name: IAM
 - name: inventory
