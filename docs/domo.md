@@ -18,6 +18,7 @@ To use this app, You'll need  access token. To get access token you'll need to g
 ![image](https://user-images.githubusercontent.com/5719530/149952528-e060812b-59bc-4fd2-b44d-3285f0efbbc7.png)
 
 - Run the workflow and you'll get an access token in response.
+
 ![image](https://user-images.githubusercontent.com/5719530/149952858-db4ae8f9-0e28-4086-b708-e11f8af36218.png)
 
 In this case, it can be used as such in the next step:
