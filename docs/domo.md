@@ -13,8 +13,8 @@ To use this app, You'll need  access token. To get access token you'll need to g
 ### Step 2: Generate access token
 - To generate access token, go to your shuffle workflow and add http app into it.
 - Select curl action and add following into curl statment
- ```curl
-curl -v -u your_client_id:your_client_secret "https://api.domo.com/oauth/token?grant_type=client_credentials&scope=data%20data%20dashboard"
+ ```
+curl -v -u your_client_id:your_client_secret "https://api.domo.com/oauth/token?grant_type=client_credentials&scope=data%20dashboard"
 ```
 - Run the workflow and you'll get an access token in response.
 
