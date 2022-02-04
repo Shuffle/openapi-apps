@@ -1,4 +1,28 @@
-[{
+ {
+	"$schema": "http://json-schema.org/draft-04/schema",
+  "additionalProperties": false,
+  "required": ["count", "next", "results", "previous"],
+  "properties": {
+    "count": {"type": "integer"},
+    "next": {"type": ["string", "null"]},
+    "results": {
+        "type": "array", 
+        "items": {
+            "additionalProperties": false,
+            "required": ["indicator", "title", "content", "type", "id", "description"],
+            "properties": {
+                "indicator": {"type": "string"},
+                "title": {"type": ["string", "null"]},
+                "content": {"type": ["string", "null"]},
+                "type": {"type": "string"},
+                "id": {"type": "integer"},
+                "description": {"type": ["string", "null"]}
+            }
+        }
+    },
+    "previous": {"type": ["string", "null"]}
+  },
+	{
     "count": 3,
     "next": null,
     "results": [
@@ -71,20 +95,6 @@
 ,{
     "description": "New Description",
     "tags": {"add": ["addtag1", "addtag2"], "remove": ["remtag1"]}
-}
-,{
-    &#39;add&#39;: [
-        {&#39;indicator&#39;: &#39;8.8.8.9&#39;, &#39;type&#39;: &#39;IPv4&#39;, &#39;role&#39;: &#39;command_and_control&#39;},
-        {&#39;indicator&#39;: &#39;8.8.8.10&#39;, &#39;type&#39;: &#39;IPv4&#39;},
-    ],
-    &#39;edit&#39;: [
-        {&#39;id&#39;: 1 &#39;type&#39;: &#39;hostname&#39;, &#39;indicator&#39;: &#39;www.amazon.com&#39;},
-        {&#39;id&#39;: 2, &#39;indicator&#39;: &#39;you@rustybrooks.com&#39;},
-        {&#39;id&#39;: 3, &#39;is_active&#39;: True, &#39;expiration&#39;: &#39;2017-01-01&#39;, &#39;role&#39;: &#39;scanning_host&#39;},
-    ],
-    &#39;remove&#39;: [
-        {&#39;id&#39;: 4},
-    ]
 }
 ,{
   "$schema": "http://json-schema.org/draft-04/schema",
@@ -1712,5 +1722,6 @@
         "unfollowed"
       ]
     }
-  }}
-]
+  }
+}
+

@@ -1,0 +1,1022 @@
+swagger: "3.0"
+info:
+  title: WatchGuard Endpoint Security
+  description: REST API to Manage Endpoint Security
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact:
+    name: API Support
+    url: https://www.watchguard.com/wgrd-support/contact-support
+  x-categories:
+    - Network
+servers:
+  - url: https://api.usa.cloud.watchguard.com/rest/endpoint-security/management
+host: api.usa.cloud.watchguard.com
+basePath: /rest/endpoint-security/management
+schemes:
+  - "https:"
+paths:
+  "/api/v1/accounts/{accountId}/datacontrolstatistics":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Retrieves Data Control module status
+      operationId: Retrieves_Data_Control_module_status
+      description: Retrieves Data Control statistics.
+      parameters:
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/api/v1/accounts/{accountId}/devices":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                    "account_id": "Identifier for the account.",
+                    "agent_version": "Version of the agent installed in the endpoint.",
+                    "description": "Description of the device.",
+                    "device_id": "Identifier for the device.",
+                    "domain": "Domain to which your devices belong on Microsoft networks.",
+                    "encryption": 0,
+                    "host_name": "Host name of the device.",
+                    "ip_address": "IP address of the device.",
+                    "isolation_state": 0,
+                    "last_connection": "Date and time of the last connection of the device.",
+                    "license_status": 0,
+                    "mac_addresses": [],
+                    "operating_system": "Name of the operating system installed on the device.",
+                    "platform_id": 0,
+                    "reboot_requested": [],
+                    "reinstall_agent_requested": [],
+                    "reinstall_protection_requested": [],
+                    "site_id": "Identifier for the site.",
+                    "site_name": "Name of the site the device belongs to.",
+                    "type": 0
+                  }
+      summary: Retrieves a list of devices
+      operationId: Retrieves_a_list_of_devices
+      description: Retrieves a list of devices, and additional information, such as
+        the device IP address and operating system.
+      parameters:
+        - in: query
+          name: top
+          description: Specifies the number of objects to retrieve.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: skip
+          description: Bypasses the specified number of objects in the results returned.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: search
+          description: Returns only objects that include the specified text string.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: count
+          description: Indicates whether to return a counter that shows the total number
+            of objects in the total_items response parameter.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: orderby
+          description: Specifies how to order results. You can order by any parameter in
+            the response and sort results in ascending or descending order.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: config
+          description: Indicates whether the security configuration name and ID are
+            returned. The default value is true.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/api/v1/accounts/{accountId}/devices/action":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "no_executed_by_not_found_device_ids": [],
+                    "processed_device_ids": []
+                  }
+      summary: Sends an action to devices
+      operationId: Sends_an_action_to_devices
+      description: Initiates an action on the specified devices. For example, send an
+        action to reboot a device.
+      parameters:
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "action_type": "${action_type}",
+              "count_down_type": "${count_down_type}",
+              "device_ids": "${device_ids}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "action_type": "${action_type}",
+                "count_down_type": "${count_down_type}",
+                "device_ids": "${device_ids}"
+              }
+  "/api/v1/accounts/{accountId}/devices/isolation":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "no_executed_by_not_found_device_ids": [],
+                    "processed_device_ids": []
+                  }
+      summary: Isolates devices
+      operationId: Isolates_devices
+      description: Isolates the specified devices.
+      parameters:
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "customized_message": "${customized_message}",
+              "device_ids": "${device_ids}",
+              "exclusion_programs": "${exclusion_programs}",
+              "hide_customized_alert": "${hide_customized_alert}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "customized_message": "${customized_message}",
+                "device_ids": "${device_ids}",
+                "exclusion_programs": "${exclusion_programs}",
+                "hide_customized_alert": "${hide_customized_alert}"
+              }
+  "/api/v1/accounts/{accountId}/devices/noisolation":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "no_executed_by_not_found_device_ids": [],
+                    "processed_device_ids": []
+                  }
+      summary: Stops device isolation
+      operationId: Stops_device_isolation
+      description: Stops isolation on the specified devices.
+      parameters:
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "device_ids": "${device_ids}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "device_ids": "${device_ids}"
+              }
+  "/api/v1/accounts/{accountId}/devices/uninstall":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                    "no_executed_by_not_found_device_ids": "If the action could not be completely executed, the list of device ids not found (not executed) will be returned here."
+                  }
+      summary: Uninstalls protection from devices
+      operationId: Uninstalls_protection_from_devices
+      description: Uninstalls protection from the specified devices.
+      parameters:
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "device_ids": "${device_ids}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "device_ids": "${device_ids}"
+              }
+  "/api/v1/accounts/{accountId}/devicesprotectionstatus":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Retrieves device protection status
+      operationId: Retrieves_device_protection_status
+      description: Retrieves a list of devices with their protection status and other
+        device information.
+      parameters:
+        - in: query
+          name: top
+          description: Specifies the number of objects to retrieve.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: skip
+          description: Bypasses the specified number of objects in the results returned.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: search
+          description: Returns only objects that include the specified text string.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: count
+          description: Indicates whether to return a counter that shows the total number
+            of objects in the total_items response parameter.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: orderby
+          description: Specifies how to order results. You can order by any parameter in
+            the response and sort results in ascending or descending order.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/api/v1/accounts/{accountId}/encryptionstatistics":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Retrieves Full Encryption module status
+      operationId: Retrieves_Full_Encryption_module_status
+      description: Retrieves Full Encryption statistics.
+      parameters:
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/api/v1/accounts/{accountId}/immediatescan":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                    "no_executed_by_not_found_device_ids": "If the action could not be completely executed, the list of device ids not found (not executed) will be returned here.",
+                    "task_id": "ID of the completed scan task."
+                  }
+      summary: Scans devices immediately
+      operationId: Scans_devices_immediately
+      description: Starts a task to scan the specified devices immediately.
+      parameters:
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "apply_exclusions_on_scan": "${apply_exclusions_on_scan}",
+              "detect_hacking_tools": "${detect_hacking_tools}",
+              "detect_suspicious_files": "${detect_suspicious_files}",
+              "device_ids": "${device_ids}",
+              "execution_window_expiration": "${execution_window_expiration}",
+              "extensions_to_exclude": "${extensions_to_exclude}",
+              "files_to_exclude": "${files_to_exclude}",
+              "folders_to_exclude": "${folders_to_exclude}",
+              "scan_compressed_files": "${scan_compressed_files}",
+              "scan_scope": "${scan_scope}",
+              "specified_items_to_scan": "${specified_items_to_scan}",
+              "task_description": "${task_description}",
+              "task_name": "${task_name}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "apply_exclusions_on_scan": "${apply_exclusions_on_scan}",
+                "detect_hacking_tools": "${detect_hacking_tools}",
+                "detect_suspicious_files": "${detect_suspicious_files}",
+                "device_ids": "${device_ids}",
+                "execution_window_expiration": "${execution_window_expiration}",
+                "extensions_to_exclude": "${extensions_to_exclude}",
+                "files_to_exclude": "${files_to_exclude}",
+                "folders_to_exclude": "${folders_to_exclude}",
+                "scan_compressed_files": "${scan_compressed_files}",
+                "scan_scope": "${scan_scope}",
+                "specified_items_to_scan": "${specified_items_to_scan}",
+                "task_description": "${task_description}",
+                "task_name": "${task_name}"
+              }
+  "/api/v1/accounts/{accountId}/installers":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "installer_download_url": ""
+                  }
+      summary: Retrieves an installation package URL
+      operationId: Retrieves_an_installation_package_URL
+      description: Retrieves the URL to download an installation package that installs
+        Panda software with the specified managed configuration settings on a
+        device.
+      parameters:
+        - in: query
+          name: platformId
+          description: >
+            Identifier of the platform you want to retrieve the installation
+            package URL for.
+
+            - 1: Windows
+
+            - 2: Linux
+
+            - 3: macOS
+
+            - 4: Android
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: managedConfigurationId
+          description: Identifier of the managed configuration you want to retrieve the
+            installation package URL for.
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: useActiveDirectory
+          description: Indicates whether to integrate the device into Active Directory.
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/api/v1/accounts/{accountId}/licenses":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "product_license_counter": []
+                  }
+      summary: Retrieves account license information
+      operationId: Retrieves_account_license_information
+      description: Retrieves license information for Panda products associated with
+        your WatchGuard Cloud account.
+      parameters:
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/api/v1/accounts/{accountId}/managedconfigurations/{type}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "description": "Description of the managed configuration.",
+                    "id": "Unique identifier of the managed configuration.",
+                    "is_default": [],
+                    "name": "Name of the managed configuration."
+                  }
+      summary: Retrieves a list of managed configurations
+      operationId: Retrieves_a_list_of_managed_configurations
+      description: Retrieves a list of the specified type of managed configurations
+        associated with your WatchGuard Cloud account.
+      parameters:
+        - in: query
+          name: top
+          description: Specifies the number of objects to retrieve.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: skip
+          description: Bypasses the specified number of objects in the results returned.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: search
+          description: Returns only objects that include the specified text string.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: count
+          description: Indicates whether to return a counter that shows the total number
+            of objects in the total_items response parameter.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: orderby
+          description: Specifies how to order results. You can order by any parameter in
+            the response and sort results in ascending or descending order.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: type
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/api/v1/accounts/{accountId}/managedconfigurations/{type}/{configId}":
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                    "no_executed_by_not_found_device_ids": "If the action could not be completely executed, the list of device ids not found (not executed) will be returned here."
+                  }
+      summary: Links devices to a managed configuration
+      operationId: Links_devices_to_a_managed_configuration
+      description: Links devices to a specified configuration.
+      parameters:
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: type
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: configId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "device_ids": "${device_ids}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "device_ids": "${device_ids}"
+              }
+  "/api/v1/accounts/{accountId}/patchmanagementstatistics":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Retrieves Patch Management module status
+      operationId: Retrieves_Patch_Management_module_status
+      description: Retrieves Patch Management statistics.
+      parameters:
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/api/v1/accounts/{accountId}/securityeventcounters/{type}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "{}"
+      summary: Retrieves counts of security events
+      operationId: Retrieves_counts_of_security_events
+      description: Retrieves counts of detected security events for the specified types.
+      parameters:
+        - in: query
+          name: filter
+          description: Filters the security event counters by date.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: type
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/api/v1/accounts/{accountId}/securityevents/{type}/export/{period}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                    "accessed_data": [],
+                    "action": 0,
+                    "alias": "Alias name for device control detections.",
+                    "count": 0,
+                    "custom_group_folder_id": "Identifier of the custom group folder assigned.",
+                    "custom_group_folder_info": "Hierarchical structure in JSON for the assigned group and all its subgroups.",
+                    "date": "Date and time of detection.",
+                    "description": "Name of device description in antivirus detections.",
+                    "detection_technology": "Name of detection technology in exploit detections.",
+                    "device_id": "Identifier of the device.",
+                    "domain": "Domain of device in antivirus detections.",
+                    "dwell_time": 0,
+                    "endpoint_event_date": "Endpoint event date in indicators of attack detections.",
+                    "event_id": 0,
+                    "excluded": [],
+                    "exploit_technique": "Exploit technique.",
+                    "file_info_discard": "Hash to identify the file in antivirus detections.",
+                    "filed_date": "Filed date in indicators of attack detections.",
+                    "hash": "Hash of element.",
+                    "host_name": "Name of the host.",
+                    "id": "Identifier in antivirus detections.",
+                    "instance_id": "Identifier of instance for device control detections.",
+                    "ip_address": "IP address of the device in antivirus and firewall detections.",
+                    "is_excluded": [],
+                    "item_name": "Name of the threat.",
+                    "made_external_connections": [],
+                    "malware_name": "Malware name in antivirus detections.",
+                    "number_of_occurrences": 0,
+                    "path": "Name of threat path.",
+                    "risk": [],
+                    "rule_configuration_id": "Identifier of rule configuration in firewall blocked connections.",
+                    "rule_id": "Identifier of rule in firewall blocked connections and in indicators of attack detections.",
+                    "rule_mitre": "Array with JSON pairs of the attack tactic and technique in indicators of attack detections.",
+                    "rule_name": "Rule name for firewall blocked connections and for indicators of attack detections.",
+                    "rule_obsolete": [],
+                    "security_event_date": "Security event date and time for antivirus, firewall, and device control detections.",
+                    "since_until_filed": "Time since the filed date in indicators of attack detections.",
+                    "site_id": "Identifier of the site.",
+                    "site_name": "Site name in antivirus and firewall detections.",
+                    "source_ip": "Name of source IP.",
+                    "source_machine_name": "Name of source device name.",
+                    "source_user": "Source username.",
+                    "user_name": "Username.",
+                    "was_run": []
+                  }
+      summary: Retrieves a list of security events for specific devices
+      operationId: Retrieves_a_list_of_security_events_for_specific_devices
+      description: Retrieves a list of security events of the specified type for the
+        specified device.
+      parameters:
+        - in: query
+          name: hostname
+          description: Host name (base-64 encoded) of the device you want to retrieve
+            security events for.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: type
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: period
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/api/v1/accounts/{accountId}/securityoverview/{period}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "total_devices": 0,
+                    "total_unmanaged_devices": 0
+                  }
+      summary: Retrieves security overview information
+      operationId: Retrieves_security_overview_information
+      description: Retrieves counters for security overview.
+      parameters:
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: period
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/api/v1/accounts/{accountId}/unmanageddevices":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                    "account_id": "Identifier of the account.",
+                    "description": "Description of the device.",
+                    "device_id": "Identifier of the device.",
+                    "host_name": "Name of the host.",
+                    "installation_error": 0,
+                    "ip_address": "IP address of the device.",
+                    "last_seen_datetime": "Date and time the unmanaged device was found.",
+                    "mac_address": "MAC address of the device.",
+                    "network_interface_controller_vendor": "Manufacturer of the network card in the device.",
+                    "probe_name": "Name of the device that discovered the unmanaged device.",
+                    "site_id": "Identifier of the site.",
+                    "status": 0
+                  }
+      summary: Retrieves a list of unmanaged devices
+      operationId: Retrieves_a_list_of_unmanaged_devices
+      description: Retrieves a list of unmanaged devices discovered on the network.
+      parameters:
+        - in: query
+          name: top
+          description: Specifies the number of objects to retrieve.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: skip
+          description: Bypasses the specified number of objects in the results returned.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: count
+          description: Indicates whether to return a counter that shows the total number
+            of objects in the total_items response parameter.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: orderby
+          description: Specifies how to order results. You can order by any parameter in
+            the response and sort results in ascending or descending order.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: accountId
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /health:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: |-
+                  {
+                    "healthy": []
+                  }
+      summary: Get health
+      operationId: Get_health
+      description: HealthCheck URL
+      parameters: []
+      requestBody:
+        content: {}
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: UUID
+tags:
+  - name: EDR
+  - name: EPDR
+  - name: EPP

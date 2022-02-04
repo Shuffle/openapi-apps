@@ -1,0 +1,1037 @@
+openapi: 3.0.0
+info:
+  title: Jira
+  description: The Jira app for creating and managing issues from shuffle workflow.
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact:
+    email: dhavaldave055@gmail.com
+    name: "@dhavaldave"
+    url: https://www.linkedin.com/in/dhavaldave055
+  x-categories:
+    - Cases
+servers:
+  - url: ""
+basePath: /
+schemes:
+  - ""
+paths:
+  "/rest/api/2/issue/{issue_id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get issue
+      operationId: Get_issue
+      description: Get issue by id
+      parameters:
+        - in: path
+          name: issue_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/rest/api/3/attachment/{attachment_id}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete attachment
+      operationId: Delete_attachment
+      description: Delete attachment by id
+      parameters:
+        - in: path
+          name: attachment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /rest/api/3/issue/picker:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                      "sections": [
+                          {
+                              "label": "History Search",
+                              "sub": "Showing 3 of 3 matching issues",
+                              "id": "hs",
+                              "issues": [
+                                  {
+                                      "id": 10006,
+                                      "key": "ST-7",
+                                      "keyHtml": "ST-7",
+                                      "img": "/secure/viewavatar?size=medium&avatarId=10303&avatarType=issuetype",
+                                      "summary": "<b>REST</b> <b>EXAMPL</b>E",
+                                      "summaryText": "REST EXAMPLE"
+                                  },
+                                  {
+                                      "id": 10004,
+                                      "key": "ST-5",
+                                      "keyHtml": "ST-5",
+                                      "img": "/secure/viewavatar?size=medium&avatarId=10303&avatarType=issuetype",
+                                      "summary": "<b>REST</b> <b>EXAMPL</b>E",
+                                      "summaryText": "REST EXAMPLE"
+                                  },
+                                  {
+                                      "id": 10002,
+                                      "key": "ST-3",
+                                      "keyHtml": "ST-3",
+                                      "img": "/secure/viewavatar?size=medium&avatarId=10303&avatarType=issuetype",
+                                      "summary": "<b>REST</b> <b>EXAMPL</b>E",
+                                      "summaryText": "REST EXAMPLE"
+                                  }
+                              ]
+                          }
+                      ]
+                  }
+      summary: Search issues
+      operationId: Search_issues
+      description: Search for issues
+      parameters:
+        - in: query
+          name: query
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/rest/api/3/issue/{Issue_id}/comment":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                    "self": "https://your-domain.atlassian.net/rest/api/3/issue/10010/comment/10000",
+                    "id": "10000",
+                    "author": {
+                      "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
+                      "accountId": "5b10a2844c20165700ede21g",
+                      "displayName": "Mia Krystof",
+                      "active": false
+                    },
+                    "body": {
+                      "type": "doc",
+                      "version": 1,
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget venenatis elit. Duis eu justo eget augue iaculis fermentum. Sed semper quam laoreet nisi egestas at posuere augue semper."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "updateAuthor": {
+                      "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
+                      "accountId": "5b10a2844c20165700ede21g",
+                      "displayName": "Mia Krystof",
+                      "active": false
+                    },
+                    "created": "2021-03-01T03:38:14.137+0000",
+                    "updated": "2021-03-01T03:38:14.137+0000",
+                    "visibility": {
+                      "type": "role",
+                      "value": "Administrators"
+                    }
+                  }
+      summary: Add comment on issue
+      operationId: Add_comment_on_issue
+      description: "Add text comment "
+      parameters:
+        - in: path
+          name: Issue_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "body": {
+                "type": "doc",
+                "version": 1,
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "${comment}",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: "Accept "
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "body": {
+                  "type": "doc",
+                  "version": 1,
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "${comment}",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+  "/rest/api/3/issue/{issueIdOrKey}/comment/{comment_id}":
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete comment
+      operationId: Delete_comment
+      description: Deletes a comment
+      parameters:
+        - in: path
+          name: issueIdOrKey
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: comment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/rest/api/3/issue/{issueId_Or_Key}/comment":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                    "startAt": 0,
+                    "maxResults": 1,
+                    "total": 1,
+                    "comments": [
+                      {
+                        "self": "https://your-domain.atlassian.net/rest/api/3/issue/10010/comment/10000",
+                        "id": "10000",
+                        "author": {
+                          "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
+                          "accountId": "5b10a2844c20165700ede21g",
+                          "displayName": "Mia Krystof",
+                          "active": false
+                        },
+                        "body": {
+                          "type": "doc",
+                          "version": 1,
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget venenatis elit. Duis eu justo eget augue iaculis fermentum. Sed semper quam laoreet nisi egestas at posuere augue semper."
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "updateAuthor": {
+                          "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
+                          "accountId": "5b10a2844c20165700ede21g",
+                          "displayName": "Mia Krystof",
+                          "active": false
+                        },
+                        "created": "2021-03-02T06:59:24.855+0000",
+                        "updated": "2021-03-02T06:59:24.855+0000",
+                        "visibility": {
+                          "type": "role",
+                          "value": "Administrators"
+                        }
+                      }
+                    ]
+                  }
+      summary: Get comments
+      operationId: Get_comments
+      description: Returns all comments for an issue
+      parameters:
+        - in: path
+          name: issueId_Or_Key
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/rest/api/3/issue/{issueId_or_Key}/comment/{comment_id}":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                    "self": "https://your-domain.atlassian.net/rest/api/3/issue/10010/comment/10000",
+                    "id": "10000",
+                    "author": {
+                      "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
+                      "accountId": "5b10a2844c20165700ede21g",
+                      "displayName": "Mia Krystof",
+                      "active": false
+                    },
+                    "body": {
+                      "type": "doc",
+                      "version": 1,
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget venenatis elit. Duis eu justo eget augue iaculis fermentum. Sed semper quam laoreet nisi egestas at posuere augue semper."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "updateAuthor": {
+                      "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
+                      "accountId": "5b10a2844c20165700ede21g",
+                      "displayName": "Mia Krystof",
+                      "active": false
+                    },
+                    "created": "2021-03-02T06:59:24.855+0000",
+                    "updated": "2021-03-02T06:59:24.855+0000",
+                    "visibility": {
+                      "type": "role",
+                      "value": "Administrators"
+                    }
+                  }
+      summary: Update comment
+      operationId: Update_comment
+      description: Updates a comment
+      parameters:
+        - in: path
+          name: issueId_or_Key
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: comment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "body": {
+                "type": "doc",
+                "version": 1,
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "${comment}",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "body": {
+                  "type": "doc",
+                  "version": 1,
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "text": "${comment}",
+                          "type": "text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+  "/rest/api/3/project/{projectIdOrKey}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                    "self": "https://your-domain.atlassian.net/rest/api/3/project/EX",
+                    "id": "10000",
+                    "key": "EX",
+                    "description": "This project was created as an example for REST.",
+                    "lead": {
+                      "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
+                      "key": "",
+                      "accountId": "5b10a2844c20165700ede21g",
+                      "name": "",
+                      "avatarUrls": {
+                        "48x48": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=48&s=48",
+                        "24x24": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=24&s=24",
+                        "16x16": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=16&s=16",
+                        "32x32": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=32&s=32"
+                      },
+                      "displayName": "Mia Krystof",
+                      "active": false
+                    },
+                    "components": [
+                      {
+                        "self": "https://your-domain.atlassian.net/rest/api/3/component/10000",
+                        "id": "10000",
+                        "name": "Component 1",
+                        "description": "This is a Jira component",
+                        "lead": {
+                          "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
+                          "key": "",
+                          "accountId": "5b10a2844c20165700ede21g",
+                          "name": "",
+                          "avatarUrls": {
+                            "48x48": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=48&s=48",
+                            "24x24": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=24&s=24",
+                            "16x16": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=16&s=16",
+                            "32x32": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=32&s=32"
+                          },
+                          "displayName": "Mia Krystof",
+                          "active": false
+                        },
+                        "assigneeType": "PROJECT_LEAD",
+                        "assignee": {
+                          "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
+                          "key": "",
+                          "accountId": "5b10a2844c20165700ede21g",
+                          "name": "",
+                          "avatarUrls": {
+                            "48x48": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=48&s=48",
+                            "24x24": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=24&s=24",
+                            "16x16": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=16&s=16",
+                            "32x32": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=32&s=32"
+                          },
+                          "displayName": "Mia Krystof",
+                          "active": false
+                        },
+                        "realAssigneeType": "PROJECT_LEAD",
+                        "realAssignee": {
+                          "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
+                          "key": "",
+                          "accountId": "5b10a2844c20165700ede21g",
+                          "name": "",
+                          "avatarUrls": {
+                            "48x48": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=48&s=48",
+                            "24x24": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=24&s=24",
+                            "16x16": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=16&s=16",
+                            "32x32": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=32&s=32"
+                          },
+                          "displayName": "Mia Krystof",
+                          "active": false
+                        },
+                        "isAssigneeTypeValid": false,
+                        "project": "HSP",
+                        "projectId": 10000
+                      }
+                    ],
+                    "issueTypes": [
+                      {
+                        "self": "https://your-domain.atlassian.net/rest/api/3/issueType/3",
+                        "id": "3",
+                        "description": "A task that needs to be done.",
+                        "iconUrl": "https://your-domain.atlassian.net//secure/viewavatar?size=xsmall&avatarId=10299&avatarType=issuetype\",",
+                        "name": "Task",
+                        "subtask": false,
+                        "avatarId": 1,
+                        "hierarchyLevel": 0
+                      },
+                      {
+                        "self": "https://your-domain.atlassian.net/rest/api/3/issueType/1",
+                        "id": "1",
+                        "description": "A problem with the software.",
+                        "iconUrl": "https://your-domain.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10316&avatarType=issuetype\",",
+                        "name": "Bug",
+                        "subtask": false,
+                        "avatarId": 10002,
+                        "entityId": "9d7dd6f7-e8b6-4247-954b-7b2c9b2a5ba2",
+                        "hierarchyLevel": 0,
+                        "scope": {
+                          "type": "PROJECT",
+                          "project": {
+                            "id": "10000",
+                            "key": "KEY",
+                            "name": "Next Gen Project"
+                          }
+                        }
+                      }
+                    ],
+                    "url": "https://www.example.com",
+                    "email": "from-jira@example.com",
+                    "assigneeType": "PROJECT_LEAD",
+                    "versions": [],
+                    "name": "Example",
+                    "roles": {
+                      "Developers": "https://your-domain.atlassian.net/rest/api/3/project/EX/role/10000"
+                    },
+                    "avatarUrls": {
+                      "48x48": "https://your-domain.atlassian.net/secure/projectavatar?size=large&pid=10000",
+                      "24x24": "https://your-domain.atlassian.net/secure/projectavatar?size=small&pid=10000",
+                      "16x16": "https://your-domain.atlassian.net/secure/projectavatar?size=xsmall&pid=10000",
+                      "32x32": "https://your-domain.atlassian.net/secure/projectavatar?size=medium&pid=10000"
+                    },
+                    "projectCategory": {
+                      "self": "https://your-domain.atlassian.net/rest/api/3/projectCategory/10000",
+                      "id": "10000",
+                      "name": "FIRST",
+                      "description": "First Project Category"
+                    },
+                    "simplified": false,
+                    "style": "classic",
+                    "properties": {
+                      "propertyKey": "propertyValue"
+                    },
+                    "insight": {
+                      "totalIssueCount": 100,
+                      "lastIssueUpdateTime": "2021-03-02T06:59:24.095+0000"
+                    }
+                  }
+      summary: Get project
+      operationId: Get_project
+      description: Returns the project details
+      parameters:
+        - in: path
+          name: projectIdOrKey
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /rest/api/latest/issue:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                    "id": "10000",
+                    "key": "ED-24",
+                    "self": "https://your-domain.atlassian.net/rest/api/3/issue/10000",
+                    "transition": {
+                      "status": 200,
+                      "errorCollection": {
+                        "errorMessages": [],
+                        "errors": {}
+                      }
+                    }
+                  }
+      summary: Create issue
+      operationId: Create_issue
+      description: Creates an issue in jira
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: >-
+            {
+                "fields": {
+                   "project":
+                   {
+                      "key": "TEST"
+                   },
+                   "summary": "REST ye merry gentlemen.",
+                   "description": "Creating of an issue using project keys and issue type names using the REST API",
+                   "issuetype": {
+                      "name": "Bug"
+                   }
+               }
+            }
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: >-
+              {
+                  "fields": {
+                     "project":
+                     {
+                        "key": "TEST"
+                     },
+                     "summary": "REST ye merry gentlemen.",
+                     "description": "Creating of an issue using project keys and issue type names using the REST API",
+                     "issuetype": {
+                        "name": "Bug"
+                     }
+                 }
+              }
+  "/rest/api/latest/issue/{issue_key}/attachments":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  [
+                    {
+                      "self": "https://your-domain.atlassian.net/rest/api/3/attachments/10000",
+                      "id": "10001",
+                      "filename": "picture.jpg",
+                      "author": {
+                        "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
+                        "accountId": "5b10a2844c20165700ede21g",
+                        "emailAddress": "mia@example.com",
+                        "avatarUrls": {
+                          "48x48": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=48&s=48",
+                          "24x24": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=24&s=24",
+                          "16x16": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=16&s=16",
+                          "32x32": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=32&s=32"
+                        },
+                        "displayName": "Mia Krystof",
+                        "active": true,
+                        "timeZone": "Australia/Sydney"
+                      },
+                      "created": "2021-02-26T01:45:06.311+0000",
+                      "size": 23123,
+                      "mimeType": "image/jpeg",
+                      "content": "https://your-domain.atlassian.net/secure/attachments/10000/picture.jpg",
+                      "thumbnail": "https://your-domain.atlassian.net/secure/thumbnail/10000/picture.jpg"
+                    },
+                    {
+                      "self": "https://your-domain.atlassian.net/rest/api/3/attachments/10001",
+                      "filename": "dbeuglog.txt",
+                      "author": {
+                        "self": "https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10a2844c20165700ede21g",
+                        "accountId": "5b10a2844c20165700ede21g",
+                        "emailAddress": "mia@example.com",
+                        "avatarUrls": {
+                          "48x48": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=48&s=48",
+                          "24x24": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=24&s=24",
+                          "16x16": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=16&s=16",
+                          "32x32": "https://avatar-management--avatars.server-location.prod.public.atl-paas.net/initials/MK-5.png?size=32&s=32"
+                        },
+                        "displayName": "Mia Krystof",
+                        "active": true,
+                        "timeZone": "Australia/Sydney"
+                      },
+                      "created": "2021-02-26T01:45:06.311+0000",
+                      "size": 2460,
+                      "mimeType": "text/plain",
+                      "content": "https://your-domain.atlassian.net/secure/attachments/10001/dbeuglog.txt"
+                    }
+                  ]
+      summary: Add attachment
+      operationId: Add_attachment
+      description: Add an attachment to existing issue
+      parameters:
+        - in: path
+          name: issue_key
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: X-Atlassian-Token
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: no-check
+          schema:
+            type: string
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                fieldname:
+                  type: string
+                  value: file
+  /rest/api/latest/project:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  [
+                    {
+                      "self": "https://your-domain.atlassian.net/rest/api/3/project/EX",
+                      "id": "10000",
+                      "key": "EX",
+                      "name": "Example",
+                      "avatarUrls": {
+                        "48x48": "https://your-domain.atlassian.net/secure/projectavatar?size=large&pid=10000",
+                        "24x24": "https://your-domain.atlassian.net/secure/projectavatar?size=small&pid=10000",
+                        "16x16": "https://your-domain.atlassian.net/secure/projectavatar?size=xsmall&pid=10000",
+                        "32x32": "https://your-domain.atlassian.net/secure/projectavatar?size=medium&pid=10000"
+                      },
+                      "projectCategory": {
+                        "self": "https://your-domain.atlassian.net/rest/api/3/projectCategory/10000",
+                        "id": "10000",
+                        "name": "FIRST",
+                        "description": "First Project Category"
+                      },
+                      "simplified": false,
+                      "style": "classic",
+                      "insight": {
+                        "totalIssueCount": 100,
+                        "lastIssueUpdateTime": "2021-02-24T06:43:41.161+0000"
+                      }
+                    },
+                    {
+                      "self": "https://your-domain.atlassian.net/rest/api/3/project/ABC",
+                      "id": "10001",
+                      "key": "ABC",
+                      "name": "Alphabetical",
+                      "avatarUrls": {
+                        "48x48": "https://your-domain.atlassian.net/secure/projectavatar?size=large&pid=10001",
+                        "24x24": "https://your-domain.atlassian.net/secure/projectavatar?size=small&pid=10001",
+                        "16x16": "https://your-domain.atlassian.net/secure/projectavatar?size=xsmall&pid=10001",
+                        "32x32": "https://your-domain.atlassian.net/secure/projectavatar?size=medium&pid=10001"
+                      },
+                      "projectCategory": {
+                        "self": "https://your-domain.atlassian.net/rest/api/3/projectCategory/10000",
+                        "id": "10000",
+                        "name": "FIRST",
+                        "description": "First Project Category"
+                      },
+                      "simplified": false,
+                      "style": "classic",
+                      "insight": {
+                        "totalIssueCount": 100,
+                        "lastIssueUpdateTime": "2021-02-24T06:43:41.161+0000"
+                      }
+                    }
+                  ]
+      summary: List all projects
+      operationId: List_all_projects
+      description: Returns all projects from your account.
+      parameters: []
+      requestBody:
+        content: {}
+  /rest/api/latest/search:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                      "expand": "schema,names",
+                      "startAt": 0,
+                      "maxResults": 50,
+                      "total": 1,
+                      "issues": [
+                          {
+                              "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+                              "id": "10008",
+                              "self": "https://your-domain.atlassian.net/rest/api/latest/issue/10008",
+                              "key": "ST-9",
+                              "fields": {
+                                  "statuscategorychangedate": "2021-02-25T11:35:43.792+0200",
+                                  "issuetype": {
+                                      "self": "https://your-domain.atlassian.net/rest/api/2/issuetype/10005",
+                                      "id": "10005",
+                                      "description": "A problem or error.",
+                                      "iconUrl": "https://your-domain.atlassian.net/secure/viewavatar?size=medium&avatarId=10303&avatarType=issuetype",
+                                      "name": "Bug",
+                                      "subtask": false,
+                                      "avatarId": 10303
+                                  },
+                                  "timespent": null,
+                                  "project": {
+                                      "self": "https://your-domain.atlassian.net/rest/api/2/project/10000",
+                                      "id": "10000",
+                                      "key": "ST",
+                                      "name": "shuffle-test",
+                                      "projectTypeKey": "software",
+                                      "simplified": false,
+                                      "avatarUrls": {
+                                          "48x48": "https://your-domain.atlassian.net/secure/projectavatar?pid=10000&avatarId=10410",
+                                          "24x24": "https://your-domain.atlassian.net/secure/projectavatar?size=small&s=small&pid=10000&avatarId=10410",
+                                          "16x16": "https://your-domain.atlassian.net/secure/projectavatar?size=xsmall&s=xsmall&pid=10000&avatarId=10410",
+                                          "32x32": "https://your-domain.atlassian.net/secure/projectavatar?size=medium&s=medium&pid=10000&avatarId=10410"
+                                      }
+                                  },
+                                  "fixVersions": [],
+                                  "aggregatetimespent": null,
+                                  "resolution": null,
+                                  "resolutiondate": null,
+                                  "workratio": -1,
+                                  "lastViewed": "2021-02-25T11:36:09.116+0200",
+                                  "watches": {
+                                      "self": "https://your-domain.atlassian.net/rest/api/2/issue/ST-9/watchers",
+                                      "watchCount": 1,
+                                      "isWatching": true
+                                  },
+                                  "created": "2021-02-25T11:35:43.436+0200",
+                                  "customfield_10020": null,
+                                  "customfield_10021": null,
+                                  "customfield_10022": null,
+                                  "priority": {
+                                      "self": "https://your-domain.atlassian.net/rest/api/2/priority/3",
+                                      "iconUrl": "https://your-domain.atlassian.net/images/icons/priorities/medium.svg",
+                                      "name": "Medium",
+                                      "id": "3"
+                                  },
+                                  "customfield_10023": null,
+                                  "customfield_10024": null,
+                                  "customfield_10025": null,
+                                  "labels": [
+                                      "testing"
+                                  ],
+                                  "customfield_10016": null,
+                                  "customfield_10017": null,
+                                  "customfield_10018": {
+                                      "hasEpicLinkFieldDependency": false,
+                                      "showField": false,
+                                      "nonEditableReason": {
+                                          "reason": "PLUGIN_LICENSE_ERROR",
+                                          "message": "The Parent Link is only available to Jira Premium users."
+                                      }
+                                  },
+                                  "customfield_10019": "0|i0001r:",
+                                  "aggregatetimeoriginalestimate": null,
+                                  "timeestimate": null,
+                                  "versions": [],
+                                  "issuelinks": [],
+                                  "assignee": null,
+                                  "updated": "2021-02-25T11:35:43.436+0200",
+                                  "status": {
+                                      "self": "https://your-domain.atlassian.net/rest/api/2/status/10000",
+                                      "description": "",
+                                      "iconUrl": "https://your-domain.atlassian.net/",
+                                      "name": "To Do",
+                                      "id": "10000",
+                                      "statusCategory": {
+                                          "self": "https://your-domain.atlassian.net/rest/api/2/statuscategory/2",
+                                          "id": 2,
+                                          "key": "new",
+                                          "colorName": "blue-gray",
+                                          "name": "To Do"
+                                      }
+                                  },
+                                  "components": [],
+                                  "timeoriginalestimate": null,
+                                  "description": "added due date 111",
+                                  "customfield_10010": null,
+                                  "customfield_10014": null,
+                                  "customfield_10015": null,
+                                  "customfield_10005": null,
+                                  "customfield_10006": null,
+                                  "security": null,
+                                  "customfield_10007": null,
+                                  "customfield_10008": null,
+                                  "customfield_10009": null,
+                                  "aggregatetimeestimate": null,
+                                  "summary": "due date shuffle",
+                                  "creator": {
+                                      "self": "https://your-domain.atlassian.net/rest/api/2/user?accountId=60362fb7f8c05700707d3873",
+                                      "accountId": "60362fb7f8c05700707d3873",
+                                      "emailAddress": "secawa3653@bulkbye.com",
+                                      "avatarUrls": {
+                                          "48x48": "https://secure.gravatar.com/avatar/76cdc884dd51cb9102abf7a1641cb054?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDD-5.png",
+                                          "24x24": "https://secure.gravatar.com/avatar/76cdc884dd51cb9102abf7a1641cb054?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDD-5.png",
+                                          "16x16": "https://secure.gravatar.com/avatar/76cdc884dd51cb9102abf7a1641cb054?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDD-5.png",
+                                          "32x32": "https://secure.gravatar.com/avatar/76cdc884dd51cb9102abf7a1641cb054?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDD-5.png"
+                                      },
+                                      "displayName": "Dhaval Dave",
+                                      "active": true,
+                                      "timeZone": "Asia/Amman",
+                                      "accountType": "atlassian"
+                                  },
+                                  "subtasks": [],
+                                  "reporter": {
+                                      "self": "https://your-domain.atlassian.net/rest/api/2/user?accountId=60362fb7f8c05700707d3873",
+                                      "accountId": "60362fb7f8c05700707d3873",
+                                      "emailAddress": "secawa3653@bulkbye.com",
+                                      "avatarUrls": {
+                                          "48x48": "https://secure.gravatar.com/avatar/76cdc884dd51cb9102abf7a1641cb054?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDD-5.png",
+                                          "24x24": "https://secure.gravatar.com/avatar/76cdc884dd51cb9102abf7a1641cb054?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDD-5.png",
+                                          "16x16": "https://secure.gravatar.com/avatar/76cdc884dd51cb9102abf7a1641cb054?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDD-5.png",
+                                          "32x32": "https://secure.gravatar.com/avatar/76cdc884dd51cb9102abf7a1641cb054?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FDD-5.png"
+                                      },
+                                      "displayName": "Dhaval Dave",
+                                      "active": true,
+                                      "timeZone": "Asia/Amman",
+                                      "accountType": "atlassian"
+                                  },
+                                  "customfield_10000": "{}",
+                                  "aggregateprogress": {
+                                      "progress": 0,
+                                      "total": 0
+                                  },
+                                  "customfield_10001": null,
+                                  "customfield_10002": null,
+                                  "customfield_10003": null,
+                                  "customfield_10004": null,
+                                  "environment": null,
+                                  "duedate": "2021-05-05",
+                                  "progress": {
+                                      "progress": 0,
+                                      "total": 0
+                                  },
+                                  "votes": {
+                                      "self": "https://your-domain.atlassian.net/rest/api/2/issue/ST-9/votes",
+                                      "votes": 0,
+                                      "hasVoted": false
+                                  }
+                              }
+                          }
+                  ]
+      summary: List all issues
+      operationId: List_all_issues
+      description: Returns all issues
+      parameters: []
+      requestBody:
+        content: {}
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+tags:
+  - name: Case Management
