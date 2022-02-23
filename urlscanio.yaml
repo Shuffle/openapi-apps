@@ -50,7 +50,7 @@ paths:
                 type: string
           description: default
       summary: Get result
-  /api/v1/scan:
+  /api/v1/scan/:
     post:
       description: ''
       operationId: Submit_URL
@@ -86,7 +86,7 @@ paths:
                 type: string
           description: default
       summary: Submit URL
-  /api/v1/search:
+  /api/v1/search/:
     get:
       description: ip, domain, page.url, hash, asn, asnname, country, server, filename,
         task.visibility, task.method
