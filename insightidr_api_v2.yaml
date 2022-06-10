@@ -1,0 +1,917 @@
+openapi: 3.0.0
+info:
+  title: InsightIDR API V2
+  description: Insight IDR API V2 Get more info at
+    https://help.rapid7.com/insightidr/en-us/api/v2/docs.html#
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact:
+    name: "@azgaviperr"
+    url: https://azgaviperr.github.io/
+    email: bryce.simon@bzhack.bzh
+  x-categories:
+    - SIEM
+servers:
+  - url: https://[region].api.insight.rapid7.com
+host: "[region].api.insight.rapid7.com"
+basePath: /
+schemes:
+  - "https:"
+paths:
+  /idr/v2/investigations:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: >-
+                  {
+                    "data": [
+                      {
+                        "assignee": {
+                          "email": "example@test.com",
+                          "name": "Ellen Example"
+                        },
+                        "created_time": "2018-06-06T16:56:42Z",
+                        "disposition": "BENIGN",
+                        "first_alert_time": "2018-06-06T16:56:42Z",
+                        "last_accessed": "2018-06-06T16:56:42Z",
+                        "latest_alert_time": "2018-06-06T16:56:42Z",
+                        "organization_id": "174e4f99-2ac7-4481-9301-4d24c34baf06",
+                        "priority": "CRITICAL",
+                        "rrn": "rrn:investigation:us1:174e4f99-2ac7-4481-9301-4d24c34baf06:investigation:6A74T2A4",
+                        "source": "ALERT",
+                        "status": "OPEN",
+                        "title": "Jane Smith enabled account Roger Johnson"
+                      }
+                    ],
+                    "metadata": {
+                      "index": 0,
+                      "size": 20,
+                      "total_data": 15,
+                      "total_pages": 1
+                    }
+                  }
+      summary: List investigations
+      operationId: List_investigations
+      description: >-
+        Retrieves a page of investigations matching the given request
+        parameters. 
+
+
+        <b>Preview Mode</b> This API is in preview mode and may change
+
+        behavior at any time. You must specify investigations-preview in an Accept-version header to access this
+
+        API.
+      parameters:
+        - in: query
+          name: assignee.email
+          description: A user's email address.  Only investigations assigned to that user
+            will be included.
+          required: false
+          schema:
+            type: string
+          example: ""
+        - in: query
+          name: end_time
+          description: The time an investigation is closed. Only investigations whose
+            <span _ngcontent-c11 class="param-example-value">created_time</span>
+            is before this date will be returned by the API. Must be an
+            ISO-formatted timestamp.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: index
+          description: The 0-based index of the first page to retrieve. Must be an integer
+            greater than 0.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: priorities
+          description: A comma-separated list of investigation priorities to include in
+            the result.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: size
+          description: The maximum number of investigations to retrieve. Must be an
+            integer greater than 0, or less than or equal to 100.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: sort
+          description: A field for investigations to be sorted by and their sort direction
+            separated by a comma.Sortable fields are <span _ngcontent-c11
+            class="param-example-value">create_time</span>,<span _ngcontent-c11
+            class="param-example-value">priority</span>, and <span
+            _ngcontent-c11 class="param-example-value">last_alert_time</span>.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: sources
+          description: A comma-separated list of investigation sources to include in the
+            result.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: start_time
+          description: The time an investigation is opened. Only investigations whose
+            created_time is after this date will be returned by the API.  Must
+            be an ISO-formatted timestamp.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: statuses
+          description: A comma-separated list of investigation statuses to include in the
+            result.
+          required: false
+          schema:
+            type: string
+        - in: header
+          name: Accept-version
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: investigations-preview
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create investigation
+      operationId: Create_investigation
+      description: >-
+        An API to manually create investigations. Creating an investigation
+        requires a user API key in the request headers. Non-default
+        investigation fields can be specified in the request body. The API
+        returns the newly created investigation information in the response.
+
+
+        <b>Preview Mode</b> This API is in preview mode and may change
+
+        behavior at any time. You must specify investigations-preview in an Accept-version header to access this
+
+        API.
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "assignee": "${assignee}",
+              "disposition": "${disposition}",
+              "priority": "${priority}",
+              "status": "${status}",
+              "title": "${title}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Accept-version
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: investigations-preview
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "assignee": "${assignee}",
+                "disposition": "${disposition}",
+                "priority": "${priority}",
+                "status": "${status}",
+                "title": "${title}"
+              }
+  /idr/v2/investigations/_search:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Search For Investigations
+      operationId: Search_For_Investigations
+      description: >-
+        An API for searching for investigations. You can search for
+        investigations matching the given search criteria.
+
+
+        <b>Preview Mode</b> This API is in preview mode and may change
+
+        behavior at any time. You must specify investigations-preview in an Accept-version header to access this
+
+        API.
+      parameters:
+        - in: query
+          name: index
+          description: "The optional 0-based index of the page to retrieve.  Must be an
+            integer greater than or equal to 0. "
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: size
+          description: The optional size of the page to retrieve. Must be an integer
+            greater than 0 or less than or equal to 100.
+          required: false
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "endTime": "${endTime}",
+              "end_time": "${end_time}",
+              "search": "${search}",
+              "sort": "${sort}",
+              "startTime": "${startTime}",
+              "start_time": "${start_time}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Accept-version
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: investigations-preview
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "endTime": "${endTime}",
+                "end_time": "${end_time}",
+                "search": "${search}",
+                "sort": "${sort}",
+                "startTime": "${startTime}",
+                "start_time": "${start_time}"
+              }
+  /idr/v2/investigations/bulk_close:
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Close investigations in bulk
+      operationId: Close_investigations_in_bulk
+      description: >-
+        Close all investigations that match the provided request parameters.
+        This API returns the number of investigations that were closed and a
+        list of their IDs.
+
+
+        <b>Preview Mode</b> This API is in preview mode and may change
+
+        behavior at any time. You must specify investigations-preview in an Accept-version header to access this
+
+        API.
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "alert_type": "${alert_type}",
+              "detection_rule_rrn": "${detection_rule_rrn}",
+              "disposition": "${disposition}",
+              "from": "${from}",
+              "max_investigations_to_close": "${max_investigations_to_close}",
+              "source": "${source}",
+              "to": "${to}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Accept-version
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: investigations-preview
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "alert_type": "${alert_type}",
+                "detection_rule_rrn": "${detection_rule_rrn}",
+                "disposition": "${disposition}",
+                "from": "${from}",
+                "max_investigations_to_close": "${max_investigations_to_close}",
+                "source": "${source}",
+                "to": "${to}"
+              }
+  "/idr/v2/investigations/{identifier}/alerts":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List alerts associated with the specified investigation
+      operationId: List_alerts_associated_with_the_specified_investigation
+      description: >-
+        Retrieve a page of alerts associated with an investigation.
+
+
+        <b>Preview Mode</b> This API is in preview mode and may change
+
+        behavior at any time. You must specify investigations-preview in an Accept-version header to access this
+
+        API.
+      parameters:
+        - in: query
+          name: index
+          description: The optional 0-based index of the page to retrieve. Must be an
+            integer greater than or equal to 0.
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: size
+          description: The optional size of the page to retrieve. Must be an integer
+            greater than 0, or less than or equal to 1000.
+          required: false
+          schema:
+            type: string
+        - in: path
+          name: identifier
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Accept-version
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: investigations-preview
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/idr/v2/investigations/{id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get investigation
+      operationId: Get_investigation
+      description: >-
+        An API that gets the investigation matching the given investigation
+        <span _ngcontent-c11 class="param-example-value">id</span> or <span
+        _ngcontent-c11 class="param-example-value">rrn</span>.
+
+
+        <b>Preview Mode</b> This API is in preview mode and may change
+
+        behavior at any time. You must specify investigations-preview in an Accept-version header to access this
+
+        API.
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Accept-version
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: undefined
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update investigation
+      operationId: Update_investigation
+      description: >-
+        An API that updates multiple fields in a single operation for a given
+        investigation ID. The investigation will be returned with its changed
+        fields. Null or omitted fields will not have their values updated in the
+        investigation.
+
+
+        <b>Preview Mode</b> This API is in preview mode and may change
+
+        behavior at any time. You must specify investigations-preview in an Accept-version header to access this
+
+        API.
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "assignee": "${assignee}",
+              "disposition": "${disposition}",
+              "priority": "${priority}",
+              "status": "${status}",
+              "title": "${title}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Accept-version
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: investigations-preview
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "assignee": "${assignee}",
+                "disposition": "${disposition}",
+                "priority": "${priority}",
+                "status": "${status}",
+                "title": "${title}"
+              }
+  "/idr/v2/investigations/{id}/assignee":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Assign user to investigation
+      operationId: Assign_user_to_investigation
+      description: >-
+        An API that assigns a user to a specified investigation. The user must
+        be a platform administrator, product administrator, or read/write user
+        with access to either InsightIDR or InsightUBA.
+
+
+        <b>Preview Mode</b> This API is in preview mode and may change
+
+        behavior at any time. You must specify investigations-preview in an Accept-version header to access this
+
+        API.
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "user_email_address": "${user_email_address}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Accept-version
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: investigations-preview
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "user_email_address": "${user_email_address}"
+              }
+  "/idr/v2/investigations/{id}/disposition/{disposition}":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Set the disposition of an investigation
+      operationId: Set_the_disposition_of_an_investigation
+      description: >-
+        An API that sets the disposition of the investigation with the given ID.
+        This API returns the investigation with its disposition updated to the
+        new state. If the investigation already has the given disposition, no
+        change is made, but the investigation will still be returned.
+
+
+        <b>Preview Mode</b> This API is in preview mode and may change
+
+        behavior at any time. You must specify investigations-preview in an Accept-version header to access this
+
+        API.
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: disposition
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: ""
+          schema:
+            type: string
+        - in: header
+          name: Accept-version
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: investigations-preview
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: ""
+  "/idr/v2/investigations/{id}/priority/{priority}":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Set the priority of an investigation
+      operationId: Set_the_priority_of_an_investigation
+      description: >-
+        An API that sets the priority of the investigation with the given ID.
+        This API returns the investigation with its priority updated to the new
+        state. If the investigation already has the given priority, no change is
+        made, but the investigation will still be returned.
+
+
+        <b>Preview Mode</b> This API is in preview mode and may change
+
+        behavior at any time. You must specify investigations-preview in an Accept-version header to access this
+
+        API.
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: priority
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: ""
+          schema:
+            type: string
+        - in: header
+          name: Accept-version
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: investigations-preview
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: ""
+  "/idr/v2/investigations/{id}/status/{status}":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Set the status of an investigation
+      operationId: Set_the_status_of_an_investigation
+      description: >-
+        An API that sets the status of the investigation with the given ID. This
+        API returns the investigation with its status updated to the new state.
+        If the investigation already has the given status, no change is made,
+        but the investigation will still be returned.
+
+
+        <b>Preview Mode</b> This API is in preview mode and may change
+
+        behavior at any time. You must specify investigations-preview in an Accept-version header to access this
+
+        API.
+      parameters:
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: status
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+              "disposition": "${disposition}"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Accept-version
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: investigations-preview
+          schema:
+            type: string
+        - in: header
+          name: Content-Type
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+        - in: header
+          name: Accept
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: application/json
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+                "disposition": "${disposition}"
+              }
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-Api-Key
+      description: ""
+tags:
+  - name: Investigations
