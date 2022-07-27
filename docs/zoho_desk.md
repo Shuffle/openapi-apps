@@ -1,9 +1,51 @@
-# Set up auth
-https://api-console.zoho.com/
+# Zoho Desk
+The app is to be used with Zoho desk, and uses Oauth2. To use it, we need to make an app in the Zoho portal.
 
-Make the app **server auth**
+## Set up auth
+Go to https://api-console.zoho.com/ and Login. 
 
-# Using 0auth with Zoho Desk.
+### 1. Set up client
+After logged in, make a new app by clicking "Add Client". Make sure to select a new "Server based app". 
+
+![image](https://user-images.githubusercontent.com/5719530/181389800-25c6f891-c1c0-4f68-8dde-41034f9afb7e.png)
+
+Choose any name, and set the homepage to e.g. shuffler.io. Once done, set the redirect URL to your local instance (Onprem) or shuffler.io (cloud), and make sure to add /set_authentication on the end.
+
+Example: https://IP:3443/set_authentication
+
+![image](https://user-images.githubusercontent.com/5719530/181390004-4223bf60-cac0-4728-a80e-e382a934b707.png)
+
+### 2. Find and use the auth
+With the initial setup, we now have a client ID and secret. Make a new Workflow in Shuffle where we'll make use of them!
+
+![image](https://user-images.githubusercontent.com/5719530/181390114-d589a8c4-4855-4ef8-9ffd-ac205693c774.png)
+
+### 3. Authentication
+After dragging in the node for Zoho Flow in a workflow in Shuffle, click it, then click the orange button "Authenticate" on the right side. This will show the following window. In this window, make sure to fill in these fields:
+
+- Client ID
+- Client Secret
+- Scopes (e.g. Desk.Tickets.Read if you want to READ tickets). You can select multiple.
+
+![image](https://user-images.githubusercontent.com/5719530/181390325-5f58b6fe-a3e9-44df-a223-60f0bf9b36c1.png)
+
+When done, click the "OAuth2 request" button. This will make a new popup window show up. If all well, you'll see a little something like the below image. Once you accept this, it will redirect to Shuffle and add all the auth for you.
+
+![image](https://user-images.githubusercontent.com/5719530/181390503-8229dd39-11c8-4c8b-9f8f-b1008ed00b83.png)
+
+## Using the app
+Once Authentication is done, you can actually use the app. The app will need an Organization ID in a header, which you can find in your organization on desk.zoho.com.
+
+
+
+
+
+
+
+
+
+#### DEVELOPER NOTES FOR LEARNING MANUAL OAUTH2  
+- Using 0auth with Zoho Desk.
 
 This following content is based off of the Zoho Desk API documentation that can be found here: https://desk.zoho.com/DeskAPIDocument#OauthTokens#MakingTheAuthorizationRequest
 
