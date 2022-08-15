@@ -1,6 +1,13 @@
 # Zoho Desk
 The app is to be used with Zoho desk, and uses Oauth2. To use it, we need to make an app in the Zoho portal.
 
+**Extra information:**
+```
+- OrgId can be found here: https://support.zoho.com/support/{ORG_NAME}/ShowHomePage.do#setup/developer-space/api
+- The Base URL, Auth and Refresh URL has to match your REGION in the Shuffle App Auth: https://www.zoho.com/crm/developer/docs/api/v3/access-refresh.html
+- Find the DepartmentId and ContactId
+```
+
 ## Set up auth
 Go to https://api-console.zoho.com/ and Login. 
 
