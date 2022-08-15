@@ -4,4 +4,6 @@ Slashnext is an API used for IOC enrichment. This API has been built out based o
 ## Authenticate
 Authentication with Slashnext uses an API-key in the "authkey" query parameter. You can find the API-key within their cloud instance. The URL should in most cases point to "https://oti.slashnext.cloud"
 
-Once authenticated, try the "Get API Quota" action. 
+Once authenticated, try the "Get API Quota" or "Get host reputation" action with a domain as seen below. 
+
+![image](https://user-images.githubusercontent.com/5719530/184736016-77d43ece-f5f3-45ca-a17a-1a622b9527f3.png)
