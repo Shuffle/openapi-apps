@@ -20,12 +20,12 @@ If necessary, you can repeat the process to regenerate your API credentials with
 The Huntress API implements basic access authentication. Once you have your API Key and API Secret Key, provide these values as the result of a Base64 encoded string in every request to the Huntress API via the Authorization header. Your request header should look something like Authorization: Basic [Base64Encode(<your_api_key>:<your_api_secret_key>)].
 
 
-### Using SentinelOne in a workflow
+### Using Huntress in a workflow
 With all the previous steps completed, create a new Workflow to work on. 
 
 1. From the left side, drag in the Huntress app
 2. Click the app
-3. Click the large orange "AUTHENTICATE SENTINELONE" button
+3. Click the large orange "AUTHENTICATE HUNTRESS" button
 4. Fill in the required fields and click submit.
 
 PS: If you had any trouble with any of these steps, please [contact us](https://shuffler.io/contact).
