@@ -5,12 +5,12 @@ components:
       in: header
       name: x-api-key
       type: apiKey
-host: eu.api.insight.rapid7.com
+host: [region].api.insight.rapid7.com
 info:
   contact:
-    email: frikky@shuffler.io
-    name: '@frikkylikeme'
-    url: https://twitter.com/frikkylikeme
+    name: "Azgaviperr"
+    url: https://shuffler.io/creators/azgaviperr
+    email: azgaviperr@pm.me
   description: InsightIDR API LOG, manipulate logs and Query
   title: InsightIDR LOG API
   version: '1.0'

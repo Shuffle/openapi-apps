@@ -8,9 +8,9 @@ components:
 host: psblive.psb-stg.fsapi.com
 info:
   contact:
-    email: azgarech@linuxtrack.net
-    name: '@azgaviperr'
-    url: https://azgaviperr.github.io/
+    name: "Azgaviperr"
+    url: https://shuffler.io/creators/azgaviperr
+    email: azgaviperr@pm.me
   description: A multi-purpose API that is used to manage computers, monitor events,
     list subscriptions, control various endpoint protection features, and generate
     reports.
