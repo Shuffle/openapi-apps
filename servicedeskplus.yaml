@@ -1,0 +1,804 @@
+openapi: 3.0.0
+info:
+  title: ServiceDeskPlus
+  description: App for ManageEngine ServiceDesk
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact:
+    name: "@frikkylikeme"
+    url: https://twitter.com/frikkylikeme
+    email: frikky@shuffler.io
+  x-categories:
+    - Other
+servers:
+  - url: https://127.0.0.1/sdpapi
+host: 127.0.0.1
+basePath: /sdpapi
+schemes:
+  - "https:"
+paths:
+  /request/filters:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get filters
+      operationId: Get_filters
+      description: Get filters
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  /request:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get requests by filter
+      operationId: Get_requests_by_filter
+      description: Get requests by filter
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: data
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create new request
+      operationId: Create_new_request
+      description: Create new request
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: data
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: ""
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: ""
+  "/request/{id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get requests by ID
+      operationId: Get_requests_by_ID
+      description: Get requests by ID
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Edit Request
+      operationId: Edit_Request
+      description: Get requests by ID
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: data
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: ""
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: ""
+  "/request/{id}/reply":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Reply to requests
+      operationId: Reply_to_requests
+      description: Reply to requests
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: data
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: ""
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: ""
+  "/request/{id}/assign":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Assign a Request
+      operationId: Assign_a_Request
+      description: Assign a Request
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: data
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: ""
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: ""
+  "/request/{id}/close":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Close request
+      operationId: Close_request
+      description: Close request
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: data
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/request/{id}/notes":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get notes of a request
+      operationId: Get_notes_of_a_request
+      description: Get notes of a request
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add a note to a request
+      operationId: Add_a_note_to_a_request
+      description: Add a note to a request
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: data
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: ""
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: ""
+  "/request/{id}/notes/{note_id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get note of a request
+      operationId: Get_note_of_a_request
+      description: Get notes of a request
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: note_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/request/{id}/history":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: History request
+      operationId: History_request
+      description: History request
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/request/{id}/allconversations":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Conversations summary request
+      operationId: Conversations_summary_request
+      description: Conversation summary request
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/request/{id}/notes/{note_id}_shuffle_replace_0":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get note
+      operationId: Get_note
+      description: Get notes of a request
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: note_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/request/{id}/attachments":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Attachments summary request
+      operationId: Attachments_summary_request
+      description: Attachments summary request
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Upload attachment
+      operationId: Upload_attachment
+      description: Upload attachment
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: submit
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: OPERATION_NAME
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: ""
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: ""
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                fieldname:
+                  type: string
+                  value: file
+  "/request/{id}/attachments/{attachment_id}":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get attachment
+      operationId: Get_attachment
+      description: Get attachment
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: attachment_id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/request/{id}/resolution":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Get resolution
+      operationId: Get_resolution
+      description: Get resolution
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/request/{id}/close_shuffle_replace_0":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Close request
+      operationId: Close_request
+      description: Close request
+      parameters:
+        - in: query
+          name: TECHNICIAN_KEY
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: format
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: data
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+components:
+  securitySchemes: {}
+tags:
+  - name: Ticketing

@@ -1,0 +1,1264 @@
+openapi: 3.0.0
+info:
+  title: Viper
+  description: Mail analyzer
+  version: "1.0"
+  x-logo: data:image/png;base64,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
+  contact:
+    name: "@frikkylikeme"
+    url: https://twitter.com/frikkylikeme
+    email: frikky@shuffler.io
+  x-categories:
+    - Intel
+servers:
+  - url: ""
+basePath: /
+schemes:
+  - ""
+paths:
+  "/project/{project_name}/analysis/{id}/":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Retrieve an Analysis instance
+      operationId: Retrieve_an_Analysis_instance
+      description: Retrieve an Analysis instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/project/{project_name}/malware/{malware_sha256}/tag/":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List all Tag instances for an Malware instance
+      operationId: List_all_Tag_instances_for_an_Malware_instance
+      description: List all Tag instances for an Malware instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add a new Tag to a Malware instance
+      operationId: Add_a_new_Tag_to_a_Malware_instance
+      description: Add a new Tag to a Malware instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+            "tag":"tag"
+            }
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+              "tag":"tag"
+              }
+  "/project/{project_name}/malware/upload/":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Upload file as new Malware instance
+      operationId: Upload_file_as_new_Malware_instance
+      description: Upload file as new Malware instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: >-
+            {
+             "extractor":"which Extractor implementation to use (auto: Auto-detect; none: No Extractor)",
+             "tag_list":"comma separated, all lowercase, no spaces",
+             "archive_pass":"archive extract password",
+             "store_archive":"store or discard archive after extract",
+             "note_title":"title of note to be added",
+             "note_body":"body to note to be added",
+             "parent_hash":"SHA256 of file to set as parent",
+             "file_name":"override file name of uploaded file"
+            }
+          schema:
+            type: string
+        - in: header
+          name: Content-Encoding
+          multiline: false
+          description: Header generated by shuffler.io OpenAPI
+          required: false
+          example: multipart/form-data
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: >-
+              {
+               "extractor":"which Extractor implementation to use (auto: Auto-detect; none: No Extractor)",
+               "tag_list":"comma separated, all lowercase, no spaces",
+               "archive_pass":"archive extract password",
+               "store_archive":"store or discard archive after extract",
+               "note_title":"title of note to be added",
+               "note_body":"body to note to be added",
+               "parent_hash":"SHA256 of file to set as parent",
+               "file_name":"override file name of uploaded file"
+              }
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                fieldname:
+                  type: string
+                  value: file
+  /compressor/:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List available Archive Compressors
+      operationId: List_available_Archive_Compressors
+      description: List available Archive Compressors
+      parameters: []
+      requestBody:
+        content: {}
+  /docs/:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Docs
+      operationId: Docs
+      description: Docs
+      parameters: []
+      requestBody:
+        content: {}
+  /module/:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List available Modules
+      operationId: List_available_Modules
+      description: List available Modules
+      parameters: []
+      requestBody:
+        content: {}
+  "/project/{project_name}/analysis/":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List all  Analysis instances
+      operationId: List_all__Analysis_instances
+      description: List all  Analysis instances
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/project/{project_name}/malware/{malware_sha256}/analysis/":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List all Analysis instances for an Malware instance
+      operationId: List_all_Analysis_instances_for_an_Malware_instance
+      description: List all Analysis instances for an Malware instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/project/{project_name}/malware/{malware_sha256}/analysis/{id}/":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Retrieve a Analysis instance for an Malware instance
+      operationId: Retrieve_a_Analysis_instance_for_an_Malware_instance
+      description: Retrieve a Analysis instance for an Malware instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete an Analysis instance
+      operationId: Delete_an_Analysis_instance
+      description: Delete an Analysis instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/project/{project_name}/malware/{sha256}/download/":
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Download a Malware instance as a raw or compressed file_post
+      operationId: Download_a_Malware_instance_as_a_raw_or_compressed_file_post
+      description: Download a Malware instance as a raw or compressed file
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+             "compressor": "7z",
+             "password": "malware"
+            }
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+               "compressor": "7z",
+               "password": "malware"
+              }
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Download a Malware instance as a raw or compressed file_get
+      operationId: Download_a_Malware_instance_as_a_raw_or_compressed_file_get
+      description: Download a Malware instance as a raw or compressed file
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+             "compressor": "7z",
+             "password": "malware"
+            }
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+               "compressor": "7z",
+               "password": "malware"
+              }
+  "/project/{project_name}/malware/{malware_sha256}/note/":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List all Note instances for an Malware instance
+      operationId: List_all_Note_instances_for_an_Malware_instance
+      description: List all Note instances for an Malware instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Add a new Note to a Malware instance
+      operationId: Add_a_new_Note_to_a_Malware_instance
+      description: Add a new Note to a Malware instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+             "title":"title1",
+             "body":"This is a note"
+            }
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+               "title":"title1",
+               "body":"This is a note"
+              }
+  "/project/{project_name}/malware/{malware_sha256}/note/{id}/":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Retrieve a Note instance for an Malware instance
+      operationId: Retrieve_a_Note_instance_for_an_Malware_instance
+      description: Retrieve a Note instance for an Malware instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update a Note instance
+      operationId: Update_a_Note_instance
+      description: Update a Note instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+             "title":"title_1",
+             "body":"This is a note"
+            }
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+               "title":"title_1",
+               "body":"This is a note"
+              }
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update a Note instance with partial data
+      operationId: Update_a_Note_instance_with_partial_data
+      description: Update a Note instance (with partial data)
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+             "title":"title_1",
+             "body":"This is a note"
+            }
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+               "title":"title_1",
+               "body":"This is a note"
+              }
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete a Note instance
+      operationId: Delete_a_Note_instance
+      description: Delete a Note instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/project/{project_name}/malware/{malware_sha256}/tag/{id}/":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Retrieve a Tag instance for an Malware instance
+      operationId: Retrieve_a_Tag_instance_for_an_Malware_instance
+      description: Retrieve a Tag instance for an Malware instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update a Tag in a Malware instance with partial data  project wide
+      operationId: Update_a_Tag_in_a_Malware_instance_with_partial_data__project_wide
+      description: Update a Tag in a Malware instance with partial data  project wide
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+             "tag":"tag"
+            }
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+               "tag":"tag"
+              }
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete a Tag from a MalwareFile
+      operationId: Delete_a_Tag_from_a_MalwareFile
+      description: Delete a Tag from a Malware/File
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+             "tag":"tag"
+            }
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+               "tag":"tag"
+              }
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update a Tag instance in a Malware instance
+      operationId: Update_a_Tag_instance_in_a_Malware_instance
+      description: Update a Tag instance in a Malware instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+             "tag":"tag"
+            }
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+               "tag":"tag"
+              }
+  "/project/{project_name}/tag/{id}/":
+    put:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update a Tag instance project wide
+      operationId: Update_a_Tag_instance_project_wide
+      description: Update a Tag instance (project wide)
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+             "tag":"tag"
+            }
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+               "tag":"tag"
+              }
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Retrieve a Tag instance
+      operationId: Retrieve_a_Tag_instance
+      description: Retrieve a Tag instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete a Tag instance project wide
+      operationId: Delete_a_Tag_instance_project_wide
+      description: Delete a Tag instance (project wide)
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/project/{project_name}/malware/":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List all Malware instances
+      operationId: List_all_Malware_instances
+      description: List all Malware instances
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/project/{project_name}/malware/{sha256}/":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Retrieve a Malware instance
+      operationId: Retrieve_a_Malware_instance
+      description: Retrieve a Malware instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+    delete:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Delete a Malware instance
+      operationId: Delete_a_Malware_instance
+      description: Delete a Malware instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/project/{project_name}/note/":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List all Note instances
+      operationId: List_all_Note_instances
+      description: List all Note instances
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/project/{project_name}/note/{id}/":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Retrieve a Note instance
+      operationId: Retrieve_a_Note_instance
+      description: Retrieve a Note instance
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/project/{project_name}/tag/":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List all Tag instances in project
+      operationId: List_all_Tag_instances_in_project
+      description: List all Tag instances in project
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+  "/project/{project_name}/malware/{malware_sha256}/tag/{id}/_shuffle_replace_0":
+    patch:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Update a Tag instance with partial data  project wide
+      operationId: Update_a_Tag_instance_with_partial_data__project_wide
+      description: Update a Tag instance (with partial data - project wide)
+      parameters:
+        - in: path
+          name: project_name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: malware_sha256
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: id
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+             "tag":"tag"
+            }
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+               "tag":"tag"
+              }
+  /project/:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: List all Projects
+      operationId: List_all_Projects
+      description: List all Projects
+      parameters: []
+      requestBody:
+        content: {}
+    post:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Create a new Project
+      operationId: Create_a_new_Project
+      description: Create a new Project
+      parameters:
+        - in: body
+          name: body
+          multiline: true
+          description: Generated by shuffler.io OpenAPI
+          required: false
+          example: |-
+            {
+             "name":"name of the project"
+            }
+          schema:
+            type: string
+      requestBody:
+        description: Generated by Shuffler.io
+        required: false
+        content:
+          example:
+            example: |-
+              {
+               "name":"name of the project"
+              }
+  "/project/{name}/":
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ""
+      summary: Retrieve a Project
+      operationId: Retrieve_a_Project
+      description: Retrieve a Project
+      parameters:
+        - in: path
+          name: name
+          description: Generated by shuffler.io OpenAPI
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content: {}
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: Token
+tags:
+  - name: Mail
