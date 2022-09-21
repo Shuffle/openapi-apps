@@ -76,3 +76,12 @@ PS: If you had any trouble with any of these steps, please [contact us](https://
 
 ### Step 6: Using the app
 You can now use it to your liking. Don't be afraid of [adding more API](https://developer.microsoft.com/en-us/graph/graph-explorer)'s to it and playing around with the Graph API and its permissions!
+
+## Shared Folders and Items
+- In order to use Shared items or Folders in Outlook, you will need to make sure that delegation is properly implemented. This can be controlled in the following ways:
+- Per user account: [Share everything](https://learn.microsoft.com/en-us/exchange/troubleshoot/user-and-shared-mailboxes/how-to-access-other-mailboxes#use-the-exchange-admin-center-eac-to-assign-permissions)
+
+![image](https://user-images.githubusercontent.com/5719530/191501983-9c2deec7-763f-476c-94d5-50f3678faa43.png)
+
+- Per specific mail folder: You can right-click any folder as the original user, click Permissions, then assign a specific folder to the user. PS: This makes it so that you HAVE to get individual folders within Shuffle.
+
