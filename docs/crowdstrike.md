@@ -26,6 +26,17 @@ When logged into the Falcon UI, navigate to Support > API Clients and Keys. From
 
 ![new-api-client-2](https://user-images.githubusercontent.com/58112539/191856604-e4274c8c-4ef8-4465-ab2d-4e01272c9a6b.png)
 
+### Using the API Client
+Shuffle requires three pieces to authenticate Crowdstrike:
+- Username: The Client ID you from the previous step
+- Password: The Client Secret from the previous step
+- URL: The authentication URL. Default: https://api.crowdstrike.com
+
+![image](https://user-images.githubusercontent.com/5719530/196212509-564b83f4-49c1-4e7e-ac8b-2042972d9997.png)
+
+### Sample Workflow
+- [A sample workflow that finds detections](https://shuffler.io/workflows/fc5d4055-4b42-400a-9c57-ae962db163a9?queryID=d899bae329350cd33d62182378ba47ef)
+
 ### Testing the API
 
 CrowdStrike provides access to Swagger for API documentation purposes and to simplify the development process.
