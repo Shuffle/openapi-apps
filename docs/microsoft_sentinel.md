@@ -1,7 +1,18 @@
 # Microsoft Sentinel
-Previously called Azure Sentinel.
+Previously called Azure Sentinel. 
+
+
+## Usage Overview 
+Make sure that an api-version query is always present. The below is the default used for this app.
+```
+api-version=2021-10-01
+```
+
+Our suggestion: Start with the 
 
 ## Authentication
+This app supports auto-authentication (cloud), but may require admin consent to work.
+
 To authenticate, we need these fields:
 - Tenant ID
 - Client ID
@@ -16,25 +27,25 @@ We'll dig into where to find each of these.
 
 
 ### Subscription ID
-Sign in to the Azure portal.
-Under the Azure services heading, select Subscriptions. If you don't see Subscriptions here, use the search box to find it.
-Find the Subscription ID for the subscription shown in the second column. If no subscriptions appear, or you don't see the right one, you may need to switch directories to show the subscriptions from a different Azure AD tenant.
-Copy the Subscription ID. You can paste this value into a text document or other location.
+1. Sign in to the Azure portal.
+2. Under the Azure services heading, select Subscriptions. If you don't see Subscriptions here, use the search box to find it.
+3. Find the Subscription ID for the subscription shown in the second column. If no subscriptions appear, or you don't see the right one, you may need to switch directories to show the subscriptions from a different Azure AD tenant.
+4. Copy the Subscription ID. You can paste this value into a text document or other location.
 
-e30ef9e0-d830-40fb-92c7-b5952a40b046
+Sample: e30ef9e0-d830-40fb-92c7-b5952a40b046
 
 ### Resource Group Name
 Go to https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/microsoft.securityinsightsarg%2Fsentinel
 The name should be under the resource group name column for your Microsoft Sentinel.
 
-cloud-shell-storage-westeurope
+Sample: cloud-shell-storage-westeurope
 
 ### Workspace Name
 Find the workspace name in the same location as the Resource Group Name:
 https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/microsoft.securityinsightsarg%2Fsentinel
 It should be the "name" for the setup of your Microsoft Sentinel
 
-shuffle
+Sample: shuffle
 
 
 # Authorization
