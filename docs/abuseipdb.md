@@ -1,8 +1,10 @@
-# Create an AbuseIPDB API key
+# AbuseIPDB
+
+### Create an AbuseIPDB API key
 
 We also assume that you have an account registered with AbuseIPDB, and have verified your domain and [created an API key](https://www.abuseipdb.com/account). The API is free to use, but you do have to [create an account](https://www.abuseipdb.com/register).
 
-## Verify Fail2Ban AbuseIPDB Reporting Action Is Installed
+### Verify Fail2Ban AbuseIPDB Reporting Action Is Installed
 The ability to report abusive IPs directly to AbuseIPDB was added to the master Fail2Ban repository in v0.10.0 (January 2017). If you have an older version of Fail2Ban installed on your server, you'll either have to update Fail2Ban or install the abuseipdb.conf action file yourself. To check what version of Fail2Ban you have installed, run the following command:
 
 ```fail2ban-client -V```
