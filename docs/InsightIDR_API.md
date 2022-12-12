@@ -1,4 +1,5 @@
-# Managing Platform API Keys
+# InsightDR API
+### Managing Platform API Keys
 
 An application programming interface key, or API key, allows you to set up access to the Insight platform. The API key is a unique identifier that serves as a form of authentication when you make calls to our API. In order to share data between your security applications and the Insight platform, you’ll need to generate an API key.
 
