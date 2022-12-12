@@ -1,4 +1,6 @@
-# REST API Authentication
+# Carbon Black Response
+
+### REST API Authentication
 
 Carbon Black EDR (Endpoint Detection and Response) is the new name for the product formerly called CB Response.
 
