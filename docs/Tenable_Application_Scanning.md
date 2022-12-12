@@ -1,4 +1,6 @@
-# Authorization
+# Tenable Application Scanning
+
+### Authorization
 
 Tenable.io generates a unique set of API keys for each user account. These keys allow your application to authenticate to the Tenable.io API without creating a session.
 
