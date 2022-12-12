@@ -1,4 +1,6 @@
-# Authentication
+# Alienvault
+
+### Authentication
 
 The USM Anywhere APIs use OAuth 2.0 for endpoint protection, which provides token-based authentication and authorization on the Internet. The diagram below illustrates the authorization flow between the user and the USM Anywhere APIs.
 
