@@ -1,4 +1,6 @@
-# Authentication and Authorization
+# Mimecast
+
+### Authentication and Authorization
 
 ### Overview
 * All requests to the Mimecast API require authorization.
