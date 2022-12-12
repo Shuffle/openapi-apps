@@ -1,4 +1,6 @@
-# HTTPS AND AUTHENTICATION
+# Alertmanager API
+
+### HTTPS AND AUTHENTICATION
 
 [Alertmanager](https://prometheus.io/docs/alerting/latest/configuration/) supports basic authentication and TLS. This is experimental and might change in the future.
 
