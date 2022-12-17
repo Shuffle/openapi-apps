@@ -1,4 +1,6 @@
-# Authentication
+# Hashdd
+
+### Authentication
 
 Calls to the API require an API key to be set in the ```X-API-KEY HTTP``` header. Your API key is available in the WebUI on the (Dashboard page)[https://hashdd.com/dashboard] after you authenticate.
 
