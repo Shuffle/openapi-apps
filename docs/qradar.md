@@ -1,4 +1,6 @@
-# QRadar RESTful API 
+# QRadar 
+
+### RESTful API 
 
 ### What is the purpose of APIs in ServiceDesk Plus?
 
