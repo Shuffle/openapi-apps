@@ -1,4 +1,6 @@
-# Microsoft Graph
+# Sharepoint
+
+### Microsoft Graph
 To connect with and receive emails from Office365, you'll need to connect to it using Oauth2. This app can get and update emails as you wish, and will be expanded over time to handle all relevant Microsoft Graph API's.
 
 ### Authentication
