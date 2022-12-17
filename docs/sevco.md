@@ -1,4 +1,5 @@
-# Obtaining a Sevco API Key
+# Sevco
+### API Key
 ### Suggest Edits
 The Sevco API key can be retrieved from the user profile page.
 
