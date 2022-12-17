@@ -1,5 +1,5 @@
-# Cynet API
-### Authentication
+# Cynet 
+### API Authentication
 
 Cynet APIs use access tokens to authenticate requests.
 
