@@ -1,4 +1,6 @@
-# Authentication & Authorization
+# Greynoise
+
+## Authentication & Authorization
 
 GreyNoise is a cybersecurity platform that collects and analyzes Internet-wide scan and attack traffic. This data is made available through the web-based Visualizer and GreyNoise APIs so users can contextualize existing alerts, filter false-positives, identify compromised devices, and track emerging threats.
 
