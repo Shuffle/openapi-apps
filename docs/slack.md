@@ -1,4 +1,4 @@
-## Slack App
+## Slack 
 To send/post messagges on Slack groups and private chats.
 
 ## Actions
