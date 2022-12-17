@@ -1,4 +1,4 @@
-## ServicePilot App
+## ServicePilot
 
 ServicePilot is a high-performance analytics platform that supports observability and full-stack monitoring: metrics, traces and logs. You can collect data from many services and sources across your entire IT stack (ITIM, NPM, APM, DEM, SIEM) as well as view details of historical data stored by ServicePilot.
 
