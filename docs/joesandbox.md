@@ -1,4 +1,6 @@
-### Joe Sandbox API Key
+# Joe Sandbox 
+
+### API Key
 
 To find the API key in Joe Sandbox, navigate to User Settings - API Key.
 
