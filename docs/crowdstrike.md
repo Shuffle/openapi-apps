@@ -1,4 +1,6 @@
-# CrowdStrike API Access 
+# Crowd Strike 
+
+### API Access 
 
 The CrowdStrike API is managed from the CrowdStrike Falcon UI by the Falcon Administrator. From there, multiple API clients can be defined along with their required scope. The scopes below define the access options.
 
