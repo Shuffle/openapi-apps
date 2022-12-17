@@ -1,4 +1,6 @@
-# Authentication and authorization
+# Splunk
+
+### Authentication and authorization
 
 There are two methods of authentication that you can use to access REST endpoints:
 
