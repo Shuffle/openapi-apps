@@ -1,4 +1,6 @@
-# Authentication
+# Virustotal V3
+
+### Authentication
 
 For authenticating with the API you must include the x-apikey header with your personal API key in all your requests. Your API key can be found in your VirusTotal account user menu:
 
