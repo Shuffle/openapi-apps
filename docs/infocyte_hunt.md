@@ -1,4 +1,6 @@
-# Infocyte: Generating an API token
+# Infocyte Hunt 
+
+### Generating an API token
 
 An API Token is required to run HTTP requests against the HUNT Cloud server, and can be generated from within the Admin section of the HUNT UI
 
