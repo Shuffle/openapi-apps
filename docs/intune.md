@@ -1,4 +1,6 @@
-# Using the Microsoft Graph API for Intune
+# Intune
+
+### Using the Microsoft Graph API
 
 Intune provides data into the Microsoft Graph API in the same way as other cloud services do, with rich entity information and relationship navigation. Use the Microsoft Graph API to combine information from other services and Intune to build rich cross-service applications for IT professionals or end users.  
 
