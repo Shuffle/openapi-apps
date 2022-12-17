@@ -1,4 +1,6 @@
-# API Authentication Token
+# Trend Micro Vision One
+
+### API Authentication Token
 
 ### Generate authentication token
 
