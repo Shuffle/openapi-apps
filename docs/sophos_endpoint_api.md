@@ -1,4 +1,6 @@
-# Sophos API Authentication
+# Sophos Endpoint 
+
+### API Authentication
 
 ### Authentication
 
