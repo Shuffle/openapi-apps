@@ -1,4 +1,4 @@
-# Jira App
+# Jira 
 
 The Jira app for creating and managing issues from shuffle workflow.
 
