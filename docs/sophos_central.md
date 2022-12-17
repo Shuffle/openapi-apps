@@ -1,4 +1,6 @@
-# Sophons API
+# Sophos Central 
+
+### API
 
 This guide takes you through a few simple steps to get authenticated and start calling Sophos Central APIs.
 
