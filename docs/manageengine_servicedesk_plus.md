@@ -1,4 +1,6 @@
-# Manage Engine ServiceDesk Plus API 
+# Manage Engine ServiceDesk Plus
+
+### API 
 
 ### What is the purpose of APIs in ServiceDesk Plus?
 
