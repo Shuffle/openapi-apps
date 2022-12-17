@@ -1,4 +1,6 @@
-# Wazuh Authentication
+# Wazuh 
+
+### Authentication
 
 Wazuh API endpoints requires authentication in order to be used. Therefore, all calls must include a JSON Web Token. JWT is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. Follow the steps below to log in using GET /security/user/authenticate and obtain a token in order to run any endpoint:
 
