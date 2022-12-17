@@ -1,11 +1,11 @@
 # **Datadog**
 
-## **Authentication for datadog**
+### **Authentication for datadog**
 - Name - what is this used for? : Auth for Datadog
 - url : https://app.datadoghq.com
 - click on submit button 
 
-## **Webhook**
+### **Webhook**
 Webhooks enable you to:
 
 - Connect to your services.
