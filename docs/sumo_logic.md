@@ -1,4 +1,6 @@
-# Sumo Logic API Authentication
+# Sumo Logic
+
+### API Authentication
 
 This guide contains information about API authentication and the Sumo Logic endpoints to use for your API client.
 
