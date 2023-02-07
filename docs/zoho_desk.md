@@ -8,7 +8,18 @@ The app is to be used with Zoho desk, and uses Oauth2. To use it, we need to mak
 - Find the DepartmentId and ContactId
 ```
 
+## Find DepartmentId and ContactId
+DepartmentId and ContactId are required for e.g. creating tickets. To find these, our recommended way is as follows:
+
+1. Create a ticket in the UI of Zoho Desk manually
+2. In Shuffle, after authenticating, run the "List Tickets" action
+3. Find the ticket from step 1 within the returned JSON body (look for same subject/text)
+4. Find the "DepartmentId" and "ContactId" fields within this ticket. 
+5. Save them as variables in the Workflow
+
 ## Set up auth
+**PS: For cloud, you can use Oauth2 directly. Click the "Auto Authenticate" button to not have to configure this for yourself.**
+
 Go to https://api-console.zoho.com/ and Login. 
 
 ### 1. Set up client
