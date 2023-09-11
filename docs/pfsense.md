@@ -32,4 +32,4 @@ By default, pfSense API uses the same credentials as the webConfigurator. This b
 CLIENT_ID_HERE CLIENT_TOKEN_HERE
 ```
 
-![Alt text](image-1.png)
+![image](https://github.com/Shuffle/openapi-apps/assets/31187099/22fec92b-5200-462f-a908-d1e1aaf683cf)
