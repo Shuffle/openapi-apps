@@ -38,23 +38,27 @@ Permissions are meant to be granular according to your needs. Make sure to not g
 - Set the redirect URI to https://shuffler.io/set_authentication (SaaS) or http://HOSTNAME:3443/set_authentcation for your local version.
 - Click register on the bottom
 
-![Alt text](image-1.png)
+![image](https://github.com/Shuffle/openapi-apps/assets/31187099/d48dd53b-93cb-47ae-bbb6-6811c40b8db4)
+
 
 ### Step 4: Set up certificates and permissions     
 
 To enable your app to access Defender for Cloud Apps and assign it 'Read all alerts' permission, on your application page, select API Permissions > Add permission > APIs my organization uses >, type Microsoft Cloud App Security, and then select Microsoft Cloud App Security.
 
-![Alt text](image-2.png)
+![image](https://github.com/Shuffle/openapi-apps/assets/31187099/28a83595-0cee-44fd-80cf-ce72ab51bdb7)
+
 
 Select Application permissions > Investigation.Read, and then select Add permissions.
 
-![Alt text](image-3.png)
+![image](https://github.com/Shuffle/openapi-apps/assets/31187099/cf379100-30bd-44c3-b658-6bf773bbb885)
+
 
 You need to select the relevant permissions. To determine which permission you need, look at the Permissions section in the API you're interested to call. See [Supported Permissions Scopes](https://learn.microsoft.com/en-us/defender-cloud-apps/api-authentication-application#supported-permission-scopes)
 
 Select Grant admin consent. Every time you add a permission, you must select Grant admin consent for it to take effect.
 
-![Alt text](image-4.png)
+![image](https://github.com/Shuffle/openapi-apps/assets/31187099/37630f62-72e9-4da4-b680-88499c69d756)
+
 
 Here are the parts that we'll need to configure. The Tenant ID and Client ID are available right away. 
 
