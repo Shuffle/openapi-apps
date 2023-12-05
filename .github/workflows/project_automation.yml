@@ -7,14 +7,14 @@ on:
 
 jobs:
   add-label:
+    name: Add label to issue
     runs-on: ubuntu-latest
-
     steps:
       - name: Add label to new issue
-        uses: actions/labeler@v3
+        uses: Renato66/auto-label@v2
         with:
           repo-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
-          label: App
+          default-labels: '["App", "help wanted"]'
 
   add-to-project:
     name: Add issue to project
