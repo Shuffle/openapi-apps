@@ -13,7 +13,7 @@ jobs:
     - uses: github/issue-labeler@v3.3 #May not be the latest version
       with:
         configuration-path: .github/labeler.yml
-        repo-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+        repo-token: ${{ secrets.GHCR_FRIKKY }}
 
   add-to-project:
     name: Add issue to project
