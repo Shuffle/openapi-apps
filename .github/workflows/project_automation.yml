@@ -10,11 +10,10 @@ jobs:
     name: Add label to issue
     runs-on: ubuntu-latest
     steps:
-      - name: Add label to new issue
-        uses: Renato66/auto-label@v2
-        with:
-          repo-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
-          default-labels: '["App", "help wanted"]'
+    - uses: github/issue-labeler@v3.3 #May not be the latest version
+      with:
+        configuration-path: .github/labeler.yml
+        repo-token: ${{ github.ADD_TO_PROJECT_PATH }}
 
   add-to-project:
     name: Add issue to project
