@@ -6,6 +6,16 @@ on:
       - opened
 
 jobs:
+  add-label:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Add label to new issue
+        uses: actions/labeler@v3
+        with:
+          repo-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+          label: App
+
   add-to-project:
     name: Add issue to project
     runs-on: ubuntu-latest
