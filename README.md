@@ -1,7 +1,8 @@
 # Open security apis
 A directory to be used for OpenAPI specifications used by the security industry. Some are made by me, while other's are contributed or gathered by others. 
 
-[OpenAPI website](https://www.openapis.org/)
+**[Apps there were here are now available on shuffler.io/search](https://shuffler.io)**
+
 
 ## Why?
 The security industry is in need standardization on the API front, and I thought this might be a good place to start. OpenAPI definitions are usually well hidden on vendors' websites where I've dug some of them up, before adding them here.
