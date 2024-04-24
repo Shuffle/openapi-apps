@@ -1,7 +1,7 @@
 # Outlook Office365
 
 ### Microsoft Graph
-To connect with and receive emails from Office365, you'll need to connect to it using Oauth2. This app can get and update emails as you wish, and will be expanded over time to handle all relevant Microsoft Graph API's.
+To connect with and receive emails from Office365, you'll need to connect to it using Oauth2. This app can get and update emails as you wish, and can handle all relevant Mail functions from the Microsoft Graph API. This process may seem cumbersome if you want to connect to your organisation locally or with different permissions, but due to security constraints of Oauth2 authentication, this is required.
 
 ### Authentication
 To authenticate this app, you'll need an app registered in the Azure Portal. This app should use what's called **"delegated permissions"**, NOT "application permissions". More about this farther down. 
@@ -48,14 +48,14 @@ With this done, go to the "API permissions" tab and click "Add a permission". Fr
 
 ![image](https://user-images.githubusercontent.com/5719530/181117885-eb0db1b8-fe2f-47a1-b778-8bcf09bb4a39.png)
 
-Now search for "Mail" and select "Mail.ReadWrite" (come back for any permission you may need later.
-
-### Step 4: Activate and mdify the app
+### Step 4: Activate and modify the app
 Due to Microsoft API's using a tenant, we will need to modify the App slightly. This first requires us to [import (open source) or activate it (cloud)](https://shuffler.io/apps/d71641a57deeee8149df99080adebeb7). After this is done, go to /apps (Apps button), and find the app and click the "Edit" button.
 
 ![image](https://user-images.githubusercontent.com/5719530/181118510-654f42a8-5636-4443-9aac-5eac5d7b6e0a.png)
 
 Now that you're inside the app editor, scroll down the "Authentication" part. This is where you should add your tenant in both fields as outlined below.
+
+**PS: Make sure the URL's use version 2: "oauth2/v2.0" instead of just "oauth2". You will otherwise get problem when using the app.**
 
 ![image](https://user-images.githubusercontent.com/5719530/181118637-90e65bb7-7aea-434c-a79c-30d599baa038.png)
 
