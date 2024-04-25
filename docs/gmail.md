@@ -10,10 +10,12 @@ To connect to Gmail, use Oauth2. This requires two external things:
 
 To get these, follow this guide from Google https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid
 
+**PS: Remember to set the App in Google Cloud to Production, otherwise refresh tokens may time out after some time**
+
 When you have them, fill them in as such:
 ![image](https://user-images.githubusercontent.com/5719530/160306577-9fc973ab-328f-4005-a036-43589a2e2690.png)
 
-Then find the right scope. These three allow for most things.
+Then find the right scope. These three allow for most of what you want to do with Gmail.
 ![image](https://user-images.githubusercontent.com/5719530/160306410-99df4d2a-1d35-462b-ab34-289eaa53f393.png)
 
 And remember to unselect this button, as it's not needed for Gmail.
@@ -21,4 +23,3 @@ And remember to unselect this button, as it's not needed for Gmail.
 
 Now click the authenticate button! This will take you through a sign-in page of your gmail account. With the right delegation, one user can read all mailboxes.
 
-Have fun :)
