@@ -8,9 +8,10 @@ To connect to Gmail, use Oauth2. This requires two external things:
 - A client ID
 - A client secret
 
-To get these, follow this guide from Google https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid
+To get these, follow this guide from Google [https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid](https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid)
 
 **PS: Remember to set the App in Google Cloud to Production, otherwise refresh tokens may time out after some time**
+![image](https://github.com/Shuffle/openapi-apps/assets/5719530/e5830e85-b3bf-4f8c-9047-99ea66b110cd)
 
 When you have them, fill them in as such:
 ![image](https://user-images.githubusercontent.com/5719530/160306577-9fc973ab-328f-4005-a036-43589a2e2690.png)
