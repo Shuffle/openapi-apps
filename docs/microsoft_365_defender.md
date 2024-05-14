@@ -43,14 +43,11 @@ Permissions are meant to be granular according to your needs. Make sure to not g
 
 ### Step 4: Set up certificates and permissions     
 
-To enable your app to access Defender for Cloud Apps and assign it 'Read all alerts' permission, on your application page, select API Permissions > Add permission > APIs my organization uses >, type Microsoft Cloud App Security, and then select Microsoft Cloud App Security.
+To enable your app to access Defender for Cloud Apps and assign it 'Read all alerts' permission, on your application page, select API Permissions > Add permission > Microsoft APIs > Microsoft Graph > Application permissions > Select the ```SecurityAlert.ReadWrite.All``` > Add Permissions
 
-![image](https://github.com/Shuffle/openapi-apps/assets/31187099/28a83595-0cee-44fd-80cf-ce72ab51bdb7)
+Finally, Grant Admin Consent and you should be set up on your azure portal side.
 
-
-Select Application permissions > Investigation.Read, and then select Add permissions.
-
-![image](https://github.com/Shuffle/openapi-apps/assets/31187099/cf379100-30bd-44c3-b658-6bf773bbb885)
+![image](https://github.com/Shuffle/openapi-apps/assets/31187099/f3ee115f-6e2b-4b00-9cdb-38571f96cacf)
 
 
 You need to select the relevant permissions. To determine which permission you need, look at the Permissions section in the API you're interested to call. See [Supported Permissions Scopes](https://learn.microsoft.com/en-us/defender-cloud-apps/api-authentication-application#supported-permission-scopes)
@@ -73,9 +70,16 @@ With this done, go to the "API permissions" tab and click "Add a permission". Fr
 ### Step 5: Activate and modify the app
 Due to Microsoft API's using a tenant, we will need to modify the App slightly. This first requires us to [import (open source) or activate it (cloud)](https://shuffler.io/apps/d71641a57deeee8149df99080adebeb7). After this is done, go to /apps (Apps button), and find the app and click the "Edit" button.
 
-Now that you're inside the app editor, scroll down the "Authentication" part. This is where you should add your tenant in both fields as outlined below.
+Now that you're inside the app editor, scroll down the "Authentication" part. Set up the following through the given drop downs
+* Oauth Type2 = application
+* Grant Type = client_credentials
 
-![image](https://user-images.githubusercontent.com/5719530/181118637-90e65bb7-7aea-434c-a79c-30d599baa038.png)
+Set up your TENANT_ID in the Token url parameter provided.
+
+Ensure that the only scope you have under the scopes parameter is ``` .default ```
+
+![image](https://github.com/Shuffle/openapi-apps/assets/31187099/bb551b7c-734e-4657-84b1-facd4c1454d3)
+
 
 When done, scroll all the way to the bottom of the page and click Save.
 
