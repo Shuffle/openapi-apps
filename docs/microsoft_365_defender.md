@@ -38,8 +38,6 @@ Permissions are meant to be granular according to your needs. Make sure to not g
 - Set the redirect URI to https://shuffler.io/set_authentication (SaaS) or http://HOSTNAME:3443/set_authentcation for your local version.
 - Click register on the bottom
 
-![image](https://github.com/Shuffle/openapi-apps/assets/31187099/d48dd53b-93cb-47ae-bbb6-6811c40b8db4)
-
 
 ### Step 4: Set up certificates and permissions     
 
