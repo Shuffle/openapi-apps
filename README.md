@@ -1,7 +1,7 @@
 # Open security apis
 A directory to be used for OpenAPI specifications used by the security industry. Some are made by me, while other's are contributed or gathered by others. 
 
-**[Apps there were here are now available on shuffler.io/search](https://shuffler.io/search)**
+**[More than 2500 apps on shuffler.io/search](https://shuffler.io/search)**
 
 <img width="837" alt="image" src="https://github.com/Shuffle/openapi-apps/assets/5719530/b7338d51-35bc-4f76-8daf-5d7b44c5ce17">
 
