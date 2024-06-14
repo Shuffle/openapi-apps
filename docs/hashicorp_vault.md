@@ -4,6 +4,8 @@ Hashicorp vault is a Key Management System (KMS) used to sensitive user- and app
 ## KMS
 Shuffle supports Hashicorp Vault as a KMS. This means you can follow the [KMS guide](https://shuffler.io/docs/extensions#KMS) to set it up to be one.
 
+The API path to use for most secret management is `/v1/kv/{secretpath}`
+
 ## Authentication
 To use the vault in Shuffle, make sure:
 1. It is unsealed
