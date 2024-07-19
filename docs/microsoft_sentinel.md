@@ -56,18 +56,24 @@ The application needs access. Here's how:
 2. Api permissions > Add a permission > Select an API > Log Analytics API > Application permissions
   ![image](https://github.com/Shuffle/openapi-apps/assets/31187099/31460b84-06fd-478a-9602-479e938a99a5)
 3. Ensure Data.Read is selected > Add permissions
+4. You will also need some Microsoft graph API permissions, still in Api permissions > Add a permission > Microsoft graph > Application permission. You will need the following permissions:
+   - SecurityActions.ReadWrite.All
+   - SecurityAlert.ReadWrite.All
+   - SecurityEvents.ReadWrite.All
+   - SecurityIncident.ReadWrite.All
+       
    ![image](https://github.com/Shuffle/openapi-apps/assets/31187099/b66fdbbd-d5d8-4315-971b-467123cfae28)
-4. Your applications current configuration page should look similar to this. Click "Grant admin consent" for the app to work > Click "Yes"
-   ![image](https://github.com/Shuffle/openapi-apps/assets/31187099/f5ab1389-a0f7-4cfd-a143-437ceb0f7553)
+6. Your applications current configuration page should look similar to this once admin premissions have been granted. Click "Grant admin consent" for the app to work > Click "Yes"
    ![image](https://github.com/Shuffle/openapi-apps/assets/31187099/88b7fea2-28a2-4645-a7b1-389df5c5280e)
-5. Our next step is to move on to the "Certificates & secrets" so the application can be authenticated on the Shuffle-side.> Click "+ New client secret". > Click 
+   ![image](https://github.com/user-attachments/assets/facff167-52bc-4df9-9b94-3970b0164dac)
+8. Our next step is to move on to the "Certificates & secrets" so the application can be authenticated on the Shuffle-side.> Click "+ New client secret". > Click 
    "+ New client secret".
    ![image](https://github.com/Shuffle/openapi-apps/assets/31187099/944cc5ac-dad3-4b0a-b947-0af7e1c63c03)
-6. You will want to copy the value of this secret. You will need it later when you test your API connection to your Sentinel's Workspace.
+9. You will want to copy the value of this secret. You will need it later when you test your API connection to your Sentinel's Workspace.
    ![image](https://github.com/Shuffle/openapi-apps/assets/31187099/069e19d4-7b67-43a6-99b1-7cefbcdf672e)
-7. For your other required credentials > Overview while still in your app.
+10. For your other required credentials > Overview while still in your app.
    ![image](https://github.com/Shuffle/openapi-apps/assets/31187099/0ccff3d0-779f-4d83-b6b7-46d991b34f7f)
-8. Now all that remains is giving the AAD Application permissions to your Sentinel Workspace
+11. Now all that remains is giving the AAD Application permissions to your Sentinel Workspace
 -  Let's start by finding your Sentinel Workspace resource within your Azure Portal.
   ![image](https://github.com/Shuffle/openapi-apps/assets/31187099/ca489ee4-7685-4ad3-98da-ce01a8c332d6)
 - Scroll down to Settings > Workspace settings > Access Control (IAM) > click "+ Add" > Add role assignment
