@@ -75,12 +75,21 @@ The application needs access. Here's how:
    ![image](https://github.com/Shuffle/openapi-apps/assets/31187099/0ccff3d0-779f-4d83-b6b7-46d991b34f7f)
 11. Now all that remains is giving the AAD Application permissions to your Sentinel Workspace
 -  Let's start by finding your Sentinel Workspace resource within your Azure Portal.
+
+## App Permission - Resource assigment
+If this section is not done, expect the LogAnalytics API (which is required) to not be available for the specific user. This is required due to using the "user_impersonation" permission, and Sentinel having custom permission systems. 
+
   ![image](https://github.com/Shuffle/openapi-apps/assets/31187099/ca489ee4-7685-4ad3-98da-ce01a8c332d6)
 - Scroll down to Settings > Workspace settings > Access Control (IAM) > click "+ Add" > Add role assignment
 - Under role, select search for ```Log Analytics Reader``` > click "Next"
   ![image](https://github.com/Shuffle/openapi-apps/assets/31187099/c8584b39-bbfd-4f1f-b5f8-712140ff75b7)
 - Under members, click "+ Select members" > In the search bar look for the app you made in step one above by name > Click on it and then click "Review + assign"
   ![image](https://github.com/Shuffle/openapi-apps/assets/31187099/3051d822-fc05-4f97-94da-916fa310a184)
+
+If this is not done, expect a message like this in the body:
+```
+The client '7597ef4b-856d-4cdb-9465-4b48a5c7a2c7' with object id '7597ef4b-856d-4cdb-9465-4b48a5c7a2c7' does not have authorization to perform action 'Microsoft.SecurityInsights/incidents/read' over scope '/subscriptions/b96d3a82-c9a9-4924-9479-0a3c4a5f7b4b/resourceGroups/shuffletest/providers/Microsoft.OperationalInsights/workspaces/shuffletest/providers/Microsoft.SecurityInsights' or the scope is invalid. If access was recently granted, please refresh your credentials.
+```
  
 
    
