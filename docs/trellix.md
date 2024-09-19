@@ -1,17 +1,7 @@
-## Trellix App
+# Trellix
 Trellix app to interact with Trellix systems using API access tokens for authentication.
 
-## Actions
-
-| No. | Action | Description | Parameters |
-|-----|--------|-------------|------------|
-| 1   | Fetch Incidents | Retrieves incidents from the Trellix system using the API. | `access_token`, **incidentId**, **startTime**, **endTime**, **pageSize** |
-| 2   | Create Incident | Creates a new incident within the Trellix system. | `access_token`, **incidentType**, **description**, **severity** |
-| 3   | Update Incident | Updates an existing incident with new information. | `access_token`, **incidentId**, **status**, **resolution** |
-| 4   | Delete Incident | Deletes an incident from the system. | `access_token`, **incidentId** |
-| 5   | Fetch Events for Incident | Retrieves events associated with a specific incident. | `access_token`, **incidentId** |
-
-## Requirements
+## Authentication
 
 1. Trellix account with API access enabled.
 2. Access token for authentication.
@@ -22,7 +12,7 @@ You can request your API access token using one of the following methods:
 
 #### 1. **Using cURL Command Line Tool**
 
-To request an access token via the command line, use the following cURL request:
+To request an access token via the Http_app, use the following cURL request:
 
 ```bash
 curl -k -X GET "https://<your_trellix_api_url>/hx/api/v3/token" -H "Accept: application/json" -u <username>:<password>
