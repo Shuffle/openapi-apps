@@ -1,12 +1,15 @@
-# Open security apis
-A directory to be used for OpenAPI specifications used by the security industry. Some are made by me, while other's are contributed or gathered by others. 
+# OpenAPI
+A directory to be used for OpenAPI specifications and Documentation. Some are made by Shuffle, while other's are contributed or gathered by others. 
 
 **[More than 2500 apps on shuffler.io/search](https://shuffler.io/search)**
 
 <img width="837" alt="image" src="https://github.com/Shuffle/openapi-apps/assets/5719530/b7338d51-35bc-4f76-8daf-5d7b44c5ce17">
 
 ## Why?
-The security industry is in need standardization on the API front, and I thought this might be a good place to start. OpenAPI definitions are usually well hidden on vendors' websites where I've dug some of them up, before adding them here.
+OpenAPI definitions are usually well hidden on vendors' websites where I've dug some of them up, before adding them here.
+
+Creating apps with Shuffle's Documentation-reader AI
+<img width="459" alt="image" src="https://github.com/user-attachments/assets/f0b92c40-486a-4222-80bb-93f2f2f948f1">
 
 ## About
 Shuffle is an [automation platform](https://shuffler.io) that leverages OpenAPI rather than a proprietary, code specific ecosystem to prevent the lockin issues with current SOAR products. It's based on NSA's [WALKOFF](https://github.com/nsacyber/walkoff), and works well with their platform as well. If something is off, please make a pull request or reach out.
