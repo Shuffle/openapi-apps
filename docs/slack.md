@@ -1,41 +1,74 @@
-## Slack 
-To send/post messagges on Slack groups and private chats.
+This guide explains how to send/post messages in Slack groups and private chats using Shuffle.
 
 ## Actions
-- Get Channel List (it will provide channel_id, which will be required to post message)
-- Send/Post Message
+- **Get Channel List**: Retrieves `channel_id`, which is required to post a message.
+- **Send/Post Message**: Sends a message to a Slack channel.
 
 ## Requirements
+- A Slack account
+- A Slack bot app with permission to post messages in chat
+- API key for authentication
 
-1. Slack account
-2. A Slack bot app with premssion to post message in chat
-3. Api key for authentication. 
+---
 
 ## Setup
 
-- __How to Create Slack App?__
-1. Create a slack account
-2. Goto create Slack App page - https://api.slack.com/apps?new_app=1
-3. Follow the guide to create the app - https://api.slack.com/start/overview#creating
-4. Once app is create, follow this guide to assign teh required roles and premission for the app to allow it to post message in Slack. https://api.slack.com/messaging/sending
-5. Now get the api key, which will be used for authentication. To get the api key, select "OAuth & Permssion" option from Slack application home page.
-   - API Key : xoxb-your-token
+### How to Create a Slack App
+1. Create a Slack account.
+2. Go to the [Create Slack App](https://api.slack.com/apps?new_app=1) page.
+3. Follow the [Slack App Creation Guide](https://api.slack.com/start/overview#creating).
+4. Once the app is created, assign the required roles and permissions using this guide: [Sending Messages with Slack API](https://api.slack.com/messaging/sending).
+5. Obtain the API key:
+   - Navigate to "OAuth & Permissions" from your Slack App homepage.
+   - Copy the **Bot User OAuth Token** (`xoxb-your-token`).
 
-- __Configure Slack App with Slack Channel__
-1. Now goto the Slack Channel where you want to receive message from Shuffle.
-2. Open "Channel Details" page of the Channel.
-3.  Click on the three dots icon for more options.
-4. Select "Add Apps" from the more apps and seach for application you created inside Slack.
-5. Click on "Install" and application will be installed in your channel scope and will be able post message via API requests.
+### Configure Slack App with a Slack Channel
+1. Open Slack and go to the channel where you want to receive messages.
+2. Open "Channel Details."
+3. Click on the three dots icon for more options.
+4. Select **"Add Apps"** and search for the app you created.
+5. Click **"Install"** to install the app in your channel scope.
+6. Your application can now post messages via API requests.
 
-## Post Message via Shuffle
-Slack Channel ID will be required to Post Message. There are two ways to get the channel id.
+---
 
-- Open Slack in web browser and open the channel. The URL will look like https://app.slack.com/client/xxxxxxxxxx/channel_id. Last part of the URL will be channel id.
-- You can use "Get Channle List" action inside Shuffle to get the channel id.
+## Posting Messages via Shuffle
 
-Now to post message to Slack Channel,
+### Getting Slack Channel ID
+To post a message, you need the `channel_id`. There are two ways to obtain it:
 
-- Select action "Post Message" in Shuffle app
-- Create the Authetication entry with API Key that we got during Slack app creation.
-- Provide the channel_id and message parameter and all set to go.
+1. **From Slack Web Interface**:
+   - Open Slack in a web browser.
+   - Navigate to the desired channel.
+   - The URL will be in the format: `https://app.slack.com/client/XXXXXXXXXX/channel_id`.
+   - The last part of the URL is your `channel_id`.
+
+2. **Using Slack API (`conversations.list`)**:
+   - Use the [Get Channel List](https://api.slack.com/methods/conversations.list) API method.
+   - This method retrieves all channel IDs programmatically.
+
+### Posting a Message
+1. Select the **"Post Message"** action in the Shuffle app.
+2. Create an **Authentication entry** using the API Key obtained earlier.
+3. Provide the following parameters:
+   - **`channel_id`** (ID of the channel where the message should be posted)
+   - **`message`** (Text content of the message)
+4. Execute the action, and the message will be sent to Slack.
+
+### Example API Request
+```bash
+curl -X POST "https://slack.com/api/chat.postMessage" \
+-H "Authorization: Bearer xoxb-your-token" \
+-H "Content-Type: application/json" \
+-d '{
+    "channel": "C01234567",
+    "text": "Hello, this is a test message from Shuffle!"
+}'
+```
+
+---
+
+## Important Notes
+- **Permissions**: Ensure your Slack app has the correct permissions (`chat:write` for posting messages, `channels:read` for retrieving channel info).
+- **Use Slack's API for Best Accuracy**: The URL method for retrieving `channel_id` may not always be reliable. The API method is preferred.
+
