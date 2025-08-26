@@ -1,4 +1,7 @@
-# Singul
+<img width="35%" height="auto" alt="image" src="https://github.com/user-attachments/assets/da61e138-3a90-48b5-b928-1f7e20b18b87" />
+
+## Introduction
+
 Build & integrate tools, with a Singul line of code. Instead of building integrations, focus on what actually matters; your product.
 
 Learn about Singul: https://singul.io
