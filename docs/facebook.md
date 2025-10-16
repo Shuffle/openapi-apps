@@ -47,4 +47,7 @@ There are several kinds of tokens in the Graph API, depending on context:
 | **Page Access Token** | Represents a Facebook Page, obtained via a User token. | Creating, reading, deleting posts on a Page. |
 | **App Access Token** | Represents the app itself. | App-level actions like debugging tokens. |
 
+
+
+
 ---
