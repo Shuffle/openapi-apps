@@ -49,7 +49,7 @@ The Instagram API uses **Facebook Login** to authorize access.
 2. Configure **Valid OAuth Redirect URIs**, such as:
 
    ```
-   https://yourdomain.com/auth/facebook/callback
+   https://yourdomain.com/set_authentication
    ```
 
 3. Save your changes.
@@ -68,117 +68,8 @@ There are two main tokens involved:
 
 ---
 
-### Step 1 – Request Authorization Code
 
-Redirect the user to the following URL:
-
-```
-https://www.facebook.com/v22.0/dialog/oauth
-  ?client_id={app-id}
-  &redirect_uri={redirect-uri}
-  &scope=instagram_basic,instagram_content_publish,pages_show_list,pages_read_engagement
-```
-
----
-
-### Step 2 – Exchange Code for Access Token
-
-Once the user authorizes, Facebook redirects back with a `code` parameter.
-
-Exchange it for an access token:
-
-```
-POST https://graph.facebook.com/v22.0/oauth/access_token
-Content-Type: application/x-www-form-urlencoded
-
-client_id={app-id}
-&redirect_uri={redirect-uri}
-&client_secret={app-secret}
-&code={authorization-code}
-```
-
-Response:
-
-```json
-{
-  "access_token": "EAAGm0PX4ZCpsBAJZ...",
-  "token_type": "bearer",
-  "expires_in": 5184000
-}
-```
-
----
-
-### Step 3 – Get the Connected Instagram Account
-
-Use your **Page Access Token** to retrieve the connected Instagram account:
-
-```
-GET https://graph.facebook.com/v22.0/{page-id}?fields=instagram_business_account
-     &access_token={page-access-token}
-```
-
-Response:
-
-```json
-{
-  "instagram_business_account": {
-    "id": "17841400000000000"
-  },
-  "id": "123456789012345"
-}
-```
-
----
-
-## 4. Publishing and Reading Posts
-
-### Create a Post (Photo or Video)
-
-Step 1: Create a media container (upload reference).
-
-```
-POST https://graph.facebook.com/v22.0/{ig-user-id}/media
-Authorization: Bearer {page-access-token}
-Content-Type: application/json
-
-{
-  "image_url": "https://example.com/photo.jpg",
-  "caption": "Posted via the Instagram Graph API!"
-}
-```
-
-Response:
-
-```json
-{
-  "id": "17900123456789012"
-}
-```
-
-Step 2: Publish the media container.
-
-```
-POST https://graph.facebook.com/v22.0/{ig-user-id}/media_publish
-Authorization: Bearer {page-access-token}
-Content-Type: application/json
-
-{
-  "creation_id": "17900123456789012"
-}
-```
-
-Response:
-
-```json
-{
-  "id": "17899012345678901"
-}
-```
-
----
-
-### Read Posts from an Instagram Account
+### Example: Read Posts from an Instagram Account
 
 ```
 GET https://graph.facebook.com/v22.0/{ig-user-id}/media
@@ -202,7 +93,7 @@ Example response:
 
 ---
 
-## 5. Permissions (Scopes)
+## 4. Permissions (Scopes)
 
 When authenticating with OAuth, request the following scopes depending on your needs:
 
@@ -218,33 +109,7 @@ Your app must go through **App Review** if it will be used beyond development.
 
 ---
 
-## 6. Debugging Tokens
-
-You can inspect or verify your token like this:
-
-```
-GET https://graph.facebook.com/debug_token
-     ?input_token={user-or-page-token}
-     &access_token={app-id}|{app-secret}
-```
-
-Example response:
-
-```json
-{
-  "data": {
-    "app_id": "123456789",
-    "type": "PAGE",
-    "application": "My Instagram App",
-    "expires_at": 1752038400,
-    "scopes": ["instagram_basic", "instagram_content_publish"]
-  }
-}
-```
-
----
-
-## 7. Summary
+## 5. Summary
 
 - **App ID + App Secret** → Identify your app  
 - **User Token** → Represents an authorized user  
@@ -256,7 +121,7 @@ All of these correspond to the `facebookOAuth` security scheme in your OpenAPI s
 
 ---
 
-## 8. References
+## 6. References
 
 - [Instagram Graph API Docs](https://developers.facebook.com/docs/instagram-api/)
 - [Getting Started Guide](https://developers.facebook.com/docs/instagram-basic-display-api/getting-started)
