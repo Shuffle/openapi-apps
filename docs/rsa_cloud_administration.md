@@ -1,11 +1,11 @@
 # RSA App Authentication
 
-1. Obtain your API key from RSA console in *Platform* -> *API Access Management*
-Then you can *Add API Client* in *OAuth Client* tab.
-Fill the basic informations then in Authentication, **keep in notes** displayed **Client ID** in addition of the generated **private key**.
+1. Obtain your API key from RSA console in *Platform* -> *API Access Management*  
+Then you can *Add API Client* in *OAuth Client* tab.  
+Fill the basic informations then in Authentication, **keep in notes** displayed **Client ID** in addition of the generated **private key**.  
 When the private key is generated, it needs to be pasted in the *Client Secret* form.
 
-![edit 1](https://github.com/user-attachments/assets/c129cd25-a454-4d64-a04a-c8f22558f272)
+![edit 1](https://github.com/user-attachments/assets/e8fa8439-6abf-4a57-a986-ab3a5aeabce4)
 
 2. Select the permission you need and then, save and finish. Don't forget to **Push Changes** for each modification you apply!
 
@@ -23,7 +23,7 @@ To fill the correct information and secrets, you'll need to replace following st
 
 4. Then provide the above python script as your api key when authenticating the app in Shuffle.
 
-5. Remember to provide your URL as well (Which is different than the URL used to get Bearer Token)
+5. Remember to provide your URL as well (Which is different than the URL used to get Bearer Token)  
 While used URL for getting the token is *https://mytenant.auth-eu.securid.com*, the one to use the API will be *https://mytenant.access-eu.securid.com*.
 
 ![image](https://github.com/user-attachments/assets/00bc0e61-a3d7-41ff-8806-66b432f2cd7a)
