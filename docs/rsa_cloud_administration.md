@@ -17,7 +17,7 @@ When the private key is generated, it needs to be pasted in the *Client Secret* 
 ```
 
 To fill the correct information and secrets, you'll need to replace following strings:
-- <TENANT> by the name of you tenant (You can find it in the URL you are using - ex : https://**mytenant**.access-eu.securid.com/AdminInterface/ -> Replace the strings by **mytenant** )
+- \<TENANT> by the name of you tenant (You can find it in the URL you are using - ex : https://**mytenant**.access-eu.securid.com/AdminInterface/ -> Replace the strings by **mytenant** )
 - <CLIENT_ID> by the client ID you recovered previously
 - <PRIVATE_KEY> by the private key you recovered previously (This one need to be **Onelined**!)
 
