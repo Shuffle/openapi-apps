@@ -22,3 +22,7 @@ Then find the right scope. These three allow for most of what you want to do wit
 
 Now click the authenticate button! This will take you through a sign-in page of your gmail account. With the right delegation, one user can read all mailboxes.
 
+## Client ID & Client Secret
+To get Client ID and Client Secret, get your credentials [here](https://console.cloud.google.com/apis/credentials?referrer=search&project=shuffler). Need more help? See Google's guide. 
+
+
