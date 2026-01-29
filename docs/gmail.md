@@ -22,7 +22,24 @@ Then find the right scope. These three allow for most of what you want to do wit
 
 Now click the authenticate button! This will take you through a sign-in page of your gmail account. With the right delegation, one user can read all mailboxes.
 
+--
+
 ## Client ID & Client Secret
-To get Client ID and Client Secret, get your credentials [here](https://console.cloud.google.com/apis/credentials?referrer=search&project=shuffler). Need more help? See Google's guide. 
+To get Client ID and Client Secret, get your credentials [here](https://console.cloud.google.com/apis/credentials?referrer=search&project=shuffler). 
+
+Need more help? See [Google's guide](https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid).
+
+## Scopes
+Scopes allows your to set what you’re allowed to do with gmail.
+
+**Default Scope** is set automatically when specified scopes have not been selected.
+
+The Default Scope includes:
+![image](https://user-images.githubusercontent.com/5719530/160306410-99df4d2a-1d35-462b-ab34-289eaa53f393.png)
+
+## Ready to Authenticate!
+Now click the authenticate button!
+
+This will take you through a sign-in page of your gmail account. With the right delegation, one user can read all mailboxes.
 
 
