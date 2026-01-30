@@ -1,5 +1,5 @@
 # Notion Docs
-Notion is an all-in-one, highly customizable digital workspace for note-taking, project management, databases, and collaboration
+Notion is an all-in-one, highly customizable digital workspace for note-taking, project management, databases, and collaboration.
 
 ## Authentication
 To authenticate Notion, Shuffle requires a Notion apikey.
@@ -27,9 +27,6 @@ Click 'Show' to be able to copy it.
 Paste your key into Shuffle, and click 'Authenticate'.
 
 
----
-
-
 **Complete your Notion integration setup**
 
 
@@ -37,18 +34,17 @@ Paste your key into Shuffle, and click 'Authenticate'.
 In the integration page, locate the following tabs: Configuration, Access, Basic Information, Webhooks.
 ![image](https://github.com/user-attachments/assets/86d14f23-43cd-41dd-adfa-b7b2ca834be8)
 
-Select the 'Access' tab, head to the 'Edit access' button and select the pages the integration has access to.
+Go to the Access tab, click Edit access, and select the pages you want to grant the integration access to.
 ![image](https://github.com/user-attachments/assets/e97adc5f-a418-4727-8f00-0b86a11749db)
 
-Search or select from the menu the pages you want to grant access to and save.
+Search and select from the pages you want to grant access to and save.
 ![image](https://github.com/user-attachments/assets/890183d1-2b1d-4dbe-9575-0aa485bc2b95)
 
 
-## Connect the page to integration
-Head to the page/s you granted access to the integration.
+## Connect the page to your integration
+Open any page you granted access to and connect the Shuffle integration via the following:
+Three dots (top right) → Connections → Connect your integration.
 
-On the page, on the top right side, select:
-Three dots icon -> Connections -> Select your integration.
 ![image](https://github.com/user-attachments/assets/f9a14acb-e88d-4244-a23f-4a32dd560e61)
 
 
