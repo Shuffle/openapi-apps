@@ -12,35 +12,36 @@ Head to the [integration’s settings page.](https://www.notion.so/profile/integ
 Need more help? See [Notion's Guide.](https://developers.notion.com/guides/get-started/create-a-notion-integration#getting-started)
 
 Click on 'New Integration", like in the image below:
-<img width="710" height="327" alt="Notion-api-key-1-highlight" src="https://github.com/user-attachments/assets/fcd3b99b-a8e3-463d-90b4-780359f044ce" />
+![image](https://github.com/user-attachments/assets/fcd3b99b-a8e3-463d-90b4-780359f044ce)
 
 Fill in the required details on the next page.
-<img width="1322" height="523" alt="image" src="https://github.com/user-attachments/assets/a56fa68d-7889-447c-af02-15a43c3fffbe" />
+![image](https://github.com/user-attachments/assets/a56fa68d-7889-447c-af02-15a43c3fffbe)
 
 ## Copy your apikey
 You can find your key in the 'Internal Integration Secret' field.
 
 Click 'Show' to be able to copy it.
-<img width="1319" height="416" alt="image" src="https://github.com/user-attachments/assets/b8a21852-f32f-4899-9648-aed0f60bd8a5" />
+![image](https://github.com/user-attachments/assets/b8a21852-f32f-4899-9648-aed0f60bd8a5)
 
 ## Ready to Authenticate!
 Paste your key into Shuffle, and click 'Authenticate'.
 
+
 ---
 
 
-### Complete your Notion integration setup
+**Complete your Notion integration setup**
 
 
 ## Add access through notion to the relevant pages.
 In the integration page, locate the following tabs: Configuration, Access, Basic Information, Webhooks.
-<img width="393" height="62" alt="image" src="https://github.com/user-attachments/assets/86d14f23-43cd-41dd-adfa-b7b2ca834be8" />
+![image](https://github.com/user-attachments/assets/86d14f23-43cd-41dd-adfa-b7b2ca834be8)
 
 Select the 'Access' tab, head to the 'Edit access' button and select the pages the integration has access to.
-<img width="1303" height="466" alt="image" src="https://github.com/user-attachments/assets/e97adc5f-a418-4727-8f00-0b86a11749db" />
+![image](https://github.com/user-attachments/assets/e97adc5f-a418-4727-8f00-0b86a11749db)
 
 Search or select from the menu the pages you want to grant access to and save.
-<img width="727" height="621" alt="image" src="https://github.com/user-attachments/assets/890183d1-2b1d-4dbe-9575-0aa485bc2b95" />
+![image](https://github.com/user-attachments/assets/890183d1-2b1d-4dbe-9575-0aa485bc2b95)
 
 
 ## Connect the page to integration
@@ -48,7 +49,8 @@ Head to the page/s you granted access to the integration.
 
 On the page, on the top right side, select:
 Three dots icon -> Connections -> Select your integration.
-<img width="1671" height="705" alt="image" src="https://github.com/user-attachments/assets/f9a14acb-e88d-4244-a23f-4a32dd560e61" />
+![image](https://github.com/user-attachments/assets/f9a14acb-e88d-4244-a23f-4a32dd560e61)
+
 
 
 
