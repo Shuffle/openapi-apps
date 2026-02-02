@@ -48,20 +48,26 @@ With this done, go to the "API permissions" tab and click "Add a permission". Fr
 
 ![image](https://user-images.githubusercontent.com/5719530/181117885-eb0db1b8-fe2f-47a1-b778-8bcf09bb4a39.png)
 
-### Step 4: Activate and modify the app
-Due to Microsoft API's using a tenant, we will need to modify the App slightly. This first requires us to [import (open source) or activate it (cloud)](https://shuffler.io/apps/d71641a57deeee8149df99080adebeb7). After this is done, go to /apps (Apps button), and find the app and click the "Edit" button.
+### Step 4: Fork the Outlook app
+Due to Microsoft API's using a tenant, we will need to modify the App slightly. This first requires us to fork the app you can find it [here](https://shuffler.io/apps/accdaaf2eeba6a6ed43b2efc0112032d)
 
-![image](https://user-images.githubusercontent.com/5719530/181118510-654f42a8-5636-4443-9aac-5eac5d7b6e0a.png)
+<img width="693" height="70" alt="image" src="https://github.com/user-attachments/assets/42535e32-80a8-4f49-b85b-a30ec5ae1aae" />
 
-Now that you're inside the app editor, scroll down the "Authentication" part. This is where you should add your tenant in both fields as outlined below.
+Now that you're inside the app editor, scroll down the "Authentication" part. This is where you should add your tenant in both fields as outlined below. Depending on wether you want to use application or delgated permissions, select the one you want here via the drop down.
 
 **PS: Make sure the URL's use version 2: "oauth2/v2.0" instead of just "oauth2". You will otherwise get problem when using the app.**
 
-![image](https://user-images.githubusercontent.com/5719530/181118637-90e65bb7-7aea-434c-a79c-30d599baa038.png)
+<img width="788" height="760" alt="image" src="https://github.com/user-attachments/assets/1930d72a-c57c-427b-b5ee-89a4c84b3376" />
 
-When done, scroll all the way to the bottom of the page and click Save.
+When done, scroll and click Save api.
 
-### Step 5: Using the prepared authentication
+### Step 5: For application permissions
+
+When authenticating with application permission select it on the drop down, fill in the tenant_ID in the url and authenticate in your workflow and you should be good to go, when authenticating, use the /.default scope only and it should work for you.
+
+<img width="781" height="578" alt="image" src="https://github.com/user-attachments/assets/d0649526-186e-431f-af66-45680c7aedc8" />
+
+### Step 6: Using the prepared authentication
 With all prepararration done, open up a Workflow (either new or one of our [public workflows](https://shuffler.io/workflows/828c3d2d-475b-454c-a6af-a241e708f0c7)). 
 
 1. From the left side, drag in the Outlook Graph app
