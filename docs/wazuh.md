@@ -6,6 +6,8 @@ Wazuh API endpoints requires authentication in order to be used. Therefore, all 
 
 Use the cURL command to log in. The Wazuh API will provide a JWT token upon success. Replace <user> and <password> with yours. By default, the user is wazuh, and the password is wazuh. If SSL (HTTPS) is enabled in the API and it is using the default self-signed certificates, it will be necessary to add the parameter -k. Use the raw option to get the token in a plain text format. Querying the login endpoint with raw=true is recommended when using cURL commands as tokens could be long and difficult to handle. Exporting the token to an environment variable will ease the use of API requests after login.
 
+Note: The **apikey** that is required to authenticate is the **JWT Token** that you will get.
+
 Export the token to an environment variable to use it in authorization header of future API requests:
 
 
