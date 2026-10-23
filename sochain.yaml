@@ -1,0 +1,1284 @@
+swagger: '3.0'
+info:
+  title: SoChain
+  description: |-
+    Balances, transactions, blocks, the mempool and fee quotes for Bitcoin, Litecoin, Dogecoin and Zcash (transparent), and their testnets: BTC, LTC, DOGE, ZEC, BTCTEST (Bitcoin testnet4), LTCTEST, DOGETEST and ZECTEST.
+
+    ### Authentication
+
+    The API key is optional. Without one, lookups are limited to 2,500 a day per IP. With a key, the plan's monthly requests apply; a free account gives 75,000 a month. Get a key at https://sochain.com/dashboard and send it in the `API-KEY` header. Get account info always needs a key.
+
+    Answers are JSON: `{"status": "success", "data": {...}}` or `{"status": "fail", "data": {"error_message": "..."}}`. Amounts are exact decimal strings with 8 decimals.
+
+    Docs: https://sochain.com/docs
+  version: '3'
+  x-logo: data:image/png;base64,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
+  contact:
+    name: SoChain support
+    url: https://sochain.com/support
+  x-categories:
+  - Intel
+servers:
+- url: https://sochain.com/api/v3
+host: sochain.com
+basePath: /api/v3
+schemes:
+- 'https:'
+paths:
+  /balance/{network}/{address}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: Balance of an address
+      operationId: Get_balance
+      description: 'Confirmed balance and the pending change from the mempool; with height or time, the confirmed balance at that point instead. Docs: https://sochain.com/docs/balance'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: address
+        description: An address (letters and digits).
+        required: true
+        schema:
+          type: string
+          pattern: ^[A-Za-z0-9]{1,1000}$
+      - in: query
+        name: height
+        description: The confirmed balance at the end of this block, instead of now.
+        required: false
+        schema:
+          type: integer
+          minimum: 0
+      - in: query
+        name: time
+        description: 'The confirmed balance at this time, instead of now: Unix seconds, a UTC date (meaning the end of that day) or an RFC 3339 timestamp. It''s taken at the last block at or before it. Not together with height.'
+        required: false
+        schema:
+          type: string
+  /address_summary/{network}/{address}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: Sent, received and balance at a glance
+      operationId: Get_address_summary
+      description: 'Transaction counts in each direction, balances, and everything ever received. Docs: https://sochain.com/docs/address_summary'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: address
+        description: An address (letters and digits).
+        required: true
+        schema:
+          type: string
+          pattern: ^[A-Za-z0-9]{1,1000}$
+  /transactions/{network}/{address}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: An address's transactions (page 1, or filtered)
+      operationId: Get_transactions
+      description: 'Ten per page: unconfirmed first, then newest first. With any history filter, the filtered form: the same rows filtered by block, time and direction, paged by cursor, as JSON or CSV. Docs: https://sochain.com/docs/transactions'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: address
+        description: An address (letters and digits).
+        required: true
+        schema:
+          type: string
+          pattern: ^[A-Za-z0-9]{1,1000}$
+      - in: query
+        name: from_height
+        description: 'History filter: from this block on (inclusive).'
+        required: false
+        schema:
+          type: integer
+          minimum: 0
+      - in: query
+        name: to_height
+        description: 'History filter: up to this block (inclusive).'
+        required: false
+        schema:
+          type: integer
+          minimum: 0
+      - in: query
+        name: from_time
+        description: 'History filter: from this time on. Unix seconds, a UTC date (from its first second) or an RFC 3339 timestamp.'
+        required: false
+        schema:
+          type: string
+      - in: query
+        name: to_time
+        description: 'History filter: up to this time. Unix seconds, a UTC date (to its last second) or an RFC 3339 timestamp. Times map to the blocks they cover, so back-to-back ranges neither overlap nor leave a gap.'
+        required: false
+        schema:
+          type: string
+      - in: query
+        name: direction
+        description: 'History filter: in (the balance went up), out (it went down) or both. By the net amount: a payment out with change back counts once, as out.'
+        required: false
+        schema:
+          type: string
+          enum:
+          - in
+          - out
+          - both
+          default: both
+      - in: query
+        name: unconfirmed
+        description: 'History filter: pending transactions. Default include, or exclude when the range has an end (to_height or to_time), which can''t be combined with include or only.'
+        required: false
+        schema:
+          type: string
+          enum:
+          - include
+          - exclude
+          - only
+      - in: query
+        name: page_size
+        description: 'Rows per page of the filtered form: 1–100 (default 10); with format=csv 1–500 (default 500).'
+        required: false
+        schema:
+          type: integer
+          minimum: 1
+          maximum: 500
+      - in: query
+        name: cursor
+        description: next_cursor from the previous page of the filtered form. It carries the filters, so it can be sent on its own.
+        required: false
+        schema:
+          type: string
+          maxLength: 4096
+      - in: query
+        name: format
+        description: json (default) or csv. CSV has one row per transaction (time_utc, block, txid, direction, received, sent, net, price_usd, net_usd); the next page's URL is in the Link header.
+        required: false
+        schema:
+          type: string
+          enum:
+          - json
+          - csv
+          default: json
+      - in: query
+        name: currency
+        description: 'Prices in this currency instead of US dollars (any case). Not a filter: on the paged endpoints it keeps the form you''d get without it.'
+        required: false
+        schema:
+          type: string
+          enum:
+          - AUD
+          - BRL
+          - CAD
+          - CHF
+          - CNY
+          - CZK
+          - DKK
+          - EUR
+          - GBP
+          - HKD
+          - HUF
+          - IDR
+          - ILS
+          - INR
+          - ISK
+          - JPY
+          - KRW
+          - MXN
+          - MYR
+          - NOK
+          - NZD
+          - PHP
+          - PLN
+          - RON
+          - SEK
+          - SGD
+          - THB
+          - TRY
+          - USD
+          - ZAR
+  /transactions/{network}/{address}/{page}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: An address's transactions, by page
+      operationId: Get_transactions_by_page
+      description: 'Ten per page: unconfirmed first, then newest first. Page numbers don''t combine with filters (400): leave the page out for the filtered form. Docs: https://sochain.com/docs/transactions'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: address
+        description: An address (letters and digits).
+        required: true
+        schema:
+          type: string
+          pattern: ^[A-Za-z0-9]{1,1000}$
+      - in: path
+        name: page
+        description: Page number from 1; ten results per page. Anything but a 1–6 digit number means page 1.
+        required: true
+        schema:
+          type: integer
+          minimum: 1
+      - in: query
+        name: currency
+        description: 'Prices in this currency instead of US dollars (any case). Not a filter: on the paged endpoints it keeps the form you''d get without it.'
+        required: false
+        schema:
+          type: string
+          enum:
+          - AUD
+          - BRL
+          - CAD
+          - CHF
+          - CNY
+          - CZK
+          - DKK
+          - EUR
+          - GBP
+          - HKD
+          - HUF
+          - IDR
+          - ILS
+          - INR
+          - ISK
+          - JPY
+          - KRW
+          - MXN
+          - MYR
+          - NOK
+          - NZD
+          - PHP
+          - PLN
+          - RON
+          - SEK
+          - SGD
+          - THB
+          - TRY
+          - USD
+          - ZAR
+  /transaction_counts/{network}/{address}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: Transaction counts of an address
+      operationId: Get_transaction_counts
+      description: 'Sent, received and total. Docs: https://sochain.com/docs/transaction_counts'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: address
+        description: An address (letters and digits).
+        required: true
+        schema:
+          type: string
+          pattern: ^[A-Za-z0-9]{1,1000}$
+  /unspent_outputs/{network}/{address}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: Unspent outputs of an address (page 1)
+      operationId: Get_unspent_outputs
+      description: 'Ten per page, oldest first, each with its funding transaction. Docs: https://sochain.com/docs/unspent_outputs'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: address
+        description: An address (letters and digits).
+        required: true
+        schema:
+          type: string
+          pattern: ^[A-Za-z0-9]{1,1000}$
+  /unspent_outputs/{network}/{address}/{page}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: Unspent outputs of an address, by page
+      operationId: Get_unspent_outputs_by_page
+      description: 'Ten per page, oldest first, each with its funding transaction. Docs: https://sochain.com/docs/unspent_outputs'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: address
+        description: An address (letters and digits).
+        required: true
+        schema:
+          type: string
+          pattern: ^[A-Za-z0-9]{1,1000}$
+      - in: path
+        name: page
+        description: Page number from 1; ten results per page. Anything but a 1–6 digit number means page 1.
+        required: true
+        schema:
+          type: integer
+          minimum: 1
+  /is_valid_address/{network}/{address}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: Is this a valid address on this network?
+      operationId: Is_valid_address
+      description: 'A malformed address answers is_valid: false, never an error. Docs: https://sochain.com/docs/is_valid_address'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: address
+        description: An address (letters and digits).
+        required: true
+        schema:
+          type: string
+          pattern: ^[A-Za-z0-9]{1,1000}$
+  /balance_history/{network}/{address}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: An address's balance by day, week or month
+      operationId: Get_balance_history
+      description: 'With what came in and went out in each interval and how many transactions did each. Without an API key at most 2,000 points, with one 20,000. Docs: https://sochain.com/docs/balance_history'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: address
+        description: An address (letters and digits).
+        required: true
+        schema:
+          type: string
+          pattern: ^[A-Za-z0-9]{1,1000}$
+      - in: query
+        name: interval
+        description: One point per day (default), week (Monday to Sunday, UTC) or month.
+        required: false
+        schema:
+          type: string
+          enum:
+          - day
+          - week
+          - month
+          default: day
+      - in: query
+        name: from
+        description: 'Start: Unix seconds, a UTC date (from its first second) or an RFC 3339 timestamp. Default: the address''s first activity (without an API key, daily points cover the most recent 2,000).'
+        required: false
+        schema:
+          type: string
+      - in: query
+        name: to
+        description: 'End, in the same forms (a date means its last second). Default: now.'
+        required: false
+        schema:
+          type: string
+  /address_rank/{network}/{address}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: Where an address stands among the largest holders
+      operationId: Get_address_rank
+      description: 'Its exact rank within the top 10,000 and its share of all coins. Docs: https://sochain.com/docs/address_rank'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: address
+        description: An address (letters and digits).
+        required: true
+        schema:
+          type: string
+          pattern: ^[A-Za-z0-9]{1,1000}$
+  /address_poisoning/{network}/{address}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: Whether an address was targeted by address poisoning
+      operationId: Get_address_poisoning
+      description: 'Look-alike addresses that sent it dust, imitating an address it really paid or was paid by, so a careless copy from its history pays the scammer. Docs: https://sochain.com/docs/address_poisoning'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: address
+        description: An address (letters and digits).
+        required: true
+        schema:
+          type: string
+          pattern: ^[A-Za-z0-9]{1,1000}$
+      - in: query
+        name: limit
+        description: 'Rows: 1 to 100, default 50, newest first.'
+        required: false
+        schema:
+          type: integer
+          minimum: 1
+          maximum: 100
+          default: 50
+  /address_counterparties/{network}/{address}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: Who an address pays and is paid by, lately
+      operationId: Get_address_counterparties
+      description: 'Payments of a significant amount within the window the poisoning check watches, newest first. Docs: https://sochain.com/docs/address_counterparties'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: address
+        description: An address (letters and digits).
+        required: true
+        schema:
+          type: string
+          pattern: ^[A-Za-z0-9]{1,1000}$
+      - in: query
+        name: limit
+        description: 'Rows: 1 to 100, default 50, newest first.'
+        required: false
+        schema:
+          type: integer
+          minimum: 1
+          maximum: 100
+          default: 50
+  /transaction/{network}/{hash}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: One transaction
+      operationId: Get_transaction
+      description: 'Confirmations, size, fee, and every input and output. Docs: https://sochain.com/docs/transaction'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: hash
+        description: 'Transaction ID: 64 hex characters (any case).'
+        required: true
+        schema:
+          type: string
+          pattern: ^[0-9a-fA-F]{64}$
+      - in: query
+        name: currency
+        description: 'Prices in this currency instead of US dollars (any case). Not a filter: on the paged endpoints it keeps the form you''d get without it.'
+        required: false
+        schema:
+          type: string
+          enum:
+          - AUD
+          - BRL
+          - CAD
+          - CHF
+          - CNY
+          - CZK
+          - DKK
+          - EUR
+          - GBP
+          - HKD
+          - HUF
+          - IDR
+          - ILS
+          - INR
+          - ISK
+          - JPY
+          - KRW
+          - MXN
+          - MYR
+          - NOK
+          - NZD
+          - PHP
+          - PLN
+          - RON
+          - SEK
+          - SGD
+          - THB
+          - TRY
+          - USD
+          - ZAR
+  /transaction_status/{network}/{hash}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: Whether a transaction is pending, mined, replaced or dropped
+      operationId: Get_transaction_status
+      description: 'A transaction is replaced when another one spends one of its inputs (a fee bump, a double spend, or a transaction it spends from being replaced) and dropped when the mempool lets it go unconfirmed. SoChain remembers a transaction that left the mempool for about a day; after that, or for one SoChain never saw, the status is unknown. Docs: https://sochain.com/docs/transaction_status'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: hash
+        description: 'Transaction ID: 64 hex characters (any case).'
+        required: true
+        schema:
+          type: string
+          pattern: ^[0-9a-fA-F]{64}$
+  /block/{network}/{hash_or_height}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: One block, by height or hash
+      operationId: Get_block
+      description: 'Header, subsidy (reward), fees, value out and every transaction ID. Docs: https://sochain.com/docs/block'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: hash_or_height
+        description: A block height (up to 8 digits) or block hash (64 hex characters, any case).
+        required: true
+        schema:
+          type: string
+          pattern: ^([0-9]{1,8}|[0-9a-fA-F]{64})$
+      - in: query
+        name: currency
+        description: 'Prices in this currency instead of US dollars (any case). Not a filter: on the paged endpoints it keeps the form you''d get without it.'
+        required: false
+        schema:
+          type: string
+          enum:
+          - AUD
+          - BRL
+          - CAD
+          - CHF
+          - CNY
+          - CZK
+          - DKK
+          - EUR
+          - GBP
+          - HKD
+          - HUF
+          - IDR
+          - ILS
+          - INR
+          - ISK
+          - JPY
+          - KRW
+          - MXN
+          - MYR
+          - NOK
+          - NZD
+          - PHP
+          - PLN
+          - RON
+          - SEK
+          - SGD
+          - THB
+          - TRY
+          - USD
+          - ZAR
+  /latest_blocks_summary/{network}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: The last ten blocks
+      operationId: Get_latest_blocks_summary
+      description: 'Newest first, with miner address and reward plus fees. Docs: https://sochain.com/docs/latest_blocks_summary'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: query
+        name: currency
+        description: 'Prices in this currency instead of US dollars (any case). Not a filter: on the paged endpoints it keeps the form you''d get without it.'
+        required: false
+        schema:
+          type: string
+          enum:
+          - AUD
+          - BRL
+          - CAD
+          - CHF
+          - CNY
+          - CZK
+          - DKK
+          - EUR
+          - GBP
+          - HKD
+          - HUF
+          - IDR
+          - ILS
+          - INR
+          - ISK
+          - JPY
+          - KRW
+          - MXN
+          - MYR
+          - NOK
+          - NZD
+          - PHP
+          - PLN
+          - RON
+          - SEK
+          - SGD
+          - THB
+          - TRY
+          - USD
+          - ZAR
+  /best_block_hash/{network}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: Hash of the newest block
+      operationId: Get_best_block_hash
+      description: 'The cheapest way to notice a new block. Docs: https://sochain.com/docs/best_block_hash'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+  /network_info/{network}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: Network state and mempool
+      operationId: Get_network_info
+      description: 'Newest block, hashrate, mempool size and the next six projected blocks with their fee rates. Docs: https://sochain.com/docs/network_info'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+  /price/{network}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: Latest price
+      operationId: Get_price
+      description: 'SoChain''s price endpoint: the latest price, in US dollars or the currency asked for. Testnets: always 0.00000000. Docs: https://sochain.com/docs/price'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: query
+        name: currency
+        description: 'Prices in this currency instead of US dollars (any case). Not a filter: on the paged endpoints it keeps the form you''d get without it.'
+        required: false
+        schema:
+          type: string
+          enum:
+          - AUD
+          - BRL
+          - CAD
+          - CHF
+          - CNY
+          - CZK
+          - DKK
+          - EUR
+          - GBP
+          - HKD
+          - HUF
+          - IDR
+          - ILS
+          - INR
+          - ISK
+          - JPY
+          - KRW
+          - MXN
+          - MYR
+          - NOK
+          - NZD
+          - PHP
+          - PLN
+          - RON
+          - SEK
+          - SGD
+          - THB
+          - TRY
+          - USD
+          - ZAR
+  /price/{network}/{unix_timestamp}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: Price at a past time
+      operationId: Get_price_at
+      description: 'SoChain''s price endpoint: the price at unix_timestamp, in US dollars or the currency asked for. Docs: https://sochain.com/docs/price'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: unix_timestamp
+        description: 'Unix seconds (7–10 digits): the price at that time. Anything else means the latest price.'
+        required: true
+        schema:
+          type: integer
+      - in: query
+        name: currency
+        description: 'Prices in this currency instead of US dollars (any case). Not a filter: on the paged endpoints it keeps the form you''d get without it.'
+        required: false
+        schema:
+          type: string
+          enum:
+          - AUD
+          - BRL
+          - CAD
+          - CHF
+          - CNY
+          - CZK
+          - DKK
+          - EUR
+          - GBP
+          - HKD
+          - HUF
+          - IDR
+          - ILS
+          - INR
+          - ISK
+          - JPY
+          - KRW
+          - MXN
+          - MYR
+          - NOK
+          - NZD
+          - PHP
+          - PLN
+          - RON
+          - SEK
+          - SGD
+          - THB
+          - TRY
+          - USD
+          - ZAR
+  /charts/{network}/{series}/{interval}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: A chart series as data
+      operationId: Get_chart
+      description: 'Price, fees, activity, mining and supply per block, hour, day or minute. Docs: https://sochain.com/docs/charts'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: path
+        name: series
+        required: true
+        schema:
+          type: string
+          enum:
+          - tx_count
+          - fees_total
+          - fees_median
+          - block_size
+          - difficulty
+          - hashrate
+          - supply
+          - price_usd
+          - tx_per_min
+          - block_interval
+          - pool_share
+          - lookalikes
+          - mempool_txs
+          - mempool_bytes
+          - holder_share
+          - new_addresses
+          - active_addresses
+          - transfers
+          - mweb_pool
+          - mweb_flows
+          - zcash_pools
+      - in: path
+        name: interval
+        description: 'Not every series has every interval: block and hour/day for most; minute only for tx_per_min, mempool_txs and mempool_bytes.'
+        required: true
+        schema:
+          type: string
+          enum:
+          - block
+          - hour
+          - day
+          - minute
+      - in: query
+        name: from
+        description: 'Start of the range, inclusive: a block height for the block interval, else Unix seconds (rounded down to the start of its minute, hour or day, and no earlier than the network''s first block).'
+        required: false
+        schema:
+          type: integer
+          minimum: 0
+      - in: query
+        name: to
+        description: End of the range, inclusive, in the same units. Defaults to now; later times are now, and heights stop at the tip. Times are rounded down like from.
+        required: false
+        schema:
+          type: integer
+          minimum: 0
+      - in: query
+        name: currency
+        description: 'price_usd only: the price in this currency. The series keeps its name; the answer adds currency.'
+        required: false
+        schema:
+          type: string
+          enum:
+          - AUD
+          - BRL
+          - CAD
+          - CHF
+          - CNY
+          - CZK
+          - DKK
+          - EUR
+          - GBP
+          - HKD
+          - HUF
+          - IDR
+          - ILS
+          - INR
+          - ISK
+          - JPY
+          - KRW
+          - MXN
+          - MYR
+          - NOK
+          - NZD
+          - PHP
+          - PLN
+          - RON
+          - SEK
+          - SGD
+          - THB
+          - TRY
+          - USD
+          - ZAR
+  /rich_list/{network}:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: The largest holders
+      operationId: Get_rich_list
+      description: 'The top 1,000 addresses by confirmed balance, a page at a time, with each one''s share of all coins, transactions, first and last activity, and 24-hour and 7-day change. Follows the newest block. Docs: https://sochain.com/docs/rich_list'
+      parameters:
+      - in: path
+        name: network
+        description: Network code (any case). BTCTEST is Bitcoin testnet4.
+        required: true
+        schema:
+          type: string
+          enum:
+          - BTC
+          - LTC
+          - DOGE
+          - ZEC
+          - BTCTEST
+          - LTCTEST
+          - DOGETEST
+          - ZECTEST
+      - in: query
+        name: page
+        description: Page, from 1 to 1,000 ÷ page_size.
+        required: false
+        schema:
+          type: integer
+          minimum: 1
+          maximum: 40
+          default: 1
+      - in: query
+        name: page_size
+        description: Holders per page.
+        required: false
+        schema:
+          type: integer
+          enum:
+          - 25
+          - 50
+          - 100
+          default: 100
+  /account_info:
+    get:
+      responses:
+        default:
+          description: default
+          content:
+            application/json:
+              schema:
+                type: object
+      summary: Your plan and usage
+      operationId: Get_account_info
+      description: 'Your plan and this month''s usage. Needs an API key. Answers without the status/data envelope. Docs: https://sochain.com/docs/account_info'
+      parameters: []
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: API-KEY
+      description: Optional. Your key from https://sochain.com/dashboard; leave empty for keyless lookups.
+tags:
+- name: Intel
