@@ -1,0 +1,182 @@
+openapi: 3.0.0
+info:
+  title: Alive5 SMS
+  version: 1.0.0
+  description: >-
+    Send SMS and list Alive5 channels, users, and recent SMS conversations.
+    Alive5 returns HTTP 200 even for API errors. Inspect code and error in the
+    response body, including nested data.code, data.error, and data.errors,
+    before treating an action as successful.
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+  contact:
+    name: Alive5
+    url: https://www.alive5.com/api
+  x-logo: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAABAKADAAQAAAABAAABAAAAAABn6hpJAAAx5UlEQVR4Ae2dCXxU1d337zJLFkLYQkBQBALW4lpsXasREEhYhCDV1tr2sdYu1q5Wn9rXpzyta/v2qbXa97XLW6t1DQRkj4CidSkgti64QAiLiEKAEAzZZu497+8/C04mdyb3TiZA4Hc+mczce892v+f8/2c/R9NoSIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAESIAEehwBvcfFmBEmgaOIwI6Zn+qfZ6ghIcsapOtaIQQqYCtN92lam6arA7au77aU2lFctbkOz9VRFPVIVKgAjrYUYXyOagJ7ry7pbTapcyxdvxjCc66lqVMNzegP2c4zdd0wcFOECkpACysYTWvGZ59paBstW72qNPVCMORb03vRxj1Hw4tSARwNqcA4HPUE6meOPlM3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EUjmyZZfx1oiY6abCP/iTPjE3DyHabjd0kGGPoG3MWw8A0KJE4T1LdnME5KO8XwRfQ+1Fn0iV+JU4ZmdLSA61vKAl/fpNgUgkUCCt2LZ5oMtLdrF0Pw/Q+fLRkkcSXhJLC8mnrixKl0d/HoQXtR69cdLmD3VLppgcyFk3qZm4mVl/gV4Po6f3VZSyrAxmol/QJ74fCxPbMo0T0j6JOWLZrzCM7h7ZTgcklL/qcRdkMU+TXsCXZoK3N6r1FexTRnuHD9+/IN+f8446IAZyGyfR+INQuJHNrNAwsG0n1cTF25kFJmUgl1w7fWYGy4bPS7FIpgtWEz0L5wfH5k1ljr06BPxC/74UcVNoXmUX6aXujExv7ApqbNfeDefKCr3E5qUHICRIl5uYtTeTijU/LJp9noHcRjjNg7yTmDzga7nQYC63yTlCSz20mYg1IuQH7BUXMcivKhCkpjE3yGeH+Lfki9gGqDsNqC0xyYhMnS5RLYs96z8xKPj0RwWBRAHu2rVqr34XSkfbNQwAIt/xiARsUGIHNGksPhH6wtBxzRNPYwMcADpuxPtRpQQ2ptYCfg2Unc77ES0xKWXXurDARmvo5+h1U1ph3nlUACqPhi0sca8o0Gmgl9R0/Fp+zviF+LZkJenHHeahaJ6F3FfK761d+l8JbKHTJ61TjeUeo1YqPVHzM24Du/c6exA2NMx6SeAeDy5bFklaleHz8TyhAw5PjF+/PRiv98+DRWQM5EespHHMHCRhT654I1bqgV5A5uOaO9jpAKb0qjXcRPNiqZalvSZpVnWSp3Mgu/gSkdPtnzkgQvhmWNErXbwx/FG1G7Kde3wa46jO6ebncQx8h5O7pzudRIvJyeu7pVi6++ioqL21aoULuvq6vSjUIh0LPk1amtrI03VgoIChThK88TVO6V4Vd4mARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIgARIggZ5N4P8DLl7/XAM5VN8AAAAASUVORK5CYII=
+  x-categories:
+    - Communication
+servers:
+  - url: https://api.alive5.com/public/1.0
+security:
+  - ApiKeyAuth: []
+tags:
+  - name: SMS
+    description: Alive5 SMS messaging and channel discovery.
+paths:
+  /objects/channels-and-users/list:
+    get:
+      operationId: list_channels_and_users
+      summary: List channels and users
+      description: >-
+        List accessible channels and their assigned agents. Select an SMS
+        channel whose channel_label is your business phone number; use its
+        channel_id and an assigned agent's user_id when sending SMS.
+      tags: [SMS]
+      responses:
+        '200':
+          description: >-
+            Alive5 envelope. Channels are in data.Items; each has channel_id,
+            channel_label, and agents with user_id and screen_name.
+            Check body code and error even when HTTP status is 200.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Alive5Response'
+              example:
+                code: 200
+                error: {}
+                data:
+                  Items:
+                    - channel_id: example-channel-id
+                      channel_label: '+14155550100'
+                      agents:
+                        - user_id: example-user-id
+                          screen_name: Example Agent
+  /conversations/sms/send:
+    post:
+      operationId: send_sms
+      summary: Send SMS
+      description: >-
+        Submit one text message. Use phone_number_from and channel_id from
+        List channels and users, and a user_id assigned to that channel.
+        A returned data.data.message_id confirms submission, not delivery.
+        Check body-level errors; inspect conversation history before retrying
+        an ambiguous result to avoid sending duplicate messages.
+      tags: [SMS]
+      parameters:
+        - in: header
+          name: Content-Type
+          required: true
+          schema:
+            type: string
+            enum: [application/json]
+          example: application/json
+      requestBody:
+        required: true
+        description: Business number, recipient, channel, sending user, and SMS text.
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - phone_number_from
+                - phone_number_to
+                - channel_id
+                - user_id
+                - message
+              properties:
+                phone_number_from:
+                  type: string
+                  description: Alive5 business SMS number in E.164 format.
+                  pattern: '^\+[1-9][0-9]{7,14}$'
+                  example: '+14155550100'
+                phone_number_to:
+                  type: string
+                  description: Recipient phone number in E.164 format.
+                  pattern: '^\+[1-9][0-9]{7,14}$'
+                  example: '+14155550123'
+                channel_id:
+                  type: string
+                  description: Channel ID associated with the business SMS number.
+                  minLength: 1
+                  example: example-channel-id
+                user_id:
+                  type: string
+                  description: ID of an agent assigned to the selected channel.
+                  minLength: 1
+                  example: example-user-id
+                message:
+                  type: string
+                  description: Text of the SMS; must contain non-whitespace characters.
+                  minLength: 1
+                  pattern: '\S'
+                  example: Hello from Alive5.
+            example:
+              phone_number_from: '+14155550100'
+              phone_number_to: '+14155550123'
+              channel_id: example-channel-id
+              user_id: example-user-id
+              message: Hello from Alive5.
+      responses:
+        '200':
+          description: >-
+            Alive5 envelope. The submitted message ID is data.data.message_id.
+            Check code and error at the top level and inside data before
+            treating the request as successful.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Alive5Response'
+              example:
+                code: 200
+                error: {}
+                data:
+                  data:
+                    message_id: example-message-id
+  /conversations/sms:
+    get:
+      operationId: list_sms_conversations
+      summary: List SMS conversations
+      description: >-
+        Return recent SMS conversations in data.Items. This action is a
+        snapshot, not a new-message trigger or a complete message archive.
+      tags: [SMS]
+      responses:
+        '200':
+          description: >-
+            Alive5 envelope containing recent conversations. Check body code
+            and error even when HTTP status is 200.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Alive5Response'
+              example:
+                code: 200
+                error: {}
+                data:
+                  Items: []
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-A5-APIKEY
+  schemas:
+    Alive5Response:
+      type: object
+      description: >-
+        Raw Alive5 envelope, including API errors returned with HTTP 200.
+        Workflows must inspect body-level status and error fields.
+      properties:
+        code:
+          type: integer
+          description: Alive5 application status code.
+          example: 200
+        error:
+          description: Empty on success; may contain API error details on failure.
+        data:
+          type: object
+          description: Endpoint data; may also contain nested status or error fields.
+          additionalProperties: true
+      additionalProperties: true
